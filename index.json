@@ -57,7 +57,7 @@
       "alliance": "corrupted_pact",
       "description": "The corrupted marines are a band of marines that betrayed the Human Empire and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry."
     },
-    "corrupted_defense_force": {
+    "traitor_defense_force": {
       "version": "1.0",
       "name": "Traitor Defense Force",
       "id": "traitor_defense_force",

@@ -131,13 +131,9 @@
           "defense": 9,
           "reflexes": 7,
           "weapons": [{"id": "guardian_champion_blade"}],
-          "options": [
-            {"addWeapon": {"id": "guardian_dagger"}},
-            {"addWeapon": "shield"}
-          ],
+          "options": [{"addWeapon": {"id": "guardian_dagger"}}, {"addWeapon": "shield"}],
           "min": 1,
           "max": 1
-
         }
       ]
     },
@@ -607,8 +603,7 @@
       "name": "Scorching Spear",
       "profiles": [{"name": "Blade", "attacks": 1, "short": "Melee", "ap": 3}, {"name": "Flame", "attacks": 1, "short": 6, "medium": 12, "ap": 4, "rules": ["assault"]}]
     },
-    "guardian_champion_blade": {"name": "Guardian Champion Sword", "profiles": [{"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 3}, {"name": "elite", "attacks": 4, "short": "Melee", "ap": 6}]
-    }
+    "guardian_champion_blade": {"name": "Guardian Champion Sword", "profiles": [{"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 3}, {"name": "elite", "attacks": 4, "short": "Melee", "ap": 6}]}
   },
   "rules": {
     "banner_of_blindness": {
