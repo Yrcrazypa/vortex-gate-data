@@ -189,16 +189,6 @@
       "alliance": "order",
       "description": "The Imperial Marines are the pride of the Human Empire and its elite order-keeping force should they need to be deployed. The Imperial Marines rely on tough infantry and somewhat advanced vehicle technology to outsmart and eliminate their enemies."
     },
-    "throne_guardians": {
-      "version": "1.0",
-      "name": "Throne Guardians",
-      "id": "throne_guardians",
-      "url": "throne_guardians.json",
-      "color": "#D4AF37",
-      "secondary_color": "#7d0a15",
-      "alliance": "order",
-      "description": "The Throne Guardians are the defenders of the Human Empire's capital. Only the most elite Imperial Marines are recruited to be Throne Guardians and with that they are the most well-trained. The Throne Guardians rely on the most elite and well-trained infantry along with powerful and ancient war weaponry to defend their home planet."
-    },
     "orc_clans": {
       "version": "1.0",
       "name": "Orc Clans",
