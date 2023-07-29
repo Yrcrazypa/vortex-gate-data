@@ -268,11 +268,11 @@
       "alliance": "death",
       "description": "Places of necromantic power can often spontaneously bring the dead back to life, and without a leader they have only one drive:  Spread that necromantic power, through the death of those nearby!"
     },
-    "beastmen_horde": {
+    "tainted_moonclan": {
       "version": "1.0",
-      "name": "Beastmen Horde",
-      "id": "beastmen_horde",
-      "url": "beastmen_horde.json",
+      "name": "Moonclan",
+      "id": "tainted_moonclan",
+      "url": "tainted_moonclan.json",
       "color": "#954535",
       "alliance": "doom",
       "description": "The Beastmen seek nothing less than the destruction of civilization, turning it all into burning rubble."
