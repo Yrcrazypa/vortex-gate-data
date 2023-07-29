@@ -910,7 +910,7 @@
     "legend_sacrificial_dagger": {"name": "Sacrificial Dagger", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["sacrifice"]}
   },
   "rules": {
-    "cult_speaker": {"name": "Cult Speaker", "description": "This model's unit 6\" gains +1 Courage.", "points": 10},
+    "cult_speaker": {"name": "Cult Speaker", "description": "This model's unit gains +1 Courage.", "points": 10},
     "chosen_abomination": {"name": "Chosen Abomination", "description": "Once per round, a friendly _Heavy Infantry_ unit within 6\" may gain +1 AP on all Melee weapons.", "points": 10},
     "cult_icon": {"name": "Cult Icon", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 Save when targeted by a Shooting or Fighting attack.", "points": 10},
     "extra_armor": {"name": "Reinforced Hull", "description": "Subtract 1 from all Damage Chart rolls for this model.", "points": 10},
