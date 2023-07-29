@@ -193,14 +193,14 @@
       "alliance": "order",
       "description": "The Stellar Vanguard are the pride of human engineering and its elite order-keeping force should they need to be deployed. The Stellar Vanguard rely on tough infantry and somewhat advanced vehicle technology to outsmart and eliminate their enemies."
     },
-    "orc_clans": {
+    "warborn_marauders": {
       "version": "1.0",
-      "name": "Orc Clans",
-      "id": "orc_clans",
-      "url": "orc_clans.json",
+      "name": "Warborn Marauders",
+      "id": "warborn_marauders",
+      "url": "warborn_marauders.json",
       "alliance": "destruction",
       "color": "#50974A",
-      "description": "The Orc Clans are a mostly disconnected species of clans who are constantly at war with others and each other. The Orc Clans rely on massive all-out assaults and cobbled-together technology and vehicles to outlast and overwhelm their foes."
+      "description": "The Warborn Marauders are a mostly disconnected species of orc clans who are constantly at war with others and each other. The Warborn Marauders rely on massive all-out assaults and cobbled-together technology and vehicles to outlast and overwhelm their foes."
     },
     "imperial_inquisition": {
       "version": "1.0",
