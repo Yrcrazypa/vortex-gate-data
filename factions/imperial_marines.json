@@ -642,8 +642,7 @@
         },
         {"addWeapon": "grenade_launcher_attachment", "modelLimit": "1/5"},
         {"addRule": "shield"},
-        {"addRule": "multi_scanner", "modelLimit": 1},
-        {"addRule": "medic_squad", "modelLimit": 1}
+        {"addRule": "multi_scanner", "modelLimit": 1}
       ]
     },
     "assault_squad": {
@@ -689,8 +688,7 @@
         {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"], "modelLimit": "1/5"},
         {"addWeapon": "grenade_launcher_attachment", "subfactions": ["assault_focus"]},
         {"addRule": "shield"},
-        {"addRule": "multi_scanner", "modelLimit": 1},
-        {"addRule": "medic_squad", "modelLimit": 1}
+        {"addRule": "multi_scanner", "modelLimit": 1}
       ]
     },
     "scout_marines": {
@@ -832,8 +830,7 @@
             {"addWeapon": "grenade_launcher_attachment", "subfactions": ["assault_focus"]},
             {"addRule": ["shield"]},
             {"addRule": ["jetpack"], "modelLimit": "all"},
-            {"addRule": "multi_scanner", "modelLimit": 1},
-            {"addRule": "medic_squad", "modelLimit": 1}
+            {"addRule": "multi_scanner", "modelLimit": 1}
           ],
           "min": 5,
           "max": 20
@@ -859,8 +856,7 @@
             {"replaceWeapon": [{"id": "marine_pistol", "count": 2}], "withWeapon": ["hazard_flamethrower", "hazard_launcher", "fusion_rifle", "gravity_rifle", "hazard_blaster"]},
             {"addRule": ["jetpack"], "modelLimit": "all"},
             {"addRule": ["shield"]},
-            {"addRule": "multi_scanner", "modelLimit": 1},
-            {"addRule": "medic_squad", "modelLimit": 1}
+            {"addRule": "multi_scanner", "modelLimit": 1}
           ],
           "min": 5,
           "max": 10
