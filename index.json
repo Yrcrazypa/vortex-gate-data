@@ -82,30 +82,30 @@
       "alliance": "destruction",
       "description": "The Darkstar Pillagers are a group of elves who have an obsession with raiding settlements for plunder. Their tactics revolve around attacking quickly with highly agile ships and doing damage after which they quickly escape."
     },
-    "alien_swarm": {
+    "abyssal_hive": {
       "version": "1.0",
-      "name": "Alien Swarm",
-      "id": "alien_swarm",
-      "url": "alien_swarm.json",
+      "name": "Abyssal Hive",
+      "id": "abyssal_hive",
+      "url": "abyssal_hive.json",
       "color": "#3d3354",
       "alliance": "doom",
       "description": "A swarm of aliens from far-away systems controlled by an ancient hive mind. They feast on other species, absorbing their biomass to turn into more of their kind. They have a combination of deadly creatures and swarms of agile aliens to defeat their foes."
     },
-    "alien_cults": {
+    "abyssal_cults": {
       "version": "1.0",
-      "name": "Alien Cults",
-      "id": "alien_cults",
-      "url": "alien_cults.json",
+      "name": "Abyssal Cults",
+      "id": "abyssal_cults",
+      "url": "abyssal_cults.json",
       "color": "#606060",
       "secondary_color": "#7d0a15",
       "alliance": "doom",
       "description": "The Alien Cults are a loose band of alien worshippers who have been infiltrated by an Alien Swarm. They form on unsuspecting planets and eventually grow strong enough to take control. Alien Cults use a mix of hybrid alien creatures and scavenged weapons along with guerilla tactics."
     },
-    "abyss_daemons": {
+    "vortexspawn_horrors": {
       "version": "1.0",
-      "name": "Demons of the Abyss",
-      "id": "abyss_daemons",
-      "url": "abyss_daemons.json",
+      "name": "Vortexspawn Horrors",
+      "id": "vortexspawn_horrors",
+      "url": "vortexspawn_horrors.json",
       "color": "#B52E1F",
       "alliance": "doom",
       "description": "Demonic entities from another dimension, causing havoc in the name of their infernal masters."
@@ -166,14 +166,14 @@
       "alliance": "order",
       "description": "The Faith Wardens are a sect of the mankind which have a uniquely faithful and religious background. The Faith Wardens rely on prayer and faith in their holy symbols along with some good old fashioned holy fire to defeat their enemies."
     },
-    "machine_guilds": {
+    "steamforge_artisans": {
       "version": "1.0",
-      "name": "Machine Guilds",
-      "id": "machine_guilds",
-      "url": "machine_guilds.json",
+      "name": "Steamforge Artisans",
+      "id": "steamforge_artisans",
+      "url": "steamforge_artisans.json",
       "color": "#9a1115",
       "alliance": "order",
-      "description": "The Machine Guilds are a unique group of several different but organized planets which create and maintain all sort sof wild war machines and contraptions. The Machine Guilds rely on technological augmentation and deadly weapons to destroy their enemies."
+      "description": "The Steamforge Artisans are a unique group of several different but organized planets which create and maintain all sort sof wild war machines and contraptions. The Steamforge Artisans rely on technological augmentation and deadly weapons to destroy their enemies."
     },
     "planetary_defense_force": {
       "version": "1.0",
@@ -201,6 +201,16 @@
       "alliance": "destruction",
       "color": "#50974A",
       "description": "The Warborn Marauders are a mostly disconnected species of orc clans who are constantly at war with others and each other. The Warborn Marauders rely on massive all-out assaults and cobbled-together technology and vehicles to outlast and overwhelm their foes."
+    },
+    "celestial_praetorians": {
+      "version": "1.0",
+      "name": "Celestial Praetorians",
+      "id": "celestial_praetorians",
+      "url": "celestial_praetorians.json",
+      "color": "#7d0a15",
+      "secondary_color": "#010203",
+      "alliance": "order",
+      "description": "The Celestial Praetorians are a highly elite force of human soldiers chosen from the most highly skilled members of nearby worlds. They excel at hand to hand combat and bring a retinue of specialists to help support their small numbers."
     },
     "imperial_inquisition": {
       "version": "1.0",

@@ -1,15 +1,15 @@
 {
-  "id": "abyss_daemons",
-  "name": "Daemons of the Abyss",
-  "author": "Valgaav#9072",
+  "id": "vortexspawn_horrors",
+  "name": "Vortexspawn Horrors",
+  "author": "guitarninja",
   "units": {
     "abyssal_champion": {
-      "name": "Abyssal Champion",
+      "name": "Vortex Champion",
       "description": "A demonic lord, commanding their warband.",
       "category": "hero",
       "models": [
         {
-          "name": "Abyssal Champion",
+          "name": "Vortex Champion",
           "movement": 6,
           "courage": 7,
           "shoot": 5,
@@ -30,14 +30,14 @@
       ]
     },
     "abyssal_champion_on_warbeast": {
-      "name": "Abyssal Champion on Warbeast",
+      "name": "Vortex Champion on Warbeast",
       "description": "A demonic lord, commanding their warband atop an unstoppable beast.",
       "category": "hero",
       "subfactions": ["assault_focus"],
       "keywords": ["Cavalry"],
       "models": [
         {
-          "name": "Abyssal Champion on Warbeast",
+          "name": "Vortex Champion on Warbeast",
           "movement": 8,
           "courage": 7,
           "shoot": 5,
@@ -56,13 +56,13 @@
       ]
     },
     "abyssal_champion_mount": {
-      "name": "Abyssal Champion on Infernal Steed",
+      "name": "Vortex Champion on Infernal Steed",
       "description": "A demonic lord, commanding their warband atop a loyal mount.",
       "category": "hero",
       "keywords": ["Cavalry"],
       "models": [
         {
-          "name": "Abyssal Champion on Infernal Steed",
+          "name": "Vortex Champion on Infernal Steed",
           "movement": 8,
           "courage": 7,
           "shoot": 5,
@@ -82,13 +82,13 @@
       ]
     },
     "abyssal__champion_chariot": {
-      "name": "Abyssal Champion on Chariot",
+      "name": "Vortex Champion on Chariot",
       "description": "A demonic leader, commanding their warband atop a demonic chariot.",
       "category": "hero",
       "keywords": ["Vehicle"],
       "models": [
         {
-          "name": "Abyssal Champion on Chariot",
+          "name": "Vortex Champion on Chariot",
           "movement": 10,
           "courage": 5,
           "shoot": 5,
@@ -108,12 +108,12 @@
       ]
     },
     "abyssal_sorcerer": {
-      "name": "Abyssal Sorcerer",
+      "name": "Vortex Sorcerer",
       "description": "A demonic mage using infernal magic.",
       "category": "hero",
       "models": [
         {
-          "name": "Abyssal Sorcerer",
+          "name": "Vortex Sorcerer",
           "movement": 6,
           "courage": 6,
           "shoot": 5,
@@ -133,13 +133,13 @@
       ]
     },
     "abyssal_sorcerer_mount": {
-      "name": "Abyssal Sorcerer on Infernal Steed",
+      "name": "Vortex Sorcerer on Infernal Steed",
       "description": "A demonic mage using infernal magic atop a loyal mount.",
       "category": "hero",
       "keywords": ["Cavalry"],
       "models": [
         {
-          "name": "Abyssal Sorcerer on Infernal Steed",
+          "name": "Vortex Sorcerer on Infernal Steed",
           "movement": 8,
           "courage": 6,
           "shoot": 5,
@@ -155,13 +155,13 @@
       ]
     },
     "abyssal_sorcerer_chariot": {
-      "name": "Abyssal Sorcerer on Chariot",
+      "name": "Vortex Sorcerer on Chariot",
       "description": "A demonic mage using infernal magic atop a demonic chariot.",
       "category": "hero",
       "keywords": ["Vehicle"],
       "models": [
         {
-          "name": "Abyssal Sorcerer on Chariot",
+          "name": "Vortex Sorcerer on Chariot",
           "movement": 10,
           "courage": 5,
           "shoot": 5,
@@ -203,13 +203,13 @@
       ]
     },
     "greater_abyssal": {
-      "name": "Greater Abyssal",
+      "name": "Greater Vortex",
       "description": "Gigantic commanders of the abyssal forces.",
       "category": "hero",
       "keywords": ["Monster"],
       "models": [
         {
-          "name": "Greater Abyssal",
+          "name": "Greater Vortex",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
@@ -232,12 +232,12 @@
       ]
     },
     "lesser_abyssals": {
-      "name": "Lesser Abyssals",
+      "name": "Lesser Vortexs",
       "description": "The most common of the demonic warriors, swarming the battlefield in great numbers.",
       "category": "core",
       "models": [
         {
-          "name": "Lesser Abyssal",
+          "name": "Lesser Vortex",
           "movement": 6,
           "courage": 5,
           "shoot": 5,
@@ -253,14 +253,14 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "lesser_abyssals_warbeast": {
-      "name": "Lesser Abyssals on Warbeasts",
+      "name": "Lesser Vortexs on Warbeasts",
       "description": "A swarm of lesser demons riding atop unstoppable beasts.",
       "category": "elite",
       "subfactions": ["assault_focus"],
       "keywords": ["Cavalry"],
       "models": [
         {
-          "name": "Lesser Abyssal on Warbeast",
+          "name": "Lesser Vortex on Warbeast",
           "movement": 8,
           "courage": 5,
           "shoot": 5,
@@ -277,20 +277,20 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "flying_abyssals": {
-      "name": "Flying Abyssals",
+      "name": "Flying Vortexs",
       "description": "Vicious flying predators of the Abyss.",
       "category": "elite",
       "models": [
-        {"name": "Flying Abyssal", "movement": 8, "courage": 5, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["fangs_and_teeth"], "rules": ["fear", "fly"], "min": 5, "max": 15}
+        {"name": "Flying Vortex", "movement": 8, "courage": 5, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["fangs_and_teeth"], "rules": ["fear", "fly"], "min": 5, "max": 15}
       ]
     },
     "abyssal_guard": {
-      "name": "Abyssal Guard",
+      "name": "Vortex Guard",
       "description": "Powerful and well-equipped elite warriors.",
       "category": "core",
       "models": [
         {
-          "name": "Abyssal Guard",
+          "name": "Vortex Guard",
           "movement": 6,
           "courage": 6,
           "shoot": 5,
@@ -306,20 +306,20 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "abyssal_hounds": {
-      "name": "Abyssal Hounds",
+      "name": "Vortex Hounds",
       "description": "Demonic hounds that hunt in large packs.",
       "category": "elite",
       "keywords": ["Beast"],
-      "models": [{"name": "Abyssal Hound", "movement": 7, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 6, "weapons": [{"id": "fangs_and_teeth", "count": 2}], "min": 5, "max": 10}]
+      "models": [{"name": "Vortex Hound", "movement": 7, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 6, "weapons": [{"id": "fangs_and_teeth", "count": 2}], "min": 5, "max": 10}]
     },
     "abyssal_cavalry": {
-      "name": "Abyssal Cavalry",
+      "name": "Vortex Cavalry",
       "description": "A horde of demonic riders.",
       "category": "elite",
       "keywords": ["Cavalry"],
       "models": [
         {
-          "name": "Abyssal Cavalry",
+          "name": "Vortex Cavalry",
           "movement": 8,
           "courage": 5,
           "shoot": 5,
@@ -339,12 +339,12 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "exalted_abyssals": {
-      "name": "Exalted Abyssals",
+      "name": "Exalted Vortexs",
       "description": "Massive warriors of the abyss, these demons rend apart their enemies with ease.",
       "category": "elite",
       "models": [
         {
-          "name": "Exalted Abyssal",
+          "name": "Exalted Vortex",
           "movement": 6,
           "courage": 6,
           "shoot": 5,
@@ -361,13 +361,13 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "exalted_cavalry": {
-      "name": "Exalted Abyssal Cavalry",
+      "name": "Exalted Vortex Cavalry",
       "description": "A horde of elite demonic riders.",
       "category": "elite",
       "keywords": ["Cavalry"],
       "models": [
         {
-          "name": "Exalted Abyssal Cavalry",
+          "name": "Exalted Vortex Cavalry",
           "movement": 8,
           "courage": 6,
           "shoot": 5,
@@ -384,13 +384,13 @@
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "abyssal_chariot": {
-      "name": "Abyssal Chariot",
+      "name": "Vortex Chariot",
       "description": "A demonic chariot.",
       "category": "elite",
       "keywords": ["Vehicle"],
       "models": [
         {
-          "name": "Abyssal Chariot",
+          "name": "Vortex Chariot",
           "movement": 10,
           "courage": 5,
           "shoot": 5,
