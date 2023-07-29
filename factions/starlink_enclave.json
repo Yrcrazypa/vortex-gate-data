@@ -1,8 +1,8 @@
 {
-  "id": "free_colonies",
-  "name": "Free Colonies",
+  "id": "starlink_enclave",
+  "name": "Starlink Enclave",
   "author": "guitarninja",
-  "background": "The Free Colonies are a group of cooperating aliens and explorers expanding their influence throughout the stars. Their primary fighting style involves a combined arms assault of mechanized infantry, flying battlesuits and high-tech infantry.",
+  "lore": "In the distant future, when the universe had become a tapestry of interconnected civilizations, the Starlink Enclave emerged as a beacon of unity and exploration among alien species. As the ancient conflicts of old were replaced by an era of cooperation and understanding, the Starlink Enclave stood as a testament to the potential for harmony among the stars.\n\nThe origins of the Starlink Enclave can be traced back to a historic meeting of representatives from various advanced alien civilizations. These beings, hailing from different corners of the cosmos, shared a common vision of a future where cooperation and discovery would replace strife and isolation. They sought to unite their knowledge, technologies, and aspirations, pooling their collective wisdom to expand their influence throughout the stars.\n\nForming a grand council known as the Starlink Assembly, the representatives created a charter that espoused the principles of peace, cooperation, and the pursuit of knowledge. Together, they pledged to share their advanced technologies, protect one another from threats, and explore the vast unknowns of the cosmos as a united force.\n\nThe Starlink Enclave's home world, called Astoria Prime, became the central hub of their society, a place where beings of all shapes and forms could come together to exchange ideas, forge alliances, and embark on joint ventures. Astoria Prime was designed as a beacon of inclusivity and progress, with towering spires and advanced infrastructure serving as a testament to their unity.\n\nThe Enclave's starships, equipped with state-of-the-art Starlink Drives, were capable of near-instantaneous travel between distant star systems. This technology allowed the Enclave to establish outposts, scientific research stations, and diplomatic embassies on far-flung worlds, promoting interstellar collaboration and cultural exchange.\n\nThe Starlink Enclave's pursuit of knowledge and exploration knew no bounds. They sought to unlock the mysteries of the cosmos, understand the fabric of space-time, and comprehend the origins of the universe. They were pioneers, adventurers, and scientists, always pushing the boundaries of what was known and embracing the thrill of discovery.\n\nThroughout their expansion, the Starlink Enclave encountered various alien civilizations, some friendly, and others less so. However, they always approached such encounters with diplomacy and a willingness to understand and respect the unique cultures they encountered.\n\nAs the influence of the Starlink Enclave spread, they became known as a stabilizing force in the universe, a symbol of cooperation and enlightenment. They offered assistance in times of crisis, acted as mediators in disputes, and provided aid to those in need.\n\nWhile they were not without challenges and occasional conflicts, the Starlink Enclave's commitment to their principles and their shared vision for a harmonious universe remained steadfast. Their presence, as a cooperative and benevolent society, inspired hope in many, serving as an example of the potential for interstellar unity among disparate species.\n\nAs they continue their journey among the stars, the Starlink Enclave's reach expands, their influence touching distant systems and fostering a future where alien beings work together in pursuit of a shared destiny. Their story remains one of unity, progress, and the boundless potential that comes from cooperation and exploration beyond the stars.",
   "units": {
     "battlesuit_commander": {
       "name": "Battlesuit Commander",
@@ -50,7 +50,7 @@
     },
     "celestial": {
       "name": "Celestial",
-      "description": "A high ranking Colony psychic.",
+      "description": "A high ranking Enclave psychic.",
       "category": "hero",
       "options": [{"addModel": ["gunner_drone", "shield_drone", "spotter_drone"], "modelLimit": 2}],
       "models": [
@@ -160,7 +160,7 @@
     },
     "militia_team": {
       "name": "Militia Team",
-      "description": "A squad of militia that have volunteered or have been pressed into Colony service.",
+      "description": "A squad of militia that have volunteered or have been pressed into Enclave service.",
       "category": "core",
       "options": [{"addModel": ["gunner_drone", "shield_drone", "spotter_drone"], "modelLimit": 2}, {"addModel": "support_turret"}],
       "models": [
@@ -818,11 +818,11 @@
     "energy_greatsword": {"name": "Energy Greatsword", "attacks": 1, "short": "Melee", "ap": 5},
     "amplified_pulse_rifle": {"name": "Amplified Pulse Rifle", "attacks": 1, "short": 24, "medium": 48, "ap": 3, "rules": ["rapid_fire"]},
     "stun_grenade_launcher_attachment": {
-      "name": "Colony Grenade Launcher Attachment",
+      "name": "Enclave Grenade Launcher Attachment",
       "profiles": [{"name": "Stun", "attacks": 1, "short": 6, "medium": 12, "rules": ["stun"]}, {"name": "AT", "attacks": 1, "short": 6, "medium": 12, "ap": 3}]
     },
     "stun_grenade_launcher": {
-      "name": "Colony Grenade Launcher",
+      "name": "Enclave Grenade Launcher",
       "profiles": [{"name": "Stun", "attacks": 1, "short": 12, "medium": 24, "rules": ["stun"]}, {"name": "AT", "attacks": 1, "short": 12, "medium": 24, "ap": 3}]
     },
     "tribal_rifle": {"name": "Tribal Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
@@ -903,7 +903,7 @@
     "preservation_protocols": {
       "name": "Preservation Protocols",
       "phase": "activation",
-      "flavor": "Colony drones are programmed to protect their creators at all costs.",
+      "flavor": "Enclave drones are programmed to protect their creators at all costs.",
       "description": "Use after an _Infantry_ or _Heavy Infantry_ unit has been hit by a ranged weapon. For this attack, you can roll a D10 each time an attack made with a ranged weapon hits that unit. If there is a friendly _Drone_ unit within 6\" of it, and the _Drone_ unit is closer to the attacking model than the target unit. On an 8 or less a hit is transferred to the _Drone_ unit instead of the original target.",
       "cost": 2
     },
@@ -911,7 +911,7 @@
       "phase": "activation",
       "name": "Danger Close",
       "description": "Use when shooting with an _Infantry_ unit. That unit may target enemies it is engaged with at -1 Accuracy.",
-      "flavor": "Colony troops are trained to use defensive tactics to protect themselves in close quarters.",
+      "flavor": "Enclave troops are trained to use defensive tactics to protect themselves in close quarters.",
       "cost": 1
     }
   },

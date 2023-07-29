@@ -128,14 +128,14 @@
       "description": "The Undying Machines are a race of once-people now cursed with unending machine immortality. They rely on waves of reanimating fighters and advanced ancient technology to win their battles.",
       "alliance": "death"
     },
-    "free_colonies": {
+    "starlink_enclave": {
       "version": "1.0",
       "alliance": "order",
-      "name": "Free Colonies",
-      "id": "free_colonies",
-      "url": "free_colonies.json",
+      "name": "Starlink Enclave",
+      "id": "starlink_enclave",
+      "url": "starlink_enclave.json",
       "color": "#008080",
-      "description": "The Free Colonies are an alliance of several alien worlds cooperating together in the name of survival and prosperity. They rely on a mix of advanced battle warsuits and deadly pulse weaponry to defeat their enemies."
+      "background": "The Starlink Enclave are a group of cooperating aliens and explorers expanding their influence throughout the stars. Their primary fighting style involves a combined arms assault of mechanized infantry, flying battlesuits and high-tech infantry."
     },
     "ascended_astroraptors": {
       "version": "1.0",
