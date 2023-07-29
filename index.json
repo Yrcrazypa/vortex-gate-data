@@ -8,7 +8,7 @@
       "url": "high_elves.json",
       "color": "#295788",
       "secondary_color": "#e8bb00",
-      "alliance": "elven_coaliation",
+      "alliance": "order",
       "description": "The High Elf Worlds are a group of large constructed fleet habitats. They focus on a mobile and deadly mix of advanced technology and unique fast tactics to achieve victory"
     },
     "dark_elves": {
@@ -17,7 +17,7 @@
       "id": "dark_elves",
       "url": "dark_elves.json",
       "color": "#0b474a",
-      "alliance": "elven_coaliation",
+      "alliance": "order",
       "description": "The Dark Elf Raiders are a group of elves who have an obsession with raiding settlements for plunder. Their tactics revolve around attacking quickly with highly agile ships and doing damage after which they quickly escape."
     },
     "alien_swarm": {
@@ -26,7 +26,7 @@
       "id": "alien_swarm",
       "url": "alien_swarm.json",
       "color": "#3d3354",
-      "alliance": "alien_swarm",
+      "alliance": "doom",
       "description": "A swarm of aliens from far-away systems controlled by an ancient hive mind. They feast on other species, absorbing their biomass to turn into more of their kind. They have a combination of deadly creatures and swarms of agile aliens to defeat their foes."
     },
     "alien_cults": {
@@ -36,7 +36,7 @@
       "url": "alien_cults.json",
       "color": "#606060",
       "secondary_color": "#7d0a15",
-      "alliance": "alien_swarm",
+      "alliance": "doom",
       "description": "The Alien Cults are a loose band of alien worshippers who have been infiltrated by an Alien Swarm. They form on unsuspecting planets and eventually grow strong enough to take control. Alien Cults use a mix of hybrid alien creatures and scavenged weapons along with guerilla tactics."
     },
     "abyss_daemons": {
@@ -45,7 +45,7 @@
       "id": "abyss_daemons",
       "url": "abyss_daemons.json",
       "color": "#B52E1F",
-      "alliance": "corrupted_pact",
+      "alliance": "doom",
       "description": "Demonic entities from another dimension, causing havoc in the name of their infernal masters."
     },
     "corrupted_marines": {
@@ -54,7 +54,7 @@
       "id": "corrupted_marines",
       "url": "corrupted_marines.json",
       "color": "#343a40",
-      "alliance": "corrupted_pact",
+      "alliance": "doom",
       "description": "The corrupted marines are a band of marines that betrayed the Human Empire and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry."
     },
     "traitor_defense_force": {
@@ -64,7 +64,7 @@
       "url": "traitor_defense_force.json",
       "color": "#ba7f00",
       "secondary_color": "#343a40",
-      "alliance": "corrupted_pact",
+      "alliance": "doom",
       "description": "The corrupted defense force are a band of deserters and other folks out for their own interests. They have gathered much of what they can from the Imperial Defense Force and now fight with the traitors against those that stay loyal."
     },
     "undying_machines": {
@@ -74,11 +74,11 @@
       "url": "undying_machines.json",
       "color": "#1e7331",
       "description": "The Undying Machines are a race of once-people now cursed with unending machine immortality. They rely on waves of reanimating fighters and advanced ancient technology to win their battles.",
-      "alliance": "corrupted_pact"
+      "alliance": "death"
     },
     "free_colonies": {
       "version": "1.0",
-      "alliance": "federation",
+      "alliance": "order",
       "name": "Free Colonies",
       "id": "free_colonies",
       "url": "free_colonies.json",
@@ -87,7 +87,7 @@
     },
     "ascended_astroraptors": {
       "version": "1.0",
-      "alliance": "federation",
+      "alliance": "order",
       "name": "Ascended Astro-Raptors",
       "id": "ascended_astroraptors",
       "url": "ascended_astroraptors.json",
@@ -111,7 +111,7 @@
       "url": "faith_wardens.json",
       "color": "#383838",
       "secondary_color": "#9a1115",
-      "alliance": "imperial_alliance",
+      "alliance": "order",
       "description": "The Faith Wardens are a sect of the Human Empire which have a uniquely faithful and religious background. The Faith Wardens rely on prayer and faith in their holy symbols along with some good old fashioned holy fire to defeat their enemies."
     },
     "machine_guilds": {
@@ -120,7 +120,7 @@
       "id": "machine_guilds",
       "url": "machine_guilds.json",
       "color": "#9a1115",
-      "alliance": "imperial_alliance",
+      "alliance": "order",
       "description": "The Machine Guilds are a unique group of several different but organized planets which create and maintain all sort sof wild war machines and contraptions. The Machine Guilds rely on technological augmentation and deadly weapons to destroy their enemies."
     },
     "imperial_defense_force": {
@@ -129,7 +129,7 @@
       "id": "imperial_defense_force",
       "url": "imperial_defense_force.json",
       "color": "#314821",
-      "alliance": "imperial_alliance",
+      "alliance": "order",
       "description": "The Imperial Defense Force is the backbone defense force of the many civilian planets of the empire. They are the first to respond to any miliary threats. They rely on hardy battle tanks and good old artillery shells along with waves of human fighters to defend the Empire."
     },
     "imperial_marines": {
@@ -138,7 +138,7 @@
       "id": "imperial_marines",
       "url": "imperial_marines.json",
       "color": "#0d407f",
-      "alliance": "imperial_alliance",
+      "alliance": "order",
       "description": "The Imperial Marines are the pride of the Human Empire and its elite order-keeping force should they need to be deployed. The Imperial Marines rely on tough infantry and somewhat advanced vehicle technology to outsmart and eliminate their enemies."
     },
     "throne_guardians": {
@@ -148,7 +148,7 @@
       "url": "throne_guardians.json",
       "color": "#D4AF37",
       "secondary_color": "#7d0a15",
-      "alliance": "imperial_alliance",
+      "alliance": "order",
       "description": "The Throne Guardians are the defenders of the Human Empire's capital. Only the most elite Imperial Marines are recruited to be Throne Guardians and with that they are the most well-trained. The Throne Guardians rely on the most elite and well-trained infantry along with powerful and ancient war weaponry to defend their home planet."
     },
     "orc_clans": {
@@ -156,7 +156,7 @@
       "name": "Orc Clans",
       "id": "orc_clans",
       "url": "orc_clans.json",
-      "alliance": "greenskins",
+      "alliance": "destruction",
       "color": "#50974A",
       "description": "The Orc Clans are a mostly disconnected species of clans who are constantly at war with others and each other. The Orc Clans rely on massive all-out assaults and cobbled-together technology and vehicles to outlast and overwhelm their foes."
     },
@@ -167,7 +167,7 @@
       "url": "imperial_inquisition.json",
       "color": "#7d0a15",
       "secondary_color": "#010203",
-      "alliance": "imperial_alliance",
+      "alliance": "order",
       "description": "The Imperial Inquisition is the order dedicated to hunting dangerous demons and other Psychic entities which cannot be trusted in the Human Empire. Their tactics rely on using skilled demon hunting individuals along with advanced assassins to hunt and destroy those who most dangerous."
     },
     "forge_masters": {
@@ -296,17 +296,11 @@
     "morale_focus": {"name": "Morale", "id": "morale_focus", "description": "A focus on morale and battle awareness."}
   },
   "alliances": {
-    "alien_swarm": {"name": "Alien Swarm"},
-    "imperial_alliance": {"name": "Imperial Alliance"},
-    "elven_coaliation": {"name": "Elven Coalition"},
-    "corrupted_pact": {"name": "Corrupted Pact"},
-    "federation": {"name": "Federated Species"},
-    "greenskins": {"name": "Greenskin Tribes"},
-    "mercenaries": {"name": "Mercenaries"},
     "death": {"name": "Bringers of Death"},
     "destruction": {"name": "Forces of Destruction"},
     "order": {"name": "Keepers of Order"},
-    "doom": {"name": "Instruments of Doom"}
+    "doom": {"name": "Instruments of Doom"},
+    "mercenaries": {"name": "Mercenaries"}
   },
   "categories": {"hero": {"name": "Hero"}, "core": {"name": "Core"}, "elite": {"name": "Elite"}, "rare": {"name": "Rare"}, "fortification": {"name": "Fortification"}},
   "organizations": {
