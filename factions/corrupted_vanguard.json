@@ -1,12 +1,8 @@
 {
-  "id": "corrupted_marines",
-  "name": "Corrupted Marines",
-  "author": "Caliallie#6369",
-  "hidden_subfactions": {
-    "assault_focus": {"name": "Assault", "id": "assault_focus", "color": "#18abcc"},
-    "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "color": "#18abcc"},
-    "morale_focus": {"name": "Morale", "id": "morale_focus", "color": "#18abcc"}
-  },
+  "id": "corrupted_vanguard",
+  "name": "Corrupted Vanguard",
+  "author": "guitarninja",
+  "lore": "In the center of the galaxy lies a cosmic anomaly known as the Vortex Gate, a swirling maelstrom of energy and power that defies comprehension. The Stellar Vanguard, humanity's elite interplanetary marines, once stood as protectors of peace and justice, defending the far reaches of the cosmos from threats both internal and external.\n\nUnaware of the malevolent forces lurking within the Vortex Gate, the Vanguard embarked on a daring mission to investigate its mysteries. They believed that understanding and harnessing its energy could grant them an unprecedented advantage in defending the universe. Led by their most skilled and revered commander, Captain Talvar Thorne, they approached the Vortex Gate with caution and determination.\n\nAs the Stellar Vanguard drew near the enigmatic gateway, they were engulfed by its powerful currents. The energies within the gate were not of this reality, and its dark tendrils reached into their souls, seeking vulnerabilities to exploit. Unprepared for the sheer malevolence they encountered, the Vanguard's minds and spirits were overwhelmed by the chaotic forces within the Vortex Gate.\n\nThe once-honorable and valiant marines were twisted and corrupted by the malevolent energies. Their eyes glowed with an eerie, ominous light, and their once-dignified armor became tainted with dark, swirling patterns. The Stellar Vanguard had been transformed into something entirely different – the Corrupted Vanguard.\n\nTheir loyalty to mankind was replaced with an insatiable desire for power and control. Their purpose shifted from protecting the innocent to seeking dominion over all they encountered. The corrupted energies amplified their physical abilities and granted them sinister new powers, which they used to subjugate other civilizations, planets, and even their former comrades.\n\nCaptain Alexia Hartwell, once the pinnacle of leadership and valor, became the malevolent Sovereign of the Corrupted Vanguard. Under her command, the Corrupted Vanguard sought to spread darkness and chaos throughout the cosmos. They attacked the very worlds they once vowed to protect, causing devastation and fear wherever they went.\n\nThe corruption within the Vortex Gate had transformed the Stellar Vanguard into relentless and merciless beings, fueled by an insatiable hunger for power. Their dark and ominous presence became a harbinger of doom, and their conquests left a trail of suffering and destruction in their wake.\n\nTheir sinister legacy spread like a plague, and the galaxy recoiled in horror at the once-heroic Stellar Vanguard's transformation. The Corrupted Vanguard became the embodiment of fear and malevolence, shrouded in legend and whispered warnings to those who dared to venture near the Vortex Gate.\n\nWhile the Stellar Vanguard's fall was a devastating tragedy, there were those who believed that redemption was still possible. A secret resistance group, comprised of individuals from various species, emerged to challenge the Corrupted Vanguard and free their former comrades from the dark grip of the Vortex Gate.\n\nThe conflict between the Corrupted Vanguard and the resistance waged on, spanning worlds and dimensions. It was a battle of epic proportions, where the forces of darkness sought to engulf the universe in eternal night, while the resistance fought to restore the once-heroic legacy of the Stellar Vanguard.\n\nIn the heart of the galaxy, the Vortex Gate stood as a constant reminder of the corruption that had befallen the Stellar Vanguard. The fate of the cosmos hung in the balance as the battle between light and shadow raged on, a testament to the enduring power of darkness and the indomitable spirit of those who fought to reclaim their fallen comrades from the abyss.",
   "units": {
     "corrupted_warmaster": {
       "name": "Corrupted Arch-Marine of War",
@@ -1339,7 +1335,7 @@
     },
     "corrupted_devastators": {
       "name": "Corrupted Devastators",
-      "description": "A squad of highly trained corrupted marines armed to the teeth with advanced weaponry.",
+      "description": "A squad of highly trained corrupted vanguard armed to the teeth with advanced weaponry.",
       "category": "elite",
       "options": [{"replaceWeapon": "plasma_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "thermal_rifle"]}, {"addRule": "shield"}],
       "models": [
@@ -1376,7 +1372,7 @@
     },
     "corrupted_heavy_devastators": {
       "name": "Corrupted Heavy Devastators",
-      "description": "A squad of highly trained corrupted marines armed to the teeth with advanced weaponry.",
+      "description": "A squad of highly trained corrupted vanguard armed to the teeth with advanced weaponry.",
       "category": "rare",
       "options": [
         {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["heavy_machinegun", "autocannon", "missile_launcher", "gatling_gun", "plasma_cannon", "fusion_cannon", "laser_cannon", "thermal_lance"]},
@@ -1416,7 +1412,7 @@
     },
     "possessed_marines": {
       "name": "Possessed Marines",
-      "description": "A squad of corrupted marines that have been gifted with demonic mutations to aid them in battle.",
+      "description": "A squad of corrupted vanguard that have been gifted with demonic mutations to aid them in battle.",
       "category": "elite",
       "models": [
         {
@@ -1437,7 +1433,7 @@
     },
     "greater_possessed_marines": {
       "name": "Greater Possessed Marines",
-      "description": "A squad of corrupted marines that have been gifted with greater demonic mutations to aid them in battle.",
+      "description": "A squad of corrupted vanguard that have been gifted with greater demonic mutations to aid them in battle.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "models": [
@@ -1478,7 +1474,7 @@
     },
     "talon_raptors": {
       "name": "Talon Raptors",
-      "description": "A squad of elite corrupted marines jumping into the fray with a jetpack.",
+      "description": "A squad of elite corrupted vanguard jumping into the fray with a jetpack.",
       "category": "elite",
       "rules": ["ambush", "fly", "fear"],
       "options": [
@@ -1650,7 +1646,7 @@
     },
     "corrupted_apc": {
       "name": "Corrupted APC",
-      "description": "A durable transport built by corrupted marines.",
+      "description": "A durable transport built by corrupted vanguard.",
       "category": "transport",
       "keywords": ["Vehicle"],
       "models": [
@@ -1688,7 +1684,7 @@
     },
     "corrrupted_battle_tank": {
       "name": "Corrupted Battle Tank",
-      "description": "An armored tank helmed by corrupted marines.",
+      "description": "An armored tank helmed by corrupted vanguard.",
       "category": "rare",
       "keywords": ["Vehicle", "Tank"],
       "models": [
@@ -2062,7 +2058,7 @@
     "hate": {
       "name": "Hate",
       "phase": "activation",
-      "flavor": "Full with fury, corrupted marines can launch devastating close combat assaults.",
+      "flavor": "Full with fury, corrupted vanguard can launch devastating close combat assaults.",
       "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
       "cost": 1
     },

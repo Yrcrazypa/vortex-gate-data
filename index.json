@@ -110,14 +110,14 @@
       "alliance": "doom",
       "description": "Demonic entities from another dimension, causing havoc in the name of their infernal masters."
     },
-    "corrupted_marines": {
+    "corrupted_vanguard": {
       "version": "1.0",
-      "name": "Corrupted Marines",
-      "id": "corrupted_marines",
-      "url": "corrupted_marines.json",
+      "name": "Corrupted Vanguard",
+      "id": "corrupted_vanguard",
+      "url": "corrupted_vanguard.json",
       "color": "#343a40",
       "alliance": "doom",
-      "description": "The corrupted marines are a band of marines that betrayed the Human Empire and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry."
+      "description": "The corrupted vanguard are a band of marines that betrayed the mankind and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry."
     },
     "undying_machines": {
       "version": "1.0",
@@ -164,7 +164,7 @@
       "color": "#383838",
       "secondary_color": "#9a1115",
       "alliance": "order",
-      "description": "The Faith Wardens are a sect of the Human Empire which have a uniquely faithful and religious background. The Faith Wardens rely on prayer and faith in their holy symbols along with some good old fashioned holy fire to defeat their enemies."
+      "description": "The Faith Wardens are a sect of the mankind which have a uniquely faithful and religious background. The Faith Wardens rely on prayer and faith in their holy symbols along with some good old fashioned holy fire to defeat their enemies."
     },
     "machine_guilds": {
       "version": "1.0",
@@ -210,7 +210,7 @@
       "color": "#7d0a15",
       "secondary_color": "#010203",
       "alliance": "order",
-      "description": "The Imperial Agencies is the order dedicated to hunting dangerous demons and other Psychic entities which cannot be trusted in the Human Empire. Their tactics rely on using skilled demon hunting individuals along with advanced assassins to hunt and destroy those who most dangerous."
+      "description": "The Imperial Agencies is the order dedicated to hunting dangerous demons and other Psychic entities which cannot be trusted in the mankind. Their tactics rely on using skilled demon hunting individuals along with advanced assassins to hunt and destroy those who most dangerous."
     },
     "forge_masters": {
       "version": "1.0",
