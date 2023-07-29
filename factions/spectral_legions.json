@@ -3,10 +3,11 @@
   "id": "spectral_legions",
   "author": "guitarninja#5707",
   "color": "#4C838A",
+  "lore": "On the planet of Eldoria, an ancient and mystical civilization once thrived. The land was blessed with abundant magic, and its people lived in harmony with the natural world. However, their prosperity bred arrogance and complacency among the ruling elite. The powerful Council of Elders grew corrupt and sought to dominate not only their own people but neighboring planets as well.\n\nAs their tyranny spread, a group of brave and righteous warriors, known as the planet, rose to challenge the Council's oppressive rule. These valiant defenders were skilled in both martial combat and the arts of magic, and they were beloved by the common folk for their selflessness and compassion.\n\nThe Council of Elders, threatened by the Guardians' growing influence, devised a sinister plan to eliminate them. They employed dark sorcery to summon malevolent spirits from the Veil of Eternity – a planet between life and death. These spirits were those who had died with deep resentments, unresolved hatred, and an unyielding desire for vengeance.\n\nIn the dark rituals conducted by the Council, they bound these malevolent spirits to serve as their spectral army. Thus, the Spectral Legions were born – an army of tormented souls who refused to pass on to the afterlife, their identities long lost, replaced by a shared hunger for vengeance against the Storm Wardens.\n\nThe Spectral Legions emerged from the shadows as a haunting force, their ethereal forms wrapped in tattered shrouds of darkness. With sinister glows in their eyes and ghostly wails echoing through the night, they became feared throughout Eldoria.\n\nTheir primary objective was to eradicate the Guardians and anyone who dared to stand against the Council of Elders. Guided by the malevolent sorcerers, the Spectral Legions unleashed terror and chaos, leaving destruction in their wake. They could phase through walls and fade from sight, making them elusive and formidable foes.\n\nAs the conflict intensified, the Spectral Legions began to take on new attributes from their dark enchantments. They became more malevolent, seeking not only vengeance against the Guardians but also the subjugation of the entire planet. With each victory, their malevolence grew stronger, feeding on the fear and despair of those they terrorized.\n\nThe once-beautiful planet of Eldoria was now consumed by darkness, with the Spectral Legions serving as the harbingers of the Council's malevolent reign. The Storm Wardens were pushed to the brink of defeat, fighting valiantly to protect what remained of their homeland.\n\nIn the darkest hour, a prophecy emerged, foretelling the coming of a hero who would possess the power to break the dark enchantments and release the Spectral Legions from their torment. The Storm Wardens and the resistance fighters sought out this savior, hoping for a chance to end the tyranny and restore peace to Eldoria.\n\nThe fate of Eldoria hung in the balance as the Spectral Legions clashed with the Guardians and the hero destined to challenge their dark purpose. The epic struggle between light and shadow would determine the future of the planet, as the Spectral Legions fought with relentless fury, haunted by the very darkness that bound them to their malevolent existence.",
   "units": {
     "shrouded_noble": {
       "name": "Shrouded Noble",
-      "description": "Once a minor noble of the realm, now nothing more than a spiteful revenant seeking to drain the life from the living.",
+      "description": "Once a minor noble of the planet, now nothing more than a spiteful revenant seeking to drain the life from the living.",
       "category": "hero",
       "models": [
         {
@@ -33,7 +34,7 @@
     },
     "shrouded_noble_on_horse": {
       "name": "Shrouded Noble on Ghost Horse",
-      "description": "Once a minor noble of the realm, now nothing more than a spiteful revenant mounted on a cursed spirit-mare.",
+      "description": "Once a minor noble of the planet, now nothing more than a spiteful revenant mounted on a cursed spirit-mare.",
       "category": "hero",
       "keywords": ["Cavalry"],
       "models": [
@@ -61,7 +62,7 @@
     },
     "shrouded_noble_on_chariot": {
       "name": "Shrouded Noble on Ghostly Chariot",
-      "description": "Once a minor noble of the realm, now nothing more than a spiteful revenant mounted on a ghastly chariot.",
+      "description": "Once a minor noble of the planet, now nothing more than a spiteful revenant mounted on a ghastly chariot.",
       "category": "hero",
       "keywords": ["Vehicle"],
       "models": [
@@ -89,7 +90,7 @@
     },
     "shrouded_king": {
       "name": "Shrouded King",
-      "description": "Once a hero of the realm, now nothing more than a spiteful revenant seeking to drain the life from the living.",
+      "description": "Once a hero of the planet, now nothing more than a spiteful revenant seeking to drain the life from the living.",
       "category": "hero",
       "models": [
         {
@@ -117,7 +118,7 @@
     },
     "shrouded_king_on_ghost_horse": {
       "name": "Shrouded King on Ghost Horse",
-      "description": "Once a hero of the realm, now nothing more than a spiteful revenant mounted on a cursed spirit-mare.",
+      "description": "Once a hero of the planet, now nothing more than a spiteful revenant mounted on a cursed spirit-mare.",
       "category": "hero",
       "keywords": ["Cavalry"],
       "models": [
@@ -146,7 +147,7 @@
     },
     "shrouded_king_on_chariot": {
       "name": "Shrouded King on Ghostly Chariot",
-      "description": "Once a hero of the realm, now nothing more than a spiteful revenant mounted on a ghastly chariot.",
+      "description": "Once a hero of the planet, now nothing more than a spiteful revenant mounted on a ghastly chariot.",
       "category": "hero",
       "keywords": ["Cavalry"],
       "models": [
@@ -356,7 +357,7 @@
       "name": "Flicker",
       "phase": "activation",
       "description": "Use when one of your units is targeted by an attack. Roll a die for each hit, on a 3 or less that hit is prevented.",
-      "flavor": "The ghastly hordes flicker between the realms, making lethal strikes fade through them with ease.",
+      "flavor": "The ghastly hordes flicker between the planets, making lethal strikes fade through them with ease.",
       "cost": 1
     },
     "fearless": {
