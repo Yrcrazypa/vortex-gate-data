@@ -22,7 +22,7 @@
             {"id": "inspiring", "x": "Infantry, Heavy Infantry"},
             {"id": "leader", "x": "Infantry, Heavy Infantry"},
             {"id": "limited", "x": 1},
-            {"id": "tactician", "x": "Infantry, Heavy Infantry"},
+            {"id": "epic_tactician", "x": "Infantry, Heavy Infantry"},
             {"id": "wounds", "x": 4}
           ],
           "weapons": ["arch_sword"],
@@ -448,7 +448,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["battle_prayer", "leader", {"id": "wounds", "x": 3}],
+          "rules": ["warrior", "leader", {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_grav", "combi_thermal", "marine_smg", "marine_dmr"]},
@@ -489,7 +489,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["battle_prayer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "rules": ["warrior", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_grav", "combi_thermal", "marine_smg", "marine_dmr"]},

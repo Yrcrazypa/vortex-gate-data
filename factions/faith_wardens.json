@@ -173,7 +173,7 @@
             "name": "Preacher Warden",
             "description": "A battlefield cleric chanting powerful blessings.",
             "category": "elite",
-            "rules": ["support", {"id": "wounds", "x": 2}, "battle_prayer"],
+            "rules": ["support", {"id": "wounds", "x": 2}, "warrior"],
             "models": [
                 {
                     "name": "Preacher Warden",

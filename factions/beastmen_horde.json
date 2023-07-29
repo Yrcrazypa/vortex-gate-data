@@ -459,8 +459,8 @@
     },
     {
       "name": "Dark Apostle",
-      "rule": "battle_prayer",
-      "description": "Upgrade one _Leader_ model with Battle Prayer.",
+      "rule": "warrior",
+      "description": "Upgrade one _Leader_ model with Warrior.",
       "flavor": "Those that pray to the dark gods reveive blessings beyond human comprehension.",
       "points": 10
     },

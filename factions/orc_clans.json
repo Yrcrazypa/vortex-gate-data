@@ -17,7 +17,7 @@
           "defense": 10,
           "reflexes": 7,
           "movement": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "grand_warlord_tactics", "x": 2}, "leader", {"id": "limited", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "epic_tactician", "x": 2}, "leader", {"id": "limited", "x": 1}],
           "weapons": ["grand_claw", "grand_carbine"],
           "min": 1,
           "max": 1
@@ -37,7 +37,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", "frags", {"id": "heavy_ccw", "count": 4}],
           "options": [
             {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
@@ -46,7 +46,7 @@
             {"addWeapon": ["attack_beast"]},
             {"addRule": [{"id": "defiant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1},
             {"addRule": [{"id": "icon", "x": "Infantry"}, "war_banner"], "limit": 1},
-            {"replaceRule": {"id": "orc_tactics", "x": 1}, "withRule": {"id": "orc_tactics", "x": 2}}
+            {"replaceRule": {"id": "warrior", "x": 1}, "withRule": {"id": "warrior", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -67,7 +67,7 @@
           "fight": 7,
           "defense": 9,
           "reflexes": 7,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", "frags", {"id": "heavy_ccw", "count": 4}, {"id": "twin_double_shotgun", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "double_shotgun"]},
@@ -85,7 +85,7 @@
                 {"id": "railgun", "mount": ["Front"]}
               ]
             },
-            {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
+            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -176,7 +176,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "rules": ["engineer", "leader", {"id": "wounds", "x": 3}],
+          "rules": ["engineer", "leader", {"id": "wounds", "x": 3}, "marksman"],
           "weapons": ["carbine", "frags", {"id": "heavy_ccw", "count": 2}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "plasma_rifle", "shock_gun", "rocket_launcher"]},
@@ -1686,19 +1686,7 @@
     "mini_claw": {"name": "Mini-Claw", "attacks": 1, "short": "Melee", "ap": 5}
   },
   "rules": {
-    "grand_warlord_tactics": {
-      "name": "Grand Warlord Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll all failed Accuracy tests \n * Re-roll all failed Strength tests",
-      "points": ["rule.x", {"multiply": 20}]
-    },
     "speed_pole": {"name": "Big Boss Pole", "description": "Friendly _Infantry_ units within 6\" add +1\" to their Movement characteristic.", "points": 5},
-    "orc_tactics": {
-      "name": "Orc Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Strength tests of 9+ \n * Re-roll failed Initiative tests of 9+",
-      "points": ["rule.x", {"multiply": 10}]
-    },
     "tracks": {"name": "Tracks", "description": "This unit may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 5},
     "goblin_assistant": {"name": "Goblin Assistant", "description": "Models in this unit gain +1 to their Repair rule for each model with this rule.", "points": 2},
     "orc_idol": {"name": "Orc Idol", "description": "This model and friendly _Infantry_ units within 6\" gain +1 Courage.", "points": 10},

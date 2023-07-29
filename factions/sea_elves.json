@@ -1,260 +1,260 @@
 {
-    "name": "Sea Elves",
-    "id": "sea_elves",
-    "author": "Xekon#8266",
-    "color": "#03414e",
-    "description": "Raising from the depths of the ocean, transmuted by ancient magic.",
-    "alliance": "order",
-    "units": {
-        "king_mount": {
-            "name": "Depthbound King on Moonlight Kelpie",
-            "description": "Riding a magical beast of the ocean into countless raids on the land dwellers.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Depthbound King on Moonlight Kelpie",
-                    "movement": 8,
-                    "courage": 7,
-                    "shoot": 7,
-                    "fight": 7,
-                    "defense": 8,
-                    "reflexes": 6,
-                    "weapons": [{"id": "grand_weapon", "count": 4}, {"id": "handweapon", "count": 3}, {"id": "claws", "count": 3}, {"id": "bite", "count": 3}],
-                    "options": [
-                        {"replaceWeapon": [{"id": "grand_weapon", "count": 4}], "withWeapon": [{"id": "great_polearm", "count": 4}]},
-                        {"replaceRule": [{"id": "ranger_tactics", "x": 1}], "withRule": [{"id": "ranger_tactics", "x": 2}]}
-                    ],
-                    "rules": [{"id": "wounds", "x": 4}, {"id": "leader", "x": "Infantry, Cavalry"}, "hover", {"id": "ranger_tactics", "x": 1}],
-                    "min": 1,
-                    "max": 1
-                }
-            ],
-            "keywords": ["Cavalry"]
-        },
-        "prophet": {
-            "name": "Prophet",
-            "description": "Using twisted prophecies to bring down pain upon their foes.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Prophet",
-                    "movement": 7,
-                    "courage": 6,
-                    "shoot": 4,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "weapons": [{"id": "handweapon", "count": 3}, "swarm"],
-                    "rules": [{"id": "wounds", "x": 3}, "leader", "curse"],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "tideweaver": {
-            "name": "Tideweaver",
-            "description": "Emerging from the depths of the abyss, this wizard is not to be trifled with.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Tideweaver",
-                    "movement": 7,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "weapons": [{"id": "staff", "count": 2}],
-                    "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
-                    "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "power", "x": 1}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "soulflayer": {
-            "name": "Soulflayer",
-            "description": "This cruel individual enslaves their enemies souls to fuel their sinister magic.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Soulflayer",
-                    "movement": 7,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 5,
-                    "weapons": [{"id": "great_weapon", "count": 2}, {"id": "handweapon", "count": 2}],
-                    "options": [{"replaceWeapon": [{"id": "great_weapon", "count": 2}], "withWeapon": [{"id": "net_and_spear", "count": 2}]}],
-                    "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "power", "x": 1}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "tallyman_hybrid": {
-            "name": "Tallyman Hybrid",
-            "description": "Counting the souls of the restless depths together with a many-tentacled bodyguard.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Tallyman Hybrid",
-                    "movement": 7,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 5,
-                    "reflexes": 6,
-                    "weapons": ["light_handweapon", {"id": "tentacle", "count": 6}, {"id": "great_weapon", "count": 2}],
-                    "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "resilient", "x": 3}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "thralls": {
-            "name": "Depthbound Thralls",
-            "description": "Enslaved by ritualistic magic, these thralls march ever forward.",
-            "category": "core",
-            "models": [{"name": "Depthbound Thrall", "movement": 7, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["great_weapon"], "min": 10, "max": 20}],
-            "options": [
-                {"replaceWeapon": ["great_weapon"], "withWeapon": [["short_bow", {"id": "light_handweapon", "count": 2}], {"id": "heavy_javelin", "count": 2}], "modelLimit": "all"},
-                {"addRule": ["champion"], "modelLimit": 1},
-                {"addRule": ["banner"], "modelLimit": 1},
-                {"addRule": ["musician"], "modelLimit": 1}
-            ]
-        },
-        "guard": {
-            "name": "Guardians on Bloodreef Eels",
-            "description": "Enslaved by ancient spell and clad in cursed armor.",
-            "category": "elite",
-            "models": [
-                {
-                    "name": "Guardian on Bloodreef Eel",
-                    "movement": 8,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 5,
-                    "weapons": [{"id": "bite", "count": 2}, {"id": "heavy_spear", "count": 2}],
-                    "rules": ["hover"],
-                    "min": 3,
-                    "max": 12
-                }
-            ],
-            "keywords": ["Cavalry"],
-            "options": [
-                {"replaceWeapon": [{"id": "heavy_spear", "count": 2}], "withWeapon": [{"id": "heavy_handweapon", "count": 3}], "modelLimit": "all"},
-                {"addRule": ["champion"], "modelLimit": 1},
-                {"addRule": ["banner"], "modelLimit": 1},
-                {"addRule": ["musician"], "modelLimit": 1}
-            ]
-        },
-        "predator": {
-            "name": "Depthbound Predators on Giant Shark",
-            "description": "Cursed Pack Hunters, striving to slay ever greater prey.",
-            "category": "elite",
-            "models": [
-                {
-                    "name": "Depthbound Predator on Giant Shark",
-                    "movement": 8,
-                    "courage": 5,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 10,
-                    "reflexes": 5,
-                    "weapons": [{"id": "crushing_jaw", "count": 3}, {"id": "handweapon", "count": 6}, "net_launcher"],
-                    "options": [{"replaceWeapon": ["net_launcher"], "withWeapon": [{"id": "harpoon_rifle", "count": 2}]}],
-                    "rules": ["hover", {"id": "wounds", "x": 3}],
-                    "min": 1,
-                    "max": 3
-                }
-            ],
-            "keywords": ["Monster", "Cavalry"]
-        },
-        "leviathan": {
-            "name": "Guardians on Worldeater Leviathan",
-            "description": "",
-            "category": "rare",
-            "models": [
-                {
-                    "name": "Guardians on Worldeater Leviathan",
-                    "movement": 10,
-                    "courage": 5,
-                    "shoot": 6,
-                    "fight": 7,
-                    "defense": 12,
-                    "reflexes": 5,
-                    "weapons": [{"id": "crush_bite", "count": 2}, {"id": "harpoon_rifle", "count": 2}, {"id": "heavy_spear", "count": 6}, {"id": "fins", "count": 4}],
-                    "rules": ["hover", {"id": "wounds", "x": 3}, {"id": "impact", "x": 3}],
-                    "min": 1,
-                    "max": 1
-                }
-            ],
-            "keywords": ["Monster", "Beast"]
+  "name": "Sea Elves",
+  "id": "sea_elves",
+  "author": "Xekon#8266",
+  "color": "#03414e",
+  "description": "Raising from the depths of the ocean, transmuted by ancient magic.",
+  "alliance": "order",
+  "units": {
+    "king_mount": {
+      "name": "Depthbound King on Moonlight Kelpie",
+      "description": "Riding a magical beast of the ocean into countless raids on the land dwellers.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Depthbound King on Moonlight Kelpie",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": [{"id": "grand_weapon", "count": 4}, {"id": "handweapon", "count": 3}, {"id": "claws", "count": 3}, {"id": "bite", "count": 3}],
+          "options": [
+            {"replaceWeapon": [{"id": "grand_weapon", "count": 4}], "withWeapon": [{"id": "great_polearm", "count": 4}]},
+            {"replaceRule": [{"id": "ranger_tactics", "x": 1}], "withRule": [{"id": "ranger_tactics", "x": 2}]}
+          ],
+          "rules": [{"id": "wounds", "x": 4}, {"id": "leader", "x": "Infantry, Cavalry"}, "hover", {"id": "ranger_tactics", "x": 1}],
+          "min": 1,
+          "max": 1
         }
+      ],
+      "keywords": ["Cavalry"]
     },
-    "weapons": {
-        "claws": {"name": "Rending Claws", "ap": 2, "attacks": 1, "short": "Melee", "rules": [{"id": "rending"}]},
-        "bite": {"name": "Bite", "attacks": 1, "ap": 3, "short": "Melee"},
-        "swarm": {"name": "Bladefish Swarm", "attacks": 8, "medium": 18, "short": 9},
-        "harpoon_rifle": {"name": "harpoon_rifle", "short": 12, "medium": 24, "attacks": 1, "ap": 6, "rules": [{"id": "deadly", "x": 2}]},
-        "net_launcher": {"name": "Net Launcher", "attacks": 1, "ap": 2, "rules": ["barbed_net", {"id": "blast", "x": 3}], "short": 9, "medium": 18},
-        "crushing_jaw": {"name": "Crushing Jaw", "attacks": 1, "ap": 6, "short": "Melee"},
-        "tentacle": {"name": "Lashing Tentacle", "attacks": 1, "ap": 1, "short": "Melee", "rules": [{"id": "reach", "x": 2}]},
-        "crush_bite": {"name": "Crushing Maw", "attacks": 1, "ap": 8, "short": "Melee", "rules": ["rending"]},
-        "fins": {"name": "Scythed Fins", "attacks": 1, "ap": 5, "short": "Melee"}
-    },
-    "rules": {
-        "discipline": {"name": "Discipline", "description": "This unit and all friendly units within 6\" ignore Shock when making any Overwatch or Defensive Stance reaction rolls.", "points": 15},
-        "barbed_net": {"name": "Barbed Net", "description": "Units hit by this weapon half their movement until the end of the turn.", "points": 3},
-        "ranger_tactics": {
-            "name": "Raider Tactics",
-            "inputs": ["x"],
-            "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". Those units may re-roll failed Strength tests of 9+ until the end of the round.",
-            "points": ["rule.x", {"multiply": 10}]
-        },
-        "battle_prayer": {
-            "name": "Battle Prayer",
-            "description": "When this unit is activated, choose a Blessing for this unit or a friendly _Infantry_ unit within 6\" to receive until the end of the turn:\n* Divine Shield: Roll a die when a model in this unit loses a wound. On a value of 1 or 2 that wound is not lost.\n* Righteous Fury: When this unit fights, hit rolls of 1 or 2 generate an additional attack.\n* Healing Word: One model in the unit immediately heals D3 wounds.",
-            "points": [15]
-        },
-        "curse": {
-            "name": "Dark Prophecies",
-            "description": "When this unit is activated, choose a Curse for an enemy _Infantry_ unit within 6\" to receive until the end of the turn:\n* Blinding Ink: This unit has -1 Strength and Accuracy when fighting or making a shooting attack.\n* Brittle Bones: When this unit is targeted by an attack, hit rolls of 1 or 2 generate an additional attack.\n* Soul Siphon: One model in the unit immediately takes 2 hits with AP2.",
-            "points": [15]
+    "prophet": {
+      "name": "Prophet",
+      "description": "Using twisted prophecies to bring down pain upon their foes.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Prophet",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 4,
+          "fight": 6,
+          "defense": 5,
+          "reflexes": 5,
+          "weapons": [{"id": "handweapon", "count": 3}, "swarm"],
+          "rules": [{"id": "wounds", "x": 3}, "leader", "curse"],
+          "min": 1,
+          "max": 1
         }
+      ]
     },
-    "powers": {
-        "blind": {"name": "Blind", "description": "Target enemy unit within 12\" gets -1 Accuracy until the end of the round.", "charge": 6, "school": "shadow"},
-        "shroud": {"name": "Shroud", "description": "Target friendly unit within 12\" gets -1 to be hit the next time it is attacked.", "charge": 6},
-        "pain": {"name": "Pain", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(3).", "charge": 6, "subfactions": ["none", "pestilence", "wrath", "excess", "change"]}
-    },
-    "relics": [],
-    "models": {},
-    "strategies": {
-        "expedient_retreat": {
-            "name": "Expedient Retreat",
-            "phase": "activation",
-            "flavor": "The Sea Elves are not equipped for long, attrition-based battles. Instead, they employ hit and run tactics to wear down their enemy without taking may losses themselves.",
-            "description": "Use after one of your _Infantry_ units finishes taking a Shooting action. You may immediately take a free move action. You may not charge with a unit in the same round that it has been affected by this strategy.",
-            "cost": 2
-        },
-        "shroud": {
-            "name": "Shroud",
-            "phase": "activation",
-            "flavor": "Clad in a mystical cloak of shadows, even the deadliest attack can be evaded.",
-            "description": "Use this strategy when an elven keeper unit is targeted by an enemy unit. That unit gets -1 Accuracy and -1 Strength for this attack.",
-            "cost": 2
-        },
-        "shifting_tide": {
-            "name": "Shifting Tide",
-            "phase": "activation",
-            "description": "Use when taking a skill test. You may increase or decrease the value of that test by 1.",
-            "flavor": "Like the sea Fate is flowing along and is ever changing.",
-            "cost": 1
+    "tideweaver": {
+      "name": "Tideweaver",
+      "description": "Emerging from the depths of the abyss, this wizard is not to be trifled with.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Tideweaver",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 5,
+          "reflexes": 5,
+          "weapons": [{"id": "staff", "count": 2}],
+          "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "power", "x": 1}],
+          "min": 1,
+          "max": 1
         }
+      ]
+    },
+    "soulflayer": {
+      "name": "Soulflayer",
+      "description": "This cruel individual enslaves their enemies souls to fuel their sinister magic.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Soulflayer",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "weapons": [{"id": "great_weapon", "count": 2}, {"id": "handweapon", "count": 2}],
+          "options": [{"replaceWeapon": [{"id": "great_weapon", "count": 2}], "withWeapon": [{"id": "net_and_spear", "count": 2}]}],
+          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "power", "x": 1}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "tallyman_hybrid": {
+      "name": "Tallyman Hybrid",
+      "description": "Counting the souls of the restless depths together with a many-tentacled bodyguard.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Tallyman Hybrid",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 5,
+          "reflexes": 6,
+          "weapons": ["light_handweapon", {"id": "tentacle", "count": 6}, {"id": "great_weapon", "count": 2}],
+          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "resilient", "x": 3}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "thralls": {
+      "name": "Depthbound Thralls",
+      "description": "Enslaved by ritualistic magic, these thralls march ever forward.",
+      "category": "core",
+      "models": [{"name": "Depthbound Thrall", "movement": 7, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["great_weapon"], "min": 10, "max": 20}],
+      "options": [
+        {"replaceWeapon": ["great_weapon"], "withWeapon": [["short_bow", {"id": "light_handweapon", "count": 2}], {"id": "heavy_javelin", "count": 2}], "modelLimit": "all"},
+        {"addRule": ["champion"], "modelLimit": 1},
+        {"addRule": ["banner"], "modelLimit": 1},
+        {"addRule": ["musician"], "modelLimit": 1}
+      ]
+    },
+    "guard": {
+      "name": "Guardians on Bloodreef Eels",
+      "description": "Enslaved by ancient spell and clad in cursed armor.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Guardian on Bloodreef Eel",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "weapons": [{"id": "bite", "count": 2}, {"id": "heavy_spear", "count": 2}],
+          "rules": ["hover"],
+          "min": 3,
+          "max": 12
+        }
+      ],
+      "keywords": ["Cavalry"],
+      "options": [
+        {"replaceWeapon": [{"id": "heavy_spear", "count": 2}], "withWeapon": [{"id": "heavy_handweapon", "count": 3}], "modelLimit": "all"},
+        {"addRule": ["champion"], "modelLimit": 1},
+        {"addRule": ["banner"], "modelLimit": 1},
+        {"addRule": ["musician"], "modelLimit": 1}
+      ]
+    },
+    "predator": {
+      "name": "Depthbound Predators on Giant Shark",
+      "description": "Cursed Pack Hunters, striving to slay ever greater prey.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Depthbound Predator on Giant Shark",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 5,
+          "weapons": [{"id": "crushing_jaw", "count": 3}, {"id": "handweapon", "count": 6}, "net_launcher"],
+          "options": [{"replaceWeapon": ["net_launcher"], "withWeapon": [{"id": "harpoon_rifle", "count": 2}]}],
+          "rules": ["hover", {"id": "wounds", "x": 3}],
+          "min": 1,
+          "max": 3
+        }
+      ],
+      "keywords": ["Monster", "Cavalry"]
+    },
+    "leviathan": {
+      "name": "Guardians on Worldeater Leviathan",
+      "description": "",
+      "category": "rare",
+      "models": [
+        {
+          "name": "Guardians on Worldeater Leviathan",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 6,
+          "fight": 7,
+          "defense": 12,
+          "reflexes": 5,
+          "weapons": [{"id": "crush_bite", "count": 2}, {"id": "harpoon_rifle", "count": 2}, {"id": "heavy_spear", "count": 6}, {"id": "fins", "count": 4}],
+          "rules": ["hover", {"id": "wounds", "x": 3}, {"id": "impact", "x": 3}],
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "keywords": ["Monster", "Beast"]
     }
+  },
+  "weapons": {
+    "claws": {"name": "Rending Claws", "ap": 2, "attacks": 1, "short": "Melee", "rules": [{"id": "rending"}]},
+    "bite": {"name": "Bite", "attacks": 1, "ap": 3, "short": "Melee"},
+    "swarm": {"name": "Bladefish Swarm", "attacks": 8, "medium": 18, "short": 9},
+    "harpoon_rifle": {"name": "harpoon_rifle", "short": 12, "medium": 24, "attacks": 1, "ap": 6, "rules": [{"id": "deadly", "x": 2}]},
+    "net_launcher": {"name": "Net Launcher", "attacks": 1, "ap": 2, "rules": ["barbed_net", {"id": "blast", "x": 3}], "short": 9, "medium": 18},
+    "crushing_jaw": {"name": "Crushing Jaw", "attacks": 1, "ap": 6, "short": "Melee"},
+    "tentacle": {"name": "Lashing Tentacle", "attacks": 1, "ap": 1, "short": "Melee", "rules": [{"id": "reach", "x": 2}]},
+    "crush_bite": {"name": "Crushing Maw", "attacks": 1, "ap": 8, "short": "Melee", "rules": ["rending"]},
+    "fins": {"name": "Scythed Fins", "attacks": 1, "ap": 5, "short": "Melee"}
+  },
+  "rules": {
+    "discipline": {"name": "Discipline", "description": "This unit and all friendly units within 6\" ignore Shock when making any Overwatch or Defensive Stance reaction rolls.", "points": 15},
+    "barbed_net": {"name": "Barbed Net", "description": "Units hit by this weapon half their movement until the end of the turn.", "points": 3},
+    "ranger_tactics": {
+      "name": "Raider Tactics",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". Those units may re-roll failed Strength tests of 9+ until the end of the round.",
+      "points": ["rule.x", {"multiply": 10}]
+    },
+    "warrior": {
+      "name": "Battle Prayer",
+      "description": "When this unit is activated, choose a Blessing for this unit or a friendly _Infantry_ unit within 6\" to receive until the end of the turn:\n* Divine Shield: Roll a die when a model in this unit loses a wound. On a value of 1 or 2 that wound is not lost.\n* Righteous Fury: When this unit fights, hit rolls of 1 or 2 generate an additional attack.\n* Healing Word: One model in the unit immediately heals D3 wounds.",
+      "points": [15]
+    },
+    "curse": {
+      "name": "Dark Prophecies",
+      "description": "When this unit is activated, choose a Curse for an enemy _Infantry_ unit within 6\" to receive until the end of the turn:\n* Blinding Ink: This unit has -1 Strength and Accuracy when fighting or making a shooting attack.\n* Brittle Bones: When this unit is targeted by an attack, hit rolls of 1 or 2 generate an additional attack.\n* Soul Siphon: One model in the unit immediately takes 2 hits with AP2.",
+      "points": [15]
+    }
+  },
+  "powers": {
+    "blind": {"name": "Blind", "description": "Target enemy unit within 12\" gets -1 Accuracy until the end of the round.", "charge": 6, "school": "shadow"},
+    "shroud": {"name": "Shroud", "description": "Target friendly unit within 12\" gets -1 to be hit the next time it is attacked.", "charge": 6},
+    "pain": {"name": "Pain", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(3).", "charge": 6, "subfactions": ["none", "pestilence", "wrath", "excess", "change"]}
+  },
+  "relics": [],
+  "models": {},
+  "strategies": {
+    "expedient_retreat": {
+      "name": "Expedient Retreat",
+      "phase": "activation",
+      "flavor": "The Sea Elves are not equipped for long, attrition-based battles. Instead, they employ hit and run tactics to wear down their enemy without taking may losses themselves.",
+      "description": "Use after one of your _Infantry_ units finishes taking a Shooting action. You may immediately take a free move action. You may not charge with a unit in the same round that it has been affected by this strategy.",
+      "cost": 2
+    },
+    "shroud": {
+      "name": "Shroud",
+      "phase": "activation",
+      "flavor": "Clad in a mystical cloak of shadows, even the deadliest attack can be evaded.",
+      "description": "Use this strategy when an elven keeper unit is targeted by an enemy unit. That unit gets -1 Accuracy and -1 Strength for this attack.",
+      "cost": 2
+    },
+    "shifting_tide": {
+      "name": "Shifting Tide",
+      "phase": "activation",
+      "description": "Use when taking a skill test. You may increase or decrease the value of that test by 1.",
+      "flavor": "Like the sea Fate is flowing along and is ever changing.",
+      "cost": 1
+    }
+  }
 }

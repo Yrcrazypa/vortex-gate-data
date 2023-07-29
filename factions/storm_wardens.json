@@ -167,7 +167,7 @@
                     "defense": 7,
                     "courage": 7,
                     "reflexes": 6,
-                    "rules": ["battle_prayer", "leader", {"id": "wounds", "x": 3}],
+                    "rules": ["warrior", "leader", {"id": "wounds", "x": 3}],
                     "weapons": [{"count": 3, "id": "great_weapon"}],
                     "options": [
                         {"replaceWeapon": [{"count": 3, "id": "great_weapon"}], "withWeapon": [{"count": 3, "id": "grand_weapon"}, {"count": 3, "id": "heavy_polearm"}]},

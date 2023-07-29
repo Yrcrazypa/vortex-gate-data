@@ -1684,11 +1684,6 @@
       "description": "When you activate this unit make an initiative test. If successful, until the end of the turn whenever you make a move action with this unit you may rush without needing to make an initiative test.",
       "points": 4
     },
-    "battle_prayer": {
-      "name": "Battle Prayer",
-      "description": "When this unit is activated, choose a Blessing for this unit or a friendly _Infantry_ unit within 6\" to receive until the end of the turn:\n* Divine Shield: Roll a die when a model in this unit loses a wound. On a value of 1 or 2 that wound is not lost.\n* Righteous Fury: When this unit fights, hit rolls of 1 or 2 generate an additional attack.\n* Healing Word: One model in the unit immediately heals D3 wounds.",
-      "points": [15]
-    },
     "curse": {
       "name": "Curse",
       "description": "When this unit is activated, choose a Curse for an enemy _Infantry_ unit within 6\" to receive until the end of the turn:\n* Weakness: This unit has -1 Strength and Accuracy when fighting or making a shooting attack.\n* Brittle Bones: When this unit is targeted by an attack, hit rolls of 1 or 2 generate an additional attack.\n* Soul Siphon: One model in the unit immediately takes 2 hits with AP2.",
@@ -1710,11 +1705,16 @@
     },
     "disrupt": {"name": "Disrupt", "inputs": ["x"], "description": "This weapon has +X AP against units with _Damage Chart_.", "points": ["rule.x", {"multiply": 0.5}]},
     "inspiring": {"name": "Inspiring", "description": "This model's unit gains +1 Courage when taking Courage Tests.", "points": 10},
+    "epic_tactician": {
+      "name": "Epic Tactician",
+      "description": "This model's unit may re-roll all failed Accuracy and Strength tests.",
+      "points": 20
+    },
     "tactician": {"name": "Tactician", "description": "This model's unit may re-roll failed Accuracy and Strength tests of 9+.", "points": 10},
-    "charger": {"name": "Charger", "description": "This model's unit gains +3\" of movement when _Charging_.", "points": 10},
-    "warrior": {"name": "Warrior", "description": "This model's unit may re-roll failed Strength tests of 9+.", "points": 10},
-    "marksman": {"name": "Marksman", "description": "This model's unit may re-roll failed Accuracy tests of 9+.", "points": 10},
-    "striker": {"name": "Striker", "description": "This model's unit gains +1 AP on all weapons.", "points": 10},
+    "charger": {"name": "Charger", "description": "This model's unit gains +3\" of movement when _Charging_.", "points": 5},
+    "warrior": {"name": "Warrior", "description": "This model's unit may re-roll failed Strength tests of 9+.", "points": 5},
+    "marksman": {"name": "Marksman", "description": "This model's unit may re-roll failed Accuracy tests of 9+.", "points": 5},
+    "striker": {"name": "Striker", "description": "This model's unit gains +1 AP on all weapons.", "points": 5},
     "legend_strategist": {"name": "Brilliant Strategist", "description": "While this model is alive and not broken you gain 1 additional Strategy Point at the start of the round.", "points": 20},
     "legend_wounds": {"name": "Resilient", "description": "This model gains Wounds(+1).", "points": 10},
     "legend_courage": {"name": "Inspired", "description": "This model gains +1 Courage.", "points": 10},

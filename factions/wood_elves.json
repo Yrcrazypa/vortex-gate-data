@@ -428,7 +428,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["battle_prayer", {"id": "wounds", "x": 3}, "support"],
+          "rules": ["warrior", {"id": "wounds", "x": 3}, "support"],
           "weapons": [{"id": "crushing_fists", "count": 3}],
           "min": 1,
           "max": 1
@@ -544,7 +544,7 @@
   "relics": {
     "legend_one_with_nature": {
       "name": "One with Nature",
-      "rule": "battle_prayer",
+      "rule": "warrior",
       "description": "Upgrade one _Leader_ model with Battle Prayer.",
       "flavor": "This hero has meditated within a sacred grove for many years and has gained a deep connection with the forest spirits.",
       "points": 10

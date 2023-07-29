@@ -186,7 +186,7 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "rules": ["battle_prayer", "furious", "leader", {"id": "wounds", "x": 3}],
+                    "rules": ["warrior", "furious", "leader", {"id": "wounds", "x": 3}],
                     "weapons": [{"id": "great_weapon", "count": 3}],
                     "options": [
                         {"replaceWeapon": [{"id": "great_hammer", "count": 3}], "withWeapon": [{"id": "grand_hammer", "count": 3}, {"id": "great_hammer", "count": 4}]},
@@ -211,7 +211,7 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "rules": ["battle_prayer", "furious", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
+                    "rules": ["warrior", "furious", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
                     "weapons": [{"id": "great_hammer", "count": 3}, {"id": "hooves_and_teeth", "count": 2}],
                     "options": [
                         {"replaceWeapon": [{"id": "great_hammer", "count": 3}], "withWeapon": [{"id": "grand_hammer", "count": 3}, {"id": "great_hammer", "count": 4}]},

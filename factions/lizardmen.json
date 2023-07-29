@@ -1,604 +1,592 @@
 {
-    "name": "Lizardfolk Empire",
-    "id": "lizardmen",
-    "author": "guitarninja#5707",
-    "units": {
-        "gecko_oracle": {
-            "name": "Gecko Oracle",
-            "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
-            "category": "hero",
-            "keywords": ["Infantry", "Gecko"],
-            "models": [
-                {
-                    "name": "Gecko Oracle",
-                    "movement": 7,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 6,
-                    "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": ["staff", "handweapon"],
-                    "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "gecko_oracle_raptor": {
-            "name": "Gecko Oracle on Raptor",
-            "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
-            "category": "hero",
-            "keywords": ["Cavalry", "Gecko"],
-            "models": [
-                {
-                    "name": "Gecko Oracle on Raptor",
-                    "movement": 8,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": ["staff", "handweapon", {"id": "fangs_and_teeth", "count": 2}],
-                    "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "gecko_oracle_pterodactyl": {
-            "name": "Gecko Oracle on Pterodactyl",
-            "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
-            "category": "hero",
-            "keywords": ["Cavalry", "Gecko"],
-            "models": [
-                {
-                    "name": "Gecko Oracle on Pterodactyl",
-                    "movement": 10,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 6,
-                    "rules": ["fly", {"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": ["staff", "handweapon", "sunfury_bombs"],
-                    "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "gecko_oracle_dreadscale": {
-            "name": "Gecko Oracle on Dreadscale",
-            "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
-            "category": "hero",
-            "keywords": ["Beast", "Cavalry", "Monster"],
-            "models": [
-                {
-                    "name": "Gecko Oracle on Dreadscale",
-                    "movement": 10,
-                    "courage": 7,
-                    "shoot": 0,
-                    "fight": 6,
-                    "defense": 9,
-                    "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry, Monster"}, {"id": "power", "x": 1}],
-                    "weapons": ["staff", "handweapon", {"id": "raking_claws", "count": 2}],
-                    "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "gecko_chieftain": {
-            "name": "Gecko Chieftain",
-            "description": "A great hero of the gecko tribes, leading his kin into battle alongside the other lizardfolk tribes.",
-            "category": "hero",
-            "keywords": ["Infantry", "Gecko"],
-            "models": [
-                {
-                    "name": "Gecko Chieftain",
-                    "movement": 7,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "handweapon", "count": 2}],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "handweapon", "count": 2}],
-                            "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]
-                        },
-                        {"addRule": [{"id": "icon", "x": "Infantry"}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "gecko_chieftain_raptor": {
-            "name": "Gecko Chieftain on Raptor",
-            "description": "A great hero of the gecko tribes on a swift raptor, leading his kin into battle alongside the other lizardfolk tribes.",
-            "category": "hero",
-            "keywords": ["Cavalry", "Gecko"],
-            "models": [
-                {
-                    "name": "Gecko Chieftain on Raptor",
-                    "movement": 8,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "rules": [{"id": "warrior", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "handweapon", "count": 2}, {"id": "fangs_and_teeth", "count": 2}],
-                    "options": [
-                        {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [["javelin", {"id": "light_handweapon", "count": 2}], {"id": "lance", "count": 2}]},
-                        {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "gecko_chieftain_pterodactyl": {
-            "name": "Gecko Chieftain on Pterodactyl",
-            "description": "A great hero of the gecko tribes riding an airborne hunter, leading his kin into battle alongside the other lizardfolk tribes.",
-            "category": "hero",
-            "keywords": ["Cavalry", "Gecko"],
-            "models": [
-                {
-                    "name": "Gecko Chieftain on Pterodactyl",
-                    "movement": 10,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "rules": ["fly", {"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "handweapon", "count": 2}, "sunfury_bombs"],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "handweapon", "count": 2}],
-                            "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]
-                        },
-                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "gecko_chief_dreadscale": {
-            "name": "Gecko Chieftain on Dreadscale",
-            "description": "A great herald of the Lizardfolk Empire riding a terrifying dinosaur, slaughtering their foes with great zeal.",
-            "category": "hero",
-            "keywords": ["Beast", "Cavalry", "Monster"],
-            "models": [
-                {
-                    "name": "Gecko Chieftain on Dreadscale",
-                    "movement": 10,
-                    "courage": 7,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 9,
-                    "reflexes": 6,
-                    "rules": [{"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry, Monster"}],
-                    "weapons": [{"id": "handweapon", "count": 2}, {"id": "raking_claws", "count": 2}],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "handweapon", "count": 2}],
-                            "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]
-                        },
-                        {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "saurian_warlord": {
-            "name": "Saurian Warlord",
-            "description": "A great herald of the Lizardfolk Empire, slaughtering their foes with great zeal.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Saurian Warlord",
-                    "movement": 6,
-                    "courage": 7,
-                    "shoot": 0,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 5,
-                    "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite"],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
-                            "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_spear", "count": 3}]
-                        },
-                        {"addRule": [{"id": "icon", "x": "Infantry"}, {"id": "power", "x": 1}], "limit": 1},
-                        {"replaceRule": [{"id": "tactician", "x": 1}], "withRule": [{"id": "tactician", "x": 2}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "saurian_warlord_terrorfang": {
-            "name": "Saurian Warlord on Terrorfang",
-            "description": "A great herald of the Lizardfolk Empire riding a deadly dinosaur, slaughtering their foes with great zeal.",
-            "category": "hero",
-            "keywords": ["Beast", "Cavalry"],
-            "models": [
-                {
-                    "name": "Saurian Warlord on Terrorfang",
-                    "movement": 8,
-                    "courage": 7,
-                    "shoot": 0,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 5,
-                    "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite", {"id": "fangs_and_teeth", "count": 2}],
-                    "options": [
-                        {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "lance", "count": 3}]},
-                        {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "saurian_warlord_dreadscale": {
-            "name": "Saurian Warlord on Dreadscale",
-            "description": "A great herald of the Lizardfolk Empire riding a terrifying dinosaur, slaughtering their foes with great zeal.",
-            "category": "hero",
-            "keywords": ["Beast", "Cavalry", "Monster"],
-            "models": [
-                {
-                    "name": "Saurian Warlord on Dreadscale",
-                    "movement": 10,
-                    "courage": 7,
-                    "shoot": 0,
-                    "fight": 7,
-                    "defense": 9,
-                    "reflexes": 6,
-                    "rules": [{"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry, Monster"}],
-                    "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite", {"id": "raking_claws", "count": 2}],
-                    "options": [
-                        {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "lance", "count": 3}]},
-                        {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "greatlizard_mage": {
-            "name": "Great-Lizard Mage",
-            "description": "The oldest and wisest of the Lizardfolk, the Great-Lizards command reality to change around them.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Great-Lizard Mage",
-                    "movement": 5,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 7,
-                    "reflexes": 5,
-                    "rules": ["hover", {"id": "power", "x": 2}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "azure_lightning", "count": 6}],
-                    "options": [{"replaceRule": [{"id": "power", "x": 2}], "withRule": {"id": "power", "x": 3}}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "saurian_warriors": {
-            "name": "Saurian Warriors",
-            "description": "The main-line warriors of the Lizardfolk Empire, combining great combat strategies with primal savagery.",
-            "category": "core",
-            "models": [
-                {
-                    "name": "Saurian Warrior",
-                    "movement": 6,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 6,
-                    "reflexes": 5,
-                    "weapons": ["great_weapon", "lizard_bite"],
-                    "options": [{"replaceWeapon": ["great_weapon"], "withWeapon": ["heavy_spear"], "modelLimit": "all"}],
-                    "min": 10,
-                    "max": 20
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "gecko_warriors": {
-            "name": "Gecko Warriors",
-            "description": "The main-line warriors of the Lizardfolk Empire, small in stature but very dangerous in numbers.",
-            "category": "core",
-            "keywords": ["Infantry", "Gecko"],
-            "models": [
-                {
-                    "name": "Gecko Warrior",
-                    "movement": 7,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "weapons": ["handweapon"],
-                    "options": [{"replaceWeapon": ["handweapon"], "withWeapon": [["blowpipe", "light_handweapon"], ["javelin", "light_handweapon"]], "modelLimit": "all"}],
-                    "min": 10,
-                    "max": 20
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "gecko_riders": {
-            "name": "Gecko Raptor-Riders",
-            "description": "Elite geckos riding swift dinosaurs, using their speed to outmatch their foes.",
-            "category": "elite",
-            "keywords": ["Cavalry", "Gecko"],
-            "models": [
-                {
-                    "name": "Gecko Raptor-Rider",
-                    "movement": 8,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 6,
-                    "reflexes": 5,
-                    "weapons": ["javelin", "light_handweapon", {"id": "fangs_and_teeth", "count": 2}],
-                    "options": [{"replaceWeapon": ["javelin", "light_handweapon"], "withWeapon": ["lance"], "modelLimit": "all"}],
-                    "min": 5,
-                    "max": 15
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "saurian_riders": {
-            "name": "Saurian Terrorfang-Riders",
-            "description": "Elite saurians riding deadly dinosaurs, crushing their foes under an avalance of claws and teeth.",
-            "category": "elite",
-            "keywords": ["Cavalry"],
-            "models": [
-                {
-                    "name": "Saurian Terrorfang-Rider",
-                    "movement": 8,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 6,
-                    "reflexes": 5,
-                    "weapons": ["great_weapon", "lizard_bite", {"id": "fangs_and_teeth", "count": 2}],
-                    "options": [{"replaceWeapon": ["great_weapon"], "withWeapon": ["lance"], "modelLimit": "all"}],
-                    "min": 5,
-                    "max": 15
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "chameleon_scouts": {
-            "name": "Chameleon Scouts",
-            "description": "Experts of camouflage and deception, these swift warriors strike from the shadows.",
-            "category": "elite",
-            "keywords": ["Infantry", "Gecko"],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
-            "models": [
-                {
-                    "name": "Chameleon Scout",
-                    "movement": 7,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "rules": ["evasive", "scout"],
-                    "weapons": ["handweapon"],
-                    "options": [
-                        {"replaceWeapon": ["handweapon"], "withWeapon": [["blowpipe", "light_handweapon"], ["javelin", "light_handweapon"]]},
-                        {"replaceWeapon": ["handweapon"], "withWeapon": [["bolas", "light_handweapon"]], "modelLimit": "2/10"}
-                    ],
-                    "min": 10,
-                    "max": 20
-                }
-            ]
-        },
-        "pterodactyl_riders": {
-            "name": "Pterodactyl Riders",
-            "description": "Airborne predators, carrying gecko warriors on their back.",
-            "category": "elite",
-            "keywords": ["Cavalry", "Gecko"],
-            "models": [
-                {
-                    "name": "Pterodactyl Rider",
-                    "movement": 10,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "rules": ["fly", {"id": "impact", "x": 3}, {"id": "wounds", "x": 2}],
-                    "weapons": ["javelin", "light_handweapon", "sunfury_bombs"],
-                    "options": [{"replaceWeapon": "javelin", "withWeapon": "bolas"}],
-                    "min": 3,
-                    "max": 9
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "crocodile_warriors": {
-            "name": "Crocodile Warriors",
-            "description": "Hulking warriors of the lizardfolk empire, using their bulk and greater strength to crush their foes under their feet.",
-            "category": "rare",
-            "keywords": ["Heavy Infantry"],
-            "models": [
-                {
-                    "name": "Crocodile Warrior",
-                    "movement": 6,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "options": [{"replaceWeapon": [{"id": "great_hammer", "count": 3}], "withWeapon": [{"id": "grand_hammer", "count": 3}], "modelLimit": "1/3"}],
-                    "weapons": [{"id": "great_hammer", "count": 3}, "fangs_and_claws"],
-                    "rules": [{"id": "wounds", "x": 2}],
-                    "min": 3,
-                    "max": 15
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "giant_dreadscale": {
-            "name": "Giant Dreadscale",
-            "description": "A hulking monstrosity from the depths of the jungle, this terrifying predator is a weapon of mass destruction.",
-            "category": "rare",
-            "keywords": ["Beast", "Monster"],
-            "models": [
-                {
-                    "name": "Giant Dreadscale",
-                    "movement": 10,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 13,
-                    "reflexes": 5,
-                    "rules": [{"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 6}, "titanic"],
-                    "weapons": ["armored_tail", {"id": "gargantuan_jaws", "count": 3}, {"id": "raking_claws", "count": 6}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "hunting_pack": {
-            "name": "Hunting Beasts",
-            "description": "A pack of deadly beasts using natural weapons to hunt their prey.",
-            "category": "elite",
-            "keywords": ["Beast"],
-            "models": [
-                {
-                    "name": "Hunting Beast",
-                    "movement": 8,
-                    "courage": 6,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "weapons": ["napalm_breath", {"id": "fangs_and_claws", "count": 3}],
-                    "options": [{"replaceWeapon": ["napalm_breath"], "withWeapon": ["spike_launcher"], "modelLimit": "all"}],
-                    "min": 2,
-                    "max": 6
-                }
-            ]
-        },
-        "direhorn": {
-            "name": "Direhorn",
-            "description": "A massive dinosaur which is used for various purposes on the battlefield.",
-            "category": "rare",
-            "keywords": ["Beast"],
-            "models": [
-                {
-                    "name": "Direhorn",
-                    "movement": 6,
-                    "courage": 7,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 9,
-                    "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 3}, {"id": "open_topped", "x": 6}, {"id": "transport", "x": 6}],
-                    "weapons": [{"id": "sunfury_bombs", "count": 3}, "armored_tail"],
-                    "options": [
-                        {"replaceWeapon": [{"id": "sunfury_bombs", "count": 3}], "withWeapon": ["snake_launcher", "ballista", "solar_beam"]},
-                        {"replaceRule": [{"id": "transport", "x": 6}, {"id": "open_topped", "x": 6}], "withRule": [[{"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}]]},
-                        {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "limit": 1}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        }
-    },
-    "weapons": {
-        "lizard_bite": {"name": "Lizard Bite", "attacks": 1, "short": "Melee", "ap": 1},
-        "azure_lightning": {"name": "Lightning Claws", "attacks": 1, "short": "Melee", "ap": 3, "rules": [{"id": "reach", "x": 1}]},
-        "armored_tail": {"name": "Armored Tail", "attacks": 1, "short": "Melee", "ap": 6, "rules": [{"id": "reach", "x": 1}]},
-        "gargantuan_jaws": {"name": "Gargantuan Jaws", "attacks": 1, "short": "Melee", "ap": 9, "rules": [{"id": "reach", "x": 1}]},
-        "raking_claws": {"name": "Raking Claws", "attacks": 1, "short": "Melee", "ap": 4, "rules": [{"id": "reach", "x": 1}]},
-        "sunfury_bombs": {"name": "Sunfury Bombs", "attacks": 1, "short": 6, "ap": 2, "rules": [{"id": "blast", "x": 3}, "bomb"]},
-        "bolas": {"name": "Bolas", "attacks": 1, "short": 6, "ap": 2, "rules": [{"id": "blast", "x": 3}, {"id": "slowing", "x": 1}]},
-        "spike_launcher": {"name": "Spike Launcher", "short": 12, "medium": 24, "ap": 1, "attacks": 2, "rules": ["assault", {"id": "blast", "x": 3}, "rending"]},
-        "napalm_breath": {"name": "Napalm Breath", "rules": ["flame", "lethal"], "attacks": 3, "ap": 4, "medium": 12, "short": 6},
-        "snake_launcher": {"name": "Snake Launcher", "attacks": 9, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "poison"]},
-        "solar_beam": {"name": "Solar Beam", "attacks": 6, "short": 12, "medium": 24, "ap": 3, "rules": ["lethal"]},
-        "legend_blades": {"name": "Obsidian Blades", "attacks": 6, "short": "Melee", "ap": 2, "rules": ["rending"]}
-    },
-    "rules": {},
-    "relics": [
+  "name": "Lizardfolk Empire",
+  "id": "lizardmen",
+  "author": "guitarninja#5707",
+  "units": {
+    "gecko_oracle": {
+      "name": "Gecko Oracle",
+      "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
+      "category": "hero",
+      "keywords": ["Infantry", "Gecko"],
+      "models": [
         {
-            "name": "Feathered Crown",
-            "description": "Upgrade one _Leader_ model with Scout.",
-            "flavor": "A magical headdress which blesses its wearer with the swiftness of the wind.",
-            "points": 5,
-            "rule": "scout"
-        },
-        {
-            "name": "Starborn",
-            "description": "Upgrade one _Leader_ model with Battle Prayer.",
-            "flavor": "Those blessed by the gods of the heavens themselves shine brightly with astral light.",
-            "points": 10,
-            "rule": "battle_prayer"
-        },
-        {
-            "name": "Obsidian Blades",
-            "description": "Replace one _Saurus_ _Leader_ model Great Weapon with the Obsidian Blades.",
-            "flavor": "Mystical weapons of unknown origin, they grant their wielder the might of the earth.",
-            "points": 10,
-            "weapon": "legend_blades"
+          "name": "Gecko Oracle",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["staff", "handweapon"],
+          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+          "min": 1,
+          "max": 1
         }
-    ],
-    "powers": {
-        "ancestral_paths": {
-            "name": "Ancestral Paths",
-            "description": "Target friendly unit within 12\" may move up to 12\" ignoring all models and terrain. This must end outside of 12\" of any enemy units.",
-            "charge": 7
-        },
-        "starburst": {"name": "Starburst", "description": "Target enemy unit within 24\" takes 5 automatic hits with AP(2).", "charge": 6},
-        "primal_fury": {"name": "Primal Fury", "description": "Target friendly unit within 12\" makes one additional attack with any Melee weapon until the end of the turn.", "charge": 5}
+      ]
     },
-    "strategies": {
-        "natural_camo": {
-            "name": "Natural Camoflage",
-            "phase": "activation",
-            "description": "Use when an enemy targets a _Gecko_ unit with a shooting attack while that unit has the benefit of cover.  The enemy suffers -1 Accuracy for that attack.",
-            "flavor": "Geckos are skilled at blending in with their environments.",
-            "cost": 1
-        },
-        "fearless": {
-            "name": "Fearless",
-            "phase": "activation",
-            "description": "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
-            "flavor": "The proud lizardfolk survive in a dangerous world by sheer willpower alone.",
-            "cost": 1
-        },
-        "cold_blooded": {
-            "name": "Cold-blooded",
-            "phase": "activation",
-            "description": "Use when an _Infantry_ or _Heavy Infantry_ unit fights. Hits rolls of 1 or 2 gain +2 AP.",
-            "flavor": "While they wield weapons and armor made of gold, the lizardfolk are ferocious predators at heart.",
-            "cost": 2
+    "gecko_oracle_raptor": {
+      "name": "Gecko Oracle on Raptor",
+      "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
+      "category": "hero",
+      "keywords": ["Cavalry", "Gecko"],
+      "models": [
+        {
+          "name": "Gecko Oracle on Raptor",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["staff", "handweapon", {"id": "fangs_and_teeth", "count": 2}],
+          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+          "min": 1,
+          "max": 1
         }
+      ]
+    },
+    "gecko_oracle_pterodactyl": {
+      "name": "Gecko Oracle on Pterodactyl",
+      "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
+      "category": "hero",
+      "keywords": ["Cavalry", "Gecko"],
+      "models": [
+        {
+          "name": "Gecko Oracle on Pterodactyl",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 6,
+          "rules": ["fly", {"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["staff", "handweapon", "sunfury_bombs"],
+          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "gecko_oracle_dreadscale": {
+      "name": "Gecko Oracle on Dreadscale",
+      "description": "Oracles can divine the outcome of a battle through magical rituals. They also function as the spiritiual overseers of the Lizardfolk Empire.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry", "Monster"],
+      "models": [
+        {
+          "name": "Gecko Oracle on Dreadscale",
+          "movement": 10,
+          "courage": 7,
+          "shoot": 0,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry, Monster"}, {"id": "power", "x": 1}],
+          "weapons": ["staff", "handweapon", {"id": "raking_claws", "count": 2}],
+          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "gecko_chieftain": {
+      "name": "Gecko Chieftain",
+      "description": "A great hero of the gecko tribes, leading his kin into battle alongside the other lizardfolk tribes.",
+      "category": "hero",
+      "keywords": ["Infantry", "Gecko"],
+      "models": [
+        {
+          "name": "Gecko Chieftain",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "handweapon", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]},
+            {"addRule": [{"id": "icon", "x": "Infantry"}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "gecko_chieftain_raptor": {
+      "name": "Gecko Chieftain on Raptor",
+      "description": "A great hero of the gecko tribes on a swift raptor, leading his kin into battle alongside the other lizardfolk tribes.",
+      "category": "hero",
+      "keywords": ["Cavalry", "Gecko"],
+      "models": [
+        {
+          "name": "Gecko Chieftain on Raptor",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": [{"id": "warrior", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "handweapon", "count": 2}, {"id": "fangs_and_teeth", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [["javelin", {"id": "light_handweapon", "count": 2}], {"id": "lance", "count": 2}]},
+            {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "gecko_chieftain_pterodactyl": {
+      "name": "Gecko Chieftain on Pterodactyl",
+      "description": "A great hero of the gecko tribes riding an airborne hunter, leading his kin into battle alongside the other lizardfolk tribes.",
+      "category": "hero",
+      "keywords": ["Cavalry", "Gecko"],
+      "models": [
+        {
+          "name": "Gecko Chieftain on Pterodactyl",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["fly", {"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "handweapon", "count": 2}, "sunfury_bombs"],
+          "options": [
+            {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]},
+            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "gecko_chief_dreadscale": {
+      "name": "Gecko Chieftain on Dreadscale",
+      "description": "A great herald of the Lizardfolk Empire riding a terrifying dinosaur, slaughtering their foes with great zeal.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry", "Monster"],
+      "models": [
+        {
+          "name": "Gecko Chieftain on Dreadscale",
+          "movement": 10,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry, Monster"}],
+          "weapons": [{"id": "handweapon", "count": 2}, {"id": "raking_claws", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]},
+            {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "saurian_warlord": {
+      "name": "Saurian Warlord",
+      "description": "A great herald of the Lizardfolk Empire, slaughtering their foes with great zeal.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Saurian Warlord",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 0,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite"],
+          "options": [
+            {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_spear", "count": 3}]},
+            {"addRule": [{"id": "icon", "x": "Infantry"}, {"id": "power", "x": 1}], "limit": 1},
+            {"replaceRule": [{"id": "tactician", "x": 1}], "withRule": [{"id": "tactician", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "saurian_warlord_terrorfang": {
+      "name": "Saurian Warlord on Terrorfang",
+      "description": "A great herald of the Lizardfolk Empire riding a deadly dinosaur, slaughtering their foes with great zeal.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry"],
+      "models": [
+        {
+          "name": "Saurian Warlord on Terrorfang",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 0,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite", {"id": "fangs_and_teeth", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "lance", "count": 3}]},
+            {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "saurian_warlord_dreadscale": {
+      "name": "Saurian Warlord on Dreadscale",
+      "description": "A great herald of the Lizardfolk Empire riding a terrifying dinosaur, slaughtering their foes with great zeal.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry", "Monster"],
+      "models": [
+        {
+          "name": "Saurian Warlord on Dreadscale",
+          "movement": 10,
+          "courage": 7,
+          "shoot": 0,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry, Monster"}],
+          "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite", {"id": "raking_claws", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "lance", "count": 3}]},
+            {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "greatlizard_mage": {
+      "name": "Great-Lizard Mage",
+      "description": "The oldest and wisest of the Lizardfolk, the Great-Lizards command reality to change around them.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Great-Lizard Mage",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 7,
+          "reflexes": 5,
+          "rules": ["hover", {"id": "power", "x": 2}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "azure_lightning", "count": 6}],
+          "options": [{"replaceRule": [{"id": "power", "x": 2}], "withRule": {"id": "power", "x": 3}}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "saurian_warriors": {
+      "name": "Saurian Warriors",
+      "description": "The main-line warriors of the Lizardfolk Empire, combining great combat strategies with primal savagery.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Saurian Warrior",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": ["great_weapon", "lizard_bite"],
+          "options": [{"replaceWeapon": ["great_weapon"], "withWeapon": ["heavy_spear"], "modelLimit": "all"}],
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "gecko_warriors": {
+      "name": "Gecko Warriors",
+      "description": "The main-line warriors of the Lizardfolk Empire, small in stature but very dangerous in numbers.",
+      "category": "core",
+      "keywords": ["Infantry", "Gecko"],
+      "models": [
+        {
+          "name": "Gecko Warrior",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "weapons": ["handweapon"],
+          "options": [{"replaceWeapon": ["handweapon"], "withWeapon": [["blowpipe", "light_handweapon"], ["javelin", "light_handweapon"]], "modelLimit": "all"}],
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "gecko_riders": {
+      "name": "Gecko Raptor-Riders",
+      "description": "Elite geckos riding swift dinosaurs, using their speed to outmatch their foes.",
+      "category": "elite",
+      "keywords": ["Cavalry", "Gecko"],
+      "models": [
+        {
+          "name": "Gecko Raptor-Rider",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": ["javelin", "light_handweapon", {"id": "fangs_and_teeth", "count": 2}],
+          "options": [{"replaceWeapon": ["javelin", "light_handweapon"], "withWeapon": ["lance"], "modelLimit": "all"}],
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "saurian_riders": {
+      "name": "Saurian Terrorfang-Riders",
+      "description": "Elite saurians riding deadly dinosaurs, crushing their foes under an avalance of claws and teeth.",
+      "category": "elite",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Saurian Terrorfang-Rider",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": ["great_weapon", "lizard_bite", {"id": "fangs_and_teeth", "count": 2}],
+          "options": [{"replaceWeapon": ["great_weapon"], "withWeapon": ["lance"], "modelLimit": "all"}],
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "chameleon_scouts": {
+      "name": "Chameleon Scouts",
+      "description": "Experts of camouflage and deception, these swift warriors strike from the shadows.",
+      "category": "elite",
+      "keywords": ["Infantry", "Gecko"],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+      "models": [
+        {
+          "name": "Chameleon Scout",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "rules": ["evasive", "scout"],
+          "weapons": ["handweapon"],
+          "options": [
+            {"replaceWeapon": ["handweapon"], "withWeapon": [["blowpipe", "light_handweapon"], ["javelin", "light_handweapon"]]},
+            {"replaceWeapon": ["handweapon"], "withWeapon": [["bolas", "light_handweapon"]], "modelLimit": "2/10"}
+          ],
+          "min": 10,
+          "max": 20
+        }
+      ]
+    },
+    "pterodactyl_riders": {
+      "name": "Pterodactyl Riders",
+      "description": "Airborne predators, carrying gecko warriors on their back.",
+      "category": "elite",
+      "keywords": ["Cavalry", "Gecko"],
+      "models": [
+        {
+          "name": "Pterodactyl Rider",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "rules": ["fly", {"id": "impact", "x": 3}, {"id": "wounds", "x": 2}],
+          "weapons": ["javelin", "light_handweapon", "sunfury_bombs"],
+          "options": [{"replaceWeapon": "javelin", "withWeapon": "bolas"}],
+          "min": 3,
+          "max": 9
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "crocodile_warriors": {
+      "name": "Crocodile Warriors",
+      "description": "Hulking warriors of the lizardfolk empire, using their bulk and greater strength to crush their foes under their feet.",
+      "category": "rare",
+      "keywords": ["Heavy Infantry"],
+      "models": [
+        {
+          "name": "Crocodile Warrior",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "options": [{"replaceWeapon": [{"id": "great_hammer", "count": 3}], "withWeapon": [{"id": "grand_hammer", "count": 3}], "modelLimit": "1/3"}],
+          "weapons": [{"id": "great_hammer", "count": 3}, "fangs_and_claws"],
+          "rules": [{"id": "wounds", "x": 2}],
+          "min": 3,
+          "max": 15
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "giant_dreadscale": {
+      "name": "Giant Dreadscale",
+      "description": "A hulking monstrosity from the depths of the jungle, this terrifying predator is a weapon of mass destruction.",
+      "category": "rare",
+      "keywords": ["Beast", "Monster"],
+      "models": [
+        {
+          "name": "Giant Dreadscale",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 13,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 6}, "titanic"],
+          "weapons": ["armored_tail", {"id": "gargantuan_jaws", "count": 3}, {"id": "raking_claws", "count": 6}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "hunting_pack": {
+      "name": "Hunting Beasts",
+      "description": "A pack of deadly beasts using natural weapons to hunt their prey.",
+      "category": "elite",
+      "keywords": ["Beast"],
+      "models": [
+        {
+          "name": "Hunting Beast",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "weapons": ["napalm_breath", {"id": "fangs_and_claws", "count": 3}],
+          "options": [{"replaceWeapon": ["napalm_breath"], "withWeapon": ["spike_launcher"], "modelLimit": "all"}],
+          "min": 2,
+          "max": 6
+        }
+      ]
+    },
+    "direhorn": {
+      "name": "Direhorn",
+      "description": "A massive dinosaur which is used for various purposes on the battlefield.",
+      "category": "rare",
+      "keywords": ["Beast"],
+      "models": [
+        {
+          "name": "Direhorn",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 3}, {"id": "open_topped", "x": 6}, {"id": "transport", "x": 6}],
+          "weapons": [{"id": "sunfury_bombs", "count": 3}, "armored_tail"],
+          "options": [
+            {"replaceWeapon": [{"id": "sunfury_bombs", "count": 3}], "withWeapon": ["snake_launcher", "ballista", "solar_beam"]},
+            {"replaceRule": [{"id": "transport", "x": 6}, {"id": "open_topped", "x": 6}], "withRule": [[{"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}]]},
+            {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "limit": 1}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
     }
+  },
+  "weapons": {
+    "lizard_bite": {"name": "Lizard Bite", "attacks": 1, "short": "Melee", "ap": 1},
+    "azure_lightning": {"name": "Lightning Claws", "attacks": 1, "short": "Melee", "ap": 3, "rules": [{"id": "reach", "x": 1}]},
+    "armored_tail": {"name": "Armored Tail", "attacks": 1, "short": "Melee", "ap": 6, "rules": [{"id": "reach", "x": 1}]},
+    "gargantuan_jaws": {"name": "Gargantuan Jaws", "attacks": 1, "short": "Melee", "ap": 9, "rules": [{"id": "reach", "x": 1}]},
+    "raking_claws": {"name": "Raking Claws", "attacks": 1, "short": "Melee", "ap": 4, "rules": [{"id": "reach", "x": 1}]},
+    "sunfury_bombs": {"name": "Sunfury Bombs", "attacks": 1, "short": 6, "ap": 2, "rules": [{"id": "blast", "x": 3}, "bomb"]},
+    "bolas": {"name": "Bolas", "attacks": 1, "short": 6, "ap": 2, "rules": [{"id": "blast", "x": 3}, {"id": "slowing", "x": 1}]},
+    "spike_launcher": {"name": "Spike Launcher", "short": 12, "medium": 24, "ap": 1, "attacks": 2, "rules": ["assault", {"id": "blast", "x": 3}, "rending"]},
+    "napalm_breath": {"name": "Napalm Breath", "rules": ["flame", "lethal"], "attacks": 3, "ap": 4, "medium": 12, "short": 6},
+    "snake_launcher": {"name": "Snake Launcher", "attacks": 9, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "poison"]},
+    "solar_beam": {"name": "Solar Beam", "attacks": 6, "short": 12, "medium": 24, "ap": 3, "rules": ["lethal"]},
+    "legend_blades": {"name": "Obsidian Blades", "attacks": 6, "short": "Melee", "ap": 2, "rules": ["rending"]}
+  },
+  "rules": {},
+  "relics": [
+    {
+      "name": "Feathered Crown",
+      "description": "Upgrade one _Leader_ model with Scout.",
+      "flavor": "A magical headdress which blesses its wearer with the swiftness of the wind.",
+      "points": 5,
+      "rule": "scout"
+    },
+    {
+      "name": "Starborn",
+      "description": "Upgrade one _Leader_ model with Warrior.",
+      "flavor": "Those blessed by the gods of the heavens themselves shine brightly with astral light.",
+      "points": 10,
+      "rule": "warrior"
+    },
+    {
+      "name": "Obsidian Blades",
+      "description": "Replace one _Saurus_ _Leader_ model Great Weapon with the Obsidian Blades.",
+      "flavor": "Mystical weapons of unknown origin, they grant their wielder the might of the earth.",
+      "points": 10,
+      "weapon": "legend_blades"
+    }
+  ],
+  "powers": {
+    "ancestral_paths": {
+      "name": "Ancestral Paths",
+      "description": "Target friendly unit within 12\" may move up to 12\" ignoring all models and terrain. This must end outside of 12\" of any enemy units.",
+      "charge": 7
+    },
+    "starburst": {"name": "Starburst", "description": "Target enemy unit within 24\" takes 5 automatic hits with AP(2).", "charge": 6},
+    "primal_fury": {"name": "Primal Fury", "description": "Target friendly unit within 12\" makes one additional attack with any Melee weapon until the end of the turn.", "charge": 5}
+  },
+  "strategies": {
+    "natural_camo": {
+      "name": "Natural Camoflage",
+      "phase": "activation",
+      "description": "Use when an enemy targets a _Gecko_ unit with a shooting attack while that unit has the benefit of cover.  The enemy suffers -1 Accuracy for that attack.",
+      "flavor": "Geckos are skilled at blending in with their environments.",
+      "cost": 1
+    },
+    "fearless": {
+      "name": "Fearless",
+      "phase": "activation",
+      "description": "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
+      "flavor": "The proud lizardfolk survive in a dangerous world by sheer willpower alone.",
+      "cost": 1
+    },
+    "cold_blooded": {
+      "name": "Cold-blooded",
+      "phase": "activation",
+      "description": "Use when an _Infantry_ or _Heavy Infantry_ unit fights. Hits rolls of 1 or 2 gain +2 AP.",
+      "flavor": "While they wield weapons and armor made of gold, the lizardfolk are ferocious predators at heart.",
+      "cost": 2
+    }
+  }
 }
