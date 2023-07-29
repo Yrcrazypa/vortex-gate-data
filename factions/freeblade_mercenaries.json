@@ -1,7 +1,7 @@
 {
-  "id": "knight_lords",
-  "name": "Knight Lords",
-  "author": "Caliallie#6369",
+  "id": "freeblade_mercenaries",
+  "name": "Freeblade Mercenaries",
+  "author": "guitarninja",
   "background": "An army consisting of titanic machines and the chivilrous order of warriours that pilot and support them.",
   "units": {
     "helverin_knight": {
