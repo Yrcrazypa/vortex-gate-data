@@ -287,11 +287,11 @@
       "alliance": "doom",
       "description": "The Tainted Moonclan seek nothing less than the destruction of civilization, turning it all into burning rubble."
     },
-    "feudal_kingdoms": {
+    "skyborn_kingdoms": {
       "version": "1.0",
-      "name": "Feudal Kingdoms",
-      "id": "feudal_kingdoms",
-      "url": "feudal_kingdoms.json",
+      "name": "Skyborn Kingdoms",
+      "id": "skyborn_kingdoms",
+      "url": "skyborn_kingdoms.json",
       "color": "#990c0c",
       "alliance": "order",
       "description": "The myriad of Feudal Kingdoms are mercurial and quick-blooded, wanting only peace one generation while seeking to conquer the world the next - and well-equipped for either."
