@@ -3,7 +3,6 @@
   "id": "savage_orc_tribes",
   "color": "#50974A",
   "author": "Xekon#8266",
-  "alliance": "greenskins",
   "units": {
     "troll_king": {
       "name": "Troll King",

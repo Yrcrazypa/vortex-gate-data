@@ -2,7 +2,6 @@
     "name": "Realmshapers",
     "id": "realmshapers",
     "author": "Xekon#8266",
-    "alliance": "destruction",
     "units": {
         "druid": {
             "name": "Druid",

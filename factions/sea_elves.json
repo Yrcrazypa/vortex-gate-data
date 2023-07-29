@@ -4,7 +4,6 @@
   "author": "Xekon#8266",
   "color": "#03414e",
   "description": "Raising from the depths of the ocean, transmuted by ancient magic.",
-  "alliance": "order",
   "units": {
     "king_mount": {
       "name": "Depthbound King on Moonlight Kelpie",
