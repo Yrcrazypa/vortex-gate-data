@@ -770,8 +770,8 @@
     "carbine": {"name": "Carbine", "ap": 2, "attacks": 1, "short": 9, "medium": 18, "rules": ["assault"]},
     "shotgun": {"name": "Shotgun", "attacks": 1, "short": 6, "medium": 12, "rules": ["assault", "brutal"]},
     "flamethrower_warmachine": {"name": "Flamethrower (Warmachine)", "rules": ["flame"], "attacks": 6, "ap": 2, "medium": 12, "short": 6},
-    "flamethrower": {"name": "Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
-    "lethal_flamethrower": {"name": "Lethal Flamethrower", "rules": ["flame", "lethal"], "attacks": 3, "ap": 1, "medium": 12, "short": 6},
+    "flamethrower": {"name": "Flamethrower", "attacks": 2, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
+    "lethal_flamethrower": {"name": "Lethal Flamethrower", "rules": ["flame", "lethal"], "attacks": 2, "ap": 1, "medium": 12, "short": 6},
     "mortar_rifle": {"name": "Mortar-Rifle", "short": 9, "medium": 18, "ap": 3, "attacks": 1, "rules": [{"id": "blast", "x": 3}, "scatter"]},
     "mortar": {"name": "Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": ["heavy", "indirect", "scatter", {"id": "blast", "x": 3}]},
     "poison_mortar": {"name": "Poison Mortar", "short": 12, "medium": 24, "ap": 3, "attacks": 1, "rules": [{"id": "blast", "x": 3}, "indirect", "scatter", "poison"]},
@@ -1040,15 +1040,15 @@
         {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]}
       ]
     },
-    "twin_flamethrower": {"name": "Twin Flamethrower", "attacks": 6, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
+    "twin_flamethrower": {"name": "Twin Flamethrower", "attacks": 4, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
     "combi_flamer": {
       "name": "Combi-flamethrower Rifle",
       "profiles": [
-        {"name": "Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
+        {"name": "Flamethrower", "attacks": 2, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
         {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]}
       ]
     },
-    "fist_flamethrower": {"name": "Fist Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "flame"]},
+    "fist_flamethrower": {"name": "Fist Flamethrower", "attacks": 2, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "flame"]},
     "heavy_railgun": {"name": "Heavy Railgun", "attacks": 2, "short": 24, "medium": 48, "ap": 5, "rules": ["breaching", "heavy"]},
     "railgun": {"name": "Railgun", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": ["breaching"]},
     "rail_cannon": {"name": "Rail Cannon", "attacks": 1, "short": 30, "medium": 60, "ap": 7, "rules": ["breaching", "heavy"]},
@@ -1096,11 +1096,11 @@
     "crab_cannon": {"name": "Crab Cannon", "attacks": 1, "ap": 5, "short": 18, "medium": 36, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "defense_rifle_array": {"name": "Defense Rifle Array", "attacks": 3, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
     "reaper_cannon": {"name": "Reaper Autocannon", "attacks": 4, "short": 18, "medium": 36, "ap": 4},
-    "heavy_flamethrower": {"name": "Heavy Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 2, "rules": ["flame"]},
+    "heavy_flamethrower": {"name": "Heavy Flamethrower", "attacks": 2, "short": 6, "medium": 12, "ap": 2, "rules": ["flame"]},
     "mutated_guns": {"name": "Mutated Guns", "attacks": 3, "short": 12, "medium": 24, "ap": 6, "rules": ["rending"]},
     "havoc_missiles": {"name": "Havoc Missiles", "attacks": 1, "short": 24, "medium": 48, "ap": 2, "rules": [{"id": "blast", "x": 3}]},
     "demolition_cannon": {"name": "Demolition Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 8, "rules": ["heavy", {"id": "blast", "x": 3}]},
-    "bane_flamethrower": {"name": "Bane Flamethrower", "attacks": 3, "short": 9, "medium": 18, "ap": 4, "rules": ["flame"]},
+    "bane_flamethrower": {"name": "Bane Flamethrower", "attacks": 2, "short": 9, "medium": 18, "ap": 4, "rules": ["flame"]},
     "ecto_cannon": {"name": "Ecto Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": [{"id": "blast", "x": 2}]},
     "forge_cannon": {"name": "Forge Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 5},
     "excruciating_cannons": {"name": "Excruciating Cannons", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "blast", "x": 2}]},
