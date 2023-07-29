@@ -63,15 +63,15 @@
     }
   },
   "factions": {
-    "high_elves": {
+    "starlight_sages": {
       "version": "1.0",
-      "name": "High Elf Worlds",
-      "id": "high_elves",
-      "url": "high_elves.json",
+      "name": "Starlight Sages",
+      "id": "starlight_sages",
+      "url": "starlight_sages.json",
       "color": "#295788",
       "secondary_color": "#e8bb00",
       "alliance": "order",
-      "description": "The High Elf Worlds are a group of large constructed fleet habitats. They focus on a mobile and deadly mix of advanced technology and unique fast tactics to achieve victory"
+      "description": "The Starlight Sages are a race of Elven scholars chronicling the evolution of the universe and everything in it. They focus on a mobile and deadly mix of advanced technology and unique fast tactics to achieve victory."
     },
     "darkstar_pillagers": {
       "version": "1.0",
