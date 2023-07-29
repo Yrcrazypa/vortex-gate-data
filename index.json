@@ -212,14 +212,14 @@
       "alliance": "order",
       "description": "The Imperial Agencies is the order dedicated to hunting dangerous demons and other Psychic entities which cannot be trusted in the mankind. Their tactics rely on using skilled demon hunting individuals along with advanced assassins to hunt and destroy those who most dangerous."
     },
-    "forge_masters": {
+    "voidforge_navigators": {
       "version": "1.0",
-      "name": "Forge Masters",
-      "id": "forge_masters",
-      "url": "forge_masters.json",
+      "name": "Voidforge Navigators",
+      "id": "voidforge_navigators",
+      "url": "voidforge_navigators.json",
       "color": "#7a2007",
       "secondary_color": "#a82d0a",
-      "description": "The Forge Masters are a mining race of dwarven ancestry. They roam the endless expanse in large fleets searching for exquisite loot and are not opposed to doing a job or two for anyone with the money to pay. They favor heavy armor and deadly close ranged weaponry.",
+      "description": "The Voidforge Navigators are a mining race of dwarven ancestry. They roam the endless expanse in large fleets searching for exquisite loot and are not opposed to doing a job or two for anyone with the money to pay. They favor heavy armor and deadly close ranged weaponry.",
       "alliance": "mercenaries"
     },
     "gca": {

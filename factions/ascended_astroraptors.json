@@ -463,14 +463,8 @@
           "options": [
             {
               "replaceWeapon": {"id": "laser_pistol", "count": 1},
-              "withWeapon": [
-                {"id": "plasma_pistol"},
-                {"id": "machine_pistol"},
-                {"id": "heavy_laser_pistol"},
-                {"id": "flamethrower_pistol"},
-                {"id": "thump_pistol"},
-                {"id": "railvolver"}],
-                "count": 3
+              "withWeapon": [{"id": "plasma_pistol"}, {"id": "machine_pistol"}, {"id": "heavy_laser_pistol"}, {"id": "flamethrower_pistol"}, {"id": "thump_pistol"}, {"id": "railvolver"}],
+              "count": 3
             }
           ],
           "min": 1,
@@ -483,26 +477,22 @@
       "description": "A squad of super-strong large uplifted triceratops-like beings that were recently inducted into the fold. (WIP, but usable)",
       "category": "elite",
       "models": [
-          {
-              "name": "Triceratops Shock Troops",
-              "courage": 6,
-              "shoot": 5,
-              "fight": 6,
-              "movement": 6,
-              "defense": 7,
-              "reflexes": 5,
-              "weapons": ["heavy_shotgun", "frags", {"id": "heavy_ccw", "count": 2}],
-              "options": [
-                  {"addRule": ["shield"]},
-                  {"replaceWeapon": "heavy_shotgun", "withWeapon": ["wrist_grenades"]},
-                  {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": ["ogre_maul"]}
-              ],
-              "rules": [{"id": "wounds", "x": 2}],
-              "min": 3,
-              "max": 9
-          }
+        {
+          "name": "Triceratops Shock Troops",
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "movement": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "weapons": ["heavy_shotgun", "frags", {"id": "heavy_ccw", "count": 2}],
+          "options": [{"addRule": ["shield"]}, {"replaceWeapon": "heavy_shotgun", "withWeapon": ["wrist_grenades"]}, {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": ["ogre_maul"]}],
+          "rules": [{"id": "wounds", "x": 2}],
+          "min": 3,
+          "max": 9
+        }
       ]
-  },
+    },
     "raptor_bikes": {
       "name": "Raptor Bikers",
       "description": "A squad of raptors clad in bike-shaped armor to zip across the battlefield.",
@@ -511,12 +501,9 @@
       "rules": ["evasive"],
       "options": [
         {"replaceWeapon": ["laser_carbine", {"id": "heavy_ccw", "count": 1}], "withWeapon": [[{"id": "laser_pistol"}, {"id": "heavy_ccw", "count": 2}]]},
-        {"replaceWeapon": "laser_carbine", "withWeapon": ["shrapnel_shotgun"],
-        "addRule": [{"id": "impact", "x": 2}],
-        "replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]}
+        {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"], "addRule": [{"id": "impact", "x": 2}]}
       ],
       "models": [
-        
         {
           "name": "Raptor Biker",
           "courage": 6,
@@ -873,21 +860,21 @@
       "cost": 1
     }
   },
-  "relics":{
-"relic_experimental_pistol": {
-  "name": "Experimental Charge Pistol",
-  "weapon": "legend_experimental_charge_pistol",
-  "description": "Replace one model's Heavy Charge Pistol with the Experimental Charge Pistol.",
-  "flavor": "Fresh from the Prototype Labs, this Heavy Charge Pistol's blast radius is greatly increased.",
-  "points": 5
-},
-"relic_metallic_clawtips":{
-  "name": "Metallic Clawtips",
-  "weapon": "legend_metallic_clawtips",
-  "description": "Replace one Command model's CCW with Metallic Clawtips.",
-  "flavor": "Made of a rare alloy, these deadly clawtips are only afforded to those of high station.",
-  "points": 5
-}
+  "relics": {
+    "relic_experimental_pistol": {
+      "name": "Experimental Charge Pistol",
+      "weapon": "legend_experimental_charge_pistol",
+      "description": "Replace one model's Heavy Charge Pistol with the Experimental Charge Pistol.",
+      "flavor": "Fresh from the Prototype Labs, this Heavy Charge Pistol's blast radius is greatly increased.",
+      "points": 5
+    },
+    "relic_metallic_clawtips": {
+      "name": "Metallic Clawtips",
+      "weapon": "legend_metallic_clawtips",
+      "description": "Replace one Command model's CCW with Metallic Clawtips.",
+      "flavor": "Made of a rare alloy, these deadly clawtips are only afforded to those of high station.",
+      "points": 5
+    }
   },
   "buyLinks": [{"name": "Treadhead Rad", "link": "https://www.myminifactory.com/campaigns/raygun-raptors-95"}]
 }
