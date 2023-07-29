@@ -19,7 +19,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["fly", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}, {"id": "marksman", "x": 2}],
+          "rules": ["fly", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}, {"id": "marksman", "x": 2}],
           "weapons": [{"id": "suit_fists", "count": 4}],
           "options": [
             {
@@ -583,7 +583,7 @@
       "description": "A skilled biomancer that guides the Tribe's mutations",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "warrior", "x": 1}, "guided_mutation"],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "warrior", "x": 1}, "guided_mutation"],
       "models": [
         {
           "name": "Shaper",
