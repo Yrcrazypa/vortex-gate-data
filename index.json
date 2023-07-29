@@ -250,14 +250,14 @@
       "alliance": "death",
       "description": "Vampire Lords are necromancers who have learned to imbue themselves with necrotic power.  They wield their undead hordes like a weapon, to cut away those who would stand in their way."
     },
-    "sea_elves": {
+    "deepwater_kings": {
       "version": "1.0",
-      "name": "Sea Elves",
-      "id": "sea_elves",
-      "url": "sea_elves.json",
+      "name": "Deepwater Kings",
+      "id": "deepwater_kings",
+      "url": "deepwater_kings.json",
       "color": "#03414e",
       "alliance": "death",
-      "description": "Transmuted by ancient magic to be mightier than any other elf, the Sea Elves require incredible alchemical concoctions to survive.  They hire themselves out to other races to afford their survival, and live under the sea to avoid mortal conflict."
+      "description": "Transmuted by ancient magic to be mightier than any other elf, the Deepwater Kings require incredible alchemical concoctions to survive.  They hire themselves out to other races to afford their survival, and live under the sea to avoid mortal conflict."
     },
     "spectral_legions": {
       "version": "1.0",
