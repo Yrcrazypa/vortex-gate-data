@@ -668,8 +668,8 @@
       "keywords": ["Infantry", "Witch Hunters"],
       "options": [
         {
-          "replaceWeapon": ["marine_rifle", {"id": "ccw", "count": 2}],
-          "withWeapon": [["flamethrower", {"id": "ccw", "count": 2}], {"id": "energy_greatblade", "count": 2}],
+          "replaceWeapon": ["marine_rifle", "ccw"],
+          "withWeapon": [["flamethrower", "ccw"], {"id": "energy_greatblade", "count": 2}],
           "modelLimit": "all",
           "limit": 1
         }
@@ -683,7 +683,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "psychic_grenades", {"id": "ccw", "count": 2}],
+          "weapons": ["marine_rifle", "psychic_grenades", "ccw"],
           "rules": [{"id": "ward", "x": 1}],
           "min": 1,
           "max": 1
