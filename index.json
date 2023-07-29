@@ -94,11 +94,11 @@
       "color": "#4f90e0",
       "description": "Uplifted millenia ago by an unknown precursor race, the Ascended Astro-Raptors advanced from feral beasts to exploring the stars. They combine advanced technology with deadly close-ranged and claw-filled assaults."
     },
-    "knight_lords": {
+    "freeblade_mercenaries": {
       "version": "1.0",
-      "name": "Knight Lords",
+      "name": "Freeblade Mercenaries",
       "id": "freeblade_mercenaries",
-      "url": "knight_lords.json",
+      "url": "freeblade_mercenaries.json",
       "color": "#396e9e",
       "secondary_color": "#9a1115",
       "alliance": "mercenaries",
