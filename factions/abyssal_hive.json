@@ -2,18 +2,18 @@
   "name": "Abyssal Hive",
   "id": "abyssal_hive",
   "color": "#3d3354",
-  "description": "A swarm of alien creatures from far-away systems controlled by an ancient hive mind. They feast on other species, absorbing their souls to turn into more of their kind. They have a combination of deadly creatures and swarms of agile aliens to defeat their foes.",
-  "lore": "\n\nLong before the rise of civilizations, when the universe was still young and untamed, there existed a realm beyond the known galaxies—a realm of primordial chaos and darkness. Within this forgotten dimension lay an ancient and malevolent force, the Abyssal Hive. This cosmic horror was a gathering of nightmarish beings, each one hungry for the consumption of souls and the very essence of existence.\n\nThe origin of the Abyssal Hive remains shrouded in mystery, as its existence predates even the most ancient records of cosmic history. Some legends speak of cosmic gods that grew too ambitious and sought to control the very fabric of reality, only to be cast down and banished to the Abyssal Realm, forming the Hive as a collective punishment.\n\nWhen the Vortex Gate was unwittingly opened by a group of curious explorers in the distant past, it acted as a gateway to the Abyssal Realm, allowing the nightmarish beings to flood into the known universe. The Hive's arrival was cataclysmic, leaving devastation in its wake as it consumed entire worlds and devoured the souls of countless beings.\n\nThe Abyssal Hive operated on a terrifying cycle of destruction and creation. The souls of those devoured by its creatures were assimilated into the hive-mind of the Abyssal beings, adding to their collective power. The Hive's insatiable hunger for souls was not only a means of sustenance but a source of dark energy that fueled its ability to create more abyssal creatures.\n\nAs the Hive spread across galaxies, it left a trail of death and despair in its wake. Civilizations crumbled, stars were extinguished, and entire planets were reduced to lifeless husks. The Abyssal Hive's power grew with each soul consumed, and its influence over the cosmic fabric of reality deepened.\n\nOver time, the Abyssal Hive became an embodiment of entropy and chaos, an apocalyptic force that sought to bring about the end of the universe. Some believe that the Hive's ultimate goal is to unravel the very laws of existence and plunge everything into an eternal abyss of darkness and nothingness.\n\nThe creatures of the Abyssal Hive displayed a terrifying level of intelligence and coordination. Each being in the hive-mind was connected, communicating through an incomprehensible web of thoughts and consciousness. This unified intelligence allowed them to act with a singular purpose and plan their devastating assaults on various worlds and civilizations.\n\nDespite their horrifying nature, the Abyssal creatures were not mindless destroyers. They exhibited a perverse form of twisted creativity, engineering nightmarish monstrosities and weaving dark energies into abominable constructs. Their creations ranged from grotesque hybrids of organic and mechanical components to eldritch abominations defying the laws of physics.\n\nIn the face of the Abyssal Hive's terrifying onslaught, some civilizations sought to forge alliances and resist the encroaching darkness. A coalition of powerful cosmic entities known as the "Celestial Guardians" was formed, vowing to stand against the Hive's malevolent influence and defend the remnants of existence.\n\nThe cosmic struggle between the Abyssal Hive and the Celestial Guardians continues to this day, an unending battle between the forces of destruction and those who fight for the preservation of the universe. The fate of all reality hangs in the balance, as the Abyssal Hive's insatiable hunger for souls drives it ever closer to fulfilling its dark and apocalyptic purpose.",
+  "description": "A swarm of alien creatures from far-away systems controlled by an ancient hive mind. They feast on other species, absorbing their flesh to turn into more of their kind. They have a combination of deadly creatures and swarms of agile aliens to defeat their foes.",
+  "lore": "\n\nLong before the rise of civilizations, when the universe was still young and untamed, there existed a realm beyond the known galaxies—a realm of primordial chaos and darkness. Within this forgotten dimension lay an ancient and malevolent force, the Hiveal Hive. This cosmic horror was a gathering of nightmarish beings, each one hungry for the consumption of souls and the very essence of existence.\n\nThe origin of the Hiveal Hive remains shrouded in mystery, as its existence predates even the most ancient records of cosmic history. Some legends speak of cosmic gods that grew too ambitious and sought to control the very fabric of reality, only to be cast down and banished to the Hiveal Realm, forming the Hive as a collective punishment.\n\nWhen the Vortex Gate was unwittingly opened by a group of curious explorers in the distant past, it acted as a gateway to the Hiveal Realm, allowing the nightmarish beings to flood into the known universe. The Hive's arrival was cataclysmic, leaving devastation in its wake as it consumed entire worlds and devoured the souls of countless beings.\n\nThe Hiveal Hive operated on a terrifying cycle of destruction and creation. The souls of those devoured by its creatures were assimilated into the hive-mind of the Hiveal beings, adding to their collective power. The Hive's insatiable hunger for souls was not only a means of sustenance but a source of dark energy that fueled its ability to create more abyssal creatures.\n\nAs the Hive spread across galaxies, it left a trail of death and despair in its wake. Civilizations crumbled, stars were extinguished, and entire planets were reduced to lifeless husks. The Hiveal Hive's power grew with each soul consumed, and its influence over the cosmic fabric of reality deepened.\n\nOver time, the Hiveal Hive became an embodiment of entropy and chaos, an apocalyptic force that sought to bring about the end of the universe. Some believe that the Hive's ultimate goal is to unravel the very laws of existence and plunge everything into an eternal abyss of darkness and nothingness.\n\nThe creatures of the Hiveal Hive displayed a terrifying level of intelligence and coordination. Each being in the hive-mind was connected, communicating through an incomprehensible web of thoughts and consciousness. This unified intelligence allowed them to act with a singular purpose and plan their devastating assaults on various worlds and civilizations.\n\nDespite their horrifying nature, the Hiveal creatures were not mindless destroyers. They exhibited a perverse form of twisted creativity, engineering nightmarish monstrosities and weaving dark energies into abominable constructs. Their creations ranged from grotesque hybrids of organic and mechanical components to eldritch abominations defying the laws of physics.\n\nIn the face of the Hiveal Hive's terrifying onslaught, some civilizations sought to forge alliances and resist the encroaching darkness. A coalition of powerful cosmic entities known as the "Celestial Guardians" was formed, vowing to stand against the Hive's malevolent influence and defend the remnants of existence.\n\nThe cosmic struggle between the Hiveal Hive and the Celestial Guardians continues to this day, an unending battle between the forces of destruction and those who fight for the preservation of the universe. The fate of all reality hangs in the balance, as the Hiveal Hive's insatiable hunger for souls drives it ever closer to fulfilling its dark and apocalyptic purpose.",
   "author": "guitarninja",
   "units": {
     "swarm_lord": {
-      "name": "Abyss Lord",
+      "name": "Hive Lord",
       "description": "A great alien beast, acting as a catalyst for the hive mind.",
       "category": "hero",
       "keywords": ["Monster"],
       "models": [
         {
-          "name": "Abyss Lord",
+          "name": "Hive Lord",
           "movement": 8,
           "fight": 7,
           "shoot": 6,
@@ -34,7 +34,7 @@
       ]
     },
     "hive_queen": {
-      "name": "Abyss Queen",
+      "name": "Hive Queen",
       "description": "A great alien beast, healing swarms of aliens with hyper-regenerative pods in mere seconds.",
       "category": "hero",
       "keywords": ["Monster"],
@@ -60,12 +60,12 @@
       ]
     },
     "soul_stealer_lord": {
-      "name": "Soul Harvester Lord",
+      "name": "Harvester Lord",
       "description": "A ferocious alien with enhanced psychic power.",
       "category": "hero",
       "models": [
         {
-          "name": "Soul Harvester Lord",
+          "name": "Harvester Lord",
           "courage": 7,
           "shoot": 0,
           "fight": 7,
@@ -81,13 +81,13 @@
       ]
     },
     "swarm_warrior_prime": {
-      "name": "Abyss Spawn Prime",
+      "name": "Hive Spawn Prime",
       "description": "A leader amongst the elite alien warriors.",
       "category": "hero",
       "keywords": ["Heavy Infantry"],
       "models": [
         {
-          "name": "Abyss Spawn Prime",
+          "name": "Hive Spawn Prime",
           "courage": 7,
           "shoot": 6,
           "fight": 7,
@@ -112,13 +112,13 @@
       ]
     },
     "swarm_warriors": {
-      "name": "Abyss Spawn",
+      "name": "Hive Spawn",
       "description": "Elite warriors who grow additional limbs when they absorb enough biomass.",
       "category": "core",
       "keywords": ["Heavy Infantry"],
       "models": [
         {
-          "name": "Abyss Spawn",
+          "name": "Hive Spawn",
           "courage": 6,
           "shoot": 5,
           "fight": 6,
@@ -141,13 +141,13 @@
       ]
     },
     "soul_stealers": {
-      "name": "Soul Harvesters",
+      "name": "Flesh Harvesters",
       "description": "Ferocious aliens that rip apart their foes with unnerving speed.",
       "category": "core",
       "rules": ["agile"],
       "models": [
         {
-          "name": "Soul Harvesters",
+          "name": "Flesh Harvesters",
           "courage": 6,
           "shoot": 5,
           "fight": 6,
@@ -162,14 +162,14 @@
       ]
     },
     "hive_swarm": {
-      "name": "Hive Abyss",
+      "name": "Hive Swarm",
       "description": "Swarm of alien insects, weak on their own but dangerous in numbers.",
       "category": "core",
-      "keywords": ["Abyss"],
+      "keywords": ["Swarwm"],
       "rules": [{"id": "swarm", "x": 3}],
       "models": [
         {
-          "name": "Hive Abyss",
+          "name": "Hive Swarm",
           "courage": 4,
           "reflexes": 5,
           "fight": 5,
@@ -184,12 +184,12 @@
       ]
     },
     "grunts": {
-      "name": "Grunts",
+      "name": "Hive Skirmishers",
       "description": "Common alien beasts equipped with ranged weapons, used in great swarms to overwhelm the foe.",
       "category": "core",
       "models": [
         {
-          "name": "Grunt",
+          "name": "Skirmishers",
           "courage": 4,
           "shoot": 5,
           "fight": 5,
@@ -204,7 +204,7 @@
       ]
     },
     "assault_grunts": {
-      "name": "Assault Grunts",
+      "name": "Hive Breakers",
       "description": "Common alien beasts, used in great swarms to overwhelm the foe.",
       "category": "core",
       "rules": ["agile"],
@@ -246,13 +246,13 @@
       ]
     },
     "swarm_guardians": {
-      "name": "Abyss Guardians",
+      "name": "Hive Guardians",
       "description": "Elite warriors with a thick carapace and deadly bio-cannons.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "models": [
         {
-          "name": "Abyss Guardian",
+          "name": "Hive Guardian",
           "courage": 6,
           "reflexes": 5,
           "fight": 5,
@@ -268,13 +268,13 @@
       ]
     },
     "swarm_lord_guard": {
-      "name": "Abyss Lord Guardians",
+      "name": "Hive Lord Guardians",
       "description": "Heavily armored bodyguards of Hive Lords.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "models": [
         {
-          "name": "Abyss Lord Guardian",
+          "name": "Hive Lord Guardian",
           "courage": 6,
           "reflexes": 5,
           "fight": 6,
@@ -290,14 +290,14 @@
       ]
     },
     "tunnelers": {
-      "name": "Abyss Tunnelers",
+      "name": "Hive Tunnelers",
       "description": "Large alien beasts which burrow underground to surprise their prey.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "rules": [{"id": "wounds", "x": 2}, "ambush"],
       "models": [
         {
-          "name": "Abyss Tunneler",
+          "name": "Hive Tunneler",
           "courage": 6,
           "shoot": 5,
           "fight": 6,
@@ -333,14 +333,14 @@
       ]
     },
     "swarm_stalker": {
-      "name": "Abyss Stalker",
-      "description": "Working alone, a Abyss Stalker hides in the shadows waiting for the moment to strike.",
+      "name": "Hive Stalker",
+      "description": "Working alone, a Hive Stalker hides in the shadows waiting for the moment to strike.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "rules": [{"id": "wounds", "x": 2}, "evasive", "ambush"],
       "models": [
         {
-          "name": "Abyss Stalker",
+          "name": "Hive Stalker",
           "courage": 7,
           "reflexes": 7,
           "fight": 7,
@@ -582,7 +582,7 @@
     "shock_cannon": {"name": "Shock Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 2}]},
     "ravenous_jaws": {"name": "Ravenous Jaws", "attacks": 1, "short": "Melee", "ap": 4},
     "pincer_claws": {"name": "Pincer Claws", "attacks": 1, "short": "Melee", "ap": 10},
-    "swarm_claws": {"name": "Abyss Claws", "attacks": 1, "short": "Melee", "rules": ["rending"]},
+    "swarm_claws": {"name": "Hive Claws", "attacks": 1, "short": "Melee", "rules": ["rending"]},
     "crushing_claws": {"name": "Crushing Claws", "attacks": 1, "short": "Melee", "ap": 7},
     "acidic_jaws": {"name": "Acidic Jaws", "attacks": 1, "short": "Melee", "ap": 2},
     "huge_acidic_jaws": {"name": "Huge Acidic Jaws", "attacks": 1, "short": "Melee", "ap": 4},
@@ -646,7 +646,7 @@
       "cost": 1
     },
     "swarm_reflexes": {
-      "name": "Abyss Reflexes",
+      "name": "Hive Reflexes",
       "phase": "activation",
       "description": "Use when taking an Initiative test for a reaction. That unit is treated as having +2 Initiative for that test.",
       "flavor": "The hive mind enhances all its troops with heightened senses.",
