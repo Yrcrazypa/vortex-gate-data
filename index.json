@@ -241,14 +241,14 @@
       "alliance": "order",
       "description": "Creations of an arch-wizard, the Storm Wardens exist to enforce peace around the realms - no matter who it may favour.  Their incredible weapons and armour are unmatched by other races."
     },
-    "vampire_lords": {
+    "nightborne_bloodkin": {
       "version": "1.0",
-      "name": "Vampire Lords",
-      "id": "vampire_lords",
-      "url": "vampire_lords.json",
+      "name": "Nightborn Bloodkin",
+      "id": "nightborne_bloodkin",
+      "url": "nightborne_bloodkin.json",
       "color": "#801111",
       "alliance": "death",
-      "description": "Vampire Lords are necromancers who have learned to imbue themselves with necrotic power.  They wield their undead hordes like a weapon, to cut away those who would stand in their way."
+      "description": "Nightborne Bloodkin are necromancers who have learned to imbue themselves with necrotic power.  They wield their undead hordes like a weapon, to cut away those who would stand in their way."
     },
     "deepwater_kings": {
       "version": "1.0",
