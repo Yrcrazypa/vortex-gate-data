@@ -521,7 +521,7 @@
     "surgeon": {
       "name": "Surgeon",
       "description": "A fearless battlefield medic trained in saving lives.",
-      "category": "elite",
+      "category": "hero",
       "models": [
         {
           "name": "Surgeon",
@@ -1770,7 +1770,7 @@
     "marine_interceptor": {
       "name": "Marine Interceptor",
       "description": "A light anti-aircraft aircraft.",
-      "category": "elite",
+      "category": "rare",
       "keywords": ["Aircraft", "Vehicle"],
       "models": [
         {

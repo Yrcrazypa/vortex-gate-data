@@ -1,5 +1,53 @@
 {
   "reportUrl": "https://github.com/dice-guild/vortex-gate-data",
+  "subfactions": {
+    "assault_focus": {"name": "Assault", "id": "assault_focus", "description": "A focus on all-out assaults and aggression."},
+    "firepower_focus": {"name": "Firepower", "id": "firepower_focus", "description": "A focus on overwhelming firepower."},
+    "mounted_focus": {"name": "Mounted", "id": "mounted_focus", "description": "A focus on transports and mounted combat."},
+    "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "description": "A focus on fast and fluid movement."},
+    "tactical_focus": {"name": "Tactical", "id": "tactical_focus", "description": "A focus on outsmarting and tricking the enemy."},
+    "stealth_focus": {"name": "Stealth", "id": "stealth_focus", "description": "A focus on sneaky and silent tactics."},
+    "vigilance_focus": {"name": "Vigilance", "id": "vigilance_focus", "description": "A focus on alertness and reactivity."},
+    "power_focus": {"name": "Power", "id": "power_focus", "description": "A focus on casting stronger and more consistent powers."},
+    "toughness_focus": {"name": "Toughness", "id": "toughness_focus", "description": "A focus on survival and unrelenting."},
+    "shock_focus": {"name": "Shock", "id": "shock_focus", "description": "A focus on striking fear into your enemies."},
+    "siege_focus": {"name": "Siege", "id": "siege_focus", "description": "A focus on siege warfare and denying cover."},
+    "morale_focus": {"name": "Morale", "id": "morale_focus", "description": "A focus on morale and battle awareness."}
+  },
+  "alliances": {
+    "death": {"name": "Bringers of Death"},
+    "destruction": {"name": "Forces of Destruction"},
+    "order": {"name": "Keepers of Order"},
+    "doom": {"name": "Instruments of Doom"},
+    "mercenaries": {"name": "Mercenaries"}
+  },
+  "categories": {"hero": {"name": "Hero"}, "core": {"name": "Core"}, "elite": {"name": "Elite"}, "rare": {"name": "Rare"}, "transport": {"name": "Transport"}, "fortification": {"name": "Fortification"}},
+  "organizations": {
+    "skirmish": {
+      "name": "Generalist",
+      "cost": 0,
+      "description": "A well-rounded force for taking on any mission.",
+      "categories": {"hero": {"min": 1, "max": 2}, "core": {"min": 2, "max": 5}, "elite": {"min": 0, "max": 3}, "rare": {"min": 0, "max": 2}, "transport": {"max": 3}, "fortification": {"min": 0, "max": 2}}
+    },
+    "elite": {
+      "name": "Elite",
+      "cost": 1,
+      "description": "An elite force to deal with specific targets.",
+      "categories": {"hero": {"min": 1, "max": 2}, "core": {"max": 3}, "elite": {"min": 2, "max": 5}, "rare": {"max": 2}, "transport": {"max": 3}, "fortification": {"max": 2}}
+    },
+    "rare": {
+      "name": "Rare",
+      "cost": 1,
+      "description": "A specialist force with heavy and support options.",
+      "categories": {"hero": {"min": 1, "max": 2}, "core": {"max": 3}, "elite": {"max": 3}, "rare": {"min": 2, "max": 5}, "transport": {"max": 3}, "fortification": {"max": 2}}
+    },
+    "support": {
+      "name": "Support",
+      "cost": 1,
+      "description": "A small supporting force.",
+      "categories": {"hero": {"max": 1}, "core": {"max": 2}, "elite": {"max": 2}, "rare": {"max": 1}, "transport": {"max": 2}, "fortification": {"max": 2}}
+    }
+  },
   "factions": {
     "high_elves": {
       "version": "1.0",
@@ -279,54 +327,6 @@
       "color": "#954535",
       "alliance": "mercenaries",
       "description": "Large-bodied mercenaries with huge appetites for gold and destruction."
-    }
-  },
-  "subfactions": {
-    "assault_focus": {"name": "Assault", "id": "assault_focus", "description": "A focus on all-out assaults and aggression."},
-    "firepower_focus": {"name": "Firepower", "id": "firepower_focus", "description": "A focus on overwhelming firepower."},
-    "mounted_focus": {"name": "Mounted", "id": "mounted_focus", "description": "A focus on transports and mounted combat."},
-    "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "description": "A focus on fast and fluid movement."},
-    "tactical_focus": {"name": "Tactical", "id": "tactical_focus", "description": "A focus on outsmarting and tricking the enemy."},
-    "stealth_focus": {"name": "Stealth", "id": "stealth_focus", "description": "A focus on sneaky and silent tactics."},
-    "vigilance_focus": {"name": "Vigilance", "id": "vigilance_focus", "description": "A focus on alertness and reactivity."},
-    "power_focus": {"name": "Power", "id": "power_focus", "description": "A focus on casting stronger and more consistent powers."},
-    "toughness_focus": {"name": "Toughness", "id": "toughness_focus", "description": "A focus on survival and unrelenting."},
-    "shock_focus": {"name": "Shock", "id": "shock_focus", "description": "A focus on striking fear into your enemies."},
-    "siege_focus": {"name": "Siege", "id": "siege_focus", "description": "A focus on siege warfare and denying cover."},
-    "morale_focus": {"name": "Morale", "id": "morale_focus", "description": "A focus on morale and battle awareness."}
-  },
-  "alliances": {
-    "death": {"name": "Bringers of Death"},
-    "destruction": {"name": "Forces of Destruction"},
-    "order": {"name": "Keepers of Order"},
-    "doom": {"name": "Instruments of Doom"},
-    "mercenaries": {"name": "Mercenaries"}
-  },
-  "categories": {"hero": {"name": "Hero"}, "core": {"name": "Core"}, "elite": {"name": "Elite"}, "rare": {"name": "Rare"}, "fortification": {"name": "Fortification"}},
-  "organizations": {
-    "skirmish": {
-      "name": "Generalist",
-      "cost": 0,
-      "description": "A well-rounded force for taking on any mission.",
-      "categories": {"hero": {"min": 1, "max": 2}, "core": {"min": 2, "max": 5}, "elite": {"min": 0, "max": 3}, "rare": {"min": 0, "max": 2}, "fortification": {"min": 0, "max": 2}}
-    },
-    "elite": {
-      "name": "Elite",
-      "cost": 1,
-      "description": "An elite force to deal with specific targets.",
-      "categories": {"hero": {"min": 1, "max": 2}, "core": {"max": 3}, "elite": {"min": 2, "max": 5}, "rare": {"max": 2}, "fortification": {"max": 2}}
-    },
-    "rare": {
-      "name": "Rare",
-      "cost": 1,
-      "description": "A specialist force with heavy and support options.",
-      "categories": {"hero": {"min": 1, "max": 2}, "core": {"max": 3}, "elite": {"max": 3}, "rare": {"min": 2, "max": 5}, "fortification": {"max": 2}}
-    },
-    "support": {
-      "name": "Support",
-      "cost": 1,
-      "description": "A small supporting force.",
-      "categories": {"hero": {"max": 1}, "core": {"max": 2}, "elite": {"max": 2}, "rare": {"max": 2}, "fortification": {"max": 2}}
     }
   },
   "relics": {
