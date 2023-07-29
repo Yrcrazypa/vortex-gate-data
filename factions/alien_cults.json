@@ -17,7 +17,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "militia_tactics", "x": 1}, {"id": "wounds", "x": 2}],
+          "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 2}],
           "weapons": ["defense_rifle", "frags", {"id": "ccw", "count": 2}],
           "options": [
             {"replaceWeapon": ["defense_rifle", {"id": "ccw", "count": 2}], "withWeapon": [["pistol", {"id": "ccw", "count": 3}]]},
@@ -32,7 +32,7 @@
                 {"id": "chainsword", "count": 3}
               ]
             },
-            {"replaceRule": {"id": "militia_tactics", "x": 1}, "withRule": {"id": "militia_tactics", "x": 2}}
+            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -52,13 +52,13 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": ["leader", {"id": "rifle_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["pistol", "blasting_charges", {"id": "bone_sword", "count": 4}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "web_pistol", "needle_pistol"]},
             {"replaceWeapon": {"id": "bone_sword", "count": 4}, "withWeapon": [{"id": "energy_pick", "count": 4}, {"id": "energy_mace", "count": 4}, {"id": "energy_hammer", "count": 4}]},
             {"addRule": ["cult_icon"]},
-            {"replaceRule": {"id": "rifle_tactics", "x": 1}, "withRule": {"id": "rifle_tactics", "x": 2}}
+            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -166,9 +166,9 @@
           "defense": 8,
           "reflexes": 7,
           "movement": 8,
-          "rules": ["agile", "leader", {"id": "melee_tactics", "x": 1}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["agile", "leader", {"id": "tactician", "x": 1}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "large_razor_talons", "count": 6}],
-          "options": [{"replaceRule": {"id": "melee_tactics", "x": 1}, "withRule": {"id": "melee_tactics", "x": 2}}],
+          "options": [{"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}],
           "min": 1,
           "max": 1
         }
@@ -910,13 +910,7 @@
     "legend_sacrificial_dagger": {"name": "Sacrificial Dagger", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["sacrifice"]}
   },
   "rules": {
-    "militia_tactics": {
-      "name": "Militia Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement",
-      "points": ["rule.x", {"multiply": 5}]
-    },
-    "cult_speaker": {"name": "Cult Speaker", "description": "Friendly _Infantry_ units within 6\" get +1 Courage.", "points": 10},
+    "cult_speaker": {"name": "Cult Speaker", "description": "This model's unit 6\" gains +1 Courage.", "points": 10},
     "chosen_abomination": {"name": "Chosen Abomination", "description": "Once per round, a friendly _Heavy Infantry_ unit within 6\" may gain +1 AP on all Melee weapons.", "points": 10},
     "cult_icon": {"name": "Cult Icon", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 Save when targeted by a Shooting or Fighting attack.", "points": 10},
     "extra_armor": {"name": "Reinforced Hull", "description": "Subtract 1 from all Damage Chart rolls for this model.", "points": 10},

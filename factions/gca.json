@@ -513,7 +513,7 @@
     },
     "rules": {
         "inspiring": {"name": "Inspiring (Infantry)", "description": "When activated, this unit may perform a group activation with up to 2 other friendly _Infantry_ units within 6\".", "points": 3},
-        "inspiring_x": {
+        "inspiring": {
             "name": "Inspiring",
             "inputs": ["x"],
             "description": "When activated, this unit may perform a group activation with up to 2 other friendly units of _X_ type within 6\".",

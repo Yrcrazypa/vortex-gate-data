@@ -43,9 +43,9 @@
                         {"replaceWeapon": [{"id": "grand_weapon", "count": 4}], "withWeapon": [{"id": "heavy_lance", "count": 4}]},
                         {"addRule": ["relic_shield"]},
                         {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}]},
-                        {"replaceRule": [{"id": "knight_tactics", "x": 1}], "withRule": [{"id": "knight_tactics", "x": 2}]}
+                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
                     ],
-                    "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}, "fly", {"id": "knight_tactics", "x": 1}],
+                    "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}, "fly", {"id": "warrior", "x": 1}],
                     "min": 1,
                     "max": 1
                 }
@@ -74,9 +74,9 @@
                         },
                         {"addRule": ["enchanted_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
                         {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}]},
-                        {"replaceRule": [{"id": "knight_tactics", "x": 1}], "withRule": [{"id": "knight_tactics", "x": 2}]}
+                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
                     ],
-                    "rules": ["fear", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}, {"id": "knight_tactics", "x": 1}],
+                    "rules": ["fear", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}, {"id": "warrior", "x": 1}],
                     "min": 1,
                     "max": 1
                 }
@@ -167,7 +167,7 @@
             ],
             "keywords": ["Undead", "Cavalry"],
             "subfactions": ["none"],
-            "rules": [{"id": "wounds", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}]
+            "rules": [{"id": "wounds", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}]
         },
         "barrow_king": {
             "name": "Barrow King",
@@ -389,7 +389,7 @@
             "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",
             "points": ["rule.x", {"multiply": 10}]
         },
-        "knight_tactics": {
+        "warrior": {
             "name": "Knight Tactics",
             "inputs": ["x"],
             "description": "When this unit is activated, choose up to X friendly _Cavalry_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",

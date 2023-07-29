@@ -9,7 +9,7 @@
       "description": "Foot infantry commander of the Ascended Astro-Raptors.",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "raptor_tactics", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Raptor Commander",
@@ -21,7 +21,7 @@
           "movement": 7,
           "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 2}],
           "options": [
-            {"replaceRule": {"id": "raptor_tactics", "x": 1}, "withRule": {"id": "raptor_tactics", "x": 2}},
+            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}},
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
             {"addRule": "tactical_holomap"}
           ],
@@ -36,7 +36,7 @@
       "description": "Foot infantry commander of the Ascendant Shocktroopers",
       "category": "hero",
       "keywords": ["Shock Trooper", "Infantry"],
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "raptor_tactics", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 2}],
       "options": [{"addRule": {"id": "ambush", "name": "Orbital Insertion", "modelLimit": "all"}}],
       "models": [
         {
@@ -49,7 +49,7 @@
           "movement": 7,
           "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 2}],
           "options": [
-            {"replaceRule": {"id": "raptor_tactics", "x": 1}, "withRule": {"id": "raptor_tactics", "x": 2}},
+            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}},
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
             {"addRule": "tactical_holomap"}
           ],
@@ -138,7 +138,7 @@
       "description": "A trained psychic adept at casting powers and supporting troops.",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Psychic",
@@ -837,12 +837,6 @@
     "legend_metallic_clawtips": {"name": "Metallic Clawtips", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["rending"]}
   },
   "rules": {
-    "raptor_tactics": {
-      "name": "Raptor Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement \n * +1 AP",
-      "points": ["rule.x", {"multiply": 10}]
-    },
     "banner": {"name": "Inspiring Banner", "description": "Friendly _Infantry_ units within 6\" get +1 Courage.", "points": 10},
     "tactical_holomap": {
       "name": "Tactical Holomap",

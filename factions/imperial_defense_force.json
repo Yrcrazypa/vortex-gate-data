@@ -221,7 +221,7 @@
             "name": "Company Commander",
             "description": "Foot infantry commander of the imperial defense force.",
             "category": "hero",
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "defense_force_tactics", "x": 2}, {"id": "wounds", "x": 2}],
+            "rules": [{"id": "leader", "x": "Infantry"}, {"id": "defense_force_tactics", "x": 2}, {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "Company Commander",
@@ -247,7 +247,7 @@
             "description": "Foot infantry commander of the elite storm troopers.",
             "category": "hero",
             "keywords": ["Storm Trooper", "Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "stormtrooper_tactics", "x": 1}, {"id": "wounds", "x": 2}],
+            "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "Stormtrooper Commander",
@@ -263,7 +263,7 @@
                         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]},
                         {"replaceWeapon": {"id": "chainsword", "count": 3}, "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "energy_fist", "count": 3}]},
                         {"addRule": {"id": "ambush", "name": "Orbital Insertion", "modelLimit": "all"}},
-                        {"replaceRule": {"id": "stormtrooper_tactics", "x": 1}, "withRule": {"id": "stormtrooper_tactics", "x": 2}}
+                        {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
                     ],
                     "min": 1,
                     "max": 1
@@ -274,7 +274,7 @@
             "name": "Platoon Commander",
             "description": "Foot infantry platoon leader of the imperial defense force.",
             "category": "hero",
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "defense_force_tactics", "x": 1}, {"id": "wounds", "x": 2}],
+            "rules": [{"id": "leader", "x": "Infantry"}, {"id": "defense_force_tactics", "x": 1}, {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "Platoon Commander",
@@ -299,7 +299,7 @@
             "name": "Commissar",
             "description": "A field officer assigned to keep soldiers motivated and in line.",
             "category": "hero",
-            "rules": [{"id": "leader_x", "x": "Infantry"}, "no_retreat", {"id": "wounds", "x": 2}],
+            "rules": [{"id": "leader", "x": "Infantry"}, "no_retreat", {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "Commissar",
@@ -323,7 +323,7 @@
             "name": "Psychic",
             "description": "A trained psychic adept at casting powers and supporting troops.",
             "category": "hero",
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+            "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "Psychic",
@@ -1135,7 +1135,7 @@
                         {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor", "field_radio"]},
                         {"replaceRule": [{"id": "battle_tank_tactics", "x": 1}], "withRule": [{"id": "battle_tank_tactics", "x": 2}]}
                     ],
-                    "rules": [{"id": "battle_tank_tactics", "x": 1}, {"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader_x", "x": "Vehicle"}, "vulnerable_side_rear"],
+                    "rules": [{"id": "battle_tank_tactics", "x": 1}, {"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader", "x": "Vehicle"}, "vulnerable_side_rear"],
                     "min": 1,
                     "max": 1
                 }

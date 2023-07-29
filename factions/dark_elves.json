@@ -16,14 +16,14 @@
                     "shoot": 6,
                     "fight": 6,
                     "defense": 7,
-                    "rules": [{"id": "beast_tactics", "x": 1}, "hover", {"id": "leader_x", "x": "Beast, Monster"}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "warrior", "x": 1}, "hover", {"id": "leader", "x": "Beast, Monster"}, {"id": "wounds", "x": 3}],
                     "reflexes": 6,
                     "weapons": ["barb_launcher", {"id": "glaive", "count": 3}],
                     "options": [
                         {"replaceWeapon": [{"id": "glaive", "count": 3}], "withWeapon": [["barb_pistol", {"id": "barb_knife", "count": 4}]]},
                         {"replaceWeapon": ["barb_pistol"], "withWeapon": ["flamethrower_pistol", "fusion_pistol"]},
                         {"replaceWeapon": [{"id": "barb_knife", "count": 4}], "withWeapon": [{"id": "energy_sword", "count": 4}, {"id": "poison_whip", "count": 4}]},
-                        {"replaceRule": [{"id": "beast_tactics", "x": 1}], "withRule": [{"id": "beast_tactics", "x": 2}]}
+                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -44,7 +44,7 @@
                     "fight": 7,
                     "defense": 7,
                     "reflexes": 7,
-                    "rules": [{"id": "heavy_impact", "x": 3}, "hover", {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "raider_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "heavy_impact", "x": 3}, "hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "raider_tactics", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["barb_pistol", "plasma_grenades", {"id": "barb_sword", "count": 5}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
                     "options": [
                         {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
@@ -82,7 +82,7 @@
                     "fight": 7,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "abomination_tactics", "x": 1}, "hover", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "abomination_tactics", "x": 1}, "hover", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
                     "weapons": ["barb_pistol", {"id": "barb_sword", "count": 5}],
                     "options": [
                         {"replaceWeapon": "barb_pistol", "withWeapon": ["poison_sprayer", "heavy_sniper_rifle", "poison_dart_rifle"]},
@@ -425,7 +425,7 @@
                             ]
                         },
                         {"addWeapon": ["soul_vortex"]},
-                        {"addRule": [{"id": "melee_tactics", "x": 1}]}
+                        {"addRule": [{"id": "tactician", "x": 1}]}
                     ],
                     "min": 1,
                     "max": 3

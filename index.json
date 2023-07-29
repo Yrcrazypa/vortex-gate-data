@@ -59,9 +59,9 @@
     },
     "corrupted_defense_force": {
       "version": "1.0",
-      "name": "Corrupted Defense Force",
-      "id": "corrupted_defense_force",
-      "url": "corrupted_defense_force.json",
+      "name": "Traitor Defense Force",
+      "id": "traitor_defense_force",
+      "url": "traitor_defense_force.json",
       "color": "#ba7f00",
       "secondary_color": "#343a40",
       "alliance": "corrupted_pact",
@@ -1626,8 +1626,7 @@
     "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
     "pestilence": {"name": "Pestilence", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 1}]},
     "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 1}]},
-    "leader": {"name": "Leader(Infantry)", "description": "This unit may lead another unit with the Infantry keyword.", "points": 10},
-    "leader_x": {"name": "Leader", "inputs": ["x"], "description": "This unit may lead another unit with _X_ keywords.", "points": 10},
+    "leader": {"name": "Leader", "description": "This unit may lead another unit with the same unit type keyword.", "points": 10},
     "support": {
       "name": "Support",
       "description": "When another friendly _Infantry_ unit within 6\" activates, this unit may perform a group activation with that unit. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly _Infantry_ unit.",
@@ -1678,36 +1677,7 @@
       "points": ["weapon.attacks", {"multiply": 1}]
     },
     "brutal": {"name": "Brutal", "description": "This weapon gains +1 AP at Short range.", "points": ["weapon.attacks", {"multiply": 0.5}]},
-    "rifle_tactics": {
-      "name": "Rifle Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
-      "points": ["rule.x", {"multiply": 10}]
-    },
-    "melee_tactics": {
-      "name": "Melee Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly Infantry units within 6\". Those units may re-roll failed Strength tests of 9+ until the end of the round.",
-      "points": ["rule.x", {"multiply": 10}]
-    },
-    "knight_tactics": {
-      "name": "Knight Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Cavalry_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",
-      "points": ["rule.x", {"multiply": 10}]
-    },
-    "marauder_tactics": {
-      "name": "Marauder Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Cavalry_ units within 6\". This unit and those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
-      "points": ["rule.x", {"multiply": 10}]
-    },
-    "sorcerous_tactics": {
-      "name": "Sorcerous Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly units within 6\". Those units may re-roll failed Power tests of 9+ until the end of the round.",
-      "points": ["rule.x", {"multiply": 10}]
-    },
+    "sorcerer": {"name": "Sorcerer", "description": "This model's unit may re-roll failed Power tests of 9+ until the end of the round.", "points": 10},
     "regeneration": {"name": "Regeneration", "description": "At the end of it's activation you can heal 1 wound that has been allocated to this model.", "points": 5},
     "crazed": {
       "name": "Crazed",
@@ -1739,10 +1709,12 @@
       "points": [4, {"multiply": "rule.x"}]
     },
     "disrupt": {"name": "Disrupt", "inputs": ["x"], "description": "This weapon has +X AP against units with _Damage Chart_.", "points": ["rule.x", {"multiply": 0.5}]},
-    "inspiring": {"name": "Inspiring(Infantry)", "description": "Friendly _Infantry_ units within 6\" gain +1 Courage when taking Courage Tests.", "points": 10},
-    "inspiring_x": {"name": "Inspiring", "inputs": ["x"], "description": "Friendly units of _X_ type within 6\" gain +1 Courage when taking Courage Tests.", "points": 10},
-    "tactician": {"name": "Tactician(Infantry)", "description": "Friendly _Infantry_ units within 6\" may re-roll failed Accuracy and Strength tests of 9+.", "points": 10},
-    "tactician_x": {"name": "Tactician", "inputs": ["x"], "description": "Friendly units of _X_ type within 6\" may re-roll failed Accuracy and Strength tests of 9+.", "points": 10},
+    "inspiring": {"name": "Inspiring", "description": "This model's unit gains +1 Courage when taking Courage Tests.", "points": 10},
+    "tactician": {"name": "Tactician", "description": "This model's unit may re-roll failed Accuracy and Strength tests of 9+.", "points": 10},
+    "charger": {"name": "Charger", "description": "This model's unit gains +3\" of movement when _Charging_.", "points": 10},
+    "warrior": {"name": "Warrior", "description": "This model's unit may re-roll failed Strength tests of 9+.", "points": 10},
+    "marksman": {"name": "Marksman", "description": "This model's unit may re-roll failed Accuracy tests of 9+.", "points": 10},
+    "striker": {"name": "Striker", "description": "This model's unit gains +1 AP on all weapons.", "points": 10},
     "legend_strategist": {"name": "Brilliant Strategist", "description": "While this model is alive and not broken you gain 1 additional Strategy Point at the start of the round.", "points": 20},
     "legend_wounds": {"name": "Resilient", "description": "This model gains Wounds(+1).", "points": 10},
     "legend_courage": {"name": "Inspired", "description": "This model gains +1 Courage.", "points": 10},
@@ -1776,12 +1748,6 @@
       "points": 5
     },
     "field_radio": {"name": "Field Radio", "description": "This model's unit gains +1 Initiative.", "points": 5},
-    "stormtrooper_tactics": {
-      "name": "Storm Trooper Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Storm Trooper_ _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement",
-      "points": ["rule.x", {"multiply": 10}]
-    },
     "psychic_prowess": {
       "name": "Prowess",
       "inputs": ["x"],
@@ -1830,12 +1796,6 @@
       "name": "Spotting Laser",
       "description": "Any time during this model's activation, pick an enemy unit within 36\" to gain 1 spotting marker. When a friendly unit shoots at that target they may spend spotting markers to gain the following for that attack: \n * One Marker: Re-roll Accuracy rolls of 9+ \n * Two Markers: +1 Accuracy \n\n\n These effects are cumulative and may be activated multiple times. At the end of the round, remove all spotting markers.",
       "points": 5
-    },
-    "beast_tactics": {
-      "name": "Beast Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Beast_ or _Monster_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",
-      "points": ["rule.x", {"multiply": 10}]
     }
   },
   "perks": {

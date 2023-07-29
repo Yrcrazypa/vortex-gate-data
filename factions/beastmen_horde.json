@@ -1,497 +1,480 @@
 {
-    "name": "Beastmen Horde",
-    "id": "beastmen_horde",
-    "author": "Valgaav#9736",
-    "color": "#954535",
-    "units": {
-        "minotaur_lord": {
-            "name": "Minotaur Lord",
-            "description": "A massive leader who breaks their foes with brute strength.",
-            "category": "hero",
-            "keywords": ["Heavy Infantry", "Monster"],
-            "models": [
-                {
-                    "name": "Minotaur Lord",
-                    "movement": 8,
-                    "courage": 7,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 8,
-                    "rules": [{"id": "brutal_tactics", "x": 1}, "furious", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 4}],
-                    "weapons": [{"id": "gouging_horns", "count": 2}, {"id": "grand_axe", "count": 3}],
-                    "options": [{"addRule": [{"id": "icon", "x": "Infantry. Heavy Infantry"}]}, {"replaceRule": [{"id": "brutal_tactics", "x": 1}], "withRule": [{"id": "brutal_tactics", "x": 2}]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "minotaur_mage": {
-            "name": "Minotaur Wizard",
-            "description": "A massive leader who has acquired arcane knowledge.",
-            "category": "hero",
-            "keywords": ["Heavy Infantry", "Monster"],
-            "models": [
-                {
-                    "name": "Minotaur Wizard",
-                    "movement": 8,
-                    "courage": 6,
-                    "shoot": 4,
-                    "fight": 6,
-                    "defense": 8,
-                    "reflexes": 8,
-                    "rules": ["furious", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 4}],
-                    "weapons": [{"id": "great_staff", "count": 2}, {"id": "enchanted_horns", "count": 3}, {"id": "cloven_hooves", "count": 3}],
-                    "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "satyr_lord": {
-            "name": "Satyr Lord",
-            "description": "A feral lord of the horde.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Satyr Lord",
-                    "movement": 7,
-                    "courage": 6,
-                    "shoot": 6,
-                    "fight": 6,
-                    "defense": 6,
-                    "reflexes": 8,
-                    "rules": ["leader", {"id": "warrior_tactics", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "grand_weapon", "count": 6}],
-                    "options": [{"addRule": ["shield", {"id": "icon", "x": "Infantry"}]}, {"replaceRule": [{"id": "warrior_tactics", "x": 1}], "withRule": [{"id": "warrior_tactics", "x": 2}]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "satyr_shaman": {
-            "name": "Satyr Shaman",
-            "description": "A feral wizard of the horde.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Satyr Shaman",
-                    "movement": 7,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 6,
-                    "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": ["handweapon", "staff"],
-                    "options": [
-                        {"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]},
-                        {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]},
-                        {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "lord_boar_chariot": {
-            "name": "Satyr Lord on Twisted Boar Chariot",
-            "description": "A ramshackle chariot pulled by a pair of mutated boars.",
-            "category": "hero",
-            "keywords": ["Vehicle"],
-            "models": [
-                {
-                    "name": "Satyr Lord on Twisted Boar Chariot",
-                    "movement": 10,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 8,
-                    "reflexes": 5,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader_x", "x": "Vehicle"}, {"id": "warrior_tactics", "x": 1}],
-                    "weapons": [{"id": "grand_weapon", "count": 6}, {"id": "boar_tusks", "count": 4}],
-                    "options": [{"addRule": ["relic_shield", {"id": "icon", "x": "Vehicle"}]}, {"replaceRule": [{"id": "warrior_tactics", "x": 1}], "withRule": [{"id": "warrior_tactics", "x": 2}]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "centaur_lord": {
-            "name": "Centaur Lord",
-            "description": "Wild-born hero, stampeding across the realms in hunt of their prey.",
-            "category": "hero",
-            "keywords": ["Beast", "Cavalry"],
-            "models": [
-                {
-                    "name": "Centaur Lord",
-                    "movement": 8,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 5,
-                    "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "heavy_spear", "count": 2}, {"id": "hooves_and_teeth", "count": 2}, "buckler"],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "blessed_ogre_centaur": {
-            "name": "Blessed Ogre Centaur",
-            "description": "The greatest of Ogre Centaurs can channel the wrath of the heavens above.",
-            "category": "hero",
-            "keywords": ["Beast", "Cavalry"],
-            "models": [
-                {
-                    "name": "Blessed Ogre Centaur",
-                    "movement": 10,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 7,
-                    "rules": [{"id": "impact", "x": 3}, {"id": "leader", "x": "Beast"}, {"id": "power", "x": 1}, {"id": "charger_tactics", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "great_weapon", "count": 4}, {"id": "rending_claws", "count": 2}],
-                    "options": [{"replaceRule": [{"id": "charger_tactics", "x": 1}], "withRule": [{"id": "charger_tactics", "x": 2}]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "twisted_raptors": {
-            "name": "Twisted Raptors",
-            "description": "A flock of mutated birds.",
-            "category": "core",
-            "keywords": ["Beast"],
-            "models": [
-                {
-                    "name": "Twisted Raptor",
-                    "movement": 8,
-                    "courage": 4,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "rules": ["fly"],
-                    "weapons": [{"id": "raptor_talons", "count": 2}],
-                    "min": 3,
-                    "max": 9
-                }
-            ]
-        },
-        "twisted_boars": {
-            "name": "Twisted Boars",
-            "description": "A herd of mutated swine.",
-            "category": "core",
-            "keywords": ["Beast"],
-            "models": [
-                {
-                    "name": "Twisted Boar",
-                    "movement": 8,
-                    "courage": 4,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 2}],
-                    "weapons": [{"id": "boar_tusks", "count": 2}],
-                    "min": 3,
-                    "max": 9
-                }
-            ]
-        },
-        "satyr_raiders": {
-            "name": "Satyr Raiders",
-            "description": "Skirmishers who like to overwhelm their foes with great numbers.",
-            "category": "core",
-            "models": [
-                {
-                    "name": "Satyr Raider",
-                    "movement": 7,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 4,
-                    "reflexes": 5,
-                    "rules": ["scout"],
-                    "weapons": ["short_bow", "light_handweapon"],
-                    "options": [
-                        {"replaceWeapon": ["short_bow"], "withWeapon": ["javelin"], "modelLimit": "all"},
-                        {"addRule": ["light_armor"], "modelLimit": "all"},
-                        {"addRule": ["disk_of_change"], "subfactions": ["power_focus"], "modelLimit": "all"}
-                    ],
-                    "min": 10,
-                    "max": 20
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "satyr_warriors": {
-            "name": "Satyr Warriors",
-            "description": "These bitter warriors fight with unbridled fury.",
-            "category": "core",
-            "models": [
-                {
-                    "name": "Satyr Warrior",
-                    "movement": 7,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 4,
-                    "reflexes": 5,
-                    "weapons": ["handweapon", "shield"],
-                    "options": [
-                        {"replaceWeapon": ["handweapon", "shield"], "withWeapon": [["spear", "shield"], {"id": "handweapon", "count": 2}, "great_weapon"], "modelLimit": "all"},
-                        {"addRule": ["light_armor"], "modelLimit": "all"},
-                        {"addRule": ["disk_of_change"], "subfactions": ["power_focus"], "modelLimit": "all"}
-                    ],
-                    "min": 10,
-                    "max": 20
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "satyr_despoiler": {
-            "name": "Satyr Despoilers",
-            "description": "Mighty pillagers and plunderers, they are the elite warriors of the horde.",
-            "category": "core",
-            "models": [
-                {"name": "Satyr Despoiler", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 5, "weapons": [{"id": "grand_weapon", "count": 2}], "min": 5, "max": 20}
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "twisted_boar_chariot": {
-            "name": "Twisted Boar Chariot",
-            "description": "A ramshackle chariot pulled by a pair of mutated boars.",
-            "category": "elite",
-            "keywords": ["Vehicle"],
-            "models": [
-                {
-                    "name": "Twisted Boar Chariot",
-                    "movement": 10,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 8,
-                    "reflexes": 5,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}],
-                    "weapons": ["grand_weapon", "spear", {"id": "boar_tusks", "count": 4}],
-                    "options": [{"addRule": ["banner"]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "minotaurs": {
-            "name": "Minotaurs",
-            "description": "Hulking brutes, crushing their foes with their immense strength.",
-            "category": "elite",
-            "keywords": ["Heavy Infantry", "Monster"],
-            "models": [
-                {
-                    "name": "Minotaur",
-                    "movement": 8,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "rules": ["furious", {"id": "wounds", "x": 2}],
-                    "weapons": [{"id": "gouging_horns", "count": 2}, {"id": "grand_weapon", "count": 3}, "shield"],
-                    "options": [
-                        {"replaceWeapon": [{"id": "grand_weapon", "count": 3}, "shield"], "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "grand_weapon", "count": 4}], "modelLimit": "all"}
-                    ],
-                    "min": 3,
-                    "max": 6
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "centaurs": {
-            "name": "Centaurs",
-            "description": "Wild-born creatures, stampeding across the realms in hunt of their prey.",
-            "category": "elite",
-            "keywords": ["Beast", "Cavalry"],
-            "models": [
-                {
-                    "name": "Centaur",
-                    "movement": 8,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 6,
-                    "reflexes": 5,
-                    "rules": [{"id": "impact", "x": 1}],
-                    "weapons": [{"id": "spear", "count": 2}, {"id": "hooves_and_teeth", "count": 2}, "buckler"],
-                    "min": 5,
-                    "max": 20
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "ogre_centaurs": {
-            "name": "Ogre Centaurs",
-            "description": "Monstrous centaurs using brutal weapons to crush their enemies.",
-            "category": "elite",
-            "keywords": ["Beast", "Cavalry"],
-            "models": [
-                {
-                    "name": "Ogre Centaur",
-                    "movement": 10,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 5,
-                    "rules": [{"id": "impact", "x": 3}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "great_weapon", "count": 3}, {"id": "rending_claws", "count": 2}],
-                    "options": [{"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "handweapon", "count": 6}, {"id": "polearm", "count": 4}]}],
-                    "min": 3,
-                    "max": 6
-                }
-            ]
-        },
-        "cyclops": {
-            "name": "Cyclops",
-            "description": "A feral one-eyed giant.",
-            "category": "rare",
-            "keywords": ["Monster"],
-            "models": [
-                {
-                    "name": "Cyclops",
-                    "movement": 8,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 11,
-                    "reflexes": 5,
-                    "rules": [{"id": "wounds", "x": 3}],
-                    "weapons": ["maw", "rock_throw", {"id": "greatblade", "count": 6}],
-                    "options": [{"addRule": [{"name": "Anti magic ", "id": "ward", "x": 2}]}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "cockatrice": {
-            "name": "Cockatrice",
-            "description": "A ferocious beast which gaze turns men to stone.",
-            "category": "rare",
-            "keywords": ["Beast", "Monster"],
-            "models": [
-                {
-                    "name": "Cockatrice",
-                    "movement": 12,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 8,
-                    "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, "fear", "fly", "furious"],
-                    "weapons": ["cock_gaze", "sharp_beak", {"id": "claws", "count": 4}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "chimera": {
-            "name": "Chimera",
-            "description": "A monstrous creature ",
-            "category": "rare",
-            "keywords": ["Beast", "Monster"],
-            "models": [
-                {
-                    "name": "Chimera",
-                    "movement": 10,
-                    "courage": 5,
-                    "shoot": 6,
-                    "fight": 5,
-                    "defense": 10,
-                    "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, "fear", "fly"],
-                    "weapons": ["Draconic_Fire", {"id": "sharp_beak", "count": 3}, {"id": "fangs_and_claws", "count": 6}, {"id": "rending_claws", "count": 6}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
+  "name": "Beastmen Horde",
+  "id": "beastmen_horde",
+  "author": "Valgaav#9736",
+  "color": "#954535",
+  "units": {
+    "minotaur_lord": {
+      "name": "Minotaur Lord",
+      "description": "A massive leader who breaks their foes with brute strength.",
+      "category": "hero",
+      "keywords": ["Heavy Infantry", "Monster"],
+      "models": [
+        {
+          "name": "Minotaur Lord",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 8,
+          "rules": [{"id": "striker", "x": 1}, "furious", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 4}],
+          "weapons": [{"id": "gouging_horns", "count": 2}, {"id": "grand_axe", "count": 3}],
+          "options": [{"addRule": [{"id": "icon", "x": "Infantry. Heavy Infantry"}]}, {"replaceRule": [{"id": "striker", "x": 1}], "withRule": [{"id": "striker", "x": 2}]}],
+          "min": 1,
+          "max": 1
         }
+      ]
     },
-    "weapons": {
-        "gouging_horns": {"name": "Gouging Horns", "ap": 1, "attacks": 1, "short": "Melee"},
-        "greatblade": {"name": "Savage Greatblade", "ap": 6, "attacks": 1, "short": "Melee", "rules": [{"id": "reach", "x": 1}]},
-        "maw": {"name": "Devouring Maw", "ap": 6, "attacks": 1, "short": "Melee", "rules": [{"id": "deadly", "x": 3}]},
-        "cock_gaze": {"name": "Petrifying Gaze", "attacks": 1, "ap": 8, "rules": [{"id": "deadly", "x": 3}], "short": 9},
-        "sharp_beak": {"name": "Sharp Beak", "attacks": 1, "ap": 4, "short": "Melee"},
-        "raptor_talons": {"name": "Raptor Talons", "ap": 2, "attacks": 1, "short": "Melee", "rules": ["lance"]},
-        "enchanted_horns": {"name": "Enchanted Horns", "ap": 5, "attacks": 1, "short": "Melee"},
-        "cloven_hooves": {"name": "Cloven Hooves", "ap": 2, "attacks": 1, "short": "Melee"},
-        "Draconic_Fire": {"name": "Draconic Fire", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "blast", "x": 3}, "flame"]},
-        "boar_tusks": {"name": "Boar Tusks", "ap": 1, "attacks": 1, "short": "Melee", "rules": ["lance"]}
+    "minotaur_mage": {
+      "name": "Minotaur Wizard",
+      "description": "A massive leader who has acquired arcane knowledge.",
+      "category": "hero",
+      "keywords": ["Heavy Infantry", "Monster"],
+      "models": [
+        {
+          "name": "Minotaur Wizard",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 4,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 8,
+          "rules": ["furious", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 4}],
+          "weapons": [{"id": "great_staff", "count": 2}, {"id": "enchanted_horns", "count": 3}, {"id": "cloven_hooves", "count": 3}],
+          "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
     },
-    "rules": {
-        "brutal_tactics": {
-            "name": "Brutalizer Tactics",
-            "inputs": ["x"],
-            "description": "When this unit is activated, choose up to X friendly _Heavy Infantry_ units within 6\". This model and those units gain +1 AP on all Melee weapons.",
-            "points": ["rule.x", {"multiply": 10}]
-        },
-        "charger_tactics": {
-            "name": "Siegebreaker Tactics",
-            "inputs": ["x"],
-            "description": "When this unit is activated, choose up to X friendly _Beast_ units within 6\". This model and those units may re-roll failed Strength tests of 9+ until the end of the round.",
-            "points": ["rule.x", {"multiply": 10}]
+    "satyr_lord": {
+      "name": "Satyr Lord",
+      "description": "A feral lord of the horde.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Satyr Lord",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 8,
+          "rules": ["leader", {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "grand_weapon", "count": 6}],
+          "options": [{"addRule": ["shield", {"id": "icon", "x": "Infantry"}]}, {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
+          "min": 1,
+          "max": 1
         }
+      ]
     },
-    "strategies": [
+    "satyr_shaman": {
+      "name": "Satyr Shaman",
+      "description": "A feral wizard of the horde.",
+      "category": "hero",
+      "models": [
         {
-            "name": "Savage Instincts",
-            "phase": "activation",
-            "description": "Use when a unit declares a Charge action. That unit gets +3\" of Movement for that action.",
-            "flavor": "Hordes of Beastmen rush into the fray without ever thinking twice.",
-            "cost": 1
-        },
-        {
-            "name": "Sinister Strikes",
-            "phase": "activation",
-            "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
-            "flavor": "The Beastmen's crude weapons are outfitted with hooks and barbs, made to drown the ground in blood. ",
-            "cost": 1
-        },
-        {
-            "name": "Thorngate",
-            "phase": "pre_game",
-            "description": "Up to half of any force's units, one point for each may be placed in _Outflanking_ reserves before the game begins.",
-            "flavor": "Using ancient portals, fueled by blood sacrifices and dark riuals, the Beastmen are able to appear from all sides.",
-            "cost": "1/per"
+          "name": "Satyr Shaman",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["handweapon", "staff"],
+          "options": [
+            {"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]},
+            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]},
+            {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]}
+          ],
+          "min": 1,
+          "max": 1
         }
-    ],
-    "relics": [
+      ]
+    },
+    "lord_boar_chariot": {
+      "name": "Satyr Lord on Twisted Boar Chariot",
+      "description": "A ramshackle chariot pulled by a pair of mutated boars.",
+      "category": "hero",
+      "keywords": ["Vehicle"],
+      "models": [
         {
-            "name": "Anti-magic Idol",
-            "rule": {"id": "ward", "x": 1},
-            "description": "Upgrade one _Leader_ model with Ward(1).",
-            "flavor": "This crudely carved fetish grants its wielder anti-magical energy.",
-            "points": 5
-        },
-        {
-            "name": "Dark Apostle",
-            "rule": "battle_prayer",
-            "description": "Upgrade one _Leader_ model with Battle Prayer.",
-            "flavor": "Those that pray to the dark gods reveive blessings beyond human comprehension.",
-            "points": 10
-        },
-        {
-            "name": "Thick Hide",
-            "rule": {"id": "resistant", "x": 1},
-            "description": "Upgrade on _Leader_ model with Resistant(1).",
-            "flavor": "Sharp weapons bounce off of this warrior's thick skin.",
-            "points": 5
+          "name": "Satyr Lord on Twisted Boar Chariot",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 8,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader", "x": "Vehicle"}, {"id": "warrior", "x": 1}],
+          "weapons": [{"id": "grand_weapon", "count": 6}, {"id": "boar_tusks", "count": 4}],
+          "options": [{"addRule": ["relic_shield", {"id": "icon", "x": "Vehicle"}]}, {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
+          "min": 1,
+          "max": 1
         }
-    ],
-    "powers": {
-        "rampage": {"name": "Rampage", "description": "Target friendly unit within 12\" may immediately make a free charge action.", "charge": 5},
-        "atrophy": {"name": "Atrophy", "description": "Target enemy unit within 12\" must re-roll one succesful die on its next Save test.", "charge": 6},
-        "bloodlust": {"name": "Bloodlust", "description": "Target friendly unit within 6\" has +1 Strength until the end of the turn.", "charge": 7}
+      ]
+    },
+    "centaur_lord": {
+      "name": "Centaur Lord",
+      "description": "Wild-born hero, stampeding across the realms in hunt of their prey.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry"],
+      "models": [
+        {
+          "name": "Centaur Lord",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "heavy_spear", "count": 2}, {"id": "hooves_and_teeth", "count": 2}, "buckler"],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "blessed_ogre_centaur": {
+      "name": "Blessed Ogre Centaur",
+      "description": "The greatest of Ogre Centaurs can channel the wrath of the heavens above.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry"],
+      "models": [
+        {
+          "name": "Blessed Ogre Centaur",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 7,
+          "rules": [{"id": "impact", "x": 3}, {"id": "leader", "x": "Beast"}, {"id": "power", "x": 1}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "great_weapon", "count": 4}, {"id": "rending_claws", "count": 2}],
+          "options": [{"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "twisted_raptors": {
+      "name": "Twisted Raptors",
+      "description": "A flock of mutated birds.",
+      "category": "core",
+      "keywords": ["Beast"],
+      "models": [
+        {
+          "name": "Twisted Raptor",
+          "movement": 8,
+          "courage": 4,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["fly"],
+          "weapons": [{"id": "raptor_talons", "count": 2}],
+          "min": 3,
+          "max": 9
+        }
+      ]
+    },
+    "twisted_boars": {
+      "name": "Twisted Boars",
+      "description": "A herd of mutated swine.",
+      "category": "core",
+      "keywords": ["Beast"],
+      "models": [
+        {
+          "name": "Twisted Boar",
+          "movement": 8,
+          "courage": 4,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 2}],
+          "weapons": [{"id": "boar_tusks", "count": 2}],
+          "min": 3,
+          "max": 9
+        }
+      ]
+    },
+    "satyr_raiders": {
+      "name": "Satyr Raiders",
+      "description": "Skirmishers who like to overwhelm their foes with great numbers.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Satyr Raider",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 4,
+          "reflexes": 5,
+          "rules": ["scout"],
+          "weapons": ["short_bow", "light_handweapon"],
+          "options": [
+            {"replaceWeapon": ["short_bow"], "withWeapon": ["javelin"], "modelLimit": "all"},
+            {"addRule": ["light_armor"], "modelLimit": "all"},
+            {"addRule": ["disk_of_change"], "subfactions": ["power_focus"], "modelLimit": "all"}
+          ],
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "satyr_warriors": {
+      "name": "Satyr Warriors",
+      "description": "These bitter warriors fight with unbridled fury.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Satyr Warrior",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 4,
+          "reflexes": 5,
+          "weapons": ["handweapon", "shield"],
+          "options": [
+            {"replaceWeapon": ["handweapon", "shield"], "withWeapon": [["spear", "shield"], {"id": "handweapon", "count": 2}, "great_weapon"], "modelLimit": "all"},
+            {"addRule": ["light_armor"], "modelLimit": "all"},
+            {"addRule": ["disk_of_change"], "subfactions": ["power_focus"], "modelLimit": "all"}
+          ],
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "satyr_despoiler": {
+      "name": "Satyr Despoilers",
+      "description": "Mighty pillagers and plunderers, they are the elite warriors of the horde.",
+      "category": "core",
+      "models": [{"name": "Satyr Despoiler", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 5, "weapons": [{"id": "grand_weapon", "count": 2}], "min": 5, "max": 20}],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "twisted_boar_chariot": {
+      "name": "Twisted Boar Chariot",
+      "description": "A ramshackle chariot pulled by a pair of mutated boars.",
+      "category": "elite",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Twisted Boar Chariot",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 8,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}],
+          "weapons": ["grand_weapon", "spear", {"id": "boar_tusks", "count": 4}],
+          "options": [{"addRule": ["banner"]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "minotaurs": {
+      "name": "Minotaurs",
+      "description": "Hulking brutes, crushing their foes with their immense strength.",
+      "category": "elite",
+      "keywords": ["Heavy Infantry", "Monster"],
+      "models": [
+        {
+          "name": "Minotaur",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["furious", {"id": "wounds", "x": 2}],
+          "weapons": [{"id": "gouging_horns", "count": 2}, {"id": "grand_weapon", "count": 3}, "shield"],
+          "options": [{"replaceWeapon": [{"id": "grand_weapon", "count": 3}, "shield"], "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "grand_weapon", "count": 4}], "modelLimit": "all"}],
+          "min": 3,
+          "max": 6
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "centaurs": {
+      "name": "Centaurs",
+      "description": "Wild-born creatures, stampeding across the realms in hunt of their prey.",
+      "category": "elite",
+      "keywords": ["Beast", "Cavalry"],
+      "models": [
+        {
+          "name": "Centaur",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "rules": [{"id": "impact", "x": 1}],
+          "weapons": [{"id": "spear", "count": 2}, {"id": "hooves_and_teeth", "count": 2}, "buckler"],
+          "min": 5,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "ogre_centaurs": {
+      "name": "Ogre Centaurs",
+      "description": "Monstrous centaurs using brutal weapons to crush their enemies.",
+      "category": "elite",
+      "keywords": ["Beast", "Cavalry"],
+      "models": [
+        {
+          "name": "Ogre Centaur",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "rules": [{"id": "impact", "x": 3}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "great_weapon", "count": 3}, {"id": "rending_claws", "count": 2}],
+          "options": [{"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "handweapon", "count": 6}, {"id": "polearm", "count": 4}]}],
+          "min": 3,
+          "max": 6
+        }
+      ]
+    },
+    "cyclops": {
+      "name": "Cyclops",
+      "description": "A feral one-eyed giant.",
+      "category": "rare",
+      "keywords": ["Monster"],
+      "models": [
+        {
+          "name": "Cyclops",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 11,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 3}],
+          "weapons": ["maw", "rock_throw", {"id": "greatblade", "count": 6}],
+          "options": [{"addRule": [{"name": "Anti magic ", "id": "ward", "x": 2}]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "cockatrice": {
+      "name": "Cockatrice",
+      "description": "A ferocious beast which gaze turns men to stone.",
+      "category": "rare",
+      "keywords": ["Beast", "Monster"],
+      "models": [
+        {
+          "name": "Cockatrice",
+          "movement": 12,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fear", "fly", "furious"],
+          "weapons": ["cock_gaze", "sharp_beak", {"id": "claws", "count": 4}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "chimera": {
+      "name": "Chimera",
+      "description": "A monstrous creature ",
+      "category": "rare",
+      "keywords": ["Beast", "Monster"],
+      "models": [
+        {
+          "name": "Chimera",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 10,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fear", "fly"],
+          "weapons": ["Draconic_Fire", {"id": "sharp_beak", "count": 3}, {"id": "fangs_and_claws", "count": 6}, {"id": "rending_claws", "count": 6}],
+          "min": 1,
+          "max": 1
+        }
+      ]
     }
+  },
+  "weapons": {
+    "gouging_horns": {"name": "Gouging Horns", "ap": 1, "attacks": 1, "short": "Melee"},
+    "greatblade": {"name": "Savage Greatblade", "ap": 6, "attacks": 1, "short": "Melee", "rules": [{"id": "reach", "x": 1}]},
+    "maw": {"name": "Devouring Maw", "ap": 6, "attacks": 1, "short": "Melee", "rules": [{"id": "deadly", "x": 3}]},
+    "cock_gaze": {"name": "Petrifying Gaze", "attacks": 1, "ap": 8, "rules": [{"id": "deadly", "x": 3}], "short": 9},
+    "sharp_beak": {"name": "Sharp Beak", "attacks": 1, "ap": 4, "short": "Melee"},
+    "raptor_talons": {"name": "Raptor Talons", "ap": 2, "attacks": 1, "short": "Melee", "rules": ["lance"]},
+    "enchanted_horns": {"name": "Enchanted Horns", "ap": 5, "attacks": 1, "short": "Melee"},
+    "cloven_hooves": {"name": "Cloven Hooves", "ap": 2, "attacks": 1, "short": "Melee"},
+    "Draconic_Fire": {"name": "Draconic Fire", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "blast", "x": 3}, "flame"]},
+    "boar_tusks": {"name": "Boar Tusks", "ap": 1, "attacks": 1, "short": "Melee", "rules": ["lance"]}
+  },
+  "rules": {},
+  "strategies": [
+    {
+      "name": "Savage Instincts",
+      "phase": "activation",
+      "description": "Use when a unit declares a Charge action. That unit gets +3\" of Movement for that action.",
+      "flavor": "Hordes of Beastmen rush into the fray without ever thinking twice.",
+      "cost": 1
+    },
+    {
+      "name": "Sinister Strikes",
+      "phase": "activation",
+      "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
+      "flavor": "The Beastmen's crude weapons are outfitted with hooks and barbs, made to drown the ground in blood. ",
+      "cost": 1
+    },
+    {
+      "name": "Thorngate",
+      "phase": "pre_game",
+      "description": "Up to half of any force's units, one point for each may be placed in _Outflanking_ reserves before the game begins.",
+      "flavor": "Using ancient portals, fueled by blood sacrifices and dark riuals, the Beastmen are able to appear from all sides.",
+      "cost": "1/per"
+    }
+  ],
+  "relics": [
+    {
+      "name": "Anti-magic Idol",
+      "rule": {"id": "ward", "x": 1},
+      "description": "Upgrade one _Leader_ model with Ward(1).",
+      "flavor": "This crudely carved fetish grants its wielder anti-magical energy.",
+      "points": 5
+    },
+    {
+      "name": "Dark Apostle",
+      "rule": "battle_prayer",
+      "description": "Upgrade one _Leader_ model with Battle Prayer.",
+      "flavor": "Those that pray to the dark gods reveive blessings beyond human comprehension.",
+      "points": 10
+    },
+    {
+      "name": "Thick Hide",
+      "rule": {"id": "resistant", "x": 1},
+      "description": "Upgrade on _Leader_ model with Resistant(1).",
+      "flavor": "Sharp weapons bounce off of this warrior's thick skin.",
+      "points": 5
+    }
+  ],
+  "powers": {
+    "rampage": {"name": "Rampage", "description": "Target friendly unit within 12\" may immediately make a free charge action.", "charge": 5},
+    "atrophy": {"name": "Atrophy", "description": "Target enemy unit within 12\" must re-roll one succesful die on its next Save test.", "charge": 6},
+    "bloodlust": {"name": "Bloodlust", "description": "Target friendly unit within 6\" has +1 Strength until the end of the turn.", "charge": 7}
+  }
 }

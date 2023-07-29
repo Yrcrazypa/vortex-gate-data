@@ -13,7 +13,7 @@
       "description": "Once one of Humanity's favoured, this powerful Marine now seeks only to watch the galaxy burn.",
       "category": "hero",
       "keywords": ["Heavy Infantry"],
-      "rules": ["ambush", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "limited", "x": 1}, {"id": "wounds", "x": 4}, {"id": "warmaster_tactics", "x": 3}],
+      "rules": ["ambush", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "limited", "x": 1}, {"id": "wounds", "x": 4}, {"id": "warmaster_tactics", "x": 3}],
       "models": [
         {
           "name": "Corrupted Arch-Marine of War",
@@ -43,7 +43,7 @@
       "name": "Berserk Arch-Marine",
       "description": "An icon of pure incandescent rage. Nothing remains once this Arch-Marine attacks.",
       "category": "rare",
-      "rules": [{"id": "melee_tactics", "x": 3}, {"id": "limited", "x": 1}, {"id": "wounds", "x": 3}, "fly", "furious"],
+      "rules": [{"id": "tactician", "x": 3}, {"id": "limited", "x": 1}, {"id": "wounds", "x": 3}, "fly", "furious"],
       "subfactions": ["assault_focus"],
       "models": [{"name": "Berserk Arch-Corrupted", "movement": 12, "courage": 7, "shoot": 7, "fight": 8, "defense": 12, "reflexes": 6, "weapons": ["arch_blades"], "min": 1, "max": 1}]
     },
@@ -90,7 +90,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", {"id": "rifle_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
@@ -111,7 +111,7 @@
               ]
             },
             {"addRule": ["jetpack", "destroyer_armor"], "limit": 1},
-            {"replaceRule": {"id": "rifle_tactics", "x": 1}, "withRule": {"id": "melee_tactics", "x": 1}}
+            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 1}}
           ],
           "min": 1,
           "max": 1
@@ -132,7 +132,7 @@
           "fight": 7,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 1}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 1}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
@@ -154,7 +154,7 @@
               "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
-            {"replaceRule": {"id": "rifle_tactics", "x": 1}, "withRule": {"id": "melee_tactics", "x": 1}}
+            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 1}}
           ],
           "min": 1,
           "max": 1
@@ -174,7 +174,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
+          "rules": ["leader", {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 4}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
@@ -195,7 +195,7 @@
               ]
             },
             {"addRule": ["jetpack", "destroyer_armor"], "limit": 1},
-            {"replaceRule": {"id": "rifle_tactics", "x": 2}, "withRule": {"id": "melee_tactics", "x": 2}}
+            {"replaceRule": {"id": "tactician", "x": 2}, "withRule": {"id": "tactician", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -216,7 +216,7 @@
           "fight": 7,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 4}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
@@ -238,7 +238,7 @@
               "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
-            {"replaceRule": {"id": "rifle_tactics", "x": 2}, "withRule": {"id": "melee_tactics", "x": 2}}
+            {"replaceRule": {"id": "tactician", "x": 2}, "withRule": {"id": "tactician", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -259,7 +259,7 @@
           "fight": 7,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 4}, {"id": "warbeast_horn", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
@@ -277,7 +277,7 @@
                 {"id": "chainsaw_glaive", "count": 5}
               ]
             },
-            {"replaceRule": {"id": "rifle_tactics", "x": 2}, "withRule": {"id": "melee_tactics", "x": 2}}
+            {"replaceRule": {"id": "tactician", "x": 2}, "withRule": {"id": "tactician", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -338,7 +338,7 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
@@ -421,7 +421,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
@@ -456,7 +456,7 @@
       "description": "A massive demon gifted by the dark gods.",
       "category": "hero",
       "keywords": ["Monster"],
-      "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "melee_tactics", "x": 2}, {"id": "power", "x": 1}],
+      "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "tactician", "x": 2}, {"id": "power", "x": 1}],
       "models": [
         {
           "name": "Demonic Champion",
@@ -493,7 +493,7 @@
           "fight": 7,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["ambush", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "melee_tactics", "x": 2}, {"id": "wounds", "x": 3}],
+          "rules": ["ambush", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "pestilence_great_cleaver", "count": 3}],
           "options": [
             {"replaceWeapon": [{"id": "pestilence_great_cleaver", "count": 3}], "withWeapon": [{"id": "pestilence_scythe", "count": 3}, [{"id": "pestilence_claw", "count": 3}, "pestilence_sprayer"]]}
@@ -574,7 +574,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["battle_prayer", {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "rules": ["battle_prayer", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_grenades", "marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
@@ -614,7 +614,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["battle_prayer", {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 2}],
+          "rules": ["battle_prayer", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 2}],
           "weapons": ["marine_grenades", "marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "warbeast_horn", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},

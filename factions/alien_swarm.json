@@ -20,7 +20,7 @@
           "defense": 12,
           "reflexes": 6,
           "courage": 7,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "leader_x", "x": "Monster"}, {"id": "power", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "leader", "x": "Monster"}, {"id": "power", "x": 1}],
           "weapons": [{"id": "large_razor_talons", "count": 6}, "grabbing_tail"],
           "options": [
             {"replaceWeapon": {"id": "large_razor_talons", "count": 3}, "withWeapon": ["twinlinked_consumer", "heavy_acid_cannon", "heavy_chokethorn_cannon", {"id": "large_boneswords", "count": 4}]},
@@ -38,7 +38,7 @@
       "description": "A great alien beast, healing swarms of aliens with hyper-regenerative pods in mere seconds.",
       "category": "hero",
       "keywords": ["Monster"],
-      "rules": [{"id": "wounds", "x": 3}, {"id": "leader_x", "x": "Monster"}, "regeneration_pods", {"id": "rifle_tactics", "x": 1}, {"id": "power", "x": 1}],
+      "rules": [{"id": "wounds", "x": 3}, {"id": "leader", "x": "Monster"}, "regeneration_pods", {"id": "tactician", "x": 1}, {"id": "power", "x": 1}],
       "models": [
         {
           "name": "Hive Queen",
@@ -52,7 +52,7 @@
           "options": [
             {"replaceWeapon": {"id": "large_razor_talons", "count": 3}, "withWeapon": [{"id": "crushing_claws", "count": 3}]},
             {"addRule": [{"id": "transport", "x": 11}]},
-            {"replaceRule": {"id": "rifle_tactics", "x": 1}, "withRule": {"id": "rifle_tactics", "x": 2}}
+            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -72,9 +72,9 @@
           "defense": 8,
           "reflexes": 7,
           "movement": 8,
-          "rules": ["agile", "leader", {"id": "melee_tactics", "x": 1}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["agile", "leader", {"id": "tactician", "x": 1}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "large_razor_talons", "count": 6}],
-          "options": [{"replaceRule": {"id": "melee_tactics", "x": 1}, "withRule": {"id": "melee_tactics", "x": 2}}],
+          "options": [{"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}],
           "min": 1,
           "max": 1
         }
@@ -94,7 +94,7 @@
           "defense": 9,
           "reflexes": 7,
           "movement": 6,
-          "rules": [{"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "melee_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "razor_talons", "count": 3}, "razor_blaster"],
           "options": [
             {
@@ -103,7 +103,7 @@
             },
             {"replaceWeapon": {"id": "razor_talons", "count": 3}, "withWeapon": [{"id": "boneswords", "count": 4}]},
             {"addWeapon": ["meat_hooks"]},
-            {"replaceRule": {"id": "melee_tactics", "x": 1}, "withRule": {"id": "melee_tactics", "x": 2}},
+            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}},
             {"addRule": ["wings"]}
           ],
           "min": 1,
@@ -707,7 +707,7 @@
       "description": "Upgrade one _Leader_ model with Leader(Monster).",
       "flavor": "Coordinating rampaging beasts can only be done by those mighty enough to earn their respect.",
       "points": 15,
-      "rule": {"id": "leader_x", "x": "Monster"}
+      "rule": {"id": "leader", "x": "Monster"}
     }
   },
   "buyLinks": [

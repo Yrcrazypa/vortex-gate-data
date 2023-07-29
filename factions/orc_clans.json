@@ -67,7 +67,7 @@
           "fight": 7,
           "defense": 9,
           "reflexes": 7,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", "frags", {"id": "heavy_ccw", "count": 4}, {"id": "twin_double_shotgun", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "double_shotgun"]},
@@ -136,7 +136,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", "frags", {"id": "heavy_ccw", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
@@ -205,7 +205,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", "frags", {"id": "heavy_ccw", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "plasma_rifle", "shock_gun", "rocket_launcher"]},
@@ -244,7 +244,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "engineer", {"id": "leader_x", "x": "Vehicle"}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 3}, "engineer", {"id": "leader", "x": "Vehicle"}, "vulnerable_rear"],
           "weapons": [{"id": "battle_cannon", "count": 2}, {"id": "heavy_flamethrower", "count": 2, "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": {"id": "battle_cannon"}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}, "heavy_fusion_cannon", "shock_gun"], "limit": 2},
@@ -1325,7 +1325,7 @@
       "description": "A cunning goblin with a motivating presence.",
       "category": "hero",
       "keywords": ["Goblin", "Infantry"],
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "goblin_tactics", "x": 1}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "goblin_tactics", "x": 1}],
       "models": [
         {
           "name": "Goblin Leader",
@@ -1379,7 +1379,7 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 5,
-          "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "repair", "x": 5}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "leader", "x": "Infantry"}, {"id": "repair", "x": 5}, {"id": "wounds", "x": 3}],
           "movement": 6,
           "weapons": ["heavy_pistol", {"id": "ccw", "count": 2}],
           "options": [{"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "plasma_pistol", "teleport_pistol"]}, {"addRule": ["heavy_armor"]}, {"addRule": ["energy_field"]}],
@@ -1395,7 +1395,7 @@
       "subfactions": ["none", "mechanized_focus", "revolution_focus"],
       "category": "hero",
       "keywords": ["Goblin", "Vehicle"],
-      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "goblin_vehicles", "x": 1}],
+      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "goblin_vehicles", "x": 1}],
       "models": [
         {
           "name": "Goblin Tank Commander",

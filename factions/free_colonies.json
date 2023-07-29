@@ -19,7 +19,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["fly", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}, {"id": "commander_tactics", "x": 2}],
+          "rules": ["fly", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}, {"id": "marksman", "x": 2}],
           "weapons": [{"id": "suit_fists", "count": 4}],
           "options": [
             {
@@ -85,19 +85,12 @@
           "defense": 6,
           "reflexes": 6,
           "weapons": ["pulse_rifle", {"id": "ccw", "count": 2}, "stun_grenades"],
-          "rules": ["leader", {"id": "warrior_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "marksman", "x": 1}, {"id": "wounds", "x": 3}],
           "options": [{"addWeapon": "pulse_pistol"}, {"addRule": "spotting_laser"}],
           "min": 1,
           "max": 1
         }
       ]
-    },
-    "tribal_volunteers": {
-      "name": "Tribal Volunteers",
-      "description": "Volunteer soldiers from the local mutant tribes sent to assist the free colonies.",
-      "category": "core",
-      "keywords": ["Infantry"],
-      "models": [{"name": "Tribal Volunteer", "movement": 6, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 6, "courage": 5, "weapons": ["tribal_rifle", "heavy_ccw"], "min": 5, "max": 20}]
     },
     "fire_team": {
       "name": "Fire Team",
@@ -590,7 +583,7 @@
       "description": "A skilled biomancer that guides the Tribe's mutations",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "tribal_tactics", "x": 1}, "guided_mutation"],
+      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "warrior", "x": 1}, "guided_mutation"],
       "models": [
         {
           "name": "Shaper",
@@ -601,32 +594,7 @@
           "reflexes": 7,
           "courage": 5,
           "weapons": ["tribal_rifle", {"id": "heavy_ccw", "count": 3}],
-          "options": [{"replaceWeapon": "tribal_rifle", "withWeapon": "tribal_carbine"}, {"replaceRule": {"id": "tribal_tactics", "x": 1}, "withRule": {"id": "tribal_tactics", "x": 2}}],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "commander": {
-      "name": "Commander",
-      "description": "The war-leader of a Tribe that guides them in battle",
-      "category": "hero",
-      "keywords": ["Infantry"],
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "tribal_tactics", "x": 1}],
-      "models": [
-        {
-          "name": "Commander",
-          "movement": 6,
-          "shoot": 6,
-          "fight": 7,
-          "defense": 7,
-          "reflexes": 7,
-          "courage": 6,
-          "weapons": ["tribal_rifle", {"id": "heavy_ccw", "count": 3}],
-          "options": [
-            {"replaceWeapon": "tribal_rifle", "withWeapon": ["tribal_carbine", "tribal_tankbuster", "tribal_flamethrower"]},
-            {"replaceRule": {"id": "tribal_tactics", "x": 1}, "withRule": {"id": "tribal_tactics", "x": 2}}
-          ],
+          "options": [{"replaceWeapon": "tribal_rifle", "withWeapon": "tribal_carbine"}, {"replaceRule": {"id": "warrior", "x": 1}, "withRule": {"id": "warrior", "x": 2}}],
           "min": 1,
           "max": 1
         }
@@ -877,16 +845,10 @@
       "description": "Once per round, roll a die for each hit this unit takes. On a 3 or less that hit is prevented. This may be used one additional time per round for each model with this rule.",
       "points": 5
     },
-    "commander_tactics": {
+    "marksman": {
       "name": "Commander Tactics",
       "inputs": ["x"],
       "description": "When this unit is activated, choose up to X friendly _Infantry_ or _Heavy Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Initiative tests of 9+",
-      "points": ["rule.x", {"multiply": 10}]
-    },
-    "warrior_tactics": {
-      "name": "Warrior Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Initiative tests of 9+",
       "points": ["rule.x", {"multiply": 10}]
     },
     "spotting_laser": {
@@ -924,7 +886,7 @@
     },
     "booster": {"name": "Booster", "description_short": "+4\" Movement", "points": 10, "hidden": true},
     "guided_mutation": {"name": "Guided Mutation", "description": "When this unit is activated, you may change the active effect for Adaptive Biophysiology to another effect.", "points": [5]},
-    "tribal_tactics": {
+    "warrior": {
       "name": "Tribal Tactics",
       "inputs": ["x"],
       "description": "When this unit is activated, choose up to X friendly units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement",

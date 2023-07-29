@@ -17,7 +17,7 @@
           "defense": 7,
           "reflexes": 6,
           "weapons": ["marine_rifle", "psychic_grenades", {"id": "ccw", "count": 3}],
-          "rules": [{"id": "ward", "x": 1}, {"id": "witch_hunter_tactics", "x": 1}, {"id": "wounds", "x": 3}, {"id": "leader_x", "x": "Infantry"}],
+          "rules": [{"id": "ward", "x": 1}, {"id": "witch_hunter_tactics", "x": 1}, {"id": "wounds", "x": 3}, {"id": "leader", "x": "Infantry"}],
           "options": [
             {"replaceRule": {"id": "witch_hunter_tactics", "x": 1}, "withRule": {"id": "witch_hunter_tactics", "x": 2}},
             {"replaceWeapon": ["marine_rifle", {"id": "ccw", "count": 3}], "withWeapon": [["flamethrower", {"id": "ccw", "count": 3}], {"id": "energy_greatblade", "count": 4}], "limit": 1}
@@ -31,7 +31,7 @@
       "name": "Guardian Commander",
       "description": "Highly trained and elite fighters.",
       "category": "hero",
-      "rules": [{"id": "wounds", "x": 4}, {"id": "battle_tactics", "x": 2}, {"id": "leader_x", "x": "Infantry"}],
+      "rules": [{"id": "wounds", "x": 4}, {"id": "battle_tactics", "x": 2}, {"id": "leader", "x": "Infantry"}],
       "models": [
         {
           "name": "Guardian Commander",
@@ -64,7 +64,7 @@
       "name": "Guardian Captain",
       "description": "Highly trained and elite fighters.",
       "category": "hero",
-      "rules": [{"id": "wounds", "x": 3}, {"id": "battle_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry"}],
+      "rules": [{"id": "wounds", "x": 3}, {"id": "battle_tactics", "x": 1}, {"id": "leader", "x": "Infantry"}],
       "models": [
         {
           "name": "Guardian Captain",
@@ -98,7 +98,7 @@
       "description": "Throne guardians on high speed jet bikes.",
       "category": "hero",
       "keywords": ["Biker"],
-      "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "battle_tactics_biker", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}],
+      "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "battle_tactics_biker", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}],
       "models": [
         {
           "name": "Guardian Captain on Jetbike",
@@ -120,7 +120,7 @@
       "description": "A Throne Guardian who foreswore ranged weapons in favor of mastering the blade.",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "wounds", "x": 3}, {"id": "battle_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry"}],
+      "rules": [{"id": "wounds", "x": 3}, {"id": "battle_tactics", "x": 1}, {"id": "leader", "x": "Infantry"}],
       "models": [
         {
           "name": "Guardian Blademaster",

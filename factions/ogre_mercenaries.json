@@ -19,7 +19,7 @@
                     "defense": 7,
                     "courage": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "merc_tactics", "x": 1}, {"id": "wounds", "x": 4}],
+                    "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "merc_tactics", "x": 1}, {"id": "wounds", "x": 4}],
                     "weapons": [{"id": "grand_weapon", "count": 5}],
                     "options": [
                         {"replaceWeapon": [{"id": "grand_weapon", "count": 5}], "withWeapon": [{"id": "grand_hammer", "count": 5}, {"id": "great_polearm", "count": 5}]},
@@ -46,7 +46,7 @@
                     "defense": 13,
                     "reflexes": 6,
                     "courage": 7,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader_x", "x": "Cavalry"}, {"id": "knight_tactics", "x": 2}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader", "x": "Cavalry"}, {"id": "warrior", "x": 2}],
                     "weapons": [{"id": "mount_feet", "count": 2}, "frost_breath", {"id": "grand_weapon", "count": 6}, {"id": "mount_horns", "count": 4}],
                     "options": [
                         {"replaceWeapon": [{"id": "grand_weapon", "count": 6}], "withWeapon": [{"id": "grand_hammer", "count": 6}, {"id": "great_polearm", "count": 6}]},
@@ -71,7 +71,7 @@
                     "defense": 9,
                     "reflexes": 7,
                     "courage": 6,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 4}, {"id": "leader_x", "x": "Vehicle"}, {"id": "merc_tactics", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 4}, {"id": "leader", "x": "Vehicle"}, {"id": "merc_tactics", "x": 1}],
                     "weapons": [{"id": "grand_weapon", "count": 5}, {"id": "brutal_tusks", "count": 8}],
                     "options": [
                         {"replaceWeapon": [{"id": "grand_weapon", "count": 5}], "withWeapon": [{"id": "grand_hammer", "count": 5}, {"id": "great_polearm", "count": 5}]},
@@ -97,7 +97,7 @@
                     "defense": 6,
                     "courage": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 4}],
+                    "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 4}],
                     "weapons": [{"id": "grand_weapon", "count": 6}],
                     "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,
@@ -119,7 +119,7 @@
                     "defense": 12,
                     "reflexes": 6,
                     "courage": 6,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader_x", "x": "Cavalry"}, {"id": "power", "x": 2}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader", "x": "Cavalry"}, {"id": "power", "x": 2}],
                     "weapons": [{"id": "mount_feet", "count": 2}, "frost_breath", {"id": "grand_weapon", "count": 7}, {"id": "mount_horns", "count": 4}],
                     "options": [{"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}],
                     "min": 1,
@@ -141,7 +141,7 @@
                     "defense": 9,
                     "reflexes": 6,
                     "courage": 6,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 4}, {"id": "leader_x", "x": "Vehicle"}, {"id": "power", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 4}, {"id": "leader", "x": "Vehicle"}, {"id": "power", "x": 1}],
                     "weapons": [{"id": "grand_weapon", "count": 6}, {"id": "brutal_tusks", "count": 8}],
                     "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,
@@ -162,9 +162,9 @@
                     "defense": 6,
                     "courage": 7,
                     "reflexes": 6,
-                    "rules": ["ambush", "evasive", {"id": "hunter_tactics", "x": 1}, {"id": "leader_x", "x": "Beast"}, {"id": "wounds", "x": 4}],
+                    "rules": ["ambush", "evasive", {"id": "hunter_tactics", "x": 1}, {"id": "leader", "x": "Beast"}, {"id": "wounds", "x": 4}],
                     "weapons": [{"id": "great_weapon", "count": 4}, "heavy_crossbow", "hunting_spear"],
-                    "options": [{"replaceRule": [{"id": "beast_tactics", "x": 1}], "withRule": [{"id": "beast_tactics", "x": 2}]}],
+                    "options": [{"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
                     "min": 1,
                     "max": 1
                 }
@@ -184,9 +184,9 @@
                     "defense": 13,
                     "reflexes": 6,
                     "courage": 7,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader_x", "x": "Beast"}, {"id": "hunter_tactics", "x": 2}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader", "x": "Beast"}, {"id": "hunter_tactics", "x": 2}],
                     "weapons": [{"id": "mount_feet", "count": 2}, "frost_breath", {"id": "great_weapon", "count": 4}, "heavy_crossbow", "hunting_spear", {"id": "mount_horns", "count": 4}],
-                    "options": [{"replaceRule": [{"id": "beast_tactics", "x": 1}], "withRule": [{"id": "beast_tactics", "x": 2}]}],
+                    "options": [{"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
                     "min": 1,
                     "max": 1
                 }
@@ -206,9 +206,9 @@
                     "defense": 9,
                     "reflexes": 6,
                     "courage": 6,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 4}, {"id": "leader_x", "x": "Vehicle"}, {"id": "beast_tactics", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 4}, {"id": "leader", "x": "Vehicle"}, {"id": "warrior", "x": 1}],
                     "weapons": [{"id": "brutal_tusks", "count": 8}, {"id": "great_weapon", "count": 4}, "heavy_crossbow", "hunting_spear"],
-                    "options": [{"replaceRule": [{"id": "beast_tactics", "x": 1}], "withRule": [{"id": "beast_tactics", "x": 2}]}],
+                    "options": [{"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
                     "min": 1,
                     "max": 1
                 }

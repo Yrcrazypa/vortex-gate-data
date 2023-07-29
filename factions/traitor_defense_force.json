@@ -1,6 +1,6 @@
 {
-  "id": "corrupted_defense_force",
-  "name": "Corrupted Defence Force",
+  "id": "traitor_defense_force",
+  "name": "Traitor Defence Force",
   "author": "guitarninja#5707",
   "units": {
     "commander": {
@@ -8,7 +8,7 @@
       "description": "Foot infantry commander of the corrupted defense force.",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "defense_force_tactics", "x": 2}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Company Commander",
@@ -35,7 +35,7 @@
       "description": "A particularly dangerous individual assigned to keep fighters in line through any means necessary.",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "leader_x", "x": "Infantry"}, "no_retreat", {"id": "wounds", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, "no_retreat", {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Enforcer",
@@ -61,7 +61,7 @@
       "description": "A trained psychic adept at casting powers and supporting troops.",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
       "models": [
         {
           "name": "Psychic Lord",
@@ -793,21 +793,9 @@
   },
   "rules": {
     "high_command": {"name": "High Command", "description": "This model may use Defense Force Tactics one additional time.", "points": 2},
-    "defense_force_tactics": {
-      "name": "Defense Force Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement",
-      "points": ["rule.x", {"multiply": 10}]
-    },
     "ogre_shield": {"name": "Ogre Shield", "description_short": "+1 Save", "description": "This model gets +1 Save.", "points": 2},
     "extra_armor": {"name": "Reinforced Hull", "description": "Subtract 1 from all Damage Chart rolls for this model.", "points": 10},
     "heavy_armor": {"name": "Heavy Armor", "hidden": true, "description": "This model gets +1 Save.", "description_short": "Save +1", "points": 2},
-    "battle_tank_tactics": {
-      "name": "Battle Tank Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Battle Tank_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * +3\" Movement \n * Impact(+3).",
-      "points": ["rule.x", {"multiply": 15}]
-    },
     "terrifying_banner": {"name": "Terrifying Banner", "description": "Enemy _Infantry_ units within 6\" suffer -1 Courage.", "points": 10}
   },
   "powers": {

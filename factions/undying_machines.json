@@ -8,7 +8,7 @@
       "name": "Lord",
       "description": "A lord of the undying machines.",
       "category": "hero",
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 1}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 1}],
       "models": [
         {
           "name": "Lord",
@@ -36,7 +36,7 @@
       "name": "Overlord",
       "description": "A high lord of the undying machines.",
       "category": "hero",
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 3}, {"id": "machine_tactics", "x": 2}],
       "models": [
         {
           "name": "Overlord",
@@ -71,7 +71,7 @@
       "category": "hero",
       "models": [
         {
-          "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "power", "x": 1}],
+          "rules": [{"id": "leader", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "power", "x": 1}],
           "name": "Technomancer",
           "courage": 7,
           "movement": 5,
@@ -629,7 +629,7 @@
       "name": "Dimensional Shard",
       "description": "A dimensional being that can take many forms, often regarded as a god of the sky.",
       "category": "elite",
-      "rules": [{"id": "leader_x", "x": "Infantry"}, "fly", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": [{"id": "leader", "x": "Infantry"}, "fly", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
       "models": [
         {
           "name": "Dimensional Shard",

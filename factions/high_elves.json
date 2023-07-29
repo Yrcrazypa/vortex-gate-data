@@ -8,7 +8,7 @@
       "name": "Troupe Master",
       "description": "A master of the Elven Keepers. Highly swift and deadly on foot.",
       "category": "hero",
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "keeper_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "keeper_tactics", "x": 1}, {"id": "wounds", "x": 3}],
       "keywords": ["Infantry"],
       "models": [
         {
@@ -61,7 +61,7 @@
       "name": "Elven Seer",
       "description": "An elven keeper gifted with the power of minor foresight and energy manipulation.",
       "category": "hero",
-      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
       "keywords": ["Infantry"],
       "models": [
         {
@@ -265,7 +265,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "rules": ["leader", {"id": "rifle_tactics", "x": 2}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
           "weapons": ["shard_rifle", {"id": "elven_blade", "count": 3}, "plasma_grenades"],
           "options": [
             {"replaceWeapon": ["shard_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "shard_sniper", "nova_blaster", "missile_launcher"]},
@@ -273,7 +273,7 @@
             {"replaceWeapon": ["shard_pistol"], "withWeapon": ["fusion_pistol"]},
             {"replaceWeapon": [{"id": "elven_blade", "count": 4}], "withWeapon": [{"id": "chainsword", "count": 4}, {"id": "star_spear", "count": 4}, {"id": "energy_sword", "count": 4}]},
             {"addRule": ["jetpack", {"name": "Camo-cloak", "id": "evasive"}, "teleport"]},
-            {"replaceRule": [{"id": "rifle_tactics", "x": 2}], "withRule": [{"id": "melee_tactics", "x": 2}]}
+            {"replaceRule": [{"id": "tactician", "x": 2}], "withRule": [{"id": "tactician", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -285,7 +285,7 @@
       "description": "A leader of the high elf martial forces riding a swift hover bike.",
       "category": "hero",
       "keywords": ["Biker"],
-      "rules": ["hover", {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "rifle_tactics", "x": 2}, {"id": "wounds", "x": 3}],
+      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
       "models": [
         {
           "name": "High Elf Champion on Bike",
@@ -305,7 +305,7 @@
             {"replaceWeapon": ["shard_pistol"], "withWeapon": ["fusion_pistol"]},
             {"replaceWeapon": [{"id": "elven_blade", "count": 4}], "withWeapon": [{"id": "chainsword", "count": 4}, {"id": "star_spear", "count": 4}, {"id": "energy_sword", "count": 4}]},
             {"addRule": [{"name": "Camo-cloak", "id": "evasive"}]},
-            {"replaceRule": [{"id": "rifle_tactics", "x": 2}], "withRule": [{"id": "melee_tactics", "x": 2}]}
+            {"replaceRule": [{"id": "tactician", "x": 2}], "withRule": [{"id": "tactician", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -345,7 +345,7 @@
       "description": "A gifted high elf psychic riding a swift hover bike.",
       "category": "hero",
       "keywords": ["Biker"],
-      "rules": ["hover", {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
       "models": [
         {
           "name": "Psychic on Bike",
@@ -373,7 +373,7 @@
       "name": "Spirit Engineer",
       "description": "A high elf leader focused on enhancing the mechanical aspects of the army.",
       "category": "hero",
-      "rules": ["engineer", {"id": "leader_x", "x": "Heavy Infantry"}, {"id": "wounds", "x": 3}],
+      "rules": ["engineer", {"id": "leader", "x": "Heavy Infantry"}, {"id": "wounds", "x": 3}],
       "models": [
         {
           "name": "Spirit Engineer",
@@ -393,7 +393,7 @@
       "name": "Spirit Engineer on Bike",
       "description": "A high elf leader focused on enhancing the mechanical aspects of the army, riding on a swift hover bike.",
       "category": "hero",
-      "rules": ["engineer", "hover", {"id": "leader_x", "x": "Heavy Infantry, Biker"}, {"id": "wounds", "x": 3}],
+      "rules": ["engineer", "hover", {"id": "leader", "x": "Heavy Infantry, Biker"}, {"id": "wounds", "x": 3}],
       "models": [
         {
           "name": "Spirit Engineer on Bike",
@@ -435,7 +435,7 @@
       "description": "A high elf psychic supporting the elven forces on the battlefield, riding a swift hover bike.",
       "category": "hero",
       "keywords": ["Biker"],
-      "rules": ["hover", {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Runecaster on Bike",
@@ -500,7 +500,7 @@
       "description": "A recently risen avatar of an ancient elven god of war.",
       "category": "hero",
       "keywords": [],
-      "rules": [{"id": "resilient", "x": 3}, {"id": "wounds", "x": 4}, {"id": "leader_x", "x": "Infantry"}],
+      "rules": [{"id": "resilient", "x": 3}, {"id": "wounds", "x": 4}, {"id": "leader", "x": "Infantry"}],
       "models": [
         {
           "name": "War God Avatar",

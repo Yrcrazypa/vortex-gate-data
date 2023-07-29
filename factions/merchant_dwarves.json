@@ -43,7 +43,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "blackpowder_tactics", "x": 1}, "engineer", {"id": "leader_x", "x": "Vehicle"}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "blackpowder_tactics", "x": 1}, "engineer", {"id": "leader", "x": "Vehicle"}, {"id": "wounds", "x": 3}],
                     "weapons": ["repeater_pistol", {"id": "great_weapon", "count": 3}, "welding_beam"],
                     "options": [
                         {"replaceWeapon": ["repeater_pistol"], "withWeapon": ["shotgun", "mortar_rifle", "long_rifle", "harpoon_rifle", "handcannon", "volley_gun"]},
@@ -68,7 +68,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "rules": [{"id": "blackpowder_tactics", "x": 1}, "engineer", "fly", {"id": "leader_x", "x": "Vehicle"}, {"id": "wounds", "x": 4}],
+                    "rules": [{"id": "blackpowder_tactics", "x": 1}, "engineer", "fly", {"id": "leader", "x": "Vehicle"}, {"id": "wounds", "x": 4}],
                     "weapons": [{"id": "chainsaw", "count": 3}, {"id": "carbine", "count": 3}, "handcannon", "welding_beam"],
                     "options": [{"replaceRule": [{"id": "blackpowder_tactics", "x": 1}], "withRule": [{"id": "blackpowder_tactics", "x": 2}]}],
                     "min": 1,

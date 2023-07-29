@@ -48,7 +48,7 @@
                     "fight": 7,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "corrupted_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "corrupted_tactics", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
                     "weapons": [{"id": "heavy_hooves_and_teeth", "count": 2}, {"id": "great_weapon", "count": 3}],
                     "options": [
                         {
@@ -77,7 +77,7 @@
                     "fight": 7,
                     "defense": 8,
                     "reflexes": 6,
-                    "rules": [{"id": "corrupted_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 4}],
+                    "rules": [{"id": "corrupted_tactics", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 4}],
                     "weapons": [{"id": "horn_and_claws", "count": 3}, {"id": "bashing_tail", "count": 2}, {"id": "great_weapon", "count": 3}],
                     "options": [
                         {
@@ -106,7 +106,7 @@
                     "fight": 7,
                     "defense": 9,
                     "reflexes": 6,
-                    "rules": [{"id": "corrupted_tactics", "x": 2}, {"id": "wounds", "x": 3}, "fear", "fly", {"id": "leader_x", "x": "Infantry, Cavalry"}],
+                    "rules": [{"id": "corrupted_tactics", "x": 2}, {"id": "wounds", "x": 3}, "fear", "fly", {"id": "leader", "x": "Infantry, Cavalry"}],
                     "weapons": [{"id": "fangs_and_claws", "count": 6}, {"id": "bashing_tail", "count": 4}, {"id": "great_weapon", "count": 4}],
                     "options": [
                         {
@@ -134,7 +134,7 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["heavy_handweapon", "staff"],
                     "options": [
                         {"replaceWeapon": ["heavy_handweapon", "staff"], "withWeapon": ["great_staff"]},
@@ -161,7 +161,7 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["heavy_handweapon", "staff", {"id": "heavy_hooves_and_teeth", "count": 2}],
                     "options": [
                         {"replaceWeapon": ["heavy_handweapon", "staff"], "withWeapon": ["great_staff"]},
@@ -187,7 +187,7 @@
                     "fight": 6,
                     "defense": 9,
                     "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, "fear", "fly", {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}],
+                    "rules": [{"id": "wounds", "x": 3}, "fear", "fly", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}],
                     "weapons": [{"id": "fangs_and_claws", "count": 6}, {"id": "bashing_tail", "count": 4}, {"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}],
                     "options": [
                         {"replaceWeapon": [{"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]},
@@ -213,7 +213,7 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": ["hover", {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}, {"id": "wounds", "x": 3}],
+                    "rules": ["hover", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}, {"id": "wounds", "x": 3}],
                     "weapons": ["heavy_handweapon", "great_staff"],
                     "options": [{"addRule": ["companion", "shield"]}, {"replaceRule": {"id": "power", "x": 2}, "withRule": {"id": "power", "x": 3}}],
                     "min": 1,
@@ -236,7 +236,7 @@
                     "fight": 7,
                     "defense": 10,
                     "reflexes": 6,
-                    "rules": [{"id": "corrupted_tactics", "x": 2}, {"id": "wounds", "x": 3}, "fear", {"id": "leader_x", "x": "Infantry, Cavalry"}],
+                    "rules": [{"id": "corrupted_tactics", "x": 2}, {"id": "wounds", "x": 3}, "fear", {"id": "leader", "x": "Infantry, Cavalry"}],
                     "weapons": [{"id": "crushing_fists", "count": 3}, {"id": "pestilence_tongue", "count": 2}, {"id": "great_weapon", "count": 4}],
                     "options": [
                         {

@@ -9,7 +9,7 @@
             "name": "Inquisitor",
             "description": "A zealous hunter who is specialized in hunting down a certain enemy.",
             "category": "hero",
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "ward", "x": 1}, {"id": "wounds", "x": 3}],
+            "rules": [{"id": "leader", "x": "Infantry"}, {"id": "ward", "x": 1}, {"id": "wounds", "x": 3}],
             "models": [
                 {
                     "name": "Inquisitor",
@@ -52,7 +52,7 @@
             "description": "A commander under the command of an inquisitor.",
             "category": "hero",
             "keywords": ["Storm Trooper", "Infantry"],
-            "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "stormtrooper_tactics", "x": 1}, {"id": "wounds", "x": 2}],
+            "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 2}],
             "models": [
                 {
                     "name": "Stormtrooper Commander",
@@ -71,7 +71,7 @@
                             "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "energy_fist", "count": 3}, {"id": "energy_mace", "count": 3}, {"id": "energy_axe", "count": 3}]
                         },
                         {"addRule": [{"id": "ambush", "name": "Orbital Insertion"}, {"id": "ward", "x": 1}]},
-                        {"replaceRule": {"id": "stormtrooper_tactics", "x": 1}, "withRule": {"id": "stormtrooper_tactics", "x": 2}}
+                        {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
                     ],
                     "min": 1,
                     "max": 1

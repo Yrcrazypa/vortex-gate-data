@@ -19,7 +19,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, {"id": "leader_x", "x": "Monster"}, "monstrous_regeneration", {"id": "power", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, {"id": "leader", "x": "Monster"}, "monstrous_regeneration", {"id": "power", "x": 1}],
                     "weapons": [{"id": "fangs_and_teeth", "count": 3}, {"id": "grand_hammer", "count": 2}, "rock_throw"],
                     "min": 1,
                     "max": 1
@@ -70,7 +70,7 @@
                     "fight": 7,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": [{"id": "great_weapon", "count": 3}, {"id": "boar_tusks", "count": 2}],
                     "options": [
                         {
@@ -100,7 +100,7 @@
                     "fight": 7,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": ["furious", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 4}],
+                    "rules": ["furious", {"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 4}],
                     "weapons": [{"id": "great_weapon", "count": 4}, {"id": "claws", "count": 4}],
                     "options": [
                         {
@@ -130,7 +130,7 @@
                     "fight": 7,
                     "defense": 8,
                     "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, {"id": "leader_x", "x": "Monster"}, "monstrous_regeneration", {"id": "orc_tactics", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, {"id": "leader", "x": "Monster"}, "monstrous_regeneration", {"id": "orc_tactics", "x": 1}],
                     "weapons": [{"id": "great_weapon", "count": 3}, {"id": "fangs_and_teeth", "count": 3, "id_0": "grand_hammer"}, "rock_throw"],
                     "options": [
                         {
@@ -160,7 +160,7 @@
                     "fight": 7,
                     "defense": 6,
                     "reflexes": 7,
-                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}],
                     "weapons": [{"id": "great_weapon", "count": 3}, {"id": "beak_and_claws", "count": 6}],
                     "options": [
                         {
@@ -190,7 +190,7 @@
                     "fight": 7,
                     "defense": 9,
                     "reflexes": 7,
-                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}],
                     "weapons": [{"id": "great_weapon", "count": 3}, {"id": "flame_breath", "count": 4}, {"id": "crushing_maw", "count": 4}],
                     "options": [
                         {
@@ -220,7 +220,7 @@
                     "fight": 7,
                     "defense": 9,
                     "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader_x", "x": "Vehicle"}, {"id": "orc_tactics", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader", "x": "Vehicle"}, {"id": "orc_tactics", "x": 1}],
                     "weapons": [{"id": "great_weapon", "count": 3}, {"id": "boar_tusks", "count": 4}],
                     "options": [
                         {
@@ -272,7 +272,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["handweapon", "staff", {"id": "boar_tusks", "count": 2}],
                     "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,
@@ -294,7 +294,7 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 7,
-                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}],
+                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}],
                     "weapons": ["handweapon", "staff", {"id": "beak_and_claws", "count": 6}],
                     "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}],
                     "min": 1,
@@ -316,7 +316,7 @@
                     "fight": 6,
                     "defense": 9,
                     "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader_x", "x": "Vehicle"}, {"id": "power", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader", "x": "Vehicle"}, {"id": "power", "x": 1}],
                     "weapons": ["handweapon", "staff", {"id": "boar_tusks", "count": 4}],
                     "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,
@@ -338,7 +338,7 @@
                     "fight": 6,
                     "defense": 9,
                     "reflexes": 7,
-                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}],
+                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}],
                     "weapons": ["handweapon", "staff", {"id": "flame_breath", "count": 4}, {"id": "crushing_maw", "count": 4}],
                     "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}],
                     "min": 1,
@@ -387,7 +387,7 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 6,
-                    "rules": [{"id": "goblin_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry. Cavalry"}, "strider", {"id": "wounds", "x": 2}],
+                    "rules": [{"id": "goblin_tactics", "x": 1}, {"id": "leader", "x": "Infantry. Cavalry"}, "strider", {"id": "wounds", "x": 2}],
                     "weapons": [{"id": "handweapon", "count": 3}, {"id": "spider_bite", "count": 2}],
                     "options": [
                         {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
@@ -414,7 +414,7 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 6,
-                    "rules": [{"id": "goblin_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry. Cavalry"}, "scout", {"id": "wounds", "x": 2}],
+                    "rules": [{"id": "goblin_tactics", "x": 1}, {"id": "leader", "x": "Infantry. Cavalry"}, "scout", {"id": "wounds", "x": 2}],
                     "weapons": [{"id": "handweapon", "count": 3}, {"id": "claws", "count": 2}],
                     "options": [
                         {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
@@ -441,7 +441,7 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 6,
-                    "rules": ["agile", "crazed", "evasive", {"id": "goblin_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry. Cavalry"}, {"id": "wounds", "x": 2}],
+                    "rules": ["agile", "crazed", "evasive", {"id": "goblin_tactics", "x": 1}, {"id": "leader", "x": "Infantry. Cavalry"}, {"id": "wounds", "x": 2}],
                     "weapons": [{"id": "handweapon", "count": 3}, {"id": "fangs_and_teeth", "count": 2}],
                     "options": [
                         {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
@@ -468,7 +468,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "goblin_tactics", "x": 1}, {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle", "String": "scout"}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "goblin_tactics", "x": 1}, {"id": "impact", "x": 3}, {"id": "leader", "x": "Vehicle", "String": "scout"}],
                     "weapons": [{"id": "handweapon", "count": 3}, {"id": "claws", "count": 4}],
                     "options": [
                         {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
@@ -517,7 +517,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 5,
-                    "rules": [{"id": "leader_x", "x": "Infantry. Cavalry"}, {"id": "power", "x": 1}, "strider", {"id": "wounds", "x": 2}],
+                    "rules": [{"id": "leader", "x": "Infantry. Cavalry"}, {"id": "power", "x": 1}, "strider", {"id": "wounds", "x": 2}],
                     "weapons": ["handweapon", "staff", {"id": "spider_bite", "count": 2}],
                     "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,
@@ -539,7 +539,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 5,
-                    "rules": [{"id": "leader_x", "x": "Infantry. Cavalry"}, {"id": "power", "x": 1}, "scout", {"id": "wounds", "x": 2}],
+                    "rules": [{"id": "leader", "x": "Infantry. Cavalry"}, {"id": "power", "x": 1}, "scout", {"id": "wounds", "x": 2}],
                     "weapons": ["handweapon", "staff", {"id": "claws", "count": 2}],
                     "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,
@@ -561,7 +561,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 5,
-                    "rules": ["agile", "crazed", "evasive", {"id": "leader_x", "x": "Infantry. Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+                    "rules": ["agile", "crazed", "evasive", {"id": "leader", "x": "Infantry. Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
                     "weapons": ["handweapon", "staff", {"id": "fangs_and_teeth", "count": 2}],
                     "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,
@@ -583,7 +583,7 @@
                     "fight": 5,
                     "defense": 8,
                     "reflexes": 5,
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "power", "x": 1}, "scout"],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "power", "x": 1}, "scout"],
                     "weapons": ["handweapon", "staff", {"id": "claws", "count": 4}],
                     "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,

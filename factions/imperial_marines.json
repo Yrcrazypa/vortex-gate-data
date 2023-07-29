@@ -19,10 +19,10 @@
           "defense": 11,
           "reflexes": 7,
           "rules": [
-            {"id": "inspiring_x", "x": "Infantry, Heavy Infantry"},
-            {"id": "leader_x", "x": "Infantry, Heavy Infantry"},
+            {"id": "inspiring", "x": "Infantry, Heavy Infantry"},
+            {"id": "leader", "x": "Infantry, Heavy Infantry"},
             {"id": "limited", "x": 1},
-            {"id": "tactician_x", "x": "Infantry, Heavy Infantry"},
+            {"id": "tactician", "x": "Infantry, Heavy Infantry"},
             {"id": "wounds", "x": 4}
           ],
           "weapons": ["arch_sword"],
@@ -90,7 +90,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "combi_grav", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
@@ -112,7 +112,7 @@
               "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
-            {"addRule": [{"id": "hover", "name": "Anti-Grav Engine"}, "shield", {"name": "Army Standard", "id": "inspiring_x", "x": "Infantry, Biker"}]}
+            {"addRule": [{"id": "hover", "name": "Anti-Grav Engine"}, "shield", {"name": "Army Standard", "id": "inspiring", "x": "Infantry, Biker"}]}
           ],
           "min": 1,
           "max": 1
@@ -172,7 +172,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "tactician_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "combi_grav", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
@@ -194,7 +194,7 @@
               "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
-            {"addRule": ["shield", {"name": "Army Standard", "id": "inspiring_x", "x": "Infantry, Biker"}, {"id": "hover", "name": "Anti-Grav Engine"}]}
+            {"addRule": ["shield", {"name": "Army Standard", "id": "inspiring", "x": "Infantry, Biker"}, {"id": "hover", "name": "Anti-Grav Engine"}]}
           ],
           "min": 1,
           "max": 1
@@ -215,7 +215,7 @@
           "fight": 7,
           "defense": 11,
           "reflexes": 6,
-          "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, {"id": "tactician_x", "x": "Juggernaut"}],
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, {"id": "tactician", "x": "Juggernaut"}],
           "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
           "options": [
             {
@@ -318,7 +318,7 @@
           "defense": 8,
           "reflexes": 6,
           "movement": 8,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "combi_grav", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
@@ -404,7 +404,7 @@
           "defense": 8,
           "movement": 6,
           "reflexes": 8,
-          "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["twin_marine_rifle", "combi_flamer", "combi_fusion", "combi_plasma", "combi_grav", "combi_thermal", "marine_dmr", "marine_smg"]},
@@ -489,7 +489,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["battle_prayer", {"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "rules": ["battle_prayer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_grav", "combi_thermal", "marine_smg", "marine_dmr"]},
@@ -1809,7 +1809,7 @@
           "movement": 5,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "tactician_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "tactician", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
           "weapons": ["twin_marine_rifle", "psychic_grenades", {"id": "energy_sword", "count": 5}],
           "options": [
             {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "medium_machinegun", "psychic_cannon"]},
@@ -1817,7 +1817,7 @@
               "replaceWeapon": {"id": "energy_sword", "count": 5},
               "withWeapon": [{"id": "energy_staff", "count": 5}, {"id": "energy_halberd", "count": 5}, {"id": "energy_sword", "count": 6}, {"id": "energy_hammer", "count": 5}]
             },
-            {"replaceRule": {"id": "melee_tactics", "x": 2}, "withRule": {"id": "rifle_tactics", "x": 2}},
+            {"replaceRule": {"id": "tactician", "x": 2}, "withRule": {"id": "tactician", "x": 2}},
             {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]},
             {"addRule": [{"id": "defiant", "x": 3}]}
           ],

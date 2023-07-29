@@ -22,7 +22,7 @@
                         {"replaceWeapon": ["staff", "handweapon"], "withWeapon": [{"id": "polearm", "count": 2}, {"id": "great_staff", "count": 2}, {"id": "great_weapon", "count": 2}]},
                         {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
                     ],
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "power", "x": 1}, {"id": "melee_tactics", "x": 1}, "leader"],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "power", "x": 1}, {"id": "tactician", "x": 1}, "leader"],
                     "min": 1,
                     "max": 1
                 }
@@ -165,7 +165,7 @@
                     "min": 1,
                     "max": 1,
                     "weapons": [{"id": "fangs_and_teeth", "count": 3}, {"id": "great_axe", "count": 2}],
-                    "rules": [{"id": "wounds", "x": 3}, {"id": "leader_x", "x": "Beast"}, {"id": "melee_tactics", "x": 2}]
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "leader", "x": "Beast"}, {"id": "tactician", "x": 2}]
                 }
             ],
             "subfactions": ["none"],

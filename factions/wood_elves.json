@@ -44,7 +44,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "rules": [{"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["staff", "handweapon", {"id": "hooves_and_teeth", "count": 2}],
           "options": [
             {"replaceWeapon": ["staff", "handweapon"], "withWeapon": [{"id": "polearm", "count": 2}, {"id": "great_staff", "count": 2}]},
@@ -71,7 +71,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}, {"id": "leader_x", "x": "Cavalry"}, {"id": "power", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}, {"id": "leader", "x": "Cavalry"}, {"id": "power", "x": 1}],
           "weapons": ["staff", "handweapon", {"id": "beak", "count": 2}, {"id": "claws", "count": 2}],
           "options": [
             {"replaceWeapon": ["staff", "handweapon"], "withWeapon": [{"id": "polearm", "count": 2}, {"id": "great_staff", "count": 2}]},
@@ -97,7 +97,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader_x", "x": "Monster"}, {"id": "power", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader", "x": "Monster"}, {"id": "power", "x": 2}],
           "weapons": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}, {"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
           "options": [
             {"replaceWeapon": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "polearm", "count": 3}, {"id": "great_staff", "count": 3}]},
@@ -130,7 +130,7 @@
               "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "long_spear", "count": 3}]
             },
             {"addRule": [{"name": "Wings", "id": "fly"}, "shield", {"id": "icon", "x": "Infantry"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "ranger_tactics", "x": 1}], "withRule": [{"id": "melee_tactics", "x": 1}]}
+            {"replaceRule": [{"id": "ranger_tactics", "x": 1}], "withRule": [{"id": "tactician", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -151,7 +151,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": [{"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "marauder_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "marksman", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "handweapon", "count": 3}, "long_bow", {"id": "hooves_and_teeth", "count": 2}],
           "options": [
             {
@@ -160,7 +160,7 @@
             },
             {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 2}], "withWeapon": [{"id": "antlers_and_hooves", "count": 2}]},
             {"addRule": [{"id": "power", "x": 1}, "shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
-            {"replaceRule": [{"id": "marauder_tactics", "x": 1}], "withRule": [{"id": "knight_tactics", "x": 1}]}
+            {"replaceRule": [{"id": "marksman", "x": 1}], "withRule": [{"id": "warrior", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -181,7 +181,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}, {"id": "leader_x", "x": "Cavalry"}, {"id": "marauder_tactics", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}, {"id": "leader", "x": "Cavalry"}, {"id": "marksman", "x": 1}],
           "weapons": [{"id": "handweapon", "count": 3}, "long_bow", {"id": "beak", "count": 2}, {"id": "claws", "count": 2}],
           "options": [
             {
@@ -189,7 +189,7 @@
               "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "lance", "count": 3}]
             },
             {"addRule": ["relic_shield", {"id": "power", "x": 1}, {"id": "icon", "x": "Cavalry"}]},
-            {"replaceRule": [{"id": "marauder_tactics", "x": 1}], "withRule": [{"id": "knight_tactics", "x": 1}]}
+            {"replaceRule": [{"id": "marksman", "x": 1}], "withRule": [{"id": "warrior", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -210,7 +210,7 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader_x", "x": "Monster"}, {"id": "knight_tactics", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader", "x": "Monster"}, {"id": "warrior", "x": 2}],
           "weapons": [{"id": "handweapon", "count": 3}, "long_bow", {"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
           "options": [
             {
@@ -218,7 +218,7 @@
               "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "lance", "count": 3}]
             },
             {"addRule": ["relic_shield", {"id": "icon", "x": "Monster"}, {"id": "power", "x": 1}]},
-            {"replaceRule": [{"id": "knight_tactics", "x": 2}], "withRule": [{"id": "knight_tactics", "x": 3}]}
+            {"replaceRule": [{"id": "warrior", "x": 2}], "withRule": [{"id": "warrior", "x": 3}]}
           ],
           "min": 1,
           "max": 1

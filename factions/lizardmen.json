@@ -39,7 +39,7 @@
                     "fight": 5,
                     "defense": 6,
                     "reflexes": 6,
-                    "rules": [{"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["staff", "handweapon", {"id": "fangs_and_teeth", "count": 2}],
                     "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,
@@ -61,7 +61,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 6,
-                    "rules": ["fly", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": ["fly", {"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["staff", "handweapon", "sunfury_bombs"],
                     "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,
@@ -83,7 +83,7 @@
                     "fight": 6,
                     "defense": 9,
                     "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader_x", "x": "Cavalry, Monster"}, {"id": "power", "x": 1}],
+                    "rules": [{"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry, Monster"}, {"id": "power", "x": 1}],
                     "weapons": ["staff", "handweapon", {"id": "raking_claws", "count": 2}],
                     "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
                     "min": 1,
@@ -105,15 +105,14 @@
                     "fight": 5,
                     "defense": 6,
                     "reflexes": 6,
-                    "rules": ["leader", {"id": "warrior_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": [{"id": "handweapon", "count": 2}],
                     "options": [
                         {
                             "replaceWeapon": [{"id": "handweapon", "count": 2}],
                             "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]
                         },
-                        {"addRule": [{"id": "icon", "x": "Infantry"}]},
-                        {"replaceRule": [{"id": "warrior_tactics", "x": 1}], "withRule": [{"id": "warrior_tactics", "x": 2}]}
+                        {"addRule": [{"id": "icon", "x": "Infantry"}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -134,12 +133,12 @@
                     "fight": 5,
                     "defense": 6,
                     "reflexes": 6,
-                    "rules": [{"id": "knight_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "warrior", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
                     "weapons": [{"id": "handweapon", "count": 2}, {"id": "fangs_and_teeth", "count": 2}],
                     "options": [
                         {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [["javelin", {"id": "light_handweapon", "count": 2}], {"id": "lance", "count": 2}]},
                         {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "knight_tactics", "x": 1}], "withRule": [{"id": "knight_tactics", "x": 2}]}
+                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -160,14 +159,14 @@
                     "fight": 5,
                     "defense": 6,
                     "reflexes": 6,
-                    "rules": ["fly", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "knight_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": ["fly", {"id": "impact", "x": 3}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": [{"id": "handweapon", "count": 2}, "sunfury_bombs"],
                     "options": [
                         {
                             "replaceWeapon": [{"id": "handweapon", "count": 2}],
                             "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]
                         },
-                        {"replaceRule": [{"id": "knight_tactics", "x": 1}], "withRule": [{"id": "knight_tactics", "x": 2}]}
+                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -188,7 +187,7 @@
                     "fight": 6,
                     "defense": 9,
                     "reflexes": 6,
-                    "rules": [{"id": "beast_tactics", "x": 1}, {"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader_x", "x": "Cavalry, Monster"}],
+                    "rules": [{"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry, Monster"}],
                     "weapons": [{"id": "handweapon", "count": 2}, {"id": "raking_claws", "count": 2}],
                     "options": [
                         {
@@ -196,7 +195,7 @@
                             "withWeapon": [["blowpipe", {"id": "light_handweapon", "count": 2}], ["javelin", {"id": "light_handweapon", "count": 2}]]
                         },
                         {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "beast_tactics", "x": 1}], "withRule": [{"id": "beast_tactics", "x": 2}]}
+                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -216,7 +215,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "rules": ["leader", {"id": "warrior_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite"],
                     "options": [
                         {
@@ -224,7 +223,7 @@
                             "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_spear", "count": 3}]
                         },
                         {"addRule": [{"id": "icon", "x": "Infantry"}, {"id": "power", "x": 1}], "limit": 1},
-                        {"replaceRule": [{"id": "warrior_tactics", "x": 1}], "withRule": [{"id": "warrior_tactics", "x": 2}]}
+                        {"replaceRule": [{"id": "tactician", "x": 1}], "withRule": [{"id": "tactician", "x": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -245,12 +244,12 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "rules": [{"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "knight_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite", {"id": "fangs_and_teeth", "count": 2}],
                     "options": [
                         {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "lance", "count": 3}]},
                         {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "knight_tactics", "x": 1}], "withRule": [{"id": "knight_tactics", "x": 2}]}
+                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -271,12 +270,12 @@
                     "fight": 7,
                     "defense": 9,
                     "reflexes": 6,
-                    "rules": [{"id": "beast_tactics", "x": 1}, {"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader_x", "x": "Cavalry, Monster"}],
+                    "rules": [{"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry, Monster"}],
                     "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite", {"id": "raking_claws", "count": 2}],
                     "options": [
                         {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "lance", "count": 3}]},
                         {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "beast_tactics", "x": 1}], "withRule": [{"id": "beast_tactics", "x": 2}]}
+                        {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
                     ],
                     "min": 1,
                     "max": 1

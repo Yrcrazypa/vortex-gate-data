@@ -8,7 +8,7 @@
             "name": "Machine Grand Master",
             "description": "The smartest and most intelligent machine guild leader.",
             "category": "hero",
-            "rules": ["engineer", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
+            "rules": ["engineer", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
             "models": [
                 {
                     "name": "Machine Grand Master",
@@ -44,7 +44,7 @@
                     "fight": 6,
                     "defense": 9,
                     "reflexes": 6,
-                    "rules": ["engineer", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
+                    "rules": ["engineer", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
                     "weapons": ["radiation_pistol", {"id": "heavy_ccw", "count": 3}],
                     "options": [
                         {"replaceWeapon": ["radiation_pistol"], "withWeapon": ["smg", "thermal_carbine", "thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol", "eradication_blaster"]},
@@ -81,7 +81,7 @@
                     "fight": 5,
                     "defense": 8,
                     "reflexes": 6,
-                    "rules": ["engineer", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 2}],
+                    "rules": ["engineer", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 2}],
                     "weapons": ["radiation_pistol", {"id": "heavy_ccw", "count": 2}],
                     "options": [
                         {"replaceWeapon": ["radiation_pistol"], "withWeapon": ["smg", "thermal_carbine", "thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol", "eradication_blaster"]},
