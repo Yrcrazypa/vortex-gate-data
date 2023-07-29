@@ -1,7 +1,7 @@
 {
   "id": "free_colonies",
   "name": "Free Colonies",
-  "author": "guitarninja#5707",
+  "author": "guitarninja",
   "background": "The Free Colonies are a group of cooperating aliens and explorers expanding their influence throughout the stars. Their primary fighting style involves a combined arms assault of mechanized infantry, flying battlesuits and high-tech infantry.",
   "units": {
     "battlesuit_commander": {

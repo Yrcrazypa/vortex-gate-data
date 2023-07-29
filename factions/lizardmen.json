@@ -1,7 +1,7 @@
 {
   "name": "Lizardfolk Empire",
   "id": "lizardmen",
-  "author": "guitarninja#5707",
+  "author": "guitarninja",
   "units": {
     "gecko_oracle": {
       "name": "Gecko Oracle",

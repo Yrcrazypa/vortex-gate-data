@@ -1,7 +1,7 @@
 {
     "id": "machine_guilds",
     "name": "Machine Guilds",
-    "author": "guitarninja#5707",
+    "author": "guitarninja",
     "background": "The Machine Guilds are a group of aspiring machinist and tinkerers, expanding their mortal bodies with cybernetic upgrades. They rely on advanced weaponry and superior tactics which they can maximize through a hivemind-like neural link.",
     "hidden_units": {
         "machine_grand_master": {
