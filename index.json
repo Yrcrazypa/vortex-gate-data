@@ -45,7 +45,7 @@
       "id": "abyss_daemons",
       "url": "abyss_daemons.json",
       "color": "#B52E1F",
-      "alliance": "doom",
+      "alliance": "corrupted_pact",
       "description": "Demonic entities from another dimension, causing havoc in the name of their infernal masters."
     },
     "corrupted_marines": {
@@ -188,6 +188,88 @@
       "color": "#657432",
       "alliance": "mercenaries",
       "description": "The Galactic Corperate Allegiance is a brittle union of opportunistic arms dealers, cutthroat trading companies and private armies vying for control over lost sectors and profitable regions. They are equipped with the best tech and weapons money can buy and prefer stealth and crafty tactics."
+    },
+    "storm_wardens": {
+      "version": "1.0",
+      "name": "Storm Wardens",
+      "id": "storm_wardens",
+      "url": "storm_wardens.json",
+      "color": "#D4AF37",
+      "secondary_color": "#0d407f",
+      "alliance": "order",
+      "description": "Creations of an arch-wizard, the Storm Wardens exist to enforce peace around the realms - no matter who it may favour.  Their incredible weapons and armour are unmatched by other races."
+    },
+    "vampire_lords": {
+      "version": "1.0",
+      "name": "Vampire Lords",
+      "id": "vampire_lords",
+      "url": "vampire_lords.json",
+      "color": "#801111",
+      "alliance": "death",
+      "description": "Vampire Lords are necromancers who have learned to imbue themselves with necrotic power.  They wield their undead hordes like a weapon, to cut away those who would stand in their way."
+    },
+    "sea_elves": {
+      "version": "1.0",
+      "name": "Sea Elves",
+      "id": "sea_elves",
+      "url": "sea_elves.json",
+      "color": "#03414e",
+      "alliance": "order",
+      "description": "Transmuted by ancient magic to be mightier than any other elf, the Sea Elves require incredible alchemical concoctions to survive.  They hire themselves out to other races to afford their survival, and live under the sea to avoid mortal conflict."
+    },
+    "haunting_ghosts": {
+      "version": "1.0",
+      "name": "Haunting Ghosts",
+      "id": "haunting_ghosts",
+      "url": "haunting_ghosts.json",
+      "color": "#4C838A",
+      "alliance": "death",
+      "description": "Places of necromantic power can often spontaneously bring the dead back to life, and without a leader they have only one drive:  Spread that necromantic power, through the death of those nearby!"
+    },
+    "beastmen_horde": {
+      "version": "1.0",
+      "name": "Beastmen Horde",
+      "id": "beastmen_horde",
+      "url": "beastmen_horde.json",
+      "color": "#954535",
+      "alliance": "doom",
+      "description": "The Beastmen seek nothing less than the destruction of civilization, turning it all into burning rubble."
+    },
+    "feudal_kingdoms": {
+      "version": "1.0",
+      "name": "Feudal Kingdoms",
+      "id": "feudal_kingdoms",
+      "url": "feudal_kingdoms.json",
+      "color": "#990c0c",
+      "alliance": "order",
+      "description": "The myriad of Feudal Kingdoms are mercurial and quick-blooded, wanting only peace one generation while seeking to conquer the world the next - and well-equipped for either."
+    },
+    "lizardmen": {
+      "version": "1.0",
+      "name": "Lizardfolk Empire",
+      "id": "lizardmen",
+      "url": "lizardmen.json",
+      "color": "#087194",
+      "alliance": "destruction",
+      "description": "A sprawling empire of jungle-dwellers who believe they are the rightful rulers of the world."
+    },
+    "vermin_colonies": {
+      "version": "1.0",
+      "name": "Vermin Colonies",
+      "id": "vermin_colonies",
+      "url": "vermin_colonies.json",
+      "color": "#3D3636",
+      "alliance": "doom",
+      "description": "These cunning and treacherous Vermin assemble into warhosts containing vast swarms, pestilent magic, mutated beasts and doom-tech."
+    },
+    "dwarven_realms": {
+      "version": "1.0",
+      "name": "Dwarven Realms",
+      "id": "dwarven_realms",
+      "url": "dwarven_realms.json",
+      "color": "#A55D35",
+      "alliance": "order",
+      "description": "A stout race of miners, engineers and warriors who were driven into the dark eons again. Now that they have returned they take revenge on those that once betrayed them."
     }
   },
   "subfactions": {
@@ -211,7 +293,11 @@
     "corrupted_pact": {"name": "Corrupted Pact"},
     "federation": {"name": "Federated Species"},
     "greenskins": {"name": "Greenskin Tribes"},
-    "mercenaries": {"name": "Mercenaries"}
+    "mercenaries": {"name": "Mercenaries"},
+    "death": {"name": "Bringers of Death"},
+    "destruction": {"name": "Forces of Destruction"},
+    "order": {"name": "Keepers of Order"},
+    "doom": {"name": "Instruments of Doom"}
   },
   "categories": {"hero": {"name": "Hero"}, "core": {"name": "Core"}, "elite": {"name": "Elite"}, "rare": {"name": "Rare"}, "fortification": {"name": "Fortification"}},
   "organizations": {
@@ -1705,11 +1791,7 @@
     },
     "disrupt": {"name": "Disrupt", "inputs": ["x"], "description": "This weapon has +X AP against units with _Damage Chart_.", "points": ["rule.x", {"multiply": 0.5}]},
     "inspiring": {"name": "Inspiring", "description": "This model's unit gains +1 Courage when taking Courage Tests.", "points": 10},
-    "epic_tactician": {
-      "name": "Epic Tactician",
-      "description": "This model's unit may re-roll all failed Accuracy and Strength tests.",
-      "points": 20
-    },
+    "epic_tactician": {"name": "Epic Tactician", "description": "This model's unit may re-roll all failed Accuracy and Strength tests.", "points": 20},
     "tactician": {"name": "Tactician", "description": "This model's unit may re-roll failed Accuracy and Strength tests of 9+.", "points": 10},
     "charger": {"name": "Charger", "description": "This model's unit gains +3\" of movement when _Charging_.", "points": 5},
     "warrior": {"name": "Warrior", "description": "This model's unit may re-roll failed Strength tests of 9+.", "points": 5},
