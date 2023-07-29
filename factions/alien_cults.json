@@ -78,13 +78,13 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 2}],
           "weapons": ["pistol", "blasting_charges", {"id": "ccw", "count": 2}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
             {"replaceWeapon": [{"id": "ccw", "count": 2}], "withWeapon": [{"id": "energy_staff", "count": 2}, {"id": "bone_sword", "count": 2}]},
             {"addRule": ["companion"]},
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -166,7 +166,7 @@
           "defense": 8,
           "reflexes": 7,
           "movement": 8,
-          "rules": ["agile", "leader", {"id": "tactician", "x": 1}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["agile", "leader", {"id": "tactician", "x": 1}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "large_razor_talons", "count": 6}],
           "options": [{"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}],
           "min": 1,

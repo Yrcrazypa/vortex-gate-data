@@ -20,7 +20,7 @@
           "weapons": [{"id": "heavy_ccw", "count": 3}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
-            {"addRule": [{"name": "Wings", "id": "fly"}, {"id": "power", "x": 1}, {"id": "icon", "x": "Infantry"}]},
+            {"addRule": [{"name": "Wings", "id": "fly"}, {"id": "magic", "x": 1}, {"id": "icon", "x": "Infantry"}]},
             {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
             {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
@@ -48,7 +48,7 @@
           "weapons": [{"id": "heavy_ccw", "count": 3}, {"id": "warbeast_horn", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
-            {"addRule": [{"id": "power", "x": 1}, {"id": "icon", "x": "Infantry, Cavalry"}]}
+            {"addRule": [{"id": "magic", "x": 1}, {"id": "icon", "x": "Infantry, Cavalry"}]}
           ],
           "min": 1,
           "max": 1
@@ -73,7 +73,7 @@
           "weapons": [{"id": "heavy_ccw", "count": 3}, {"id": "hooves_and_teeth", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_staff", "count": 3}, {"id": "energy_staff", "count": 3}]},
-            {"addRule": [{"id": "power", "x": 1}, {"id": "icon", "x": "Infantry, Cavalry"}, {"name": "Wings", "id": "fly"}]},
+            {"addRule": [{"id": "magic", "x": 1}, {"id": "icon", "x": "Infantry, Cavalry"}, {"name": "Wings", "id": "fly"}]},
             {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
           "min": 1,
@@ -99,7 +99,7 @@
           "weapons": [{"id": "heavy_ccw", "count": 3}, {"id": "fangs_and_teeth", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
-            {"addRule": [{"id": "power", "x": 1}]},
+            {"addRule": [{"id": "magic", "x": 1}]},
             {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
           "min": 1,
@@ -120,12 +120,12 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "energy_staff", "count": 2}, "heavy_ccw"],
           "options": [
             {"addRule": [{"name": "Wings", "id": "fly"}]},
             {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -146,9 +146,9 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "energy_staff", "count": 2}, "heavy_ccw", {"id": "hooves_and_teeth", "count": 2}],
-          "options": [{"addRule": [{"name": "Wings", "id": "fly"}]}, {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}],
+          "options": [{"addRule": [{"name": "Wings", "id": "fly"}]}, {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}],
           "min": 1,
           "max": 1
         }
@@ -168,9 +168,9 @@
           "fight": 5,
           "defense": 9,
           "reflexes": 5,
-          "rules": ["damage_chart", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "power", "x": 2}],
+          "rules": ["damage_chart", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "magic", "x": 2}],
           "weapons": [{"id": "energy_staff", "count": 2}, "heavy_ccw", {"id": "fangs_and_teeth", "count": 2}],
-          "options": [{"replaceRule": {"id": "power", "x": 2}, "withRule": {"id": "power", "x": 3}}],
+          "options": [{"replaceRule": {"id": "magic", "x": 2}, "withRule": {"id": "magic", "x": 3}}],
           "min": 1,
           "max": 1
         }
@@ -190,12 +190,12 @@
           "fight": 7,
           "defense": 10,
           "reflexes": 7,
-          "rules": ["damage_chart", "leader", {"id": "tactician", "x": 2}, {"id": "power", "x": 1}],
+          "rules": ["damage_chart", "leader", {"id": "tactician", "x": 2}, {"id": "magic", "x": 1}],
           "weapons": [{"id": "daemon_sword", "count": 3}, {"id": "daemon_claws", "count": 2}],
           "options": [
             {"replaceWeapon": {"id": "daemon_sword", "count": 3}, "withWeapon": [{"id": "daemon_axe", "count": 3}, {"id": "daemon_claws", "count": 4}]},
             {"addRule": [{"name": "Wings", "id": "fly"}]},
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]}
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": [{"id": "magic", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -216,7 +216,7 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 7,
-          "rules": ["damage_chart", "leader", {"id": "tactician", "x": 2}, {"id": "power", "x": 2}, "titanic"],
+          "rules": ["damage_chart", "leader", {"id": "tactician", "x": 2}, {"id": "magic", "x": 2}, "titanic"],
           "weapons": [{"id": "daemon_sword", "count": 6}, {"id": "daemon_claws", "count": 4}],
           "options": [
             {
@@ -224,7 +224,7 @@
               "withWeapon": [{"id": "daemon_axe", "count": 6}, {"id": "daemon_claws", "count": 10}, [{"id": "daemon_sword", "count": 3}, {"id": "barbed_whip", "count": 4}]]
             },
             {"addRule": [{"name": "Wings", "id": "fly"}]},
-            {"replaceRule": {"id": "power", "x": 2}, "withRule": [{"id": "power", "x": 3}]}
+            {"replaceRule": {"id": "magic", "x": 2}, "withRule": [{"id": "magic", "x": 3}]}
           ],
           "min": 1,
           "max": 1
@@ -449,7 +449,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": ["damage_chart", {"id": "power", "x": 1}, "vulnerable_rear"],
+          "rules": ["damage_chart", {"id": "magic", "x": 1}, "vulnerable_rear"],
           "weapons": ["crushing_maw", {"id": "enormous_claws", "count": 2}],
           "min": 1,
           "max": 1

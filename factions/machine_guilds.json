@@ -61,7 +61,7 @@
                         },
                         {"addWeapon": ["thermal_rifle", "eradication_ray", "plasma_rifle", "emp_rifle", "fusion_rifle", "flamethrower"], "limit": 1},
                         {"addWeapon": ["servo_arm"], "limit": 2},
-                        {"addRule": ["protocols", {"id": "power", "x": 1}, {"id": "power", "x": 2}], "limit": 1}
+                        {"addRule": ["protocols", {"id": "magic", "x": 1}, {"id": "magic", "x": 2}], "limit": 1}
                     ],
                     "min": 1,
                     "max": 1
@@ -97,7 +97,7 @@
                         },
                         {"addWeapon": ["thermal_rifle", "eradication_ray", "plasma_rifle", "emp_rifle", "fusion_rifle", "flamethrower"], "limit": 1},
                         {"addWeapon": ["servo_arm"], "limit": 2},
-                        {"addRule": [{"id": "power", "x": 1}, "protocols"], "limit": 1}
+                        {"addRule": [{"id": "magic", "x": 1}, "protocols"], "limit": 1}
                     ],
                     "min": 1,
                     "max": 1

@@ -256,7 +256,7 @@
               "limit": 2
             },
             {"addRule": ["relic_shield", "reinforced_armor"]},
-            {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "limit": 1}
+            {"addRule": [{"id": "magic", "x": 1}, {"id": "magic", "x": 2}], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -276,7 +276,7 @@
           "defense": 8,
           "reflexes": 6,
           "movement": 6,
-          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_grav", "combi_thermal", "marine_dmr", "marine_smg"]},
@@ -295,7 +295,7 @@
                 {"id": "energy_glaive", "count": 3}
               ]
             },
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}},
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}},
             {"addRule": ["jetpack_character", "destroyer_armor"], "limit": 1},
             {"addRule": ["shield"]}
           ],
@@ -318,7 +318,7 @@
           "defense": 8,
           "reflexes": 6,
           "movement": 8,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "combi_grav", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
@@ -341,7 +341,7 @@
               "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}},
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}},
             {"addRule": ["shield", {"id": "hover", "name": "Anti-Grav Engine"}]}
           ],
           "min": 1,
@@ -1604,7 +1604,7 @@
               "limit": 2
             },
             {"addRule": ["relic_shield"]},
-            {"addRule": [{"id": "power", "x": 1}], "subfactions": ["power_focus"]}
+            {"addRule": [{"id": "magic", "x": 1}], "subfactions": ["power_focus"]}
           ],
           "min": 1,
           "max": 1
@@ -1635,7 +1635,7 @@
             },
             {"addWeapon": ["flamethrower", "plasma_rifle", "fusion_rifle", "storm_rifle", "grenade_launcher", "gravity_rifle"], "limit": 2},
             {"addRule": ["magnetic_grapple", "relic_shield"]},
-            {"addRule": [{"id": "power", "x": 1}], "subfactions": ["power_focus"]}
+            {"addRule": [{"id": "magic", "x": 1}], "subfactions": ["power_focus"]}
           ],
           "min": 1,
           "max": 1
@@ -1695,7 +1695,7 @@
               "limit": 2
             },
             {"addRule": ["relic_shield", "reinforced_armor"]},
-            {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "limit": 1, "subfactions": ["power_focus"]}
+            {"addRule": [{"id": "magic", "x": 1}, {"id": "magic", "x": 2}], "limit": 1, "subfactions": ["power_focus"]}
           ],
           "min": 1,
           "max": 1
@@ -1749,7 +1749,7 @@
               ],
               "limit": 2
             },
-            {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "subfactions": ["power_focus"], "limit": 1}
+            {"addRule": [{"id": "magic", "x": 1}, {"id": "magic", "x": 2}], "subfactions": ["power_focus"], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -1798,7 +1798,7 @@
           "movement": 5,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "tactician", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "magic", "x": 1}, {"id": "tactician", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
           "weapons": ["twin_marine_rifle", "psychic_grenades", {"id": "energy_sword", "count": 5}],
           "options": [
             {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "medium_machinegun", "psychic_cannon"]},
@@ -1807,7 +1807,7 @@
               "withWeapon": [{"id": "energy_staff", "count": 5}, {"id": "energy_halberd", "count": 5}, {"id": "energy_sword", "count": 6}, {"id": "energy_hammer", "count": 5}]
             },
             {"replaceRule": {"id": "tactician", "x": 2}, "withRule": {"id": "tactician", "x": 2}},
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]},
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": [{"id": "magic", "x": 2}]},
             {"addRule": [{"id": "defiant", "x": 3}]}
           ],
           "min": 1,
@@ -1829,7 +1829,7 @@
           "movement": 6,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", {"id": "power", "x": 1}, "tactician", {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "magic", "x": 1}, "tactician", {"id": "wounds", "x": 3}],
           "weapons": ["storm_rifle", "psychic_grenades", {"id": "energy_sword", "count": 4}],
           "options": [
             {"replaceWeapon": "storm_rifle", "withWeapon": "marine_smg"},
@@ -1837,7 +1837,7 @@
               "replaceWeapon": {"id": "energy_sword", "count": 4},
               "withWeapon": [{"id": "energy_staff", "count": 4}, {"id": "energy_halberd", "count": 4}, {"id": "energy_sword", "count": 5}, {"id": "energy_hammer", "count": 4}]
             },
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]},
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": [{"id": "magic", "x": 2}]},
             {"addRule": [{"id": "defiant", "x": 3}, {"name": "Army Standard", "id": "inspiring"}, "destroyer_armor"]}
           ],
           "min": 1,
@@ -1860,7 +1860,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "power", "x": 1}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "magic", "x": 1}, "vulnerable_rear"],
           "weapons": [{"id": "heavy_walker_fist", "count": 8}],
           "options": [
             {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": [{"id": "energy_greathammer", "count": 4}, {"id": "energy_greatsword", "count": 4}]},
@@ -1887,12 +1887,12 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "power", "x": 1}, "tactician", "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "magic", "x": 1}, "tactician", "vulnerable_rear"],
           "weapons": [{"id": "heavy_walker_fist", "count": 8}],
           "options": [
             {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": [{"id": "energy_greathammer", "count": 4}, {"id": "energy_greatsword", "count": 4}]},
             {"addWeapon": ["twin_heavy_flamethrower", "heavy_psychic_cannon", "heavy_gatling_gun"], "limit": 2},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]},
+            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]},
             {"replaceRule": {"id": "walker_tactics", "x": 1}, "withRule": [{"id": "walker_tactics", "x": 2}]},
             {"addRule": [{"id": "defiant", "x": 3}]}
           ],

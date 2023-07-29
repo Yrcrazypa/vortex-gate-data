@@ -105,7 +105,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", "frags", {"id": "heavy_ccw", "count": 2}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
@@ -114,7 +114,7 @@
               "replaceWeapon": {"id": "heavy_ccw", "count": 3},
               "withWeapon": [{"id": "energy_axe", "count": 3}, {"id": "energy_saw", "count": 3}, {"id": "heavy_energy_claw", "count": 3}, {"id": "energy_staff", "count": 3}]
             },
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}},
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}},
             {"addRule": [{"id": "defiant", "x": 3, "name": "Cyborg Body"}, "ultra_armor"], "limit": 1}
           ],
           "min": 1,
@@ -136,7 +136,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["carbine", "frags", {"id": "heavy_ccw", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
@@ -156,7 +156,7 @@
                 {"id": "railgun", "mount": ["Front"]}
               ]
             },
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
           ],
           "min": 1,
           "max": 1

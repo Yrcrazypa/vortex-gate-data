@@ -135,12 +135,12 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["handweapon", "staff"],
           "options": [
             {"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff", "grand_hammer"]},
             {"addRule": ["shield"]},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -161,12 +161,12 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": [{"id": "heavy_impact", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "heavy_impact", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "heavy_hooves_and_teeth", "count": 2}, "handweapon", "staff"],
           "options": [
             {"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff", "grand_hammer"]},
             {"addRule": ["shield"]},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -187,9 +187,9 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "leader", "x": "Monster"}, {"id": "power", "x": 2}, "strider"],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "leader", "x": "Monster"}, {"id": "magic", "x": 2}, "strider"],
           "weapons": [{"id": "crushing_fists", "count": 4}, "handweapon", "staff"],
-          "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff", "grand_hammer"]}, {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}],
+          "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff", "grand_hammer"]}, {"replaceRule": [{"id": "magic", "x": 2}], "withRule": [{"id": "magic", "x": 3}]}],
           "min": 1,
           "max": 1
         }
@@ -209,9 +209,9 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry"}, {"id": "power", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry"}, {"id": "magic", "x": 2}],
           "weapons": ["handweapon", "staff", "devouring_maw", {"id": "horn_and_claws", "count": 6}, "napalm_breath"],
-          "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff", "grand_hammer"]}, {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}],
+          "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff", "grand_hammer"]}, {"replaceRule": [{"id": "magic", "x": 2}], "withRule": [{"id": "magic", "x": 3}]}],
           "min": 1,
           "max": 1
         }
@@ -231,12 +231,12 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "power", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "magic", "x": 1}],
           "weapons": [{"id": "heavy_hooves_and_teeth", "count": 4}, "handweapon", "staff"],
           "options": [
             {"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff", "grand_hammer"]},
             {"addRule": ["relic_shield"]},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -697,12 +697,12 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["handweapon", "staff", {"id": "repeater_pistol", "count": 2}],
           "options": [
             {"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]},
             {"addRule": ["suit"]},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
           ],
           "min": 1,
           "max": 1

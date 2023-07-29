@@ -134,13 +134,13 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "leader", "x": "Infantry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["heavy_handweapon", "staff"],
                     "options": [
                         {"replaceWeapon": ["heavy_handweapon", "staff"], "withWeapon": ["great_staff"]},
                         {"addRule": ["companion", "shield"]},
                         {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
-                        {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
+                        {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
                     ],
                     "min": 1,
                     "max": 1
@@ -161,12 +161,12 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["heavy_handweapon", "staff", {"id": "heavy_hooves_and_teeth", "count": 2}],
                     "options": [
                         {"replaceWeapon": ["heavy_handweapon", "staff"], "withWeapon": ["great_staff"]},
                         {"addRule": ["companion", "shield"]},
-                        {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
+                        {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
                     ],
                     "min": 1,
                     "max": 1
@@ -187,12 +187,12 @@
                     "fight": 6,
                     "defense": 9,
                     "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, "fear", "fly", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}],
+                    "rules": [{"id": "wounds", "x": 3}, "fear", "fly", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 2}],
                     "weapons": [{"id": "fangs_and_claws", "count": 6}, {"id": "bashing_tail", "count": 4}, {"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}],
                     "options": [
                         {"replaceWeapon": [{"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]},
                         {"addRule": ["companion", "relic_shield"]},
-                        {"replaceRule": {"id": "power", "x": 2}, "withRule": {"id": "power", "x": 3}}
+                        {"replaceRule": {"id": "magic", "x": 2}, "withRule": {"id": "magic", "x": 3}}
                     ],
                     "min": 1,
                     "max": 1
@@ -213,9 +213,9 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 6,
-                    "rules": ["hover", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}, {"id": "wounds", "x": 3}],
+                    "rules": ["hover", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 2}, {"id": "wounds", "x": 3}],
                     "weapons": ["heavy_handweapon", "great_staff"],
-                    "options": [{"addRule": ["companion", "shield"]}, {"replaceRule": {"id": "power", "x": 2}, "withRule": {"id": "power", "x": 3}}],
+                    "options": [{"addRule": ["companion", "shield"]}, {"replaceRule": {"id": "magic", "x": 2}, "withRule": {"id": "magic", "x": 3}}],
                     "min": 1,
                     "max": 1
                 }
@@ -244,7 +244,7 @@
                             "withWeapon": [{"id": "heavy_flail", "count": 4}, {"id": "great_weapon", "count": 5}, {"id": "grand_weapon", "count": 4}, {"id": "heavy_lance", "count": 4}]
                         },
                         {"replaceWeapon": [{"id": "pestilence_tongue", "count": 2}], "withWeapon": [[{"id": "pestilence_tentacles", "count": 4}, "pestilence_bile"]]},
-                        {"addRule": [{"id": "power", "x": 1}]},
+                        {"addRule": [{"id": "magic", "x": 1}]},
                         {"replaceRule": [{"id": "corrupted_tactics", "x": 2}], "withRule": [{"id": "corrupted_tactics", "x": 3}]}
                     ],
                     "min": 1,

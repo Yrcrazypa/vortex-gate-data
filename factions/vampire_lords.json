@@ -17,8 +17,8 @@
                     "defense": 5,
                     "reflexes": 6,
                     "weapons": ["handweapon", "great_staff"],
-                    "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
-                    "rules": [{"id": "wounds", "x": 2}, "leader", {"id": "power", "x": 1}, "soul_lantern"],
+                    "options": [{"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}],
+                    "rules": [{"id": "wounds", "x": 2}, "leader", {"id": "magic", "x": 1}, "soul_lantern"],
                     "min": 1,
                     "max": 1
                 }
@@ -42,7 +42,7 @@
                     "options": [
                         {"replaceWeapon": [{"id": "grand_weapon", "count": 4}], "withWeapon": [{"id": "heavy_lance", "count": 4}]},
                         {"addRule": ["relic_shield"]},
-                        {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}]},
+                        {"addRule": [{"id": "magic", "x": 1}, {"id": "magic", "x": 2}]},
                         {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
                     ],
                     "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}, "fly", {"id": "warrior", "x": 1}],
@@ -73,7 +73,7 @@
                             "withWeapon": [{"id": "lance", "count": 4}, {"id": "heavy_handweapon", "count": 5}, {"id": "great_weapon", "count": 4}]
                         },
                         {"addRule": ["enchanted_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}]},
+                        {"addRule": [{"id": "magic", "x": 1}, {"id": "magic", "x": 2}]},
                         {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
                     ],
                     "rules": ["fear", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}, {"id": "warrior", "x": 1}],
@@ -105,7 +105,7 @@
                         },
                         {"addRule": ["enchanted_shield", {"id": "icon", "x": "Infantry"}]},
                         {"addRule": [{"id": "fly", "name": "Wings"}]},
-                        {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "limit": 1},
+                        {"addRule": [{"id": "magic", "x": 1}, {"id": "magic", "x": 2}], "limit": 1},
                         {"replaceRule": [{"id": "vampire_tactics", "x": 1}], "withRule": [{"id": "vampire_tactics", "x": 2}]}
                     ],
                     "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "vampire_tactics", "x": 1}],
@@ -161,7 +161,7 @@
                             "withWeapon": [{"id": "great_polearm", "count": 3}, {"id": "great_lance", "count": 3}, {"id": "grand_axe", "count": 3}, {"id": "grand_mace", "count": 3}]
                         },
                         {"addRule": ["enchanted_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"addRule": [{"id": "power", "x": 1}]}
+                        {"addRule": [{"id": "magic", "x": 1}]}
                     ]
                 }
             ],
@@ -186,7 +186,7 @@
                     "options": [
                         {"replaceWeapon": [{"id": "great_weapon", "count": 4}], "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "grand_mace", "count": 3}, {"id": "great_polearm", "count": 3}]},
                         {"addRule": ["enchanted_shield", {"id": "icon", "x": "Infantry"}]},
-                        {"addRule": [{"id": "power", "x": 1}]}
+                        {"addRule": [{"id": "magic", "x": 1}]}
                     ],
                     "min": 1,
                     "max": 1

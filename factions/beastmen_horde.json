@@ -40,9 +40,9 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 8,
-          "rules": ["furious", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 4}],
+          "rules": ["furious", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 4}],
           "weapons": [{"id": "great_staff", "count": 2}, {"id": "enchanted_horns", "count": 3}, {"id": "cloven_hooves", "count": 3}],
-          "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+          "options": [{"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}],
           "min": 1,
           "max": 1
         }
@@ -82,11 +82,11 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["handweapon", "staff"],
           "options": [
             {"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]},
+            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]},
             {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]}
           ],
           "min": 1,
@@ -151,7 +151,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 7,
-          "rules": [{"id": "impact", "x": 3}, {"id": "leader", "x": "Beast"}, {"id": "power", "x": 1}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 3}, {"id": "leader", "x": "Beast"}, {"id": "magic", "x": 1}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "great_weapon", "count": 4}, {"id": "rending_claws", "count": 2}],
           "options": [{"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
           "min": 1,

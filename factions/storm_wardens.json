@@ -30,7 +30,7 @@
             {"addRule": [{"id": "icon", "x": "Infantry"}, "soul_lantern"], "limit": 1},
             {"replaceRule": [{"id": "eternal_tactics", "x": 1}], "withRule": [{"id": "eternal_tactics", "x": 2}]}
           ],
-          "rules": [{"id": "eternal_tactics", "x": 1}, "leader", {"id": "wounds", "x": 3}, {"id": "power", "x": 1}]
+          "rules": [{"id": "eternal_tactics", "x": 1}, "leader", {"id": "wounds", "x": 3}, {"id": "magic", "x": 1}]
         }
       ]
     },
@@ -48,7 +48,7 @@
           "defense": 7,
           "courage": 7,
           "reflexes": 6,
-          "rules": [{"id": "eternal_tactics", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 4}],
+          "rules": [{"id": "eternal_tactics", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 4}],
           "weapons": [{"id": "great_weapon", "count": 3}, {"id": "lightning_breath", "count": 2}, {"id": "beak_and_claws", "count": 2}],
           "options": [
             {
@@ -78,7 +78,7 @@
           "defense": 13,
           "courage": 7,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "eternal_tactics", "x": 1}, {"id": "leader", "x": "Monster"}, {"id": "power", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "eternal_tactics", "x": 1}, {"id": "leader", "x": "Monster"}, {"id": "magic", "x": 1}],
           "weapons": [{"count": 3, "id": "great_weapon"}, {"count": 4, "id": "lightning_breath"}, {"count": 3, "id": "fangs_and_claws"}, "bashing_tail"],
           "options": [
             {
@@ -108,7 +108,7 @@
           "defense": 10,
           "courage": 7,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "eternal_tactics", "x": 1}, {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "power", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "eternal_tactics", "x": 1}, {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "magic", "x": 1}],
           "weapons": [{"id": "great_weapon", "count": 3}, {"id": "beak_and_claws", "count": 4}],
           "options": [
             {
@@ -138,7 +138,7 @@
           "shoot": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "eternal_tactics", "x": 1}, "fly", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "eternal_tactics", "x": 1}, "fly", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}],
           "weapons": [{"id": "great_weapon", "count": 3}, {"id": "beak_and_claws", "count": 6}],
           "options": [
             {
@@ -191,7 +191,7 @@
           "defense": 7,
           "courage": 7,
           "reflexes": 6,
-          "rules": ["leader", {"id": "power", "x": 2}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "magic", "x": 2}, {"id": "wounds", "x": 3}],
           "weapons": [{"count": 2, "id": "heavy_handweapon"}, {"count": 2, "id": "staff"}],
           "options": [{"replaceWeapon": [{"count": 2, "id": "heavy_handweapon"}, {"count": 2, "id": "staff"}], "withWeapon": [{"count": 3, "id": "great_staff"}]}, {"addWeapon": ["spirit_flask"]}],
           "max": 1,
@@ -213,7 +213,7 @@
           "defense": 7,
           "courage": 7,
           "reflexes": 6,
-          "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}, "scout", {"id": "wounds", "x": 3}],
+          "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 2}, "scout", {"id": "wounds", "x": 3}],
           "weapons": [{"id": "beak_and_claws", "count": 2}, {"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}],
           "options": [{"replaceWeapon": [{"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]}, {"addWeapon": ["spirit_flask"]}],
           "max": 1,
@@ -235,7 +235,7 @@
           "shoot": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 2}],
           "weapons": [{"id": "beak_and_claws", "count": 6}, {"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}],
           "options": [{"replaceWeapon": [{"count": 2, "id": "heavy_handweapon"}, {"count": 2, "id": "staff"}], "withWeapon": [{"count": 3, "id": "great_staff"}]}, {"addWeapon": ["spirit_flask"]}],
           "max": 1,
@@ -257,7 +257,7 @@
           "defense": 10,
           "courage": 7,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "power", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "magic", "x": 2}],
           "weapons": [{"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}, {"id": "beak_and_claws", "count": 4}],
           "options": [{"replaceWeapon": [{"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]}, {"addWeapon": ["spirit_flask"]}],
           "max": 1,
@@ -279,7 +279,7 @@
           "defense": 13,
           "courage": 7,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader", "x": "Monster"}, {"id": "power", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader", "x": "Monster"}, {"id": "magic", "x": 1}],
           "weapons": [{"count": 4, "id": "lightning_breath"}, {"count": 3, "id": "fangs_and_claws"}, "bashing_tail"],
           "max": 1,
           "min": 1

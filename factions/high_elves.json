@@ -61,7 +61,7 @@
       "name": "Elven Seer",
       "description": "An elven keeper gifted with the power of minor foresight and energy manipulation.",
       "category": "hero",
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
       "keywords": ["Infantry"],
       "models": [
         {
@@ -75,7 +75,7 @@
           "weapons": ["shard_pistol", {"id": "elven_blade", "count": 3}],
           "options": [
             {"replaceWeapon": "shard_pistol", "withWeapon": ["neuron_pistol", "fusion_pistol"]},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]},
+            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]},
             {"addWeapon": "grenade_launcher_backpack"}
           ],
           "rules": [],
@@ -316,7 +316,7 @@
       "name": "Psychic",
       "description": "A gifted high elf psychic.",
       "category": "hero",
-      "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
       "models": [
         {
           "name": "Psychic",
@@ -333,7 +333,7 @@
               "withWeapon": [["shard_pistol", {"id": "elven_blade", "count": 3}], ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}]]
             },
             {"replaceWeapon": {"id": "elven_blade", "count": 3}, "withWeapon": [{"id": "energy_staff", "count": 3}]},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -345,7 +345,7 @@
       "description": "A gifted high elf psychic riding a swift hover bike.",
       "category": "hero",
       "keywords": ["Biker"],
-      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
       "models": [
         {
           "name": "Psychic on Bike",
@@ -362,7 +362,7 @@
               "withWeapon": [["shard_pistol", {"id": "elven_blade", "count": 3}], ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}]]
             },
             {"replaceWeapon": {"id": "elven_blade", "count": 3}, "withWeapon": [{"id": "energy_staff", "count": 3}]},
-            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -413,7 +413,7 @@
       "name": "Runecaster",
       "description": "A high elf psychic supporting the elven forces on the battlefield.",
       "category": "hero",
-      "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Runecaster",
@@ -435,7 +435,7 @@
       "description": "A high elf psychic supporting the elven forces on the battlefield, riding a swift hover bike.",
       "category": "hero",
       "keywords": ["Biker"],
-      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Runecaster on Bike",
@@ -776,7 +776,7 @@
             {"replaceWeapon": {"id": "shard_rifle", "count": 1}, "withWeapon": [{"id": "flamethrower", "count": 1}, {"id": "fusion_rifle", "count": 1}]},
             {"replaceWeapon": {"id": "shard_rifle", "count": 1}, "withWeapon": [{"id": "flamethrower", "count": 1}, {"id": "fusion_rifle", "count": 1}]},
             {"addWeapon": ["missile_launcher", "shard_cannon", "fusion_cannon", "sky_cannon", "laser_machinegun"], "limit": 2},
-            {"addRule": [{"id": "power", "x": 1}, "titan_shield"]}
+            {"addRule": [{"id": "magic", "x": 1}, "titan_shield"]}
           ],
           "min": 1,
           "max": 1

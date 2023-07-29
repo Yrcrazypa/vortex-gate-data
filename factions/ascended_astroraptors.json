@@ -138,7 +138,7 @@
       "description": "A trained psychic adept at casting powers and supporting troops.",
       "category": "hero",
       "keywords": ["Infantry"],
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Psychic",
@@ -150,7 +150,7 @@
           "movement": 6,
           "weapons": ["pistol", "frags", {"id": "heavy_ccw", "count": 2}],
           "options": [
-            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}},
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}},
             {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol"]},
             {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_staff", "count": 2}]}
           ],

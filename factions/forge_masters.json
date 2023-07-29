@@ -131,7 +131,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["heavy_carbine", {"id": "heavy_ccw", "count": 2}, "frags"],
                     "options": [
                         {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_thermal"]},
@@ -148,7 +148,7 @@
                                 {"id": "energy_sword", "count": 3}
                             ]
                         },
-                        {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+                        {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -168,7 +168,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "rules": [{"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": [{"id": "leader", "x": "Infantry, Biker"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["heavy_carbine", {"id": "heavy_ccw", "count": 2}, "frags", {"id": "twin_marine_rifle", "mount": ["Front"]}],
                     "options": [
                         {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_thermal"]},
@@ -189,7 +189,7 @@
                             "replaceWeapon": [{"id": "twin_marine_rifle", "mount": ["Front"]}],
                             "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}]
                         },
-                        {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]},
+                        {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]},
                         {"addRule": ["scout", "hover"]}
                     ],
                     "min": 1,
@@ -211,7 +211,7 @@
                     "fight": 6,
                     "defense": 9,
                     "reflexes": 6,
-                    "rules": ["ambush", "leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": ["ambush", "leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": ["twin_heavy_carbine", {"id": "heavy_ccw", "count": 3}, "frags"],
                     "options": [
                         {"replaceWeapon": ["twin_heavy_carbine"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle", "gravity_rifle", "thermal_rifle"]},
@@ -227,7 +227,7 @@
                                 {"id": "energy_pick", "count": 3}
                             ]
                         },
-                        {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+                        {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
                     ],
                     "min": 1,
                     "max": 1
@@ -871,7 +871,7 @@
                             "limit": 2
                         },
                         {"addRule": [{"name": "Shield Generator", "id": "defiant", "x": 3}, "field_radio", "reinforced_armor", "lookout_system", "targeting_array"]},
-                        {"addRule": [{"id": "power", "x": 1}], "subfactions": ["power_focus"]}
+                        {"addRule": [{"id": "magic", "x": 1}], "subfactions": ["power_focus"]}
                     ],
                     "min": 1,
                     "max": 1
@@ -946,7 +946,7 @@
                             "limit": 2
                         },
                         {"addRule": [{"name": "Shield Generator", "id": "defiant", "x": 3}, "field_radio", "reinforced_armor", "lookout_system", "targeting_array"]},
-                        {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "subfactions": ["power_focus"], "limit": 1}
+                        {"addRule": [{"id": "magic", "x": 1}, {"id": "magic", "x": 2}], "subfactions": ["power_focus"], "limit": 1}
                     ],
                     "min": 1,
                     "max": 1
