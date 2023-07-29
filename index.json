@@ -17,7 +17,7 @@
       "id": "dark_elves",
       "url": "dark_elves.json",
       "color": "#0b474a",
-      "alliance": "order",
+      "alliance": "destruction",
       "description": "The Dark Elf Raiders are a group of elves who have an obsession with raiding settlements for plunder. Their tactics revolve around attacking quickly with highly agile ships and doing damage after which they quickly escape."
     },
     "alien_swarm": {
