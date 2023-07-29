@@ -736,7 +736,7 @@
           "reflexes": 6,
           "weapons": ["marine_rifle", "heavy_ccw",  "smoke_grenades"],
           "min": 4,
-          "max": 19
+          "max": 9
         }
       ],
       "options": [

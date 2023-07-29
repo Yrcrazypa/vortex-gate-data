@@ -8,7 +8,7 @@
     "tactical_focus": {"name": "Tactical", "id": "tactical_focus", "description": "A focus on outsmarting and tricking the enemy."},
     "stealth_focus": {"name": "Stealth", "id": "stealth_focus", "description": "A focus on sneaky and silent tactics."},
     "vigilance_focus": {"name": "Vigilance", "id": "vigilance_focus", "description": "A focus on alertness and reactivity."},
-    "power_focus": {"name": "Power", "id": "power_focus", "description": "A focus on casting stronger and more consistent powers."},
+    "power_focus": {"name": "Magic", "id": "power_focus", "description": "A focus on casting stronger and more consistent powers."},
     "toughness_focus": {"name": "Toughness", "id": "toughness_focus", "description": "A focus on survival and unrelenting."},
     "shock_focus": {"name": "Shock", "id": "shock_focus", "description": "A focus on striking fear into your enemies."},
     "siege_focus": {"name": "Siege", "id": "siege_focus", "description": "A focus on siege warfare and denying cover."},
@@ -1848,7 +1848,7 @@
     "magic": {"name": "Magic", "inputs": ["x"], "description": "This unit may use X _Powers_ and attempt to stop X _Powers_ per round.", "points": [10, {"multiply": "rule.x"}]},
     "conclave": {
       "name": "Conclave",
-      "description": "This unit may use _Powers_ and attempt to stop _Powers_ each round based on the total number of model with this ability: \n * 1-3 Models: 1 Power \n * 4+ Models: 2 Powers \n * 7+ Models: 3 Powers",
+      "description": "This unit may use _Powers_ and attempt to stop _Powers_ each round based on the total number of model with this ability: \n * 1-5 Models: 1 Power \n * 6+ Models: 2 Powers \n * 11+ Models: 3 Powers",
       "points": [2]
     },
     "shocking": {"name": "Shocking", "inputs": ["x"], "description": "A unit hit by this weapon gains X additional Shock.", "points": ["rule.x", {"multiply": 2}]},
