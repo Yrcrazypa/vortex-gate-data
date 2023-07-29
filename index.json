@@ -214,7 +214,7 @@
       "id": "sea_elves",
       "url": "sea_elves.json",
       "color": "#03414e",
-      "alliance": "order",
+      "alliance": "death",
       "description": "Transmuted by ancient magic to be mightier than any other elf, the Sea Elves require incredible alchemical concoctions to survive.  They hire themselves out to other races to afford their survival, and live under the sea to avoid mortal conflict."
     },
     "spectral_legions": {
