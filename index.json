@@ -270,6 +270,15 @@
       "color": "#A55D35",
       "alliance": "order",
       "description": "A stout race of miners, engineers and warriors who were driven into the dark eons again. Now that they have returned they take revenge on those that once betrayed them."
+    },
+    "ogre_beastmasters": {
+      "version": "1.0",
+      "name": "Ogre Beastmasters",
+      "id": "ogre_beastmasters",
+      "url": "ogre_beastmasters.json",
+      "color": "#954535",
+      "alliance": "mercenaries",
+      "description": "Large-bodied mercenaries with huge appetites for gold and destruction."
     }
   },
   "subfactions": {
