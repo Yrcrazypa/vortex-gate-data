@@ -284,7 +284,7 @@
   "subfactions": {
     "assault_focus": {"name": "Assault", "id": "assault_focus", "description": "A focus on all-out assaults and aggression."},
     "firepower_focus": {"name": "Firepower", "id": "firepower_focus", "description": "A focus on overwhelming firepower."},
-    "mechanized_focus": {"name": "Mechanized", "id": "mechanized_focus", "description": "A focus on transports and vehicle combat."},
+    "mounted_focus": {"name": "Mounted", "id": "mounted_focus", "description": "A focus on transports and mounted combat."},
     "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "description": "A focus on fast and fluid movement."},
     "tactical_focus": {"name": "Tactical", "id": "tactical_focus", "description": "A focus on outsmarting and tricking the enemy."},
     "stealth_focus": {"name": "Stealth", "id": "stealth_focus", "description": "A focus on sneaky and silent tactics."},
