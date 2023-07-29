@@ -184,14 +184,14 @@
       "alliance": "order",
       "description": "The Planetary Defense Force is the backbone defense force of the many civilian planets of the empire. They are the first to respond to any miliary threats. They rely on hardy battle tanks and good old artillery shells along with waves of human fighters to defend the Empire."
     },
-    "imperial_marines": {
+    "stellar_vanguard": {
       "version": "1.0",
-      "name": "Imperial Marines",
-      "id": "imperial_marines",
-      "url": "imperial_marines.json",
+      "name": "Stellar Vanguard",
+      "id": "stellar_vanguard",
+      "url": "stellar_vanguard.json",
       "color": "#0d407f",
       "alliance": "order",
-      "description": "The Imperial Marines are the pride of the Human Empire and its elite order-keeping force should they need to be deployed. The Imperial Marines rely on tough infantry and somewhat advanced vehicle technology to outsmart and eliminate their enemies."
+      "description": "The Stellar Vanguard are the pride of the Human Empire and its elite order-keeping force should they need to be deployed. The Stellar Vanguard rely on tough infantry and somewhat advanced vehicle technology to outsmart and eliminate their enemies."
     },
     "orc_clans": {
       "version": "1.0",
