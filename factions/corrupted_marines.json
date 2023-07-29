@@ -1,0 +1,2164 @@
+{
+  "id": "corrupted_marines",
+  "name": "Corrupted Marines",
+  "author": "Caliallie#6369",
+  "hidden_subfactions": {
+    "assault_focus": {"name": "Assault", "id": "assault_focus", "color": "#18abcc"},
+    "mobility_focus": {"name": "Mobility", "id": "mobility_focus", "color": "#18abcc"},
+    "morale_focus": {"name": "Morale", "id": "morale_focus", "color": "#18abcc"}
+  },
+  "units": {
+    "corrupted_warmaster": {
+      "name": "Corrupted Arch-Marine of War",
+      "description": "Once one of Humanity's favoured, this powerful Marine now seeks only to watch the galaxy burn.",
+      "category": "hero",
+      "keywords": ["Heavy Infantry"],
+      "rules": ["ambush", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "limited", "x": 1}, {"id": "wounds", "x": 4}, {"id": "warmaster_tactics", "x": 3}],
+      "models": [
+        {
+          "name": "Corrupted Arch-Marine of War",
+          "movement": 6,
+          "courage": 8,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 10,
+          "reflexes": 7,
+          "weapons": [{"id": "archtraitor_sword", "count": 6}, {"id": "archtraitor_claw", "count": 3}, {"id": "archtraitor_ranged"}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "arch_pest": {
+      "name": "Pestilent Arch-Marine",
+      "description": "This Arch-Marine is the end result of the Pestilent Marines' vile necrobiotics and bioweapons research.",
+      "category": "rare",
+      "rules": [{"id": "power", "x": 2}, {"id": "pest_tactics", "x": 3}, {"id": "wounds", "x": 3}, "fly", {"id": "psychic_prowess", "x": 1}, {"id": "limited", "x": 1}],
+      "subfactions": ["toughness_focus"],
+      "models": [
+        {"name": "Pestilent Arch-Corrupted", "movement": 10, "courage": 7, "shoot": 7, "fight": 7, "defense": 14, "reflexes": 6, "weapons": ["arch_scythe", "arch_pest_pistol"], "min": 1, "max": 1}
+      ]
+    },
+    "arch_berzerker": {
+      "name": "Berserk Arch-Marine",
+      "description": "An icon of pure incandescent rage. Nothing remains once this Arch-Marine attacks.",
+      "category": "rare",
+      "rules": [{"id": "melee_tactics", "x": 3}, {"id": "limited", "x": 1}, {"id": "wounds", "x": 3}, "fly", "furious"],
+      "subfactions": ["assault_focus"],
+      "models": [{"name": "Berserk Arch-Corrupted", "movement": 12, "courage": 7, "shoot": 7, "fight": 8, "defense": 12, "reflexes": 6, "weapons": ["arch_blades"], "min": 1, "max": 1}]
+    },
+    "arch_mage": {
+      "name": "Corrupted Psychic Arch-Marine",
+      "description": "Built as a psycho-biological weapon, this Arch-Marine defied his destiny and joined the dark gods.",
+      "category": "rare",
+      "rules": [{"id": "power", "x": 3}, {"id": "archmage_tactics", "x": 3}, {"id": "wounds", "x": 3}, "fly", "archmage", {"id": "psychic_prowess", "x": 2}, {"id": "limited", "x": 1}],
+      "subfactions": ["power_focus"],
+      "models": [{"name": "Psychic Arch-Corrupted", "movement": 12, "courage": 7, "shoot": 7, "fight": 7, "defense": 13, "reflexes": 6, "weapons": ["arch_staff"], "min": 1, "max": 1}]
+    },
+    "lord_on_infernal_stalker": {
+      "name": "Corrupted Lord on Infernal Stalker",
+      "description": "An infernal creation that crawls on the ground, stalking its prey.",
+      "category": "hero",
+      "keywords": ["Vehicle"],
+      "rules": [{"id": "wounds", "x": 3}, "fear", "vulnerable_rear", "walker"],
+      "models": [
+        {
+          "name": "Infernal Stalker",
+          "movement": 10,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 11,
+          "reflexes": 6,
+          "weapons": ["bane_flamethrower", "maul_cutter", {"id": "claws", "count": 5}, {"id": "chainsaw_glaive", "count": 4}],
+          "options": [{"replaceWeapon": "bane_flamethrower", "withWeapon": ["autocannon"]}, {"replaceWeapon": "maul_cutter", "withWeapon": ["virus_injector"]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_champion": {
+      "name": "Corrupted Champion",
+      "description": "A champion of the dark gods.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Corrupted Champion",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "rifle_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 4},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 4},
+                {"id": "energy_axe", "count": 4},
+                {"id": "energy_sword", "count": 4},
+                {"id": "chainfist", "count": 4},
+                {"id": "chainaxe", "count": 4},
+                {"id": "energy_fist", "count": 4},
+                {"id": "energy_hammer", "count": 4},
+                {"id": "energy_claws", "count": 5},
+                {"id": "chainsaw_glaive", "count": 4}
+              ]
+            },
+            {"addRule": ["jetpack", "destroyer_armor"], "limit": 1},
+            {"replaceRule": {"id": "rifle_tactics", "x": 1}, "withRule": {"id": "melee_tactics", "x": 1}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_champion_on_bike": {
+      "name": "Corrupted Champion on Bike",
+      "description": "A champion of the dark gods riding a combat bike.",
+      "category": "hero",
+      "keywords": ["Biker"],
+      "models": [
+        {
+          "name": "Corrupted Lord on Bike",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 1}],
+          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 4},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 4},
+                {"id": "energy_axe", "count": 4},
+                {"id": "energy_sword", "count": 4},
+                {"id": "energy_fist", "count": 4},
+                {"id": "energy_hammer", "count": 4},
+                {"id": "energy_claws", "count": 5},
+                {"id": "chainsaw_glaive", "count": 4}
+              ]
+            },
+            {
+              "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+            },
+            {"replaceRule": {"id": "rifle_tactics", "x": 1}, "withRule": {"id": "melee_tactics", "x": 1}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_lord": {
+      "name": "Corrupted Lord",
+      "description": "A lord of the dark gods.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Corrupted Lord",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
+          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 4}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 4}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 5}], {"id": "energy_claws", "count": 7}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 5},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 5},
+                {"id": "energy_axe", "count": 5},
+                {"id": "energy_sword", "count": 5},
+                {"id": "chainfist", "count": 5},
+                {"id": "chainaxe", "count": 5},
+                {"id": "energy_fist", "count": 5},
+                {"id": "energy_hammer", "count": 5},
+                {"id": "energy_claws", "count": 6},
+                {"id": "chainsaw_glaive", "count": 5}
+              ]
+            },
+            {"addRule": ["jetpack", "destroyer_armor"], "limit": 1},
+            {"replaceRule": {"id": "rifle_tactics", "x": 2}, "withRule": {"id": "melee_tactics", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_lord_on_bike": {
+      "name": "Corrupted Lord on Bike",
+      "description": "A lord of the dark gods riding a combat bike.",
+      "category": "hero",
+      "keywords": ["Biker"],
+      "models": [
+        {
+          "name": "Corrupted Lord on Bike",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
+          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 4}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 4}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 5}], {"id": "energy_claws", "count": 7}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 5},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 5},
+                {"id": "energy_axe", "count": 5},
+                {"id": "energy_sword", "count": 5},
+                {"id": "energy_fist", "count": 5},
+                {"id": "energy_hammer", "count": 5},
+                {"id": "energy_claws", "count": 6},
+                {"id": "chainsaw_glaive", "count": 5}
+              ]
+            },
+            {
+              "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+            },
+            {"replaceRule": {"id": "rifle_tactics", "x": 2}, "withRule": {"id": "melee_tactics", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_lord_on_warbeast": {
+      "name": "Corrupted Lord on Warbeast",
+      "description": "A lord of the dark gods riding a biomechanical monster.",
+      "category": "hero",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Corrupted Lord on Warbeast",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "rifle_tactics", "x": 2}],
+          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 4}, {"id": "warbeast_horn", "count": 2}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 4}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 5}], {"id": "energy_claws", "count": 7}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 5},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 5},
+                {"id": "energy_axe", "count": 5},
+                {"id": "energy_sword", "count": 5},
+                {"id": "energy_fist", "count": 5},
+                {"id": "energy_hammer", "count": 5},
+                {"id": "energy_claws", "count": 6},
+                {"id": "chainsaw_glaive", "count": 5}
+              ]
+            },
+            {"replaceRule": {"id": "rifle_tactics", "x": 2}, "withRule": {"id": "melee_tactics", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "subfactions": ["assault_focus"]
+    },
+    "corrupted_engineer": {
+      "name": "Corrupted Engineer",
+      "description": "Twisted by the dark gods, this marine is dedicated to repairing corrupted machines.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Corrupted Engineer",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 6,
+          "rules": ["engineer", "leader", {"id": "wounds", "x": 3}],
+          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 4},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 4},
+                {"id": "energy_axe", "count": 4},
+                {"id": "energy_sword", "count": 4},
+                {"id": "energy_fist", "count": 4},
+                {"id": "energy_hammer", "count": 4},
+                {"id": "energy_claws", "count": 5}
+              ]
+            },
+            {"addWeapon": ["plasma_rifle", "flamethrower", "gravity_rifle", "fusion_rifle", "marine_rifle"], "limit": 2},
+            {"addWeapon": ["servo_arm"], "limit": 2},
+            {"addRule": ["destroyer_armor", "jetpack"], "limit": 1}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_engineer_on_bike": {
+      "name": "Corrupted Engineer on Bike",
+      "description": "Riding a combat bike, this marine is dedicated to repairing corrupted machines.",
+      "category": "hero",
+      "keywords": ["Biker"],
+      "models": [
+        {
+          "name": "Corrupted Engineer on Biker",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 6,
+          "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 4},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 4},
+                {"id": "energy_axe", "count": 4},
+                {"id": "energy_sword", "count": 4},
+                {"id": "energy_fist", "count": 4},
+                {"id": "energy_hammer", "count": 4},
+                {"id": "energy_claws", "count": 5}
+              ]
+            },
+            {"addWeapon": ["plasma_rifle", "flamethrower", "gravity_rifle", "fusion_rifle", "marine_rifle"], "limit": 2},
+            {"addWeapon": ["servo_arm"], "limit": 2},
+            {
+              "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_psychic": {
+      "name": "Corrupted Psychic",
+      "description": "A potent psychic who has turned to the dark gods.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Corrupted Psychic",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}],
+          "options": [
+            {"replaceWeapon": "marine_rifle", "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 4},
+              "withWeapon": [
+                {"id": "energy_sword", "count": 4},
+                {"id": "chainfist", "count": 4},
+                {"id": "energy_mace", "count": 4},
+                {"id": "energy_axe", "count": 4},
+                {"id": "energy_fist", "count": 4},
+                {"id": "energy_hammer", "count": 4},
+                {"id": "energy_claws", "count": 5},
+                {"id": "energy_staff", "count": 4}
+              ]
+            },
+            {"addRule": ["jetpack", "destroyer_armor", "disk_of_change"], "limit": 1},
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_psychic_on_bike": {
+      "name": "Corrupted Psychic on Bike",
+      "description": "A potent psychic riding a combat bike.",
+      "category": "hero",
+      "keywords": ["Biker"],
+      "models": [
+        {
+          "name": "Corrrupted Psychic on Bike",
+          "movement": 10,
+          "courage": 7,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": "marine_rifle", "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 4},
+              "withWeapon": [
+                {"id": "energy_sword", "count": 4},
+                {"id": "chainfist", "count": 4},
+                {"id": "energy_mace", "count": 4},
+                {"id": "energy_axe", "count": 4},
+                {"id": "energy_fist", "count": 4},
+                {"id": "energy_hammer", "count": 4},
+                {"id": "energy_claws", "count": 5},
+                {"id": "energy_staff", "count": 4}
+              ]
+            },
+            {
+              "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+            },
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "demonic_champion": {
+      "name": "Demonic Champion",
+      "description": "A massive demon gifted by the dark gods.",
+      "category": "hero",
+      "keywords": ["Monster"],
+      "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "melee_tactics", "x": 2}, {"id": "power", "x": 1}],
+      "models": [
+        {
+          "name": "Demonic Champion",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 10,
+          "reflexes": 7,
+          "weapons": [{"id": "daemon_sword", "count": 3}, {"id": "daemon_claws", "count": 2}],
+          "options": [
+            {"replaceWeapon": {"id": "daemon_sword", "count": 3}, "withWeapon": [{"id": "daemon_axe", "count": 3}, {"id": "daemon_claws", "count": 4}]},
+            {"addRule": "wings"},
+            {"addWeapon": ["heavy_machinegun"]},
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "lord_of_pestilence": {
+      "name": "Lord of Pestilence",
+      "description": "A lord of death and decay.",
+      "category": "hero",
+      "keywords": ["Heavy Infantry"],
+      "subfactions": ["toughness_focus"],
+      "models": [
+        {
+          "name": "Lord of Pestilence",
+          "movement": 5,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": ["ambush", {"id": "leader_x", "x": "Infantry, Heavy Infantry"}, {"id": "melee_tactics", "x": 2}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "pestilence_great_cleaver", "count": 3}],
+          "options": [
+            {"replaceWeapon": [{"id": "pestilence_great_cleaver", "count": 3}], "withWeapon": [{"id": "pestilence_scythe", "count": 3}, [{"id": "pestilence_claw", "count": 3}, "pestilence_sprayer"]]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "pestilence_surgeon": {
+      "name": "Pestilence Surgeon",
+      "description": "A combat medic who has spreads disease across the battlefield.",
+      "category": "elite",
+      "subfactions": ["toughness_focus"],
+      "models": [
+        {
+          "name": "Pestilence Surgeon",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "movement": 6,
+          "reflexes": 6,
+          "rules": ["support", "medic", {"id": "wounds", "x": 2}],
+          "weapons": ["marine_pistol", "pestilence_grenade", {"id": "pestilence_sword", "count": 4}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_priest": {
+      "name": "Corrupted Priest",
+      "description": "A devotee of the dark gods who seeks to spread their faith to non-believers on the battlefield.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Corrupted Priest",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["battle_prayer", "leader", {"id": "wounds", "x": 3}],
+          "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 3}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
+            {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": [{"id": "chainsword", "count": 3}],
+              "withWeapon": [
+                {"id": "energy_sword", "count": 3},
+                {"id": "energy_mace", "count": 3},
+                {"id": "energy_axe", "count": 3},
+                {"id": "energy_fist", "count": 3},
+                {"id": "energy_hammer", "count": 3},
+                {"id": "energy_claws", "count": 4}
+              ]
+            },
+            {"addRule": ["destroyer_armor", "jetpack"], "limit": 1}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_priest_on_bike": {
+      "name": "Corrupted Priest on Bike",
+      "description": "A devotee of the dark gods on a combat bike who seeks to spread their faith to non-believers on the battlefield.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Corrupted Priest on Bike",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["battle_prayer", {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "weapons": ["marine_grenades", "marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
+            {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": [{"id": "chainsword", "count": 3}],
+              "withWeapon": [
+                {"id": "energy_sword", "count": 3},
+                {"id": "energy_mace", "count": 3},
+                {"id": "energy_axe", "count": 3},
+                {"id": "energy_fist", "count": 3},
+                {"id": "energy_hammer", "count": 3},
+                {"id": "energy_claws", "count": 4}
+              ]
+            },
+            {
+              "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+              "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_priest_on_warbeast": {
+      "name": "Corrupted Priest on Warbeast",
+      "description": "A devotee of the dark gods on a biomechanical monster who seeks to spread their faith to non-believers on the battlefield.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Corrupted Priest on Warbeast",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["battle_prayer", {"id": "leader_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 2}],
+          "weapons": ["marine_grenades", "marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "warbeast_horn", "count": 2}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
+            {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": [{"id": "chainsword", "count": 3}],
+              "withWeapon": [
+                {"id": "energy_sword", "count": 3},
+                {"id": "energy_mace", "count": 3},
+                {"id": "energy_axe", "count": 3},
+                {"id": "energy_fist", "count": 3},
+                {"id": "energy_hammer", "count": 3},
+                {"id": "energy_claws", "count": 4}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "subfactions": ["assault_focus"]
+    },
+    "cultists": {
+      "name": "Cultists",
+      "description": "Lunatics who have sold their souls to the dark gods.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Cultist",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "weapons": ["defense_rifle", "frags", "ccw"],
+          "options": [
+            {"replaceWeapon": ["defense_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+            {"replaceWeapon": "pistol", "withWeapon": ["shotgun"]},
+            {"replaceWeapon": "defense_rifle", "withWeapon": ["flamethrower", "light_machinegun", "plasma_rifle", "fusion_rifle", "grenade_launcher"], "modelLimit": "2/10"}
+          ],
+          "min": 10,
+          "max": 20
+        }
+      ]
+    },
+    "cultist_berzerkers": {
+      "name": "Cultist Berzerkers",
+      "description": "Rage-filled lunatics who have sold their souls to the dark gods.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Cultist Berzerker",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "weapons": ["pistol", "marine_grenades", {"id": "chainsword", "count": 2}],
+          "options": [{"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "heavy_chainsword", "count": 2}], "modelLimit": "2/10"}],
+          "min": 9,
+          "max": 20
+        },
+        {
+          "name": "Cultist Brute",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": [{"id": "chainaxe", "count": 3}],
+          "options": [{"replaceWeapon": {"id": "chainaxe", "count": 3}, "withWeapon": [{"id": "energy_mace", "count": 3}]}],
+          "min": 0,
+          "max": 3
+        }
+      ],
+      "rules": ["furious"]
+    },
+    "plague_walkers": {
+      "name": "Plague Walkers",
+      "description": "Unfortunate souls who have been mutated into walking undead.",
+      "category": "core",
+      "subfactions": ["toughness_focus"],
+      "models": [{"name": "Plague Walker", "movement": 5, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": [{"id": "ccw", "count": 2}], "min": 10, "max": 20}]
+    },
+    "birdman_sorcerer": {
+      "name": "Birdman Sorcerer",
+      "description": "A mutated half avian-half man sorcerer that leads demonic forces of magic.",
+      "category": "hero",
+      "subfactions": ["power_focus"],
+      "models": [
+        {
+          "name": "Birdman Sorcerer",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 4,
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+          "weapons": [{"id": "energy_staff", "count": 3}],
+          "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}, {"addRule": "disk_of_change"}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "birdmen": {
+      "name": "Birdmen",
+      "description": "Mutated half avian-half man creatures that fight with the psychic brothers to achieve their goals.",
+      "category": "core",
+      "subfactions": ["power_focus"],
+      "models": [
+        {
+          "name": "Birdman",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": ["marine_pistol", "chainsword"],
+          "options": [{"replaceWeapon": ["marine_pistol", "chainsword"], "withWeapon": {"id": "hexed_blades", "count": 2}}],
+          "min": 10,
+          "max": 20
+        }
+      ]
+    },
+    "birdmen_disc_riders": {
+      "name": "Birdmen Disk Riders",
+      "description": "Exhalted birdmen riding psychic disks.",
+      "category": "elite",
+      "subfactions": ["power_focus"],
+      "models": [
+        {
+          "name": "Birdman Disk Rider",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "rules": ["hover", {"id": "impact", "x": 1}, {"id": "resilient", "x": 3}],
+          "weapons": ["marine_pistol", {"id": "chainsword", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": ["marine_pistol", {"id": "chainsword", "count": 2}],
+              "withWeapon": [{"id": "hexed_blades", "count": 3}, {"id": "hexed_spear", "count": 3}, ["hexed_bow", {"id": "heavy_ccw", "count": 2}]]
+            }
+          ],
+          "min": 3,
+          "max": 9
+        }
+      ]
+    },
+    "corrupted_marines": {
+      "name": "Corrupted Marines",
+      "description": "Marines corrupted by the dark gods.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Corrupted Sergeant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_rifle", "heavy_ccw", "marine_grenades"],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle"]},
+            {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [{"id": "energy_claws", "count": 4}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 2},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 2},
+                {"id": "energy_axe", "count": 2},
+                {"id": "energy_sword", "count": 2},
+                {"id": "energy_fist", "count": 2},
+                {"id": "energy_hammer", "count": 2},
+                {"id": "energy_claws", "count": 3},
+                {"id": "chainsaw_glaive", "count": 2}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {"name": "Corrupted Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "heavy_ccw", "marine_grenades"], "min": 4, "max": 19}
+      ],
+      "options": [
+        {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+        {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [{"id": "chainsaw_glaive", "count": 2}], "modelLimit": "1/5"},
+        {"modelLimit": "1/5", "replaceWeapon": "marine_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "thermal_rifle"]},
+        {
+          "modelLimit": "1/5",
+          "replaceWeapon": "marine_rifle",
+          "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "autocannon", "gatling_gun", "heavy_flamethrower", "plasma_cannon", "fusion_cannon", "thermal_lance"]
+        },
+        {"addWeapon": "fusion_bomb", "modelLimit": 3},
+        {"addRule": ["shield"]}
+      ]
+    },
+    "corrupted_veterans": {
+      "name": "Corrupted Veterans",
+      "description": "Marines that have spent long service to the dark gods.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Corrupted Veteran",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}, "marine_grenades"],
+          "options": [
+            {
+              "replaceWeapon": "marine_rifle",
+              "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "thermal_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle"]
+            },
+            {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}], {"id": "energy_claws", "count": 5}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 3},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 3},
+                {"id": "energy_axe", "count": 3},
+                {"id": "energy_sword", "count": 3},
+                {"id": "energy_fist", "count": 3},
+                {"id": "energy_hammer", "count": 3},
+                {"id": "energy_claws", "count": 4},
+                {"id": "chainsaw_glaive", "count": 3}
+              ]
+            },
+            {"addWeapon": "fusion_bomb", "modelLimit": 3},
+            {"addRule": ["shield"]}
+          ],
+          "min": 5,
+          "max": 20
+        }
+      ]
+    },
+    "pestilence_marines": {
+      "name": "Pestilence Marines",
+      "description": "Marines corrupted by the dark gods.",
+      "category": "core",
+      "subfactions": ["toughness_focus"],
+      "options": [
+        {
+          "replaceWeapon": ["marine_rifle", "pestilence_ccw"],
+          "withWeapon": [
+            ["marine_pistol", {"id": "pestilence_ccw", "count": 2}],
+            {"id": "pestilence_great_flail", "count": 2},
+            {"id": "pestilence_great_cleaver", "count": 2},
+            {"id": "pestilence_ccw", "count": 3},
+            {"id": "pestilence_axe", "count": 2},
+            ["pestilence_mace", "pestilence_axe"]
+          ]
+        },
+        {"modelLimit": "1/5", "replaceWeapon": "marine_rifle", "withWeapon": ["plasma_rifle", "pestilence_sprayer", "pestilence_launcher", "fusion_rifle"]}
+      ],
+      "models": [
+        {
+          "name": "Pestilence Marine Sergeant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_rifle", "pestilence_ccw", "pestilence_grenade"],
+          "options": [
+            {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {"replaceWeapon": {"id": "pestilence_ccw", "count": 2}, "withWeapon": [{"id": "pestilence_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "pestilence_axe", "count": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Pestilence Marine",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_rifle", "pestilence_ccw", "pestilence_grenade"],
+          "min": 4,
+          "max": 9
+        }
+      ]
+    },
+    "pestilence_destroyers": {
+      "name": "Pestilence Destroyers",
+      "description": "Destroyers that are infected with pestilence.",
+      "category": "elite",
+      "keywords": ["Heavy Infantry"],
+      "subfactions": ["toughness_focus"],
+      "models": [
+        {
+          "name": "Pestilence Destroyer",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": ["ambush"],
+          "weapons": ["twin_marine_rifle", {"id": "pestilence_sword", "count": 2}],
+          "options": [
+            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion"]},
+            {"replaceWeapon": {"id": "pestilence_sword", "count": 2}, "withWeapon": [{"id": "pestilence_axe", "count": 2}]},
+            {"modelLimit": "2/5", "replaceWeapon": "twin_marine_rifle", "withWeapon": ["pestilence_sprayer", "pestilence_launcher", "reaper_cannon"]},
+            {"modelLimit": "1/5", "replaceWeapon": ["twin_marine_rifle", {"id": "pestilence_sword", "count": 2}], "withWeapon": [{"id": "pestilence_great_flail", "count": 4}]}
+          ],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
+    "pestilence_elite_destroyers": {
+      "name": "Pestilence Elite Destroyers",
+      "description": "Destroyers that are infected with pestilence.",
+      "category": "elite",
+      "keywords": ["Heavy Infantry"],
+      "rules": [{"id": "wounds", "x": 2}, "ambush"],
+      "subfactions": ["toughness_focus"],
+      "models": [
+        {
+          "name": "Pestilence Elite Destroyer Sergeant",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "weapons": ["pestilence_pistol", {"id": "pestilence_scythe", "count": 2}],
+          "options": [{"addWeapon": ["pestilence_pistol"]}],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Pestilence Elite Destroyer",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "weapons": ["pestilence_pistol", {"id": "pestilence_scythe", "count": 2}],
+          "min": 2,
+          "max": 4
+        }
+      ]
+    },
+    "pestilence_hauler": {
+      "name": "Pestilence Hauler",
+      "description": "A lightly armored living strike vehicle.",
+      "category": "elite",
+      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
+      "subfactions": ["toughness_focus"],
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Pestilence Hauler",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 6,
+          "weapons": [
+            {"id": "pestilence_spit", "mount": ["Front"]},
+            {"id": "hauler_jaws", "count": 3},
+            {"id": "heavy_fusion_rifle", "mount": ["Front"]},
+            {"id": "missile_launcher", "mount": ["Front"]}
+          ],
+          "min": 1,
+          "max": 3
+        }
+      ]
+    },
+    "pestilence_drone": {
+      "name": "Pestilence Drone",
+      "description": "A lightly armored living drone.",
+      "category": "elite",
+      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, "fly"],
+      "subfactions": ["toughness_focus"],
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Pestilence Drone",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 6,
+          "weapons": [{"id": "proboscis", "count": 3}],
+          "min": 1,
+          "max": 1,
+          "options": [{"addWeapon": [{"id": "pestilence_sprayer", "count": "2", "mount": ["Front"]}, {"id": "pestilence_hlauncher", "mount": ["Front"]}], "limit": 1}]
+        }
+      ],
+      "options": [{"replaceWeapon": {"id": "proboscis", "count": 3}, "withWeapon": "pestilence_mower"}]
+    },
+    "pestilence_mortar_tank": {
+      "name": "Pestilence Mortar Tank",
+      "description": "An armored tank helmed by Pestilence Marines equipped with a deadly mortar.",
+      "category": "rare",
+      "subfactions": ["toughness_focus"],
+      "keywords": ["Vehicle", "Tank"],
+      "models": [
+        {
+          "name": "Pestilence Mortar Tank",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "weapons": [{"id": "pestilence_mortar", "mount": ["Front"]}, {"id": "light_machinegun", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": [{"id": "light_machinegun", "mount": ["Front"]}], "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}]},
+            {
+              "addWeapon": [
+                [{"id": "pestilence_cannon", "mount": ["Front", "Left"]}, {"id": "pestilence_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "pestilence_sprayer", "mount": ["Front", "Left"]}, {"id": "pestilence_sprayer", "mount": ["Front", "Right"]}]
+              ],
+              "limit": 1
+            },
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "spiked_ram"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_berzerkers": {
+      "name": "Corrupted Berzerkers",
+      "description": "Marines corrupted by the dark gods with rage.",
+      "category": "core",
+      "subfactions": ["assault_focus"],
+      "rules": ["furious"],
+      "models": [
+        {
+          "name": "Berzerker Sergeant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_pistol", "marine_grenades", {"id": "chainsword", "count": 3}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
+            {"replaceWeapon": ["marine_pistol", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_rifle", {"id": "chainsword", "count": 2}]]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 3},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 3},
+                {"id": "energy_axe", "count": 3},
+                {"id": "energy_sword", "count": 3},
+                {"id": "energy_fist", "count": 3},
+                {"id": "energy_hammer", "count": 3},
+                {"id": "energy_claws", "count": 4}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Berzerker Marine",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_pistol", {"id": "chainsword", "count": 3}, "marine_grenades"],
+          "min": 4,
+          "max": 19
+        }
+      ],
+      "options": [
+        {"modelLimit": "1/5", "replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]},
+        {"replaceWeapon": ["marine_pistol", {"id": "chainsword", "count": 3}], "withWeapon": [{"id": "energy_claws", "count": 5}]},
+        {"replaceWeapon": ["marine_pistol", {"id": "chainsword", "count": 3}], "withWeapon": [{"id": "chainsaw_glaive", "count": 3}], "modelLimit": "1/5"}
+      ]
+    },
+    "recon_marines": {
+      "name": "Recon Marines",
+      "description": "A lightly armed and armoured squad sent to scout and sow dissent.",
+      "category": "elite",
+      "options": [{"replaceWeapon": "marine_rifle", "withWeapon": ["marine_shotgun", "sniper_rifle"]}, {"addRule": {"id": "evasive", "name": "Camouflage Cloak"}, "modelLimit": "all"}],
+      "rules": ["scout"],
+      "models": [
+        {
+          "name": "Recon Marine Sergeant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 7,
+          "weapons": ["marine_rifle", "heavy_ccw", "marine_grenades"],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
+            {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}], {"id": "energy_claws", "count": 4}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 2},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 2},
+                {"id": "energy_axe", "count": 2},
+                {"id": "energy_sword", "count": 2},
+                {"id": "energy_hammer", "count": 2},
+                {"id": "energy_fist", "count": 2},
+                {"id": "energy_claws", "count": 3}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {"name": "Recon Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 7, "weapons": ["marine_rifle", "heavy_ccw", "marine_grenades"], "min": 4, "max": 19}
+      ]
+    },
+    "psychic_marines": {
+      "name": "Psychic Marines",
+      "description": "Marines corrupted by the dark gods with potent psychic powers.",
+      "category": "core",
+      "subfactions": ["power_focus"],
+      "rules": ["conclave"],
+      "models": [
+        {
+          "name": "Psychic Marine Sergeant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_rifle", "heavy_ccw", "psychic_grenades"],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle"]},
+            {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 2},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 2},
+                {"id": "energy_axe", "count": 2},
+                {"id": "energy_sword", "count": 2},
+                {"id": "energy_fist", "count": 2},
+                {"id": "energy_hammer", "count": 2},
+                {"id": "energy_claws", "count": 3},
+                {"id": "energy_staff", "count": 2}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {"name": "Psychic Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "heavy_ccw", "psychic_grenades"], "min": 4, "max": 19}
+      ],
+      "options": [
+        {"modelLimit": "2/5", "replaceWeapon": "marine_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "thermal_rifle"]},
+        {
+          "modelLimit": "1/5",
+          "replaceWeapon": "marine_rifle",
+          "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "autocannon", "gatling_gun", "heavy_flamethrower", "plasma_cannon", "fusion_cannon", "thermal_lance"]
+        }
+      ]
+    },
+    "psychic_veterans": {
+      "name": "Psychic Veterans",
+      "description": "Elite marines corrupted by the dark gods with potent psychic powers.",
+      "category": "elite",
+      "subfactions": ["power_focus"],
+      "models": [
+        {
+          "name": "Psychic Veteran",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["conclave"],
+          "weapons": ["marine_rifle", "psychic_grenades", {"id": "heavy_ccw", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": ["marine_rifle"],
+              "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle", "thermal_rifle", "fusion_rifle", "flamethrower", "plasma_rifle"]
+            },
+            {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["marine_pistol", {"id": "energy_sword", "count": 3}], {"id": "energy_sword", "count": 5}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "energy_sword", "count": 3},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 3},
+                {"id": "energy_axe", "count": 3},
+                {"id": "energy_fist", "count": 3},
+                {"id": "energy_hammer", "count": 3},
+                {"id": "energy_claws", "count": 4},
+                {"id": "energy_staff", "count": 3}
+              ]
+            }
+          ],
+          "min": 5,
+          "max": 20
+        }
+      ]
+    },
+    "psychic_destroyers": {
+      "name": "Psychic Destroyers",
+      "description": "Deadly destroyers corrupted by the dark gods with potent psychic powers.",
+      "category": "elite",
+      "subfactions": ["power_focus"],
+      "keywords": ["Heavy Infantry"],
+      "models": [
+        {
+          "name": "Psychic Destroyer",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": ["ambush", "conclave"],
+          "weapons": ["twin_marine_rifle", {"id": "energy_sword", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": "twin_marine_rifle",
+              "withWeapon": [
+                {"id": "energy_sword", "count": 2},
+                "combi_plasma",
+                "combi_flamer",
+                "combi_fusion",
+                "combi_thermal",
+                "gatling_gun",
+                "missile_launcher",
+                "thermal_lance",
+                "fusion_cannon",
+                "plasma_cannon",
+                "twin_autocannon",
+                "heavy_flamethrower"
+              ]
+            },
+            {
+              "replaceWeapon": {"id": "energy_sword", "count": 2},
+              "withWeapon": [
+                {"id": "chainfist", "count": 2},
+                {"id": "energy_mace", "count": 2},
+                {"id": "energy_axe", "count": 2},
+                {"id": "energy_fist", "count": 2},
+                {"id": "energy_hammer", "count": 2},
+                {"id": "energy_claws", "count": 3},
+                {"id": "energy_staff", "count": 2}
+              ]
+            },
+            {"addWeapon": ["missile_rack"], "modelLimit": "1/5"}
+          ],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
+    "corrupted_devastators": {
+      "name": "Corrupted Devastators",
+      "description": "A squad of highly trained corrupted marines armed to the teeth with advanced weaponry.",
+      "category": "elite",
+      "options": [{"replaceWeapon": "plasma_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "thermal_rifle"]}, {"addRule": "shield"}],
+      "models": [
+        {
+          "name": "Corrupted Devastator Sergeant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_rifle", "marine_grenades", "heavy_ccw"],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle", "plasma_rifle"]},
+            {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}], {"id": "energy_claws", "count": 4}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 2},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 2},
+                {"id": "energy_axe", "count": 2},
+                {"id": "energy_sword", "count": 2},
+                {"id": "energy_fist", "count": 2},
+                {"id": "energy_hammer", "count": 2},
+                {"id": "energy_claws", "count": 3}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Corrupted Devastator",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["plasma_rifle", "marine_grenades", "heavy_ccw"],
+          "min": 4,
+          "max": 14
+        }
+      ]
+    },
+    "corrupted_heavy_devastators": {
+      "name": "Corrupted Heavy Devastators",
+      "description": "A squad of highly trained corrupted marines armed to the teeth with advanced weaponry.",
+      "category": "rare",
+      "options": [
+        {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["heavy_machinegun", "autocannon", "missile_launcher", "gatling_gun", "plasma_cannon", "fusion_cannon", "laser_cannon", "thermal_lance"]},
+        {"addRule": "shield"}
+      ],
+      "models": [
+        {
+          "name": "Corrupted Heavy Devastator Sergeant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_rifle", "marine_grenades", "heavy_ccw"],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle", "heavy_flamethrower"]},
+            {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}], {"id": "energy_claws", "count": 4}]},
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 2},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 2},
+                {"id": "energy_axe", "count": 2},
+                {"id": "energy_sword", "count": 2},
+                {"id": "energy_fist", "count": 2},
+                {"id": "energy_hammer", "count": 2},
+                {"id": "energy_claws", "count": 3}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Corrupted Heavy Devastator",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["heavy_flamethrower", "marine_grenades", "heavy_ccw"],
+          "min": 4,
+          "max": 14
+        }
+      ]
+    },
+    "possessed_marines": {
+      "name": "Possessed Marines",
+      "description": "A squad of corrupted marines that have been gifted with demonic mutations to aid them in battle.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Possessed Marine",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": [{"id": "claws", "count": 2}],
+          "rules": ["mutations"],
+          "options": [{"addRule": "wings", "modelLimit": "all"}, {"addWeapon": ["marine_rifle"]}],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
+    "greater_possessed_marines": {
+      "name": "Greater Possessed Marines",
+      "description": "A squad of corrupted marines that have been gifted with greater demonic mutations to aid them in battle.",
+      "category": "elite",
+      "keywords": ["Heavy Infantry"],
+      "models": [
+        {
+          "name": "Greater Possessed Marine",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 5,
+          "rules": ["mutations", {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "huge_mutated_claw", "count": 5}],
+          "min": 1,
+          "max": 3
+        }
+      ],
+      "options": [
+        {
+          "replaceWeapon": {"id": "huge_mutated_claw", "count": 5},
+          "withWeapon": [{"id": "chainaxe", "count": 6}, [{"id": "chainaxe", "count": 3}, {"id": "chainfist", "count": 2}]],
+          "subfactions": ["assault_focus"]
+        },
+        {
+          "replaceWeapon": {"id": "huge_mutated_claw", "count": 5},
+          "withWeapon": [{"id": "chainsaw_glaive", "count": 4}, {"id": "chainfist", "count": 4}],
+          "subfactions": ["assault_focus"],
+          "modelLimit": 1
+        }
+      ]
+    },
+    "demon_spawn": {
+      "name": "Demonic Spawn",
+      "description": "Horribly mutated beings that run rampant on the battlefield.",
+      "category": "elite",
+      "rules": ["mutations", "agile", "fear", {"id": "wounds", "x": 2}],
+      "models": [{"name": "Demonic Spawn", "movement": 7, "courage": 7, "shoot": 0, "fight": 5, "defense": 7, "reflexes": 6, "weapons": [{"id": "claws", "count": 3}], "min": 1, "max": 5}]
+    },
+    "talon_raptors": {
+      "name": "Talon Raptors",
+      "description": "A squad of elite corrupted marines jumping into the fray with a jetpack.",
+      "category": "elite",
+      "rules": ["ambush", "fly", "fear"],
+      "options": [
+        {
+          "replaceWeapon": ["marine_pistol", {"id": "chainsword", "count": 2}],
+          "withWeapon": [["plasma_pistol", {"id": "chainsword", "count": 2}], "plasma_rifle", "flamethrower", "fusion_rifle"],
+          "modelLimit": "1/5"
+        },
+        {"replaceWeapon": ["marine_pistol", {"id": "chainsword", "count": 2}], "withWeapon": [{"id": "energy_claws", "count": 4}]},
+        {"addWeapon": "fusion_bomb", "modelLimit": 3}
+      ],
+      "models": [
+        {
+          "name": "Talon Raptor Sergeant",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_pistol", "marine_grenades", {"id": "chainsword", "count": 2}],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+            {"replaceWeapon": ["marine_pistol", {"id": "chainsword", "count": 2}], "withWeapon": [["marine_rifle", "heavy_ccw"]]},
+            {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
+            {
+              "replaceWeapon": {"id": "chainsword", "count": 2},
+              "withWeapon": [
+                {"id": "energy_mace", "count": 2},
+                {"id": "energy_axe", "count": 2},
+                {"id": "energy_sword", "count": 2},
+                {"id": "energy_fist", "count": 2},
+                {"id": "energy_hammer", "count": 2},
+                {"id": "energy_claws", "count": 3}
+              ]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Talon Raptor",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["marine_pistol", "marine_grenades", {"id": "chainsword", "count": 2}],
+          "min": 4,
+          "max": 14
+        }
+      ]
+    },
+    "corrupted_destoyers": {
+      "name": "Corrupted Destroyers",
+      "description": "Destroyers that have been corrupted by the dark gods.",
+      "category": "elite",
+      "keywords": ["Heavy Infantry"],
+      "models": [
+        {
+          "name": "Corrupted Destroyer",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": ["ambush"],
+          "weapons": ["twin_marine_rifle", {"id": "chainaxe", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": "twin_marine_rifle",
+              "withWeapon": [
+                "combi_plasma",
+                "combi_flamer",
+                "combi_fusion",
+                "combi_thermal",
+                "gatling_gun",
+                "missile_launcher",
+                "thermal_lance",
+                "fusion_cannon",
+                "plasma_cannon",
+                "twin_autocannon",
+                "heavy_flamethrower"
+              ]
+            },
+            {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["thermal_shotgun"], "subfactions": ["terror_focus"]},
+            {"replaceWeapon": ["twin_marine_rifle", {"id": "chainaxe", "count": 2}], "withWeapon": [{"id": "energy_claws", "count": 4}, {"id": "chainfist", "count": 3}]},
+            {
+              "replaceWeapon": {"id": "chainaxe", "count": 2},
+              "withWeapon": [
+                {"id": "chainsaw_glaive", "count": 2},
+                {"id": "chainfist", "count": 2},
+                {"id": "energy_mace", "count": 2},
+                {"id": "energy_axe", "count": 2},
+                {"id": "energy_fist", "count": 2},
+                {"id": "energy_hammer", "count": 2},
+                {"id": "energy_claws", "count": 3}
+              ]
+            },
+            {"addWeapon": ["missile_rack"], "modelLimit": "1/5"},
+            {"addRule": ["shield"]}
+          ],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
+    "mutated_destoyers": {
+      "name": "Mutated Destroyers",
+      "description": "Destroyers that have been mutated by the dark gods.",
+      "category": "elite",
+      "keywords": ["Heavy Infantry"],
+      "rules": ["ambush", {"id": "wounds", "x": 2}],
+      "models": [
+        {
+          "name": "Mutated Destroyer",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 5,
+          "weapons": [{"id": "mutated_fists", "count": 3}, "mutated_guns"],
+          "min": 1,
+          "max": 3
+        }
+      ]
+    },
+    "corrupted_bikers": {
+      "name": "Corrupted Bikers",
+      "description": "Corrupted marines on combat bikes.",
+      "category": "elite",
+      "keywords": ["Biker"],
+      "rules": [{"id": "impact", "x": 1}],
+      "options": [
+        {"replaceWeapon": ["marine_rifle", "chainsword"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+        {"replaceWeapon": ["marine_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle"], "modelLimit": "1/3"},
+        {
+          "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
+          "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
+        }
+      ],
+      "models": [
+        {
+          "name": "Corrupted Biker Sergeant",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_rifle", "marine_grenades", "chainsword"],
+          "options": [
+            {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle"]},
+            {"replaceWeapon": ["marine_rifle", "chainsword"], "withWeapon": [{"id": "energy_claws", "count": 4}]},
+            {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": [{"id": "chainsword", "count": 2}],
+              "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}, {"id": "energy_claws", "count": 3}]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Corrupted Biker",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_rifle", "chainsword", "marine_grenades"],
+          "min": 2,
+          "max": 8
+        }
+      ]
+    },
+    "corrupted_apc": {
+      "name": "Corrupted APC",
+      "description": "A durable transport built by corrupted marines.",
+      "category": "transport",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Corrupted APC",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 11,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front", "Left"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Right"]}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "twin_marine_rifle", "mount": ["Front", "Left"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Right"]}],
+              "withWeapon": [
+                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
+                [{"id": "twin_flamethrower", "mount": ["Front", "Left"]}, {"id": "twin_flamethrower", "mount": ["Front", "Right"]}],
+                [{"id": "twin_plasma_rifle", "mount": ["Front", "Left"]}, {"id": "twin_plasma_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "twin_fusion_rifle", "mount": ["Front", "Left"]}, {"id": "twin_fusion_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "rocket_pod", "mount": ["Front", "Left"]}, {"id": "rocket_pod", "mount": ["Front", "Right"]}],
+                [{"id": "twin_laser_cannon", "mount": ["Front", "Left"]}, {"id": "twin_laser_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "twin_thermal_rifle", "mount": ["Front", "Left"]}, {"id": "twin_thermal_rifle", "mount": ["Front", "Right"]}]
+              ]
+            },
+            {"addWeapon": ["twin_marine_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_thermal"], "limit": 1},
+            {"addWeapon": ["missile_launcher"]},
+            {"addRule": [{"name": "Doom Siren", "id": "fear"}, {"id": "dozer", "name": "Dozer Blade"}, "spiked_ram"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrrupted_battle_tank": {
+      "name": "Corrupted Battle Tank",
+      "description": "An armored tank helmed by corrupted marines.",
+      "category": "rare",
+      "keywords": ["Vehicle", "Tank"],
+      "models": [
+        {
+          "name": "Corrupted Battle Tank",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "weapons": ["twin_laser_cannon", {"id": "twin_marine_rifle", "mount": ["Front", "Left"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Right"]}],
+          "options": [
+            {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "demolition_cannon", "twin_gatling_gun"]},
+            {
+              "replaceWeapon": [{"id": "twin_marine_rifle", "mount": ["Front", "Left"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Right"]}],
+              "withWeapon": [
+                [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
+                [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "heavy_flamethrower", "mount": ["Front", "Left"]}, {"id": "heavy_flamethrower", "mount": ["Front", "Right"]}],
+                [{"id": "twin_thermal_rifle", "mount": ["Front", "Left"]}, {"id": "twin_thermal_rifle", "mount": ["Front", "Right"]}],
+                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
+              ],
+              "limit": 1
+            },
+            {"addWeapon": ["twin_marine_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_thermal"], "limit": 1},
+            {"addWeapon": ["missile_launcher"]},
+            {"addRule": [{"name": "Doom Siren", "id": "fear"}, {"id": "dozer", "name": "Dozer Blade"}, "spiked_ram"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_heavy_battle_tank": {
+      "name": "Corrupted Heavy Battle Tank",
+      "description": "An heavy armored tank helmed by imperial marines.",
+      "category": "rare",
+      "keywords": ["Vehicle", "Tank"],
+      "models": [
+        {
+          "name": "Heavy Battle Tank",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 13,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_rear"],
+          "weapons": ["twin_laser_cannon", {"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
+          "options": [
+            {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "twin_gatling_gun", "heavy_plasma_cannon", "heavy_fusion_cannon", "twin_flamethrower_cannon"]},
+            {
+              "replaceWeapon": [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
+              "withWeapon": [
+                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
+                [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
+                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
+                [{"id": "heavy_flamethrower", "mount": ["Front", "Left"]}, {"id": "heavy_flamethrower", "mount": ["Front", "Right"]}],
+                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
+              ],
+              "limit": 1
+            },
+            {"addWeapon": ["gatling_gun", "plasma_cannon", "fusion_cannon", "missile_launcher", "heavy_flamethrower", "heavy_machinegun", "thermal_lance"], "limit": 1},
+            {"addWeapon": ["twin_marine_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_thermal"], "limit": 2},
+            {"addWeapon": ["twin_marine_rifle", "grenade_launcher", "aa_rocket_pod"], "limit": 1},
+            {"addWeapon": ["missile_launcher"]},
+            {"addRule": [{"id": "fear", "name": "Doom Siren"}, "spiked_ram", {"id": "dozer", "name": "Dozer Blade"}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_juggernaut": {
+      "name": "Corrupted Juggernaut",
+      "description": "A corrupted attack walker upgraded with infernal weapons.",
+      "category": "rare",
+      "keywords": ["Vehicle", "Juggernaut"],
+      "models": [
+        {
+          "name": "Corrupted Juggernaut",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 11,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear"],
+          "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": {"id": "heavy_fusion_cannon", "count": 1},
+              "withWeapon": [
+                "heavy_plasma_cannon",
+                "twin_autocannon",
+                "twin_heavy_machinegun",
+                "twin_heavy_flamethrower",
+                "twin_laser_cannon",
+                "gatling_cannon",
+                "twin_missile_launcher",
+                "twin_heavy_thermal_lance",
+                {"id": "walker_fist", "count": 4},
+                {"id": "brute_flail", "count": 4}
+              ],
+              "count": 2
+            },
+            {"addWeapon": ["plasma_rifle", "fusion_rifle", "light_machinegun", "gatling_gun", "flamethrower", "laser_cannon", "rocket_pod", "thermal_rifle"], "limit": 2},
+            {
+              "addWeapon": [
+                {"id": "storm_rifle", "mount": ["Front"]},
+                {"id": "plasma_rifle", "mount": ["Front"]},
+                {"id": "fusion_rifle", "mount": ["Front"]},
+                {"id": "flamethrower", "mount": ["Front"]},
+                {"id": "rocket_pod", "mount": ["Front"]},
+                {"id": "light_machinegun", "mount": ["Front"]},
+                {"id": "thermal_rifle", "mount": ["Front"]}
+              ],
+              "limit": 2
+            },
+            {"addRule": [{"id": "power", "x": 1}], "subfactions": ["power_focus"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "corrupted_fiend": {
+      "name": "Corrupted Fiend",
+      "description": "A vicious beast of twisted metal and flesh made to dominate the battlefeild.",
+      "category": "rare",
+      "keywords": ["Vehicle", "Monster"],
+      "models": [
+        {
+          "name": "Corrupted Fiend",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fear", "vulnerable_rear"],
+          "weapons": [{"id": "fiend_claws", "count": 3}, {"id": "fiend_jaws", "count": 4}],
+          "options": [
+            {"replaceWeapon": {"id": "fiend_claws", "count": 3}, "withWeapon": [{"id": "heavy_plasma_cannon", "count": 2}, {"id": "heavy_autocannon", "count": 2}]},
+            {"replaceWeapon": {"id": "fiend_jaws", "count": 4}, "withWeapon": ["heavy_plasma_cannon"]},
+            {"addWeapon": [{"id": "fusion_pistol", "count": 2}, {"id": "steel_tails", "count": 6}], "limit": 1}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "spider_walker": {
+      "name": "Spider Walker",
+      "description": "An infernal machine built to mimic a venomous spider.",
+      "category": "rare",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Spider Walker",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 11,
+          "reflexes": 6,
+          "rules": ["walker", "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "excruciating_cannons", "count": 2}, {"id": "claws_and_tendrils", "count": 6}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "warp_beast": {
+      "name": "Warp Beast",
+      "description": "An amalgamation of corupted flesh whose power is harnessed by a massive portal on its back.",
+      "category": "rare",
+      "subfactions": ["power_focus"],
+      "models": [
+        {
+          "name": "Warp Beast",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 0,
+          "fight": 5,
+          "defense": 11,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "power", "x": 1}, "vulnerable_rear"],
+          "weapons": [{"id": "enormous_claws", "count": 2}, {"id": "tentacle_maw", "count": 2}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "crab_walker": {
+      "name": "Crab Walker",
+      "description": "A huge demonic creation of metal which is powered by the souls of its victims.",
+      "category": "rare",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Crab Walker",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
+          "weapons": ["crab_cannon", {"id": "crab_claw"}, "havoc_missiles", "twin_laser_cannon"],
+          "options": [
+            {"addRule": ["doom_siren"]},
+            {"replaceWeapon": "havoc_missiles", "withWeapon": [{"id": "crab_flail", "count": 6}, "twin_heavy_flamethrower"]},
+            {"replaceWeapon": "twin_laser_cannon", "withWeapon": ["reaper_cannon", "twin_heavy_machinegun"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "havoc_dragon": {
+      "name": "Corrupted Dragon",
+      "description": "A living metal airplane designed to drag other aircraft out of the air.",
+      "category": "elite",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Corrupted Dragon",
+          "movement": 12,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 11,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fly", "vulnerable_rear"],
+          "weapons": ["forge_flamethrower", {"id": "dragon_claws", "count": 4}],
+          "options": [{"replaceWeapon": "forge_flamethrower", "withWeapon": ["forge_cannon"]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "titanic_destruction_engine": {
+      "name": "Titanic Destruction Engine",
+      "description": "A giant, treaded robot designed only to kill.",
+      "category": "rare",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Titanic Destruction Engine",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 13,
+          "reflexes": 6,
+          "weapons": ["greatest_cleaver", "giant_gatling", "train_mounted_blastgun"],
+          "rules": [{"id": "wounds", "x": 3}, "titanic", "vulnerable_rear"],
+          "options": [{"replaceWeapon": ["train_mounted_blastgun"], "withWeapon": ["flaming_bloodsoaker"]}, {"replaceWeapon": ["giant_gatling"], "withWeapon": ["hatespewer"]}]
+        }
+      ]
+    },
+    "giant_metal_scorpion": {
+      "name": "Giant Metal Scorpion",
+      "description": "A giant metal scorpion. It hates you. It hates everything.",
+      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, "titanic", {"id": "ward", "x": 2}],
+      "category": "rare",
+      "min": 1,
+      "max": 1,
+      "models": [
+        {
+          "name": "Giant Metal Scorpion",
+          "movement": 12,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 7,
+          "defense": 13,
+          "reflexes": 6,
+          "weapons": [{"id": "scorpion_cannon", "count": 2}, "flaming_bloodsoaker", "demolition_cannon", "hellcrusher_claws"],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  },
+  "weapons": {
+    "pestilence_grenade": {
+      "name": "Pestilence Grenades",
+      "profiles": [
+        {"name": "Pestilence", "attacks": 1, "short": 6, "rules": ["pestilence", "grenade", {"id": "blast", "x": 3}]},
+        {"name": "AT", "attacks": 1, "short": 6, "ap": 4, "rules": ["grenade"]}
+      ]
+    },
+    "pestilence_scythe": {
+      "name": "Pestilence Scythe",
+      "profiles": [
+        {"name": "Cleave", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["pestilence", "cumbersome"]},
+        {"name": "Sweep", "attacks": 2, "ap": 1, "short": "Melee", "rules": ["pestilence"]}
+      ]
+    },
+    "hauler_jaws": {"name": "Hauler Jaws", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["pestilence"]},
+    "proboscis": {"name": "Proboscis", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["pestilence"]},
+    "pestilence_spit": {"name": "Pestilence Spit", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["pestilence", {"id": "blast", "x": 3}]},
+    "pestilence_pistol": {"name": "Pestilence Pistol", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol", "pestilence"]},
+    "pestilence_great_scythe": {"name": "Pestilence Great-scythe", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["pestilence", "cumbersome"]},
+    "pestilence_launcher": {"name": "Pestilence Launcher", "attacks": 1, "short": 12, "medium": 24, "ap": 4, "rules": ["assault", "pestilence"]},
+    "pestilence_hlauncher": {"name": "Heavy Pestilence Launcher", "attacks": 2, "short": 18, "medium": 36, "ap": 5, "rules": ["assault", "pestilence"]},
+    "pestilence_mortar": {"name": "Pestilence Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": ["heavy", "indirect", "scatter", "pestilence", {"id": "blast", "x": 3}]},
+    "pestilence_cannon": {"name": "Pestilence Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 7, "rules": ["heavy", "pestilence"]},
+    "pestilence_sprayer": {"name": "Pestilence Sprayer", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["pestilence"]},
+    "pestilence_sword": {"name": "Pestilence Sword", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["pestilence"]},
+    "pestilence_flail": {"name": "Pestilence Flail", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["pestilence"]},
+    "pestilence_mower": {"name": "Pestilence Mower", "attacks": 4, "ap": 5, "short": "Melee", "rules": ["pestilence", "lance"]},
+    "pestilence_great_cleaver": {"name": "Pestilence Great-cleaver", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["pestilence", "cumbersome"]},
+    "pestilence_axe": {"name": "Pestilence Axe", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["pestilence"]},
+    "pestilence_mace": {"name": "Pestilence Mace", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["pestilence", "cumbersome"]},
+    "pestilence_claw": {"name": "Pestilence Claw", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["pestilence", "cumbersome"]},
+    "pestilence_ccw": {"name": "Pestilence CCW", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["pestilence"]},
+    "warbeast_horn": {"name": "Warbeast's Horns and Hooves", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["lance"]},
+    "missile_rack": {"name": "Missile Rack", "attacks": 2, "short": 12, "medium": 24, "ap": 6},
+    "hexed_blades": {"name": "Hexed Blades", "attacks": 1, "short": "Melee", "ap": 1},
+    "hexed_spear": {"name": "Hexed Spear", "attacks": 1, "short": "Melee", "rules": [{"id": "impact", "x": 1}], "ap": 2},
+    "hexed_bow": {"name": "Hexed Bow", "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": ["rending"]},
+    "arch_staff": {"name": "Arch-Psychic's Blessed Staff", "profiles": [{"name": "elite", "attacks": 5, "short": "Melee", "ap": 8}, {"name": "Sweep", "attacks": 10, "short": "Melee", "ap": 4}]},
+    "arch_scythe": {"name": "Arch-Pestilent's Scythe", "profiles": [{"name": "Impale", "attacks": 5, "short": "Melee", "ap": 7}, {"name": "Reap", "attacks": 10, "short": "Melee", "ap": 5}]},
+    "arch_blades": {"name": "Arch-Berzerker's Blades", "profiles": [{"name": "Eviscerate", "attacks": 5, "short": "Melee", "ap": 9}, {"name": "Cleave", "attacks": 12, "short": "Melee", "ap": 5}]},
+    "arch_pest_pistol": {"name": "Arch-Pestilent's Thermal Pistol", "attacks": "1", "short": "12", "ap": "8", "rules": [{"id": "blast", "x": "3"}, "pistol"]},
+    "claws": {"name": "Mutated Claws", "attacks": 1, "short": "Melee", "ap": 3},
+    "enormous_claws": {"name": "Enormous Claws", "attacks": 1, "short": "Melee", "ap": 6},
+    "tentacle_maw": {"name": "Tentacled Maw", "attacks": 1, "short": "Melee", "ap": 2, "rules": [{"id": "blast", "x": 3}]},
+    "archtraitor_sword": {"name": "Sword of the Arch-Corrupted", "attacks": 1, "short": "Melee", "ap": 5},
+    "archtraitor_claw": {"name": "Claw of the Arch-Corrupted", "attacks": 1, "short": "Melee", "ap": 8},
+    "archtraitor_ranged": {"name": "Dark Gods' Blessed Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": ["rapid_fire"]},
+    "pestilence_great_flail": {"name": "Pestilence Great-flail", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["pestilence"]},
+    "greatest_cleaver": {"name": "Greatest Cleaver of Hatred", "profiles": [{"name": "elite", "attacks": 4, "short": "Melee", "ap": 10}, {"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 5}]},
+    "giant_gatling": {"name": "Giant Gatling Gun", "attacks": 10, "short": 24, "medium": 48, "ap": 4},
+    "train_mounted_blastgun": {"name": "Mounted Blastgun", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": [{"id": "blast", "x": 2}]},
+    "flaming_bloodsoaker": {"name": "Flaming Bloodsoaker", "attacks": 3, "short": 9, "medium": 18, "ap": 5, "rules": [{"id": "blast", "x": 2}, "flame"]},
+    "hatespewer": {"name": "Hatespewer", "attacks": 3, "short": 30, "medium": 60, "ap": 5, "rules": [{"id": "blast", "x": 2}]},
+    "hellcrusher_claws": {"name": "Hellcrusher Claws", "profiles": [{"name": "Crush", "attacks": 6, "short": "Melee", "ap": 10}, {"name": "Sweep", "attacks": 12, "short": "Melee", "ap": 5}]},
+    "thermal_shotgun": {"name": "Thermal Shotgun", "attacks": 2, "short": 9, "medium": 18, "ap": 3, "rules": ["brutal", "flame", "lethal"]},
+    "scorpion_cannon": {"name": "Scorpion Cannon", "attacks": 8, "short": 18, "medium": 36, "ap": 3},
+    "legend_flamethrower_pistol": {"name": "Psychic Inferno Pistol", "attacks": 3, "short": 6, "medium": 12, "ap": 2, "rules": ["rending", "flame"]},
+    "legend_staff": {"name": "Psychic Staff", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["shielding", "warding_staff"]},
+    "legend_cursed_rifle": {"name": "Accursed Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire", {"id": "blast", "x": 3}]}
+  },
+  "rules": {
+    "warmaster_tactics": {
+      "name": "Warmaster Tactics",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll all failed Accuracy tests \n * Re-roll all failed Strength tests",
+      "points": ["rule.x", {"multiply": 20}]
+    },
+    "pest_tactics": {
+      "name": "Pestilent Tactics",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll all failed Save rolls \n * Re-roll all failed Strength tests",
+      "points": ["rule.x", {"multiply": 20}]
+    },
+    "doom_siren": {"name": "Doom Siren", "description": "Enemy units within 6\" of this model suffer -1 Courage.", "points": 5},
+    "archmage_tactics": {
+      "name": "Arch-Psyker's Tactics",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly units with the Power special rule within 6\".  Those units may reroll dice rolls of 9+ while using the Power ability until the end of the round.",
+      "points": 5
+    },
+    "archmage": {"name": "Blessings of the Psyker God", "description": "When this unit casts the Arcane Barrage Power, double the number of hits it deals.", "points": 10},
+    "warding_staff": {"name": "Warding", "description": "Enemy units suffer -1 to all Power(x) test while within 12\" of this model.", "points": 1},
+    "legend_unholy_strength": {"name": "Unholy Strength", "description": "This unit has +1 Strength.", "points": 5}
+  },
+  "strategies": {
+    "hate": {
+      "name": "Hate",
+      "phase": "activation",
+      "flavor": "Full with fury, corrupted marines can launch devastating close combat assaults.",
+      "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
+      "cost": 1
+    },
+    "daemonforge": {
+      "phase": "activation",
+      "name": "Daemonforge",
+      "flavor": "Imbued with demonic energy, traitor vehicles can call upon the powers of the dark gods.",
+      "description": "Use before a _Vehicle_ unit is targeted by an attack. Roll a D10 for each hit. On a 3 or less that hit is prevented.",
+      "cost": 2
+    },
+    "fearless": {
+      "name": "Fearless",
+      "phase": "activation",
+      "description": "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
+      "flavor": "Marines are trained to stay strong even in the toughest fights.",
+      "cost": 1
+    }
+  },
+  "relics": {
+    "legend_psychic_prowess": {
+      "name": "Psychic Prowess",
+      "subfactions": ["power_focus"],
+      "rule": {"id": "psychic_prowess", "x": 1},
+      "description": "Upgrade one Leader model with Prowess(1).",
+      "flavor": "This hero has studied the magic arts and is adept at invoking powers.",
+      "points": 5
+    },
+    "legend_staff": {
+      "subfactions": ["power_focus"],
+      "name": "The Warding Staff",
+      "weapon": "legend_staff",
+      "description": "Replace one Leader model's Energy Staff with The Warding Staff.",
+      "flavor": "This staff has the power to absorb and stop psychic energy.",
+      "points": 5
+    },
+    "legend_flamethrower_pistol": {
+      "subfactions": ["power_focus"],
+      "name": "The Psychic Inferno Pistol",
+      "weapon": "legend_flamethrower_pistol",
+      "description": "Replace one Hexed Flamethrower Pistol with The Psychic Inferno Pistol",
+      "flavor": "This pistol is enhanced with fiery magic immolating those at longer range.",
+      "points": 5
+    },
+    "legend_unholy_strength": {
+      "name": "Unholy Strength",
+      "rule": "legend_unholy_strength",
+      "description": "Upgrade one Leader model with Unholy Strength.",
+      "flavor": "Those that pray to the dark gods reveive blessings beyond human comprehension.",
+      "points": 5,
+      "subfactions": ["none"]
+    },
+    "legend_war_veteran": {
+      "name": "War Veteran",
+      "rule": "fearless",
+      "description": "Upgrade one Leader model with Fearless.",
+      "flavor": "This hero has lived through so many battles that nothing can phase it anymore.",
+      "points": 5,
+      "subfactions": ["none"]
+    },
+    "legend_accursed_rifle": {
+      "name": "Accursed Rifle",
+      "weapon": "legend_cursed_rifle",
+      "description": "Replace one Leader model's Marine Rifle with the Accursed Rifle.",
+      "flavor": "This ancient relic emits an aura of malice, shooting purified hatred.",
+      "points": 10,
+      "subfactions": ["none"]
+    }
+  },
+  "powerCategories": {"psychic": {"name": "Psychic", "subfactions": ["power_focus"]}, "pestilence": {"name": "Pestilence", "subfactions": ["toughness_focus"]}},
+  "powers": {
+    "balefire": {"name": "Balefire", "description": "Target enemy unit within 24\" take 3 hits with AP(1).", "charge": 7},
+    "hex": {"name": "Hex", "description": "Target enemy unit within 12\" must re-roll one die of your choice on its next Save test.", "charge": 5},
+    "sap_strength": {"name": "Sap Strength", "description": "Target enemy unit within 18\" takes 3 hits with AP(1) and has -1 Strength until the end of the turn.", "charge": 6},
+    "arcane_bolt": {
+      "subfactions": ["power_focus"],
+      "name": "Arcane Bolt",
+      "description": "Target enemy unit within 24\" takes 1 hit with AP(4). This power may be cast unlimited times per turn.",
+      "charge": 7,
+      "category": "psychic"
+    },
+    "inferno": {
+      "subfactions": ["power_focus"],
+      "name": "Inferno",
+      "description": "Target enemy unit within 12\" take 3 hits with AP(3). This power may be cast unlimited times per turn.",
+      "charge": 5,
+      "category": "psychic"
+    },
+    "arcane_barrage": {
+      "subfactions": ["power_focus"],
+      "name": "Arcane Barrage",
+      "description": "Target enemy unit within 12\" take 5 hits with AP(1). This power may be cast unlimited times per turn.",
+      "charge": 6,
+      "category": "psychic"
+    },
+    "deadly_miasma": {"subfactions": ["toughness_focus"], "name": "Deadly Miasma", "description": "Target enemy unit within 18\" take 6 hits with AP(2).", "charge": 6, "category": "pestilence"},
+    "unholy_vitality": {"subfactions": ["toughness_focus"], "name": "Unholy Vitality", "description": "Target friendly unit within 12\" heals 1 lost wound.", "charge": 7, "category": "pestilence"},
+    "spreading_plague": {
+      "name": "Spreading Plague",
+      "description": "Roll a d10 for every enemy unit within 12\". On a 3 or less that unit takes 4 hits with AP(1).",
+      "charge": 5,
+      "category": "pestilence"
+    }
+  }
+}

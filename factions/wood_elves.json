@@ -1,0 +1,567 @@
+{
+  "name": "Wood Elves",
+  "id": "wood_elves",
+  "author": "Xekon#8266",
+  "color": "#38733a",
+  "alliance": "order",
+  "units": {
+    "druid": {
+      "name": "Druid",
+      "description": "A mystical spellcaster, rousing the forest from its slumber.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Druid",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 5,
+          "reflexes": 5,
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["staff", "handweapon"],
+          "options": [
+            {"replaceWeapon": ["staff", "handweapon"], "withWeapon": [{"id": "polearm", "count": 2}, {"id": "great_staff", "count": 2}]},
+            {"addRule": ["companion"]},
+            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "druid_beast": {
+      "name": "Druid on Great Beast",
+      "description": "A mystical spellcaster riding upon a great beast, rousing the forest from its slumber.",
+      "category": "hero",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Druid on Great Beast",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 5,
+          "reflexes": 5,
+          "rules": [{"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["staff", "handweapon", {"id": "hooves_and_teeth", "count": 2}],
+          "options": [
+            {"replaceWeapon": ["staff", "handweapon"], "withWeapon": [{"id": "polearm", "count": 2}, {"id": "great_staff", "count": 2}]},
+            {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 2}], "withWeapon": [{"id": "antlers_and_hooves", "count": 2}]},
+            {"addRule": ["companion"]},
+            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "druid_eagle": {
+      "name": "Druid on Great Eagle",
+      "description": "A mystical spellcaster riding upon a mighty eagle, rousing the forest from its slumber.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry", "Monster"],
+      "models": [
+        {
+          "name": "Druid on Great Eagle",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}, {"id": "leader_x", "x": "Cavalry"}, {"id": "power", "x": 1}],
+          "weapons": ["staff", "handweapon", {"id": "beak", "count": 2}, {"id": "claws", "count": 2}],
+          "options": [
+            {"replaceWeapon": ["staff", "handweapon"], "withWeapon": [{"id": "polearm", "count": 2}, {"id": "great_staff", "count": 2}]},
+            {"addRule": ["companion"]},
+            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "druid_dragon": {
+      "name": "Druid on Forest Dragon",
+      "description": "A mystical spellcaster riding a giant dragon, rousing the forest from its slumber.",
+      "category": "hero",
+      "keywords": ["Cavalry", "Monster"],
+      "models": [
+        {
+          "name": "Druid on Forest Dragon",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 7,
+          "fight": 6,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader_x", "x": "Monster"}, {"id": "power", "x": 2}],
+          "weapons": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}, {"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
+          "options": [
+            {"replaceWeapon": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "polearm", "count": 3}, {"id": "great_staff", "count": 3}]},
+            {"addRule": ["companion"]},
+            {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "wild_noble": {
+      "name": "Wild Noble",
+      "description": "A crowned leader of the reclusive wood elves.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Wild Noble",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 7,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "ranger_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "handweapon", "count": 3}, "long_bow"],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "long_spear", "count": 3}]
+            },
+            {"addRule": [{"name": "Wings", "id": "fly"}, "shield", {"id": "icon", "x": "Infantry"}, {"id": "power", "x": 1}]},
+            {"replaceRule": [{"id": "ranger_tactics", "x": 1}], "withRule": [{"id": "melee_tactics", "x": 1}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "wild_noble_beast": {
+      "name": "Wild Noble on Great Beast",
+      "description": "A crowned leader of the reclusive wood elves, riding upon a great beast into combat.",
+      "category": "hero",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Wild Noble on Great Beast",
+          "movement": 9,
+          "courage": 6,
+          "shoot": 7,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": [{"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "marauder_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "handweapon", "count": 3}, "long_bow", {"id": "hooves_and_teeth", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "lance", "count": 3}]
+            },
+            {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 2}], "withWeapon": [{"id": "antlers_and_hooves", "count": 2}]},
+            {"addRule": [{"id": "power", "x": 1}, "shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"replaceRule": [{"id": "marauder_tactics", "x": 1}], "withRule": [{"id": "knight_tactics", "x": 1}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "wild_noble_eagle": {
+      "name": "Wild Noble on Great Eagle",
+      "description": "A crowned leader of the reclusive wood elves, riding upon a mighty eagle into combat.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry", "Monster"],
+      "models": [
+        {
+          "name": "Wild Noble on Great Eagle",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}, {"id": "leader_x", "x": "Cavalry"}, {"id": "marauder_tactics", "x": 1}],
+          "weapons": [{"id": "handweapon", "count": 3}, "long_bow", {"id": "beak", "count": 2}, {"id": "claws", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "lance", "count": 3}]
+            },
+            {"addRule": ["relic_shield", {"id": "power", "x": 1}, {"id": "icon", "x": "Cavalry"}]},
+            {"replaceRule": [{"id": "marauder_tactics", "x": 1}], "withRule": [{"id": "knight_tactics", "x": 1}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "wild_noble_dragon": {
+      "name": "Wild Noble on Forest Dragon",
+      "description": "A crowned leader of the reclusive wood elves, riding a giant dragon.",
+      "category": "hero",
+      "keywords": ["Cavalry", "Monster"],
+      "models": [
+        {
+          "name": "Wild Noble on Forest Dragon",
+          "movement": 10,
+          "courage": 7,
+          "shoot": 8,
+          "fight": 7,
+          "defense": 12,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader_x", "x": "Monster"}, {"id": "knight_tactics", "x": 2}],
+          "weapons": [{"id": "handweapon", "count": 3}, "long_bow", {"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "handweapon", "count": 3}],
+              "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "lance", "count": 3}]
+            },
+            {"addRule": ["relic_shield", {"id": "icon", "x": "Monster"}, {"id": "power", "x": 1}]},
+            {"replaceRule": [{"id": "knight_tactics", "x": 2}], "withRule": [{"id": "knight_tactics", "x": 3}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "firstborn_ancient": {
+      "name": "Firstborn Ancient",
+      "description": "An ancient treekin, lashing out at anyone who wakes their slumber.",
+      "category": "hero",
+      "keywords": ["Monster"],
+      "models": [
+        {
+          "name": "Firstborn Ancient",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 6,
+          "fight": 7,
+          "defense": 11,
+          "reflexes": 6,
+          "rules": ["ambush", {"id": "wounds", "x": 3}, "leader", {"id": "power", "x": 2}],
+          "weapons": ["impaling_claws", {"id": "roots", "count": 5}],
+          "options": [
+            {"limit": "1", "addWeapon": [{"id": "wild_blade", "count": 2}, {"id": "wild_staff", "count": 2}]},
+            {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "elf_scouts": {
+      "name": "Elven Scouts",
+      "description": "Swift archers of the wood elves, protecting the edges of the sacred forests.",
+      "category": "core",
+      "models": [{"name": "Scout", "movement": 7, "courage": 5, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "rules": ["scout"], "weapons": ["bow", "light_handweapon"], "min": 10, "max": 20}],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "elf_guardians": {
+      "name": "Royal Guardians",
+      "description": "The royal retinue of a noble, training their whole lifetime to fulfill their duty.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Royal Guardian",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "weapons": ["spear"],
+          "options": [
+            {"replaceWeapon": ["spear"], "withWeapon": [{"id": "handweapon", "count": 2}, "great_weapon", "polearm"], "modelLimit": "all"},
+            {"addWeapon": ["javelin", "long_bow"], "modelLimit": "all", "limit": 1}
+          ],
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "dryads": {
+      "name": "Dryads",
+      "description": "Forest spirits with a lust for blood.",
+      "category": "core",
+      "models": [
+        {"name": "Dryad", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "rules": ["furious"], "weapons": [{"id": "claws", "count": 2}], "min": 10, "max": 20}
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "revenants": {
+      "name": "Revenants",
+      "description": "Elven Spirits that have been summoned from beyond the grave to protect their living kin.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Revenant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 6,
+          "weapons": ["great_weapon", "rending_claws"],
+          "options": [
+            {"replaceWeapon": ["great_weapon"], "withWeapon": ["heavy_polearm", "long_bow", {"id": "rending_claws", "count": 2}], "modelLimit": "all"},
+            {"addRule": ["ambush", "fear"], "modelLimit": "all"}
+          ],
+          "min": 5,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "wood_wraiths": {
+      "name": "Wood Wraiths",
+      "description": "Wooden constructs besouled by forest spirits, silent guardians of the sacred forests.",
+      "category": "elite",
+      "keywords": ["Heavy Infantry"],
+      "models": [
+        {
+          "name": "Wood Wraith",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}],
+          "weapons": [{"id": "claws", "count": 3}],
+          "options": [{"replaceWeapon": [{"id": "claws", "count": 1}], "withWeapon": ["great_weapon", "great_polearm", "great_bow"]}],
+          "min": 3,
+          "max": 6
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "wild_knights": {
+      "name": "Wild Knights",
+      "description": "The cavalry of the wood elves, capable of shooting a hail of arrows on the run or trampling down their foes.",
+      "category": "elite",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Wild Knight",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "weapons": [{"id": "hooves_and_teeth", "count": 2}, "handweapon", "long_bow"],
+          "options": [
+            {"replaceWeapon": ["handweapon", "long_bow"], "withWeapon": [["lance", "shield"], ["lance", "javelin"]], "modelLimit": "all"},
+            {"replaceWeapon": [{"id": "hooves_and_teeth", "count": 2}], "withWeapon": [{"id": "antlers_and_hooves", "count": 2}], "modelLimit": "all"}
+          ],
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "moon_knights": {
+      "name": "Moon Knights",
+      "description": "Blessed by the Goddess of the Night, they ride into combat with magic and steel.",
+      "category": "elite",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Moon Knight",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["conclave"],
+          "weapons": [{"id": "lance", "count": 2}, {"id": "antlers_and_hooves", "count": 2}],
+          "min": 3,
+          "max": 12
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "elf_rangers": {
+      "name": "Elven Rangers",
+      "description": "Travelling along the hidden Spirit Paths, ambushing armies that have travelled too far into the sacred forests.",
+      "category": "elite",
+      "models": [
+        {"name": "Ranger", "movement": 7, "courage": 5, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "rules": ["ambush", "evasive"], "weapons": ["long_bow", "handweapon"], "min": 5, "max": 20}
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "firstborn": {
+      "name": "Firstborn",
+      "description": "An ancient treekin, uprooting from their birthing place to crush everyone in their path.",
+      "category": "rare",
+      "keywords": ["Monster"],
+      "models": [
+        {
+          "name": "Firstborn",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 3}],
+          "weapons": ["impaling_claws", {"id": "roots", "count": 5}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "living_totem": {
+      "name": "Living Totem",
+      "description": "A minor treekin animated by primal magic.",
+      "category": "rare",
+      "keywords": ["Monster"],
+      "models": [
+        {
+          "name": "Living Totem",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": ["battle_prayer", {"id": "wounds", "x": 3}, "support"],
+          "weapons": [{"id": "crushing_fists", "count": 3}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "elf_glaive_thrower": {
+      "name": "Glaive Thrower",
+      "description": "A deadly war machine ripping throught their foes with deadly blades.",
+      "category": "rare",
+      "keywords": ["Warmachine"],
+      "models": [
+        {
+          "name": "Glaive Thrower",
+          "movement": 6,
+          "shoot": 6,
+          "fight": "-",
+          "defense": 8,
+          "courage": 5,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 3}],
+          "weapons": ["glaive_thrower"],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "great_eagle": {
+      "name": "Great Eagle",
+      "description": "A magnificent beast and ally to the Wood Elves.",
+      "category": "rare",
+      "keywords": ["Beast", "Monster"],
+      "models": [
+        {
+          "name": "Great Eagle",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}],
+          "weapons": [{"id": "beak", "count": 2}, {"id": "claws", "count": 2}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "hawk_riders": {
+      "name": "Hawk Knights",
+      "description": "Brave warriors riding giant birds of prey, striking fear into their foes.",
+      "category": "elite",
+      "keywords": ["Beast", "Cavalry"],
+      "models": [
+        {
+          "name": "Hawk Knight",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["fly", {"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
+          "weapons": ["handweapon", "long_bow", "beak", "claws"],
+          "options": [{"replaceWeapon": ["handweapon", "long_bow"], "withWeapon": [["lance", "shield"]], "modelLimit": "all"}],
+          "min": 3,
+          "max": 9
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    }
+  },
+  "weapons": {
+    "roots": {"name": "Piercing Roots", "ap": 4, "attacks": 1, "short": "Melee", "rules": [{"id": "reach", "x": 2}]},
+    "impaling_claws": {"name": "Impaling Claws", "attacks": 3, "ap": 5, "rules": ["lethal"], "short": "Melee"},
+    "wild_staff": {"name": "Wildwood Staff", "attacks": 1, "ap": 6, "short": "Melee", "rules": [{"id": "reach", "x": 1}]},
+    "wild_blade": {"name": "Wildwood Blade", "attacks": 1, "ap": 7, "short": "Melee", "rules": ["lethal"]},
+    "glaive_thrower": {"name": "Glaive Thrower", "attacks": 6, "short": 18, "medium": 36, "ap": 3}
+  },
+  "rules": {"companion": {"name": "Arcane Companion", "description": "Once per turn when a power within 24“ of this model gets dispelled, deal 1 hit with AP(2) to the caster.", "points": 5}},
+  "powers": {
+    "hunters_mark": {"name": "Hunter's Mark", "description": "Target an enemy unit within 18\". Friendly units within 12\" of it have +2\" Movement when charging that unit this turn.", "charge": 7},
+    "cloak_of_thorns": {
+      "name": "Cloak of Thorns",
+      "description": "Target a friendly unit within 12\". Until the end of the round, each time that unit rolls a 1 or 2 on a save roll, the attacking unit takes 1 hit with AP(3).",
+      "charge": 6
+    },
+    "lifebloom": {"name": "Lifebloom", "description": "Target friendly unit within 12\" restores 1D3 wounds. If no wounds can be restored, restore 1d3 models instead.", "charge": 5}
+  },
+  "strategies": [
+    {
+      "name": "Lifeblood",
+      "phase": "activation",
+      "description": "Use before activating a unit. Heal 1 wound or critical damage that has been allocated to a model in that unit.",
+      "flavor": "A gift from the ancient spirits, granting minor regeneration to chosen warriors.",
+      "cost": 2
+    },
+    {
+      "name": "Swift",
+      "phase": "activation",
+      "description": "Use when taking a Initiative test. That unit is treated as having +2 Initiative for that test.",
+      "flavor": "Wood elves are naturally light-footed.",
+      "cost": 1
+    },
+    {
+      "name": "Poison-tipped Volley",
+      "phase": "activation",
+      "description": "Use before an _Infantry_ unit makes a ranged attack. Succesful hits have +1 AP.",
+      "flavor": "Wood Elf weapons are often coated in lethal toxins to ensure their foe does not survive unscathed.",
+      "cost": 1
+    }
+  ],
+  "relics": {
+    "legend_one_with_nature": {
+      "name": "One with Nature",
+      "rule": "battle_prayer",
+      "description": "Upgrade one _Leader_ model with Battle Prayer.",
+      "flavor": "This hero has meditated within a sacred grove for many years and has gained a deep connection with the forest spirits.",
+      "points": 10
+    },
+    "legend_cloak": {
+      "name": "Cloak of Leaves",
+      "rule": "evasive",
+      "description": "Upgrade one _Leader_ model with Evasive.",
+      "flavor": "This enchanted cloak is made out of golden leaves plucked from the world tree.",
+      "points": 5
+    },
+    "legend_shield": {
+      "name": "Timeless Shield",
+      "rule": {"id": "defiant", "x": 3},
+      "description": "Upgrade one _Leader_ model with Defiant(3).",
+      "flavor": "This ornate shield is indestructible, able to deflect lethal strikes.",
+      "points": 5
+    }
+  }
+}

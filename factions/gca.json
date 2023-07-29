@@ -1,0 +1,536 @@
+{
+    "id": "gca",
+    "name": "Galactic Corporate Allegiance",
+    "author": "Xekon#2688",
+    "units": {
+        "exosuit_commander": {
+            "name": "Exosuit Commander",
+            "description": "A commander wearing a tough exoskeleton and deadly weapons.",
+            "category": "hero",
+            "models": [
+                {
+                    "name": "Exosuit Commander",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 6,
+                    "weapons": ["heavy_defense_rifle", "plasma_grenades", {"id": "heavy_ccw", "count": 3}],
+                    "options": [
+                        {
+                            "replaceWeapon": ["heavy_defense_rifle"],
+                            "withWeapon": ["thermal_rifle", "plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "heavy_machinegun", "laser_cannon"]
+                        },
+                        {
+                            "replaceWeapon": [{"id": "heavy_ccw", "count": 3}],
+                            "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "energy_hammer", "count": 3}, {"id": "energy_fist", "count": 3}, {"id": "energy_axe", "count": 3}]
+                        },
+                        {"addWeapon": ["rocket_pod", "railgun", "fusion_cannon", "plasma_cannon", "light_machinegun", "missile_launcher", "thermal_lance"], "limit": 1},
+                        {"addRule": [{"name": "Jetpack", "id": "fly"}, "shield"]}
+                    ],
+                    "rules": ["ambush", {"id": "field_orders", "x": 1}, "leader", {"id": "wounds", "x": 3}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "veteran_commander": {
+            "name": "Veteran Commander",
+            "description": "A well-equipped commander who is deployed to secure and protect corporate property.",
+            "category": "hero",
+            "models": [
+                {
+                    "name": "Veteran Commander",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["heavy_defense_rifle", "plasma_grenades", {"id": "heavy_ccw", "count": 2}],
+                    "rules": [{"id": "field_orders", "x": 1}, "leader", {"id": "wounds", "x": 3}],
+                    "options": [
+                        {"replaceWeapon": ["heavy_defense_rifle", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["pistol", {"id": "heavy_ccw", "count": 3}]]},
+                        {"replaceWeapon": ["pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+                        {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "energy_fist", "count": 3}, {"id": "energy_axe", "count": 3}]},
+                        {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"name": "Camo-Cloak", "id": "evasive"}]},
+                        {"replaceRule": [{"id": "field_orders", "x": 1}], "withRule": [{"id": "field_orders", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "scout_commander": {
+            "name": "Scout Commander",
+            "description": "A well-equipped commander specialised in sabotage and stealth.",
+            "category": "hero",
+            "models": [
+                {
+                    "name": "Scout Commander",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["heavy_carbine", "plasma_grenades", {"id": "heavy_ccw", "count": 2}],
+                    "rules": [{"id": "field_orders", "x": 1, "ArrayItem": "leader"}, {"id": "wounds", "x": 3}, "scout"],
+                    "options": [
+                        {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["combat_shotgun", "sniper_rifle"]},
+                        {"replaceWeapon": ["heavy_carbine", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["pistol", {"id": "heavy_ccw", "count": 3}]]},
+                        {"replaceWeapon": ["pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+                        {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "energy_fist", "count": 3}, {"id": "energy_axe", "count": 3}]},
+                        {"addRule": [{"name": "Camo-Cloak", "id": "evasive"}]},
+                        {"replaceRule": [{"id": "field_orders", "x": 1}], "withRule": [{"id": "field_orders", "x": 2}]},
+                        {"addModels": ["", "scout_drone"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "assault_troopers": {
+            "name": "Assault Trooper",
+            "description": "Swift troopers, deployed into warzones to defend and reclaim corporate property.",
+            "category": "core",
+            "options": [
+                {"replaceWeapon": ["defense_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+                {
+                    "replaceWeapon": ["defense_rifle"],
+                    "withWeapon": ["thermal_rifle", "light_machinegun", "fusion_rifle", "laser_cannon", "flamethrower", "plasma_rifle", "grenade_launcher"],
+                    "modelLimit": "1/5"
+                },
+                {"addRule": ["field_radio"], "modelLimit": 1}
+            ],
+            "models": [
+                {
+                    "name": "Assault Trooper Sergeant",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "weapons": ["defense_rifle", "ccw", "plasma_grenades"],
+                    "options": [
+                        {"replaceWeapon": ["pistol"], "withWeapon": ["thermal_pistol", "plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
+                        {"replaceWeapon": [{"id": "ccw", "count": 2}], "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_axe", "count": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Assault Trooper",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "weapons": ["defense_rifle", "ccw", "plasma_grenades"],
+                    "min": 4,
+                    "max": 9
+                }
+            ]
+        },
+        "veterans": {
+            "name": "Veterans",
+            "description": "Well-equipped infantrymen who are deployed to secure and protect corporate property.",
+            "category": "core",
+            "options": [
+                {
+                    "replaceWeapon": ["thermal_rifle"],
+                    "withWeapon": ["light_machinegun", "fusion_rifle", "laser_cannon", "flamethrower", "plasma_rifle", "grenade_launcher", "heavy_machinegun", "missile_launcher"],
+                    "modelLimit": "1/5"
+                },
+                {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}], "modelLimit": "all"},
+                {"addRule": ["field_radio"], "modelLimit": 1}
+            ],
+            "models": [
+                {
+                    "name": "Veteran Sergeant",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["heavy_defense_rifle", "ccw", "plasma_grenades"],
+                    "options": [
+                        {"replaceWeapon": ["heavy_defense_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+                        {"replaceWeapon": ["pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+                        {"replaceWeapon": [{"id": "ccw", "count": 2}], "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_axe", "count": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {"name": "Veteran", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["heavy_defense_rifle", "ccw", "plasma_grenades"], "min": 4, "max": 9}
+            ]
+        },
+        "veteran_scouts": {
+            "name": "Veteran Scouts",
+            "description": "Elite infantrymen, specialised in sabotage and stealth.",
+            "category": "core",
+            "rules": ["scout"],
+            "options": [
+                {"replaceWeapon": "heavy_carbine", "withWeapon": ["combat_shotgun"]},
+                {"replaceWeapon": "heavy_carbine", "withWeapon": ["sniper_rifle"], "modelLimit": "2/5"},
+                {"replaceWeapon": "heavy_carbine", "withWeapon": ["plasma_rifle", "fusion_rifle", "grenade_launcher", "flamethrower", "thermal_rifle"], "modelLimit": "1/5"},
+                {"addRule": [{"name": "Camo-Cloak", "id": "evasive"}], "modelLimit": "all"},
+                {"addRule": ["field_radio"], "modelLimit": 1}
+            ],
+            "models": [
+                {
+                    "name": "Veteran Scout Sergeant",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["heavy_carbine", "ccw", "plasma_grenades"],
+                    "options": [
+                        {"replaceWeapon": ["heavy_carbine", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+                        {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+                        {"replaceWeapon": {"id": "ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_axe", "count": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {"name": "Veteran Scout", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["heavy_carbine", "ccw", "plasma_grenades"], "min": 4, "max": 9},
+                {"name": "Scout Drone", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 4, "reflexes": 5, "weapons": ["defense_carbine"], "rules": ["fly", "scout"], "min": 0, "max": 2}
+            ]
+        },
+        "exosuit_troopers": {
+            "name": "Exosuit Troopers",
+            "description": "Exosuit wearing elites, deployed as heavy support to combat enemy resistance that can't be orbitally bombarded.",
+            "category": "elite",
+            "models": [
+                {
+                    "name": "Exosuit Trooper",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 6,
+                    "weapons": ["heavy_defense_rifle", "plasma_grenades", {"id": "heavy_ccw", "count": 2}],
+                    "options": [
+                        {
+                            "replaceWeapon": ["heavy_defense_rifle"],
+                            "withWeapon": ["thermal_rifle", "plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "heavy_machinegun", "laser_cannon"]
+                        },
+                        {
+                            "replaceWeapon": [{"id": "heavy_ccw", "count": 2}],
+                            "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}, {"id": "energy_axe", "count": 2}]
+                        },
+                        {"addWeapon": ["rocket_pod", "railgun", "fusion_cannon", "plasma_cannon", "light_machinegun", "missile_launcher", "thermal_lance"], "limit": 1, "modelLimit": "1/5"},
+                        {"addRule": [{"name": "Jetpack", "id": "fly"}, "shield"], "modelLimit": "all"},
+                        {"addRule": ["field_radio"], "modelLimit": 1}
+                    ],
+                    "rules": ["ambush"],
+                    "min": 5,
+                    "max": 10
+                }
+            ]
+        },
+        "riot_troopers": {
+            "name": "Riot Troopers",
+            "description": "Hardened troopers deployed to suppress riots and uprisings.",
+            "category": "elite",
+            "rules": ["shield"],
+            "options": [
+                {"replaceWeapon": ["combat_shotgun", {"id": "ccw", "count": 2}], "withWeapon": [{"id": "energy_hammer", "count": 3}]},
+                {"replaceWeapon": ["combat_shotgun"], "withWeapon": ["plasma_rifle", "flamethrower", "grenade_launcher"], "modelLimit": "2/5"},
+                {"replaceWeapon": ["combat_shotgun"], "withWeapon": ["missile_launcher"], "modelLimit": "1/5"},
+                {"addRule": ["field_radio"], "modelLimit": 1}
+            ],
+            "models": [
+                {
+                    "name": "Riot Trooper Sergeant",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "rules": ["leader", "shield"],
+                    "weapons": ["combat_shotgun", "gas_grenades", {"id": "ccw", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": ["combat_shotgun", {"id": "ccw", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "ccw", "count": 3}]]},
+                        {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "shotgun_pistol", "flamethrower_pistol", "smg"]},
+                        {"replaceWeapon": [{"id": "ccw", "count": 3}], "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "energy_fist", "count": 3}, {"id": "energy_axe", "count": 3}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                },
+                {
+                    "name": "Riot Trooper",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "weapons": ["combat_shotgun", "gas_grenades", {"id": "ccw", "count": 2}],
+                    "min": 4,
+                    "max": 9
+                }
+            ]
+        },
+        "light_walkers": {
+            "name": "Light Combat Walkers",
+            "description": "A lightly equipped recon walker, deployed into battle alongside human infantry.",
+            "category": "elite",
+            "models": [
+                {
+                    "name": "Light Combat Walker",
+                    "movement": 8,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "weapons": ["laser_cannon", "energy_fist"],
+                    "options": [
+                        {
+                            "replaceWeapon": "laser_cannon",
+                            "withWeapon": ["missile_launcher", "heavy_machinegun", "heavy_flamethrower", "autocannon", "plasma_cannon", "thermal_lance", "fusion_cannon"]
+                        },
+                        {"addWeapon": ["rocket_pod", "strike_missiles"], "limit": 1}
+                    ],
+                    "min": 1,
+                    "max": 3
+                }
+            ],
+            "keywords": ["Vehicle"],
+            "rules": [{"id": "wounds", "x": 3}, "fearless", "scout", "vulnerable_rear"]
+        },
+        "heavy_walker": {
+            "name": "Heavy Combat Walker",
+            "description": "A heavy-class combat walker, equipped with an array of devastating weapons.",
+            "category": "rare",
+            "models": [
+                {
+                    "name": "Heavy Combat Walker",
+                    "movement": 8,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 10,
+                    "reflexes": 5,
+                    "weapons": ["laser_cannon", {"id": "energy_fist", "count": 2}],
+                    "options": [
+                        {
+                            "replaceWeapon": "laser_cannon",
+                            "withWeapon": ["missile_launcher", "heavy_machinegun", "heavy_flamethrower", "autocannon", "plasma_cannon", "thermal_lance", "fusion_cannon"]
+                        },
+                        {
+                            "replaceWeapon": [{"id": "energy_fist", "count": 2}],
+                            "withWeapon": ["missile_launcher", "heavy_machinegun", "heavy_flamethrower", "autocannon", "plasma_cannon", "thermal_lance", "fusion_cannon"]
+                        },
+                        {"addWeapon": ["strike_missiles", "rocket_pod"], "limit": 1}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ],
+            "keywords": ["Vehicle"],
+            "rules": [{"id": "wounds", "x": 3}, "fearless", "vulnerable_rear"]
+        },
+        "security_drones": {
+            "name": "Security Drones",
+            "description": "Remote controlled drones which are used for surveilance of high-value property.",
+            "category": "core",
+            "models": [
+                {
+                    "name": "Security Drone",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["light_machinegun", "ccw", "railgun"],
+                    "options": [{"replaceWeapon": ["light_machinegun"], "withWeapon": ["laser_cannon", "heavy_flamethrower"]}, {"addRule": ["field_radio"], "modelLimit": 1}],
+                    "rules": ["fearless", {"id": "wounds", "x": 2}],
+                    "min": 1,
+                    "max": 3
+                }
+            ]
+        },
+        "support_drone": {
+            "name": "Support Drone",
+            "description": "An autonomous drone that can be equipped with various weapons and equipment to fulfill varied battlefield roles.",
+            "category": "elite",
+            "models": [
+                {
+                    "name": "Support Drone",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "weapons": ["light_machinegun", "stomp"],
+                    "options": [
+                        {
+                            "replaceWeapon": ["light_machinegun"],
+                            "withWeapon": [
+                                "fusion_rifle",
+                                "laser_cannon",
+                                "plasma_rifle",
+                                "heavy_flamethrower",
+                                "mortar",
+                                "autocannon",
+                                "heavy_machinegun",
+                                "thermal_lance",
+                                "missile_launcher",
+                                "rocket_pod",
+                                "railgun"
+                            ]
+                        },
+                        {"addRule": ["field_radio"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ],
+            "keywords": ["Vehicle"],
+            "rules": ["fearless", "vulnerable_rear", {"id": "wounds", "x": 2}]
+        },
+        "heavy_support_drone": {
+            "name": "Heavy Support Drone",
+            "description": "An autonomous drone that can be equipped with various weapons and equipment to deal with threats on the battlefield.",
+            "category": "rare",
+            "models": [
+                {
+                    "name": "Heavy Support Drone",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "weapons": ["fusion_cannon", {"id": "stomp", "count": 2}],
+                    "options": [
+                        {
+                            "replaceWeapon": ["fusion_cannon"],
+                            "withWeapon": ["plasma_cannon", "twin_laser_cannon", "twin_heavy_flamethrower", "heavy_mortar", "twin_autocannon", "gatling_gun", "missile_launcher", "twin_thermal_lance"]
+                        },
+                        {"addWeapon": ["rocket_pod", "railgun", "light_machinegun"], "limit": 1}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ],
+            "keywords": ["Vehicle"],
+            "rules": [{"id": "wounds", "x": 3}, "fearless", "vulnerable_rear"]
+        },
+        "teleporter": {
+            "name": "Teleporter Unit",
+            "description": "Advanced \"borrowed\" Technology allows for quick redeployment and surprise maneuvers during a firefight.",
+            "category": "fortification",
+            "models": [{"name": "Teleporter Unit", "min": 2, "max": 2, "rules": ["terrain", "portal"], "courage": "-", "movement": "-", "shoot": "-", "fight": "-", "defense": "-", "reflexes": "-"}],
+            "keywords": ["Fortification"]
+        },
+        "medic_specialist": {
+            "name": "Medic Specialist",
+            "description": "A medic contracted to support troops in combat.",
+            "category": "elite",
+            "models": [
+                {
+                    "name": "Medic Specialist",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["defense_rifle", "smoke_grenade", "heavy_ccw"],
+                    "rules": ["medic", "support", {"id": "wounds", "x": 2}],
+                    "options": [
+                        {"replaceWeapon": ["defense_rifle", "heavy_ccw"], "withWeapon": [["pistol", {"id": "heavy_ccw", "count": 2}]]},
+                        {"replaceWeapon": ["pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "engineering_specialist": {
+            "name": "Engineering Specialist",
+            "description": "An engineer contracted to repair walkers and other vehicles in combat.",
+            "category": "elite",
+            "models": [
+                {
+                    "name": "Engineering Specialist",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["defense_rifle", "plasma_grenadess", "heavy_ccw"],
+                    "rules": ["engineer", "support", {"id": "wounds", "x": 2}],
+                    "options": [
+                        {"replaceWeapon": ["defense_rifle"], "withWeapon": ["thermal_rifle", "fusion_rifle", "plasma_rifle", "grenade_launcher"]},
+                        {"replaceWeapon": ["defense_rifle", "heavy_ccw"], "withWeapon": [["pistol", {"id": "heavy_ccw", "count": 2}]]},
+                        {"replaceWeapon": ["pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
+                        {"replaceWeapon": [{"id": "heavy_ccw", "count": 2}], "withWeapon": [{"id": "energy_fist", "count": 2}, {"id": "energy_hammer", "count": 2}]},
+                        {"addRule": ["shield"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        }
+    },
+    "models": {
+        "scout_drone": {
+            "name": "Scout Drone",
+            "movement": 7,
+            "courage": 5,
+            "shoot": 5,
+            "fight": 5,
+            "defense": 4,
+            "reflexes": 5,
+            "weapons": ["defense_carbine"],
+            "min": 1,
+            "max": 1,
+            "rules": ["scout", "fly"]
+        }
+    },
+    "weapons": {
+        "shotgun_pistol": {"name": "Sawn-off Shotgun", "attacks": 1, "ap": 1, "short": 9, "rules": ["assault"]},
+        "thermal_pistol": {"name": "Thermal Pistol", "attacks": 1, "short": 6, "ap": 3, "rules": ["flame", "lethal"]},
+        "thermal_rifle": {"name": "Thermal Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": ["flame", "lethal"]},
+        "thermal_lance": {"name": "Thermal Lance", "attacks": 1, "short": 24, "medium": 48, "ap": 6, "rules": ["flame", "lethal"]},
+        "twin_thermal_lance": {"name": "Twin Thermal Lance", "attacks": 2, "short": 24, "medium": 48, "ap": 6, "rules": ["heavy", "flame", "lethal"]},
+        "heavy_carbine": {"name": "Heavy Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]}
+    },
+    "rules": {
+        "inspiring": {"name": "Inspiring (Infantry)", "description": "When activated, this unit may perform a group activation with up to 2 other friendly _Infantry_ units within 6\".", "points": 3},
+        "inspiring_x": {
+            "name": "Inspiring",
+            "inputs": ["x"],
+            "description": "When activated, this unit may perform a group activation with up to 2 other friendly units of _X_ type within 6\".",
+            "points": 3
+        },
+        "portal": {
+            "name": "Portal",
+            "description": "_Infantry_ units may spend a _Move_ action to embark this model. To embark, the unit must all get within 1\" of this model. Immediately disembark from another model with the Portal special rule, making a _Move_ action originating from that model's edge.",
+            "points": 10
+        },
+        "field_orders": {
+            "name": "Field Orders",
+            "inputs": ["x"],
+            "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement",
+            "points": ["rule.x", {"multiply": 10}]
+        }
+    },
+    "strategies": {},
+    "powers": {}
+}

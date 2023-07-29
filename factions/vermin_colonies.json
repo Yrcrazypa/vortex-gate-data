@@ -1,0 +1,682 @@
+{
+  "name": "Vermin Colonies",
+  "id": "vermin_colonies",
+  "author": "Xekon#8266, Nightingale#7918",
+  "description": "These cunning and treacherous Vermin assemble into warhosts containing vast swarms, pestilent magic, mutated beasts and doom-tech.",
+  "color": "#3D3636",
+  "units": {
+    "the_big_rat_that_makes_ALL_the_rules": {
+      "name": "Supreme Verminlord",
+      "description": "The biggest rats, who make all the rules.",
+      "category": "hero",
+      "keywords": ["Monster"],
+      "models": [
+        {
+          "name": "Supreme Verminlord",
+          "movement": 10,
+          "courage": 8,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 12,
+          "reflexes": 8,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "leader_x", "x": "Infantry, Monster"}, "fear", {"id": "power", "x": 2}],
+          "weapons": [{"id": "giant_vermin_claws", "count": 4}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "giant_vermin_claws", "count": 4}],
+              "withWeapon": [
+                ["squeaker_shuriken", {"id": "huge_stiletto", "count": 6}],
+                {"id": "pestilence_grand_kama", "count": 10},
+                [{"id": "massive_spear", "count": 6}, {"id": "spiky_fist", "count": 2}],
+                [{"id": "massive_spear", "count": 6}, {"id": "magic_bolt", "count": 2}]
+              ]
+            },
+            {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}, "curse"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "vermin_warlord": {
+      "name": "Vermin Warlord",
+      "description": "",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Vermin Warlord",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "vermin_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "great_weapon", "count": 3}],
+          "options": [
+            {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "heavy_polearm", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}]},
+            {"addRule": ["shield", {"id": "icon", "x": "Infantry"}]},
+            {"replaceRule": [{"id": "vermin_tactics", "x": 1}], "withRule": [{"id": "vermin_tactics", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "vermin_warlord_on_brute": {
+      "name": "Vermin Warlord on Brute",
+      "description": "",
+      "category": "hero",
+      "keywords": ["Beast"],
+      "models": [
+        {
+          "name": "Vermin Warlord on Brute",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": [{"id": "beast_tactics", "x": 1}, {"id": "leader_x", "x": "Beast, Monster"}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "great_weapon", "count": 3}, {"id": "giant_vermin_claws", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "heavy_polearm", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}]},
+            {
+              "replaceWeapon": [{"id": "giant_vermin_claws", "count": 1}],
+              "withWeapon": ["mining_drill", ["lethal_flamethrower", "clubbing_fists"], ["volley_gun", "clubbing_fists"], ["poison_mortar", "clubbing_fists"]],
+              "limit": 2
+            },
+            {"addRule": ["ambush", "shield", {"id": "icon", "x": "Infantry, Beast"}]},
+            {"replaceRule": [{"id": "beast_tactics", "x": 1}], "withRule": [{"id": "beast_tactics", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "vermin_prophet": {
+      "name": "Vermin Prophet",
+      "description": "",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Vermin Prophet",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["staff", "handweapon"],
+          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "prophet_on_bell": {
+      "name": "Vermin Prophet on Bell of Doom",
+      "description": "This Vermin Prophet works allies up into a fanatical frenzy atop this magic bell.",
+      "category": "hero",
+      "keywords": ["Warmachine"],
+      "models": [
+        {
+          "name": "Vermin Prophet on Bell of Doom",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 10,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 3}, "leader", {"id": "power", "x": 1}, "fanatical_sermon", "verminous_cacophony"],
+          "weapons": ["handweapon", "staff"],
+          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "prophet_on_mutant_brute": {
+      "name": "Vermin Prophet on Mutant Brute",
+      "description": "This prophet rides on the shoulders of their massive, four-armed vermin brute.",
+      "category": "hero",
+      "keywords": ["Monster"],
+      "models": [
+        {
+          "name": "Vermin Prophet on Mutant Brute",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "power", "x": 2}, "monstrous_regeneration"],
+          "weapons": ["great_staff", {"id": "crushing_fists", "count": 8}],
+          "options": [{"replaceWeapon": [{"id": "crushing_fists", "count": 2}], "withWeapon": [{"id": "flamethrower_warmachine", "count": 2}], "limit": 2}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "engineer": {
+      "name": "Vermin Engineer",
+      "description": "This powerful technomancer wields unstable creations of magic and metal.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Vermin Engineer",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["engineer", "leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["heavy_pistol", "polearm"],
+          "options": [{"replaceWeapon": ["heavy_pistol"], "withWeapon": ["rocket_launcher", "handgun", "repeater_handgun"]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "engineer_on_bike": {
+      "name": "Vermin Engineer on Shredder Bike",
+      "description": "This powerful technomancer wields unstable creations of magic and metal.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Vermin Engineer on Shredder Bike",
+          "movement": 12,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 7,
+          "rules": ["engineer", {"id": "heavy_impact", "x": 6}, "leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["heavy_pistol", "polearm"],
+          "options": [{"replaceWeapon": ["heavy_pistol"], "withWeapon": ["rocket_launcher", "handgun", "repeater_handgun"]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "engineer_doom_engine": {
+      "name": "Vermin Engineer on Doom Engine",
+      "description": "This vehicle screams across the battlefield slicing enemies with its wicked spikes and finishing off the rest with arcs of doom-lightning ridden by a maniacal engineer.",
+      "category": "hero",
+      "keywords": ["Vehicle", "Warmachine"],
+      "models": [
+        {
+          "name": "Vermin Engineer on Doom Engine",
+          "movement": 12,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 7,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 9}, {"id": "leader_x", "x": "Warmachine"}, {"id": "power", "x": 1}],
+          "weapons": ["doom_arc_generator", "heavy_pistol", "polearm"],
+          "options": [{"replaceWeapon": ["heavy_pistol"], "withWeapon": ["rocket_launcher", "handgun", "repeater_handgun"]}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "plague_deacon": {
+      "name": "Plague Deacon",
+      "description": "This deacon recites pestilent scriptures to unleash horrid plagues upon their foes.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Plague Deacon",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 5,
+          "reflexes": 6,
+          "rules": ["curse", "fanatical", "furious", "leader", {"id": "wounds", "x": 3}],
+          "weapons": ["staff", "pestilence_heavy_flail"],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "plague_deacon_on_pestilence_engine": {
+      "name": "Plague Deacon on Pestilence Engine",
+      "description": "This deacon rides ontop of an accursed machine, spewing forth clouds of deadly plague.",
+      "category": "hero",
+      "keywords": ["Warmachine"],
+      "models": [
+        {
+          "name": "Plague Deacon on Pestilence Engine",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 5,
+          "rules": ["curse", {"id": "wounds", "x": 3}, "distracting", "fanatical_sermon", {"id": "heavy_impact", "x": 3}, "leader", {"id": "heavy_impact", "x": 6}],
+          "weapons": ["pestilence_heavy_flail", "staff"],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "beast_master": {
+      "name": "Beast Master",
+      "description": "Beast Masters goad the verminous beasts to hunt down their enemies.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Beast Master",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 5,
+          "reflexes": 6,
+          "weapons": [{"id": "barbed_whip", "count": 3}],
+          "rules": [{"id": "beast_tactics", "x": 1}, {"id": "leader_x", "x": "Beast, Monster"}, {"id": "wounds", "x": 3}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "shadow_lord": {
+      "name": "Shadow Lord",
+      "description": "A master assassin who wields shadows to appear from nowhere.",
+      "category": "elite",
+      "keywords": ["Infantry"],
+      "models": [
+        {
+          "name": "Shadow Lord",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 5,
+          "reflexes": 7,
+          "weapons": [{"id": "dripping_shuriken", "count": 2}, {"id": "dripping_blade", "count": 4}, "smoke_grenade"],
+          "rules": [{"id": "wounds", "x": 3}, "support", "ambush", "assassin"],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "vermin_warriors": {
+      "name": "Vermin Warriors",
+      "description": "",
+      "category": "core",
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+      "models": [
+        {
+          "name": "Vermin Warrior",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "weapons": ["handweapon"],
+          "options": [{"replaceWeapon": ["handweapon"], "withWeapon": ["spear", "sling"], "modelLimit": "all"}, {"addRule": ["shield"], "modelLimit": "all"}],
+          "min": 10,
+          "max": 20
+        }
+      ]
+    },
+    "vermin_elites": {
+      "name": "Vermin Elites",
+      "description": "",
+      "category": "core",
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+      "models": [
+        {
+          "name": "Vermin Elite",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": [{"id": "heavy_polearm", "count": 2}],
+          "options": [{"addWeapon": ["shield"], "modelLimit": "all"}],
+          "min": 5,
+          "max": 20
+        }
+      ]
+    },
+    "plague_fanatics": {
+      "name": "Plague Fanatics",
+      "description": "These fanatical Vermin dive headlong into the enemy ranks without regard for their own lives.",
+      "category": "core",
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+      "models": [
+        {
+          "name": "Plague Fanatic",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "rules": ["fanatical", "furious"],
+          "weapons": [{"id": "pestilence_handweapon", "count": 2}],
+          "options": [{"replaceWeapon": {"id": "pestilence_handweapon", "count": 2}, "withWeapon": {"id": "pestilence_heavy_flail", "count": 2}, "modelLimit": "all"}],
+          "min": 5,
+          "max": 20
+        }
+      ]
+    },
+    "vermin_grenadiers": {
+      "name": "Vermin Grenadiers",
+      "description": "These gas-masked Vermin cackle as they unleash noxious fumes upon their foes.",
+      "category": "core",
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+      "models": [{"name": "Vermin Grenadier", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["light_handweapon", "gas_bomb"], "min": 5, "max": 20}]
+    },
+    "vermin_swarms": {
+      "name": "Vermin Swarms",
+      "description": "Hordes of minor vermin gather together to gnaw on the corpses of the battlefield.",
+      "category": "core",
+      "keywords": ["Beast"],
+      "models": [
+        {
+          "name": "Vermin Swarm",
+          "movement": 7,
+          "courage": 5,
+          "shoot": "-",
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "weapons": [{"id": "gnawing_teeth", "count": 3}],
+          "rules": ["distracting", {"id": "swarm", "x": 3}],
+          "min": 3,
+          "max": 9
+        }
+      ]
+    },
+    "giant_vermin_pack": {
+      "name": "Giant Vermin Pack",
+      "description": "Giant vermins are sent out to hunt down foes.",
+      "category": "core",
+      "keywords": ["Beast"],
+      "models": [{"name": "Giant Vermin", "movement": 8, "courage": 5, "shoot": "-", "fight": 5, "defense": 5, "reflexes": 5, "weapons": [{"id": "fangs_and_teeth", "count": 2}], "min": 5, "max": 15}]
+    },
+    "shadow_blades": {
+      "name": "Shadow-blades",
+      "description": "Swift and deadly assassins who appear behind enemy lines in the heat of battle.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Shadow-blade",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 6,
+          "rules": ["ambush", "evasive"],
+          "weapons": ["poison_handweapon", "poison_knife", "smoke_grenade"],
+          "options": [{"replaceWeapon": ["poison_knife"], "withWeapon": ["barbed_net"]}],
+          "min": 5,
+          "max": 20
+        }
+      ]
+    },
+    "vermin_brutes": {
+      "name": "Vermin Brutes",
+      "description": "Massive vermin warriors, enhanced with mechanical weapons.",
+      "category": "elite",
+      "keywords": ["Beast"],
+      "models": [
+        {
+          "name": "Vermin Brute",
+          "movement": 8,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "courage": 5,
+          "reflexes": 6,
+          "min": 3,
+          "max": 9,
+          "rules": [{"id": "wounds", "x": 2}],
+          "weapons": [{"id": "giant_vermin_claws", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "giant_vermin_claws", "count": 1}],
+              "withWeapon": ["mining_drill", ["lethal_flamethrower", "clubbing_fists"], ["volley_gun", "clubbing_fists"], ["poison_mortar", "clubbing_fists"]],
+              "limit": 2
+            },
+            {"addRule": "paired_ambush", "modelLimit": "all"},
+            {"addRule": "heavy_armor"}
+          ]
+        }
+      ]
+    },
+    "doom_weapon_team": {
+      "name": "Doom-weapon Team",
+      "description": "Unstable weapons take several unfortunate Vermin to operate but they are devastating on the foe.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Doom-weapon Team",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 2}],
+          "weapons": ["light_handweapon", "lethal_flamethrower"],
+          "options": [{"replaceWeapon": ["lethal_flamethrower"], "withWeapon": [["sniper_rifle", "shield"], "volley_gun", "poison_mortar"], "modelLimit": "all"}],
+          "min": 1,
+          "max": 5
+        }
+      ]
+    },
+    "gnaw_tunneler": {
+      "name": "Gnaw Tunnelers",
+      "description": "These cunning Vermin operate large Drills to dig tunnels behind enemy lines.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Gnaw Tunneler",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "rules": ["paired_ambush", {"id": "wounds", "x": 2}],
+          "weapons": ["mining_drill"],
+          "min": 1,
+          "max": 3
+        }
+      ]
+    },
+    "shredder_bike": {
+      "name": "Shredder Bike",
+      "description": "This large front wheel of this bike is covered in whirling blades. Those unfortunate enough to be run over by it are reduced to a bloody pulp.",
+      "category": "elite",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Shredder Bike",
+          "movement": 12,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 7,
+          "rules": [{"id": "heavy_impact", "x": 6}, {"id": "wounds", "x": 2}],
+          "weapons": ["light_handweapon"],
+          "min": 1,
+          "max": 3
+        }
+      ]
+    },
+    "vermin_artillery": {
+      "name": "Vermin Artillery",
+      "description": "While the hordes of Vermin rush forth, filth and doom-lightning rain down from the back.",
+      "category": "rare",
+      "keywords": ["Artillery", "Warmachine"],
+      "models": [
+        {
+          "name": "Vermin Artillery",
+          "movement": 5,
+          "courage": 5,
+          "shoot": 6,
+          "fight": "-",
+          "defense": 7,
+          "reflexes": 5,
+          "min": 1,
+          "max": 1,
+          "rules": [{"id": "wounds", "x": 3}],
+          "weapons": ["doom_lightning_cannon"],
+          "options": [{"replaceWeapon": "doom_lightning_cannon", "withWeapon": "pestilence_heavy_mortar"}]
+        }
+      ]
+    },
+    "doom_engine": {
+      "name": "Doom Engine",
+      "description": "This vehicle screams across the battlefield slicing enemies with its wicked spikes and finishing off the rest with arcs of doom-lightning. These deranged machines will sometimes be ridden by a maniacal engineer.",
+      "category": "rare",
+      "keywords": ["Vehicle", "Warmachine"],
+      "models": [
+        {
+          "name": "Doom Engine",
+          "movement": 12,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 7,
+          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 9}],
+          "weapons": ["doom_arc_generator"],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "verminous_abomination": {
+      "name": "Verminous Abomination",
+      "description": "This vile amalgamation of flesh and technology lurches across the battlefield, burying everything in it's path under its monstrous bulk.",
+      "category": "rare",
+      "keywords": ["Monster"],
+      "models": [
+        {
+          "name": "Verminous Abomination",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 10,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 3}, "monstrous_regeneration", "fear", "verminous_cacophony", {"id": "heavy_impact", "x": 3}],
+          "weapons": [{"id": "crushing_fists", "count": 8}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  },
+  "weapons": {
+    "sling": {"name": "Sling", "attacks": 1, "short": 9, "medium": 18, "rules": ["assault"]},
+    "giant_vermin_claws": {"name": "Giant Vermin Claws", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["rending"]},
+    "huge_stiletto": {"name": "Huge Stiletto", "attacks": 1, "short": "Melee", "ap": 7, "rules": ["rending"]},
+    "squeaker_shuriken": {"name": "Squeaker Shuriken", "attacks": 1, "short": 9, "medium": 18, "ap": 4},
+    "pestilence_grand_kama": {"name": "Pestilence Grand Kama", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["pestilence"]},
+    "massive_spear": {"name": "Massive Spear", "attacks": 1, "short": "Melee", "ap": 5, "rules": [{"id": "reach", "x": 2}]},
+    "spiky_fist": {"name": "Spiky Fist", "attacks": 1, "short": "Melee", "ap": 6},
+    "doom_lightning_cannon": {"name": "Doom-Lightning Cannon", "short": 24, "medium": 48, "ap": 7, "attacks": 1, "rules": [{"id": "blast", "x": 3}, "heavy", "overcharge"]},
+    "doom_arc_generator": {"name": "Doom-arc Generator", "short": 6, "medium": 12, "ap": 3, "attacks": 3, "rules": ["overcharge", {"id": "blast", "x": 3}]},
+    "dripping_shuriken": {"name": "Dripping Shuriken", "short": 9, "ap": 1, "attacks": 1, "rules": ["lethal", "poison", "assault"]},
+    "dripping_blade": {"name": "Dripping Blade", "short": "Melee", "ap": 2, "attacks": 1, "rules": ["lethal", "poison"]},
+    "gas_bomb": {"name": "Gas Bombs", "attacks": 1, "short": 9, "rules": ["assault", {"id": "blast", "x": 3}, "poison"]},
+    "legend_lance": {"name": "Lance of Rust", "attacks": 3, "short": "Melee", "ap": 3, "rules": ["pestilence", {"id": "reach", "x": 1}, "rending"]}
+  },
+  "rules": {
+    "vermin_tactics": {
+      "name": "Vermin Tactics",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+",
+      "points": ["rule.x", {"multiply": 10}]
+    },
+    "fanatical_sermon": {
+      "name": "Fanatical Sermon",
+      "description": "This unit and friendly units within 18\" receive +2 Courage for all break tests and do not gain shock from melee attacks.",
+      "points": 20
+    },
+    "verminous_cacophony": {
+      "name": "Verminous Cacophony",
+      "flavor": "The incessant chittering and clangor cause enemies to easily lose focus.",
+      "description": "Enemy units within 18\" add 1 to their Power rolls.",
+      "points": 10
+    },
+    "paired_ambush": {
+      "name": "Paired Ambush",
+      "description": "This unit and a paired _Infantry_ unit may be placed in _Ambush Reserves_ before the game begins. When this unit arrives from _Ambush_, setup the paired unit within 3\" of it.",
+      "points": 10
+    },
+    "legend_shard_of_shadow": {"name": "Oblivion Cloak", "description": "Enemy units suffer -1 Accuracy and -1 Strength when attacking this unit.", "points": 10},
+    "legend_mutation_serum": {
+      "name": "Mutation Serum",
+      "description": "Once per game during this unit's activation, you may inject the mutation serum into a non-_Warmachine_ unit within 3“. That unit may re-roll failed Strength rolls for the rest of the battle. However, it suffers 1 shock at the end of each activation.",
+      "points": 10
+    }
+  },
+  "powers": {
+    "chain_lightning": {"name": "Chain Lightning", "description": "Target three enemy units within 18\" take 1 hit with AP(5) each.", "charge": 5},
+    "biting_winds": {"name": "Biting Winds", "description": "Target enemy unit within 24\" suffers 4 hits with AP(0). They half their movement until the end of the activation phase.", "charge": 6},
+    "surge": {"name": "Galvanic Surge", "description": "Target friendly unit within 12“ gains +1 Accuracy or Strength until the end of the activation phase. It then suffers 1 Shock.", "charge": 7}
+  },
+  "powerCategories": {},
+  "strategies": [
+    {
+      "name": "Hit and Run",
+      "phase": "activation",
+      "flavor": "Being less hardy than other races, Vermin have perfected dashing in and out of the fray.",
+      "description": "Use after one of your _Infantry_ or _Vehicle_ units performs a Shoot or Fight action. You may immediately take a free move action.",
+      "cost": 1
+    },
+    {
+      "name": "Gnawing Advance",
+      "phase": "activation",
+      "flavor": "The enemy is crushed in an avalanche of bites and slashes.",
+      "description": "Use when an _Infantry_ unit performs a Fight action. Hit rolls of 1 or 2 cause an additional hit.",
+      "cost": 1
+    },
+    {
+      "name": "Miasma of Death",
+      "phase": "activation",
+      "flavor": "Surrounded by a smell of death and disease, the vermin colonies are not a foe to be trifled with.",
+      "description": "Use when a unit within 6\" takes a Courage test. That unit suffers -1 Courage.",
+      "cost": 1
+    }
+  ],
+  "relics": {
+    "oblivion_cloak": {
+      "name": "Oblivion Cloak",
+      "rule": "legend_shard_of_shadow",
+      "description": "Upgrade one _Leader_ or _Support_ model with Oblivion Cloak.",
+      "flavor": "Coalesced shadow cloaks its user in impenetrable darkness.",
+      "points": 10
+    },
+    "lance_of_corruption": {
+      "name": "Lance of Rust",
+      "weapon": "legend_lance",
+      "description": "Upgrade one _Leader_ model's Heavy Polearm with the Lance of Rust.",
+      "flavor": "This unholy relic is coated in a poison that melts through the thickest armor.",
+      "points": 5
+    },
+    "mutation_serum": {
+      "name": "Mutation Serum",
+      "rule": "legend_mutation_serum",
+      "description": "Upgrade one _Leader_ model with Mutation Serum.",
+      "flavor": "This master mutator carries around a powerful serum that swells the ferocity and power of beasts.",
+      "points": 5
+    }
+  }
+}

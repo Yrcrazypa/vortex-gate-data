@@ -1,0 +1,96 @@
+{
+    "name": "Skeletal Elite",
+    "id": "skeleton_elite",
+    "author": "Valgaav#9736",
+    "units": {
+        "boneshaper": {
+            "name": "Bone-Shaper",
+            "description": "Scrimshaw-mages empowering skeletal warriors",
+            "category": "hero",
+            "models": [
+                {
+                    "name": "Bone-Shaper",
+                    "movement": 5,
+                    "courage": 8,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 5,
+                    "weapons": [{"id": "handweapon", "count": 2}],
+                    "rules": [{"id": "power", "x": 1}, {"id": "wounds", "x": 2}, "support"],
+                    "replaceRule": [{"id": "power", "x": 1}],
+                    "withRule": [{"id": "power", "x": 2}]
+                }
+            ]
+        },
+        "skeleton_warriors": {
+            "name": "Skeleton Warriors",
+            "description": "Legions of skeletal warriors",
+            "category": "core",
+            "models": [
+                {
+                    "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+                    "name": "Skeleton Warrior",
+                    "movement": 4,
+                    "courage": 8,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 4,
+                    "weapons": [{"id": "heavy_handweapon", "count": 2}, {"id": "shield", "count": 1}],
+                    "replaceWeapon": [{"id": "heavy_handweapon", "count": 2}],
+                    "withWeapon": [{"id": "spear", "count": 2}]
+                }
+            ]
+        },
+        "death_riders": {
+            "name": "Dead Riders",
+            "description": "Mounted skeletal outriders",
+            "category": "core",
+            "models": [
+                {
+                    "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+                    "name": "Dead Rider",
+                    "movement": 13,
+                    "courage": 8,
+                    "shoot": 4,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "weapons": [{"id": "heavy_handweapon", "count": 3}, {"id": "hooves_and_teeth", "count": 2}],
+                    "rules": {"id": "wounds", "x": 2}
+                }
+            ]
+        }
+    },
+    "weapons": {},
+    "rules": {},
+    "relics": {},
+    "powers": {},
+    "strategies": {
+        "fearless": {
+            "name": "Fearless",
+            "phase": "activation",
+            "description": "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
+            "flavor": "With no morale to break, the undead hordes march forward even in the face of death.",
+            "cost": 1,
+            "subfactions": []
+        },
+        "dread": {
+            "name": "Eternal Dread",
+            "phase": "activation",
+            "description": "Use when a unit within 6\" takes a Courage test. That unit suffers -1 Courage.",
+            "flavor": "Half-rotten and surrounded by a miasma of death and decay, striking fear into even the heart of angels.",
+            "cost": 1,
+            "subfactions": []
+        },
+        "living_dead": {
+            "name": "Living Dead",
+            "phase": "activation",
+            "description": "Use when a unit declares a Charge action. That unit gets +3\" of Movement for that action.",
+            "flavor": "Corpses raised from their grave, preying on their once beloved with uncanny ferocity.",
+            "cost": 1,
+            "subfactions": []
+        }
+    }
+}

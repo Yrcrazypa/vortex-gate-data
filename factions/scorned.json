@@ -1,0 +1,250 @@
+{
+  "name": "The Scorned",
+  "id": "scorned",
+  "color": "#580816",
+  "description": "Once a mighty civilization that served the gods, the Scorned now use ancient rituals and powerful armies to see them reborn.",
+  "alliance": "chaos",
+  "units": {
+    "tyrant": {
+      "name": "Tyrant",
+      "description": "A leader of the Scorned, skilled with blade and spell",
+      "category": "hero",
+      "keywords": ["infantry"],
+      "models": [
+        {
+          "name": "Tyrant",
+          "movement": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "courage": 8,
+          "min": 1,
+          "max": 1,
+          "rules": [{"id": "leader", "x": "infantry"}, {"id": "power", "x": 1}, {"id": "melee_tactics", "x": 1}, "hero_vengeance", {"id": "wounds", "x": 4}],
+          "weapons": [{"id": "serrated_claws", "count": 4}],
+          "options": [
+            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]},
+            {"replaceRule": [{"id": "melee_tactics", "x": 1}], "withRule": [{"id": "melee_tactics", "x": 2}]},
+            {"replaceWeapon": [{"id": "serrated_claws", "count": 4}], "withWeapon": [{"id": "handweapon", "count": 6}]},
+            {"replaceWeapon": [{"id": "serrated_claws", "count": 4}], "withWeapon": [{"id": "great_polearm", "count": 3}]}
+          ]
+        }
+      ]
+    },
+    "warlord": {
+      "name": "Warlord",
+      "description": "A military mind, leader and greatest of the Scorned.",
+      "category": "hero",
+      "keywords": ["infantry"],
+      "models": [
+        {
+          "name": "Warlord",
+          "movement": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "courage": 8,
+          "min": 1,
+          "max": 1,
+          "rules": [{"id": "leader", "x": "infantry"}, {"id": "melee_tactics", "x": 2}, "hero_vengeance", {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "zweihänder", "count": 3}],
+          "options": [
+            {"replaceRule": [{"id": "melee_tactics", "x": 2}], "withRule": [{"id": "ranged_tactics", "x": 2}]},
+            {"replaceWeapon": [{"id": "zweihänder", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 5}]}
+          ]
+        }
+      ]
+    },
+    "warlock": {
+      "name": "Warlock",
+      "description": "The greatest at the Scorned's soul-magic, the Warlocks often seem frail but are magically powerful",
+      "category": "hero",
+      "keywords": ["infantry"],
+      "models": [
+        {
+          "name": "Warlock",
+          "movement": 6,
+          "shoot": 6,
+          "fight": 4,
+          "defense": 5,
+          "reflexes": 5,
+          "courage": 8,
+          "min": 1,
+          "max": 1,
+          "rules": [{"id": "leader", "x": "infantry"}, {"id": "power", "x": 2}, "hero_vengeance", {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "handweapon", "count": 3}],
+          "options": [{"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "heavy_handweapon", "count": 3}]}]
+        }
+      ]
+    },
+    "cataphract_spearmen": {
+      "name": "Cataphractii Spearmen",
+      "description": "Elite warriors of the Scorned armed with heavy armour and spears",
+      "category": "elite",
+      "keywords": ["infantry"],
+      "models": [
+        {
+          "name": "Spearman",
+          "movement": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 4,
+          "courage": 6,
+          "min": 4,
+          "max": 6,
+          "rules": ["vengeance", {"id": "wounds", "x": 2}],
+          "weapons": [{"id": "heavy_polearm", "count": 2}, "heavy_shield"],
+          "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"replaceWeapon": ["heavy_shield"], "withWeapon": "heavy_javelin"}]
+        }
+      ]
+    },
+    "scorned_swordsmen": {
+      "name": "Scorned Swordsmen",
+      "description": "The line-troops of the Scorned, fighting for an ancient empire",
+      "category": "core",
+      "keywords": ["infantry"],
+      "models": [
+        {
+          "name": "Swordsman",
+          "movement": 6,
+          "shoot": 4,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "courage": 6,
+          "min": 5,
+          "max": 10,
+          "rules": ["vengeance"],
+          "weapons": [{"id": "handweapon", "count": 2}],
+          "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}]
+        }
+      ]
+    },
+    "reivers": {
+      "name": "Reivers",
+      "description": "Named after the fierce weapon they wield, the Reivers are a surprise threat on any battlefield",
+      "category": "core",
+      "keywords": ["infantry"],
+      "models": [
+        {
+          "name": "Reiver",
+          "movement": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "courage": 5,
+          "min": 6,
+          "max": 10,
+          "rules": ["vengeance"],
+          "weapons": ["handweapon", "shotgun"],
+          "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}]
+        }
+      ]
+    },
+    "bloodseekers": {
+      "name": "Bloodseekers",
+      "description": "Fanatics who seek out a death that purifies their souls",
+      "category": "elite",
+      "keywords": ["infantry"],
+      "rules": [{"id": "resilient", "x": 3}, "vengeance"],
+      "models": [{"name": "Bloodseekers", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 5, "reflexes": 5, "weapons": [{"id": "great_weapon", "count": 2}], "min": 5, "max": 10}]
+    },
+    "cyclops": {
+      "name": "Cyclops",
+      "description": "These giant monsters lived in harmony with the Scorned, and now stand beside them for war",
+      "category": "rare",
+      "keywords": ["monster"],
+      "rules": [{"id": "wounds", "x": 3}, "hero_vengeance"],
+      "models": [
+        {
+          "name": "Cyclops",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 12,
+          "reflexes": 5,
+          "weapons": [{"id": "grand_weapon", "count": 4}],
+          "min": 1,
+          "max": 1,
+          "options": [
+            {"replaceWeapon": {"id": "grand_weapon", "count": 4}, "withWeapon": [[{"id": "great_weapon", "count": 4}, {"id": "tower_shield"}]]},
+            {"replaceWeapon": {"id": "grand_weapon", "count": 4}, "withWeapon": [[{"id": "shotgun", "count": 2}, {"id": "heavy_handweapon", "count": 3}]]}
+          ]
+        }
+      ]
+    },
+    "titan": {
+      "name": "Titan",
+      "description": "Giant, elephantine monstrosities that fight for the love of fighting",
+      "category": "rare",
+      "keywords": ["monster"],
+      "rules": [{"id": "wounds", "x": 3}, "hero_vengeance"],
+      "models": [
+        {
+          "name": "Titan",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 14,
+          "reflexes": 5,
+          "weapons": [{"id": "tusks", "count": 2}, {"id": "great_weapon", "count": 6}],
+          "min": 1,
+          "max": 1,
+          "options": [
+            {"replaceWeapon": {"id": "great_weapon", "count": 6}, "withWeapon": [[{"id": "heavy_polearm", "count": 3}, "relic_shield"]]},
+            {"replaceWeapon": {"id": "great_weapon", "count": 6}, "withWeapon": [[{"id": "mortar", "count": 1}, {"id": "heavy_handweapon", "count": 3}]]}
+          ]
+        }
+      ]
+    }
+  },
+  "rules": {
+    "melee_tactics": {
+      "name": "Warlord Tactics",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",
+      "points": ["rule.x", {"multiply": 10}]
+    },
+    "ranged_tactics": {
+      "name": "Reiver Tactics",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Accuracy tests of 9+ until the end of the round.",
+      "points": ["rule.x", {"multiply": 10}]
+    },
+    "vengeance": {"name": "Soul's Vengeance", "description": "When a unit loses its last model within 9\" of this unit, this unit may remove one shock", "points": 1},
+    "hero_vengeance": {"name": "Soul's Vengeance", "description": "When a friendly unit loses its last model within 9\" of this unit, this unit may remove one shock", "points": 5}
+  },
+  "weapons": {
+    "serrated_claws": {"name": "Assassin's Claws", "ap": 1, "attacks": 1, "short": "Melee", "rules": ["rending", "lethal"]},
+    "tusks": {"name": "Elephantine Tusks", "attacks": 1, "ap": 3, "rules": ["lance"], "short": "Melee"}
+  },
+  "strategies": [
+    {
+      "name": "Soul Empowerment",
+      "phase": "activation",
+      "description": "Use when a friendly unit destroys an enemy unit. That unit gains +1 Strength until the end of the battle. A unit may only be affected by this strategy once.",
+      "flavor": "The Scorned consume the souls of their foes to gain strength.",
+      "cost": 2
+    },
+    {
+      "name": "Fearless",
+      "phase": "activation",
+      "description": "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
+      "flavor": "The horrors of war are nothing compared to the horror of returning home in dishonour",
+      "cost": 1
+    },
+    {
+      "phase": "activation",
+      "name": "Final Stand",
+      "description": "Use when a friendly unit is destroyed. If that unit has not activated yet this round, it may perform one shoot or fight action before it is destroyed.",
+      "flavor": "The Scorned find no greater honour than to die fighting.",
+      "cost": 1
+    }
+  ]
+}

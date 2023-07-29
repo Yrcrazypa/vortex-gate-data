@@ -1,0 +1,1101 @@
+{
+    "name": "Feral Orc Tribes",
+    "id": "orcs_and_goblins",
+    "color": "#50974A",
+    "author": "Xekon#8266",
+    "alliance": "destruction",
+    "units": {
+        "troll_king": {
+            "name": "Troll King",
+            "description": "Massive dimwitted leader with the ability to shrug off wounds that would kill a man.",
+            "category": "hero",
+            "keywords": ["Monster"],
+            "models": [
+                {
+                    "name": "Troll King",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, {"id": "leader_x", "x": "Monster"}, "monstrous_regeneration", {"id": "power", "x": 1}],
+                    "weapons": [{"id": "fangs_and_teeth", "count": 3}, {"id": "grand_hammer", "count": 2}, "rock_throw"],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_warboss": {
+            "name": "Orc Warboss",
+            "description": "Stronger and more savage than the normal orc.",
+            "category": "hero",
+            "keywords": ["Orc", "Infantry"],
+            "models": [
+                {
+                    "name": "Orc Warboss",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": ["leader", {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+                    "weapons": [{"id": "great_weapon", "count": 3}],
+                    "options": [
+                        {
+                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+                            "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}, {"id": "heavy_polearm", "count": 3}]
+                        },
+                        {"addWeapon": ["bow", "attack_beast"]},
+                        {"addRule": ["shield", {"id": "icon", "x": "Infantry"}]},
+                        {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_warboss_boar": {
+            "name": "Orc Warboss on Giant Boar",
+            "description": "Stronger and more savage than the normal orc.",
+            "category": "hero",
+            "keywords": ["Orc", "Cavalry"],
+            "models": [
+                {
+                    "name": "Orc Warboss on Giant Boar",
+                    "movement": 8,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 7,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": [{"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+                    "weapons": [{"id": "great_weapon", "count": 3}, {"id": "boar_tusks", "count": 2}],
+                    "options": [
+                        {
+                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+                            "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
+                        },
+                        {"addWeapon": ["bow"]},
+                        {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+                        {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_warboss_warg": {
+            "name": "Orc Warboss on Great Warg",
+            "description": "Stronger and more savage than the normal orc.",
+            "category": "hero",
+            "keywords": ["Orc", "Cavalry"],
+            "models": [
+                {
+                    "name": "Orc Warboss on Great Warg",
+                    "movement": 8,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 7,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": ["furious", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}, {"id": "wounds", "x": 4}],
+                    "weapons": [{"id": "great_weapon", "count": 4}, {"id": "claws", "count": 4}],
+                    "options": [
+                        {
+                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+                            "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
+                        },
+                        {"addWeapon": ["bow"]},
+                        {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+                        {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_warboss_troll": {
+            "name": "Orc Warboss on Troll",
+            "description": "A boss goading a troll into battle.",
+            "category": "hero",
+            "keywords": ["Orc", "Monster"],
+            "models": [
+                {
+                    "name": "Orc Warboss on Troll",
+                    "movement": 5,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 7,
+                    "defense": 8,
+                    "reflexes": 6,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, {"id": "leader_x", "x": "Monster"}, "monstrous_regeneration", {"id": "orc_tactics", "x": 1}],
+                    "weapons": [{"id": "great_weapon", "count": 3}, {"id": "fangs_and_teeth", "count": 3, "id_0": "grand_hammer"}, "rock_throw"],
+                    "options": [
+                        {
+                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+                            "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
+                        },
+                        {"addWeapon": ["bow"]},
+                        {"addRule": ["relic_shield", {"id": "icon", "x": "Monster"}]},
+                        {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_warboss_birb": {
+            "name": "Orc Warboss on Giant Vulture",
+            "description": "Stronger and more savage than the normal orc.",
+            "category": "hero",
+            "keywords": ["Orc", "Beast", "Cavalry"],
+            "models": [
+                {
+                    "name": "Orc Warboss on Giant Vulture",
+                    "movement": 12,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 7,
+                    "defense": 6,
+                    "reflexes": 7,
+                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}],
+                    "weapons": [{"id": "great_weapon", "count": 3}, {"id": "beak_and_claws", "count": 6}],
+                    "options": [
+                        {
+                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+                            "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
+                        },
+                        {"addWeapon": ["bow"]},
+                        {"addRule": ["relic_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+                        {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_warboss_dragon": {
+            "name": "Orc Warboss on Dragon",
+            "description": "Stronger and more savage than the normal orc.",
+            "category": "hero",
+            "keywords": ["Orc", "Monster", "Cavalry"],
+            "models": [
+                {
+                    "name": "Orc Warboss on Dragon",
+                    "movement": 12,
+                    "courage": 7,
+                    "shoot": 6,
+                    "fight": 7,
+                    "defense": 9,
+                    "reflexes": 7,
+                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "orc_tactics", "x": 1}],
+                    "weapons": [{"id": "great_weapon", "count": 3}, {"id": "flame_breath", "count": 4}, {"id": "crushing_maw", "count": 4}],
+                    "options": [
+                        {
+                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+                            "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
+                        },
+                        {"addWeapon": ["bow"]},
+                        {"addRule": ["relic_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+                        {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_warboss_boar_chariot": {
+            "name": "Orc Warboss on Boar Chariot",
+            "description": "Stronger and more savage than the normal orc.",
+            "category": "hero",
+            "keywords": ["Orc", "Vehicle"],
+            "models": [
+                {
+                    "name": "Orc Warboss on Boar Chariot",
+                    "movement": 10,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 7,
+                    "defense": 9,
+                    "reflexes": 6,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader_x", "x": "Vehicle"}, {"id": "orc_tactics", "x": 1}],
+                    "weapons": [{"id": "great_weapon", "count": 3}, {"id": "boar_tusks", "count": 4}],
+                    "options": [
+                        {
+                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+                            "withWeapon": [{"id": "grand_axe", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_lance", "count": 3}, {"id": "grand_weapon", "count": 3}]
+                        },
+                        {"addWeapon": ["bow"]},
+                        {"addRule": ["relic_shield", {"id": "icon", "x": "Vehicle"}]},
+                        {"replaceRule": [{"id": "orc_tactics", "x": 1}], "withRule": [{"id": "orc_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_shaman": {
+            "name": "Orc Shaman",
+            "description": "Tough in stature and a fearsome wizard.",
+            "category": "hero",
+            "keywords": ["Orc", "Infantry"],
+            "models": [
+                {
+                    "name": "Orc Shaman",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "weapons": ["handweapon", "staff"],
+                    "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_shaman_boar": {
+            "name": "Orc Shaman on Giant Boar",
+            "description": "Tough in stature and a fearsome wizard.",
+            "category": "hero",
+            "keywords": ["Orc", "Cavalry"],
+            "models": [
+                {
+                    "name": "Orc Shaman on Giant Boar",
+                    "movement": 8,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": [{"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+                    "weapons": ["handweapon", "staff", {"id": "boar_tusks", "count": 2}],
+                    "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_shaman_birb": {
+            "name": "Orc Shaman on Giant Vulture",
+            "description": "Tough in stature and a fearsome wizard.",
+            "category": "hero",
+            "keywords": ["Orc", "Beast", "Cavalry"],
+            "models": [
+                {
+                    "name": "Orc Shaman on Giant Vulture",
+                    "movement": 12,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 7,
+                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}],
+                    "weapons": ["handweapon", "staff", {"id": "beak_and_claws", "count": 6}],
+                    "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_shaman_boar_chariot": {
+            "name": "Orc Shaman on Boar Chariot",
+            "description": "Tough in stature and a fearsome wizard.",
+            "category": "hero",
+            "keywords": ["Orc", "Vehicle"],
+            "models": [
+                {
+                    "name": "Orc Shaman on Boar Chariot",
+                    "movement": 10,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 9,
+                    "reflexes": 6,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader_x", "x": "Vehicle"}, {"id": "power", "x": 1}],
+                    "weapons": ["handweapon", "staff", {"id": "boar_tusks", "count": 4}],
+                    "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_shaman_dragon": {
+            "name": "Orc Shaman on Dragon",
+            "description": "Tough in stature and a fearsome wizard.",
+            "category": "hero",
+            "keywords": ["Orc", "Monster", "Cavalry"],
+            "models": [
+                {
+                    "name": "Orc Shaman on Dragon",
+                    "movement": 12,
+                    "courage": 7,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 9,
+                    "reflexes": 7,
+                    "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "heavy_impact", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}],
+                    "weapons": ["handweapon", "staff", {"id": "flame_breath", "count": 4}, {"id": "crushing_maw", "count": 4}],
+                    "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_warboss": {
+            "name": "Goblin Warboss",
+            "description": "Small in size but a master of deception.",
+            "category": "hero",
+            "keywords": ["Goblin", "Infantry"],
+            "models": [
+                {
+                    "name": "Goblin Warboss",
+                    "movement": 6,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 6,
+                    "rules": [{"id": "goblin_tactics", "x": 1}, "leader", {"id": "wounds", "x": 2}],
+                    "weapons": [{"id": "handweapon", "count": 3}],
+                    "options": [
+                        {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}]},
+                        {"addWeapon": ["short_bow", "attack_beast"]},
+                        {"addRule": ["shield", {"id": "icon", "x": "Infantry"}]},
+                        {"replaceRule": [{"id": "goblin_tactics", "x": 1}], "withRule": [{"id": "goblin_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_warboss_spider": {
+            "name": "Goblin Warboss on Giant Spider",
+            "description": "Small in size but a master of deception.",
+            "category": "hero",
+            "keywords": ["Goblin", "Cavalry"],
+            "models": [
+                {
+                    "name": "Goblin Warboss on Giant Spider",
+                    "movement": 8,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 6,
+                    "rules": [{"id": "goblin_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry. Cavalry"}, "strider", {"id": "wounds", "x": 2}],
+                    "weapons": [{"id": "handweapon", "count": 3}, {"id": "spider_bite", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
+                        {"addWeapon": ["short_bow"]},
+                        {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+                        {"replaceRule": [{"id": "goblin_tactics", "x": 1}], "withRule": [{"id": "goblin_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_warboss_wolf": {
+            "name": "Goblin Warboss on Dire Wolf",
+            "description": "Small in size but a master of deception.",
+            "category": "hero",
+            "keywords": ["Goblin", "Cavalry"],
+            "models": [
+                {
+                    "name": "Goblin Warboss on Dire Wolf",
+                    "movement": 8,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 6,
+                    "rules": [{"id": "goblin_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry. Cavalry"}, "scout", {"id": "wounds", "x": 2}],
+                    "weapons": [{"id": "handweapon", "count": 3}, {"id": "claws", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
+                        {"addWeapon": ["short_bow"]},
+                        {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+                        {"replaceRule": [{"id": "goblin_tactics", "x": 1}], "withRule": [{"id": "goblin_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_warboss_beast": {
+            "name": "Goblin Warboss on Cave Beast",
+            "description": "Small in size but a master of deception.",
+            "category": "hero",
+            "keywords": ["Goblin", "Cavalry"],
+            "models": [
+                {
+                    "name": "Goblin Warboss on Cave Beast",
+                    "movement": 8,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 6,
+                    "rules": ["agile", "crazed", "evasive", {"id": "goblin_tactics", "x": 1}, {"id": "leader_x", "x": "Infantry. Cavalry"}, {"id": "wounds", "x": 2}],
+                    "weapons": [{"id": "handweapon", "count": 3}, {"id": "fangs_and_teeth", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
+                        {"addWeapon": ["short_bow"]},
+                        {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+                        {"replaceRule": [{"id": "goblin_tactics", "x": 1}], "withRule": [{"id": "goblin_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_warboss_wolf_chariot": {
+            "name": "Goblin Warboss on Wolf Chariot",
+            "description": "Small in size but a master of deception.",
+            "category": "hero",
+            "keywords": ["Goblin", "Vehicle"],
+            "models": [
+                {
+                    "name": "Goblin Warboss on Wolf Chariot",
+                    "movement": 10,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 8,
+                    "reflexes": 6,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "goblin_tactics", "x": 1}, {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle", "String": "scout"}],
+                    "weapons": [{"id": "handweapon", "count": 3}, {"id": "claws", "count": 4}],
+                    "options": [
+                        {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "lance", "count": 3}]},
+                        {"addWeapon": ["short_bow"]},
+                        {"addRule": [{"id": "icon", "x": "Vehicle"}]},
+                        {"replaceRule": [{"id": "goblin_tactics", "x": 1}], "withRule": [{"id": "goblin_tactics", "x": 2}]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_shaman": {
+            "name": "Goblin Shaman",
+            "description": "Miniscule in size but still a fearsome wizard.",
+            "category": "hero",
+            "keywords": ["Goblin", "Infantry"],
+            "models": [
+                {
+                    "name": "Goblin Shaman",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+                    "weapons": ["handweapon", "staff"],
+                    "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_shaman_spider": {
+            "name": "Goblin Shaman on Giant Spider",
+            "description": "Miniscule in size but still a fearsome wizard.",
+            "category": "hero",
+            "keywords": ["Goblin", "Cavalry"],
+            "models": [
+                {
+                    "name": "Goblin Shaman on Giant Spider",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "rules": [{"id": "leader_x", "x": "Infantry. Cavalry"}, {"id": "power", "x": 1}, "strider", {"id": "wounds", "x": 2}],
+                    "weapons": ["handweapon", "staff", {"id": "spider_bite", "count": 2}],
+                    "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_shaman_wolf": {
+            "name": "Goblin Shaman on Dire Wolf",
+            "description": "Miniscule in size but still a fearsome wizard.",
+            "category": "hero",
+            "keywords": ["Goblin", "Infantry"],
+            "models": [
+                {
+                    "name": "Goblin Shaman on Dire Wolf",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "rules": [{"id": "leader_x", "x": "Infantry. Cavalry"}, {"id": "power", "x": 1}, "scout", {"id": "wounds", "x": 2}],
+                    "weapons": ["handweapon", "staff", {"id": "claws", "count": 2}],
+                    "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_shaman_beast": {
+            "name": "Goblin Shaman on Cave Beast",
+            "description": "Miniscule in size but still a fearsome wizard.",
+            "category": "hero",
+            "keywords": ["Goblin", "Cavalry"],
+            "models": [
+                {
+                    "name": "Goblin Shaman on Cave Beast",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "rules": ["agile", "crazed", "evasive", {"id": "leader_x", "x": "Infantry. Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+                    "weapons": ["handweapon", "staff", {"id": "fangs_and_teeth", "count": 2}],
+                    "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_shaman_wolf_chariot": {
+            "name": "Goblin Shaman on Wolf Chariot",
+            "description": "Miniscule in size but still a fearsome wizard.",
+            "category": "hero",
+            "keywords": ["Goblin", "Vehicle"],
+            "models": [
+                {
+                    "name": "Goblin Shaman on Wolf Chariot",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "power", "x": 1}, "scout"],
+                    "weapons": ["handweapon", "staff", {"id": "claws", "count": 4}],
+                    "options": [{"replaceWeapon": ["handweapon", "staff"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_warriors": {
+            "name": "Orc Warriors",
+            "description": "Stronger and better equipped than the goblins.",
+            "category": "core",
+            "keywords": ["Orc", "Infantry"],
+            "models": [
+                {
+                    "name": "Orc Warrior",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "weapons": ["handweapon"],
+                    "options": [
+                        {"replaceWeapon": ["handweapon"], "withWeapon": ["spear", {"id": "handweapon", "count": 2}, "polearm", "great_weapon"]},
+                        {"replaceWeapon": ["handweapon"], "withWeapon": ["grand_weapon"], "modelLimit": "1/5"},
+                        {"addRule": ["light_armor"], "modelLimit": "all"}
+                    ],
+                    "min": 10,
+                    "max": 20
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+        },
+        "orc_arbalests": {
+            "name": "Orc Arbalests",
+            "description": "Stronger, better equipped, and a surprisingly good shot.",
+            "category": "core",
+            "keywords": ["Orc", "Infantry"],
+            "models": [
+                {
+                    "name": "Orc Arbalest",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "weapons": ["bow", "light_handweapon"],
+                    "options": [{"replaceWeapon": ["bow"], "withWeapon": ["crossbow"], "modelLimit": "all"}, {"addRule": ["light_armor"], "modelLimit": "all"}],
+                    "min": 10,
+                    "max": 20
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+        },
+        "goblins": {
+            "name": "Goblins",
+            "description": "Small and weak, making up this weakness trough their sheer numbers.",
+            "category": "core",
+            "keywords": ["Goblin", "Infantry"],
+            "models": [
+                {
+                    "name": "Goblin",
+                    "movement": 6,
+                    "courage": 4,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 4,
+                    "reflexes": 5,
+                    "weapons": ["handweapon", "shield"],
+                    "options": [
+                        {"replaceWeapon": ["handweapon", "shield"], "withWeapon": [["short_bow", "light_handweapon"], ["spear", "shield"], "heavy_flail"]},
+                        {"replaceWeapon": ["handweapon", "shield"], "withWeapon": [["net_and_spear"]], "modelLimit": "1/5"}
+                    ],
+                    "min": 10,
+                    "max": 20
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+        },
+        "goblin_spider_riders": {
+            "name": "Goblin Spider Riders",
+            "description": "Goblins that have tamed various kinds of deadly spiders and ride them into battle.",
+            "category": "core",
+            "keywords": ["Goblin", "Cavalry"],
+            "models": [
+                {
+                    "name": "Goblin Spider Rider",
+                    "movement": 8,
+                    "courage": 4,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "rules": ["strider"],
+                    "weapons": ["spear", "short_bow", {"id": "spider_bite", "count": 2}],
+                    "min": 5,
+                    "max": 15
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+        },
+        "goblin_wolf_riders": {
+            "name": "Goblin Wolf Riders",
+            "description": "Goblins that have tamed various kinds of feral wolves and ride them into battle.",
+            "category": "core",
+            "keywords": ["Goblin", "Cavalry"],
+            "models": [
+                {
+                    "name": "Goblin Wolf Rider",
+                    "movement": 8,
+                    "courage": 4,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "rules": ["scout"],
+                    "weapons": ["handweapon", "short_bow", {"id": "claws", "count": 2}],
+                    "options": [{"replaceWeapon": ["handweapon"], "withWeapon": ["spear"], "modelLimit": "all"}],
+                    "min": 5,
+                    "max": 15
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+        },
+        "goblin_wolf_chariot": {
+            "name": "Goblin Wolf Chariot",
+            "description": "Goblins that ride into battle in a chariot.",
+            "category": "elite",
+            "keywords": ["Goblin", "Vehicle"],
+            "models": [
+                {
+                    "name": "Goblin Wolf Chariot",
+                    "movement": 10,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 8,
+                    "reflexes": 5,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, "scout"],
+                    "weapons": ["handweapon", "short_bow", {"id": "claws", "count": 4}],
+                    "options": [{"replaceWeapon": ["handweapon"], "withWeapon": ["spear"]}, {"addRule": ["banner"]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_assassins": {
+            "name": "Goblin Assassins",
+            "description": "Small and weak, making up this weakness trough their poison-coated weapons.",
+            "category": "elite",
+            "keywords": ["Goblin", "Infantry"],
+            "models": [
+                {
+                    "name": "Goblin Assassin",
+                    "movement": 6,
+                    "courage": 4,
+                    "shoot": 5,
+                    "fight": 5,
+                    "defense": 4,
+                    "reflexes": 5,
+                    "rules": ["ambush", "assassin", "evasive"],
+                    "weapons": [{"id": "lethal_handweapon", "count": 2}],
+                    "min": 5,
+                    "max": 10
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}]
+        },
+        "orc_brutes": {
+            "name": "Orc Brutes",
+            "description": "Bigger than their common brethren, wielding massive weapons.",
+            "category": "elite",
+            "keywords": ["Orc", "Heavy Infantry"],
+            "models": [
+                {
+                    "name": "Orc Brute",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": [{"id": "wounds", "x": 2}],
+                    "weapons": [{"id": "great_weapon", "count": 3}],
+                    "options": [
+                        {
+                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+                            "withWeapon": [{"id": "grand_weapon", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "great_polearm", "count": 3}]
+                        },
+                        {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [[{"id": "great_weapon", "count": 2}, "gauntlet"]], "modelLimit": "1/3"}
+                    ],
+                    "min": 3,
+                    "max": 9
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+        },
+        "orc_boar_riders": {
+            "name": "Orc Boar Riders",
+            "description": "Wild swine are just as bad-tempered as the savage orcs who ride them, making for a devastating force.",
+            "category": "elite",
+            "keywords": ["Orc", "Cavalry"],
+            "models": [
+                {
+                    "name": "Orc Boar Rider",
+                    "movement": 8,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "rules": [{"id": "impact", "x": 3}],
+                    "weapons": ["handweapon", {"id": "boar_tusks", "count": 2}],
+                    "options": [
+                        {"replaceWeapon": ["handweapon"], "withWeapon": ["lance", {"id": "heavy_handweapon", "count": 2}], "modelLimit": "all"},
+                        {"replaceWeapon": ["handweapon"], "withWeapon": ["grand_weapon"], "modelLimit": "1/3"},
+                        {"addRule": ["light_armor"], "modelLimit": "all"}
+                    ],
+                    "min": 3,
+                    "max": 9
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+        },
+        "orc_boar_chariot": {
+            "name": "Orc Boar Chariot",
+            "description": "Wild swine are just as bad-tempered as the savage orcs who ride them, making for a devastating force.",
+            "category": "elite",
+            "keywords": ["Orc", "Vehicle"],
+            "models": [
+                {
+                    "name": "Orc Boar Chariot",
+                    "movement": 10,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 9,
+                    "reflexes": 5,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}],
+                    "weapons": ["handweapon", {"id": "boar_tusks", "count": 4}],
+                    "options": [{"replaceWeapon": ["handweapon"], "withWeapon": ["grand_weapon", "lance", {"id": "heavy_handweapon", "count": 2}]}, {"addRule": ["banner"]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "goblin_knights": {
+            "name": "Goblin Knights",
+            "description": "Insane goblins riding ferocious cave-beasts.",
+            "category": "elite",
+            "keywords": ["Goblin", "Cavalry"],
+            "models": [
+                {
+                    "name": "Goblin Knight",
+                    "movement": 8,
+                    "courage": 4,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "rules": ["agile", "evasive", "crazed"],
+                    "weapons": [{"id": "light_handweapon", "count": 2}, {"id": "fangs_and_teeth", "count": 2}],
+                    "options": [{"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": ["lance"], "modelLimit": "all"}],
+                    "min": 3,
+                    "max": 6
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+        },
+        "trolls": {
+            "name": "Trolls",
+            "description": "Massive dimwitted brutes with the ability to shrug off wounds that would kill a man.",
+            "category": "rare",
+            "keywords": ["Monster"],
+            "models": [
+                {
+                    "name": "Troll",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "monstrous_regeneration"],
+                    "weapons": [{"id": "fangs_and_teeth", "count": 3}, "grand_hammer", "rock_throw"],
+                    "min": 3,
+                    "max": 6
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+        },
+        "hobgoblin_grenadiers": {
+            "name": "Hobgoblin Grenadiers",
+            "description": "Larger and more cunning than normal goblins, using makeshift explosives to overwhelm their foes.",
+            "category": "elite",
+            "keywords": ["Goblin", "Infantry"],
+            "models": [
+                {
+                    "name": "Hobgoblin Grenadier",
+                    "movement": 6,
+                    "courage": 4,
+                    "shoot": 6,
+                    "fight": 5,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "weapons": ["makeshift_bombs", {"id": "light_handweapon", "count": 2}],
+                    "min": 5,
+                    "max": 20
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+        },
+        "orc_bolt_thrower": {
+            "name": "Bolt Thrower",
+            "description": "A crude scorpio bolt thrower, manned by greenskins.",
+            "category": "rare",
+            "keywords": ["Orc", "Artillery", "Warmachine"],
+            "models": [
+                {"name": "Bolt Thrower", "movement": 5, "courage": 5, "shoot": 7, "fight": 0, "defense": 5, "reflexes": 5, "rules": [{"id": "wounds", "x": 3}], "weapons": ["bolt_thrower"], "min": 1, "max": 1}
+            ]
+        },
+        "troll_with_goblins": {
+            "name": "Crawler Troll",
+            "description": "A degenerate, mutant troll which can be mounted by greenskin.",
+            "category": "rare",
+            "keywords": ["Goblin", "Monster"],
+            "models": [
+                {
+                    "name": "Crawler Troll",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "monstrous_regeneration", {"id": "open_topped", "x": 6}, {"id": "transport", "x": 6}],
+                    "weapons": [{"id": "fangs_and_teeth", "count": 6}, "rock_throw"],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "totem_golem": {
+            "name": "Totem Golem",
+            "description": "A giant stone totem animated by orcish magic.",
+            "category": "rare",
+            "keywords": ["Monster"],
+            "models": [
+                {
+                    "name": "Totem Golem",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 9,
+                    "reflexes": 6,
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, {"id": "heavy_impact", "x": 3}, "magic_runes"],
+                    "weapons": [{"id": "crushing_fists", "count": 8}, "rock_throw"],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "gargantuan_spider": {
+            "name": "Gargantuan Spider",
+            "description": "A terrifying spider that skitters around the battlefield.",
+            "category": "rare",
+            "keywords": ["Beast", "Monster"],
+            "models": [
+                {
+                    "name": "Gargantuan Spider",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 9,
+                    "reflexes": 6,
+                    "rules": ["ambush", {"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, "strider", "titanic"],
+                    "weapons": [{"id": "fangs_and_claws", "count": 10}],
+                    "options": [{"addWeapon": ["net_launcher"]}, {"addRule": [[{"id": "transport", "x": 6}, {"id": "open_topped", "x": 6}]]}],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "gargantuan_cave_beast": {
+            "name": "Gargantuan Cave Beast",
+            "description": "A massive cave beast that crushes anything undet their foot.",
+            "category": "rare",
+            "keywords": ["Monster"],
+            "models": [
+                {
+                    "name": "Gargantuan Cave Beast",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 7,
+                    "reflexes": 6,
+                    "rules": ["agile", "evasive", "crazed", {"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 6}, "titanic"],
+                    "weapons": [{"id": "fangs_and_claws", "count": 4}, "arcing_spit"],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "orc_trebuchet": {
+            "name": "Trebuchet",
+            "description": "A crude trebuchet flinging deadly rocks across the battlefield.",
+            "category": "rare",
+            "keywords": ["Orc", "Artillery", "Warmachine"],
+            "models": [{"name": "Trebuchet", "movement": 5, "courage": 5, "shoot": 7, "fight": 0, "defense": 5, "reflexes": 5, "rules": [{"id": "wounds", "x": 3}], "weapons": ["trebuchet"], "min": 1, "max": 1}]
+        },
+        "goblin_flinger": {
+            "name": "Goblin Flinger",
+            "description": "A warmachine that shoots goblin with wings across the battlefield.",
+            "category": "rare",
+            "keywords": ["Goblin", "Artillery", "Warmachine"],
+            "models": [
+                {
+                    "name": "Goblin Flinger",
+                    "movement": 5,
+                    "courage": 5,
+                    "shoot": 7,
+                    "fight": 0,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "rules": [{"id": "wounds", "x": 3}],
+                    "weapons": ["goblin_flinger"],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        }
+    },
+    "weapons": {
+        "gauntlet": {"name": "Scythed Gauntlet", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["buckler"]},
+        "attack_beast": {"name": "Attack Beast", "attacks": 2, "ap": 1, "short": "Melee", "rules": ["cumbersome"]},
+        "makeshift_bombs": {"name": "Makeshift Explosive", "attacks": 1, "ap": 3, "short": 9, "rules": ["assault"]},
+        "bolt_thrower": {"name": "Bolt Thrower", "attacks": 1, "ap": 5, "short": 18, "medium": 36, "rules": [{"id": "deadly", "x": 6}, "sniper"]},
+        "boar_tusks": {"name": "Boar Tusks", "ap": 1, "attacks": 1, "short": "Melee", "rules": ["lance"]},
+        "legend_bonecrusher": {"name": "Bonecrusher", "attacks": 3, "short": "Melee", "ap": 6, "rules": ["cumbersome", "lethal"]},
+        "arcing_spit": {"name": "Arcing Spit", "attacks": 3, "short": 15, "medium": 30, "ap": 2, "rules": [{"id": "blast", "x": 2}, "indirect"]},
+        "goblin_flinger": {"name": "Goblin Flinger", "attacks": 1, "short": 15, "medium": 30, "ap": 3, "rules": [{"id": "blast", "x": 3}, "indirect", "salvo", "scatter"]}
+    },
+    "rules": {
+        "legend_banner": {
+            "name": "Frenzy Banner",
+            "description": "When this unit is activated, choose a friendly Infantry unit within 6\". That unit's hit rolls of 1 or 2 cause an additional hit until the end of the round."
+        },
+        "goblin_tactics": {
+            "name": "Goblin Tactics",
+            "inputs": ["x"],
+            "description": "When this unit is activated, choose up to X friendly _Goblin_ _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Initiative tests of 9+",
+            "points": ["rule.x", {"multiply": 10}]
+        },
+        "orc_tactics": {
+            "name": "Orc Tactics",
+            "inputs": ["x"],
+            "description": "When this unit is activated, choose up to X friendly _Orc_ _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Strength tests of 9+ \n * Re-roll failed Initiative tests of 9+",
+            "points": ["rule.x", {"multiply": 10}]
+        },
+        "magic_runes": {"name": "Magic Runes", "description": "Once per turn, for every model with this rule, add +1 to a cast roll of a friendly Power model within 6“ of this unit.", "points": 5}
+    },
+    "powers": {
+        "mind_blast": {"name": "Mind Blast", "description": "Target enemy unit within 24\" takes 7 hits with AP(1).", "charge": 5},
+        "reality_rift": {
+            "name": "Reality Rift",
+            "description": "Target friendly unit within 12\" may move up to 12\" ignoring all models and terrain. This must end outside of 9\" of any enemy units.",
+            "charge": 6
+        },
+        "warpath": {"name": "Warpath", "description": "Target friendly unit within 6\" may immediately make a free charge action.", "charge": 7}
+    },
+    "strategies": [
+        {"name": "Here We Go!", "phase": "activation", "description": "Use when a unit declares a Charge action. That unit gets +3\" of Movement for that action.", "cost": 1},
+        {
+            "name": "Smash Them",
+            "phase": "activation",
+            "flavor": "It's about time we got to fighting.",
+            "description": "Use when an _Infantry_ unit performs a Fight action. Hit rolls of 1 or 2 cause an additional hit.",
+            "cost": 1
+        },
+        {
+            "name": "Tough Ones",
+            "phase": "activation",
+            "flavor": "These Orcs are some of the toughest you've ever seen.",
+            "description": "Use before taking Save rolls for an _Infantry_ unit. It gets +1 Save.",
+            "cost": 2
+        }
+    ],
+    "relics": [
+        {
+            "name": "Frenzy Banner",
+            "description": "Upgrade one _Leader_ model with Frenzy Banner.",
+            "flavor": "A crimson banner, dyed in the blood of the Warboss's greatest kills, inciting an endless rage in their followers.",
+            "points": 5,
+            "rule": "legend_banner"
+        },
+        {
+            "name": "Bonecrusher",
+            "description": "Replace one _Leader_ model's Greatweapon with Bonecrusher.",
+            "flavor": "This legendary weapon infuses its wielder with unbound ferocity.",
+            "points": 5,
+            "weapon": "legend_bonecrusher"
+        },
+        {
+            "name": "Glowing Charm",
+            "description": "Upgrade one _Leader_ model with Regeneration.",
+            "flavor": "This talisman is made out bones engraved with magical runes, granting its wearer the healing abilities of a troll.",
+            "points": 10,
+            "rule": "regeneration"
+        }
+    ]
+}

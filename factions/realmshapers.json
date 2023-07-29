@@ -1,0 +1,245 @@
+{
+    "name": "Realmshapers",
+    "id": "realmshapers",
+    "author": "Xekon#8266",
+    "alliance": "destruction",
+    "units": {
+        "druid": {
+            "name": "Druid",
+            "description": "A mystical spellcaster, rousing the realm from its slumber.",
+            "category": "hero",
+            "models": [
+                {
+                    "name": "Druid",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "weapons": ["staff", "handweapon"],
+                    "options": [
+                        {"replaceWeapon": ["staff", "handweapon"], "withWeapon": [{"id": "polearm", "count": 2}, {"id": "great_staff", "count": 2}, {"id": "great_weapon", "count": 2}]},
+                        {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
+                    ],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "power", "x": 1}, {"id": "melee_tactics", "x": 1}, "leader"],
+                    "min": 1,
+                    "max": 1
+                }
+            ],
+            "subfactions": ["none"],
+            "options": [{"addModel": "animated_construct", "modelLimit": 5}]
+        },
+        "wildborn": {
+            "name": "Wildborn",
+            "description": "Empowered by the magic of the realm, these brave warriors attack with the fury of the wilds.",
+            "category": "core",
+            "models": [
+                {
+                    "name": "Wildborn",
+                    "movement": 6,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 5,
+                    "reflexes": 5,
+                    "min": 10,
+                    "max": 20,
+                    "weapons": ["spear"],
+                    "options": [{"replaceWeapon": ["spear"], "withWeapon": [["crossbow", "light_handweapon"], ["javelin", "spiked_buckler"]], "modelLimit": "all"}]
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+            "subfactions": ["none"]
+        },
+        "dryads": {
+            "name": "Dryads",
+            "description": "Feral spirits of the forest, lashing out at anyone who dares to enter their woods.",
+            "category": "core",
+            "models": [{"name": "Dryad", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "weapons": [{"id": "claws", "count": 2}], "min": 10, "max": 20}],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+            "subfactions": ["none"]
+        },
+        "deathwalkers": {
+            "name": "Deathwalkers",
+            "description": "Veterans of the Hunt, these Wildborn have taken on a spiritual journey to slay great beasts and men alike.",
+            "category": "core",
+            "models": [
+                {
+                    "name": "Deathwalkers",
+                    "movement": 6,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "min": 5,
+                    "max": 15,
+                    "weapons": [{"id": "handweapon", "count": 3}],
+                    "rules": ["fearless"],
+                    "options": [{"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}]}]
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+            "subfactions": ["none"]
+        },
+        "earth_elemental": {
+            "name": "Earth Elementals",
+            "description": "Animated by the magic of the druids, these crumbling golems strike out at anyone who doesn't flee at their sight.",
+            "category": "elite",
+            "models": [
+                {
+                    "name": "Earth Elemental",
+                    "movement": 5,
+                    "courage": 5,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 5,
+                    "weapons": [{"id": "crushing_fists", "count": 2}],
+                    "min": 1,
+                    "max": 3,
+                    "rules": ["fearless", {"id": "wounds", "x": 3}]
+                }
+            ],
+            "subfactions": ["none"],
+            "keywords": ["Monster"]
+        },
+        "greater_earth_elemental": {
+            "name": "Greater Earth Elemental",
+            "description": "Animated by the magic of the druids, this crumbling golem strikes out at anyone who doesn't flee at its sight.",
+            "category": "rare",
+            "models": [
+                {
+                    "name": "Greater Earth Elemental",
+                    "movement": 5,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 7,
+                    "defense": 9,
+                    "reflexes": 5,
+                    "weapons": [{"id": "crushing_fists", "count": 4}],
+                    "min": 1,
+                    "max": 1,
+                    "rules": ["fearless", {"id": "wounds", "x": 3}]
+                }
+            ],
+            "subfactions": ["none"],
+            "keywords": ["Monster"]
+        },
+        "warpwolves": {
+            "name": "Warpwolves",
+            "description": "Overtaken by the beastial spirits within, these human-wolf hybrids are a flurry of fangs and steel.",
+            "category": "elite",
+            "models": [
+                {
+                    "name": "Warpwolf",
+                    "movement": 7,
+                    "courage": 6,
+                    "shoot": 5,
+                    "fight": 6,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "min": 5,
+                    "max": 15,
+                    "weapons": [{"id": "fangs_and_teeth", "count": 2}, "great_axe"]
+                }
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+            "subfactions": ["none"],
+            "keywords": ["Beast"]
+        },
+        "warpwolf_alpha": {
+            "name": "Warpwolf Alpha",
+            "description": "A pack of wolves has to be led by a alpha, hunting down great prey and making sure their pack doesn't disolve into anarchy.",
+            "category": "hero",
+            "models": [
+                {
+                    "name": "Warpwolf Alpha",
+                    "movement": 7,
+                    "courage": 7,
+                    "shoot": 5,
+                    "fight": 7,
+                    "defense": 6,
+                    "reflexes": 6,
+                    "min": 1,
+                    "max": 1,
+                    "weapons": [{"id": "fangs_and_teeth", "count": 3}, {"id": "great_axe", "count": 2}],
+                    "rules": [{"id": "wounds", "x": 3}, {"id": "leader_x", "x": "Beast"}, {"id": "melee_tactics", "x": 2}]
+                }
+            ],
+            "subfactions": ["none"],
+            "keywords": ["Beast"]
+        },
+        "great_wolves": {
+            "name": "Great Wolves",
+            "description": "A pack of Wolves, roused by ancient magic and the natural connection between the realmshapers and the creatures of the land.",
+            "category": "core",
+            "models": [
+                {"name": "Great Wolf", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "min": 5, "max": 20, "weapons": [{"id": "fangs_and_teeth", "count": 2}]}
+            ],
+            "options": [{"addRule": ["champion"], "modelLimit": 1}],
+            "subfactions": ["none"],
+            "keywords": ["Beast"]
+        }
+    },
+    "weapons": {
+        "roots": {"name": "Piercing Roots", "ap": 4, "attacks": 1, "short": "Melee", "rules": [{"id": "reach", "x": 2}]},
+        "impaling_claws": {
+            "name": "Impaling Claws",
+            "profiles": [{"name": "Cleave", "ap": 6, "attacks": 1, "short": "Melee", "rules": ["lethal"]}, {"name": "Sweep", "ap": 5, "attacks": 3, "short": "Melee"}]
+        },
+        "wild_staff": {"name": "Wildwood Staff", "attacks": 1, "ap": 6, "short": "Melee", "rules": [{"id": "reach", "x": 1}]},
+        "wild_blade": {"name": "Wildwood Blade", "attacks": 1, "ap": 7, "short": "Melee", "rules": ["lethal"]}
+    },
+    "models": {
+        "animated_construct": {
+            "name": "Animated Construct",
+            "movement": 5,
+            "courage": 5,
+            "shoot": 5,
+            "fight": 5,
+            "defense": 5,
+            "reflexes": 5,
+            "weapons": [{"id": "handweapon", "count": 2}],
+            "min": 1,
+            "max": 1,
+            "rules": ["fearless"]
+        }
+    },
+    "rules": {"companion": {"name": "Arcane Companion", "description": "Once per turn when a power within 24“ of this model gets dispelled, deal 1 hit with AP(2) to the caster.", "points": 5}},
+    "powers": {
+        "curse_of_pain": {
+            "name": "Curse of Pain",
+            "description": "Target enemy unit within 18\". Until the end of the round, each time that unit rolls a 9 or 10 on a save roll, it takes 1 hit with AP(2).",
+            "charge": 6
+        },
+        "rejuvenate": {"name": "Rejuvenate", "description": "Target friendly _Beast_ or _Monster_ unit within 12\" restores 1D3 wounds.", "charge": 5},
+        "stoneskin": {"name": "Stoneskin", "description": "Target friendly unit within 12\" may re-roll one failed die on its next Save test.", "charge": 7}
+    },
+    "strategies": [
+        {
+            "name": "Realmblood",
+            "phase": "activation",
+            "description": "Use before activating a unit. That unit may immediately heal 1 point of damage suffered.",
+            "flavor": "The realm courses with ancient magic, those who can access it are being restored to old might.",
+            "cost": 2
+        },
+        {
+            "name": "Savage Counter",
+            "phase": "activation",
+            "description": "Use when a _Infantry_ or _Beast_ unit makes a Counter-attack reaction. That unit has +1 Strength for that attack.",
+            "flavor": "The forces of nature strike back with the fury of a storm.",
+            "cost": 1
+        },
+        {
+            "name": "Bloodthirst",
+            "phase": "activation",
+            "description": "Use when a unit declares a Charge action. That unit gets +3\" of Movement for that action.",
+            "flavor": "The smell of blood entices both men and beast alike.",
+            "cost": 1
+        }
+    ],
+    "relics": [],
+    "color": "#0f3923"
+}

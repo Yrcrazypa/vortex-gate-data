@@ -1,0 +1,521 @@
+{
+  "id": "abyss_daemons",
+  "name": "Daemons of the Abyss",
+  "author": "Valgaav#9072",
+  "units": {
+    "abyssal_champion": {
+      "name": "Abyssal Champion",
+      "description": "A demonic lord, commanding their warband.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Abyssal Champion",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "melee_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "heavy_ccw", "count": 3}],
+          "options": [
+            {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
+            {"addRule": [{"name": "Wings", "id": "fly"}, {"id": "power", "x": 1}, {"id": "icon", "x": "Infantry"}]},
+            {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
+            {"replaceRule": {"id": "melee_tactics", "x": 1}, "withRule": {"id": "melee_tactics", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "abyssal_champion_on_warbeast": {
+      "name": "Abyssal Champion on Warbeast",
+      "description": "A demonic lord, commanding their warband atop an unstoppable beast.",
+      "category": "hero",
+      "subfactions": ["assault_focus"],
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Abyssal Champion on Warbeast",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "melee_tactics", "x": 2}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "heavy_ccw", "count": 3}, {"id": "warbeast_horn", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
+            {"addRule": [{"id": "power", "x": 1}, {"id": "icon", "x": "Infantry, Cavalry"}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "abyssal_champion_mount": {
+      "name": "Abyssal Champion on Infernal Steed",
+      "description": "A demonic lord, commanding their warband atop a loyal mount.",
+      "category": "hero",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Abyssal Champion on Infernal Steed",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "melee_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "heavy_ccw", "count": 3}, {"id": "hooves_and_teeth", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_staff", "count": 3}, {"id": "energy_staff", "count": 3}]},
+            {"addRule": [{"id": "power", "x": 1}, {"id": "icon", "x": "Infantry, Cavalry"}, {"name": "Wings", "id": "fly"}]},
+            {"replaceRule": {"id": "melee_tactics", "x": 1}, "withRule": {"id": "melee_tactics", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "abyssal__champion_chariot": {
+      "name": "Abyssal Champion on Chariot",
+      "description": "A demonic leader, commanding their warband atop a demonic chariot.",
+      "category": "hero",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Abyssal Champion on Chariot",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 5,
+          "rules": ["damage_chart", {"id": "heavy_impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "melee_tactics", "x": 1}],
+          "weapons": [{"id": "heavy_ccw", "count": 3}, {"id": "fangs_and_teeth", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
+            {"addRule": [{"id": "power", "x": 1}]},
+            {"replaceRule": {"id": "melee_tactics", "x": 1}, "withRule": {"id": "melee_tactics", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "abyssal_sorcerer": {
+      "name": "Abyssal Sorcerer",
+      "description": "A demonic mage using infernal magic.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Abyssal Sorcerer",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "energy_staff", "count": 2}, "heavy_ccw"],
+          "options": [
+            {"addRule": [{"name": "Wings", "id": "fly"}]},
+            {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "abyssal_sorcerer_mount": {
+      "name": "Abyssal Sorcerer on Infernal Steed",
+      "description": "A demonic mage using infernal magic atop a loyal mount.",
+      "category": "hero",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Abyssal Sorcerer on Infernal Steed",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "energy_staff", "count": 2}, "heavy_ccw", {"id": "hooves_and_teeth", "count": 2}],
+          "options": [{"addRule": [{"name": "Wings", "id": "fly"}]}, {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "abyssal_sorcerer_chariot": {
+      "name": "Abyssal Sorcerer on Chariot",
+      "description": "A demonic mage using infernal magic atop a demonic chariot.",
+      "category": "hero",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Abyssal Sorcerer on Chariot",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 9,
+          "reflexes": 5,
+          "rules": ["damage_chart", {"id": "heavy_impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "power", "x": 2}],
+          "weapons": [{"id": "energy_staff", "count": 2}, "heavy_ccw", {"id": "fangs_and_teeth", "count": 2}],
+          "options": [{"replaceRule": {"id": "power", "x": 2}, "withRule": {"id": "power", "x": 3}}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "demonic_champion": {
+      "name": "Demonic Champion",
+      "description": "A massive demon gifted by the dark gods.",
+      "category": "hero",
+      "keywords": ["Monster"],
+      "models": [
+        {
+          "name": "Demonic Champion",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 10,
+          "reflexes": 7,
+          "rules": ["damage_chart", "leader", {"id": "melee_tactics", "x": 2}, {"id": "power", "x": 1}],
+          "weapons": [{"id": "daemon_sword", "count": 3}, {"id": "daemon_claws", "count": 2}],
+          "options": [
+            {"replaceWeapon": {"id": "daemon_sword", "count": 3}, "withWeapon": [{"id": "daemon_axe", "count": 3}, {"id": "daemon_claws", "count": 4}]},
+            {"addRule": [{"name": "Wings", "id": "fly"}]},
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "greater_abyssal": {
+      "name": "Greater Abyssal",
+      "description": "Gigantic commanders of the abyssal forces.",
+      "category": "hero",
+      "keywords": ["Monster"],
+      "models": [
+        {
+          "name": "Greater Abyssal",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 7,
+          "fight": 7,
+          "defense": 13,
+          "reflexes": 7,
+          "rules": ["damage_chart", "leader", {"id": "melee_tactics", "x": 2}, {"id": "power", "x": 2}, "titanic"],
+          "weapons": [{"id": "daemon_sword", "count": 6}, {"id": "daemon_claws", "count": 4}],
+          "options": [
+            {
+              "replaceWeapon": {"id": "daemon_sword", "count": 6},
+              "withWeapon": [{"id": "daemon_axe", "count": 6}, {"id": "daemon_claws", "count": 10}, [{"id": "daemon_sword", "count": 3}, {"id": "barbed_whip", "count": 4}]]
+            },
+            {"addRule": [{"name": "Wings", "id": "fly"}]},
+            {"replaceRule": {"id": "power", "x": 2}, "withRule": [{"id": "power", "x": 3}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "lesser_abyssals": {
+      "name": "Lesser Abyssals",
+      "description": "The most common of the demonic warriors, swarming the battlefield in great numbers.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Lesser Abyssal",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": ["heavy_ccw"],
+          "options": [{"replaceWeapon": ["heavy_ccw"], "withWeapon": ["heavy_energy_sword", {"id": "heavy_ccw", "count": 2}], "modelLimit": "all"}],
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "lesser_abyssals_warbeast": {
+      "name": "Lesser Abyssals on Warbeasts",
+      "description": "A swarm of lesser demons riding atop unstoppable beasts.",
+      "category": "elite",
+      "subfactions": ["assault_focus"],
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Lesser Abyssal on Warbeast",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
+          "weapons": ["heavy_ccw", {"id": "warbeast_horn", "count": 2}],
+          "options": [{"replaceWeapon": ["heavy_ccw"], "withWeapon": ["heavy_energy_sword", {"id": "heavy_ccw", "count": 2}], "modelLimit": "all"}],
+          "min": 3,
+          "max": 15
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "flying_abyssals": {
+      "name": "Flying Abyssals",
+      "description": "Vicious flying predators of the Abyss.",
+      "category": "elite",
+      "models": [
+        {"name": "Flying Abyssal", "movement": 8, "courage": 5, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["fangs_and_teeth"], "rules": ["fear", "fly"], "min": 5, "max": 15}
+      ]
+    },
+    "abyssal_guard": {
+      "name": "Abyssal Guard",
+      "description": "Powerful and well-equipped elite warriors.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Abyssal Guard",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "weapons": [{"id": "heavy_ccw", "count": 2}],
+          "options": [{"replaceWeapon": [{"id": "heavy_ccw", "count": "2"}], "withWeapon": [{"id": "heavy_energy_sword", "count": 2}], "modelLimit": "all"}],
+          "min": 5,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "abyssal_hounds": {
+      "name": "Abyssal Hounds",
+      "description": "Demonic hounds that hunt in large packs.",
+      "category": "elite",
+      "keywords": ["Beast"],
+      "models": [{"name": "Abyssal Hound", "movement": 7, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 6, "weapons": [{"id": "fangs_and_teeth", "count": 2}], "min": 5, "max": 10}]
+    },
+    "abyssal_cavalry": {
+      "name": "Abyssal Cavalry",
+      "description": "A horde of demonic riders.",
+      "category": "elite",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Abyssal Cavalry",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}],
+          "weapons": ["heavy_ccw", {"id": "hooves_and_teeth", "count": 2}],
+          "options": [
+            {"replaceWeapon": ["heavy_ccw"], "withWeapon": ["heavy_energy_sword", {"id": "heavy_ccw", "count": 2}], "modelLimit": "all"},
+            {"addRule": [{"name": "Wings", "id": "fly"}], "modelLimit": "all"}
+          ],
+          "min": 5,
+          "max": 15
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "exalted_abyssals": {
+      "name": "Exalted Abyssals",
+      "description": "Massive warriors of the abyss, these demons rend apart their enemies with ease.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Exalted Abyssal",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "rules": ["conclave", {"id": "wounds", "x": 2}],
+          "weapons": [{"id": "heavy_energy_sword", "count": 3}],
+          "options": [{"addRule": [{"name": "Wings", "id": "fly"}], "modelLimit": "all"}, {"addRule": ["disk_of_change"], "subfactions": ["power_focus"], "modelLimit": "all"}],
+          "min": 3,
+          "max": 12
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "exalted_cavalry": {
+      "name": "Exalted Abyssal Cavalry",
+      "description": "A horde of elite demonic riders.",
+      "category": "elite",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Exalted Abyssal Cavalry",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
+          "weapons": [{"id": "heavy_energy_sword", "count": 3}, {"id": "hooves_and_teeth", "count": 2}],
+          "options": [{"addRule": [{"name": "Wings", "id": "fly"}], "modelLimit": "all"}],
+          "min": 3,
+          "max": 12
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "abyssal_chariot": {
+      "name": "Abyssal Chariot",
+      "description": "A demonic chariot.",
+      "category": "elite",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Abyssal Chariot",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 9,
+          "reflexes": 5,
+          "rules": ["damage_chart", {"id": "heavy_impact", "x": 3}],
+          "weapons": [{"id": "heavy_ccw", "count": 4}, {"id": "fangs_and_teeth", "count": 2}],
+          "options": [{"addRule": "banner"}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "flamebearers": {
+      "name": "Flamebearers",
+      "description": "These demons blast their foes with eldritch fire.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Flamebearer",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": ["ccw", "firebolts"],
+          "options": [{"replaceWeapon": ["firebolts"], "withWeapon": ["flamethrower"], "modelLimit": "all"}],
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "succubi": {
+      "name": "Succubi",
+      "description": "Shapeshifting demons, masters of fooling their enemies. ",
+      "category": "elite",
+      "models": [
+        {"name": "Succubus", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 6, "rules": ["evasive", "fear"], "weapons": ["barbed_whip"], "min": 10, "max": 20}
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "warp_beast": {
+      "name": "Warp Beast",
+      "description": "An amalgamation of corupted flesh whose power is harnessed by a massive portal on its back.",
+      "category": "rare",
+      "subfactions": ["power_focus"],
+      "models": [
+        {
+          "name": "Warp Beast",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 0,
+          "fight": 5,
+          "defense": 11,
+          "reflexes": 5,
+          "rules": ["damage_chart", {"id": "power", "x": 1}, "vulnerable_rear"],
+          "weapons": ["crushing_maw", {"id": "enormous_claws", "count": 2}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  },
+  "weapons": {
+    "enormous_claws": {"name": "Enormous Claws", "attacks": 1, "short": "Melee", "ap": 6},
+    "crushing_maw": {"name": "Crushing Maw", "attacks": 1, "short": "Melee", "ap": 8, "rules": ["rending"]},
+    "firebolts": {"name": "Firebolt", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault", "flame"]},
+    "legend_kingslayer": {"name": "Kingslayer", "attacks": 1, "short": "Melee", "ap": 3, "rules": [{"id": "deadly", "x": 3}]},
+    "warbeast_horn": {"name": "Warbeast's Horns and Hooves", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["lance"]},
+    "hooves_and_teeth": {"name": "Hooves and Teeth", "attacks": 1, "short": "Melee"},
+    "fangs_and_teeth": {"name": "Fangs and Teeth", "attacks": 1, "short": "Melee", "ap": 2}
+  },
+  "rules": {"legend_pitlord": {"name": "Pitlord", "description": "Increase the range of this model's Leader special rule by 3\".", "points": 10}},
+  "strategies": {
+    "summoning": {
+      "name": "Summoning Rift",
+      "phase": "pre_game",
+      "description": "Up to half of any force's units, one point for each may be placed in _Ambush Reserves_ instead of deployed on the field.",
+      "flavor": "Ripping holes into the essence of reality allows the abyssal forces to appear from everywhere.",
+      "cost": "1/per"
+    },
+    "terror": {
+      "name": "Terror",
+      "phase": "activation",
+      "description": "Use when a unit within 6\" takes a Courage test. That unit suffers -1 Courage until the end of its activation.",
+      "flavor": "The nightmarish forms of the abyss dwellers can break even the strongest of wills.",
+      "cost": 1
+    },
+    "hate": {
+      "name": "Hate",
+      "phase": "activation",
+      "flavor": "Full with fury, abyssal demons can launch devastating close combat assaults.",
+      "description": "Use before an _Infantry_ unit fights. Hit rolls of 1 or 2 gain +1 AP.",
+      "cost": 1
+    }
+  },
+  "powers": {
+    "weakness": {"name": "Weakness", "description": "Target enemy unit within 12\" must re-roll one die of your choice on its next Save test.", "charge": 5},
+    "inferno": {"name": "Inferno", "description": "Target enemy unit within 12\" takes 4 hits with AP(2).", "charge": 6},
+    "helfire": {"name": "Helfire", "description": "Target enemy unit within 24\" takes 3 hits with AP(1). This power may be cast unlimited times per turn.", "charge": 7}
+  },
+  "relics": {
+    "legend_pendant": {
+      "name": "Demonic Regeneration",
+      "rule": "regeneration",
+      "description": "Upgrade one Leader model with Regeneration.",
+      "flavor": "Demonic entities are known for being hard to destroy.",
+      "points": 10
+    },
+    "legend_pitlord": {
+      "name": "Pitlord",
+      "rule": "legend_pitlord",
+      "description": "Upgrade one Leader model with Pitlord.",
+      "flavor": "The bellowing commands issued by this leader are more effective.",
+      "points": 5
+    },
+    "legend_kingslayer": {
+      "name": "Kingslayer",
+      "weapon": "legend_kingslayer",
+      "description": "Upgrade one _Leader_ model with the Kingslayer.",
+      "flavor": "A demonic blade that seeks out its own targets to slay.",
+      "points": 5
+    }
+  }
+}

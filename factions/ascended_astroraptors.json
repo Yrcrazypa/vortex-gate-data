@@ -1,0 +1,898 @@
+{
+  "id": "ascended_astroraptors",
+  "name": "Ascended Astro-Raptors",
+  "background": "Uplifted millenia ago by an unknown precursor race, the Ascended Astro-Raptors advanced from feral beasts to exploring the stars with high-tech lasers and armor.",
+  "author": "yrcrazypa#1716",
+  "units": {
+    "commander": {
+      "name": "Raptor Commander",
+      "description": "Foot infantry commander of the Ascended Astro-Raptors.",
+      "category": "hero",
+      "keywords": ["Infantry"],
+      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "raptor_tactics", "x": 1}, {"id": "wounds", "x": 2}],
+      "models": [
+        {
+          "name": "Raptor Commander",
+          "courage": 7,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "movement": 7,
+          "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 2}],
+          "options": [
+            {"replaceRule": {"id": "raptor_tactics", "x": 1}, "withRule": {"id": "raptor_tactics", "x": 2}},
+            {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
+            {"addRule": "tactical_holomap"}
+          ],
+          "rules": [],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "stormtrooper_commander": {
+      "name": "Ascendant Commander",
+      "description": "Foot infantry commander of the Ascendant Shocktroopers",
+      "category": "hero",
+      "keywords": ["Shock Trooper", "Infantry"],
+      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "raptor_tactics", "x": 1}, {"id": "wounds", "x": 2}],
+      "options": [{"addRule": {"id": "ambush", "name": "Orbital Insertion", "modelLimit": "all"}}],
+      "models": [
+        {
+          "name": "Ascendant Commander",
+          "courage": 7,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "movement": 7,
+          "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 2}],
+          "options": [
+            {"replaceRule": {"id": "raptor_tactics", "x": 1}, "withRule": {"id": "raptor_tactics", "x": 2}},
+            {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
+            {"addRule": "tactical_holomap"}
+          ],
+          "rules": [],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "raptor_assassin": {
+      "name": "Raptor Assassin",
+      "description": "A master of infiltration who swears by their easily concealable blade.",
+      "category": "elite",
+      "keywords": ["Infantry"],
+      "rules": [{"id": "wounds", "x": 2}, "assassin", "evasive", "ambush"],
+      "models": [
+        {
+          "name": "Raptor Assassin",
+          "courage": 7,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "movement": 7,
+          "weapons": [{"id": "assassins_knife", "count": 5}],
+          "rules": [],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "admiral": {
+      "name": "Admiral",
+      "description": "A high ranking official with the authority to call in airstrikes.",
+      "category": "elite",
+      "keywords": ["Infantry"],
+      "rules": [{"id": "support_x", "x": "Infantry"}, {"id": "wounds", "x": 2}],
+      "models": [
+        {
+          "name": "Admiral",
+          "courage": 7,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "movement": 7,
+          "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 3}, "strafing_run_fighter_plane"],
+          "options": [
+            {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
+            {"replaceWeapon": "strafing_run_fighter_plane", "withWeapon": ["strafing_run_heavy_plane"]}
+          ],
+          "rules": [],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "artillerist": {
+      "name": "Artillerist",
+      "description": "A trained trooper specializing in marking targets for orbital bombardment (Placeholder)",
+      "category": "elite",
+      "keywords": ["Infantry"],
+      "rules": [{"id": "wounds", "x": 2}],
+      "models": [
+        {
+          "name": "Artillerist",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 6,
+          "movement": 7,
+          "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 3}, "orbital_bombardment_light"],
+          "options": [
+            {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
+            {"replaceWeapon": "orbital_bombardment_light", "withWeapon": ["orbital_bombardment_heavy"]}
+          ],
+          "rules": [],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "psychic": {
+      "name": "Psychic",
+      "description": "A trained psychic adept at casting powers and supporting troops.",
+      "category": "hero",
+      "keywords": ["Infantry"],
+      "rules": [{"id": "leader_x", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
+      "models": [
+        {
+          "name": "Psychic",
+          "courage": 5,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "movement": 6,
+          "weapons": ["pistol", "frags", {"id": "heavy_ccw", "count": 2}],
+          "options": [
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}},
+            {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol"]},
+            {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_staff", "count": 2}]}
+          ],
+          "rules": [],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "engineer": {
+      "name": "Engineer",
+      "description": "A highly trained mechanic able to fix most issues at a moment's notice.",
+      "category": "elite",
+      "keywords": ["Infantry"],
+      "rules": [{"id": "support_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "repair", "x": 3}],
+      "models": [
+        {
+          "name": "Engineer",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "movement": 7,
+          "weapons": ["laser_pistol", "frags", {"id": "servo_arm", "count": 3}],
+          "options": [
+            {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
+            {"replaceRule": {"id": "repair", "x": 3}, "withRule": {"id": "repair", "x": 5}}
+          ],
+          "rules": [],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "infantry_squad": {
+      "name": "Infantry Squad",
+      "description": "The backbone of the Ascended Astro-Raptors.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Trooper",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 5,
+          "movement": 7,
+          "weapons": ["laser_carbine", "frags", "heavy_ccw"],
+          "options": [
+            {
+              "replaceWeapon": "laser_carbine",
+              "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "light_laser_cannon", "seismic_cannon", "heavy_auto_laser", "light_machinegun"],
+              "modelLimit": "2/5"
+            },
+            {"replaceWeapon": "laser_carbine", "withWeapon": ["shrapnel_shotgun"]}
+          ],
+          "rules": [],
+          "min": 5,
+          "max": 10
+        },
+        {
+          "name": "Weapon Team",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 5,
+          "movement": 7,
+          "weapons": [{"id": "heavy_machinegun", "count": 1, "mount": ["Front"]}, "frags", {"id": "heavy_ccw", "count": 2}],
+          "rules": [{"id": "wounds", "x": 2}],
+          "options": [
+            {
+              "replaceWeapon": {"id": "heavy_machinegun", "mount": ["Front"]},
+              "withWeapon": [
+                {"id": "missile_launcher", "mount": ["Front"]},
+                {"id": "autocannon", "mount": ["Front"]},
+                {"id": "laser_cannon", "mount": ["Front"]},
+                {"id": "mortar", "mount": ["Front"]},
+                {"id": "laser_machinegun", "mount": ["Front"]},
+                {"id": "gatling_gun", "mount": ["Front"]}
+              ]
+            }
+          ],
+          "min": 0,
+          "max": 1
+        }
+      ]
+    },
+    "command_squad": {
+      "name": "Command Squad",
+      "description": "A smaller infantry squad used to support a commanding officer.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Veteran Trooper",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 6,
+          "movement": 7,
+          "reflexes": 5,
+          "weapons": ["laser_carbine", "frags", "heavy_ccw"],
+          "options": [
+            {"addRule": ["banner"], "modelLimit": 1},
+            {"addRule": ["medic"], "modelLimit": 1},
+            {"replaceWeapon": "laser_carbine", "withWeapon": ["shotgun", "flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle"]}
+          ],
+          "min": 4,
+          "max": 4
+        }
+      ]
+    },
+    "heavy_weapon_squad": {
+      "name": "Heavy Weapons Squad",
+      "description": "A squad of heavy weapons teams loaded out to deal with a variety of targets.",
+      "category": "elite",
+      "rules": [{"id": "wounds", "x": 2}],
+      "models": [
+        {
+          "name": "Weapon Team",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 6,
+          "movement": 7,
+          "reflexes": 5,
+          "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "heavy_ccw", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": {"id": "heavy_machinegun", "mount": ["Front"]},
+              "withWeapon": [
+                {"id": "missile_launcher", "mount": ["Front"]},
+                {"id": "autocannon", "mount": ["Front"]},
+                {"id": "laser_cannon", "mount": ["Front"]},
+                {"id": "mortar", "mount": ["Front"]},
+                {"id": "laser_machinegun", "mount": ["Front"]},
+                {"id": "gatling_gun", "mount": ["Front"]}
+              ]
+            }
+          ],
+          "min": 3,
+          "max": 6
+        }
+      ]
+    },
+    "specialist_squad": {
+      "name": "Specialist Squad",
+      "description": "An infantry team kitted out with several special weapons to serve a specific purpose.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Specialist Trooper",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 6,
+          "reflexes": 5,
+          "movement": 7,
+          "weapons": ["laser_carbine", "frags", "heavy_ccw"],
+          "options": [
+            {
+              "replaceWeapon": "laser_carbine",
+              "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "light_laser_cannon", "seismic_cannon", "heavy_auto_laser", "light_machinegun"]
+            }
+          ],
+          "rules": ["relentless"],
+          "min": 5,
+          "max": 5
+        }
+      ]
+    },
+    "sniper_team": {
+      "name": "Sniper Team",
+      "description": "A stealth squad with high-tech cloaks who sneak into position to pick off high-value targets with raptor-portable railguns.",
+      "category": "elite",
+      "rules": ["evasive", "scout"],
+      "models": [
+        {
+          "name": "Sniper",
+          "courage": 6,
+          "shoot": 7,
+          "fight": 5,
+          "defense": 6,
+          "movement": 7,
+          "reflexes": 5,
+          "weapons": ["laser_sniper", "frags", "heavy_ccw"],
+          "options": [{"replaceWeapon": "laser_sniper", "withWeapon": "rail_rifle"}],
+          "min": 3,
+          "max": 3
+        }
+      ]
+    },
+    "ascendant_shocktroopers": {
+      "name": "Ascendant Shocktroopers",
+      "description": "Heavily armed and armored raptors with the most advanced technology the Ascended Astroraptors have to offer.",
+      "category": "elite",
+      "keywords": ["Shock Trooper", "Infantry"],
+      "options": [{"addRule": {"id": "ambush", "name": "Orbital Insertion", "modelLimit": "all"}}],
+      "models": [
+        {
+          "name": "Ascendant Shocktrooper Sergeant",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 8,
+          "reflexes": 6,
+          "movement": 7,
+          "weapons": ["heavy_laser_carbine", "frags", "heavy_ccw"],
+          "options": [
+            {"replaceWeapon": ["heavy_laser_carbine", "heavy_ccw"], "withWeapon": [["laser_pistol", {"id": "heavy_ccw", "count": 2}]]},
+            {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
+            {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}]}
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Ascendant Shocktrooper",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 8,
+          "reflexes": 6,
+          "movement": 7,
+          "weapons": ["heavy_laser_carbine", "frags", "heavy_ccw"],
+          "options": [
+            {
+              "replaceWeapon": "heavy_laser_carbine",
+              "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "light_laser_cannon", "seismic_cannon", "heavy_auto_laser", "light_machinegun"],
+              "modelLimit": "2/5"
+            }
+          ],
+          "min": 4,
+          "max": 9
+        }
+      ]
+    },
+    "feral_raptors": {
+      "name": "Feral Raptors",
+      "description": "A loosely organized group of unarmed and unarmored raptors hopped up on a cocktail of stimulents who charge into their foes with biting maws and slashing claws.",
+      "category": "core",
+      "options": [{"addRule": [{"id": "agile"}], "modelLimit": "all"}],
+      "models": [{"name": "Feral Raptor", "courage": 5, "shoot": 5, "fight": 6, "movement": 7, "defense": 5, "reflexes": 5, "weapons": [{"id": "feral_gnashing", "count": 2}], "min": 5, "max": 10}]
+    },
+    "rangers": {
+      "name": "Rangers",
+      "description": "A squad of raptors trained in close-range infiltration.",
+      "category": "core",
+      "rules": ["scout"],
+      "models": [
+        {
+          "name": "Ranger",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "movement": 7,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 2}],
+          "options": [
+            {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"], "modelLimit": "2/5"},
+            {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}]}
+          ],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
+    "jump_troopers": {
+      "name": "Jump Troopers",
+      "description": "An elite squad of raptors equipped with light weapons and a jetpack.",
+      "category": "elite",
+      "rules": ["fly"],
+      "models": [
+        {
+          "name": "Jump Trooper",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 6,
+          "movement": 8,
+          "reflexes": 6,
+          "weapons": ["laser_pistol", "frags", {"id": "heavy_ccw", "count": 2}],
+          "options": [
+            {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
+            {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}]}
+          ],
+          "min": 5,
+          "max": 10
+        }
+      ]
+    },
+    "raptor_gunslinger": {
+      "name": "Raptor Gunslinger",
+      "description": "A rootin'-tootin' raptor with a penchant for tri-wielded pistols.",
+      "category": "elite",
+      "rules": ["crack_shot", {"id": "wounds", "x": 2}],
+      "models": [
+        {
+          "name": "Raptor Gunslinger",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 6,
+          "movement": 7,
+          "reflexes": 7,
+          "weapons": [{"id": "laser_pistol", "count": 3}, {"id": "heavy_ccw", "count": 2}],
+          "options": [
+            {
+              "replaceWeapon": {"id": "laser_pistol", "count": 1},
+              "withWeapon": [
+                {"id": "plasma_pistol"},
+                {"id": "machine_pistol"},
+                {"id": "heavy_laser_pistol"},
+                {"id": "flamethrower_pistol"},
+                {"id": "thump_pistol"},
+                {"id": "railvolver"}],
+                "count": 3
+            }
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "triceratops_shock_troops": {
+      "name": "Triceratops Shock Troops",
+      "description": "A squad of super-strong large uplifted triceratops-like beings that were recently inducted into the fold. (WIP, but usable)",
+      "category": "elite",
+      "models": [
+          {
+              "name": "Triceratops Shock Troops",
+              "courage": 6,
+              "shoot": 5,
+              "fight": 6,
+              "movement": 6,
+              "defense": 7,
+              "reflexes": 5,
+              "weapons": ["heavy_shotgun", "frags", {"id": "heavy_ccw", "count": 2}],
+              "options": [
+                  {"addRule": ["shield"]},
+                  {"replaceWeapon": "heavy_shotgun", "withWeapon": ["wrist_grenades"]},
+                  {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": ["ogre_maul"]}
+              ],
+              "rules": [{"id": "wounds", "x": 2}],
+              "min": 3,
+              "max": 9
+          }
+      ]
+  },
+    "raptor_bikes": {
+      "name": "Raptor Bikers",
+      "description": "A squad of raptors clad in bike-shaped armor to zip across the battlefield.",
+      "category": "elite",
+      "keywords": ["Biker"],
+      "rules": ["evasive"],
+      "options": [
+        {"replaceWeapon": ["laser_carbine", {"id": "heavy_ccw", "count": 1}], "withWeapon": [[{"id": "laser_pistol"}, {"id": "heavy_ccw", "count": 2}]]},
+        {"replaceWeapon": "laser_carbine", "withWeapon": ["shrapnel_shotgun"],
+        "addRule": [{"id": "impact", "x": 2}],
+        "replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]}
+      ],
+      "models": [
+        
+        {
+          "name": "Raptor Biker",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "movement": 9,
+          "defense": 7,
+          "reflexes": 5,
+          "weapons": ["laser_carbine", {"id": "heavy_ccw"}],
+          "options": [{"replaceModel": "sidecar_biker", "modelLimit": "1/3"}],
+          "min": 3,
+          "max": 12
+        }
+      ]
+    },
+    "battle_tank": {
+      "name": "Battle Tank",
+      "description": "A main line battle tank.",
+      "category": "rare",
+      "keywords": ["Vehicle", "Battle Tank"],
+      "rules": ["vulnerable_side_rear", {"id": "wounds", "x": 3}],
+      "models": [
+        {
+          "name": "Battle Tank",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 12,
+          "movement": 10,
+          "reflexes": 5,
+          "weapons": ["nova_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
+          "options": [
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]},
+            {"replaceWeapon": "nova_cannon", "withWeapon": ["battle_cannon", "siege_cannon", "twin_autocannon", "tank_hunter_cannon", "heavy_plasma_cannon", "gatling_cannon"]},
+            {"replaceWeapon": {"id": "heavy_flamethrower", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "laser_cannon", "mount": ["Front"]}]},
+            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+            {"addWeapon": ["hunter_missiles"]},
+            {
+              "addWeapon": [
+                [{"id": "heavy_machinegun", "mount": ["Left", "Front"]}, {"id": "heavy_machinegun", "mount": ["Right", "Front"]}],
+                [{"id": "heavy_fusion_rifle", "mount": ["Left", "Front"]}, {"id": "heavy_fusion_rifle", "mount": ["Right", "Front"]}],
+                [{"id": "heavy_flamethrower", "mount": ["Left", "Front"]}, {"id": "heavy_flamethrower", "mount": ["Right", "Front"]}],
+                [{"id": "plasma_cannon", "mount": ["Left", "Front"]}, {"id": "plasma_cannon", "mount": ["Right", "Front"]}]
+              ],
+              "limit": 1
+            }
+          ],
+          "rules": [{"id": "impact", "x": 6}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "scout_buggy": {
+      "name": "Scout Buggy",
+      "description": "A fast moving scout vehicle.",
+      "rules": [{"id": "impact", "x": 3}, "scout", "vulnerable_side_rear", {"id": "wounds", "x": 3}, "marking_flares"],
+      "category": "elite",
+      "keywords": ["Vehicle"],
+      "min": 1,
+      "max": 1,
+      "models": [
+        {
+          "name": "Scout Buggy",
+          "movement": 12,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 9,
+          "reflexes": 6,
+          "weapons": [{"id": "light_machinegun", "count": 2, "mount": ["Front"]}, {"id": "heavy_flamethrower"}],
+          "options": [
+            {
+              "replaceWeapon": {"id": "heavy_flamethrower"},
+              "withWeapon": [
+                {"id": "heavy_mortar"},
+                {"id": "heavy_fragmentation_cannon"},
+                {"id": "laser_machinegun"},
+                {"id": "twin_laser_cannon"},
+                {"id": "twin_missile_launcher"},
+                [{"id": "missile_launcher"}, {"id": "light_machinegun", "count": 2}],
+                {"id": "twin_laser_machinegun"}
+              ]
+            },
+            {"addWeapon": [{"id": "light_machinegun", "count": 2}]},
+            {"replaceRule": "marking_flares", "withRule": ["spotting_device", "surveying_device"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "light_apc": {
+      "name": "APC",
+      "description": "A light transport of the Ascended Astro-Raptors.",
+      "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+      "category": "transport",
+      "keywords": ["Vehicle"],
+      "min": 1,
+      "max": 1,
+      "models": [
+        {
+          "name": "APC",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 11,
+          "reflexes": 5,
+          "weapons": [{"id": "heavy_flamethrower", "mount": ["Front"]}, "heavy_flamethrower"],
+          "options": [
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]},
+            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+            {"addWeapon": ["hunter_missiles"]},
+            {"addWeapon": [[{"id": "laser_carbine_array", "mount": ["Left"]}, {"id": "laser_carbine_array", "mount": ["Right"]}]]},
+            {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["laser_machinegun", "heavy_machinegun"]},
+            {"replaceWeapon": {"id": "heavy_flamethrower", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "assault_vehicle": {
+      "name": "Assault Vehicle",
+      "description": "A light assault vehicle with multiple roles.",
+      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+      "category": "rare",
+      "keywords": ["Vehicle"],
+      "min": 1,
+      "max": 1,
+      "models": [
+        {
+          "name": "Assault Vehicle",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 11,
+          "reflexes": 5,
+          "weapons": [{"id": "heavy_fusion_rifle", "mount": ["Front"]}, "fusion_cannon"],
+          "options": [
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor"]},
+            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+            {"addWeapon": ["hunter_missiles"]},
+            {"replaceWeapon": "fusion_cannon", "withWeapon": ["acid_cannon", "flamestorm_cannon"]},
+            {"replaceWeapon": {"id": "heavy_fusion_rifle", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "heavy_flamethrower", "mount": ["Front"]}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "support_vehicle": {
+      "name": "Support Vehicle",
+      "description": "A support vehicle with multiple roles from artillery to anti-air.",
+      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+      "category": "rare",
+      "keywords": ["Vehicle"],
+      "min": 1,
+      "max": 1,
+      "models": [
+        {
+          "name": "Support Vehicle",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 10,
+          "reflexes": 5,
+          "weapons": [{"id": "heavy_flamethrower", "mount": ["Front"]}, "twin_gatling_aa"],
+          "options": [
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor"]},
+            {"addWeapon": [{"id": "light_machinegun", "count": 1}, {"id": "twin_marine_rifle", "count": 1}], "limit": 1},
+            {
+              "replaceWeapon": "twin_gatling_aa",
+              "withWeapon": [{"id": "twin_shard_mortar", "count": 2}, "artillery_cannon", {"id": "twin_aa_autocannon", "count": 2}, "eagle_rockets", "death_missile"]
+            },
+            {"replaceWeapon": {"id": "heavy_flamethrower", "mount": ["Front"]}, "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "armored_walker": {
+      "name": "Armored Mech",
+      "description": "An armored light combat walker.",
+      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, "walker"],
+      "keywords": ["Vehicle, Mech"],
+      "category": "elite",
+      "models": [
+        {
+          "name": "Armored Mech",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 9,
+          "reflexes": 5,
+          "weapons": ["heavy_flamethrower", {"id": "stomp", "count": 2}],
+          "options": [
+            {"addWeapon": ["hunter_missiles"]},
+            {
+              "limit": 1,
+              "addWeapon": ["heavy_fusion_rifle", "heavy_machinegun", "heavy_flamethrower", "missile_launcher", "laser_machinegun", "laser_cannon", "autocannon", "walker_chainsaw", "plasma_cannon"]
+            },
+            {
+              "replaceWeapon": "heavy_flamethrower",
+              "withWeapon": ["heavy_fusion_rifle", "heavy_machinegun", "missile_launcher", "laser_machinegun", "gatling_gun", "laser_cannon", "autocannon", "walker_chainsaw", "plasma_cannon"]
+            }
+          ],
+          "min": 1,
+          "max": 3
+        }
+      ]
+    },
+    "light_gunship": {
+      "name": "Light Transport Gunship",
+      "description": "A light gunship with sliding doors for troop transport.",
+      "rules": [{"id": "transport", "x": 11}, "aircraft", "hover_mode", {"id": "wounds", "x": 3}],
+      "category": "transport",
+      "keywords": ["Vehicle"],
+      "min": 1,
+      "max": 1,
+      "models": [
+        {
+          "name": "Light Transport Gunship",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 11,
+          "reflexes": 5,
+          "weapons": [{"id": "laser_machinegun", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": {"id": "laser_machinegun", "mount": ["Front"]}, "withWeapon": {"id": "laser_cannon", "mount": ["Front"]}},
+            {"addWeapon": [{"id": "strike_missiles", "mount": ["Front"]}, {"id": "rocket_pod", "count": 2, "mount": ["Front"]}]},
+            {"addWeapon": [[{"id": "heavy_machinegun", "mount": ["Left"]}, {"id": "heavy_machinegun", "mount": ["Right"]}]]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "heavy_gunship": {
+      "name": "Heavy Gunship",
+      "description": "A heavy gunship with a variety of weapon options.",
+      "rules": ["aircraft", "hover_mode", {"id": "wounds", "x": 3}],
+      "category": "rare",
+      "keywords": ["Vehicle"],
+      "min": 1,
+      "max": 1,
+      "models": [
+        {
+          "name": "Heavy Gunship",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 5,
+          "defense": 11,
+          "reflexes": 5,
+          "weapons": [{"id": "laser_machinegun", "mount": ["Front"]}, {"id": "strike_missiles", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": {"id": "laser_machinegun", "mount": ["Front"]}, "withWeapon": [{"id": "laser_cannon", "mount": ["Front"]}, {"id": "heavy_machinegun", "mount": ["Front"]}]},
+            {
+              "replaceWeapon": {"id": "strike_missiles", "mount": ["Front"]},
+              "withWeapon": [{"id": "rocket_pod", "count": 2, "mount": ["Front"]}, {"id": "twin_laser_cannon", "count": 2, "mount": ["Front"]}, {"id": "gatling_gun", "count": 2, "mount": ["Front"]}]
+            },
+            {"addWeapon": [[{"id": "heavy_machinegun", "mount": ["Left"]}, {"id": "heavy_machinegun", "mount": ["Right"]}]]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    }
+  },
+  "models": {
+    "sidecar_biker": {
+      "name": "Sidecar Biker",
+      "courage": 6,
+      "shoot": 6,
+      "fight": 5,
+      "defense": 8,
+      "reflexes": 5,
+      "movement": 9,
+      "weapons": ["heavy_machinegun", "laser_carbine", {"id": "heavy_ccw"}],
+      "options": [{"replaceWeapon": "heavy_machinegun", "withWeapon": ["twin_fusion_rifle"]}],
+      "min": 1,
+      "max": 1
+    }
+  },
+  "weapons": {
+    "titan_hell_cannon": {"name": "Titan Hell Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 10, "rules": ["heavy", {"id": "blast", "x": 3}]},
+    "titan_battle_cannon": {"name": "Titan Battle Cannon", "attacks": 2, "ap": 8, "short": 36, "medium": 72, "rules": ["heavy", {"id": "blast", "x": 3}]},
+    "fusion_cannon": {"name": "Fusion Cannon", "attacks": 2, "short": 12, "medium": 24, "ap": 6, "rules": ["heavy", {"id": "deadly", "x": 1}]},
+    "power_bolt": {"medium": 18, "attacks": 1, "ap": 7},
+    "power_storm": {"medium": 9, "ap": 1, "attacks": 8},
+    "laser_carbine": {"name": "Charge Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 2, "rules": ["overcharge", "assault"]},
+    "shrapnel_shotgun": {"name": "Shrapnel Shotgun", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "lethal"]},
+    "heavy_laser_carbine": {"name": "Heavy Charge Carbine", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": ["overcharge", "assault"]},
+    "rail_rifle": {"name": "Rail Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": ["sniper"]},
+    "laser_sniper": {"name": "Charge Sniper", "attacks": 1, "short": 18, "medium": 36, "ap": 4, "rules": ["overcharge", "sniper"]},
+    "heavy_auto_laser": {"name": "Heavy Auto-Charge Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 3, "rules": ["overcharge", "assault"]},
+    "feral_gnashing": {"name": "Feral Gnashing", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
+    "laser_pistol": {"name": "Charge Pistol", "attacks": 1, "short": 6, "ap": 2, "rules": ["overcharge", "pistol"]},
+    "thump_pistol": {"name": "Thump Pistol", "attacks": 1, "short": 6, "ap": 4, "rules": ["pistol"]},
+    "heavy_laser_pistol": {"name": "Heavy Charge Pistol", "attacks": 1, "short": 6, "ap": 3, "rules": ["overcharge", "pistol"]},
+    "twin_gatling_aa": {"name": "Twin Gatling Anti-Air Gun", "attacks": 8, "short": 24, "medium": 48, "ap": 2, "rules": [{"id": "anti_air"}]},
+    "strafing_run_fighter_plane": {"name": "Fighter Plane (Strafing Run)", "attacks": 6, "short": 18, "medium": 36, "ap": 1, "rules": ["indirect"]},
+    "strafing_run_heavy_plane": {"name": "Heavy Fighter Plane (Strafing Run)", "attacks": 4, "short": 18, "medium": 36, "ap": 4, "rules": ["indirect"]},
+    "orbital_bombardment_light": {"name": "Light Salvo (Orbital Bombardment)", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": ["scatter", {"id": "blast", "x": 3}]},
+    "orbital_bombardment_heavy": {"name": "Heavy Salvo (Orbital Bombardment)", "attacks": 1, "short": 18, "medium": 36, "ap": 7, "rules": ["scatter", {"id": "blast", "x": 3}]},
+    "seismic_cannon": {"name": "Seismic Cannon", "profiles": [{"name": "Long Wave", "attacks": 4, "short": 12, "medium": 24}, {"name": "Short Wave", "attacks": 2, "short": 6, "medium": 12, "ap": 3}]},
+    "machine_pistol": {"name": "Machine Pistol", "attacks": 2, "short": 6, "rules": ["pistol"]},
+    "assassins_knife": {"name": "Assassin's Knife", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["rending"]},
+    "railvolver": {"name": "Railvolver", "attacks": 1, "short": 6, "medium": 12, "ap": 5, "rules": ["pistol", "breaching"]},
+    "legend_experimental_charge_pistol": {"name": "Experimental Heavy Charge Pistol", "attacks": 1, "short": 6, "ap": 3, "rules": ["overcharge", "pistol", {"id": "blast", "x": 2}]},
+    "legend_metallic_clawtips": {"name": "Metallic Clawtips", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["rending"]}
+  },
+  "rules": {
+    "raptor_tactics": {
+      "name": "Raptor Tactics",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement \n * +1 AP",
+      "points": ["rule.x", {"multiply": 10}]
+    },
+    "banner": {"name": "Inspiring Banner", "description": "Friendly _Infantry_ units within 6\" get +1 Courage.", "points": 10},
+    "tactical_holomap": {
+      "name": "Tactical Holomap",
+      "description": "When activated choose one enemy unit within 24\", that unit is denied Cover bonuses until attacked, does not require line of sight.",
+      "points": 20
+    }
+  },
+  "powers": {
+    "clever": {"name": "Clever", "description": "Target a friendly unit within 12\". Until the end of the turn models suffer -1 Accuracy when targeting this unit with a ranged attack.", "charge": 6},
+    "velocity": {"name": "Velocity", "description": "Target unit within 12\" gets +3\" to their next movement action.", "charge": 6},
+    "velocirapture": {"name": "Velocirapture", "description": "Target two enemy units within 6\" take 2 hits with AP(4) each", "charge": 7}
+  },
+  "strategies": {
+    "pulse_shielding": {
+      "phase": "activation",
+      "name": "Pulse Shielding",
+      "flavor": "Astro-raptors have equipped themselves with advanced pulsing shield technology which intercepts enemy attacks at just the right time.",
+      "description": "Use when an _Infantry_ unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
+      "cost": 2
+    },
+    "spectral_visors": {
+      "name": "Spectral Visors",
+      "phase": "activation",
+      "flavor": "Raptor unit leaders are typically equipped with a spectral visor which allows them to see enemies they may not normally be able to see.",
+      "description": "Use when shooting with an _Infantry_ unit. That unit may target enemies it cannot see at -1 Accuracy.",
+      "cost": 1
+    },
+    "vigilance": {
+      "name": "Vigilance",
+      "phase": "activation",
+      "description": "Use when taking an Initiative test for a reaction. That unit is treated as having +2 Initiative for that test.",
+      "flavor": "Highly trained and expertly attentive, Astro-raptor troops can react in an instant.",
+      "cost": 1
+    }
+  },
+  "relics":{
+"relic_experimental_pistol": {
+  "name": "Experimental Charge Pistol",
+  "weapon": "legend_experimental_charge_pistol",
+  "description": "Replace one model's Heavy Charge Pistol with the Experimental Charge Pistol.",
+  "flavor": "Fresh from the Prototype Labs, this Heavy Charge Pistol's blast radius is greatly increased.",
+  "points": 5
+},
+"relic_metallic_clawtips":{
+  "name": "Metallic Clawtips",
+  "weapon": "legend_metallic_clawtips",
+  "description": "Replace one Command model's CCW with Metallic Clawtips.",
+  "flavor": "Made of a rare alloy, these deadly clawtips are only afforded to those of high station.",
+  "points": 5
+}
+  },
+  "buyLinks": [{"name": "Treadhead Rad", "link": "https://www.myminifactory.com/campaigns/raygun-raptors-95"}]
+}
