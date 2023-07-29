@@ -135,7 +135,7 @@
       "id": "starlink_enclave",
       "url": "starlink_enclave.json",
       "color": "#008080",
-      "background": "The Starlink Enclave are a group of cooperating aliens and explorers expanding their influence throughout the stars. Their primary fighting style involves a combined arms assault of mechanized infantry, flying battlesuits and high-tech infantry."
+      "description": "The Starlink Enclave are a group of cooperating aliens and explorers expanding their influence throughout the stars. Their primary fighting style involves a combined arms assault of mechanized infantry, flying battlesuits and high-tech infantry."
     },
     "ascended_astroraptors": {
       "version": "1.0",
