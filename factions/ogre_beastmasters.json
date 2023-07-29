@@ -3,7 +3,6 @@
   "id": "ogre_beastmasters",
   "color": "#4f9ae0",
   "description": "The greatest of ogre tribes, who only interact with their lessers when they need something - food, coin, or just a challenge!",
-  "alliance": "destruction",
   "units": {
     "great_ogre_leader": {
       "name": "Great-Ogre Mounted Leader",

@@ -3,7 +3,6 @@
   "id": "wood_elves",
   "author": "Xekon#8266",
   "color": "#38733a",
-  "alliance": "order",
   "units": {
     "druid": {
       "name": "Druid",
