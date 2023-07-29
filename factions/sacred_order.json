@@ -1,15 +1,16 @@
 {
-  "id": "faith_wardens",
-  "name": "Faith Wardens",
+  "id": "sacred_order",
+  "name": "Sacred Order",
   "author": "guitarninja",
+  "lore": "In the far reaches, there exists a distant planet known as Sanctum Prime, a world shrouded in an eternal aura of ethereal light. On this planet, a devout and disciplined society of battle priests known as the Sacred Order has flourished for millennia.\n\nLegend has it that long ago, during a time of great darkness and despair, a mysterious and benevolent figure known as Saint Aurelia appeared among the inhabitants of Sanctum Prime. Saint Aurelia was said to possess extraordinary powers, capable of performing miracles and casting out evil with a single gesture. With her radiant presence and unwavering devotion to the cause of light, she became a guiding beacon for the people, leading them away from the abyss of darkness and despair.\n\nInspired by the teachings and example of Saint Aurelia, the people of Sanctum Prime formed the Sacred Order—a sacred brotherhood of battle priests dedicated to upholding the principles of light, righteousness, and protection against the forces of darkness. These battle priests, known as the Luminal Wardens, take on rigorous training from a young age, honing their minds, bodies, and spirits to become paragons of virtue and defenders of the innocent.\n\nThe Sacred Order's grand citadel, the Radiant Bastion, stands at the heart of Sanctum Prime, surrounded by lush gardens and majestic spires that seem to touch the heavens. Within the bastion's halls, sacred texts, and ancient scriptures of Saint Aurelia are meticulously preserved, guiding the Luminal Wardens on their sacred path.\n\nThe Luminal Wardens are known for their unique combat techniques that blend martial prowess with divine blessings. They wield radiant weapons, blessed by the holy light, and wear gleaming armor adorned with sacred symbols that invoke the power of their saint. Their combat abilities are said to be so potent that even the most malevolent of adversaries are forced to retreat in the face of their relentless pursuit of justice.\n\nBut the Sacred Order is not merely a military force; they are also compassionate healers, tending to the wounded and the suffering with divine grace. Their temples are sanctuaries of healing, where the afflicted come seeking solace and hope. The Luminal Wardens serve as both warriors and spiritual guides, providing counsel and guidance to those in need.\n\nThroughout the ages, the Sacred Order has faced numerous challenges, including dark cults, demonic incursions, and cosmic threats. Each time, they have emerged triumphant, guided by the eternal wisdom and protection of their holy saint, Saint Aurelia.\n\nThe legend of Saint Aurelia and the Sacred Order has spread beyond the borders of Sanctum Prime, inspiring others in the universe to seek their teachings and emulate their path of righteousness. Pilgrims from various worlds journey to the planet, seeking the wisdom of the Luminal Wardens and hoping to glimpse the radiant presence of Saint Aurelia herself.\n\nAs the Sacred Order continues to stand as a beacon of hope and defenders of light, their unwavering faith in their holy saint and their commitment to the preservation of cosmic harmony make them a symbol of hope and inspiration for all who seek to combat darkness and protect the innocent.",
   "units": {
     "holy_saint": {
-      "name": "Holy Saint",
+      "name": "High Saint",
       "description": "A blessed leader of the faith wardens, soaring over the battlefield like an angel of death.",
       "category": "hero",
       "models": [
         {
-          "name": "Holy Saint",
+          "name": "High Saint",
           "movement": 8,
           "courage": 7,
           "shoot": 7,

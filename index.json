@@ -156,15 +156,15 @@
       "alliance": "mercenaries",
       "description": "The Freeblade Mercenaries are independent guilds which build and maintain unique and gigantic war machines. The Freeblade Mercenaries rely on huge war machines and good old fashioned might to pound their foes."
     },
-    "faith_wardens": {
+    "sacred_order": {
       "version": "1.0",
-      "name": "Faith Wardens",
-      "id": "faith_wardens",
-      "url": "faith_wardens.json",
+      "name": "Sacred Order",
+      "id": "sacred_order",
+      "url": "sacred_order.json",
       "color": "#383838",
       "secondary_color": "#9a1115",
       "alliance": "order",
-      "description": "The Faith Wardens are a sect of the mankind which have a uniquely faithful and religious background. The Faith Wardens rely on prayer and faith in their holy symbols along with some good old fashioned holy fire to defeat their enemies."
+      "description": "The Sacred Order are a highly religious sect of humans which have a uniquely faithful and religious power. The Sacred Order relies on prayer and faith in their holy symbols along with some good old fashioned holy fire to defeat their enemies."
     },
     "steamforge_artisans": {
       "version": "1.0",
