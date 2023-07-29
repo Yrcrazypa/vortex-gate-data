@@ -270,12 +270,12 @@
     },
     "tainted_moonclan": {
       "version": "1.0",
-      "name": "Moonclan",
+      "name": "Tainted Moonclan",
       "id": "tainted_moonclan",
       "url": "tainted_moonclan.json",
       "color": "#954535",
       "alliance": "doom",
-      "description": "The Beastmen seek nothing less than the destruction of civilization, turning it all into burning rubble."
+      "description": "The Tainted Moonclan seek nothing less than the destruction of civilization, turning it all into burning rubble."
     },
     "feudal_kingdoms": {
       "version": "1.0",
