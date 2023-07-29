@@ -207,8 +207,8 @@
       "name": "Celestial Praetorians",
       "id": "celestial_praetorians",
       "url": "celestial_praetorians.json",
-      "color": "#7d0a15",
-      "secondary_color": "#010203",
+      "color": "#D4AF37",
+      "secondary_color": "#7d0a15",
       "alliance": "order",
       "description": "The Celestial Praetorians are a highly elite force of human soldiers chosen from the most highly skilled members of nearby worlds. They excel at hand to hand combat and bring a retinue of specialists to help support their small numbers."
     },
