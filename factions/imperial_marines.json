@@ -641,7 +641,6 @@
           "modelLimit": "1/5"
         },
         {"addWeapon": "grenade_launcher_attachment", "modelLimit": "1/5"},
-        {"addWeapon": "fusion_bomb", "modelLimit": 3},
         {"addRule": "shield"},
         {"addRule": "multi_scanner", "modelLimit": 1},
         {"addRule": "medic_squad", "modelLimit": 1}
@@ -689,7 +688,6 @@
         {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
         {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"], "modelLimit": "1/5"},
         {"addWeapon": "grenade_launcher_attachment", "subfactions": ["assault_focus"]},
-        {"addWeapon": "fusion_bomb", "modelLimit": 3},
         {"addRule": "shield"},
         {"addRule": "multi_scanner", "modelLimit": 1},
         {"addRule": "medic_squad", "modelLimit": 1}
@@ -698,7 +696,7 @@
     "scout_marines": {
       "name": "Scout Marines",
       "description": "Elite trained marines specialized in infiltration and stealth tactics.",
-      "category": "elite",
+      "category": "core",
       "rules": ["scout"],
       "models": [
         {
@@ -764,9 +762,7 @@
         },
         {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"], "modelLimit": "1/5"},
-        {"addWeapon": "fusion_bomb", "modelLimit": 3},
-        {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"id": "evasive", "name": "Camouflage Cloak"}, "grappling_hook", "fear", "light_armor"], "modelLimit": "all"},
-        {"addRule": "shield"}
+        {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"id": "evasive", "name": "Camouflage Cloak"}, "grappling_hook", "fear", "light_armor"], "modelLimit": "all", "limit": 1}
       ]
     },
     "strike_team": {
@@ -834,7 +830,6 @@
               ]
             },
             {"addWeapon": "grenade_launcher_attachment", "subfactions": ["assault_focus"]},
-            {"addWeapon": "fusion_bomb", "modelLimit": 3},
             {"addRule": ["shield"]},
             {"addRule": ["jetpack"], "modelLimit": "all"},
             {"addRule": "multi_scanner", "modelLimit": 1},
@@ -862,7 +857,6 @@
           "options": [
             {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "thermal_pistol", "gravity_pistol", "fusion_pistol"], "limit": 2},
             {"replaceWeapon": [{"id": "marine_pistol", "count": 2}], "withWeapon": ["hazard_flamethrower", "hazard_launcher", "fusion_rifle", "gravity_rifle", "hazard_blaster"]},
-            {"addWeapon": "fusion_bomb", "modelLimit": 3},
             {"addRule": ["jetpack"], "modelLimit": "all"},
             {"addRule": ["shield"]},
             {"addRule": "multi_scanner", "modelLimit": 1},
@@ -1054,7 +1048,6 @@
                 {"id": "energy_glaive", "count": 2}
               ]
             },
-            {"addWeapon": "fusion_bomb", "modelLimit": 3},
             {"addRule": "jetpack", "modelLimit": "all"}
           ],
           "min": 5,

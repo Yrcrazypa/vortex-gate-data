@@ -372,7 +372,6 @@
         {"replaceWeapon": ["carbine", "heavy_ccw"], "withWeapon": [["heavy_pistol", {"id": "heavy_ccw", "count": 2}]]},
         {"replaceWeapon": ["carbine"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "light_machinegun"], "modelLimit": "1/10"},
         {"replaceWeapon": ["carbine"], "withWeapon": ["rocket_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "1/10"},
-        {"addWeapon": "fusion_bomb", "modelLimit": 3},
         {"addRule": ["light_armor", {"id": "defiant", "x": 2}], "modelLimit": "all"},
         {"addRule": ["banner"], "modelLimit": 1}
       ],
@@ -416,7 +415,6 @@
             {"replaceWeapon": ["carbine", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "heavy_ccw", "count": 3}], {"id": "energy_saw", "count": 4}]},
             {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "energy_axe", "count": 3}, {"id": "energy_saw", "count": 3}, {"id": "heavy_energy_claw", "count": 3}]},
             {"addWeapon": ["attack_beast"], "modelLimit": 1},
-            {"addWeapon": "fusion_bomb", "modelLimit": 3},
             {"addRule": [{"id": "defiant", "x": 3, "name": "Cyborg Body"}]},
             {"addRule": ["champion"], "modelLimit": 1},
             {"addRule": ["banner"], "modelLimit": 1}
@@ -430,11 +428,7 @@
       "name": "Looter Mob",
       "description": "A group of Orcs obsessed with looting and upgrading shooting weapons. Can be equipped for various specialist roles.",
       "category": "elite",
-      "options": [
-        {"replaceWeapon": "carbine", "withWeapon": ["flamethrower", "plasma_rifle", "fusion_rifle", "grenade_launcher", "light_machinegun"]},
-        {"addWeapon": "fusion_bomb", "modelLimit": 3},
-        {"addRule": ["banner"], "modelLimit": 1}
-      ],
+      "options": [{"replaceWeapon": "carbine", "withWeapon": ["flamethrower", "plasma_rifle", "fusion_rifle", "grenade_launcher", "light_machinegun"]}, {"addRule": ["banner"], "modelLimit": 1}],
       "models": [
         {
           "name": "Looter Orc Boss",
@@ -464,7 +458,6 @@
       "options": [
         {"replaceWeapon": "rocket_launcher", "withWeapon": ["railgun", "heavy_machinegun", "plasma_cannon", "fusion_cannon"]},
         {"replaceWeapon": "rocket_launcher", "withWeapon": ["bomb_hammer", "rocket_pistol"], "modelLimit": "2/5"},
-        {"addWeapon": "fusion_bomb", "modelLimit": 3},
         {"addRule": ["banner"], "modelLimit": 1}
       ],
       "models": [
@@ -515,7 +508,6 @@
               "replaceWeapon": {"id": "heavy_ccw", "count": 3},
               "withWeapon": [{"id": "energy_axe", "count": 3}, {"id": "energy_saw", "count": 3}, {"id": "heavy_energy_claw", "count": 3}, {"id": "cutlass", "count": 3}]
             },
-            {"addWeapon": "fusion_bomb", "modelLimit": 3},
             {"addRule": {"id": "defiant", "x": 3, "name": "Cyborg Body"}}
           ],
           "min": 5,
@@ -534,7 +526,6 @@
         {"replaceWeapon": ["carbine"], "withWeapon": ["rocket_launcher", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "railgun"], "modelLimit": "1/5"},
         {"replaceWeapon": ["carbine", "heavy_ccw"], "withWeapon": [["heavy_pistol", {"id": "heavy_ccw", "count": 2}]]},
         {"replaceWeapon": {"id": "heavy_ccw", "count": 2}, "withWeapon": ["assault_ram"], "modelLimit": 1},
-        {"addWeapon": "fusion_bomb", "modelLimit": 3},
         {"addRule": ["light_armor", "grappling_hook"], "modelLimit": "all"}
       ],
       "models": [
@@ -578,7 +569,6 @@
             {"replaceWeapon": ["carbine", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "heavy_ccw", "count": 3}], {"id": "energy_saw", "count": 4}]},
             {"replaceWeapon": {"id": "heavy_ccw", "count": 3}, "withWeapon": [{"id": "energy_axe", "count": 3}, {"id": "energy_saw", "count": 3}, {"id": "heavy_energy_claw", "count": 3}]},
             {"addWeapon": ["attack_beast"], "modelLimit": 1},
-            {"addWeapon": "fusion_bomb", "modelLimit": 3},
             {"addRule": [{"id": "defiant", "x": 3, "name": "Cyborg Body"}]},
             {"addRule": ["champion"], "modelLimit": 1},
             {"addRule": ["banner"], "modelLimit": 1}

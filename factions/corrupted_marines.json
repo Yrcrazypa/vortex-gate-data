@@ -818,7 +818,6 @@
           "replaceWeapon": "marine_rifle",
           "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "autocannon", "gatling_gun", "heavy_flamethrower", "plasma_cannon", "fusion_cannon", "thermal_lance"]
         },
-        {"addWeapon": "fusion_bomb", "modelLimit": 3},
         {"addRule": ["shield"]}
       ]
     },
@@ -855,7 +854,6 @@
                 {"id": "chainsaw_glaive", "count": 3}
               ]
             },
-            {"addWeapon": "fusion_bomb", "modelLimit": 3},
             {"addRule": ["shield"]}
           ],
           "min": 5,
