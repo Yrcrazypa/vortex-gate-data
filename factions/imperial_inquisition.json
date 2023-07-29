@@ -18,9 +18,9 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_defense_rifle", "frags", {"id": "chainsword", "count": 2}],
+          "weapons": ["heavy_auto_rifle", "frags", {"id": "chainsword", "count": 2}],
           "options": [
-            {"replaceWeapon": ["heavy_defense_rifle", {"id": "chainsword", "count": 2}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}]]},
+            {"replaceWeapon": ["heavy_auto_rifle", {"id": "chainsword", "count": 2}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "chainsword", "count": 3},
@@ -75,7 +75,7 @@
           "defense": 8,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "storm_rifle", "plasma_rifle", "fusion_rifle", "flamethrower"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}]]},
@@ -107,11 +107,11 @@
       "keywords": ["Storm Trooper", "Infantry"],
       "options": [
         {
-          "replaceWeapon": "heavy_defense_rifle",
+          "replaceWeapon": "heavy_auto_rifle",
           "withWeapon": ["flamethrower", "volley_gun", "plasma_rifle", "grenade_launcher", "fusion_rifle", "sniper_rifle", "web_carbine", "light_machinegun"],
           "modelLimit": "2/5"
         },
-        {"replaceWeapon": "heavy_defense_rifle", "withWeapon": ["combat_shotgun"]},
+        {"replaceWeapon": "heavy_auto_rifle", "withWeapon": ["combat_shotgun"]},
         {"addRule": {"id": "ambush", "name": "Orbital Insertion"}, "modelLimit": "all"},
         {"addRule": "medic_squad", "modelLimit": 1}
       ],
@@ -124,9 +124,9 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_defense_rifle", "frags", "ccw"],
+          "weapons": ["heavy_auto_rifle", "frags", "ccw"],
           "options": [
-            {"replaceWeapon": ["heavy_defense_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "ccw", "count": 2}]]},
+            {"replaceWeapon": ["heavy_auto_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "ccw", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "ccw", "count": 2},
@@ -150,7 +150,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_defense_rifle", "frags", "ccw"],
+          "weapons": ["heavy_auto_rifle", "frags", "ccw"],
           "options": [{"addRule": {"id": "field_radio"}, "modelLimit": 1}],
           "min": 4,
           "max": 9
@@ -245,7 +245,7 @@
           "courage": 7,
           "min": 1,
           "max": 1,
-          "weapons": ["spectral_eye", {"id": "assassin_unarmed", "count": 4}, "psychic_grenades"]
+          "weapons": ["spectral_eye", {"id": "assassin_unarmed", "count": 4}]
         }
       ]
     },
@@ -540,7 +540,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "psychic_grenades", {"id": "ccw", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "ccw", "count": 3}],
           "rules": [{"id": "ward", "x": 1}, {"id": "witch_hunter_tactics", "x": 1}, {"id": "wounds", "x": 3}, {"id": "leader", "x": "Infantry"}],
           "options": [
             {"replaceRule": {"id": "witch_hunter_tactics", "x": 1}, "withRule": {"id": "witch_hunter_tactics", "x": 2}},
@@ -565,7 +565,7 @@
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_sword_blade", "count": 5}, "guardian_sword_pistol", "marine_grenades"],
+          "weapons": [{"id": "guardian_sword_blade", "count": 5}, "guardian_sword_pistol"],
           "options": [
             {
               "replaceWeapon": [{"id": "guardian_sword_blade", "count": 5}, "guardian_sword_pistol"],
@@ -598,7 +598,7 @@
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_sword_blade", "count": 4}, "guardian_sword_pistol", "marine_grenades"],
+          "weapons": [{"id": "guardian_sword_blade", "count": 4}, "guardian_sword_pistol"],
           "options": [
             {
               "replaceWeapon": [{"id": "guardian_sword_blade", "count": 4}, "guardian_sword_pistol"],
@@ -676,12 +676,12 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "psychic_grenades", "ccw"],
+          "weapons": ["marine_rifle", "ccw"],
           "rules": [{"id": "ward", "x": 1}],
           "min": 1,
           "max": 1
         },
-        {"name": "Witch Hunter", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "psychic_grenades", "ccw"], "min": 4, "max": 9}
+        {"name": "Witch Hunter", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "ccw"], "min": 4, "max": 9}
       ]
     },
     "throne_ancient": {
@@ -698,7 +698,7 @@
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_sword_blade", "count": 3}, "guardian_sword_pistol", "marine_grenades"],
+          "weapons": [{"id": "guardian_sword_blade", "count": 3}, "guardian_sword_pistol"],
           "options": [
             {
               "replaceWeapon": [{"id": "guardian_sword_blade", "count": 3}, "guardian_sword_pistol"],
@@ -769,7 +769,7 @@
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_sword_blade", "count": 2}, "guardian_sword_pistol", "marine_grenades"],
+          "weapons": [{"id": "guardian_sword_blade", "count": 2}, "guardian_sword_pistol"],
           "min": 3,
           "max": 5
         }
@@ -790,7 +790,7 @@
           "movement": 8,
           "defense": 8,
           "reflexes": 7,
-          "weapons": ["shield", "guardian_pistol", "marine_grenades"],
+          "weapons": ["shield", "guardian_pistol"],
           "options": [{"replaceWeapon": ["shield", "guardian_pistol"], "withWeapon": [["guardian_lance_rifle", {"id": "guardian_lance_blade", "count": 2}]]}],
           "min": 3,
           "max": 6
@@ -818,7 +818,7 @@
           "defense": 9,
           "movement": 6,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle", "marine_grenades"],
+          "weapons": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"],
           "min": 3,
           "max": 5
         }

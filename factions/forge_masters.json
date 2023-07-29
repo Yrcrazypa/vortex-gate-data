@@ -248,7 +248,7 @@
                     "defense": 8,
                     "reflexes": 6,
                     "rules": ["engineer", "leader", {"id": "wounds", "x": 3}],
-                    "weapons": ["heavy_carbine", {"id": "heavy_ccw", "count": 2}, "plasma_grenades"],
+                    "weapons": ["heavy_carbine", {"id": "heavy_ccw", "count": 2}],
                     "options": [
                         {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_thermal"]},
                         {"replaceWeapon": ["heavy_carbine", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "heavy_ccw", "count": 3}]]},
@@ -284,7 +284,7 @@
                     "defense": 8,
                     "reflexes": 6,
                     "rules": ["engineer", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-                    "weapons": ["heavy_carbine", {"id": "heavy_ccw", "count": 2}, "plasma_grenades", {"id": "twin_marine_rifle", "mount": ["Front"]}],
+                    "weapons": ["heavy_carbine", {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
                     "options": [
                         {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_thermal"]},
                         {"replaceWeapon": ["heavy_carbine", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "heavy_ccw", "count": 3}]]},
@@ -355,7 +355,7 @@
             "description": "Not all defenders of the Great Forges are trained soldiers.",
             "category": "core",
             "options": [
-                {"replaceWeapon": ["defense_carbine"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "thermal_rifle", "tesla_rifle"], "modelLimit": "1/5"}
+                {"replaceWeapon": ["auto_carbine"], "withWeapon": ["plasma_rifle", "fusion_rifle", "flamethrower", "grenade_launcher", "thermal_rifle", "tesla_rifle"], "modelLimit": "1/5"}
             ],
             "models": [
                 {
@@ -366,10 +366,10 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": ["defense_carbine", "heavy_ccw", "frags"],
+                    "weapons": ["auto_carbine", "heavy_ccw", "frags"],
                     "options": [
-                        {"replaceWeapon": ["defense_carbine"], "withWeapon": ["combi_plasma", "combi_fusion", "combi_flamer", "combi_thermal", "storm_rifle"]},
-                        {"replaceWeapon": ["defense_carbine", "heavy_ccw"], "withWeapon": [["pistol", {"id": "heavy_ccw", "count": 2}]]},
+                        {"replaceWeapon": ["auto_carbine"], "withWeapon": ["combi_plasma", "combi_fusion", "combi_flamer", "combi_thermal", "storm_rifle"]},
+                        {"replaceWeapon": ["auto_carbine", "heavy_ccw"], "withWeapon": [["pistol", {"id": "heavy_ccw", "count": 2}]]},
                         {"replaceWeapon": ["pistol"], "withWeapon": ["shotgun", "plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
                         {
                             "replaceWeapon": [{"id": "heavy_ccw", "count": 2}],
@@ -385,7 +385,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Militia", "movement": 5, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["defense_carbine", "heavy_ccw", "frags"], "min": 4, "max": 19}
+                {"name": "Militia", "movement": 5, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["auto_carbine", "heavy_ccw", "frags"], "min": 4, "max": 19}
             ]
         },
         "forge_warriors": {
@@ -649,7 +649,7 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 5,
-                    "weapons": ["heavy_carbine", "heavy_ccw", "plasma_grenades"],
+                    "weapons": ["heavy_carbine", "heavy_ccw"],
                     "rules": ["engineer"],
                     "options": [
                         {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["combi_thermal", "combi_flamer", "combi_fusion", "combi_plasma", "storm_rifle"]},
@@ -658,7 +658,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Engineer", "movement": 5, "courage": 5, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 5, "weapons": ["heavy_carbine", "heavy_ccw", "plasma_grenades"], "min": 4, "max": 9}
+                {"name": "Engineer", "movement": 5, "courage": 5, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 5, "weapons": ["heavy_carbine", "heavy_ccw"], "min": 4, "max": 9}
             ]
         },
         "mining_drone": {
@@ -892,7 +892,7 @@
                     "defense": 9,
                     "reflexes": 6,
                     "rules": ["medic", "support", {"id": "wounds", "x": 3}],
-                    "weapons": ["heavy_pistol", {"id": "heavy_ccw", "count": 2}, "smoke_grenades"],
+                    "weapons": ["heavy_pistol", {"id": "heavy_ccw", "count": 2}],
                     "min": 1,
                     "max": 1
                 }

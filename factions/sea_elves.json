@@ -229,7 +229,7 @@
   "powers": {
     "blind": {"name": "Blind", "description": "Target enemy unit within 12\" gets -1 Accuracy until the end of the round.", "charge": 6, "school": "shadow"},
     "shroud": {"name": "Shroud", "description": "Target friendly unit within 12\" gets -1 to be hit the next time it is attacked.", "charge": 6},
-    "pain": {"name": "Pain", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(3).", "charge": 6, "subfactions": ["none", "pestilence", "wrath", "excess", "change"]}
+    "pain": {"name": "Pain", "description": "Target enemy model within 12\" takes 1 automatic hit with AP(3).", "charge": 6, "subfactions": ["none", "poison", "wrath", "excess", "change"]}
   },
   "relics": [],
   "models": {},

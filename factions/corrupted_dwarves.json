@@ -28,7 +28,7 @@
           ]
         }
       ],
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"]
+      "subfactions": ["wrath", "excess", "poison", "none", "change"]
     },
     "iron_souls": {
       "name": "Iron Souls",
@@ -49,7 +49,7 @@
           "max": 20
         }
       ],
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"],
+      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "iron_lord": {
@@ -76,7 +76,7 @@
           ]
         }
       ],
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"]
+      "subfactions": ["wrath", "excess", "poison", "none", "change"]
     },
     "soul_bound_orcs": {
       "name": "Soul-bound Orcs",
@@ -98,7 +98,7 @@
         }
       ],
       "keywords": ["Soul-bound", "Infantry"],
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"],
+      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "centaur_hybrids": {
@@ -122,7 +122,7 @@
         }
       ],
       "keywords": ["Beast", "Cavalry"],
-      "subfactions": ["none", "pestilence", "wrath", "excess", "change"]
+      "subfactions": ["none", "poison", "wrath", "excess", "change"]
     },
     "centaur_hybrid_lord": {
       "name": "Centaur Hybrid Lord",
@@ -148,7 +148,7 @@
         }
       ],
       "keywords": ["Beast", "Cavalry"],
-      "subfactions": ["none", "pestilence", "wrath", "excess", "change"]
+      "subfactions": ["none", "poison", "wrath", "excess", "change"]
     },
     "black_souls": {
       "name": "Black Souls",
@@ -170,7 +170,7 @@
           "rules": [{"id": "wounds", "x": 2}]
         }
       ],
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"],
+      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "engineers": {
@@ -193,7 +193,7 @@
           "rules": [{"id": "repair", "x": 3}]
         }
       ],
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"],
+      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "cinder_spirits": {
@@ -203,7 +203,7 @@
       "models": [
         {"name": "Cinder Spirits", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 5, "weapons": [{"id": "claws", "count": 2}, "flame_breath"], "min": 5, "max": 15}
       ],
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"],
+      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
     "magma_elementals": {
@@ -225,7 +225,7 @@
           "rules": [{"id": "wounds", "x": 3}]
         }
       ],
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"],
+      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}]
     },
     "obsidian_golem": {
@@ -247,7 +247,7 @@
           "rules": [{"id": "wounds", "x": 3}]
         }
       ],
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"],
+      "subfactions": ["wrath", "excess", "poison", "none", "change"],
       "options": [{"addRule": ["champion"], "modelLimit": 1}]
     }
   },
@@ -275,10 +275,10 @@
       "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
       "flavor": "Corrupted Dwarves wield enchanted weapons, covered in unholy runes and burning with dark magic.",
       "cost": 1,
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"]
+      "subfactions": ["wrath", "excess", "poison", "none", "change"]
     },
     {
-      "subfactions": ["none", "wrath", "excess", "pestilence", "change"],
+      "subfactions": ["none", "wrath", "excess", "poison", "change"],
       "name": "Unnatural Strength",
       "phase": "activation",
       "description": "Use when a friendly unit destroys an enemy unit. That unit gains +1 Strength until the end of the battle. A unit may only be affected by this strategy once.",
@@ -291,7 +291,7 @@
       "flavor": "Possessed bullets, forged in Hellfire and inscribed with cursed runes, are highly unstable but very effective.",
       "description": "Use before an Infantry unit shoots. Add +6\" to the short and long range bands of all weapons.",
       "cost": 1,
-      "subfactions": ["wrath", "excess", "pestilence", "none", "change"]
+      "subfactions": ["wrath", "excess", "poison", "none", "change"]
     }
   ],
   "relics": []

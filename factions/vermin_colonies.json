@@ -587,7 +587,7 @@
     "giant_vermin_claws": {"name": "Giant Vermin Claws", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["rending"]},
     "huge_stiletto": {"name": "Huge Stiletto", "attacks": 1, "short": "Melee", "ap": 7, "rules": ["rending"]},
     "squeaker_shuriken": {"name": "Squeaker Shuriken", "attacks": 1, "short": 9, "medium": 18, "ap": 4},
-    "pestilence_grand_kama": {"name": "Pestilence Grand Kama", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["pestilence"]},
+    "pestilence_grand_kama": {"name": "Pestilence Grand Kama", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["poison"]},
     "massive_spear": {"name": "Massive Spear", "attacks": 1, "short": "Melee", "ap": 5, "rules": [{"id": "reach", "x": 2}]},
     "spiky_fist": {"name": "Spiky Fist", "attacks": 1, "short": "Melee", "ap": 6},
     "doom_lightning_cannon": {"name": "Doom-Lightning Cannon", "short": 24, "medium": 48, "ap": 7, "attacks": 1, "rules": [{"id": "blast", "x": 3}, "heavy", "overcharge"]},
@@ -595,7 +595,7 @@
     "dripping_shuriken": {"name": "Dripping Shuriken", "short": 9, "ap": 1, "attacks": 1, "rules": ["lethal", "poison", "assault"]},
     "dripping_blade": {"name": "Dripping Blade", "short": "Melee", "ap": 2, "attacks": 1, "rules": ["lethal", "poison"]},
     "gas_bomb": {"name": "Gas Bombs", "attacks": 1, "short": 9, "rules": ["assault", {"id": "blast", "x": 3}, "poison"]},
-    "legend_lance": {"name": "Lance of Rust", "attacks": 3, "short": "Melee", "ap": 3, "rules": ["pestilence", {"id": "reach", "x": 1}, "rending"]}
+    "legend_lance": {"name": "Lance of Rust", "attacks": 3, "short": "Melee", "ap": 3, "rules": ["poison", {"id": "reach", "x": 1}, "rending"]}
   },
   "rules": {
     "vermin_tactics": {

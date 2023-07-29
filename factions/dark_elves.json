@@ -45,7 +45,7 @@
                     "defense": 7,
                     "reflexes": 7,
                     "rules": [{"id": "heavy_impact", "x": 3}, "hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "raider_tactics", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": ["barb_pistol", "plasma_grenades", {"id": "barb_sword", "count": 5}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
+                    "weapons": ["barb_pistol", {"id": "barb_sword", "count": 5}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
                     "options": [
                         {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
                         {
@@ -110,7 +110,7 @@
                     "defense": 7,
                     "reflexes": 7,
                     "rules": ["leader", {"id": "raider_tactics", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": ["plasma_grenades", "barb_pistol", {"id": "barb_sword", "count": 5}],
+                    "weapons": ["barb_pistol", {"id": "barb_sword", "count": 5}],
                     "options": [
                         {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
                         {
@@ -167,7 +167,7 @@
                     "fight": 5,
                     "defense": 5,
                     "reflexes": 6,
-                    "weapons": ["barb_rifle", "plasma_grenades", "ccw"],
+                    "weapons": ["barb_rifle", "ccw"],
                     "options": [
                         {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
                         {"replaceWeapon": {"id": "ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "poison_whip", "count": 2}]},
@@ -176,7 +176,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Ravager", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["barb_rifle", "plasma_grenades", "ccw"], "min": 9, "max": 19}
+                {"name": "Ravager", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["barb_rifle", "ccw"], "min": 9, "max": 19}
             ],
             "options": [
                 {"replaceWeapon": ["barb_rifle", "ccw"], "withWeapon": [["barb_pistol", {"id": "ccw", "count": 2}]], "modelLimit": "all"},
@@ -203,7 +203,7 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "weapons": ["barb_rifle", "plasma_grenades", {"id": "ccw", "count": 2}],
+                    "weapons": ["barb_rifle", {"id": "ccw", "count": 2}],
                     "options": [
                         {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
                         {"replaceWeapon": {"id": "ccw", "count": 3}, "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "poison_whip", "count": 3}]},
@@ -220,7 +220,7 @@
                     "fight": 6,
                     "defense": 6,
                     "reflexes": 6,
-                    "weapons": ["barb_rifle", "plasma_grenades", {"id": "ccw", "count": 2}],
+                    "weapons": ["barb_rifle", {"id": "ccw", "count": 2}],
                     "min": 9,
                     "max": 19
                 }
@@ -488,7 +488,7 @@
                     "fight": 5,
                     "defense": 6,
                     "reflexes": 6,
-                    "weapons": ["barb_carbine", "plasma_grenades", "ccw"],
+                    "weapons": ["barb_carbine", "ccw"],
                     "options": [
                         {"replaceWeapon": ["barb_carbine", "ccw"], "withWeapon": [["barb_pistol", {"id": "ccw", "count": 2}]]},
                         {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
@@ -497,7 +497,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Harpy", "movement": 8, "courage": 5, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["barb_carbine", "plasma_grenades", "ccw"], "min": 4, "max": 9}
+                {"name": "Harpy", "movement": 8, "courage": 5, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["barb_carbine", "ccw"], "min": 4, "max": 9}
             ],
             "options": [
                 {"replaceWeapon": "barb_carbine", "withWeapon": ["fusion_rifle", "shred_rifle", "emp_rifle", "flamethrower", "grenade_launcher"], "modelLimit": "1/5"},
@@ -519,7 +519,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": ["barb_rifle", "plasma_grenades", "ccw", {"id": "twin_barb_rifle", "mount": ["Front"]}],
+                    "weapons": ["barb_rifle", "ccw", {"id": "twin_barb_rifle", "mount": ["Front"]}],
                     "options": [
                         {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
                         {"replaceWeapon": {"id": "ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "poison_whip", "count": 2}, {"id": "energy_spear", "count": 2}]}
@@ -535,7 +535,7 @@
                     "fight": 6,
                     "defense": 8,
                     "reflexes": 6,
-                    "weapons": ["barb_rifle", "plasma_grenades", "ccw", {"id": "twin_barb_rifle", "mount": ["Front"]}],
+                    "weapons": ["barb_rifle", "ccw", {"id": "twin_barb_rifle", "mount": ["Front"]}],
                     "min": 2,
                     "max": 11
                 }

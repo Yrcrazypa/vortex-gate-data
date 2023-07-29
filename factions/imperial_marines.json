@@ -51,7 +51,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["leader", {"id": "wounds", "x": 2}],
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 2}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "combi_grav", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}], {"id": "energy_claws", "count": 5}]},
@@ -91,7 +91,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "combi_grav", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}], {"id": "energy_claws", "count": 5}]},
@@ -133,7 +133,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["leader", "tactician", {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "combi_grav", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -173,7 +173,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "combi_grav", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -277,7 +277,7 @@
           "reflexes": 6,
           "movement": 6,
           "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 2}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_grav", "combi_thermal", "marine_dmr", "marine_smg"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}], {"id": "energy_claws", "count": 5}]},
@@ -319,7 +319,7 @@
           "reflexes": 6,
           "movement": 8,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "combi_grav", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}], {"id": "energy_claws", "count": 5}]},
@@ -363,7 +363,7 @@
           "movement": 6,
           "reflexes": 6,
           "rules": ["engineer", "leader", {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 2}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["twin_marine_rifle", "combi_flamer", "combi_fusion", "combi_plasma", "combi_grav", "combi_thermal", "marine_dmr", "marine_smg"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}], {"id": "energy_claws", "count": 5}]},
@@ -405,7 +405,7 @@
           "movement": 6,
           "reflexes": 8,
           "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["twin_marine_rifle", "combi_flamer", "combi_fusion", "combi_plasma", "combi_grav", "combi_thermal", "marine_dmr", "marine_smg"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 2}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}], {"id": "energy_claws", "count": 5}]},
@@ -449,7 +449,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["warrior", "leader", {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_grav", "combi_thermal", "marine_smg", "marine_dmr"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -490,7 +490,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["warrior", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_fusion", "combi_flamer", "combi_grav", "combi_thermal", "marine_smg", "marine_dmr"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -532,7 +532,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["medic", "support", {"id": "wounds", "x": 2}],
-          "weapons": ["marine_pistol",  {"id": "chainsword", "count": 3}],
+          "weapons": ["marine_pistol", {"id": "chainsword", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"]},
             {
@@ -569,7 +569,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "medic_x", "x": "Infantry, Biker"}, {"id": "support_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
-          "weapons": ["marine_pistol",  {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_pistol", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"]},
             {
@@ -659,7 +659,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_rifle",  "heavy_ccw"],
+          "weapons": ["marine_rifle", "heavy_ccw"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_grav", "combi_thermal", "twin_marine_rifle"]},
             {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [{"id": "energy_claws", "count": 4}]},
@@ -705,7 +705,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "heavy_ccw",  "smoke_grenades"],
+          "weapons": ["marine_rifle", "heavy_ccw"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_grav", "combi_thermal", "twin_marine_rifle"]},
             {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [{"id": "energy_claws", "count": 4}]},
@@ -726,18 +726,7 @@
           "min": 1,
           "max": 1
         },
-        {
-          "name": "Scout Marine",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 7,
-          "reflexes": 6,
-          "weapons": ["marine_rifle", "heavy_ccw",  "smoke_grenades"],
-          "min": 4,
-          "max": 9
-        }
+        {"name": "Scout Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "heavy_ccw"], "min": 4, "max": 9}
       ],
       "options": [
         {"replaceWeapon": "marine_rifle", "withWeapon": ["marine_shotgun", "sniper_rifle", "marine_dmr", "marine_smg", "heavy_carbine"]},
@@ -776,7 +765,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_rifle",  {"id": "heavy_ccw", "count": 2}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}],
           "options": [
             {
               "replaceWeapon": ["marine_rifle"],
@@ -850,7 +839,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["heavy_ccw",  {"id": "marine_pistol", "count": 2}],
+          "weapons": ["heavy_ccw", {"id": "marine_pistol", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "thermal_pistol", "gravity_pistol", "fusion_pistol"], "limit": 2},
             {"replaceWeapon": [{"id": "marine_pistol", "count": 2}], "withWeapon": ["hazard_flamethrower", "hazard_launcher", "fusion_rifle", "gravity_rifle", "hazard_blaster"]},
@@ -946,7 +935,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_rifle",  "heavy_ccw"],
+          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_rifle", "heavy_ccw"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
             {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [{"id": "energy_claws", "count": 4}]},
@@ -1028,7 +1017,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": [{"id": "defiant", "x": 2}, "furious"],
-          "weapons": ["marine_rifle",  "heavy_ccw"],
+          "weapons": ["marine_rifle", "heavy_ccw"],
           "options": [
             {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["flamethrower_pistol", "fusion_pistol", "plasma_pistol", "gravity_pistol", "thermal_pistol"]},
@@ -1147,7 +1136,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["plasma_rifle",  "heavy_ccw"], "min": 4, "max": 9}
+        {"name": "Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["plasma_rifle", "heavy_ccw"], "min": 4, "max": 9}
       ],
       "options": [
         {"replaceWeapon": "plasma_rifle", "withWeapon": ["gravity_rifle", "fusion_rifle", "flamethrower", "thermal_rifle", "heavy_plasma_rifle", "plasma_assault_rifle"]},
@@ -1192,18 +1181,7 @@
           "min": 1,
           "max": 1
         },
-        {
-          "name": "Heavy Devastator",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["heavy_flamethrower",  "heavy_ccw"],
-          "min": 4,
-          "max": 9
-        }
+        {"name": "Heavy Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_flamethrower", "heavy_ccw"], "min": 4, "max": 9}
       ],
       "options": [
         {
@@ -1799,7 +1777,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "magic", "x": 1}, {"id": "tactician", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
-          "weapons": ["twin_marine_rifle", "psychic_grenades", {"id": "energy_sword", "count": 5}],
+          "weapons": ["twin_marine_rifle", {"id": "energy_sword", "count": 5}],
           "options": [
             {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "medium_machinegun", "psychic_cannon"]},
             {
@@ -1830,7 +1808,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["leader", {"id": "magic", "x": 1}, "tactician", {"id": "wounds", "x": 3}],
-          "weapons": ["storm_rifle", "psychic_grenades", {"id": "energy_sword", "count": 4}],
+          "weapons": ["storm_rifle", {"id": "energy_sword", "count": 4}],
           "options": [
             {"replaceWeapon": "storm_rifle", "withWeapon": "marine_smg"},
             {
@@ -1916,23 +1894,12 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["storm_rifle", "psychic_grenades", {"id": "energy_sword", "count": 2}],
+          "weapons": ["storm_rifle", {"id": "energy_sword", "count": 2}],
           "options": [{"replaceWeapon": ["storm_rifle"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"]}],
           "min": 1,
           "max": 1
         },
-        {
-          "name": "Psychic Marine",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["storm_rifle", "psychic_grenades", {"id": "energy_sword", "count": 2}],
-          "min": 4,
-          "max": 9
-        }
+        {"name": "Psychic Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["storm_rifle", {"id": "energy_sword", "count": 2}], "min": 4, "max": 9}
       ],
       "options": [
         {
@@ -1964,25 +1931,14 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["storm_rifle", "psychic_grenades", "heavy_ccw"],
+          "weapons": ["storm_rifle", "heavy_ccw"],
           "options": [
             {"replaceWeapon": ["storm_rifle"], "withWeapon": ["heavy_flamethrower", "plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol", "marine_smg"]}
           ],
           "min": 1,
           "max": 1
         },
-        {
-          "name": "Purge Marine",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["heavy_flamethrower", "psychic_grenades", "heavy_ccw"],
-          "min": 4,
-          "max": 9
-        }
+        {"name": "Purge Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_flamethrower", "heavy_ccw"], "min": 4, "max": 9}
       ],
       "options": [
         {"replaceWeapon": ["heavy_flamethrower"], "withWeapon": ["psychic_cannon", "medium_machinegun"]},
@@ -2005,7 +1961,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["storm_rifle", "psychic_grenades", {"id": "energy_sword", "count": 2}],
+          "weapons": ["storm_rifle", {"id": "energy_sword", "count": 2}],
           "options": [{"replaceWeapon": ["storm_rifle"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"]}],
           "min": 1,
           "max": 1
@@ -2018,7 +1974,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["storm_rifle", "psychic_grenades", {"id": "energy_sword", "count": 2}],
+          "weapons": ["storm_rifle", {"id": "energy_sword", "count": 2}],
           "min": 4,
           "max": 9
         }
@@ -2054,7 +2010,7 @@
           "movement": 5,
           "reflexes": 6,
           "rules": ["ambush", "conclave"],
-          "weapons": ["twin_marine_rifle", "psychic_grenades", {"id": "energy_sword", "count": 2}],
+          "weapons": ["twin_marine_rifle", {"id": "energy_sword", "count": 2}],
           "options": [
             {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "medium_machinegun", "psychic_cannon"]},
             {
@@ -2084,7 +2040,7 @@
           "movement": 5,
           "reflexes": 6,
           "rules": ["ambush", "conclave", {"id": "wounds", "x": 2}],
-          "weapons": ["twin_marine_rifle", "psychic_grenades", {"id": "energy_sword", "count": 3}],
+          "weapons": ["twin_marine_rifle", {"id": "energy_sword", "count": 3}],
           "options": [
             {"replaceWeapon": "twin_marine_rifle", "withWeapon": ["heavy_flamethrower", "medium_machinegun", "psychic_cannon"]},
             {
@@ -2114,7 +2070,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "storm_rifle", "psychic_grenades", {"id": "energy_sword", "count": 2}],
+          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "storm_rifle", {"id": "energy_sword", "count": 2}],
           "options": [{"replaceWeapon": ["storm_rifle"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"]}],
           "min": 1,
           "max": 1
@@ -2127,7 +2083,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "storm_rifle", "psychic_grenades", {"id": "energy_sword", "count": 2}],
+          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "storm_rifle", {"id": "energy_sword", "count": 2}],
           "min": 2,
           "max": 8
         }

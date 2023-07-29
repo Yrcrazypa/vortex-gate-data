@@ -84,7 +84,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["pulse_rifle", {"id": "ccw", "count": 2}, "stun_grenades"],
+          "weapons": ["pulse_rifle", {"id": "ccw", "count": 2}],
           "rules": ["leader", {"id": "marksman", "x": 1}, {"id": "wounds", "x": 3}],
           "options": [{"addWeapon": "pulse_pistol"}, {"addRule": "spotting_laser"}],
           "min": 1,
@@ -110,12 +110,12 @@
           "fight": 4,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["pulse_rifle", "ccw", "stun_grenades"],
+          "weapons": ["pulse_rifle", "ccw"],
           "options": [{"addWeapon": "pulse_pistol"}, {"addRule": "spotting_laser"}],
           "min": 1,
           "max": 1
         },
-        {"name": "Warrior", "movement": 6, "courage": 5, "shoot": 5, "fight": 4, "defense": 6, "reflexes": 6, "weapons": ["pulse_rifle", "ccw", "stun_grenades"], "min": 4, "max": 14}
+        {"name": "Warrior", "movement": 6, "courage": 5, "shoot": 5, "fight": 4, "defense": 6, "reflexes": 6, "weapons": ["pulse_rifle", "ccw"], "min": 4, "max": 14}
       ]
     },
     "pathfinder_squad": {
@@ -138,7 +138,7 @@
           "fight": 4,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["pulse_carbine", "ccw", "stun_grenades"],
+          "weapons": ["pulse_carbine", "ccw"],
           "options": [{"addWeapon": "pulse_pistol"}, {"addRule": "spotting_laser"}],
           "min": 1,
           "max": 1
@@ -151,7 +151,7 @@
           "fight": 4,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["pulse_carbine", "ccw", "stun_grenades"],
+          "weapons": ["pulse_carbine", "ccw"],
           "options": [{"addWeapon": "stun_grenade_launcher_attachment", "modelLimit": 1}, {"addRule": "spotting_laser"}],
           "min": 4,
           "max": 9
@@ -172,8 +172,8 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["defense_rifle", "ccw", "frags"],
-          "options": [{"replaceWeapon": ["defense_rifle", "ccw"], "withWeapon": [["pulse_pistol", {"id": "ccw", "count": 2}]]}],
+          "weapons": ["auto_rifle", "ccw", "frags"],
+          "options": [{"replaceWeapon": ["auto_rifle", "ccw"], "withWeapon": [["pulse_pistol", {"id": "ccw", "count": 2}]]}],
           "min": 1,
           "max": 1
         },
@@ -185,8 +185,8 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["defense_rifle", "ccw", "frags"],
-          "options": [{"replaceWeapon": ["defense_rifle"], "withWeapon": ["flamethrower", "plasma_rifle", "fusion_blaster", "stun_grenade_launcher"], "modelLimit": 1}],
+          "weapons": ["auto_rifle", "ccw", "frags"],
+          "options": [{"replaceWeapon": ["auto_rifle"], "withWeapon": ["flamethrower", "plasma_rifle", "fusion_blaster", "stun_grenade_launcher"], "modelLimit": 1}],
           "min": 9,
           "max": 9
         }
@@ -216,7 +216,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["evasive", "fly"],
-          "weapons": ["pulse_gatling", "suit_fist", "stun_grenades"],
+          "weapons": ["pulse_gatling", "suit_fist"],
           "options": [
             {"replaceWeapon": "pulse_gatling", "withWeapon": ["fusion_blaster", "plasma_rifle"], "modelLimit": "1/3"},
             {"addRule": "homing_beacon", "modelLimit": 1},
@@ -242,7 +242,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["pulse_carbine", {"id": "energy_sword", "count": 2}, "stun_grenades"],
+          "weapons": ["pulse_carbine", {"id": "energy_sword", "count": 2}],
           "options": [
             {"replaceWeapon": {"id": "energy_sword", "count": 2}, "withWeapon": [{"id": "energy_fist", "count": 2}], "modelLimit": "all"},
             {"addRule": "pulse_shield", "modelLimit": "all"},
@@ -812,7 +812,6 @@
     "pulse_pistol": {"name": "Pulse Pistol", "attacks": 1, "short": 6, "ap": 2, "rules": ["pistol"]},
     "pulse_gatling": {"name": "Pulse Gatling", "attacks": 3, "short": 9, "medium": 18, "ap": 2, "rules": ["assault"]},
     "heavy_pulse_gatling": {"name": "Heavy Pulse Gatling", "attacks": 10, "short": 18, "medium": 36, "ap": 3},
-    "stun_grenades": {"name": "Stun Grenades", "attacks": 1, "short": 6, "rules": ["grenade", "stun"]},
     "suit_fists": {"name": "Suit Fists", "attacks": 1, "short": "Melee", "ap": 2},
     "suit_shield": {"name": "Shielded Suit Fist", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["fist_shield"]},
     "neutron_carbine": {"name": "Neutron Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 3},

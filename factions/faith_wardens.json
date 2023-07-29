@@ -30,7 +30,7 @@
                     "defense": 7,
                     "reflexes": 6,
                     "rules": ["fly"],
-                    "weapons": ["marine_pistol", {"id": "energy_sword", "count": 3}, "marine_grenades"],
+                    "weapons": ["marine_pistol", {"id": "energy_sword", "count": 3}],
                     "min": 0,
                     "max": 2
                 }
@@ -70,7 +70,7 @@
                     "fight": 7,
                     "defense": 7,
                     "reflexes": 6,
-                    "weapons": ["marine_rifle", "marine_grenades", {"id": "ccw", "count": 3}],
+                    "weapons": ["marine_rifle",  {"id": "ccw", "count": 3}],
                     "options": [
                         {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
                         {"replaceWeapon": ["marine_rifle", {"id": "ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}]]},
@@ -106,7 +106,7 @@
                     "fight": 7,
                     "defense": 7,
                     "reflexes": 6,
-                    "weapons": ["marine_rifle", "marine_grenades", {"id": "ccw", "count": 3}],
+                    "weapons": ["marine_rifle",  {"id": "ccw", "count": 3}],
                     "options": [
                         {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
                         {"replaceWeapon": ["marine_rifle", {"id": "ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}]]},
@@ -142,7 +142,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 6,
-                    "weapons": ["marine_rifle", "marine_grenades", {"id": "ccw", "count": 2}],
+                    "weapons": ["marine_rifle",  {"id": "ccw", "count": 2}],
                     "options": [{"replaceRule": "banner_of_focus", "withRule": ["banner_of_justice", "banner_of_wrath"], "limit": 1}, {"addRule": [{"id": "ward", "x": 1}]}],
                     "min": 1,
                     "max": 1
@@ -163,7 +163,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": ["marine_pistol", "marine_grenades", {"id": "ccw", "count": 3}],
+                    "weapons": ["marine_pistol",  {"id": "ccw", "count": 3}],
                     "min": 1,
                     "max": 1
                 }
@@ -183,7 +183,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": ["marine_pistol", {"id": "energy_staff", "x": 3}, "marine_grenades"],
+                    "weapons": ["marine_pistol", {"id": "energy_staff", "x": 3}],
                     "min": 1,
                     "max": 1
                 }
@@ -212,7 +212,7 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": ["marine_rifle", "marine_grenades", "ccw"],
+                    "weapons": ["marine_rifle",  "ccw"],
                     "options": [
                         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]},
                         {"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}]}
@@ -220,7 +220,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Initiate", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "marine_grenades", "ccw"], "min": 4, "max": 9}
+                {"name": "Initiate", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle",  "ccw"], "min": 4, "max": 9}
             ]
         },
         "faith_wardens": {
@@ -246,7 +246,7 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": ["marine_rifle", "marine_grenades", "ccw"],
+                    "weapons": ["marine_rifle",  "ccw"],
                     "options": [
                         {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
                         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
@@ -264,7 +264,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Faith Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "marine_grenades", "ccw"], "min": 4, "max": 9}
+                {"name": "Faith Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle",  "ccw"], "min": 4, "max": 9}
             ]
         },
         "veteran_wardens": {
@@ -290,7 +290,7 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 6,
-                    "weapons": ["marine_rifle", "marine_grenades", "ccw"],
+                    "weapons": ["marine_rifle",  "ccw"],
                     "options": [
                         {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
                         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
@@ -308,7 +308,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Veteran Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "marine_grenades", "ccw"], "min": 4, "max": 9}
+                {"name": "Veteran Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle",  "ccw"], "min": 4, "max": 9}
             ]
         },
         "protector_wardens": {
@@ -325,7 +325,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": [{"id": "energy_mace", "count": 2}, "marine_grenades", "marine_pistol", "shield"],
+                    "weapons": [{"id": "energy_mace", "count": 2},  "marine_pistol", "shield"],
                     "options": [
                         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
                         {"replaceWeapon": {"id": "energy_mace", "count": 2}, "withWeapon": [{"id": "energy_spear", "count": 2}]}
@@ -341,7 +341,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": [{"id": "energy_mace", "count": 2}, "marine_grenades", "marine_pistol", "shield"],
+                    "weapons": [{"id": "energy_mace", "count": 2},  "marine_pistol", "shield"],
                     "min": 4,
                     "max": 9
                 }
@@ -366,7 +366,7 @@
                     "fight": 5,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": ["marine_rifle", "marine_grenades", "ccw"],
+                    "weapons": ["marine_rifle",  "ccw"],
                     "options": [
                         {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion"]},
                         {"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
@@ -385,7 +385,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Seeker", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "marine_grenades", "ccw"], "min": 4, "max": 9}
+                {"name": "Seeker", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle",  "ccw"], "min": 4, "max": 9}
             ]
         },
         "redemption_wardens": {
@@ -402,7 +402,7 @@
                     "fight": 6,
                     "defense": 5,
                     "reflexes": 5,
-                    "weapons": [{"id": "shock_whip", "count": 4}, "marine_grenades"],
+                    "weapons": [{"id": "shock_whip", "count": 4}],
                     "options": [{"addWeapon": "marine_pistol"}],
                     "min": 1,
                     "max": 1
@@ -443,7 +443,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": ["marine_pistol", "marine_grenades", {"id": "ccw", "count": 2}],
+                    "weapons": ["marine_pistol",  {"id": "ccw", "count": 2}],
                     "options": [{"replaceWeapon": [{"id": "marine_pistol", "count": 1}], "withWeapon": [{"id": "plasma_pistol", "count": 1}]}],
                     "min": 1,
                     "max": 1
@@ -456,7 +456,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": ["marine_pistol", "marine_grenades", {"id": "ccw", "count": 2}],
+                    "weapons": ["marine_pistol",  {"id": "ccw", "count": 2}],
                     "min": 4,
                     "max": 9
                 }
@@ -480,7 +480,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": ["marine_rifle", "marine_grenades", "ccw"],
+                    "weapons": ["marine_rifle",  "ccw"],
                     "options": [
                         {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
                         {"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
@@ -507,7 +507,7 @@
                     "fight": 6,
                     "defense": 7,
                     "reflexes": 5,
-                    "weapons": ["heavy_fusion_rifle", "marine_grenades", "ccw"],
+                    "weapons": ["heavy_fusion_rifle",  "ccw"],
                     "min": 4,
                     "max": 9
                 }

@@ -18,9 +18,9 @@
           "reflexes": 6,
           "movement": 6,
           "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 2}],
-          "weapons": ["defense_rifle", "frags", {"id": "ccw", "count": 2}],
+          "weapons": ["auto_rifle", "frags", {"id": "ccw", "count": 2}],
           "options": [
-            {"replaceWeapon": ["defense_rifle", {"id": "ccw", "count": 2}], "withWeapon": [["pistol", {"id": "ccw", "count": 3}]]},
+            {"replaceWeapon": ["auto_rifle", {"id": "ccw", "count": 2}], "withWeapon": [["pistol", {"id": "ccw", "count": 3}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
             {
               "replaceWeapon": {"id": "ccw", "count": 3},
@@ -260,7 +260,7 @@
       "name": "Cult Militia Squad",
       "description": "A defense force squad turned to the cult.",
       "category": "core",
-      "options": [{"replaceWeapon": "defense_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle", "light_machinegun"], "modelLimit": "1/5"}],
+      "options": [{"replaceWeapon": "auto_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle", "light_machinegun"], "modelLimit": "1/5"}],
       "models": [
         {
           "name": "Sergeant",
@@ -270,10 +270,10 @@
           "defense": 5,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["defense_rifle", "frags", "ccw"],
+          "weapons": ["auto_rifle", "frags", "ccw"],
           "options": [
-            {"replaceWeapon": "defense_rifle", "withWeapon": ["marine_rifle"]},
-            {"replaceWeapon": ["defense_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+            {"replaceWeapon": "auto_rifle", "withWeapon": ["marine_rifle"]},
+            {"replaceWeapon": ["auto_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
             {
               "replaceWeapon": {"id": "ccw", "count": 2},
@@ -297,7 +297,7 @@
           "defense": 5,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["defense_rifle", "frags", "ccw"],
+          "weapons": ["auto_rifle", "frags", "ccw"],
           "options": [{"addRule": "field_radio", "modelLimit": 1}, {"replaceModel": "weapon_team", "modelLimit": 1}],
           "min": 9,
           "max": 29
@@ -343,9 +343,9 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["defense_rifle", "blasting_charges", "ccw"],
+          "weapons": ["auto_rifle", "blasting_charges", "ccw"],
           "options": [
-            {"replaceWeapon": ["defense_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+            {"replaceWeapon": ["auto_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
             {
               "replaceWeapon": {"id": "ccw", "count": 2},
@@ -355,12 +355,12 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Neophyte", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["defense_rifle", "blasting_charges", "ccw"], "min": 9, "max": 19}
+        {"name": "Neophyte", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["auto_rifle", "blasting_charges", "ccw"], "min": 9, "max": 19}
       ],
       "options": [
-        {"replaceWeapon": "defense_rifle", "withWeapon": "shotgun"},
-        {"replaceWeapon": "defense_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "web_gun"], "modelLimit": "2/10"},
-        {"replaceWeapon": "defense_rifle", "withWeapon": ["light_machinegun", "seismic_cannon", "mining_laser"], "modelLimit": "2/10"},
+        {"replaceWeapon": "auto_rifle", "withWeapon": "shotgun"},
+        {"replaceWeapon": "auto_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "web_gun"], "modelLimit": "2/10"},
+        {"replaceWeapon": "auto_rifle", "withWeapon": ["light_machinegun", "seismic_cannon", "mining_laser"], "modelLimit": "2/10"},
         {"addRule": "banner", "modelLimit": 1}
       ]
     },
@@ -461,7 +461,7 @@
           "defense": 7,
           "reflexes": 5,
           "movement": 8,
-          "weapons": ["defense_rifle", "blasting_charges", "ccw"],
+          "weapons": ["auto_rifle", "blasting_charges", "ccw"],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
             {
@@ -472,13 +472,13 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Neophyte Outrider", "movement": 8, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["defense_rifle", "blasting_charges", "ccw"], "min": 2, "max": 8}
+        {"name": "Neophyte Outrider", "movement": 8, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["auto_rifle", "blasting_charges", "ccw"], "min": 2, "max": 8}
       ],
       "options": [
-        {"replaceWeapon": "defense_rifle", "withWeapon": ["shotgun"]},
-        {"replaceWeapon": ["defense_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
-        {"replaceWeapon": "defense_rifle", "withWeapon": ["grenade_launcher"], "modelLimit": "1/3"},
-        {"replaceWeapon": "defense_rifle", "withWeapon": ["light_machinegun", "mining_laser", "flamethrower", "seismic_cannon"], "modelLimit": "1/3"}
+        {"replaceWeapon": "auto_rifle", "withWeapon": ["shotgun"]},
+        {"replaceWeapon": ["auto_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+        {"replaceWeapon": "auto_rifle", "withWeapon": ["grenade_launcher"], "modelLimit": "1/3"},
+        {"replaceWeapon": "auto_rifle", "withWeapon": ["light_machinegun", "mining_laser", "flamethrower", "seismic_cannon"], "modelLimit": "1/3"}
       ]
     },
     "battle_tank": {
@@ -661,7 +661,7 @@
                 {"id": "fusion_cannon", "mount": ["Front"]}
               ]
             },
-            {"addWeapon": [[{"id": "defense_rifle", "count": 3, "mount": ["Left"]}, {"id": "defense_rifle", "count": 3, "mount": ["Right"]}]]},
+            {"addWeapon": [[{"id": "auto_rifle", "count": 3, "mount": ["Left"]}, {"id": "auto_rifle", "count": 3, "mount": ["Right"]}]]},
             {"addWeapon": ["light_machinegun", "twin_marine_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}

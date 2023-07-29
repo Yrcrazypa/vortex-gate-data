@@ -91,7 +91,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "chainsword", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -133,7 +133,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 1}],
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_rifle", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -175,7 +175,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["leader", {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 4}],
+          "weapons": ["marine_rifle", {"id": "chainsword", "count": 4}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 4}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 5}], {"id": "energy_claws", "count": 7}]},
@@ -217,7 +217,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 4}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_rifle", {"id": "chainsword", "count": 4}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 4}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 5}], {"id": "energy_claws", "count": 7}]},
@@ -260,7 +260,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 4}, {"id": "warbeast_horn", "count": 2}],
+          "weapons": ["marine_rifle", {"id": "chainsword", "count": 4}, {"id": "warbeast_horn", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 4}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 5}], {"id": "energy_claws", "count": 7}]},
@@ -299,7 +299,7 @@
           "defense": 10,
           "reflexes": 6,
           "rules": ["engineer", "leader", {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "chainsword", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -339,7 +339,7 @@
           "defense": 10,
           "reflexes": 6,
           "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_rifle", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -381,7 +381,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "chainsword", "count": 3}],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -422,7 +422,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_rifle", {"id": "chainsword", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["twin_marine_rifle", "combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -538,7 +538,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["warrior", "leader", {"id": "wounds", "x": 3}],
-          "weapons": ["marine_rifle", "marine_grenades", {"id": "heavy_ccw", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -575,7 +575,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["warrior", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["marine_grenades", "marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -615,7 +615,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["warrior", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 2}],
-          "weapons": ["marine_grenades", "marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "warbeast_horn", "count": 2}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "warbeast_horn", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}], {"id": "energy_claws", "count": 6}]},
@@ -651,11 +651,11 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["defense_rifle", "frags", "ccw"],
+          "weapons": ["auto_rifle", "frags", "ccw"],
           "options": [
-            {"replaceWeapon": ["defense_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+            {"replaceWeapon": ["auto_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["shotgun"]},
-            {"replaceWeapon": "defense_rifle", "withWeapon": ["flamethrower", "light_machinegun", "plasma_rifle", "fusion_rifle", "grenade_launcher"], "modelLimit": "2/10"}
+            {"replaceWeapon": "auto_rifle", "withWeapon": ["flamethrower", "light_machinegun", "plasma_rifle", "fusion_rifle", "grenade_launcher"], "modelLimit": "2/10"}
           ],
           "min": 10,
           "max": 20
@@ -675,7 +675,7 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["pistol", "marine_grenades", {"id": "chainsword", "count": 2}],
+          "weapons": ["pistol", {"id": "chainsword", "count": 2}],
           "options": [{"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "heavy_chainsword", "count": 2}], "modelLimit": "2/10"}],
           "min": 9,
           "max": 20
@@ -695,6 +695,52 @@
         }
       ],
       "rules": ["furious"]
+    },
+    "maurauder_squad": {
+      "name": "Traitor Marauder Squad",
+      "description": "A group of highly aggressive Planetary Defense deserters who can handle some close quarters fighting.",
+      "category": "elite",
+      "options": [{"replaceWeapon": "auto_rifle", "withWeapon": "shotgun"}, {"addRule": ["heavy_armor"], "modelLimit": "all"}],
+      "rules": ["stealth"],
+      "models": [
+        {
+          "name": "Marauder Leader",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "movement": 6,
+          "weapons": ["auto_rifle", "frags", "ccw"],
+          "options": [
+            {"replaceWeapon": "auto_rifle", "withWeapon": ["marine_rifle"]},
+            {"replaceWeapon": ["auto_rifle", {"id": "ccw", "count": 1}], "withWeapon": [[{"id": "pistol"}, {"id": "ccw", "count": 2}]]},
+            {"replaceWeapon": "pistol", "withWeapon": ["heavy_pistol", "plasma_pistol"]},
+            {
+              "replaceWeapon": {"id": "ccw", "count": 2},
+              "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_axe", "count": 2}, {"id": "energy_mace", "count": 2}, {"id": "energy_fist", "count": 2}]
+            }
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {
+          "name": "Marauder",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "movement": 6,
+          "weapons": ["auto_rifle", "frags", "ccw"],
+          "options": [
+            {"addRule": "field_radio", "modelLimit": 1},
+            {"replaceWeapon": "auto_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle"], "modelLimit": 3}
+          ],
+          "min": 4,
+          "max": 9
+        }
+      ]
     },
     "plague_walkers": {
       "name": "Plague Walkers",
@@ -786,7 +832,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "heavy_ccw", "marine_grenades"],
+          "weapons": ["marine_rifle", "heavy_ccw"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle"]},
             {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [{"id": "energy_claws", "count": 4}]},
@@ -807,7 +853,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Corrupted Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "heavy_ccw", "marine_grenades"], "min": 4, "max": 19}
+        {"name": "Corrupted Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "heavy_ccw"], "min": 4, "max": 19}
       ],
       "options": [
         {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
@@ -834,7 +880,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}, "marine_grenades"],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}],
           "options": [
             {
               "replaceWeapon": "marine_rifle",
@@ -1073,7 +1119,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_pistol", "marine_grenades", {"id": "chainsword", "count": 3}],
+          "weapons": ["marine_pistol", {"id": "chainsword", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
             {"replaceWeapon": ["marine_pistol", {"id": "chainsword", "count": 3}], "withWeapon": [["marine_rifle", {"id": "chainsword", "count": 2}]]},
@@ -1101,7 +1147,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_pistol", {"id": "chainsword", "count": 3}, "marine_grenades"],
+          "weapons": ["marine_pistol", {"id": "chainsword", "count": 3}],
           "min": 4,
           "max": 19
         }
@@ -1127,7 +1173,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 7,
-          "weapons": ["marine_rifle", "heavy_ccw", "marine_grenades"],
+          "weapons": ["marine_rifle", "heavy_ccw"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
             {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}], {"id": "energy_claws", "count": 4}]},
@@ -1147,7 +1193,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Recon Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 7, "weapons": ["marine_rifle", "heavy_ccw", "marine_grenades"], "min": 4, "max": 19}
+        {"name": "Recon Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 7, "weapons": ["marine_rifle", "heavy_ccw"], "min": 4, "max": 19}
       ]
     },
     "psychic_marines": {
@@ -1165,7 +1211,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "heavy_ccw", "psychic_grenades"],
+          "weapons": ["marine_rifle", "heavy_ccw"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle"]},
             {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
@@ -1186,7 +1232,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Psychic Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "heavy_ccw", "psychic_grenades"], "min": 4, "max": 19}
+        {"name": "Psychic Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "heavy_ccw"], "min": 4, "max": 19}
       ],
       "options": [
         {"modelLimit": "2/5", "replaceWeapon": "marine_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "thermal_rifle"]},
@@ -1212,7 +1258,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["conclave"],
-          "weapons": ["marine_rifle", "psychic_grenades", {"id": "heavy_ccw", "count": 2}],
+          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 2}],
           "options": [
             {
               "replaceWeapon": ["marine_rifle"],
@@ -1305,7 +1351,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "marine_grenades", "heavy_ccw"],
+          "weapons": ["marine_rifle", "heavy_ccw"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle", "plasma_rifle"]},
             {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}], {"id": "energy_claws", "count": 4}]},
@@ -1325,18 +1371,7 @@
           "min": 1,
           "max": 1
         },
-        {
-          "name": "Corrupted Devastator",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["plasma_rifle", "marine_grenades", "heavy_ccw"],
-          "min": 4,
-          "max": 14
-        }
+        {"name": "Corrupted Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["plasma_rifle", "heavy_ccw"], "min": 4, "max": 14}
       ]
     },
     "corrupted_heavy_devastators": {
@@ -1356,7 +1391,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "marine_grenades", "heavy_ccw"],
+          "weapons": ["marine_rifle", "heavy_ccw"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle", "heavy_flamethrower"]},
             {"replaceWeapon": ["marine_rifle", "heavy_ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}], {"id": "energy_claws", "count": 4}]},
@@ -1376,18 +1411,7 @@
           "min": 1,
           "max": 1
         },
-        {
-          "name": "Corrupted Heavy Devastator",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["heavy_flamethrower", "marine_grenades", "heavy_ccw"],
-          "min": 4,
-          "max": 14
-        }
+        {"name": "Corrupted Heavy Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_flamethrower", "heavy_ccw"], "min": 4, "max": 14}
       ]
     },
     "possessed_marines": {
@@ -1475,7 +1499,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_pistol", "marine_grenades", {"id": "chainsword", "count": 2}],
+          "weapons": ["marine_pistol", {"id": "chainsword", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
             {"replaceWeapon": ["marine_pistol", {"id": "chainsword", "count": 2}], "withWeapon": [["marine_rifle", "heavy_ccw"]]},
@@ -1495,18 +1519,7 @@
           "min": 1,
           "max": 1
         },
-        {
-          "name": "Talon Raptor",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["marine_pistol", "marine_grenades", {"id": "chainsword", "count": 2}],
-          "min": 4,
-          "max": 14
-        }
+        {"name": "Talon Raptor", "movement": 8, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_pistol", {"id": "chainsword", "count": 2}], "min": 4, "max": 14}
       ]
     },
     "corrupted_destoyers": {
@@ -1608,7 +1621,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_rifle", "marine_grenades", "chainsword"],
+          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_rifle", "chainsword"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "combi_thermal", "twin_marine_rifle"]},
             {"replaceWeapon": ["marine_rifle", "chainsword"], "withWeapon": [{"id": "energy_claws", "count": 4}]},
@@ -1629,7 +1642,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_rifle", "chainsword", "marine_grenades"],
+          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "marine_rifle", "chainsword"],
           "min": 2,
           "max": 8
         }
@@ -1969,36 +1982,30 @@
   "weapons": {
     "pestilence_grenade": {
       "name": "Pestilence Grenades",
-      "profiles": [
-        {"name": "Pestilence", "attacks": 1, "short": 6, "rules": ["pestilence", "grenade", {"id": "blast", "x": 3}]},
-        {"name": "AT", "attacks": 1, "short": 6, "ap": 4, "rules": ["grenade"]}
-      ]
+      "profiles": [{"name": "Pestilence", "attacks": 1, "short": 6, "rules": ["poison", "grenade", {"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 1, "short": 6, "ap": 4, "rules": ["grenade"]}]
     },
     "pestilence_scythe": {
       "name": "Pestilence Scythe",
-      "profiles": [
-        {"name": "Cleave", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["pestilence", "cumbersome"]},
-        {"name": "Sweep", "attacks": 2, "ap": 1, "short": "Melee", "rules": ["pestilence"]}
-      ]
+      "profiles": [{"name": "Cleave", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["poison", "cumbersome"]}, {"name": "Sweep", "attacks": 2, "ap": 1, "short": "Melee", "rules": ["poison"]}]
     },
-    "hauler_jaws": {"name": "Hauler Jaws", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["pestilence"]},
-    "proboscis": {"name": "Proboscis", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["pestilence"]},
-    "pestilence_spit": {"name": "Pestilence Spit", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["pestilence", {"id": "blast", "x": 3}]},
-    "pestilence_pistol": {"name": "Pestilence Pistol", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol", "pestilence"]},
-    "pestilence_great_scythe": {"name": "Pestilence Great-scythe", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["pestilence", "cumbersome"]},
-    "pestilence_launcher": {"name": "Pestilence Launcher", "attacks": 1, "short": 12, "medium": 24, "ap": 4, "rules": ["assault", "pestilence"]},
-    "pestilence_hlauncher": {"name": "Heavy Pestilence Launcher", "attacks": 2, "short": 18, "medium": 36, "ap": 5, "rules": ["assault", "pestilence"]},
-    "pestilence_mortar": {"name": "Pestilence Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": ["heavy", "indirect", "scatter", "pestilence", {"id": "blast", "x": 3}]},
-    "pestilence_cannon": {"name": "Pestilence Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 7, "rules": ["heavy", "pestilence"]},
-    "pestilence_sprayer": {"name": "Pestilence Sprayer", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["pestilence"]},
-    "pestilence_sword": {"name": "Pestilence Sword", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["pestilence"]},
-    "pestilence_flail": {"name": "Pestilence Flail", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["pestilence"]},
-    "pestilence_mower": {"name": "Pestilence Mower", "attacks": 4, "ap": 5, "short": "Melee", "rules": ["pestilence", "lance"]},
-    "pestilence_great_cleaver": {"name": "Pestilence Great-cleaver", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["pestilence", "cumbersome"]},
-    "pestilence_axe": {"name": "Pestilence Axe", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["pestilence"]},
-    "pestilence_mace": {"name": "Pestilence Mace", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["pestilence", "cumbersome"]},
-    "pestilence_claw": {"name": "Pestilence Claw", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["pestilence", "cumbersome"]},
-    "pestilence_ccw": {"name": "Pestilence CCW", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["pestilence"]},
+    "hauler_jaws": {"name": "Hauler Jaws", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["poison"]},
+    "proboscis": {"name": "Proboscis", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["poison"]},
+    "pestilence_spit": {"name": "Pestilence Spit", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["poison", {"id": "blast", "x": 3}]},
+    "pestilence_pistol": {"name": "Pestilence Pistol", "attacks": 1, "short": 6, "ap": 1, "rules": ["pistol", "poison"]},
+    "pestilence_great_scythe": {"name": "Pestilence Great-scythe", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["poison", "cumbersome"]},
+    "pestilence_launcher": {"name": "Pestilence Launcher", "attacks": 1, "short": 12, "medium": 24, "ap": 4, "rules": ["assault", "poison"]},
+    "pestilence_hlauncher": {"name": "Heavy Pestilence Launcher", "attacks": 2, "short": 18, "medium": 36, "ap": 5, "rules": ["assault", "poison"]},
+    "pestilence_mortar": {"name": "Pestilence Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": ["heavy", "indirect", "scatter", "poison", {"id": "blast", "x": 3}]},
+    "pestilence_cannon": {"name": "Pestilence Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 7, "rules": ["heavy", "poison"]},
+    "pestilence_sprayer": {"name": "Pestilence Sprayer", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["poison"]},
+    "pestilence_sword": {"name": "Pestilence Sword", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison"]},
+    "pestilence_flail": {"name": "Pestilence Flail", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["poison"]},
+    "pestilence_mower": {"name": "Pestilence Mower", "attacks": 4, "ap": 5, "short": "Melee", "rules": ["poison", "lance"]},
+    "pestilence_great_cleaver": {"name": "Pestilence Great-cleaver", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["poison", "cumbersome"]},
+    "pestilence_axe": {"name": "Pestilence Axe", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["poison"]},
+    "pestilence_mace": {"name": "Pestilence Mace", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["poison", "cumbersome"]},
+    "pestilence_claw": {"name": "Pestilence Claw", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["poison", "cumbersome"]},
+    "pestilence_ccw": {"name": "Pestilence CCW", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["poison"]},
     "warbeast_horn": {"name": "Warbeast's Horns and Hooves", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["lance"]},
     "missile_rack": {"name": "Missile Rack", "attacks": 2, "short": 12, "medium": 24, "ap": 6},
     "hexed_blades": {"name": "Hexed Blades", "attacks": 1, "short": "Melee", "ap": 1},
@@ -2014,7 +2021,7 @@
     "archtraitor_sword": {"name": "Sword of the Arch-Corrupted", "attacks": 1, "short": "Melee", "ap": 5},
     "archtraitor_claw": {"name": "Claw of the Arch-Corrupted", "attacks": 1, "short": "Melee", "ap": 8},
     "archtraitor_ranged": {"name": "Dark Gods' Blessed Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": ["rapid_fire"]},
-    "pestilence_great_flail": {"name": "Pestilence Great-flail", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["pestilence"]},
+    "pestilence_great_flail": {"name": "Pestilence Great-flail", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["poison"]},
     "greatest_cleaver": {"name": "Greatest Cleaver of Hatred", "profiles": [{"name": "elite", "attacks": 4, "short": "Melee", "ap": 10}, {"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 5}]},
     "giant_gatling": {"name": "Giant Gatling Gun", "attacks": 10, "short": 24, "medium": 48, "ap": 4},
     "train_mounted_blastgun": {"name": "Mounted Blastgun", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": [{"id": "blast", "x": 2}]},
@@ -2124,7 +2131,7 @@
       "subfactions": ["none"]
     }
   },
-  "powerCategories": {"psychic": {"name": "Psychic", "subfactions": ["power_focus"]}, "pestilence": {"name": "Pestilence", "subfactions": ["toughness_focus"]}},
+  "powerCategories": {"psychic": {"name": "Psychic", "subfactions": ["power_focus"]}, "poison": {"name": "Poison", "subfactions": ["toughness_focus"]}},
   "powers": {
     "balefire": {"name": "Balefire", "description": "Target enemy unit within 24\" take 3 hits with AP(1).", "charge": 7},
     "hex": {"name": "Hex", "description": "Target enemy unit within 12\" must re-roll one die of your choice on its next Save test.", "charge": 5},
@@ -2150,13 +2157,8 @@
       "charge": 6,
       "category": "psychic"
     },
-    "deadly_miasma": {"subfactions": ["toughness_focus"], "name": "Deadly Miasma", "description": "Target enemy unit within 18\" take 6 hits with AP(2).", "charge": 6, "category": "pestilence"},
-    "unholy_vitality": {"subfactions": ["toughness_focus"], "name": "Unholy Vitality", "description": "Target friendly unit within 12\" heals 1 lost wound.", "charge": 7, "category": "pestilence"},
-    "spreading_plague": {
-      "name": "Spreading Plague",
-      "description": "Roll a d10 for every enemy unit within 12\". On a 3 or less that unit takes 4 hits with AP(1).",
-      "charge": 5,
-      "category": "pestilence"
-    }
+    "deadly_miasma": {"subfactions": ["toughness_focus"], "name": "Deadly Miasma", "description": "Target enemy unit within 18\" take 6 hits with AP(2).", "charge": 6, "category": "poison"},
+    "unholy_vitality": {"subfactions": ["toughness_focus"], "name": "Unholy Vitality", "description": "Target friendly unit within 12\" heals 1 lost wound.", "charge": 7, "category": "poison"},
+    "spreading_plague": {"name": "Spreading Plague", "description": "Roll a d10 for every enemy unit within 12\". On a 3 or less that unit takes 4 hits with AP(1).", "charge": 5, "category": "poison"}
   }
 }

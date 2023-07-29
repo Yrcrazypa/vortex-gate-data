@@ -21,13 +21,27 @@
     "doom": {"name": "Instruments of Doom"},
     "mercenaries": {"name": "Mercenaries"}
   },
-  "categories": {"hero": {"name": "Hero"}, "core": {"name": "Core"}, "elite": {"name": "Elite"}, "rare": {"name": "Rare"}, "transport": {"name": "Transport"}, "fortification": {"name": "Fortification"}},
+  "categories": {
+    "hero": {"name": "Hero"},
+    "core": {"name": "Core"},
+    "elite": {"name": "Elite"},
+    "rare": {"name": "Rare"},
+    "transport": {"name": "Transport"},
+    "fortification": {"name": "Fortification"}
+  },
   "organizations": {
     "skirmish": {
       "name": "Generalist",
       "cost": 0,
       "description": "A well-rounded force for taking on any mission.",
-      "categories": {"hero": {"min": 1, "max": 2}, "core": {"min": 2, "max": 5}, "elite": {"min": 0, "max": 3}, "rare": {"min": 0, "max": 2}, "transport": {"max": 3}, "fortification": {"min": 0, "max": 2}}
+      "categories": {
+        "hero": {"min": 1, "max": 2},
+        "core": {"min": 2, "max": 5},
+        "elite": {"min": 0, "max": 3},
+        "rare": {"min": 0, "max": 2},
+        "transport": {"max": 3},
+        "fortification": {"min": 0, "max": 2}
+      }
     },
     "elite": {
       "name": "Elite",
@@ -105,16 +119,6 @@
       "alliance": "doom",
       "description": "The corrupted marines are a band of marines that betrayed the Human Empire and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry."
     },
-    "traitor_defense_force": {
-      "version": "1.0",
-      "name": "Traitor Defense Force",
-      "id": "traitor_defense_force",
-      "url": "traitor_defense_force.json",
-      "color": "#ba7f00",
-      "secondary_color": "#343a40",
-      "alliance": "doom",
-      "description": "The corrupted defense force are a band of deserters and other folks out for their own interests. They have gathered much of what they can from the Imperial Defense Force and now fight with the traitors against those that stay loyal."
-    },
     "undying_machines": {
       "version": "1.0",
       "name": "Undying Machines",
@@ -171,14 +175,14 @@
       "alliance": "order",
       "description": "The Machine Guilds are a unique group of several different but organized planets which create and maintain all sort sof wild war machines and contraptions. The Machine Guilds rely on technological augmentation and deadly weapons to destroy their enemies."
     },
-    "imperial_defense_force": {
+    "planetary_defense_force": {
       "version": "1.0",
-      "name": "Imperial Defence Force",
-      "id": "imperial_defense_force",
-      "url": "imperial_defense_force.json",
+      "name": "Planetary Defence Force",
+      "id": "planetary_defense_force",
+      "url": "planetary_defense_force.json",
       "color": "#314821",
       "alliance": "order",
-      "description": "The Imperial Defense Force is the backbone defense force of the many civilian planets of the empire. They are the first to respond to any miliary threats. They rely on hardy battle tanks and good old artillery shells along with waves of human fighters to defend the Empire."
+      "description": "The Planetary Defense Force is the backbone defense force of the many civilian planets of the empire. They are the first to respond to any miliary threats. They rely on hardy battle tanks and good old artillery shells along with waves of human fighters to defend the Empire."
     },
     "imperial_marines": {
       "version": "1.0",
@@ -340,14 +344,12 @@
       "description": "Upgrade one _Leader_ model with Quick Reflexes.",
       "flavor": "This model has expert awareness and can react quickly.",
       "points": 5
-    }
-  },
-  "hidden_relics": {
+    },
     "arcane_awakening": {
       "subfactions": ["power_focus"],
       "name": "Arcane Awakening",
-      "rule": {"id": "magic", "x": 1},
-      "flavor": "The dormant powers within this leader have unfold.",
+      "rule": {"id": "power", "x": 1},
+      "flavor": "The dormant powers within this leader have awakened.",
       "description": "Upgrade one _Leader_ model with Power (1).",
       "points": 10
     },
@@ -355,16 +357,16 @@
       "subfactions": ["power_focus"],
       "name": "Power Surge",
       "rule": "legend_power_surge",
-      "flavor": "Using rituals of might before battle has strengthened the connection to the powers of the universe.",
+      "flavor": "A boost of magic helps with casting powers.",
       "description": "Upgrade one _Power_ model with Power Surge.",
       "points": 5
     },
-    "disruptive_aura": {
+    "tome _of_power": {
       "subfactions": ["power_focus"],
-      "name": "Disruptive Aura",
-      "rule": "legend_disruptive_aura",
-      "flavor": "This leader emits a distracting aura of energy, making it difficult to concentrate.",
-      "description": "Upgrade one _Leader_ model with Disruptive Aura.",
+      "name": "Tome of Power",
+      "rule": "legend_tome",
+      "flavor": "A powerful artifact containing arcane knowledge.",
+      "description": "Upgrade one _Power_ model with Tome of Power.",
       "points": 5
     },
     "battle_frenzy": {
@@ -372,23 +374,23 @@
       "name": "Battle Frenzy",
       "rule": "legend_battle_frenzy",
       "flavor": "This leader can incite a potent bloodlust in their allies.",
-      "description": "Upgrade one _Leader_ or _Support_ model with Battle Frenzy.",
+      "description": "Upgrade one _Leader_ model with Battle Frenzy.",
       "points": 5
     },
-    "onslaught": {
+    "final_stand": {
       "subfactions": ["assault_focus"],
-      "name": "Onslaught",
-      "rule": "legend_onslaught",
-      "flavor": "With a volley of pre-emptive fire even the greatest defense can be broken.",
-      "description": "Upgrade one _Leader_ model with Onslaught.",
+      "name": "Final Stand",
+      "rule": "legend_final_stand",
+      "flavor": "Prepared to fight to the end, this leader will fight on beyond death.",
+      "description": "Upgrade one _Leader_ model with Final Stand.",
       "points": 5
     },
     "reaping_blade": {
       "subfactions": ["assault_focus"],
       "name": "The Reaping Blade",
       "weapon": "legend_reaping_blade",
-      "flavor": "This blade thirsts for blood and many are all too eager to quench it.",
-      "description": "Replace one _Leader_ model's Melee weapon with the Reaping Blade.",
+      "flavor": "This weapon emits an aura of unbridled rage, granting its wielder superhuman strength.",
+      "description": "Replace one _Leader_ model's Melee weapon with Reaping Blade(X).",
       "points": 10
     },
     "momentum": {
@@ -419,31 +421,39 @@
       "subfactions": ["stealth_focus"],
       "name": "Surprise Attack",
       "rule": "legend_surprise_attack",
-      "flavor": "Once the trap has been sprung the enemy is stuck in a deadly crossfire.",
-      "description": "Upgrade one _Infantry_ or _Heavy Infantry_ unit with Surprise Attack.",
+      "flavor": "Once the trap has been sprung the enemy is stuck in a deadly assault.",
+      "description": "Upgrade one _Infantry_, _Heavy Infantry_ or _Biker_ unit with Surprise Attack.",
       "points": 5
     },
     "poison_mastery": {
       "subfactions": ["stealth_focus"],
       "name": "Poison Mastery",
-      "rule": "legend_poison_mastery",
-      "flavor": "This leader is a master alchemist, creating deadly toxins and poisons to coat their weapons with.",
-      "description": "Upgrade one _Leader_ model's Melee weapon with Lethal Poison.",
-      "points": 10
+      "rule": "poison",
+      "flavor": "This leader coated their weapons with a lethal poison.",
+      "description": "Upgrade one _Leader_ model's Melee weapons with Poison.",
+      "points": 5
     },
     "headhunter": {
       "subfactions": ["stealth_focus"],
       "name": "The Headhunter",
       "weapon": "legend_headhunter",
       "flavor": "This legendary weapon has ended many wars before they even started.",
-      "description": "Replace one _Leader_ model's Ranged weapon with the Headhunter.",
+      "description": "Replace one _Leader_ model's Ranged weapon with Headhunter(X).",
+      "points": 10
+    },
+    "preacher": {
+      "subfactions": ["morale_focus"],
+      "name": "Preacher",
+      "rule": "battle_prayer",
+      "flavor": "A prayer in dark times can lift spirits to achieve impossible deeds.",
+      "description": "Upgrade one _Leader_ model with Battle Prayer.",
       "points": 5
     },
     "heroism": {
       "subfactions": ["morale_focus"],
       "name": "Heroism",
       "rule": "legend_heroism",
-      "flavor": "This unit easily shakes off the horrors of war.",
+      "flavor": "These fighters easily shakes off the horrors of war.",
       "description": "Upgrade one unit with Heroism.",
       "points": 5
     },
@@ -459,22 +469,48 @@
       "subfactions": ["tactical_focus"],
       "name": "Brilliant Strategist",
       "rule": "legend_strategist",
-      "flavor": "A mastermind of war, able to a ",
+      "flavor": "A mastermind of war, able to guide fellow soldiers to victory.",
       "description": "Upgrade one _Leader_ model with Brilliant Strategist.",
       "points": 10
     },
-    "mobility_1": {"subfactions": ["morale_focus"], "name": "", "rule": "", "flavor": "", "description": "", "points": 5},
-    "tactical_2": {"subfactions": ["tactical_focus"], "name": "", "rule": "", "flavor": "", "description": "", "points": 0},
-    "tactical_3": {"subfactions": ["tactical_focus"], "name": "", "rule": "", "flavor": "", "description": "", "points": 0},
-    "vigi_1": {"subfactions": ["vigilance_focus"], "name": "", "rule": "", "flavor": "", "description": "re-roll init", "points": 0},
-    "vigi_2": {"subfactions": ["vigilance_focus"], "name": "", "rule": "", "flavor": "", "description": "", "points": 0},
-    "vigi_3": {"subfactions": ["vigilance_focus"], "name": "", "weapon": "", "flavor": "", "description": "", "points": 0},
-    "regeneration": {
-      "subfactions": ["toughness_focus"],
-      "name": "Heroic Regeneration",
-      "rule": "regeneration",
-      "flavor": "Blessed with unnatural regeneration, this leader can endure countless injuries.",
-      "description": "Upgrade one _Leader_ model with Regeneration.",
+    "commanding_presence": {
+      "subfactions": ["tactical_focus"],
+      "name": "Commanding Presence",
+      "rule": "legend_presence",
+      "flavor": "This leader has natural charisma and leadership, enhancing their orders.",
+      "description": "Upgrade one _Leader_ model with Commanding Presence.",
+      "points": 5
+    },
+    "cqc": {
+      "subfactions": ["tactical_focus"],
+      "name": "Close Combat Fighters",
+      "rule": "legend_cqc",
+      "flavor": "These fighters are trained to fight close up with the enemy.",
+      "description": "Upgrade an _Infantry_ or _Heavy Infantry_ unit with Close Combat Fighters.",
+      "points": 5
+    },
+    "eagle_eyed": {
+      "subfactions": ["vigilance_focus"],
+      "name": "Eagle-Eyed",
+      "rule": "legend_eagle_eyed",
+      "flavor": "These fighters are trained to hold objectives and strike down any enemy that tries to take it from them.",
+      "description": "Upgrade one _Infantry_ or _Heavy Infantry_ unit with Eagle-Eyed.",
+      "points": 5
+    },
+    "watchmaster": {
+      "subfactions": ["vigilance_focus"],
+      "name": "Watchmaster",
+      "rule": "legend_watchmaster",
+      "flavor": "This leader emits an aura of intent that grants their allies increased reflexes.",
+      "description": "Upgrade one _Leader_ unit with Watchmaster.",
+      "points": 5
+    },
+    "swift": {
+      "subfactions": ["vigilance_focus"],
+      "name": "Swift",
+      "rule": "swift",
+      "flavor": "This leader can easily dodge attacks after they analyzed the enemy's movements.",
+      "description": "Upgrade one _Leader_ unit with Swift.",
       "points": 5
     },
     "bulwark": {
@@ -491,24 +527,88 @@
       "rule": "legend_defensive_mastery",
       "flavor": "This leader shrugs of deadly strikes with well-timed blocks.",
       "description": "Upgrade one _Leader_ model with Defensive Mastery.",
+      "points": 5
+    },
+    "unnatural_vitality": {
+      "subfactions": ["toughness_focus"],
+      "name": "Unnatural Vitality",
+      "rule": {"id": "wounds", "x": 1},
+      "flavor": "Blessed with superhuman vitality, this fighter can endure countless injuries.",
+      "description": "Upgrade one _Leader_ model with Wounds(+1).",
       "points": 10
     },
-    "siege_1": {"subfactions": ["siege_focus"], "name": "", "rule": "relentless", "flavor": "", "description": "Upgrade one _Infantry_ or _Heavy Infantry_ unit with Relentless.", "points": 5},
-    "siege_2": {"subfactions": ["siege_focus"], "name": "", "rule": "", "flavor": "", "description": "", "points": 0},
-    "siege_3": {"subfactions": ["siege_focus"], "name": "", "weapon": "mace", "flavor": "", "description": "", "points": 0},
-    "stabilizer": {
-      "subfactions": ["mechanized_focus"],
-      "name": "Stabilizer",
-      "rule": "legend_stabilizer",
+    "relentless": {
+      "subfactions": ["siege_focus"],
+      "name": "Relentless",
+      "rule": "relentless",
+      "flavor": "These fighters don't stop until the enemy positions are reduced to rubble.",
+      "description": "Upgrade one _Infantry_ or _Heavy Infantry_ unit with Relentless.",
+      "points": 5
+    },
+    "siege_master": {
+      "subfactions": ["siege_focus"],
+      "name": "Siege Master",
+      "rule": "legend_siege_master",
+      "flavor": "This leader is legendary for their ability to annihilate enemy warmachines.",
+      "description": "Upgrade one _Leader_ model with Siege Master.",
+      "points": 5
+    },
+    "siegebreaker": {
+      "subfactions": ["siege_focus"],
+      "name": "Siegebreaker",
+      "weapon": "legend_siegebreaker",
+      "flavor": "When this legendary hammer strikes true the enemy is reduced to nothing but dust.",
+      "description": "Replace one _Leader_ model's Melee weapon with Siegebreaker(X).",
+      "points": 10
+    },
+    "stabilizers": {
+      "subfactions": ["mounted_focus"],
+      "name": "Stabilizers",
+      "rule": "legend_stabilizers",
       "flavor": "Stabilizers allow for heavy fire on the move.",
-      "description": "Upgrade one _Vehicle_ model with Stabilizer.",
+      "description": "Upgrade one _Vehicle_ or _Monster_ model with Stabilizers.",
+      "points": 5
+    },
+    "repair_drones": {
+      "subfactions": ["mounted_focus"],
+      "name": "Repair Drones",
+      "rule": "regeneration",
+      "flavor": "This titan of war employs supportive drones that fix any damage suffered.",
+      "description": "Upgrade one _Vehicle_ or _Monster_ model with Regeneration.",
+      "points": 5
+    },
+    "devastation_battery": {
+      "subfactions": ["mounted_focus"],
+      "name": "Devastation Battery",
+      "weapon": "legend_battery",
+      "flavor": "Enhanced with missile batteries, this war machine can unleash devastating attacks.",
+      "description": "Upgrade one _Vehicle_ or _Monster_ model with Devastation Battery.",
       "points": 10
     },
-    "mech_2": {"subfactions": ["mechanized_focus"], "name": "", "rule": "", "flavor": "", "description": "", "points": 0},
-    "mech_3": {"subfactions": ["mechanized_focus"], "name": "", "rule": "", "flavor": "", "description": "", "points": 0},
-    "fire_1": {"subfactions": ["firepower_focus"], "name": "", "rule": "relentless", "flavor": "", "description": "Upgrade one _Infantry_ or _Heavy Infantry_ unit with Relentless.", "points": 5},
-    "fire_2": {"subfactions": ["firepower_focus"], "name": "", "rule": "", "flavor": "", "description": "", "points": 0},
-    "fire_3": {"subfactions": ["firepower_focus"], "name": "", "weapon": "", "flavor": "", "description": "", "points": 0},
+    "expert_gunner": {
+      "subfactions": ["firepower_focus"],
+      "name": "Expert Gunner",
+      "rule": "legend_expert_gunner",
+      "flavor": "This model has fought in many long range battles and survived.",
+      "description": "Upgrade one _Leader_ unit with Expert Gunner.",
+      "points": 5
+    },
+    "crack_shot": {
+      "subfactions": ["firepower_focus"],
+      "name": "Crack Shot",
+      "rule": "crack_shot",
+      "flavor": "This leader is an expert sharpshooter or just lucky.",
+      "description": "Upgrade one _Leader_ unit with Crack Shot.",
+      "points": 5
+    },
+    "grenadier": {
+      "subfactions": ["firepower_focus"],
+      "name": "Grenadier",
+      "rule": "legend_grenadier",
+      "flavor": "These fighters are experts at using grenades and other explosives.",
+      "description": "Upgrade one _Infantry_ unit with Grenadier.",
+      "points": 5
+    },
     "brutal_display": {
       "subfactions": ["shock_focus"],
       "name": "Brutal Display",
@@ -517,8 +617,22 @@
       "description": "Upgrade one _Leader_'s Melee weapon with Shocking(3).",
       "points": 10
     },
-    "master_hunter": {"subfactions": ["shock_focus"], "name": "Master Hunter", "rule": "legend_master_hunter", "flavor": "", "description": "", "points": 5},
-    "schock_3": {"subfactions": ["shock_focus"], "name": "", "rule": "", "flavor": "", "description": "", "points": 0}
+    "master_hunter": {
+      "subfactions": ["shock_focus"],
+      "name": "Master Hunter",
+      "rule": "legend_master_hunter",
+      "flavor": "This leader has perfected the art of hunting down their weakened prey.",
+      "description": "Upgrade one _Leader_ unit with Master Hunter.",
+      "points": 5
+    },
+    "grizly_trophies": {
+      "subfactions": ["shock_focus"],
+      "name": "Grizly Trophies",
+      "rule": "fear",
+      "flavor": "These fighters collects trophies of war and display them to terrorize the enemy.",
+      "description": "Upgrade one unit with Fear. ",
+      "points": 5
+    }
   },
   "powerCategories": {
     "fire": {"name": "Fire"},
@@ -672,8 +786,8 @@
     "heavy_poison_handweapon": {"name": "Poisoned Heavy Handweapon", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison"]},
     "poison_great_weapon": {"name": "Poisoned Great Weapon", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["poison"]},
     "poison_handweapon": {"name": "Poisoned Handweapon", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["poison"]},
-    "pestilence_handweapon": {"name": "Pestilence Handweapon", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["pestilence"]},
-    "pestilence_heavy_flail": {"name": "Pestilence Heavy Flail", "attacks": 1, "ap": 4, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "pestilence", "cumbersome"]},
+    "pestilence_handweapon": {"name": "Pestilence Handweapon", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["poison"]},
+    "pestilence_heavy_flail": {"name": "Pestilence Heavy Flail", "attacks": 1, "ap": 4, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "poison", "cumbersome"]},
     "mining_pick": {"name": "Mining Pick", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["rending"]},
     "heavy_hooves_and_teeth": {"name": "Heavy Hooves and Teeth", "attacks": 1, "short": "Melee", "ap": 1},
     "antlers_and_hooves": {"name": "Antlers and Hooves", "attacks": 1, "short": "Melee", "ap": 1},
@@ -776,7 +890,7 @@
     "mortar": {"name": "Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": ["heavy", "indirect", "scatter", {"id": "blast", "x": 3}]},
     "poison_mortar": {"name": "Poison Mortar", "short": 12, "medium": 24, "ap": 3, "attacks": 1, "rules": [{"id": "blast", "x": 3}, "indirect", "scatter", "poison"]},
     "heavy_mortar": {"name": "Heavy Mortar", "attacks": 1, "short": 24, "medium": 48, "ap": 2, "rules": ["heavy", "indirect", "scatter", {"id": "blast", "x": 3}]},
-    "pestilence_heavy_mortar": {"name": "Pestilence Heavy Mortar", "ap": 5, "attacks": 1, "medium": 48, "short": 24, "rules": ["scatter", {"id": "blast", "x": 3}, "indirect", "pestilence"]},
+    "pestilence_heavy_mortar": {"name": "Pestilence Heavy Mortar", "ap": 5, "attacks": 1, "medium": 48, "short": 24, "rules": ["scatter", {"id": "blast", "x": 3}, "indirect", "poison"]},
     "handcannon": {"name": "Handcannon", "short": 9, "medium": 18, "ap": 5, "attacks": 1, "rules": [{"id": "blast", "x": 3}]},
     "cannon": {
       "name": "Great-Cannon",
@@ -814,7 +928,7 @@
     "gas_grenade": {"name": "Gas Grenades", "attacks": 1, "short": 6, "rules": [{"id": "blast", "x": 3}, "indirect", "grenade", "poison"]},
     "frag_grenade": {"name": "Firebombs", "attacks": 1, "ap": 1, "short": 6, "rules": [{"id": "blast", "x": 3}, "indirect", "grenade"]},
     "smoke_grenade": {"name": "Smokebombs", "attacks": 1, "short": 6, "rules": ["indirect", "grenade", "smoke"]},
-    "chemthrower": {"name": "Chemthrower", "rules": ["pestilence", "distracting"], "attacks": 3, "ap": 1, "medium": 12, "short": 6},
+    "chemthrower": {"name": "Chemthrower", "rules": ["poison", "distracting"], "attacks": 3, "ap": 1, "medium": 12, "short": 6},
     "barbed_net": {"name": "Barbed Net", "attacks": 1, "short": 9, "rules": ["barbed_net"]},
     "demon_sword": {"name": "Demon Sword", "attacks": 1, "short": "Melee", "ap": 5},
     "demon_axe": {"name": "Demon Axe", "attacks": 1, "short": "Melee", "ap": 6, "rules": ["cumbersome"]},
@@ -947,20 +1061,16 @@
     "Light weapons": "",
     "marine_rifle": {"name": "Marine Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
     "veteran_marine_rifle": {"name": "Veteran Marine Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": ["rapid_fire"]},
-    "auto_rifle": {"name": "Auto Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 1, "rules": ["assault"]},
     "storm_rifle": {"name": "Storm Rifle", "attacks": 1, "ap": 1, "short": 6, "medium": 12, "rules": ["rapid_fire"]},
     "twin_twin_marine_rifle": {"name": "Twin Storm Rifle", "attacks": 4, "short": 12, "ap": 1, "medium": 24, "rules": ["rapid_fire"]},
     "shred_rifle": {"name": "Shred Rifle", "attacks": 2, "short": 9, "medium": 18, "rules": ["rending"]},
     "marine_shotgun": {"name": "Marine Shotgun", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["brutal", "assault"]},
     "combat_shotgun": {"name": "Combat Shotgun", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "brutal"]},
     "twin_marine_rifle": {"name": "Twin Marine Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
-    "defense_rifle": {"name": "Defense Rifle", "attacks": 1, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
+    "auto_rifle": {"name": "Auto Rifle", "attacks": 1, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
+    "heavy_auto_rifle": {"name": "Heavy Auto Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
+    "auto_carbine": {"name": "Auto Carbine", "attacks": 1, "short": 9, "medium": 18, "rules": ["assault"]},
     "assault_rifle": {"name": "Assault Rifle", "attacks": 1, "short": 12, "medium": 24, "rules": ["assault"]},
-    "defense_carbine": {"name": "Defense Carbine", "attacks": 1, "short": 9, "medium": 18, "rules": ["assault"]},
-    "craft_defense_carbine": {"name": "Craftmade Defense Carbine", "attacks": 1, "short": 9, "medium": 18, "rules": ["assault", "unreliable"]},
-    "defense_mac": {"name": "Defense Automatic PDW", "attacks": 2, "short": 6, "medium": 12, "rules": ["assault"]},
-    "heavy_defense_rifle": {"name": "Heavy Defense Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
-    "prime_rifle": {"name": "Prime Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": ["rapid_fire"]},
     "twin_heavy_carbine": {"name": "Twin Heavy Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
     "twin_prime_rifle": {"name": "Twin Prime Rifle", "attacks": 2, "short": 18, "medium": 36, "ap": 1, "rules": ["rapid_fire"]},
     "prime_heavy_carbine": {"name": "Heavy Carbine", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rending", "assault"]},
@@ -971,7 +1081,7 @@
     "assault_carbine": {"name": "Assault Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 2, "rules": [{"id": "assault"}]},
     "twin_assault_carbine": {"name": "Twin Assault Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 2, "rules": [{"id": "assault"}]},
     "fist_carbine": {"name": "Fist Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
-    "twin_defense_rifle": {"name": "Twin Defense Rifle", "attacks": 2, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
+    "twin_auto_rifle": {"name": "Twin Auto Rifle", "attacks": 2, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
     "smg": {"name": "Submachine Gun", "attacks": 2, "short": 6, "medium": 12, "rules": ["assault"]},
     "twin_storm_rifle": {"name": "Twin Storm Rifle", "attacks": 2, "ap": 1, "short": 6, "medium": 12, "rules": ["rapid_fire"]},
     "rifle": {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24},
@@ -1207,9 +1317,9 @@
     "twin_heavy_gravity_cannon": {"name": "Twin Heavy Gravity Cannon", "attacks": 6, "short": 24, "medium": 48, "ap": 3, "rules": ["gravity", "heavy"]},
     "mortar_cannon": {"name": "Mortar Cannon", "attacks": 1, "ap": 4, "short": 36, "medium": 72, "rules": ["heavy", "indirect", "scatter", {"id": "blast", "x": 6}]},
     "twin_battle_cannon": {"name": "Twin Battle Cannon", "attacks": 2, "ap": 6, "short": 24, "medium": 48, "rules": ["heavy", {"id": "blast", "x": 3}]},
-    "legend_reaping_blade": {"name": "Reaping Blade", "attacks": 3, "ap": 3, "short": "Melee", "rules": ["leeching", "lethal"]},
+    "legend_reaping_blade": {"name": "Reaping Blade", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["lethal"]},
     "legend_": {"name": "Twin Battle Cannon", "attacks": 2, "ap": 6, "short": 24, "medium": 48, "rules": ["heavy", {"id": "blast", "x": 3}]},
-    "legend_headhunter": {"name": "Headhunter", "attacks": 1, "ap": 4, "short": 18, "medium": 36, "rules": [{"id": "deadly", "x": 1}, "sniper"]},
+    "legend_headhunter": {"name": "Headhunter", "attacks": 1, "ap": 4, "short": 18, "medium": 36, "rules": [{"id": "critical", "x": 1}, "sniper"]},
     "smasher_cannon": {"name": "Smasher Cannon", "attacks": 1, "short": 24, "medium": 48, "ap": 7},
     "tractor_beam": {"name": "Tractor Beam", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["anti_air"]},
     "bubble_cannon": {"name": "Bubble Cannon", "attacks": 1, "short": 18, "ap": 1, "medium": 36, "rules": [{"id": "blast", "x": 3}]},
@@ -1218,7 +1328,9 @@
     "heavy_howitzer": {"name": "Heavy Howitzer", "short": 36, "medium": 72, "attacks": 1, "ap": 5, "rules": ["indirect", "scatter", {"id": "blast", "x": 7}]},
     "plasma_mortar_cannon": {"name": "Plasma Mortar Cannon", "attacks": 1, "ap": 5, "short": 36, "medium": 72, "rules": ["heavy", "indirect", "overcharge", "scatter", {"id": "blast", "x": 6}]},
     "gravity_mortar_cannon": {"name": "Gravity Mortar Cannon", "attacks": 2, "ap": 3, "short": 36, "medium": 72, "rules": ["gravity", "heavy", "indirect", "scatter", {"id": "blast", "x": 3}]},
-    "skybreaker_missiles": {"name": "Skybreaker Missiles", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["anti_air"]}
+    "skybreaker_missiles": {"name": "Skybreaker Missiles", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["anti_air"]},
+    "legend_siegebreaker": {"name": "Siegebreaker", "attacks": 1, "ap": 5, "short": "Melee", "rules": [{"id": "critical", "x": 1}, "cumbersome"]},
+    "legend_battery": {"name": "Devastation Battery", "attacks": 3, "short": 12, "medium": 24, "ap": 2, "rules": [{"id": "blast", "x": 2}]}
   },
   "strategies": {
     "lucky": {
@@ -1627,7 +1739,7 @@
   },
   "rules": {
     "poisoned_blades": {"name": "Poisoned Blades", "description": "This model's melee weapons have +1 AP against enemies without _Damage Table(X)_.", "points": 5},
-    "legend_strategist": {"name": "Brilliant Strategist", "description": "While this model is alive and not broken you gain 1 additional Strategy Point at the start of the round.", "points": 20},
+    "legend_strategist": {"name": "Brilliant Strategist", "description": "While this model is on the field the first Strategy you use each turn cost 1 SP less.", "points": 20},
     "legend_wounds": {"name": "Resilient", "description": "This model gains Wounds(+1).", "points": 10},
     "legend_courage": {"name": "Inspired", "description": "This model gains +1 Courage.", "points": 10},
     "legend_quick_reflexes": {"name": "Quick Reflexes", "description": "This model gains +1 Initiative.", "points": 10},
@@ -1821,11 +1933,6 @@
     "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this model while it is in cover or at a range of more than 12\".", "points": 2},
     "dodge": {"name": "Swift", "description": "Models suffer -1 Strength when fighting this model.", "points": 2},
     "swift": {"name": "Swift", "description": "Models suffer -1 Strength when fighting this model.", "points": 2},
-    "poison": {
-      "name": "Poison",
-      "description": "Enemies without the _Vehicle_ keyword hit by this weapon reduce their Save value by 1 (after AP). This may not bring a unit below Save 5.",
-      "points": ["weapon.attacks", {"multiply": 0.5}]
-    },
     "deadly_poison": {
       "name": "Deadly Poison",
       "description": "Enemies without the _Vehicle_ keyword hit by this weapon reduce their Save value by 2 (after AP). This may not bring a unit below Save 5.",
@@ -1936,8 +2043,8 @@
     "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks"]},
     "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Aircraft special rule.", "points": ["weapon.attacks", {"multiply": 1}]},
     "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
-    "pestilence": {"name": "Pestilence", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 1}]},
-    "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 1}]},
+    "poison": {"name": "Poison", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 1}]},
+    "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 0.5}]},
     "leader": {"name": "Leader", "description": "This unit may lead another unit with the same unit type keyword.", "points": 10},
     "support": {
       "name": "Support",
@@ -2063,27 +2170,47 @@
       "description": "Whenever a friendly _Infantry_ or _Biker_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented.",
       "points": 15
     },
+    "legend_power_surge": {"name": "Power Surge", "description": "Once per turn this model may re-roll a Power roll of 9+.", "points": 10},
+    "legend_tome": {"name": "Tome of Power", "description": "This model knows an additional Power Specialty to cast Powers from.", "points": 10},
     "legend_battle_frenzy": {
       "name": "Battle Frenzy",
       "description": "Once per turn a friendly unit within 6\" of this model may re-roll all failed Strength tests of 9+ when attacking.",
       "points": 10
     },
-    "legend_power_surge": {"name": "Power Surge", "description": "All Power charge values are increased by 1 for this model.", "points": 10},
-    "legend_disruptive_aura": {"name": "Disruptive Aura", "description": "Enemy units suffer -1 to all Power(x) test while within 12\" of this model.", "points": 10},
-    "legend_onslaught": {"name": "Onslaught", "description": "Enemy units within 6\" of this model suffer -1 Save until the end of the turn after being hit by an _Assault_ weapon.", "points": 10},
+    "legend_final_stand": {
+      "name": "Final Stand",
+      "description": "When this model would be killed and it didn't activate this turn yet, it may take a free _Fight_ or _Shoot_ action before it is removed from the game.",
+      "points": 10
+    },
     "legend_swiftness": {"name": "Swiftness", "description": "This unit increases its Movement characteristic by 2\".", "points": 10},
     "legend_pathfinder": {
       "name": "Pathfinder",
       "description": "When this unit and up to two other units within 6“ are deployed or arrive from Reserves, they may make a free Move action. This action may not move within 12\" of any enemy units.",
       "points": 10
     },
-    "legend_surprise_attack": {"name": "Surprise Attack", "description": "When this unit is deployed or arrives from Reserves, it may make a free Shoot action.", "points": 10},
-    "legend_poison_mastery": {"name": "Lethal Poison", "description": "Enemies hit by this weapon reduce their Save value by 2 (after AP) to a minimum of 5.", "points": 10},
-    "legend_banner_of_legend": {"name": "Banner of Legend", "description": "Friendly units within 6\" get +1 courage.", "points": 10},
+    "legend_surprise_attack": {"name": "Surprise Attack", "description": "When this unit arrives from Reserves, it may make a free _Charge_ or _Shoot_ action.", "points": 10},
     "legend_heroism": {"name": "Heroism", "description": "Once per round, this unit may re-roll a single failed Courage test when removing Shock.", "points": 10},
+    "legend_banner_of_legend": {"name": "Banner of Legend", "description": "Friendly units within 6\" get +1 Courage.", "points": 10},
+    "legend_cqc": {"name": "Close Combat Fighters", "description": "This unit adds +3\" to short range when shooting.", "points": 10},
+    "legend_presence": {"name": "Commanding Presence", "description": "This model adds +3\" to the range of their _Leader_ and _Tactician_ special rules.", "points": 10},
     "legend_bulwark": {"name": "Bulwark", "description": "Friendly units within 6\" may re-roll a single failed Save test once per turn.", "points": 10},
-    "legend_defensive_mastery": {"name": "Defensive Mastery", "description": "This model may re-roll Save tests of 9+.", "points": 10},
-    "legend_stabilizer": {"name": "Stabilizer", "description": "This model ignores the Heavy special rule.", "points": 10},
+    "legend_defensive_mastery": {"name": "Defensive Mastery", "description": "This model may re-roll failed Save tests of 9+.", "points": 10},
+    "legend_watchmaster": {"name": "Watchmaster", "description": "Friendly units within 6\" may re-roll Initiative tests of 9+.", "points": 10},
+    "legend_eagle_eyed": {"name": "Eagle-Eyed", "description": "This unit may re-roll failed Accuracy tests when attacking whilst controlling an Objective.", "points": 10},
+    "legend_siege_master": {
+      "name": "Siege Master",
+      "description": "This unit may re-roll failed Strength and Accuracy tests when attacking a unit with the _Damage Chart_ special rule.",
+      "points": 10
+    },
+    "legend_expert_gunner": {"name": "Expert Gunner", "description": "This model may make one additional attack with any Ranged weapon.", "points": 10},
+    "legend_grenadier": {"name": "Grenadier", "description": "Weapons with the _Grenade_ special rule used by this unit hit with +1 Accuracy.", "points": 10},
+    "legend_stabilizers": {
+      "name": "Stabilizers",
+      "description": "This model may make a free shoot action at any time during their move at -1 Accuracy. They may not shoot again this round.",
+      "points": 10
+    },
+    "legend_eagle_eyed_0": {"name": "Eagle-Eyed", "description": "This unit may re-roll failed Accuracy tests when attacking whilst controlling an Objective.", "points": 10},
+    "legend_master_   hunter": {"name": "Master Hunter", "description": "This model gains +2\" of Movement when taking a Charge action.", "points": 10},
     "spotting_laser": {
       "name": "Spotting Laser",
       "description": "Any time during this model's activation, pick an enemy unit within 36\" to gain 1 spotting marker. When a friendly unit shoots at that target they may spend spotting markers to gain the following for that attack: \n * One Marker: Re-roll Accuracy rolls of 9+ \n * Two Markers: +1 Accuracy \n\n\n These effects are cumulative and may be activated multiple times. At the end of the round, remove all spotting markers.",

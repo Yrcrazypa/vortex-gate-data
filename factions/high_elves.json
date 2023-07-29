@@ -19,7 +19,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["shard_pistol", {"id": "elven_blade", "count": 4}, "plasma_grenades"],
+          "weapons": ["shard_pistol", {"id": "elven_blade", "count": 4}],
           "options": [
             {"replaceRule": {"id": "keeper_tactics", "x": 1}, "withRule": {"id": "keeper_tactics", "x": 2}},
             {"replaceWeapon": "shard_pistol", "withWeapon": ["neuron_pistol", "fusion_pistol"]},
@@ -121,7 +121,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["shard_pistol", {"id": "elven_blade", "count": 3}, "plasma_grenades"],
+          "weapons": ["shard_pistol", {"id": "elven_blade", "count": 3}],
           "options": [
             {"replaceWeapon": "shard_pistol", "withWeapon": ["neuron_pistol", "fusion_pistol", "exploding_bola"]},
             {
@@ -266,7 +266,7 @@
           "defense": 7,
           "reflexes": 6,
           "rules": ["leader", {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
-          "weapons": ["shard_rifle", {"id": "elven_blade", "count": 3}, "plasma_grenades"],
+          "weapons": ["shard_rifle", {"id": "elven_blade", "count": 3}],
           "options": [
             {"replaceWeapon": ["shard_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "shard_sniper", "nova_blaster", "missile_launcher"]},
             {"replaceWeapon": ["shard_rifle", {"id": "elven_blade", "count": 3}], "withWeapon": [["shard_pistol", {"id": "elven_blade", "count": 4}]]},
@@ -534,12 +534,12 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["shard_carbine", "ccw", "plasma_grenades"],
+          "weapons": ["shard_carbine", "ccw"],
           "options": [{"replaceWeapon": ["shard_pistol"], "withWeapon": ["fusion_pistol"]}],
           "min": 1,
           "max": 1
         },
-        {"name": "Warrior", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_carbine", "ccw", "plasma_grenades"], "min": 4, "max": 19},
+        {"name": "Warrior", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_carbine", "ccw"], "min": 4, "max": 19},
         {
           "name": "Weapon Platform",
           "courage": 5,
@@ -579,7 +579,7 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["shard_rifle", "ccw", "plasma_grenades"],
+          "weapons": ["shard_rifle", "ccw"],
           "options": [
             {"replaceWeapon": ["shard_rifle", "ccw"], "withWeapon": [["shard_pistol", {"id": "ccw", "count": 2}]]},
             {"replaceWeapon": [{"id": "ccw", "count": 2}], "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_glaive", "count": 2}]}
@@ -587,7 +587,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Guardian", "courage": 6, "movement": 7, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["shard_rifle", "ccw", "plasma_grenades"], "min": 4, "max": 9}
+        {"name": "Guardian", "courage": 6, "movement": 7, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["shard_rifle", "ccw"], "min": 4, "max": 9}
       ]
     },
     "ranger_squad": {
@@ -604,12 +604,12 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["shard_sniper", "plasma_grenades", "ccw"],
+          "weapons": ["shard_sniper", "ccw"],
           "options": [{"replaceWeapon": "shard_sniper", "withWeapon": ["spectre_rifle"]}],
           "min": 1,
           "max": 1
         },
-        {"name": "Ranger", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_sniper", "plasma_grenades", "ccw"], "min": 4, "max": 9}
+        {"name": "Ranger", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_sniper", "ccw"], "min": 4, "max": 9}
       ]
     },
     "wvyern_squad": {

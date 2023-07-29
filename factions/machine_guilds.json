@@ -142,7 +142,7 @@
                     "defense": 6,
                     "reflexes": 6,
                     "rules": ["leader", {"id": "wounds", "x": 2}, {"id": "vanguard_tactics", "x": 1}],
-                    "weapons": ["long_rifle", "ccw", "smoke_grenades"],
+                    "weapons": ["long_rifle", "ccw"],
                     "options": [
                         {"replaceWeapon": ["long_rifle"], "withWeapon": ["radiation_carbine", "tesla_rifle"]},
                         {"replaceWeapon": ["long_rifle", "ccw"], "withWeapon": [["radiation_pistol", {"id": "heavy_ccw", "count": 2}]]},
@@ -178,7 +178,7 @@
                     "fight": 5,
                     "defense": 6,
                     "reflexes": 6,
-                    "weapons": ["long_rifle", "ccw", "smoke_grenades"],
+                    "weapons": ["long_rifle", "ccw"],
                     "options": [
                         {"replaceWeapon": ["long_rifle", "ccw"], "withWeapon": [["radiation_pistol", {"id": "heavy_ccw", "count": 2}]]},
                         {"replaceWeapon": "radiation_pistol", "withWeapon": ["thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol"]},
@@ -190,7 +190,7 @@
                     "min": 1,
                     "max": 1
                 },
-                {"name": "Trooper", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["long_rifle", "ccw", "smoke_grenades"], "min": 4, "max": 19}
+                {"name": "Trooper", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["long_rifle", "ccw"], "min": 4, "max": 19}
             ]
         },
         "guild_drones": {

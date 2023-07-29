@@ -545,13 +545,13 @@
         }
     },
     "weapons": {
-        "pestilence_great_weapon": {"name": "Pestilent Great Weapon", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["pestilence"]},
-        "pestilence_tentacles": {"name": "Pestilent Tentacles", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["pestilence", "rending"]},
-        "pestilence_tongue": {"name": "Pestilent Tongue", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["pestilence"]},
-        "pestilence_bile": {"name": "Pestilent Bile", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["pestilence", "flame", {"id": "blast", "x": 3}]},
-        "pestilence_heavy_handweapon": {"name": "Pestilent Heavy Hand Weapon", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["pestilence"]},
-        "pestilence_great_flail": {"name": "Pestilent Great Flail", "attacks": 1, "ap": 5, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "cumbersome", "pestilence"]},
-        "pestilence_polearm": {"name": "Pestilent Polearm", "attacks": 1, "ap": 2, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "pestilence"]},
+        "pestilence_great_weapon": {"name": "Pestilent Great Weapon", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["poison"]},
+        "pestilence_tentacles": {"name": "Pestilent Tentacles", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["poison", "rending"]},
+        "pestilence_tongue": {"name": "Pestilent Tongue", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison"]},
+        "pestilence_bile": {"name": "Pestilent Bile", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison", "flame", {"id": "blast", "x": 3}]},
+        "pestilence_heavy_handweapon": {"name": "Pestilent Heavy Hand Weapon", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison"]},
+        "pestilence_great_flail": {"name": "Pestilent Great Flail", "attacks": 1, "ap": 5, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "cumbersome", "poison"]},
+        "pestilence_polearm": {"name": "Pestilent Polearm", "attacks": 1, "ap": 2, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "poison"]},
         "bladed_gauntlet": {"name": "Bladed Gauntlet", "attacks": 1, "short": "Melee", "rules": ["parry"]},
         "light_flail": {"name": "Light Flail", "attacks": 1, "ap": 2, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "cumbersome"]},
         "legend_cursed_blade": {"name": "Blade of Ruin", "attacks": 1, "ap": 3, "short": "Melee", "rules": [{"id": "deadly", "x": 1}, "lethal"]}
