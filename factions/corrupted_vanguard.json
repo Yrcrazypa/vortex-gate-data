@@ -533,7 +533,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["warrior", "leader", {"id": "wounds", "x": 3}],
+          "rules": ["zealot", "leader", {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
@@ -570,7 +570,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["warrior", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
+          "rules": ["zealot", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},
@@ -610,7 +610,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["warrior", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 2}],
+          "rules": ["zealot", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 2}],
           "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}, {"id": "warbeast_horn", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "combi_thermal"]},

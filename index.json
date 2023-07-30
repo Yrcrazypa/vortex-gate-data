@@ -2136,6 +2136,7 @@
     "tactician": {"name": "Tactician", "description": "This model's unit may re-roll failed Accuracy and Strength tests of 9+.", "points": 10},
     "charger": {"name": "Charger", "description": "This model's unit gains +3\" of movement when _Charging_.", "points": 5},
     "warrior": {"name": "Warrior", "description": "This model's unit may re-roll failed Strength tests of 9+.", "points": 5},
+    "zealot": {"name": "Zealot", "description": "Strength rolls of 1 or 2 for this model's unit cause 2 hits instead of 1.", "points": 5},
     "marksman": {"name": "Marksman", "description": "This model's unit may re-roll failed Accuracy tests of 9+.", "points": 5},
     "striker": {"name": "Striker", "description": "This model's unit gains +1 AP on all weapons.", "points": 5},
     "wings": {"name": "Wings", "description": "This model may ignore models and terrain when moving.", "points": 5},
