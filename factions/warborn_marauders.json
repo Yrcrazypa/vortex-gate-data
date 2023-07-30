@@ -1213,7 +1213,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "strider", "titanic", {"id": "transport", "x": 10}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 3}, "strider", {"id": "transport", "x": 10}, "vulnerable_rear"],
           "weapons": [
             {"id": "heavy_flamethrower", "mount": ["Front"]},
             {"id": "twin_heavy_machinegun", "count": 2, "mount": ["Front"]},
@@ -1257,7 +1257,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "strider", "titanic", {"id": "transport", "x": 10}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 3}, "strider", {"id": "transport", "x": 10}, "vulnerable_rear"],
           "weapons": [
             {"id": "heavy_flamethrower", "mount": ["Front"]},
             {"id": "heavy_stomp", "count": 3},
@@ -1302,7 +1302,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "open_topped", "x": 20}, {"id": "transport", "x": 20}, "titanic", "vulnerable_rear", "walker"],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "open_topped", "x": 20}, {"id": "transport", "x": 20}, "vulnerable_rear", "walker"],
           "weapons": ["light_battle_cannon", {"id": "goring_tusks", "count": 5}, {"id": "heavy_stomp", "count": 4}],
           "options": [{"addWeapon": ["twin_heavy_machinegun"], "limit": 2}, {"addWeapon": ["light_battle_cannon", "siege_cannon"], "limit": 1}],
           "min": 1,

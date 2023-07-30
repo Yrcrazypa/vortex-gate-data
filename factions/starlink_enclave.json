@@ -701,7 +701,7 @@
       "description": "Shapers sometimes become more worried about if they can than if they should",
       "category": "rare",
       "keywords": ["Monster"],
-      "rules": [{"id": "wounds", "x": 3}, "titanic", "walker", {"id": "impact", "x": 3}],
+      "rules": [{"id": "wounds", "x": 3}, "walker", {"id": "impact", "x": 3}],
       "models": [
         {
           "name": "Dinosaur",

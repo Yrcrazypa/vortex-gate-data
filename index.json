@@ -1978,15 +1978,8 @@
     },
     "defensive": {"name": "Defensive", "inputs": ["x"], "description": "This model increases its Save by X.", "points": [2, {"multiply": "rule.x"}]},
     "hover": {"name": "Hover", "description": "This model may ignore difficult terrain and obstacles of height 2\" or less when moving.", "points": 1},
-    "agile": {"name": "Agile", "description": "This model may ignore low obstacles of 1\" or less in height when moving.", "points": 1},
+    "agile": {"name": "Agile", "description": "This model may ignore low obstacles of 1\" or less in height when moving.", "points": 0.5},
     "walker": {"name": "Walker", "description": "This model may ignore low obstacles of 2\" or less in height when moving.", "points": 5},
-    "titanic": {"name": "Titanic", "description": "This unit subtracts 2 from all Damage Chart rolls.", "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]},
-    "damage_chart": {
-      "name": "Damage Chart",
-      "description": "This unit does not benefit from Cover. Instead, subtract the cover Save bonuses from Damage Chart rolls. When this model would be killed, roll a D10 adding the amount it failed the save by plus the number of critical damage tokens it has and refer to the following: \n * Shaken(3+): Take one additional shock. \n * Panic(6+): Take 2 additional shock and immediately take a Courage test. If failed the unit is destroyed. \n * Destroyed(9+): It is instantly destroyed. \n * Critical(12+): The unit is destroyed and all units within 6\" gain 2 Shock. \n\n\n Mark each time the unit rolls on the chart with a critical damage token. While a unit has one or more damage tokens, it may not remove that amount of Shock. If a unit contains multiple models with Damage Chart, hits must be assigned to models with a critical damage token first.",
-      "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"multiply": 10}]
-    },
-    "catches_fire": {"name": "Catches Fire", "description": "Add 2 to all Damage Chart rolls for this unit.", "points": -5},
     "fearless": {"name": "Fearless", "description": "This unit requires an extra shock to take break tests.", "points": 1},
     "resist": {"name": "Protect", "inputs": ["x"], "description": "This unit gets +X to its Resist rolls.", "points": ["rule.x", {"multiply": 2}]},
     "open_topped": {

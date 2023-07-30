@@ -216,7 +216,7 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 7,
-          "rules": ["damage_chart", "leader", {"id": "tactician", "x": 2}, {"id": "magic", "x": 2}, "titanic"],
+          "rules": ["damage_chart", "leader", {"id": "tactician", "x": 2}, {"id": "magic", "x": 2}],
           "weapons": [{"id": "daemon_sword", "count": 6}, {"id": "daemon_claws", "count": 4}],
           "options": [
             {

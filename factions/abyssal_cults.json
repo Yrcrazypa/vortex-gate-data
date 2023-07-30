@@ -154,13 +154,13 @@
         }
       ]
     },
-    "soul_stealer_lord": {
-      "name": "Soul Stealer Lord",
+    "hive_seeker_lord": {
+      "name": "Hive Seeker Lord",
       "description": "A ferocious alien with enhanced psychic power.",
       "category": "hero",
       "models": [
         {
-          "name": "Soul Stealer Lord",
+          "name": "Hive Seeker Lord",
           "courage": 7,
           "shoot": 0,
           "fight": 7,
@@ -236,13 +236,13 @@
         }
       ]
     },
-    "soul_stealers": {
-      "name": "Soul Stealers",
+    "hive_seeker": {
+      "name": "Hive Seekers",
       "description": "Ferocious aliens that rip apart their foes with unnerving speed.",
       "category": "core",
       "models": [
         {
-          "name": "Soul Stealer",
+          "name": "Hive Seekers",
           "courage": 6,
           "shoot": 5,
           "fight": 6,

@@ -958,7 +958,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["ambush", {"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, "strider", "titanic"],
+          "rules": ["ambush", {"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, "strider"],
           "weapons": [{"id": "fangs_and_claws", "count": 10}],
           "options": [{"addWeapon": ["net_launcher"]}, {"addRule": [[{"id": "transport", "x": 6}, {"id": "open_topped", "x": 6}]]}],
           "min": 1,
@@ -980,7 +980,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": ["agile", "evasive", "crazed", {"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 6}, "titanic"],
+          "rules": ["agile", "evasive", "crazed", {"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 6}],
           "weapons": [{"id": "fangs_and_claws", "count": 4}, "arcing_spit"],
           "min": 1,
           "max": 1

@@ -1947,7 +1947,7 @@
           "defense": 13,
           "reflexes": 6,
           "weapons": ["greatest_cleaver", "giant_gatling", "train_mounted_blastgun"],
-          "rules": [{"id": "wounds", "x": 3}, "titanic", "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear"],
           "options": [{"replaceWeapon": ["train_mounted_blastgun"], "withWeapon": ["flaming_bloodsoaker"]}, {"replaceWeapon": ["giant_gatling"], "withWeapon": ["hatespewer"]}]
         }
       ]
@@ -1955,7 +1955,7 @@
     "giant_metal_scorpion": {
       "name": "Giant Metal Scorpion",
       "description": "A giant metal scorpion. It hates you. It hates everything.",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, "titanic", {"id": "ward", "x": 2}],
+      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, {"id": "ward", "x": 2}],
       "category": "rare",
       "min": 1,
       "max": 1,

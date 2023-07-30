@@ -81,13 +81,13 @@
       ]
     },
     "swarm_warrior_prime": {
-      "name": "Hive Spawn Prime",
+      "name": "Hive Warrior Prime",
       "description": "A leader amongst the elite alien warriors.",
       "category": "hero",
       "keywords": ["Heavy Infantry"],
       "models": [
         {
-          "name": "Hive Spawn Prime",
+          "name": "Hive Warrior Prime",
           "courage": 7,
           "shoot": 6,
           "fight": 7,
@@ -112,13 +112,13 @@
       ]
     },
     "swarm_warriors": {
-      "name": "Hive Spawn",
+      "name": "Hive Warriors",
       "description": "Elite warriors who grow additional limbs when they absorb enough biomass.",
       "category": "core",
       "keywords": ["Heavy Infantry"],
       "models": [
         {
-          "name": "Hive Spawn",
+          "name": "Hive Warrior",
           "courage": 6,
           "shoot": 5,
           "fight": 6,
@@ -140,14 +140,14 @@
         }
       ]
     },
-    "soul_stealers": {
-      "name": "Flesh Harvesters",
+    "hive_seekers": {
+      "name": "Hive Seekers",
       "description": "Ferocious aliens that rip apart their foes with unnerving speed.",
       "category": "core",
       "rules": ["agile"],
       "models": [
         {
-          "name": "Flesh Harvesters",
+          "name": "Hive Seekers",
           "courage": 6,
           "shoot": 5,
           "fight": 6,
@@ -161,15 +161,15 @@
         }
       ]
     },
-    "hive_swarm": {
-      "name": "Hive Swarm",
+    "hive_nestlings": {
+      "name": "Hive Nestlings",
       "description": "Swarm of alien insects, weak on their own but dangerous in numbers.",
       "category": "core",
       "keywords": ["Swarwm"],
       "rules": [{"id": "swarm", "x": 3}],
       "models": [
         {
-          "name": "Hive Swarm",
+          "name": "Hive Nestlings",
           "courage": 4,
           "reflexes": 5,
           "fight": 5,
@@ -183,13 +183,13 @@
         }
       ]
     },
-    "grunts": {
+    "hive_skirmishers": {
       "name": "Hive Skirmishers",
       "description": "Common alien beasts equipped with ranged weapons, used in great swarms to overwhelm the foe.",
       "category": "core",
       "models": [
         {
-          "name": "Skirmishers",
+          "name": "Hive Skirmisher",
           "courage": 4,
           "shoot": 5,
           "fight": 5,
@@ -197,20 +197,23 @@
           "reflexes": 5,
           "movement": 7,
           "weapons": ["razor_blaster", "light_razor_talons"],
-          "options": [{"replaceWeapon": "razor_blaster", "withWeapon": [{"id": "spike_launcher", "count": 3}, "consumer"]}, {"addRule": "light_armor", "modelLimit": "all"}],
+          "options": [
+            {"addRule": {"id": "light_armor", "name": "Carapace"}, "modelLimit": "all"},
+            {"replaceWeapon": "razor_blaster", "withWeapon": [{"id": "spike_launcher", "count": 3}, "consumer"]}
+          ],
           "min": 10,
           "max": 20
         }
       ]
     },
-    "assault_grunts": {
-      "name": "Hive Breakers",
+    "hive_swarmers": {
+      "name": "Hive Swarmers",
       "description": "Common alien beasts, used in great swarms to overwhelm the foe.",
       "category": "core",
       "rules": ["agile"],
       "models": [
         {
-          "name": "Assault Grunt",
+          "name": "Hive Swarmers",
           "courage": 4,
           "shoot": 0,
           "fight": 6,
@@ -218,19 +221,19 @@
           "reflexes": 5,
           "movement": 7,
           "weapons": [{"id": "light_razor_talons", "count": 2}],
-          "options": [{"addRule": "light_armor", "modelLimit": "all"}],
+          "options": [{"addRule": {"id": "light_armor", "name": "Carapace"}, "modelLimit": "all"}],
           "min": 10,
           "max": 20
         }
       ]
     },
-    "flying_grunts": {
-      "name": "Flying Grunts",
+    "hive_fiends": {
+      "name": "Hive Fiends",
       "description": "Mutated grunts who can fly and spit blinding venom.",
-      "category": "elite",
+      "category": "core",
       "models": [
         {
-          "name": "Flying Grunt",
+          "name": "Hive Fiend",
           "courage": 4,
           "shoot": 5,
           "fight": 5,
@@ -238,7 +241,7 @@
           "reflexes": 5,
           "movement": 8,
           "weapons": ["razor_blaster", "light_razor_talons", "venom_spit"],
-          "options": [{"addRule": "light_armor", "modelLimit": "all"}],
+          "options": [{"addRule": {"id": "light_armor", "name": "Carapace"}, "modelLimit": "all"}],
           "rules": ["fly"],
           "min": 10,
           "max": 20
@@ -506,7 +509,7 @@
           "shoot": 6,
           "defense": 14,
           "movement": 10,
-          "rules": [{"id": "wounds", "x": 3}, "titanic", "walker", {"id": "transport", "x": "20"}],
+          "rules": [{"id": "wounds", "x": 3}, "walker", {"id": "transport", "x": "20"}],
           "weapons": [{"id": "gargantuan_talons", "count": 6}, {"id": "lashing_whips", "count": 10}, "acidic_torrent", "bio_cannon"],
           "min": 1,
           "max": 1
@@ -527,7 +530,7 @@
           "shoot": 6,
           "defense": 13,
           "movement": 12,
-          "rules": [{"id": "wounds", "x": 3}, "titanic", "aircraft", "hover", {"id": "transport", "x": "20"}],
+          "rules": [{"id": "wounds", "x": 3}, "aircraft", "hover", {"id": "transport", "x": "20"}],
           "weapons": [{"id": "gargantuan_talons", "count": 5}, "bio_cannon"],
           "min": 1,
           "max": 1

@@ -1080,7 +1080,7 @@
           "fight": 5,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 6}, "titanic", "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 6}, "vulnerable_rear"],
           "weapons": [{"id": "twin_heavy_flamethrower", "mount": ["Front"], "count": 2}, "titan_hell_cannon", "autocannon"],
           "options": [
             {"replaceWeapon": ["titan_hell_cannon"], "withWeapon": ["giant_plasma_cannon", "titan_battle_cannon", "earthbreaker_cannon", "godslayer_cannon", "giant_fusion_cannon"]},
@@ -1129,7 +1129,7 @@
           "fight": 5,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "open_topped", "x": 10}, "titanic", {"id": "transport", "x": 25}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "open_topped", "x": 10}, {"id": "transport", "x": 25}, "vulnerable_rear"],
           "weapons": ["heavy_gatling_cannon", {"id": "twin_heavy_machinegun", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "heavy_gatling_cannon", "withWeapon": ["earthbreaker_cannon", "doom_cannon"]},

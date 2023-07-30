@@ -464,7 +464,7 @@
           "fight": 5,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 6}, "titanic"],
+          "rules": [{"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 6}],
           "weapons": ["armored_tail", {"id": "gargantuan_jaws", "count": 3}, {"id": "raking_claws", "count": 6}],
           "min": 1,
           "max": 1

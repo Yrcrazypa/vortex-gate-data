@@ -903,7 +903,7 @@
       "name": "Revenant Titan",
       "description": "A gigantic revenant with a variety of loadouts to punish enemies of the high elves on the bloodiest of battlefields.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["Vehicle"],
       "models": [
         {

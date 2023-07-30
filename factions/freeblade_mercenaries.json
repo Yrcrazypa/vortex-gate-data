@@ -8,7 +8,7 @@
       "name": "Helverin Titan",
       "description": "The smallest of titans can still make an impact on the battlefield with its guns.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["vehicle", "armiger"],
       "models": [
         {
@@ -31,7 +31,7 @@
       "name": "Warglaive Titan",
       "description": "The smallest of titans can still make an impact on the battlefield with its sword.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["vehicle", "armiger"],
       "models": [
         {
@@ -54,7 +54,7 @@
       "name": "Gallant Titan",
       "description": "A knight lord fully outfitted for close combat.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["vehicle"],
       "models": [
         {
@@ -77,7 +77,7 @@
       "name": "Warden Titan",
       "description": "A knight lord adept at anti-horde fighting.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["vehicle"],
       "models": [
         {
@@ -104,7 +104,7 @@
       "name": "Preceptor Titan",
       "description": "A knight lord outfitted for decimating enemy tanks.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["vehicle"],
       "models": [
         {
@@ -131,7 +131,7 @@
       "name": "Errant Titan",
       "description": "A knight lord armed with a powerful thermal cannon for eliminating vehicles at close range.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["vehicle"],
       "models": [
         {
@@ -154,7 +154,7 @@
       "name": "Castellan Titan",
       "description": " A massive knight lord made to dominate the battlefeild with its powerful guns.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["vehicle"],
       "models": [
         {
@@ -185,7 +185,7 @@
       "name": "Paladin Titan",
       "description": "A knight lord outfited with a rapid fire cannon to mow down enemies.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["vehicle"],
       "models": [
         {
@@ -208,7 +208,7 @@
       "name": "Valiant Titan",
       "description": "A massive knight lord outfitted for devestating short-range combat.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["vehicle"],
       "models": [
         {
@@ -237,7 +237,7 @@
       "name": "Crusader Titan",
       "description": "A knight lord outfitted with 2 powerful guns.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "titanic"],
+      "rules": [{"id": "wounds", "x": 3}],
       "keywords": ["vehicle"],
       "models": [
         {

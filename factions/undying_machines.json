@@ -651,7 +651,7 @@
       "name": "Heavy Invasion Arc",
       "description": "A large hovering fortress with optional portal.",
       "category": "rare",
-      "rules": ["hover", "flare_shielding", "vulnerable_rear", {"id": "wounds", "x": 3}, "titanic"],
+      "rules": ["hover", "flare_shielding", "vulnerable_rear", {"id": "wounds", "x": 3}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -698,7 +698,7 @@
       "name": "Dimensional Shard Vault",
       "description": "A large hovering vault containing a dimensional shard.",
       "category": "rare",
-      "rules": ["hover", "flare_shielding", "vulnerable_rear", {"id": "wounds", "x": 3}, {"id": "magic", "x": 3}, {"id": "psychic_prowess", "x": 2}, "titanic"],
+      "rules": ["hover", "flare_shielding", "vulnerable_rear", {"id": "wounds", "x": 3}, {"id": "magic", "x": 3}, {"id": "psychic_prowess", "x": 2}],
       "keywords": ["Vehicle"],
       "models": [
         {
