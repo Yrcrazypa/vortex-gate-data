@@ -94,11 +94,7 @@
       "category": "core",
       "options": [
         {"replaceWeapon": ["auto_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
-        {
-          "replaceWeapon": ["auto_rifle"],
-          "withWeapon": ["thermal_rifle", "light_machinegun", "fusion_rifle", "laser_cannon", "flamethrower", "plasma_rifle", "grenade_launcher"],
-          "modelLimit": "1/5"
-        },
+        {"replaceWeapon": ["auto_rifle"], "withWeapon": ["thermal_rifle", "light_machinegun", "fusion_rifle", "laser_cannon", "flamethrower", "plasma_rifle", "grenade_launcher"], "modelLimit": "1/5"},
         {"addRule": ["field_radio"], "modelLimit": 1}
       ],
       "models": [
@@ -455,19 +451,7 @@
     }
   },
   "models": {
-    "scout_drone": {
-      "name": "Scout Drone",
-      "movement": 7,
-      "courage": 5,
-      "shoot": 5,
-      "fight": 5,
-      "defense": 4,
-      "reflexes": 5,
-      "weapons": ["auto_carbine"],
-      "min": 1,
-      "max": 1,
-      "rules": ["scout", "fly"]
-    }
+    "scout_drone": {"name": "Scout Drone", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 4, "reflexes": 5, "weapons": ["auto_carbine"], "min": 1, "max": 1, "rules": ["scout", "fly"]}
   },
   "weapons": {
     "shotgun_pistol": {"name": "Sawn-off Shotgun", "attacks": 1, "ap": 1, "short": 9, "rules": ["assault"]},

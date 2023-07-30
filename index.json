@@ -224,7 +224,7 @@
       "alliance": "mercenaries"
     },
     "gca": {
-      "version": "0.1",
+      "version": "1.0",
       "name": "Galactic Corperate Allegiance",
       "id": "gca",
       "url": "gca.json",
