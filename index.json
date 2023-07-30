@@ -15,10 +15,9 @@
     "morale_focus": {"name": "Morale", "id": "morale_focus", "description": "A focus on morale and battle awareness."}
   },
   "alliances": {
-    "death": {"name": "Bringers of Death"},
     "destruction": {"name": "Forces of Destruction"},
     "order": {"name": "Keepers of Order"},
-    "doom": {"name": "Instruments of Doom"},
+    "doom": {"name": "Bringers of Doom"},
     "mercenaries": {"name": "Mercenaries"}
   },
   "categories": {
@@ -126,7 +125,7 @@
       "url": "undying_machines.json",
       "color": "#1e7331",
       "description": "The Undying Machines are a race of once-people now cursed with unending machine immortality. They rely on waves of reanimating fighters and advanced ancient technology to win their battles.",
-      "alliance": "death"
+      "alliance": "destruction"
     },
     "starlink_enclave": {
       "version": "1.0",
@@ -248,7 +247,7 @@
       "id": "nightborne_bloodkin",
       "url": "nightborne_bloodkin.json",
       "color": "#801111",
-      "alliance": "death",
+      "alliance": "destruction",
       "description": "Nightborne Bloodkin are necromancers who have learned to imbue themselves with necrotic power.  They wield their undead hordes like a weapon, to cut away those who would stand in their way."
     },
     "deepwater_kings": {
@@ -257,7 +256,7 @@
       "id": "deepwater_kings",
       "url": "deepwater_kings.json",
       "color": "#03414e",
-      "alliance": "death",
+      "alliance": "destruction",
       "description": "Transmuted by ancient magic to be mightier than any other elf, the Deepwater Kings require incredible alchemical concoctions to survive.  They hire themselves out to other races to afford their survival, and live under the sea to avoid mortal conflict."
     },
     "spectral_legions": {
@@ -266,7 +265,7 @@
       "id": "spectral_legions",
       "url": "spectral_legions.json",
       "color": "#4C838A",
-      "alliance": "death",
+      "alliance": "destruction",
       "description": "Places of necromantic power can often spontaneously bring the dead back to life, and without a leader they have only one drive:  Spread that necromantic power, through the death of those nearby!"
     },
     "tainted_moonclan": {
