@@ -371,7 +371,7 @@
       "description": "Upgrade one _Power_ model with Power Surge.",
       "points": 5
     },
-    "tome _of_power": {
+    "tome_of_power": {
       "subfactions": ["power_focus"],
       "name": "Tome of Power",
       "rule": "legend_tome",
