@@ -91,15 +91,15 @@
       "alliance": "doom",
       "description": "A swarm of aliens from far-away systems controlled by an ancient hive mind. They feast on other species, absorbing their biomass to turn into more of their kind. They have a combination of deadly creatures and swarms of agile aliens to defeat their foes."
     },
-    "abyssal_cults": {
+    "ascension_cults": {
       "version": "1.0",
       "name": "Ascension Cults",
-      "id": "abyssal_cults",
-      "url": "abyssal_cults.json",
+      "id": "ascension_cults",
+      "url": "ascension_cults.json",
       "color": "#606060",
       "secondary_color": "#7d0a15",
       "alliance": "doom",
-      "description": "The Abyssal Cults are a loose band of Hive worshippers who wish to see the Hive consume all. Abyssal Cults use a mix of hybrid alien creatures and scavenged weapons along with guerilla tactics."
+      "description": "The Ascension Cults are a loose band of Hive worshippers who wish to see the Hive consume all. Ascension Cults use a mix of hybrid alien creatures and scavenged weapons along with guerilla tactics."
     },
     "vortexspawn_horrors": {
       "version": "1.0",
@@ -157,14 +157,14 @@
       "alliance": "order",
       "description": "The Sacred Order are a highly religious sect of humans which have a uniquely faithful and religious power. The Sacred Order relies on prayer and faith in their holy symbols along with some good old fashioned holy fire to defeat their enemies."
     },
-    "steamforge_artisans": {
+    "steamforge_guilds": {
       "version": "1.0",
-      "name": "Steamforge Artisans",
-      "id": "steamforge_artisans",
-      "url": "steamforge_artisans.json",
+      "name": "Steamforge Guilds",
+      "id": "steamforge_guilds",
+      "url": "steamforge_guilds.json",
       "color": "#9a1115",
       "alliance": "order",
-      "description": "The Steamforge Artisans are a unique group of several different but organized planets which create and maintain all sort sof wild war machines and contraptions. The Steamforge Artisans rely on technological augmentation and deadly weapons to destroy their enemies."
+      "description": "The Steamforge Guilds are a unique group of several different but organized planets which create and maintain all sort sof wild war machines and contraptions. The Steamforge Guilds rely on technological augmentation and deadly weapons to destroy their enemies."
     },
     "planetary_defense_force": {
       "version": "1.0",
