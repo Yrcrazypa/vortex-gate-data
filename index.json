@@ -358,9 +358,9 @@
     "arcane_awakening": {
       "subfactions": ["power_focus"],
       "name": "Arcane Awakening",
-      "rule": {"id": "power", "x": 1},
+      "rule": {"id": "magic", "x": 1},
       "flavor": "The dormant powers within this leader have awakened.",
-      "description": "Upgrade one _Leader_ model with Power (1).",
+      "description": "Upgrade one _Leader_ model with Magic(1).",
       "points": 10
     },
     "power_surge": {
