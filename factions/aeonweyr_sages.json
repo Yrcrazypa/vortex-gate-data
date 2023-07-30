@@ -6,14 +6,14 @@
   "lore": "Luminastra, the home planet of the Aeonweyr Sages, is a breathtaking world renowned for its luminous skies and ethereal beauty. The planet is bathed in the gentle radiance of countless stars, and the celestial dance of lights paints mesmerizing patterns across the heavens.\n\nThe Aeonweyr Sages are a race of sci-fi elves known for their insatiable thirst for knowledge and wisdom. They are beings of celestial grace, with iridescent skin that seems to shimmer like stardust in the pale glow of the Luminastra's moons. Their eyes sparkle like distant galaxies, revealing the depths of their curiosity and intellect.\n\nLong ago, the Aeonweyr Sages were a peaceful and contemplative race, living in harmony with the wonders of Luminastra. They built grand libraries and observatories to study the stars and unravel the mysteries of the universe. The Sages developed remarkable technologies, which allowed them to observe distant planets, comprehend cosmic phenomena, and record the unfolding history of the cosmos.\n\nOne day, a celestial event of unprecedented magnificence occurred - a rare alignment of cosmic forces that bathed Luminastra in an awe-inspiring celestial light. During this celestial convergence, the Aeonweyr Sages received a profound revelation. They sensed a deeper connection to the cosmos, as if the universe itself had granted them a sacred purpose.\n\nEmpowered by this epiphany, the Aeonweyr Sages embraced their newfound destiny. They pledged to become the chroniclers of the universe, the guardians of knowledge, and the seekers of cosmic truths. From that moment on, they dedicated themselves to recording every facet of the cosmos, chronicling the histories of planets, stars, and civilizations, and preserving the wisdom of the ages.\n\nTo fulfill their sacred task, the Aeonweyr Sages constructed the Grand Astrolibrary - a magnificent structure that stands at the heart of their capital city. Within its vast halls, shelves adorned with tomes and scrolls house an incomprehensible wealth of knowledge. Advanced holographic technology illuminates the library with the recorded histories and discoveries of the Aeonweyr Sages.\n\nAs the millennia passed, the Aeonweyr Sages expanded their knowledge beyond the borders of Luminastra. They built spacefaring vessels powered by celestial energy, which allowed them to traverse the cosmos and chronicle the stories of distant planets and civilizations.\n\nWhile their explorations were driven by an insatiable thirst for knowledge, the Aeonweyr Sages never lost sight of their mission to foster peace, wisdom, and understanding among the galaxies they encountered. They would share their knowledge freely, serving as ambassadors of enlightenment to all who sought their wisdom.\n\nThrough the ages, the Aeonweyr Sages have become revered across the cosmos as beings of celestial grace, wisdom, and enlightenment. Their legacy as the chroniclers of the universe continues to grow with each discovery they make and every story they record. From their home planet of Luminastra, they embark on endless journeys, ever dedicated to unraveling the mysteries of the cosmos and sharing the brilliance of the stars with the universe.",
   "units": {
     "troupe_master": {
-      "name": "Troupe Master",
-      "description": "A master of the Elven Keepers. Highly swift and deadly on foot.",
+      "name": "Lore Master",
+      "description": "A master of Aeonweyr Lore. Highly swift and deadly on foot.",
       "category": "hero",
       "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
       "keywords": ["Infantry"],
       "models": [
         {
-          "name": "Troupe Master",
+          "name": "Lore Master",
           "movement": 7,
           "courage": 7,
           "shoot": 7,
@@ -36,14 +36,14 @@
       ]
     },
     "solitaire": {
-      "name": "Solitaire",
+      "name": "Lore Keeper Dancer",
       "description": "A solo wandering player who has perfected the dance of war and occasionally joins the main troupe to deadly effect.",
       "category": "elite",
       "rules": [{"id": "support_x", "x": "Infantry"}, {"id": "wounds", "x": 3}],
       "keywords": ["Infantry"],
       "models": [
         {
-          "name": "Solitaire",
+          "name": "Lore Keeper Dancer",
           "courage": 7,
           "movement": 8,
           "shoot": 7,
@@ -59,14 +59,14 @@
       ]
     },
     "elven_seer": {
-      "name": "Elven Seer",
+      "name": "Lore Keeper Seer",
       "description": "An elven keeper gifted with the power of minor foresight and energy manipulation.",
       "category": "hero",
       "rules": [{"id": "leader", "x": "Infantry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
       "keywords": ["Infantry"],
       "models": [
         {
-          "name": "Elven Seer",
+          "name": "Lore Keeper Seer",
           "courage": 7,
           "movement": 7,
           "shoot": 7,
@@ -86,14 +86,14 @@
       ]
     },
     "jester_assassin": {
-      "name": "Jester Assassin",
+      "name": "Lore Keeper Assasin",
       "description": "A highly trained troupe member that specializes in accurate long-range weaponry.",
       "category": "elite",
       "rules": [{"id": "wounds", "x": 2}, "evasive"],
       "keywords": ["Infantry"],
       "models": [
         {
-          "name": "Jester Assassin",
+          "name": "Lore Keeper Assasin",
           "courage": 7,
           "movement": 7,
           "shoot": 7,
@@ -108,14 +108,14 @@
       ]
     },
     "troupe": {
-      "name": "Troupe",
+      "name": "Lore Keepers",
       "description": "A group of elven jesters on foot.",
       "category": "core",
       "rules": [],
       "keywords": ["Infantry"],
       "models": [
         {
-          "name": "Jester",
+          "name": "Lore Keeper",
           "courage": 6,
           "movement": 7,
           "shoot": 5,
@@ -143,14 +143,14 @@
       ]
     },
     "mimes": {
-      "name": "Mimes",
+      "name": "Lore Keeper Initiates",
       "description": "A group of newly indicted troupe mebers doing their best to prove themselves on and off of the battlefield.",
       "category": "core",
       "rules": [],
       "keywords": ["Infantry"],
       "models": [
         {
-          "name": "Mimes",
+          "name": "Lore Keeper Initiate",
           "courage": 5,
           "movement": 7,
           "shoot": 5,
@@ -177,14 +177,14 @@
       ]
     },
     "jetbikes": {
-      "name": "Jetbikes",
+      "name": "Lore Keeper Jetbikes",
       "description": "Fast-moving hover bikes outfitted with deadly weapons to choreograph the dance of war.",
       "category": "elite",
       "rules": ["hover", {"id": "wounds", "x": 2}],
       "keywords": ["Biker"],
       "models": [
         {
-          "name": "Jetbikes",
+          "name": "Lore Keeper Jetbike",
           "courage": 6,
           "movement": 10,
           "shoot": 6,
@@ -198,68 +198,13 @@
         }
       ]
     },
-    "hover_transport": {
-      "name": "Hover Transport",
-      "description": "A light transport outfitted to carry troupes.",
-      "category": "transport",
-      "rules": ["hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 6}, {"id": "open_topped", "x": 6}, {"id": "wounds", "x": 3}, "vulnerable_side_rear"],
-      "keywords": ["Vehicle"],
-      "models": [{"name": "Hover Tank", "courage": 6, "movement": 10, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 6, "weapons": [{"id": "shard_cannon", "count": 2}], "min": 1, "max": 1}]
-    },
-    "hover_tank": {
-      "name": "Hover Tank",
-      "description": "A hover tank that can be outfitted with heavy weaponry to eliminate various threats.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 6}],
-      "keywords": ["Vehicle"],
-      "models": [
-        {
-          "name": "Hover Tank",
-          "courage": 5,
-          "movement": 10,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 12,
-          "reflexes": 6,
-          "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}, "twin_fusion_cannon"],
-          "options": [
-            {
-              "replaceWeapon": {"id": "twin_shard_rifle", "mount": ["Front"]},
-              "withWeapon": [
-                {"id": "shard_cannon", "mount": ["Front"]},
-                {"id": "sky_cannon", "mount": ["Front"]},
-                {"id": "elven_missile_launcher", "mount": ["Front"]},
-                {"id": "fusion_cannon", "mount": ["Front"]},
-                {"id": "laser_machinegun", "mount": ["Front"]}
-              ]
-            },
-            {
-              "replaceWeapon": "twin_fusion_cannon",
-              "withWeapon": [
-                "twin_shard_cannon",
-                "twin_elven_missile_launcher",
-                "twin_sky_cannon",
-                "twin_laser_machinegun",
-                "heavy_fusion_cannon",
-                "distortion_cannon",
-                "distortion_blaster",
-                "shattersky_launcher"
-              ]
-            },
-            {"addRule": ["sky_engine", "gravity_thrusters"]}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
     "high_elf_champion": {
-      "name": "High Elf Champion",
+      "name": "Aeonweyr Champion",
       "description": "A leader of the high elf martial forces.",
       "category": "hero",
       "models": [
         {
-          "name": "High Elf Champion",
+          "name": "Aeonweyr Champion",
           "courage": 7,
           "movement": 7,
           "shoot": 7,
@@ -282,14 +227,14 @@
       ]
     },
     "high_elf_champion_on_bike": {
-      "name": "High Elf Champion on Bike",
+      "name": "Aeonweyr Champion on Bike",
       "description": "A leader of the high elf martial forces riding a swift hover bike.",
       "category": "hero",
       "keywords": ["Biker"],
       "rules": ["hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
       "models": [
         {
-          "name": "High Elf Champion on Bike",
+          "name": "Aeonweyr Champion on Bike",
           "courage": 7,
           "movement": 8,
           "shoot": 7,
@@ -785,7 +730,7 @@
       ]
     },
     "elven_bikers": {
-      "name": "Elven Biker Squad",
+      "name": "Aeonweyr Biker Squad",
       "description": "A squad of highly trained bikers that are adept at both melee and ranged combat.",
       "category": "elite",
       "keywords": ["Biker"],
@@ -796,7 +741,7 @@
       ],
       "models": [
         {
-          "name": "Elven Biker Leader",
+          "name": "Aeonweyr Biker Leader",
           "courage": 6,
           "shoot": 6,
           "fight": 6,
@@ -813,7 +758,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Elven Biker", "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "movement": 8, "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "min": 2, "max": 8}
+        {"name": "Aeonweyr Biker", "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "movement": 8, "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}], "min": 2, "max": 8}
       ]
     },
     "ranger_bikers": {
@@ -965,7 +910,7 @@
     },
     "shuriken": {"name": "Great Shuriken", "attacks": 3, "short": 6, "medium": 12, "ap": 2, "rules": ["assault"]},
     "mirror_blades": {"name": "Mirror Blades", "attacks": 1, "short": "Melee", "ap": 1, "rules": [{"id": "deadly", "x": 2}]},
-    "elven_blaster": {"name": "Elven Blaster", "attacks": 2, "short": 6, "medium": 12, "ap": 4, "rules": ["assault"]},
+    "elven_blaster": {"name": "Aeonweyr Blaster", "attacks": 2, "short": 6, "medium": 12, "ap": 4, "rules": ["assault"]},
     "shard_blaster": {"name": "Shard Blaster", "attacks": 2, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "rending"]},
     "exemplar_blade": {"name": "Exemplar Blade", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["accurate"]},
     "space_lance_shooting": {"name": "Space Lance (Shooting)", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": ["assault"]},
@@ -1046,7 +991,7 @@
       "name": "Vigilance",
       "phase": "activation",
       "description": "Use when taking an Initiative test for a reaction. That unit is treated as having +2 Initiative for that test.",
-      "flavor": "Highly trained and expertly attentive, High Elf troops can react in an instant.",
+      "flavor": "Highly trained and expertly attentive, Aeonweyr troops can react in an instant.",
       "cost": 1
     }
   }
