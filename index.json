@@ -137,15 +137,6 @@
       "color": "#008080",
       "description": "The Starlink Enclave are a group of cooperating aliens and explorers expanding their influence throughout the stars. Their primary fighting style involves a combined arms assault of mechanized infantry, flying battlesuits and high-tech infantry."
     },
-    "ascended_astroraptors": {
-      "version": "1.0",
-      "alliance": "order",
-      "name": "Ascended Astro-Raptors",
-      "id": "ascended_astroraptors",
-      "url": "ascended_astroraptors.json",
-      "color": "#4f90e0",
-      "description": "Uplifted millenia ago by an unknown precursor race, the Ascended Astro-Raptors advanced from feral beasts to exploring the stars. They combine advanced technology with deadly close-ranged and claw-filled assaults."
-    },
     "freeblade_mercenaries": {
       "version": "1.0",
       "name": "Freeblade Mercenaries",
