@@ -73,7 +73,7 @@
           "reflexes": 6,
           "weapons": ["marine_rifle", {"id": "light_handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_rifle", "combi_rifle", "combi_rifle", "twin_marine_rifle"]},
             {"replaceWeapon": ["marine_rifle", {"id": "light_handweapon", "count": 3}], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 4}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
@@ -109,7 +109,7 @@
           "reflexes": 6,
           "weapons": ["marine_rifle", {"id": "light_handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_rifle", "combi_rifle", "combi_rifle", "twin_marine_rifle"]},
             {"replaceWeapon": ["marine_rifle", {"id": "light_handweapon", "count": 3}], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 4}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
@@ -220,7 +220,7 @@
           "reflexes": 5,
           "weapons": ["marine_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_rifle", "combi_rifle", "combi_rifle", "twin_marine_rifle"]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -260,7 +260,7 @@
           "reflexes": 6,
           "weapons": ["marine_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_rifle", "combi_rifle", "combi_rifle", "twin_marine_rifle"]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -336,7 +336,7 @@
           "reflexes": 5,
           "weapons": ["marine_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion"]},
+            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_rifle", "combi_rifle", "combi_rifle"]},
             {"replaceWeapon": ["marine_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
@@ -439,7 +439,7 @@
           "reflexes": 5,
           "weapons": ["marine_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
+            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_rifle", "combi_rifle", "combi_rifle", "twin_marine_rifle"]},
             {"replaceWeapon": ["marine_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {

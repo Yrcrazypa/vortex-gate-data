@@ -1102,7 +1102,7 @@
     "thermal_rifle": {"name": "Thermal Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": ["flame", "lethal"]},
     "twin_thermal_rifle": {"name": "Twin Thermal Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 3, "rules": ["flame", "lethal"]},
     "thermal_carbine": {"name": "Thermal Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "rules": ["assault", "flame", "lethal"]},
-    "combi_thermal": {
+    "combi_rifle": {
       "name": "Combi-thermal Rifle",
       "profiles": [
         {"name": "Thermal", "attacks": 1, "ap": 3, "short": 12, "medium": 24, "rules": ["flame", "lethal"]},
@@ -1111,44 +1111,16 @@
     },
     "plasma_rifle": {"name": "Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 1},
     "twin_plasma_rifle": {"name": "Twin Plasma Rifle", "rules": ["rapid_fire", "overcharge"], "ap": 5, "medium": 24, "short": 12, "attacks": 2},
-    "combi_plasma": {
-      "name": "Combi-plasma Rifle",
-      "profiles": [
-        {"name": "Plasma", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["rapid_fire", "overcharge"]},
-        {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]}
-      ]
-    },
     "heavy_plasma_rifle": {"rules": ["overcharge"], "name": "Heavy Plasma Rifle", "ap": 6, "medium": 36, "short": 18, "attacks": 1},
     "plasma_carbine": {"name": "Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 1},
     "twin_plasma_carbine": {"name": "Twin Plasma Carbine", "rules": ["assault", "overcharge"], "ap": 5, "medium": 18, "short": 9, "attacks": 2},
     "fusion_rifle": {"name": "Fusion Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
     "twin_fusion_rifle": {"name": "Twin Fusion Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
-    "combi_fusion": {
-      "name": "Combi-fusion Rifle",
-      "profiles": [
-        {"name": "Fusion", "attacks": 1, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
-        {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]}
-      ]
-    },
     "prime_fusion_rifle": {"name": "Prime Fusion Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["rapid_fire", {"id": "deadly", "x": 1}]},
     "heavy_fusion_rifle": {"name": "Heavy Fusion Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["heavy", {"id": "deadly", "x": 1}]},
     "twin_heavy_fusion_rifle": {"name": "Twin Heavy Fusion Rifle", "attacks": 2, "short": 18, "medium": 36, "ap": 6, "rules": ["heavy", {"id": "deadly", "x": 1}]},
     "gravity_rifle": {"name": "Gravity Rifle", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "rules": ["gravity"]},
-    "combi_grav": {
-      "name": "Combi-gravity Rifle",
-      "profiles": [
-        {"name": "Gravity", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "rules": ["gravity"]},
-        {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]}
-      ]
-    },
     "twin_flamethrower": {"name": "Twin Flamethrower", "attacks": 4, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
-    "combi_flamer": {
-      "name": "Combi-flamethrower Rifle",
-      "profiles": [
-        {"name": "Flamethrower", "attacks": 2, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
-        {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]}
-      ]
-    },
     "fist_flamethrower": {"name": "Fist Flamethrower", "attacks": 2, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "flame"]},
     "heavy_railgun": {"name": "Heavy Railgun", "attacks": 2, "short": 24, "medium": 48, "ap": 5, "rules": ["breaching", "heavy"]},
     "railgun": {"name": "Railgun", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": ["breaching"]},
@@ -1279,10 +1251,6 @@
       "name": "Missile Rack",
       "rules": ["heavy"],
       "profiles": [{"name": "Frag", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 6}]}, {"name": "AT", "attacks": 1, "short": 24, "medium": 48, "ap": 6}]
-    },
-    "combi_barb_rifle": {
-      "name": "Combi-poison Rifle",
-      "profiles": [{"name": "Poison", "attacks": 1, "short": 12, "medium": 24, "rules": ["rapid_fire", "poison"]}, {"name": "Rifle", "attacks": 1, "short": 12, "medium": 24, "rules": ["rapid_fire"]}]
     },
     "seismic_cannon": {"name": "Seismic Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": ["heavy", {"id": "knockback", "x": 1}, {"id": "shocking", "x": 1}, "unreliable"]},
     "heavy_seismic_cannon": {
