@@ -113,13 +113,13 @@
       "alliance": "doom",
       "description": "The Voidwarped Renegade are a band of marines that betrayed the mankind and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry."
     },
-    "undying_machines": {
+    "eternal_dynasties": {
       "version": "1.0",
-      "name": "Undying Machines",
-      "id": "undying_machines",
-      "url": "undying_machines.json",
+      "name": "Eternal Dynasties",
+      "id": "eternal_dynasties",
+      "url": "eternal_dynasties.json",
       "color": "#1e7331",
-      "description": "The Undying Machines are a race of once-people now cursed with unending machine immortality. They rely on waves of reanimating fighters and advanced ancient technology to win their battles.",
+      "description": "The Eternal Dynasties are a race of once-people now cursed with unending machine immortality. They rely on waves of reanimating fighters and advanced ancient technology to win their battles.",
       "alliance": "destruction"
     },
     "starlink_enclave": {
