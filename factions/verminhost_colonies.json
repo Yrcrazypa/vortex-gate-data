@@ -391,7 +391,7 @@
           "defense": 5,
           "reflexes": 5,
           "weapons": [{"id": "gnawing_teeth", "count": 3}],
-          "rules": ["distracting", {"id": "swarm", "x": 3}],
+          "rules": ["distracting", {"id": "wounds", "x": 3}],
           "min": 3,
           "max": 9
         }

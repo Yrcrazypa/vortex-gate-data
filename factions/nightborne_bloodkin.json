@@ -257,7 +257,7 @@
           "fight": 5,
           "defense": 4,
           "reflexes": 5,
-          "rules": [{"id": "swarm", "x": 3}, "distracting", "fly", "life_drain"],
+          "rules": [{"id": "wounds", "x": 3}, "distracting", "fly", "life_drain"],
           "weapons": [{"id": "bite", "count": 3}],
           "min": 2,
           "max": 4

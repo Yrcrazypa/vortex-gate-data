@@ -188,7 +188,7 @@
           "fight": 5,
           "defense": 4,
           "reflexes": 4,
-          "rules": ["hover", {"id": "swarm", "x": 3}],
+          "rules": ["hover", {"id": "wounds", "x": 3}],
           "weapons": [{"id": "feeding_teeth", "count": 3}],
           "min": 3,
           "max": 6

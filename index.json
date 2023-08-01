@@ -1790,9 +1790,9 @@
     "blast": {
       "name": "Blast",
       "inputs": ["x"],
-      "description": "Multiply hits from this weapon by X. A unit may not take more hits than the number of models in the unit.",
+      "description": "Multiply hits from this weapon by X.",
       "notes": "Small RNG discount to account for single shot randomness",
-      "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.8}]
+      "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.5}]
     },
     "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with a Damage Chart.", "points": ["weapon.attacks", {"multiply": 1}]},
     "flame": {"name": "Spray", "description": "Hits from this weapon ignore any cover bonuses.", "points": ["weapon.attacks", {"multiply": 0.5}]},
@@ -1866,12 +1866,6 @@
     },
     "medic_squad": {"name": "Medic", "description": "Whenever this unit loses a model or Wound(x), roll a D10. On a 2 or less, that loss is prevented.", "points": 10},
     "non_combat": {"name": "Non-combatant", "description": "This model may never control or contest objectives, and may not score secondary objectives.", "points": 0},
-    "swarm": {
-      "name": "Swarm",
-      "inputs": ["x"],
-      "description": "This model is treated as having X models per base (for the purposes of abilities that interact with models) that it may lose before it is killed. If a unit contains multiple models with Swarm, damage must be assigned to an already damaged model before being assigned to any other model.",
-      "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
-    },
     "crew": {
       "name": "Crew",
       "inputs": ["x"],

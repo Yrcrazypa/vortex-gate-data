@@ -462,7 +462,7 @@
           "fight": 5,
           "defense": 4,
           "reflexes": 4,
-          "rules": ["fly", {"id": "swarm", "x": 3}],
+          "rules": ["fly", {"id": "wounds", "x": 3}],
           "weapons": [{"id": "sharp_claws", "count": 3}],
           "min": 3,
           "max": 12

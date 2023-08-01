@@ -262,7 +262,7 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 5,
-          "rules": [{"id": "swarm", "x": 3}],
+          "rules": [{"id": "wounds", "x": 3}],
           "weapons": [{"id": "claws", "count": 5}],
           "min": 2,
           "max": 4

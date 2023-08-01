@@ -166,7 +166,7 @@
       "description": "Swarm of alien insects, weak on their own but dangerous in numbers.",
       "category": "core",
       "keywords": ["Swarwm"],
-      "rules": [{"id": "swarm", "x": 3}],
+      "rules": [{"id": "wounds", "x": 3}],
       "models": [
         {
           "name": "Hive Nestlings",
