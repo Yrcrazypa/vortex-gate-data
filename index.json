@@ -67,6 +67,16 @@
       "alliance": "order",
       "description": "The Aeonweyr Sages are a race of Elven scholars chronicling the evolution of the universe and everything in it. They focus on a mobile and deadly mix of advanced technology and unique fast tactics to achieve victory."
     },
+    "glimmerwood_travelers": {
+      "version": "1.0",
+      "name": "Glimmerwood Travelers",
+      "id": "glimmerwood_travelers",
+      "url": "glimmerwood_travelers.json",
+      "color": "#295788",
+      "secondary_color": "#e8bb00",
+      "alliance": "order",
+      "description": "The Glimmerwood Travelers are a race of forested elves hailing from the planet Lumithorn. They have a unique ability to communicate with nature and the natural forces. They use primitive weapons and natural beasts."
+    },
     "darkstar_pillagers": {
       "version": "1.0",
       "name": "Darkstar Pillagers",

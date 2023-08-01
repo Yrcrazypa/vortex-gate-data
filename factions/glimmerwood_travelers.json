@@ -1,8 +1,8 @@
 {
-  "name": "Wood Elves",
-  "id": "wood_elves",
+  "name": "Glimmerwood Travelers",
+  "id": "glimmerwood_travelers",
+  "lore": "Long ago, on the mystical planet Lumithorn, a race of forest elves known as the Glimmerwood Travelers thrived in harmony with the natural world. Lumithorn was a lush and enchanted world, covered in vast, ancient forests, where the trees emitted a soft, ethereal glow at night. These radiant trees were the heart and soul of Lumithorn, providing the elves with a deep connection to the planet's life force.\n\nThe Glimmerwood Travelers were gifted with an innate ability to communicate with nature, understanding the whispers of the trees, the songs of the birds, and the whispers of the winds. Their deep bond with Lumithorn's flora and fauna allowed them to live in symbiosis with the environment, nurturing it as it nurtured them.\n\nIn the center of the Glimmerwood, the capital of the elves was a majestic tree known as the "Luminary Oak." This ancient tree held great spiritual significance, and its trunk was adorned with luminescent markings, believed to be the key to preserving the balance of Lumithorn's ecosystems.\n\nThe Glimmerwood Travelers were not only protectors of the forests but also explorers and adventurers. They ventured beyond their woodland realm to discover and learn from other lands and cultures. Their curiosity led them to uncover ancient magical artifacts and forgotten wisdom, all of which they used to further their connection with nature and protect Lumithorn from external threats.\n\nHowever, peace was not everlasting. A dark force, known as the \"Shadowtide,\" began to spread across Lumithorn. This malevolent energy emanated from a corrupted source deep within the Gloomspire Mountains, located at the edge of the Glimmerwood. As the Shadowtide encroached, the once-vibrant forests started to wither, and the Luminary Oak's glow diminished.\n\nFaced with this impending doom, the Glimmerwood Travelers embarked on a quest to heal Lumithorn and cleanse the corruption that threatened their beloved planet. Through their unwavering determination and unity with nature, they sought to restore Lumithorn's balance and protect its fragile ecosystems from falling into darkness.\n\nAs the story unfolds, the Glimmerwood Travelers must overcome various challenges, explore uncharted territories, and rediscover ancient rituals to revive Lumithorn's fading brilliance. Their journey becomes one of resilience, hope, and the power of cooperation, ultimately revealing the strength that lies in embracing nature's wisdom and living in harmony with the world around them.\n\nThrough their actions, the Glimmerwood Travelers become a symbol of unity and guardianship, inspiring other races to cherish and protect the precious gift of nature on Lumithorn and beyond.",
   "author": "Xekon#8266",
-  "color": "#38733a",
   "units": {
     "druid": {
       "name": "Druid",
@@ -28,6 +28,146 @@
           "max": 1
         }
       ]
+    },
+    "wildborn": {
+      "name": "Wildborn",
+      "description": "Empowered by the magic of the realm, these brave warriors attack with the fury of the wilds.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Wildborn",
+          "movement": 6,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 5,
+          "reflexes": 5,
+          "min": 10,
+          "max": 20,
+          "weapons": ["spear"],
+          "options": [{"replaceWeapon": ["spear"], "withWeapon": [["crossbow", "light_handweapon"], ["javelin", "spiked_buckler"]], "modelLimit": "all"}]
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+      "subfactions": ["none"]
+    },
+    "dryads": {
+      "name": "Dryads",
+      "description": "Forest spirits with a lust for blood.",
+      "category": "core",
+      "models": [
+        {"name": "Dryad", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "rules": ["furious"], "weapons": [{"id": "claws", "count": 2}], "min": 10, "max": 20}
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "deathwalkers": {
+      "name": "Deathwalkers",
+      "description": "Veterans of the Hunt, these Wildborn have taken on a spiritual journey to slay great beasts and men alike.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Deathwalkers",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "min": 5,
+          "max": 15,
+          "weapons": [{"id": "handweapon", "count": 3}],
+          "rules": ["fearless"],
+          "options": [{"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "great_weapon", "count": 3}]}]
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+      "subfactions": ["none"]
+    },
+    "earth_elemental": {
+      "name": "Earth Elementals",
+      "description": "Animated by the magic of the druids, these crumbling golems strike out at anyone who doesn't flee at their sight.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Earth Elemental",
+          "movement": 5,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 5,
+          "weapons": [{"id": "crushing_fists", "count": 2}],
+          "min": 1,
+          "max": 3,
+          "rules": ["fearless", {"id": "wounds", "x": 3}]
+        }
+      ],
+      "subfactions": ["none"],
+      "keywords": ["Monster"]
+    },
+    "greater_earth_elemental": {
+      "name": "Greater Earth Elemental",
+      "description": "Animated by the magic of the druids, this crumbling golem strikes out at anyone who doesn't flee at its sight.",
+      "category": "rare",
+      "models": [
+        {
+          "name": "Greater Earth Elemental",
+          "movement": 5,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 5,
+          "weapons": [{"id": "crushing_fists", "count": 4}],
+          "min": 1,
+          "max": 1,
+          "rules": ["fearless", {"id": "wounds", "x": 3}]
+        }
+      ],
+      "subfactions": ["none"],
+      "keywords": ["Monster"]
+    },
+    "warpwolves": {
+      "name": "Warpwolves",
+      "description": "Overtaken by the beastial spirits within, these human-wolf hybrids are a flurry of fangs and steel.",
+      "category": "elite",
+      "models": [
+        {"name": "Warpwolf", "movement": 7, "courage": 6, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 6, "min": 5, "max": 15, "weapons": [{"id": "fangs_and_teeth", "count": 2}, "great_axe"]}
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}],
+      "subfactions": ["none"],
+      "keywords": ["Beast"]
+    },
+    "warpwolf_alpha": {
+      "name": "Warpwolf Alpha",
+      "description": "A pack of wolves has to be led by a alpha, hunting down great prey and making sure their pack doesn't disolve into anarchy.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Warpwolf Alpha",
+          "movement": 7,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 7,
+          "defense": 6,
+          "reflexes": 6,
+          "min": 1,
+          "max": 1,
+          "weapons": [{"id": "fangs_and_teeth", "count": 3}, {"id": "great_axe", "count": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "leader", "x": "Beast"}, {"id": "tactician", "x": 2}]
+        }
+      ],
+      "subfactions": ["none"],
+      "keywords": ["Beast"]
+    },
+    "great_wolves": {
+      "name": "Great Wolves",
+      "description": "A pack of Wolves, roused by ancient magic and the natural connection between the realmshapers and the creatures of the land.",
+      "category": "core",
+      "models": [{"name": "Great Wolf", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "min": 5, "max": 20, "weapons": [{"id": "fangs_and_teeth", "count": 2}]}],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}],
+      "subfactions": ["none"],
+      "keywords": ["Beast"]
     },
     "druid_beast": {
       "name": "Druid on Great Beast",
@@ -280,15 +420,6 @@
       ],
       "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     },
-    "dryads": {
-      "name": "Dryads",
-      "description": "Forest spirits with a lust for blood.",
-      "category": "core",
-      "models": [
-        {"name": "Dryad", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "rules": ["furious"], "weapons": [{"id": "claws", "count": 2}], "min": 10, "max": 20}
-      ],
-      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-    },
     "revenants": {
       "name": "Revenants",
       "description": "Elven Spirits that have been summoned from beyond the grave to protect their living kin.",
@@ -507,36 +638,51 @@
     "wild_blade": {"name": "Wildwood Blade", "attacks": 1, "ap": 7, "short": "Melee", "rules": [{"id": "deadly", "x": 1}]},
     "glaive_thrower": {"name": "Glaive Thrower", "attacks": 6, "short": 18, "medium": 36, "ap": 3}
   },
+  "models": {
+    "animated_construct": {
+      "name": "Animated Construct",
+      "movement": 5,
+      "courage": 5,
+      "shoot": 5,
+      "fight": 5,
+      "defense": 5,
+      "reflexes": 5,
+      "weapons": [{"id": "handweapon", "count": 2}],
+      "min": 1,
+      "max": 1,
+      "rules": ["fearless"]
+    }
+  },
   "rules": {"companion": {"name": "Arcane Companion", "description": "Once per turn when a power within 24“ of this model gets dispelled, deal 1 hit with AP(2) to the caster.", "points": 5}},
   "powers": {
-    "hunters_mark": {"name": "Hunter's Mark", "description": "Target an enemy unit within 18\". Friendly units within 12\" of it have +2\" Movement when charging that unit this turn.", "charge": 7},
-    "cloak_of_thorns": {
-      "name": "Cloak of Thorns",
-      "description": "Target a friendly unit within 12\". Until the end of the round, each time that unit rolls a 1 or 2 on a save roll, the attacking unit takes 1 hit with AP(3).",
+    "curse_of_pain": {
+      "name": "Curse of Pain",
+      "description": "Target enemy unit within 18\". Until the end of the round, each time that unit rolls a 9 or 10 on a save roll, it takes 1 hit with AP(2).",
       "charge": 6
     },
-    "lifebloom": {"name": "Lifebloom", "description": "Target friendly unit within 12\" restores 1D3 wounds. If no wounds can be restored, restore 1d3 models instead.", "charge": 5}
+    "rejuvenate": {"name": "Rejuvenate", "description": "Target friendly _Beast_ or _Monster_ unit within 12\" restores 1D3 wounds.", "charge": 5},
+    "stoneskin": {"name": "Stoneskin", "description": "Target friendly unit within 12\" may re-roll one failed die on its next Save test.", "charge": 7}
   },
   "strategies": [
     {
-      "name": "Lifeblood",
+      "name": "Realmblood",
       "phase": "activation",
-      "description": "Use before activating a unit. Heal 1 wound or critical damage that has been allocated to a model in that unit.",
-      "flavor": "A gift from the ancient spirits, granting minor regeneration to chosen warriors.",
+      "description": "Use before activating a unit. That unit may immediately heal 1 point of damage suffered.",
+      "flavor": "The realm courses with ancient magic, those who can access it are being restored to old might.",
       "cost": 2
     },
     {
-      "name": "Swift",
+      "name": "Savage Counter",
       "phase": "activation",
-      "description": "Use when taking a Initiative test. That unit is treated as having +2 Initiative for that test.",
-      "flavor": "Wood elves are naturally light-footed.",
+      "description": "Use when a _Infantry_ or _Beast_ unit makes a Counter-attack reaction. That unit has +1 Strength for that attack.",
+      "flavor": "The forces of nature strike back with the fury of a storm.",
       "cost": 1
     },
     {
-      "name": "Poison-tipped Volley",
+      "name": "Bloodthirst",
       "phase": "activation",
-      "description": "Use before an _Infantry_ unit makes a ranged attack. Succesful hits have +1 AP.",
-      "flavor": "Wood Elf weapons are often coated in lethal toxins to ensure their foe does not survive unscathed.",
+      "description": "Use when a unit declares a Charge action. That unit gets +3\" of Movement for that action.",
+      "flavor": "The smell of blood entices both men and beast alike.",
       "cost": 1
     }
   ],
@@ -562,5 +708,6 @@
       "flavor": "This ornate shield is indestructible, able to deflect lethal strikes.",
       "points": 5
     }
-  }
+  },
+  "color": "#0f3923"
 }
