@@ -452,7 +452,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["auto_rifle", "plasma_grenadess", "handweapon"],
+          "weapons": ["auto_rifle", "handweapon"],
           "rules": ["engineer", "support", {"id": "wounds", "x": 2}],
           "options": [
             {"replaceWeapon": ["auto_rifle"], "withWeapon": ["thermal_rifle", "fusion_rifle", "plasma_rifle", "grenade_launcher"]},
