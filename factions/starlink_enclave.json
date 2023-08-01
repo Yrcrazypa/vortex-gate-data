@@ -640,34 +640,6 @@
       "rules": ["agile"],
       "models": [{"name": "Wild Dogs", "movement": 8, "shoot": 4, "fight": 6, "reflexes": 6, "courage": 5, "defense": 5, "weapons": [{"id": "handweapon", "count": 2}], "min": 4, "max": 12}]
     },
-    "mantaurs": {
-      "name": "Quad-Warriors",
-      "description": "Incredibly successful experiments, these quadrapedial warriors cover ground quickly",
-      "category": "elite",
-      "keywords": ["Infantry", "Beasts"],
-      "rules": ["strider"],
-      "models": [
-        {
-          "name": "Quad-Warriors",
-          "movement": 8,
-          "shoot": 5,
-          "fight": 6,
-          "reflexes": 6,
-          "courage": 5,
-          "defense": 7,
-          "weapons": ["tribal_rifle", {"id": "handweapon", "count": 2}],
-          "min": 3,
-          "max": 9,
-          "options": [
-            {
-              "replaceWeapon": ["tribal_rifle", {"id": "handweapon", "count": 2}],
-              "withWeapon": [["tribal_flamethrower", {"id": "handweapon", "count": 2}], ["tribal_tankbuster", {"id": "handweapon", "count": 2}]],
-              "modelLimit": "1/3"
-            }
-          ]
-        }
-      ]
-    },
     "tribal_ogres": {
       "name": "Tribal Ogre",
       "description": "Giant apelike creatures who smash and bash",
@@ -675,28 +647,6 @@
       "keywords": ["Infantry"],
       "rules": [{"id": "wounds", "x": 2}],
       "models": [{"name": "Tribal Ogres", "movement": 6, "shoot": 4, "fight": 6, "reflexes": 6, "courage": 5, "defense": 7, "weapons": [{"id": "ogre_fists", "count": 2}], "min": 1, "max": 3}]
-    },
-    "special_weapons_squad": {
-      "name": "Tribal Specialists",
-      "description": "A specialized hunting-squad dedicated to taking down a specific prey",
-      "category": "elite",
-      "keywords": ["Infantry"],
-      "rules": [],
-      "models": [
-        {
-          "name": "Tribal Specialist",
-          "movement": 6,
-          "shoot": 5,
-          "fight": 5,
-          "reflexes": 6,
-          "courage": 5,
-          "defense": 5,
-          "weapons": ["tribal_flamethrower", {"id": "handweapon", "count": 3}],
-          "min": 3,
-          "max": 9,
-          "options": [{"replaceweapon": ["tribal_flamethrower", {"id": "handweapon", "count": 3}], "withWeapon": ["tribal_tankbuster", {"id": "handweapon", "count": 2}]}]
-        }
-      ]
     },
     "ogre_riders": {
       "name": "Ogre Riders",
@@ -706,27 +656,6 @@
       "rules": [{"id": "wounds", "x": 2}],
       "models": [
         {"name": "Ogre Riders", "movement": 6, "shoot": 5, "fight": 6, "reflexes": 6, "courage": 5, "defense": 7, "weapons": [{"id": "ogre_fists", "count": 2}, "laser_cannon"], "min": 1, "max": 3}
-      ]
-    },
-    "dinosaurus": {
-      "name": "Dinosaur",
-      "description": "Shapers sometimes become more worried about if they can than if they should",
-      "category": "rare",
-      "keywords": ["Monster"],
-      "rules": [{"id": "wounds", "x": 3}, "walker", {"id": "impact", "x": 3}],
-      "models": [
-        {
-          "name": "Dinosaur",
-          "movement": 10,
-          "shoot": 5,
-          "fight": 6,
-          "reflexes": 6,
-          "courage": 6,
-          "weapons": [{"id": "dinosaur_claws", "count": 5}, {"id": "laser_cannon", "count": 2}],
-          "defense": 11,
-          "min": 1,
-          "max": 1
-        }
       ]
     }
   },
