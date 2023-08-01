@@ -1023,14 +1023,14 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 2}],
-          "weapons": ["twin_assault_carbine", {"id": "energy_fist", "count": 2}],
+          "weapons": ["twin_assault_carbine", {"id": "energy_powerweapon", "count": 2}],
           "options": [
             {
               "replaceWeapon": ["twin_assault_carbine"],
               "withWeapon": ["twin_plasma_carbine", "twin_flamethrower", "autocannon", "gravity_cannon", "twin_laser_cannon", "twin_fusion_rifle", {"id": "heavy_machinegun", "count": 2}],
               "modelLimit": "all"
             },
-            {"replaceWeapon": [{"id": "energy_fist", "count": 2}], "withWeapon": [{"id": "heavy_fist", "count": 3}, {"id": "assault_drill", "count": 3}], "modelLimit": "all"},
+            {"replaceWeapon": [{"id": "energy_powerweapon", "count": 2}], "withWeapon": [{"id": "heavy_fist", "count": 3}, {"id": "assault_drill", "count": 3}], "modelLimit": "all"},
             {"addWeapon": "assault_missile_launcher", "modelLimit": "1/3"},
             {"addWeapon": "grenade_launcher", "modelLimit": "all"},
             {"addRule": ["jetpack"], "modelLimit": "all"}
