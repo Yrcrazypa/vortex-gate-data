@@ -19,18 +19,18 @@
           "reflexes": 6,
           "movement": 6,
           "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 2}],
-          "weapons": ["auto_rifle", "frags", {"id": "ccw", "count": 2}],
+          "weapons": ["auto_rifle", "frags", {"id": "light_handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["auto_rifle", {"id": "ccw", "count": 2}], "withWeapon": [["pistol", {"id": "ccw", "count": 3}]]},
+            {"replaceWeapon": ["auto_rifle", {"id": "light_handweapon", "count": 2}], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 3}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
             {
-              "replaceWeapon": {"id": "ccw", "count": 3},
+              "replaceWeapon": {"id": "light_handweapon", "count": 3},
               "withWeapon": [
-                {"id": "energy_sword", "count": 3},
-                {"id": "energy_fist", "count": 3},
-                {"id": "energy_axe", "count": 3},
-                {"id": "energy_mace", "count": 3},
-                {"id": "chainsword", "count": 3}
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_powerweapon", "count": 3},
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "energy_handweapon", "count": 3},
+                {"id": "handweapon", "count": 3}
               ]
             },
             {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
@@ -57,7 +57,7 @@
           "weapons": ["pistol", "blasting_charges", {"id": "bone_sword", "count": 4}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "web_pistol", "needle_pistol"]},
-            {"replaceWeapon": {"id": "bone_sword", "count": 4}, "withWeapon": [{"id": "energy_pick", "count": 4}, {"id": "energy_mace", "count": 4}, {"id": "energy_hammer", "count": 4}]},
+            {"replaceWeapon": {"id": "bone_sword", "count": 4}, "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}]},
             {"addRule": ["cult_icon"]},
             {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
@@ -80,10 +80,10 @@
           "defense": 6,
           "reflexes": 6,
           "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 2}],
-          "weapons": ["pistol", "blasting_charges", {"id": "ccw", "count": 2}],
+          "weapons": ["pistol", "blasting_charges", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
-            {"replaceWeapon": [{"id": "ccw", "count": 2}], "withWeapon": [{"id": "energy_staff", "count": 2}, {"id": "bone_sword", "count": 2}]},
+            {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_staff", "count": 2}, {"id": "bone_sword", "count": 2}]},
             {"addRule": ["companion"]},
             {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
           ],
@@ -106,7 +106,7 @@
           "reflexes": 5,
           "movement": 8,
           "rules": ["evasive", "spotting_laser", {"id": "support_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
-          "weapons": ["blasting_charges", {"id": "heavy_ccw", "count": 3}, "heavy_sniper_rifle"],
+          "weapons": ["blasting_charges", {"id": "handweapon", "count": 3}, "heavy_sniper_rifle"],
           "min": 1,
           "max": 1
         }
@@ -126,7 +126,7 @@
           "defense": 6,
           "reflexes": 6,
           "rules": ["evasive", "spotting_laser", "support", {"id": "wounds", "x": 2}],
-          "weapons": ["blasting_charges", {"id": "heavy_ccw", "count": 3}, "heavy_sniper_rifle"],
+          "weapons": ["blasting_charges", {"id": "handweapon", "count": 3}, "heavy_sniper_rifle"],
           "min": 1,
           "max": 1
         }
@@ -147,7 +147,7 @@
           "reflexes": 5,
           "movement": 6,
           "rules": ["chosen_abomination", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "resistant", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": [{"id": "energy_hammer", "count": 4}],
+          "weapons": [{"id": "energy_powerweapon", "count": 4}],
           "options": [{"addRule": [{"id": "ward", "x": 1}]}],
           "min": 1,
           "max": 1
@@ -189,7 +189,7 @@
           "defense": 6,
           "reflexes": 6,
           "rules": ["legend_strategist", "support", {"id": "wounds", "x": 2}],
-          "weapons": ["pistol", {"id": "ccw", "count": 2}],
+          "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
           "min": 1,
           "max": 1
         }
@@ -209,7 +209,7 @@
           "defense": 6,
           "reflexes": 6,
           "rules": ["inspiration", "scrambler", "support", {"id": "wounds", "x": 2}],
-          "weapons": ["pistol", {"id": "ccw", "count": 2}],
+          "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
           "min": 1,
           "max": 1
         }
@@ -229,7 +229,7 @@
           "defense": 6,
           "reflexes": 6,
           "rules": ["assassin", "relentless", "scout", "support", {"id": "wounds", "x": 2}],
-          "weapons": [{"id": "heavy_pistol", "count": 3}, "ccw"],
+          "weapons": [{"id": "heavy_pistol", "count": 3}, "light_handweapon"],
           "options": [{"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "web_pistol"], "limit": 3}],
           "min": 1,
           "max": 1
@@ -271,19 +271,19 @@
           "defense": 5,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["auto_rifle", "frags", "ccw"],
+          "weapons": ["auto_rifle", "frags", "light_handweapon"],
           "options": [
             {"replaceWeapon": "auto_rifle", "withWeapon": ["marine_rifle"]},
-            {"replaceWeapon": ["auto_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+            {"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
             {
-              "replaceWeapon": {"id": "ccw", "count": 2},
+              "replaceWeapon": {"id": "light_handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_sword", "count": 2},
-                {"id": "energy_axe", "count": 2},
-                {"id": "energy_mace", "count": 2},
-                {"id": "energy_fist", "count": 2},
-                {"id": "chainsword", "count": 2}
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "handweapon", "count": 2}
               ]
             }
           ],
@@ -298,7 +298,7 @@
           "defense": 5,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["auto_rifle", "frags", "ccw"],
+          "weapons": ["auto_rifle", "frags", "light_handweapon"],
           "options": [{"addRule": "field_radio", "modelLimit": 1}, {"replaceModel": "weapon_team", "modelLimit": 1}],
           "min": 9,
           "max": 29
@@ -319,7 +319,7 @@
           "defense": 5,
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 2}],
-          "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "frags", "ccw"],
+          "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "frags", "light_handweapon"],
           "options": [
             {
               "replaceWeapon": {"id": "heavy_machinegun", "mount": ["Front"]},
@@ -344,19 +344,19 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["auto_rifle", "blasting_charges", "ccw"],
+          "weapons": ["auto_rifle", "blasting_charges", "light_handweapon"],
           "options": [
-            {"replaceWeapon": ["auto_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+            {"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
             {
-              "replaceWeapon": {"id": "ccw", "count": 2},
-              "withWeapon": [{"id": "energy_pick", "count": 2}, {"id": "energy_mace", "count": 2}, {"id": "chainsword", "count": 2}, {"id": "energy_hammer", "count": 2}]
+              "replaceWeapon": {"id": "light_handweapon", "count": 2},
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_handweapon", "count": 2}, {"id": "handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Neophyte", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["auto_rifle", "blasting_charges", "ccw"], "min": 9, "max": 19}
+        {"name": "Neophyte", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 5, "weapons": ["auto_rifle", "blasting_charges", "light_handweapon"], "min": 9, "max": 19}
       ],
       "options": [
         {"replaceWeapon": "auto_rifle", "withWeapon": "shotgun"},
@@ -378,8 +378,8 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 5,
-          "weapons": ["blasting_charges", {"id": "heavy_ccw", "count": 2}, "pistol"],
-          "options": [{"replaceWeapon": [{"id": "heavy_ccw", "count": 2}], "withWeapon": [{"id": "bone_sword", "count": 2}]}, {"addWeapon": ["lashing_whip"]}],
+          "weapons": ["blasting_charges", {"id": "handweapon", "count": 2}, "pistol"],
+          "options": [{"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [{"id": "bone_sword", "count": 2}]}, {"addWeapon": ["lashing_whip"]}],
           "min": 1,
           "max": 1
         },
@@ -391,7 +391,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 5,
-          "weapons": ["blasting_charges", {"id": "heavy_ccw", "count": 2}, "pistol"],
+          "weapons": ["blasting_charges", {"id": "handweapon", "count": 2}, "pistol"],
           "min": 4,
           "max": 19
         }
@@ -399,7 +399,7 @@
       "options": [
         {"replaceWeapon": "pistol", "withWeapon": ["flamethrower_pistol"]},
         {
-          "replaceWeapon": ["pistol", {"id": "heavy_ccw", "count": 2}],
+          "replaceWeapon": ["pistol", {"id": "handweapon", "count": 2}],
           "withWeapon": ["demolition_charges", {"id": "rock_cutter", "count": 2}, {"id": "rock_drill", "count": 2}, {"id": "rock_saw", "count": 2}],
           "modelLimit": "2/5"
         },
@@ -441,8 +441,8 @@
           "reflexes": 5,
           "movement": 6,
           "rules": [{"id": "resistant", "x": 1}, {"id": "wounds", "x": 2}],
-          "weapons": [{"id": "energy_pick", "count": 3}],
-          "options": [{"replaceWeapon": {"id": "energy_pick", "count": 3}, "withWeapon": [{"id": "energy_hammer", "count": 2}]}],
+          "weapons": [{"id": "energy_handweapon", "count": 3}],
+          "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 3}, "withWeapon": [{"id": "energy_powerweapon", "count": 2}]}],
           "min": 5,
           "max": 10
         }
@@ -462,22 +462,22 @@
           "defense": 7,
           "reflexes": 5,
           "movement": 8,
-          "weapons": ["auto_rifle", "blasting_charges", "ccw"],
+          "weapons": ["auto_rifle", "blasting_charges", "light_handweapon"],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
             {
-              "replaceWeapon": {"id": "ccw", "count": 2},
-              "withWeapon": [{"id": "energy_pick", "count": 2}, {"id": "energy_mace", "count": 2}, {"id": "chainsword", "count": 2}, {"id": "energy_hammer", "count": 2}]
+              "replaceWeapon": {"id": "light_handweapon", "count": 2},
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_handweapon", "count": 2}, {"id": "handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Neophyte Outrider", "movement": 8, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["auto_rifle", "blasting_charges", "ccw"], "min": 2, "max": 8}
+        {"name": "Neophyte Outrider", "movement": 8, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["auto_rifle", "blasting_charges", "light_handweapon"], "min": 2, "max": 8}
       ],
       "options": [
         {"replaceWeapon": "auto_rifle", "withWeapon": ["shotgun"]},
-        {"replaceWeapon": ["auto_rifle", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}]]},
+        {"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
         {"replaceWeapon": "auto_rifle", "withWeapon": ["grenade_launcher"], "modelLimit": "1/3"},
         {"replaceWeapon": "auto_rifle", "withWeapon": ["light_machinegun", "mining_laser", "flamethrower", "seismic_cannon"], "modelLimit": "1/3"}
       ]
@@ -883,7 +883,7 @@
       "reflexes": 5,
       "movement": 6,
       "rules": [{"id": "wounds", "x": 2}],
-      "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "frags", "ccw"],
+      "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, "frags", "light_handweapon"],
       "options": [
         {
           "replaceWeapon": {"id": "heavy_machinegun", "mount": ["Front"]},

@@ -18,13 +18,13 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "frags", {"id": "chainsword", "count": 2}],
+          "weapons": ["heavy_auto_rifle", "frags", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle", {"id": "chainsword", "count": 2}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 3}]]},
+            {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
-              "replaceWeapon": {"id": "chainsword", "count": 3},
-              "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "energy_fist", "count": 3}, {"id": "energy_mace", "count": 3}, {"id": "energy_axe", "count": 3}]
+              "replaceWeapon": {"id": "handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "energy_handweapon", "count": 3}, {"id": "energy_handweapon", "count": 3}]
             },
             {"addRule": [{"id": "ambush", "name": "Orbital Insertion"}, {"id": "ward", "x": 1}]},
             {"replaceRule": {"id": "stormtrooper_tactics", "x": 1}, "withRule": {"id": "stormtrooper_tactics", "x": 2}}
@@ -75,18 +75,18 @@
           "defense": 8,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["marine_rifle", {"id": "heavy_ccw", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle", "storm_rifle", "plasma_rifle", "fusion_rifle", "flamethrower"]},
-            {"replaceWeapon": ["marine_rifle", {"id": "heavy_ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}]]},
+            {"replaceWeapon": ["marine_rifle", {"id": "handweapon", "count": 3}], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 4}]]},
             {
-              "replaceWeapon": {"id": "chainsword", "count": 4},
+              "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [
-                {"id": "energy_mace", "count": 4},
-                {"id": "energy_axe", "count": 4},
-                {"id": "energy_sword", "count": 4},
-                {"id": "energy_fist", "count": 4},
-                {"id": "energy_hammer", "count": 4},
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_powerweapon", "count": 4},
+                {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_claws", "count": 5}
               ]
             },
@@ -124,18 +124,18 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "frags", "ccw"],
+          "weapons": ["heavy_auto_rifle", "frags", "light_handweapon"],
           "options": [
-            {"replaceWeapon": ["heavy_auto_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "ccw", "count": 2}]]},
+            {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
-              "replaceWeapon": {"id": "ccw", "count": 2},
+              "replaceWeapon": {"id": "light_handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_sword", "count": 2},
-                {"id": "energy_fist", "count": 2},
-                {"id": "chainsword", "count": 2},
-                {"id": "energy_mace", "count": 2},
-                {"id": "energy_axe", "count": 2}
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2}
               ]
             }
           ],
@@ -150,7 +150,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "frags", "ccw"],
+          "weapons": ["heavy_auto_rifle", "frags", "light_handweapon"],
           "options": [{"addRule": {"id": "field_radio"}, "modelLimit": 1}],
           "min": 4,
           "max": 9
@@ -163,8 +163,8 @@
       "category": "strike",
       "keywords": ["Storm Trooper", "Infantry", "Beast"],
       "models": [
-        {"name": "K9 Sergeant", "courage": 5, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "movement": 6, "weapons": ["combat_shotgun", "frags", "ccw"], "min": 1, "max": 1},
-        {"name": "Attack Dog", "courage": 5, "shoot": 0, "fight": 6, "defense": 5, "reflexes": 6, "movement": 6, "weapons": [{"id": "heavy_ccw", "count": 2}], "min": 1, "max": 4}
+        {"name": "K9 Sergeant", "courage": 5, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "movement": 6, "weapons": ["combat_shotgun", "frags", "light_handweapon"], "min": 1, "max": 1},
+        {"name": "Attack Dog", "courage": 5, "shoot": 0, "fight": 6, "defense": 5, "reflexes": 6, "movement": 6, "weapons": [{"id": "handweapon", "count": 2}], "min": 1, "max": 4}
       ],
       "rules": ["scout"]
     },
@@ -175,8 +175,8 @@
       "keywords": ["Storm Trooper", "Infantry"],
       "options": [
         {"replaceWeapon": "heavy_carbine", "withWeapon": [["pistol", "plasma_pistol"]], "modelLimit": "1/5"},
-        {"replaceWeapon": [{"id": "ccw", "count": 2}], "withWeapon": [[{"id": "heavy_chainsword", "count": 2}]], "modelLimit": "1/5"},
-        {"replaceWeapon": ["heavy_carbine", "ccw"], "withWeapon": [["pistol", {"id": "ccw", "count": 2}], ["shotgun", "ccw"]]}
+        {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [[{"id": "heavy_chainsword", "count": 2}]], "modelLimit": "1/5"},
+        {"replaceWeapon": ["heavy_carbine", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}], ["shotgun", "light_handweapon"]]}
       ],
       "models": [
         {
@@ -187,7 +187,7 @@
           "defense": 5,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_carbine", "frags", "ccw"],
+          "weapons": ["heavy_carbine", "frags", "light_handweapon"],
           "min": 5,
           "max": 10,
           "rules": ["evasive"]
@@ -199,7 +199,7 @@
       "description": "A team of operatives armed with mauls and shields to fend off mobs.",
       "category": "core",
       "keywords": ["Storm Trooper", "Infantry"],
-      "options": [{"replaceWeapon": ["heavy_pistol", "energy_mace"], "withWeapon": [["grenade_launcher", "assault_ram"]], "modelLimit": "1/5"}, {"addRule": "medic_squad", "modelLimit": 1}],
+      "options": [{"replaceWeapon": ["heavy_pistol", "energy_handweapon"], "withWeapon": [["grenade_launcher", "assault_ram"]], "modelLimit": "1/5"}, {"addRule": "medic_squad", "modelLimit": 1}],
       "models": [
         {
           "name": "Riot Sergeant",
@@ -209,7 +209,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_pistol", "frags", "shield", "energy_mace"],
+          "weapons": ["heavy_pistol", "frags", "shield", "energy_handweapon"],
           "min": 1,
           "max": 1,
           "options": [{"addRule": {"id": "fear", "name": "Loudhailer Drone"}}]
@@ -222,7 +222,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_pistol", "frags", "shield", "energy_mace"],
+          "weapons": ["heavy_pistol", "frags", "shield", "energy_handweapon"],
           "options": [{"addRule": {"id": "field_radio"}, "modelLimit": 1}],
           "min": 4,
           "max": 9
@@ -255,7 +255,7 @@
       "category": "specialist",
       "rules": [{"id": "wounds", "x": 3}, "assassin"],
       "models": [
-        {"name": "Sniper Assassin", "movement": 7, "shoot": 7, "fight": 7, "defense": 6, "reflexes": 7, "courage": 7, "min": 1, "max": 1, "weapons": ["assassin_sniper", {"id": "ccw", "count": 2}]}
+        {"name": "Sniper Assassin", "movement": 7, "shoot": 7, "fight": 7, "defense": 6, "reflexes": 7, "courage": 7, "min": 1, "max": 1, "weapons": ["assassin_sniper", {"id": "light_handweapon", "count": 2}]}
       ]
     },
     "berserker_assassin": {
@@ -263,7 +263,7 @@
       "description": "An assassin trained in brutal close combat.",
       "category": "specialist",
       "rules": [{"id": "wounds", "x": 3}, "assassin", "berzerk_overload"],
-      "models": [{"name": "Berzerker Assassin", "movement": 7, "shoot": 7, "fight": 7, "defense": 6, "reflexes": 7, "courage": 7, "min": 1, "max": 1, "weapons": [{"id": "energy_sword", "count": 8}]}]
+      "models": [{"name": "Berzerker Assassin", "movement": 7, "shoot": 7, "fight": 7, "defense": 6, "reflexes": 7, "courage": 7, "min": 1, "max": 1, "weapons": [{"id": "energy_handweapon", "count": 8}]}]
     },
     "stealth_assassin": {
       "name": "Stealth Assassin",
@@ -410,7 +410,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "weapons": ["twin_marine_rifle", {"id": "energy_sword", "count": 2}],
+          "weapons": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 2}],
           "options": [
             {
               "replaceWeapon": "twin_marine_rifle",
@@ -428,14 +428,14 @@
                 "heavy_shotgun"
               ]
             },
-            {"replaceWeapon": ["twin_marine_rifle", {"id": "energy_sword", "count": 2}], "withWeapon": [{"id": "energy_claws", "count": 4}]},
+            {"replaceWeapon": ["twin_marine_rifle", {"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "energy_claws", "count": 4}]},
             {
-              "replaceWeapon": {"id": "energy_sword", "count": 2},
+              "replaceWeapon": {"id": "energy_handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_mace", "count": 2},
-                {"id": "energy_fist", "count": 2},
-                {"id": "energy_axe", "count": 2},
-                {"id": "energy_hammer", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
                 {"id": "energy_claws", "count": 3},
                 {"id": "assault_ram", "count": 2}
               ]
@@ -453,7 +453,7 @@
       "category": "strike",
       "keywords": ["Biker", "Cavalry"],
       "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
-      "options": [{"replaceWeapon": {"id": "ccw", "count": 2}, "withWeapon": ["rider_lance"]}],
+      "options": [{"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["rider_lance"]}],
       "models": [
         {
           "name": "Rider Sergeant",
@@ -463,10 +463,10 @@
           "defense": 6,
           "movement": 8,
           "reflexes": 5,
-          "weapons": ["pistol", "frags", {"id": "ccw", "count": 2}],
+          "weapons": ["pistol", "frags", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "combat_shotgun"]},
-            {"replaceWeapon": {"id": "ccw", "count": 2}, "withWeapon": ["chainsword", "energy_sword", "energy_axe", "energy_mace", "energy_fist"]}
+            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["handweapon", "energy_handweapon", "energy_handweapon", "energy_handweapon", "energy_powerweapon"]}
           ],
           "min": 1,
           "max": 1
@@ -479,7 +479,7 @@
           "movement": 8,
           "defense": 6,
           "reflexes": 5,
-          "weapons": ["heavy_pistol", "frags", {"id": "ccw", "count": 2}],
+          "weapons": ["heavy_pistol", "frags", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "web_carbine", "combat_shotgun"], "modelLimit": 4},
             {"addRule": "field_radio", "modelLimit": 1}

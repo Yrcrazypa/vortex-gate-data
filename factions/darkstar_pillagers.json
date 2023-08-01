@@ -23,7 +23,7 @@
           "options": [
             {"replaceWeapon": [{"id": "glaive", "count": 3}], "withWeapon": [["barb_pistol", {"id": "barb_knife", "count": 4}]]},
             {"replaceWeapon": ["barb_pistol"], "withWeapon": ["flamethrower_pistol", "fusion_pistol"]},
-            {"replaceWeapon": [{"id": "barb_knife", "count": 4}], "withWeapon": [{"id": "energy_sword", "count": 4}, {"id": "poison_whip", "count": 4}]},
+            {"replaceWeapon": [{"id": "barb_knife", "count": 4}], "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "poison_whip", "count": 4}]},
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
           "min": 1,
@@ -52,7 +52,7 @@
             {
               "replaceWeapon": {"id": "barb_sword", "count": 5},
               "withWeapon": [
-                {"id": "energy_sword", "count": 5},
+                {"id": "energy_handweapon", "count": 5},
                 {"id": "poison_whip", "count": 5},
                 {"id": "energy_glaive", "count": 5},
                 {"id": "razor_whips", "count": 7},
@@ -117,7 +117,7 @@
             {
               "replaceWeapon": {"id": "barb_sword", "count": 5},
               "withWeapon": [
-                {"id": "energy_sword", "count": 5},
+                {"id": "energy_handweapon", "count": 5},
                 {"id": "poison_whip", "count": 5},
                 {"id": "energy_glaive", "count": 5},
                 {"id": "razor_whips", "count": 7},
@@ -168,22 +168,22 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["barb_rifle", "ccw"],
+          "weapons": ["barb_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
-            {"replaceWeapon": {"id": "ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "poison_whip", "count": 2}]},
+            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "poison_whip", "count": 2}]},
             {"addWeapon": "fear_grenade_launcher"}
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Ravager", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["barb_rifle", "ccw"], "min": 9, "max": 19}
+        {"name": "Ravager", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["barb_rifle", "light_handweapon"], "min": 9, "max": 19}
       ],
       "options": [
-        {"replaceWeapon": ["barb_rifle", "ccw"], "withWeapon": [["barb_pistol", {"id": "ccw", "count": 2}]], "modelLimit": "all"},
+        {"replaceWeapon": ["barb_rifle", "light_handweapon"], "withWeapon": [["barb_pistol", {"id": "light_handweapon", "count": 2}]], "modelLimit": "all"},
         {"replaceWeapon": "barb_rifle", "withWeapon": ["fusion_rifle", "shred_rifle", "emp_rifle", "flamethrower", "grenade_launcher"], "modelLimit": "2/10"},
         {"replaceWeapon": "barb_rifle", "withWeapon": ["heavy_flamethrower", "thermal_lance", "barb_cannon", "fusion_cannon", "missile_launcher", "laser_machinegun"], "modelLimit": "1/10"},
-        {"replaceWeapon": {"id": "ccw", "count": 2}, "withWeapon": [{"id": "razor_whips", "count": 4}, {"id": "net_and_spear", "count": 2}, {"id": "energy_claws", "count": 3}], "modelLimit": "3/10"},
+        {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "razor_whips", "count": 4}, {"id": "net_and_spear", "count": 2}, {"id": "energy_claws", "count": 3}], "modelLimit": "3/10"},
         {"addRule": ["swift", "evasive"], "modelLimit": "all", "limit": 1}
       ]
     },
@@ -200,22 +200,22 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["barb_rifle", {"id": "ccw", "count": 2}],
+          "weapons": ["barb_rifle", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
-            {"replaceWeapon": {"id": "ccw", "count": 3}, "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "poison_whip", "count": 3}]},
+            {"replaceWeapon": {"id": "light_handweapon", "count": 3}, "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "poison_whip", "count": 3}]},
             {"addWeapon": "fear_grenade_launcher"}
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Veteran Ravager", "movement": 7, "courage": 6, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["barb_rifle", {"id": "ccw", "count": 2}], "min": 9, "max": 19}
+        {"name": "Veteran Ravager", "movement": 7, "courage": 6, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["barb_rifle", {"id": "light_handweapon", "count": 2}], "min": 9, "max": 19}
       ],
       "options": [
-        {"replaceWeapon": ["barb_rifle", {"id": "ccw", "count": 2}], "withWeapon": [["barb_pistol", {"id": "ccw", "count": 3}]], "modelLimit": "all"},
+        {"replaceWeapon": ["barb_rifle", {"id": "light_handweapon", "count": 2}], "withWeapon": [["barb_pistol", {"id": "light_handweapon", "count": 3}]], "modelLimit": "all"},
         {"replaceWeapon": "barb_rifle", "withWeapon": ["fusion_rifle", "shred_rifle", "emp_rifle", "flamethrower"], "modelLimit": "2/10"},
         {"replaceWeapon": "barb_rifle", "withWeapon": ["thermal_lance", "barb_cannon", "fusion_cannon", "heavy_flamethrower", "missile_launcher", "laser_machinegun"], "modelLimit": "1/10"},
-        {"replaceWeapon": {"id": "ccw", "count": 3}, "withWeapon": [{"id": "razor_whips", "count": 5}, {"id": "net_and_spear", "count": 4}, {"id": "energy_claws", "count": 4}], "modelLimit": "3/10"},
+        {"replaceWeapon": {"id": "light_handweapon", "count": 3}, "withWeapon": [{"id": "razor_whips", "count": 5}, {"id": "net_and_spear", "count": 4}, {"id": "energy_claws", "count": 4}], "modelLimit": "3/10"},
         {"addRule": ["swift", "evasive"], "modelLimit": "all", "limit": 1}
       ]
     },
@@ -280,7 +280,7 @@
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 2}],
           "weapons": ["poison_sprayer", {"id": "mutated_fists", "count": 4}],
-          "options": [{"replaceWeapon": ["poison_sprayer"], "withWeapon": ["energy_axe"]}],
+          "options": [{"replaceWeapon": ["poison_sprayer"], "withWeapon": ["energy_handweapon"]}],
           "min": 3,
           "max": 6
         }
@@ -464,16 +464,16 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["barb_carbine", "ccw"],
+          "weapons": ["barb_carbine", "light_handweapon"],
           "options": [
-            {"replaceWeapon": ["barb_carbine", "ccw"], "withWeapon": [["barb_pistol", {"id": "ccw", "count": 2}]]},
+            {"replaceWeapon": ["barb_carbine", "light_handweapon"], "withWeapon": [["barb_pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
-            {"replaceWeapon": {"id": "ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "poison_whip", "count": 2}, {"id": "energy_spear", "count": 2}]}
+            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "poison_whip", "count": 2}, {"id": "energy_spear", "count": 2}]}
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Harpy", "movement": 8, "courage": 5, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["barb_carbine", "ccw"], "min": 4, "max": 9}
+        {"name": "Harpy", "movement": 8, "courage": 5, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["barb_carbine", "light_handweapon"], "min": 4, "max": 9}
       ],
       "options": [
         {"replaceWeapon": "barb_carbine", "withWeapon": ["fusion_rifle", "shred_rifle", "emp_rifle", "flamethrower", "grenade_launcher"], "modelLimit": "1/5"},
@@ -495,10 +495,10 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["barb_rifle", "ccw", {"id": "twin_barb_rifle", "mount": ["Front"]}],
+          "weapons": ["barb_rifle", "light_handweapon", {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
-            {"replaceWeapon": {"id": "ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "poison_whip", "count": 2}, {"id": "energy_spear", "count": 2}]}
+            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "poison_whip", "count": 2}, {"id": "energy_spear", "count": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -511,13 +511,13 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["barb_rifle", "ccw", {"id": "twin_barb_rifle", "mount": ["Front"]}],
+          "weapons": ["barb_rifle", "light_handweapon", {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "min": 2,
           "max": 11
         }
       ],
       "options": [
-        {"replaceWeapon": ["barb_rifle", "ccw"], "withWeapon": [["barb_pistol", {"id": "ccw", "count": 2}]]},
+        {"replaceWeapon": ["barb_rifle", "light_handweapon"], "withWeapon": [["barb_pistol", {"id": "light_handweapon", "count": 2}]]},
         {"replaceWeapon": [{"id": "twin_barb_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "fusion_rifle", "mount": ["Front"]}, {"id": "thermal_lance", "mount": ["Front"]}], "modelLimit": "1/3"}
       ]
     },
@@ -540,7 +540,7 @@
           "options": [
             {"replaceWeapon": [{"id": "glaive", "count": 2}], "withWeapon": [["barb_pistol", {"id": "barb_knife", "count": 3}]]},
             {"replaceWeapon": ["barb_pistol"], "withWeapon": ["flamethrower_pistol", "fusion_pistol"]},
-            {"replaceWeapon": [{"id": "barb_knife", "count": 3}], "withWeapon": [{"id": "energy_sword", "count": 3}, {"id": "poison_whip", "count": 3}]},
+            {"replaceWeapon": [{"id": "barb_knife", "count": 3}], "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "poison_whip", "count": 3}]},
             {"addWeapon": "fear_grenade_launcher"}
           ],
           "min": 1,

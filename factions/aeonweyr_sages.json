@@ -26,7 +26,7 @@
             {"replaceWeapon": "shard_pistol", "withWeapon": ["neuron_pistol", "fusion_pistol"]},
             {
               "replaceWeapon": {"id": "elven_blade", "count": 4},
-              "withWeapon": [{"id": "energy_sword", "count": 4}, {"id": "deathly_caress", "count": 4}, {"id": "deathly_kiss", "count": 4}, {"id": "deathly_embrace", "count": 4}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "deathly_caress", "count": 4}, {"id": "deathly_kiss", "count": 4}, {"id": "deathly_embrace", "count": 4}]
             }
           ],
           "rules": [],
@@ -100,7 +100,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["sniper_cannon", {"id": "ccw", "count": 2}],
+          "weapons": ["sniper_cannon", {"id": "light_handweapon", "count": 2}],
           "rules": [],
           "min": 1,
           "max": 1
@@ -128,7 +128,7 @@
             {
               "replaceWeapon": {"id": "elven_blade", "count": 3},
               "withWeapon": [
-                {"id": "energy_sword", "count": 3},
+                {"id": "energy_handweapon", "count": 3},
                 {"id": "deathly_kiss", "count": 3},
                 {"id": "deathly_caress", "count": 3},
                 {"id": "deathly_embrace", "count": 3},
@@ -163,7 +163,7 @@
             {
               "replaceWeapon": {"id": "elven_blade", "count": 3},
               "withWeapon": [
-                {"id": "energy_sword", "count": 3},
+                {"id": "energy_handweapon", "count": 3},
                 {"id": "deathly_kiss", "count": 3},
                 {"id": "deathly_caress", "count": 3},
                 {"id": "deathly_embrace", "count": 3},
@@ -217,7 +217,7 @@
             {"replaceWeapon": ["shard_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "shard_sniper", "nova_blaster", "missile_launcher"]},
             {"replaceWeapon": ["shard_rifle", {"id": "elven_blade", "count": 3}], "withWeapon": [["shard_pistol", {"id": "elven_blade", "count": 4}]]},
             {"replaceWeapon": ["shard_pistol"], "withWeapon": ["fusion_pistol"]},
-            {"replaceWeapon": [{"id": "elven_blade", "count": 4}], "withWeapon": [{"id": "chainsword", "count": 4}, {"id": "star_spear", "count": 4}, {"id": "energy_sword", "count": 4}]},
+            {"replaceWeapon": [{"id": "elven_blade", "count": 4}], "withWeapon": [{"id": "handweapon", "count": 4}, {"id": "star_spear", "count": 4}, {"id": "energy_handweapon", "count": 4}]},
             {"addRule": ["jetpack", {"name": "Camo-cloak", "id": "evasive"}, "teleport"]},
             {"replaceRule": [{"id": "tactician", "x": 2}], "withRule": [{"id": "tactician", "x": 2}]}
           ],
@@ -249,7 +249,7 @@
               "withWeapon": [["shard_pistol", {"id": "elven_blade", "count": 4}], ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 4}]]
             },
             {"replaceWeapon": ["shard_pistol"], "withWeapon": ["fusion_pistol"]},
-            {"replaceWeapon": [{"id": "elven_blade", "count": 4}], "withWeapon": [{"id": "chainsword", "count": 4}, {"id": "star_spear", "count": 4}, {"id": "energy_sword", "count": 4}]},
+            {"replaceWeapon": [{"id": "elven_blade", "count": 4}], "withWeapon": [{"id": "handweapon", "count": 4}, {"id": "star_spear", "count": 4}, {"id": "energy_handweapon", "count": 4}]},
             {"addRule": [{"name": "Camo-cloak", "id": "evasive"}]},
             {"replaceRule": [{"id": "tactician", "x": 2}], "withRule": [{"id": "tactician", "x": 2}]}
           ],
@@ -369,8 +369,8 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["shard_pistol", {"id": "energy_sword", "count": 2}],
-          "options": [{"replaceWeapon": {"id": "energy_sword", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
+          "weapons": ["shard_pistol", {"id": "energy_handweapon", "count": 2}],
+          "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
           "min": 1,
           "max": 1
         }
@@ -391,8 +391,8 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["shard_pistol", {"id": "energy_sword", "count": 2}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
-          "options": [{"replaceWeapon": {"id": "energy_sword", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
+          "weapons": ["shard_pistol", {"id": "energy_handweapon", "count": 2}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
+          "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
           "min": 1,
           "max": 1
         }
@@ -412,8 +412,8 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["shard_pistol", {"id": "energy_sword", "count": 2}],
-          "options": [{"replaceWeapon": {"id": "energy_sword", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
+          "weapons": ["shard_pistol", {"id": "energy_handweapon", "count": 2}],
+          "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
           "min": 2,
           "max": 5
         }
@@ -434,8 +434,8 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["shard_pistol", {"id": "energy_sword", "count": 2}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
-          "options": [{"replaceWeapon": {"id": "energy_sword", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
+          "weapons": ["shard_pistol", {"id": "energy_handweapon", "count": 2}, {"id": "twin_shard_rifle", "mount": ["Front"]}],
+          "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [["laser_lance_shoot", {"id": "laser_lance_melee", "count": 2}]]}],
           "min": 2,
           "max": 5
         }
@@ -467,9 +467,9 @@
       "description": "A squad of high elf warriors who are trained in various combat styles.",
       "category": "core",
       "options": [
-        {"replaceWeapon": ["shard_carbine", "ccw"], "withWeapon": [["shard_pistol", {"id": "ccw", "count": 2}]], "modelLimit": "all"},
+        {"replaceWeapon": ["shard_carbine", "light_handweapon"], "withWeapon": [["shard_pistol", {"id": "light_handweapon", "count": 2}]], "modelLimit": "all"},
         {"replaceWeapon": ["shard_carbine"], "withWeapon": ["heavy_shard_rifle", "flamethrower", "fusion_rifle"], "modelLimit": "1/5"},
-        {"replaceWeapon": [{"id": "ccw", "count": 2}], "withWeapon": [{"id": "energy_sword", "count": 2}], "modelLimit": "2/5"}
+        {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_handweapon", "count": 2}], "modelLimit": "2/5"}
       ],
       "models": [
         {
@@ -480,12 +480,12 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["shard_carbine", "ccw"],
+          "weapons": ["shard_carbine", "light_handweapon"],
           "options": [{"replaceWeapon": ["shard_pistol"], "withWeapon": ["fusion_pistol"]}],
           "min": 1,
           "max": 1
         },
-        {"name": "Warrior", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_carbine", "ccw"], "min": 4, "max": 19},
+        {"name": "Warrior", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_carbine", "light_handweapon"], "min": 4, "max": 19},
         {
           "name": "Weapon Platform",
           "courage": 5,
@@ -525,15 +525,15 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["shard_rifle", "ccw"],
+          "weapons": ["shard_rifle", "light_handweapon"],
           "options": [
-            {"replaceWeapon": ["shard_rifle", "ccw"], "withWeapon": [["shard_pistol", {"id": "ccw", "count": 2}]]},
-            {"replaceWeapon": [{"id": "ccw", "count": 2}], "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_glaive", "count": 2}]}
+            {"replaceWeapon": ["shard_rifle", "light_handweapon"], "withWeapon": [["shard_pistol", {"id": "light_handweapon", "count": 2}]]},
+            {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_glaive", "count": 2}]}
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Guardian", "courage": 6, "movement": 7, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["shard_rifle", "ccw"], "min": 4, "max": 9}
+        {"name": "Guardian", "courage": 6, "movement": 7, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["shard_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "ranger_squad": {
@@ -550,12 +550,12 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["shard_sniper", "ccw"],
+          "weapons": ["shard_sniper", "light_handweapon"],
           "options": [{"replaceWeapon": "shard_sniper", "withWeapon": ["spectre_rifle"]}],
           "min": 1,
           "max": 1
         },
-        {"name": "Ranger", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_sniper", "ccw"], "min": 4, "max": 9}
+        {"name": "Ranger", "courage": 5, "movement": 7, "shoot": 6, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["shard_sniper", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "wvyern_squad": {
@@ -572,12 +572,12 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["flamethrower", "fusion_bomb", "ccw"],
+          "weapons": ["flamethrower", "fusion_bomb", "light_handweapon"],
           "options": [{"replaceWeapon": ["flamethrower"], "withWeapon": ["shattersky_launcher", "shard_cannon"]}, {"addWeapon": ["flamethrower", "fusion_rifle"], "limit": 1}],
           "min": 1,
           "max": 1
         },
-        {"name": "Wyvern", "courage": 6, "movement": 7, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["flamethrower", "fusion_bomb", "ccw"], "min": 4, "max": 9}
+        {"name": "Wyvern", "courage": 6, "movement": 7, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["flamethrower", "fusion_bomb", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "wraith_squad": {
@@ -595,9 +595,9 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 2}],
-          "weapons": [{"id": "energy_sword", "count": 3}],
+          "weapons": [{"id": "energy_handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": [{"id": "energy_sword", "count": 3}], "withWeapon": [{"id": "energy_greataxe", "count": 2}, "fusion_carbine", "distortion_rifle"]},
+            {"replaceWeapon": [{"id": "energy_handweapon", "count": 3}], "withWeapon": [{"id": "energy_greatweapon", "count": 2}, "fusion_carbine", "distortion_rifle"]},
             {"addRule": ["shield"], "modelLimit": "all"}
           ],
           "min": 3,
@@ -609,7 +609,7 @@
       "name": "Assault Warrior Squad",
       "description": "A group of swift and brutal melee warriors.",
       "category": "elite",
-      "options": [{"replaceWeapon": [{"id": "chainsword", "count": 2}], "withWeapon": [{"id": "energy_sword", "count": 2}]}, {"addRule": ["evasive", "furious"], "modelLimit": "all"}],
+      "options": [{"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [{"id": "energy_handweapon", "count": 2}]}, {"addRule": ["evasive", "furious"], "modelLimit": "all"}],
       "models": [
         {
           "name": "Assault Warrior Leader",
@@ -619,16 +619,16 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["shard_pistol", {"id": "chainsword", "count": 2}],
+          "weapons": ["shard_pistol", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["shard_pistol", {"id": "chainsword", "count": 2}], "withWeapon": [{"id": "mirror_blades", "count": 3}]},
+            {"replaceWeapon": ["shard_pistol", {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "mirror_blades", "count": 3}]},
             {"replaceWeapon": "shard_pistol", "withWeapon": ["shard_blaster"]},
-            {"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "energy_glaive", "count": 2}, ["energy_sword", "shuriken"]]}
+            {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_glaive", "count": 2}, ["energy_handweapon", "shuriken"]]}
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Assault Warrior", "courage": 6, "movement": 7, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["shard_pistol", {"id": "chainsword", "count": 2}], "min": 4, "max": 9}
+        {"name": "Assault Warrior", "courage": 6, "movement": 7, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["shard_pistol", {"id": "handweapon", "count": 2}], "min": 4, "max": 9}
       ]
     },
     "phantom_squad": {
@@ -667,12 +667,12 @@
           "defense": 6,
           "movement": 8,
           "reflexes": 6,
-          "weapons": ["elven_blaster", "ccw"],
-          "options": [{"replaceWeapon": "elven_blaster", "withWeapon": ["hawk_talon", "sunlight_rifle"]}, {"replaceWeapon": ["ccw"], "withWeapon": ["energy_sword"]}],
+          "weapons": ["elven_blaster", "light_handweapon"],
+          "options": [{"replaceWeapon": "elven_blaster", "withWeapon": ["hawk_talon", "sunlight_rifle"]}, {"replaceWeapon": ["light_handweapon"], "withWeapon": ["energy_handweapon"]}],
           "min": 1,
           "max": 1
         },
-        {"name": "Hawk", "courage": 6, "shoot": 6, "fight": 6, "defense": 6, "movement": 8, "reflexes": 6, "weapons": ["elven_blaster", "ccw"], "min": 4, "max": 9}
+        {"name": "Hawk", "courage": 6, "shoot": 6, "fight": 6, "defense": 6, "movement": 8, "reflexes": 6, "weapons": ["elven_blaster", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "blink_squad": {
@@ -689,16 +689,16 @@
           "defense": 7,
           "movement": 7,
           "reflexes": 6,
-          "weapons": ["nova_blaster", {"id": "ccw", "count": 2}],
+          "weapons": ["nova_blaster", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "nova_blaster", "withWeapon": ["web_rifle"]},
-            {"replaceWeapon": [{"id": "ccw", "count": 2}], "withWeapon": [{"id": "energy_sword", "count": 3}]},
+            {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_handweapon", "count": 3}]},
             {"addWeapon": ["nova_blaster"]}
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Blink", "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "movement": 7, "reflexes": 6, "weapons": ["nova_blaster", {"id": "ccw", "count": 2}], "min": 4, "max": 9}
+        {"name": "Blink", "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "movement": 7, "reflexes": 6, "weapons": ["nova_blaster", {"id": "light_handweapon", "count": 2}], "min": 4, "max": 9}
       ]
     },
     "revenant_lord": {

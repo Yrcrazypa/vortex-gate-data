@@ -17,9 +17,9 @@
           "defense": 7,
           "reflexes": 6,
           "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": [{"id": "heavy_ccw", "count": 3}],
+          "weapons": [{"id": "handweapon", "count": 3}],
           "options": [
-            {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
+            {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "handweapon", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
             {"addRule": [{"name": "Wings", "id": "fly"}, {"id": "magic", "x": 1}, {"id": "icon", "x": "Infantry"}]},
             {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
             {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
@@ -45,9 +45,9 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 3}],
-          "weapons": [{"id": "heavy_ccw", "count": 3}, {"id": "warbeast_horn", "count": 2}],
+          "weapons": [{"id": "handweapon", "count": 3}, {"id": "warbeast_horn", "count": 2}],
           "options": [
-            {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
+            {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "handweapon", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
             {"addRule": [{"id": "magic", "x": 1}, {"id": "icon", "x": "Infantry, Cavalry"}]}
           ],
           "min": 1,
@@ -70,9 +70,9 @@
           "defense": 7,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": [{"id": "heavy_ccw", "count": 3}, {"id": "hooves_and_teeth", "count": 2}],
+          "weapons": [{"id": "handweapon", "count": 3}, {"id": "hooves_and_teeth", "count": 2}],
           "options": [
-            {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_staff", "count": 3}, {"id": "energy_staff", "count": 3}]},
+            {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "handweapon", "count": 4}, {"id": "heavy_energy_staff", "count": 3}, {"id": "energy_staff", "count": 3}]},
             {"addRule": [{"id": "magic", "x": 1}, {"id": "icon", "x": "Infantry, Cavalry"}, {"name": "Wings", "id": "fly"}]},
             {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
@@ -96,9 +96,9 @@
           "defense": 9,
           "reflexes": 5,
           "rules": ["damage_chart", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "tactician", "x": 1}],
-          "weapons": [{"id": "heavy_ccw", "count": 3}, {"id": "fangs_and_teeth", "count": 2}],
+          "weapons": [{"id": "handweapon", "count": 3}, {"id": "fangs_and_teeth", "count": 2}],
           "options": [
-            {"replaceWeapon": [{"id": "heavy_ccw", "count": 3}], "withWeapon": [{"id": "heavy_ccw", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
+            {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "handweapon", "count": 4}, {"id": "heavy_energy_sword", "count": 3}, {"id": "energy_staff", "count": 3}]},
             {"addRule": [{"id": "magic", "x": 1}]},
             {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
@@ -121,7 +121,7 @@
           "defense": 6,
           "reflexes": 6,
           "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": [{"id": "energy_staff", "count": 2}, "heavy_ccw"],
+          "weapons": [{"id": "energy_staff", "count": 2}, "handweapon"],
           "options": [
             {"addRule": [{"name": "Wings", "id": "fly"}]},
             {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
@@ -147,7 +147,7 @@
           "defense": 6,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": [{"id": "energy_staff", "count": 2}, "heavy_ccw", {"id": "hooves_and_teeth", "count": 2}],
+          "weapons": [{"id": "energy_staff", "count": 2}, "handweapon", {"id": "hooves_and_teeth", "count": 2}],
           "options": [{"addRule": [{"name": "Wings", "id": "fly"}]}, {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}],
           "min": 1,
           "max": 1
@@ -169,7 +169,7 @@
           "defense": 9,
           "reflexes": 5,
           "rules": ["damage_chart", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Vehicle"}, {"id": "magic", "x": 2}],
-          "weapons": [{"id": "energy_staff", "count": 2}, "heavy_ccw", {"id": "fangs_and_teeth", "count": 2}],
+          "weapons": [{"id": "energy_staff", "count": 2}, "handweapon", {"id": "fangs_and_teeth", "count": 2}],
           "options": [{"replaceRule": {"id": "magic", "x": 2}, "withRule": {"id": "magic", "x": 3}}],
           "min": 1,
           "max": 1
@@ -244,8 +244,8 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 5,
-          "weapons": ["heavy_ccw"],
-          "options": [{"replaceWeapon": ["heavy_ccw"], "withWeapon": ["heavy_energy_sword", {"id": "heavy_ccw", "count": 2}], "modelLimit": "all"}],
+          "weapons": ["handweapon"],
+          "options": [{"replaceWeapon": ["handweapon"], "withWeapon": ["heavy_energy_sword", {"id": "handweapon", "count": 2}], "modelLimit": "all"}],
           "min": 10,
           "max": 20
         }
@@ -268,8 +268,8 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}, {"id": "wounds", "x": 2}],
-          "weapons": ["heavy_ccw", {"id": "warbeast_horn", "count": 2}],
-          "options": [{"replaceWeapon": ["heavy_ccw"], "withWeapon": ["heavy_energy_sword", {"id": "heavy_ccw", "count": 2}], "modelLimit": "all"}],
+          "weapons": ["handweapon", {"id": "warbeast_horn", "count": 2}],
+          "options": [{"replaceWeapon": ["handweapon"], "withWeapon": ["heavy_energy_sword", {"id": "handweapon", "count": 2}], "modelLimit": "all"}],
           "min": 3,
           "max": 15
         }
@@ -297,8 +297,8 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "weapons": [{"id": "heavy_ccw", "count": 2}],
-          "options": [{"replaceWeapon": [{"id": "heavy_ccw", "count": "2"}], "withWeapon": [{"id": "heavy_energy_sword", "count": 2}], "modelLimit": "all"}],
+          "weapons": [{"id": "handweapon", "count": 2}],
+          "options": [{"replaceWeapon": [{"id": "handweapon", "count": "2"}], "withWeapon": [{"id": "heavy_energy_sword", "count": 2}], "modelLimit": "all"}],
           "min": 5,
           "max": 20
         }
@@ -327,9 +327,9 @@
           "defense": 6,
           "reflexes": 6,
           "rules": [{"id": "impact", "x": 1}],
-          "weapons": ["heavy_ccw", {"id": "hooves_and_teeth", "count": 2}],
+          "weapons": ["handweapon", {"id": "hooves_and_teeth", "count": 2}],
           "options": [
-            {"replaceWeapon": ["heavy_ccw"], "withWeapon": ["heavy_energy_sword", {"id": "heavy_ccw", "count": 2}], "modelLimit": "all"},
+            {"replaceWeapon": ["handweapon"], "withWeapon": ["heavy_energy_sword", {"id": "handweapon", "count": 2}], "modelLimit": "all"},
             {"addRule": [{"name": "Wings", "id": "fly"}], "modelLimit": "all"}
           ],
           "min": 5,
@@ -398,7 +398,7 @@
           "defense": 9,
           "reflexes": 5,
           "rules": ["damage_chart", {"id": "heavy_impact", "x": 3}],
-          "weapons": [{"id": "heavy_ccw", "count": 4}, {"id": "fangs_and_teeth", "count": 2}],
+          "weapons": [{"id": "handweapon", "count": 4}, {"id": "fangs_and_teeth", "count": 2}],
           "options": [{"addRule": "banner"}],
           "min": 1,
           "max": 1
@@ -418,7 +418,7 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 5,
-          "weapons": ["ccw", "firebolts"],
+          "weapons": ["light_handweapon", "firebolts"],
           "options": [{"replaceWeapon": ["firebolts"], "withWeapon": ["flamethrower"], "modelLimit": "all"}],
           "min": 10,
           "max": 20

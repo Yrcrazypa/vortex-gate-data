@@ -31,7 +31,7 @@
           "defense": 7,
           "reflexes": 6,
           "rules": ["fly"],
-          "weapons": ["marine_pistol", {"id": "energy_sword", "count": 3}],
+          "weapons": ["marine_pistol", {"id": "energy_handweapon", "count": 3}],
           "min": 0,
           "max": 2
         }
@@ -51,7 +51,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": ["hover", "leader", {"id": "wounds", "x": 3}, {"id": "saint_tactics", "x": 1}],
-          "weapons": [{"id": "heavy_flamethrower", "count": 2}, {"id": "energy_hammer", "count": 4}],
+          "weapons": [{"id": "heavy_flamethrower", "count": 2}, {"id": "energy_powerweapon", "count": 4}],
           "min": 1,
           "max": 1
         }
@@ -71,19 +71,19 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["marine_rifle", {"id": "ccw", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "light_handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
-            {"replaceWeapon": ["marine_rifle", {"id": "ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}]]},
+            {"replaceWeapon": ["marine_rifle", {"id": "light_handweapon", "count": 3}], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 4}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
-              "replaceWeapon": {"id": "chainsword", "count": 4},
+              "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [
-                {"id": "energy_sword", "count": 4},
-                {"id": "energy_mace", "count": 4},
-                {"id": "energy_axe", "count": 4},
-                {"id": "energy_hammer", "count": 4},
-                {"id": "energy_fist", "count": 4}
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_powerweapon", "count": 4},
+                {"id": "energy_powerweapon", "count": 4}
               ]
             },
             {"addRule": [{"id": "magic", "x": 1}, {"id": "ward", "x": 1}]}
@@ -107,19 +107,19 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["marine_rifle", {"id": "ccw", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "light_handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
-            {"replaceWeapon": ["marine_rifle", {"id": "ccw", "count": 3}], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 4}]]},
+            {"replaceWeapon": ["marine_rifle", {"id": "light_handweapon", "count": 3}], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 4}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
-              "replaceWeapon": {"id": "chainsword", "count": 4},
+              "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [
-                {"id": "energy_sword", "count": 4},
-                {"id": "energy_mace", "count": 4},
-                {"id": "energy_axe", "count": 4},
-                {"id": "energy_hammer", "count": 4},
-                {"id": "energy_fist", "count": 4}
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_handweapon", "count": 4},
+                {"id": "energy_powerweapon", "count": 4},
+                {"id": "energy_powerweapon", "count": 4}
               ]
             },
             {"addRule": [{"id": "magic", "x": 1}, {"id": "ward", "x": 1}]}
@@ -143,7 +143,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["marine_rifle", {"id": "ccw", "count": 2}],
+          "weapons": ["marine_rifle", {"id": "light_handweapon", "count": 2}],
           "options": [{"replaceRule": "banner_of_focus", "withRule": ["banner_of_justice", "banner_of_wrath"], "limit": 1}, {"addRule": [{"id": "ward", "x": 1}]}],
           "min": 1,
           "max": 1
@@ -156,7 +156,7 @@
       "category": "elite",
       "rules": ["support", "medic", {"id": "wounds", "x": 2}],
       "models": [
-        {"name": "Nurse Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "ccw", "count": 3}], "min": 1, "max": 1}
+        {"name": "Nurse Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "light_handweapon", "count": 3}], "min": 1, "max": 1}
       ]
     },
     "warden_preacher": {
@@ -174,10 +174,10 @@
       "category": "core",
       "options": [
         {"replaceWeapon": "marine_rifle", "withWeapon": ["flamethrower"], "modelLimit": "1/5"},
-        {"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+        {"replaceWeapon": ["marine_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
         {
-          "replaceWeapon": {"id": "chainsword", "count": 2},
-          "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "energy_mace", "count": 2}, {"id": "heavy_chainsword", "count": 2}, {"id": "shock_whip", "count": 2}],
+          "replaceWeapon": {"id": "handweapon", "count": 2},
+          "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_handweapon", "count": 2}, {"id": "heavy_chainsword", "count": 2}, {"id": "shock_whip", "count": 2}],
           "modelLimit": "2/5"
         },
         {"modelLimit": 1, "addRule": ["banner"]}
@@ -191,12 +191,12 @@
           "fight": 5,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["marine_rifle", "ccw"],
-          "options": [{"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]}, {"replaceWeapon": {"id": "chainsword", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}]}],
+          "weapons": ["marine_rifle", "light_handweapon"],
+          "options": [{"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]}, {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}]}],
           "min": 1,
           "max": 1
         },
-        {"name": "Initiate", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "ccw"], "min": 4, "max": 9}
+        {"name": "Initiate", "movement": 6, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "faith_wardens": {
@@ -205,7 +205,7 @@
       "category": "core",
       "options": [
         {"replaceWeapon": "marine_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "twin_marine_rifle", "heavy_fusion_rifle", "heavy_flamethrower", "heavy_machinegun"], "modelLimit": "2/5"},
-        {"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+        {"replaceWeapon": ["marine_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
         {"modelLimit": 1, "addRule": ["lucky_angel"]},
         {"modelLimit": 1, "addRule": ["banner"]}
       ],
@@ -218,25 +218,25 @@
           "fight": 5,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["marine_rifle", "ccw"],
+          "weapons": ["marine_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
-              "replaceWeapon": {"id": "chainsword", "count": 2},
+              "replaceWeapon": {"id": "handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_sword", "count": 2},
-                {"id": "energy_mace", "count": 2},
-                {"id": "energy_axe", "count": 2},
-                {"id": "energy_hammer", "count": 2},
-                {"id": "energy_fist", "count": 2}
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2}
               ]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Faith Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "ccw"], "min": 4, "max": 9}
+        {"name": "Faith Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "veteran_wardens": {
@@ -245,7 +245,7 @@
       "category": "core",
       "options": [
         {"replaceWeapon": "marine_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "twin_marine_rifle", "heavy_fusion_rifle", "heavy_flamethrower", "heavy_machinegun"], "modelLimit": "2/5"},
-        {"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+        {"replaceWeapon": ["marine_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
         {"modelLimit": 1, "addRule": ["lucky_angel"]},
         {"modelLimit": 1, "addRule": ["banner"]}
       ],
@@ -258,32 +258,32 @@
           "fight": 5,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "ccw"],
+          "weapons": ["marine_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
-              "replaceWeapon": {"id": "chainsword", "count": 2},
+              "replaceWeapon": {"id": "handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_sword", "count": 2},
-                {"id": "energy_mace", "count": 2},
-                {"id": "energy_axe", "count": 2},
-                {"id": "energy_hammer", "count": 2},
-                {"id": "energy_fist", "count": 2}
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2}
               ]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Veteran Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "ccw"], "min": 4, "max": 9}
+        {"name": "Veteran Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "protector_wardens": {
       "name": "Protector Wardens",
       "description": "A group of zealots armed with shields and deadly melee weapons.",
       "category": "core",
-      "options": [{"replaceWeapon": {"id": "energy_mace", "count": 2}, "withWeapon": [{"id": "energy_halberd", "count": 2}]}],
+      "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [{"id": "energy_halberd", "count": 2}]}],
       "models": [
         {
           "name": "Protector Superior",
@@ -293,10 +293,10 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "weapons": [{"id": "energy_mace", "count": 2}, "marine_pistol", "shield"],
+          "weapons": [{"id": "energy_handweapon", "count": 2}, "marine_pistol", "shield"],
           "options": [
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
-            {"replaceWeapon": {"id": "energy_mace", "count": 2}, "withWeapon": [{"id": "energy_spear", "count": 2}]}
+            {"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [{"id": "energy_spear", "count": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -309,7 +309,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "weapons": [{"id": "energy_mace", "count": 2}, "marine_pistol", "shield"],
+          "weapons": [{"id": "energy_handweapon", "count": 2}, "marine_pistol", "shield"],
           "min": 4,
           "max": 9
         }
@@ -334,26 +334,26 @@
           "fight": 5,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["marine_rifle", "ccw"],
+          "weapons": ["marine_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion"]},
-            {"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+            {"replaceWeapon": ["marine_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
-              "replaceWeapon": {"id": "chainsword", "count": 2},
+              "replaceWeapon": {"id": "handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_sword", "count": 2},
-                {"id": "energy_mace", "count": 2},
-                {"id": "energy_axe", "count": 2},
-                {"id": "energy_hammer", "count": 2},
-                {"id": "energy_fist", "count": 2}
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2}
               ]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Seeker", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "ccw"], "min": 4, "max": 9}
+        {"name": "Seeker", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "redemption_wardens": {
@@ -398,8 +398,8 @@
       "options": [
         {"replaceWeapon": [{"id": "marine_pistol", "count": 1}], "withWeapon": [{"id": "flamethrower_pistol", "count": 1}, {"id": "fusion_pistol", "count": 1}], "modelLimit": "2/5"},
         {"replaceWeapon": [{"id": "marine_pistol", "count": 1}], "withWeapon": [{"id": "flamethrower_pistol", "count": 1}, {"id": "fusion_pistol", "count": 1}], "modelLimit": "2/5"},
-        {"replaceWeapon": ["marine_pistol", {"id": "ccw", "count": 2}], "withWeapon": [[{"id": "marine_pistol", "count": 2}, "ccw"]]},
-        {"replaceWeapon": {"id": "ccw", "count": 2}, "withWeapon": [{"id": "energy_sword", "count": 2}, {"id": "chainsword", "count": 2}]},
+        {"replaceWeapon": ["marine_pistol", {"id": "light_handweapon", "count": 2}], "withWeapon": [[{"id": "marine_pistol", "count": 2}, "light_handweapon"]]},
+        {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "handweapon", "count": 2}]},
         {"modelLimit": 1, "addRule": ["banner"]}
       ],
       "models": [
@@ -411,12 +411,12 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["marine_pistol", {"id": "ccw", "count": 2}],
+          "weapons": ["marine_pistol", {"id": "light_handweapon", "count": 2}],
           "options": [{"replaceWeapon": [{"id": "marine_pistol", "count": 1}], "withWeapon": [{"id": "plasma_pistol", "count": 1}]}],
           "min": 1,
           "max": 1
         },
-        {"name": "Winged Warden", "movement": 8, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "ccw", "count": 2}], "min": 4, "max": 9}
+        {"name": "Winged Warden", "movement": 8, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "light_handweapon", "count": 2}], "min": 4, "max": 9}
       ]
     },
     "devastator_wardens": {
@@ -437,26 +437,26 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["marine_rifle", "ccw"],
+          "weapons": ["marine_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_plasma", "combi_flamer", "combi_fusion", "twin_marine_rifle"]},
-            {"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["marine_pistol", {"id": "chainsword", "count": 2}]]},
+            {"replaceWeapon": ["marine_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
-              "replaceWeapon": {"id": "chainsword", "count": 2},
+              "replaceWeapon": {"id": "handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_sword", "count": 2},
-                {"id": "energy_mace", "count": 2},
-                {"id": "energy_axe", "count": 2},
-                {"id": "energy_hammer", "count": 2},
-                {"id": "energy_fist", "count": 2}
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_handweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2},
+                {"id": "energy_powerweapon", "count": 2}
               ]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Devastator Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["heavy_fusion_rifle", "ccw"], "min": 4, "max": 9}
+        {"name": "Devastator Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["heavy_fusion_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "redemption_walker": {

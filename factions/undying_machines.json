@@ -208,7 +208,7 @@
           "fight": 5,
           "defense": 7,
           "reflexes": 4,
-          "weapons": ["gauss_rifle", "heavy_ccw"],
+          "weapons": ["gauss_rifle", "handweapon"],
           "options": [{"replaceWeapon": "gauss_rifle", "withWeapon": ["reaper_beamer"]}],
           "min": 10,
           "max": 20
@@ -228,7 +228,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 5,
-          "weapons": ["heavy_gauss_rifle", {"id": "heavy_ccw", "count": 2}],
+          "weapons": ["heavy_gauss_rifle", {"id": "handweapon", "count": 2}],
           "options": [{"replaceWeapon": "heavy_gauss_rifle", "withWeapon": ["tesla_rifle"]}],
           "min": 5,
           "max": 10

@@ -17,11 +17,11 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["marine_rifle", {"id": "ccw", "count": 3}],
+          "weapons": ["marine_rifle", {"id": "light_handweapon", "count": 3}],
           "rules": [{"id": "ward", "x": 1}, {"id": "witch_hunter_tactics", "x": 1}, {"id": "wounds", "x": 3}, {"id": "leader", "x": "Infantry"}],
           "options": [
             {"replaceRule": {"id": "witch_hunter_tactics", "x": 1}, "withRule": {"id": "witch_hunter_tactics", "x": 2}},
-            {"replaceWeapon": ["marine_rifle", {"id": "ccw", "count": 3}], "withWeapon": [["flamethrower", {"id": "ccw", "count": 3}], {"id": "energy_greatblade", "count": 4}], "limit": 1}
+            {"replaceWeapon": ["marine_rifle", {"id": "light_handweapon", "count": 3}], "withWeapon": [["flamethrower", {"id": "light_handweapon", "count": 3}], {"id": "energy_greatweapon", "count": 4}], "limit": 1}
           ],
           "min": 1,
           "max": 1
@@ -29,30 +29,30 @@
       ]
     },
     "throne_commander": {
-      "name": "Guardian Commander",
+      "name": "Praetorian Commander",
       "description": "Highly trained and elite fighters.",
       "category": "hero",
       "rules": [{"id": "wounds", "x": 4}, {"id": "battle_tactics", "x": 2}, {"id": "leader", "x": "Infantry"}],
       "models": [
         {
-          "name": "Guardian Commander",
+          "name": "Praetorian Commander",
           "courage": 8,
           "shoot": 8,
           "fight": 8,
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_sword_blade", "count": 5}, "guardian_sword_pistol"],
+          "weapons": [{"id": "praetorian_sword_blade", "count": 5}, "praetorian_sword_pistol"],
           "options": [
             {
-              "replaceWeapon": [{"id": "guardian_sword_blade", "count": 5}, "guardian_sword_pistol"],
+              "replaceWeapon": [{"id": "praetorian_sword_blade", "count": 5}, "praetorian_sword_pistol"],
               "withWeapon": [
-                [{"id": "guardian_spear_blade", "count": 5}, "guardian_spear_rifle"],
-                [{"id": "guardian_axe_blade", "count": 5}, "guardian_axe_rifle"],
-                ["guardian_rifle", {"id": "heavy_ccw", "count": 4}]
+                [{"id": "praetorian_spear_blade", "count": 5}, "praetorian_spear_rifle"],
+                [{"id": "praetorian_axe_blade", "count": 5}, "praetorian_axe_rifle"],
+                ["praetorian_rifle", {"id": "handweapon", "count": 4}]
               ]
             },
-            {"addWeapon": {"id": "guardian_dagger"}},
+            {"addWeapon": {"id": "praetorian_dagger"}},
             {"addWeapon": "shield"},
             {"addRule": ["destroyer_armor"]}
           ],
@@ -62,30 +62,30 @@
       ]
     },
     "throne_captain": {
-      "name": "Guardian Captain",
+      "name": "Praetorian Captain",
       "description": "Highly trained and elite fighters.",
       "category": "hero",
       "rules": [{"id": "wounds", "x": 3}, {"id": "battle_tactics", "x": 1}, {"id": "leader", "x": "Infantry"}],
       "models": [
         {
-          "name": "Guardian Captain",
+          "name": "Praetorian Captain",
           "courage": 7,
           "shoot": 7,
           "fight": 7,
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_sword_blade", "count": 4}, "guardian_sword_pistol"],
+          "weapons": [{"id": "praetorian_sword_blade", "count": 4}, "praetorian_sword_pistol"],
           "options": [
             {
-              "replaceWeapon": [{"id": "guardian_sword_blade", "count": 4}, "guardian_sword_pistol"],
+              "replaceWeapon": [{"id": "praetorian_sword_blade", "count": 4}, "praetorian_sword_pistol"],
               "withWeapon": [
-                [{"id": "guardian_spear_blade", "count": 4}, "guardian_spear_rifle"],
-                [{"id": "guardian_axe_blade", "count": 4}, "guardian_axe_rifle"],
-                ["guardian_rifle", {"id": "heavy_ccw", "count": 3}]
+                [{"id": "praetorian_spear_blade", "count": 4}, "praetorian_spear_rifle"],
+                [{"id": "praetorian_axe_blade", "count": 4}, "praetorian_axe_rifle"],
+                ["praetorian_rifle", {"id": "handweapon", "count": 3}]
               ]
             },
-            {"addWeapon": {"id": "guardian_dagger"}},
+            {"addWeapon": {"id": "praetorian_dagger"}},
             {"addWeapon": "shield"},
             {"addRule": ["destroyer_armor"]}
           ],
@@ -94,45 +94,45 @@
         }
       ]
     },
-    "guardian_captain_on_jetbike": {
-      "name": "Guardian Captain on Jetbike",
+    "praetorian_captain_on_jetbike": {
+      "name": "Praetorian Captain on Jetbike",
       "description": "Throne guardians on high speed jet bikes.",
       "category": "hero",
       "keywords": ["Biker"],
       "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "battle_tactics_biker", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}],
       "models": [
         {
-          "name": "Guardian Captain on Jetbike",
+          "name": "Praetorian Captain on Jetbike",
           "courage": 7,
           "shoot": 8,
           "fight": 8,
           "defense": 9,
           "movement": 8,
           "reflexes": 7,
-          "weapons": ["guardian_rifle_array", {"id": "guardian_lance", "count": 5}],
-          "options": [{"replaceWeapon": ["guardian_rifle_array"], "withWeapon": ["guardian_missiles"]}, {"addWeapon": {"id": "guardian_dagger"}}],
+          "weapons": ["praetorian_rifle_array", {"id": "praetorian_lance", "count": 5}],
+          "options": [{"replaceWeapon": ["praetorian_rifle_array"], "withWeapon": ["praetorian_missiles"]}, {"addWeapon": {"id": "praetorian_dagger"}}],
           "min": 1,
           "max": 1
         }
       ]
     },
-    "guardian_blademaster": {
-      "name": "Guardian Blademaster",
+    "praetorian_blademaster": {
+      "name": "Praetorian Blademaster",
       "description": "A Throne Guardian who foreswore ranged weapons in favor of mastering the blade.",
       "category": "hero",
       "keywords": ["Infantry"],
       "rules": [{"id": "wounds", "x": 3}, {"id": "battle_tactics", "x": 1}, {"id": "leader", "x": "Infantry"}],
       "models": [
         {
-          "name": "Guardian Blademaster",
+          "name": "Praetorian Blademaster",
           "courage": 7,
           "shoot": 7,
           "fight": 7,
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_champion_blade"}],
-          "options": [{"addWeapon": {"id": "guardian_dagger"}}, {"addWeapon": "shield"}],
+          "weapons": [{"id": "praetorian_champion_blade"}],
+          "options": [{"addWeapon": {"id": "praetorian_dagger"}}, {"addWeapon": "shield"}],
           "min": 1,
           "max": 1
         }
@@ -143,7 +143,7 @@
       "description": "A group of Witch hunters adept at hunting Psychic individuals.",
       "category": "core",
       "keywords": ["Infantry", "Witch Hunters"],
-      "options": [{"replaceWeapon": ["marine_rifle", "ccw"], "withWeapon": [["flamethrower", "ccw"], {"id": "energy_greatblade", "count": 2}], "modelLimit": "all", "limit": 1}],
+      "options": [{"replaceWeapon": ["marine_rifle", "light_handweapon"], "withWeapon": [["flamethrower", "light_handweapon"], {"id": "energy_greatweapon", "count": 2}], "modelLimit": "all", "limit": 1}],
       "models": [
         {
           "name": "Witch Hunter Leader",
@@ -153,39 +153,39 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "ccw"],
+          "weapons": ["marine_rifle", "light_handweapon"],
           "rules": [{"id": "ward", "x": 1}],
           "min": 1,
           "max": 1
         },
-        {"name": "Witch Hunter", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "ccw"], "min": 4, "max": 9}
+        {"name": "Witch Hunter", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "throne_ancient": {
-      "name": "Guardian Ancient",
+      "name": "Praetorian Ancient",
       "description": "A banner carrier for the Throne Guardians.",
       "category": "elite",
       "rules": [{"id": "wounds", "x": 3}, "banner_of_blindness"],
       "models": [
         {
-          "name": "Guardian Ancient",
+          "name": "Praetorian Ancient",
           "courage": 7,
           "shoot": 7,
           "fight": 7,
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_sword_blade", "count": 3}, "guardian_sword_pistol"],
+          "weapons": [{"id": "praetorian_sword_blade", "count": 3}, "praetorian_sword_pistol"],
           "options": [
             {
-              "replaceWeapon": [{"id": "guardian_sword_blade", "count": 3}, "guardian_sword_pistol"],
+              "replaceWeapon": [{"id": "praetorian_sword_blade", "count": 3}, "praetorian_sword_pistol"],
               "withWeapon": [
-                [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"],
-                [{"id": "guardian_axe_blade", "count": 3}, "guardian_axe_rifle"],
-                ["guardian_rifle", {"id": "heavy_ccw", "count": 2}]
+                [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"],
+                [{"id": "praetorian_axe_blade", "count": 3}, "praetorian_axe_rifle"],
+                ["praetorian_rifle", {"id": "handweapon", "count": 2}]
               ]
             },
-            {"addWeapon": {"id": "guardian_dagger"}},
+            {"addWeapon": {"id": "praetorian_dagger"}},
             {"addWeapon": "shield"},
             {"replaceRule": "banner_of_blindness", "withRule": ["banner_of_justice", "banner_of_focus", "banner_of_wrath"]}
           ],
@@ -195,23 +195,23 @@
       ]
     },
     "throne_ancient_destroyer": {
-      "name": "Guardian Ancient in Destroyer Armor",
+      "name": "Praetorian Ancient in Destroyer Armor",
       "description": "A banner carrier for the Throne Guardians in heavy armor.",
       "category": "elite",
       "rules": [{"id": "wounds", "x": 3}, "banner_of_blindness"],
       "models": [
         {
-          "name": "Guardian Ancient in Destroyer Armor",
+          "name": "Praetorian Ancient in Destroyer Armor",
           "courage": 7,
           "shoot": 7,
           "fight": 7,
           "defense": 10,
           "movement": 5,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle", "guardian_grenade_launcher"],
+          "weapons": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle", "praetorian_grenade_launcher"],
           "options": [
-            {"replaceWeapon": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"], "withWeapon": [[{"id": "guardian_axe_blade", "count": 3}, "guardian_axe_rifle"]]},
-            {"addWeapon": "guardian_dagger"},
+            {"replaceWeapon": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"], "withWeapon": [[{"id": "praetorian_axe_blade", "count": 3}, "praetorian_axe_rifle"]]},
+            {"addWeapon": "praetorian_dagger"},
             {"replaceRule": "banner_of_blindness", "withRule": ["banner_of_justice", "banner_of_focus", "banner_of_wrath"]}
           ],
           "min": 1,
@@ -220,55 +220,55 @@
       ]
     },
     "throne_guardians": {
-      "name": "Guardians",
+      "name": "Praetorians",
       "description": "Highly trained and elite fighters.",
       "category": "core",
       "rules": [{"id": "wounds", "x": 2}],
       "options": [
         {
-          "replaceWeapon": [{"id": "guardian_sword_blade", "count": 2}, "guardian_sword_pistol"],
+          "replaceWeapon": [{"id": "praetorian_sword_blade", "count": 2}, "praetorian_sword_pistol"],
           "withWeapon": [
-            [{"id": "guardian_spear_blade", "count": 2}, "guardian_spear_rifle"],
-            [{"id": "guardian_spear_blade", "count": 2}, "guardian_spear_fusion"],
-            [{"id": "guardian_spear_blade", "count": 2}, "guardian_spear_carbine"],
-            ["guardian_rifle", {"id": "heavy_ccw", "count": 1}]
+            [{"id": "praetorian_spear_blade", "count": 2}, "praetorian_spear_rifle"],
+            [{"id": "praetorian_spear_blade", "count": 2}, "praetorian_spear_fusion"],
+            [{"id": "praetorian_spear_blade", "count": 2}, "praetorian_spear_carbine"],
+            ["praetorian_rifle", {"id": "handweapon", "count": 1}]
           ]
         },
-        {"addWeapon": "guardian_dagger"},
+        {"addWeapon": "praetorian_dagger"},
         {"addWeapon": "shield"}
       ],
       "models": [
         {
-          "name": "Guardian",
+          "name": "Praetorian",
           "courage": 7,
           "shoot": 7,
           "fight": 7,
           "movement": 6,
           "defense": 9,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_sword_blade", "count": 2}, "guardian_sword_pistol"],
+          "weapons": [{"id": "praetorian_sword_blade", "count": 2}, "praetorian_sword_pistol"],
           "min": 3,
           "max": 5
         }
       ]
     },
-    "guardian_jetpack_squad": {
-      "name": "Guardian Jetpack Squad",
+    "praetorian_jetpack_squad": {
+      "name": "Praetorian Jetpack Squad",
       "description": "Highly trained and elite fighters.",
       "category": "elite",
       "rules": [{"id": "wounds", "x": 2}, "fly", "ambush"],
-      "options": [{"addWeapon": "guardian_dagger"}],
+      "options": [{"addWeapon": "praetorian_dagger"}],
       "models": [
         {
-          "name": "Guardian Jetpack",
+          "name": "Praetorian Jetpack",
           "courage": 7,
           "shoot": 7,
           "fight": 7,
           "movement": 8,
           "defense": 8,
           "reflexes": 7,
-          "weapons": ["shield", "guardian_pistol"],
-          "options": [{"replaceWeapon": ["shield", "guardian_pistol"], "withWeapon": [["guardian_lance_rifle", {"id": "guardian_lance_blade", "count": 2}]]}],
+          "weapons": ["shield", "praetorian_pistol"],
+          "options": [{"replaceWeapon": ["shield", "praetorian_pistol"], "withWeapon": [["praetorian_lance_rifle", {"id": "praetorian_lance_blade", "count": 2}]]}],
           "min": 3,
           "max": 6
         }
@@ -281,10 +281,10 @@
       "rules": [{"id": "resilient", "x": 3}, {"id": "wounds", "x": 2}],
       "options": [
         {
-          "replaceWeapon": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"],
-          "withWeapon": [[{"id": "guardian_axe_blade", "count": 3}, "guardian_axe_rifle"], ["guardian_rifle", {"id": "heavy_ccw", "count": 2}]]
+          "replaceWeapon": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"],
+          "withWeapon": [[{"id": "praetorian_axe_blade", "count": 3}, "praetorian_axe_rifle"], ["praetorian_rifle", {"id": "handweapon", "count": 2}]]
         },
-        {"addWeapon": "guardian_dagger"}
+        {"addWeapon": "praetorian_dagger"}
       ],
       "models": [
         {
@@ -295,7 +295,7 @@
           "defense": 9,
           "movement": 6,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"],
+          "weapons": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"],
           "min": 3,
           "max": 5
         }
@@ -306,7 +306,7 @@
       "description": "Throne guardians on high speed jet bikes.",
       "category": "elite",
       "rules": [{"id": "wounds", "x": 2}, "hover"],
-      "options": [{"replaceWeapon": ["guardian_rifle_array"], "withWeapon": ["guardian_missiles"]}],
+      "options": [{"replaceWeapon": ["praetorian_rifle_array"], "withWeapon": ["praetorian_missiles"]}],
       "models": [
         {
           "name": "Jetbike",
@@ -316,20 +316,20 @@
           "defense": 9,
           "movement": 8,
           "reflexes": 7,
-          "weapons": ["guardian_rifle_array", {"id": "guardian_lance", "count": 3}],
+          "weapons": ["praetorian_rifle_array", {"id": "praetorian_lance", "count": 3}],
           "min": 3,
           "max": 9
         }
       ]
     },
-    "guardian_destoyers": {
-      "name": "Guardian Destroyers",
-      "description": "Guardians clad in very heavy armor.",
+    "praetorian_destoyers": {
+      "name": "Praetorian Destroyers",
+      "description": "Praetorians clad in very heavy armor.",
       "rules": ["ambush", {"id": "wounds", "x": 2}],
       "category": "elite",
       "models": [
         {
-          "name": "Guardian Destroyer",
+          "name": "Praetorian Destroyer",
           "movement": 5,
           "courage": 7,
           "shoot": 7,
@@ -338,7 +338,7 @@
           "reflexes": 7,
           "weapons": ["twin_guardian_rifle", {"id": "energy_claws", "count": 3}],
           "options": [
-            {"replaceWeapon": {"id": "energy_claws", "count": 3}, "withWeapon": [{"id": "energy_fist", "count": 3}]},
+            {"replaceWeapon": {"id": "energy_claws", "count": 3}, "withWeapon": [{"id": "energy_powerweapon", "count": 3}]},
             {"replaceWeapon": "twin_guardian_rifle", "withWeapon": ["twin_guardian_destructor", "heavy_flamethrower"]}
           ],
           "min": 3,
@@ -346,31 +346,31 @@
         }
       ]
     },
-    "guardian_assault_destroyers": {
-      "name": "Guardian Assault Destroyers",
-      "description": "Guardians in extra heavy armor.",
+    "praetorian_assault_destroyers": {
+      "name": "Praetorian Assault Destroyers",
+      "description": "Praetorians in extra heavy armor.",
       "category": "elite",
       "rules": ["ambush", {"id": "wounds", "x": 2}],
       "models": [
         {
-          "name": "Guardian Assault Destroyer",
+          "name": "Praetorian Assault Destroyer",
           "courage": 7,
           "shoot": 7,
           "fight": 7,
           "defense": 10,
           "movement": 5,
           "reflexes": 7,
-          "weapons": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle", "guardian_grenade_launcher"],
+          "weapons": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle", "praetorian_grenade_launcher"],
           "options": [
-            {"replaceWeapon": [{"id": "guardian_spear_blade", "count": 3}, "guardian_spear_rifle"], "withWeapon": [[{"id": "guardian_axe_blade", "count": 3}, "guardian_axe_rifle"]]},
-            {"addWeapon": "guardian_dagger"}
+            {"replaceWeapon": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"], "withWeapon": [[{"id": "praetorian_axe_blade", "count": 3}, "praetorian_axe_rifle"]]},
+            {"addWeapon": "praetorian_dagger"}
           ],
           "min": 3,
           "max": 9
         }
       ]
     },
-    "guardian_heavy_tank": {
+    "praetorian_heavy_tank": {
       "name": "Relic Heavy Assault APC",
       "description": "A heavily armored transport sporting an arsenal of weapons built by the imperial marines.",
       "keywords": ["Vehicle"],
@@ -445,14 +445,14 @@
       ]
     },
     "combat_walker": {
-      "name": "Guardian Combat Juggernaut",
+      "name": "Praetorian Combat Juggernaut",
       "description": "An agile walker with melee weapons.",
       "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
       "category": "rare",
       "keywords": ["Vehicle, Juggernaut"],
       "models": [
         {
-          "name": "Guardian Combat Juggernaut",
+          "name": "Praetorian Combat Juggernaut",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
@@ -509,7 +509,7 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 7,
-          "weapons": [{"id": "heavy_walker_fist", "count": 8}, "guardian_missile_array"],
+          "weapons": [{"id": "heavy_walker_fist", "count": 8}, "praetorian_missile_array"],
           "options": [
             {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": ["twin_light_laser_cannon", "twin_laser_cannon"]},
             {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": ["twin_light_laser_cannon", "twin_laser_cannon"]}
@@ -521,7 +521,7 @@
     }
   },
   "weapons": {
-    "guardian_eagle": {"name": "Guardian Eagle", "attacks": 3, "ap": 1, "short": 12, "medium": 24, "rules": ["indirect"]},
+    "praetorian_eagle": {"name": "Praetorian Eagle", "attacks": 3, "ap": 1, "short": 12, "medium": 24, "rules": ["indirect"]},
     "spectral_eye": {"name": "Spectral Eye", "attacks": 2, "ap": 4, "short": 9, "medium": 18},
     "assassin_unarmed": {"name": "Assassin Martial Arts", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["rending"]},
     "mind_shredder": {"name": "Mind Shredder", "attacks": 1, "ap": 4, "short": 6, "medium": 12, "rules": [{"id": "shocking", "x": 3}]},
@@ -532,36 +532,36 @@
       "name": "Twin Grenade Launcher",
       "profiles": [{"name": "Frag", "attacks": 2, "ap": 1, "rules": [{"id": "blast", "x": 3}], "medium": 24, "short": 12}, {"name": "AT", "attacks": 2, "ap": 3, "medium": 24, "short": 12}]
     },
-    "guardian_grenade_launcher": {"name": "Guardian Grenade Launcher", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": [{"id": "blast", "x": 2}]},
-    "guardian_rifle_array": {"name": "Guardian Rifle Array", "attacks": 3, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
-    "guardian_missile_array": {"name": "Guardian Missile Array", "attacks": 4, "short": 12, "medium": 24, "ap": 2, "rules": ["heavy"]},
-    "guardian_missiles": {
-      "name": "Guardian Missiles",
+    "praetorian_grenade_launcher": {"name": "Praetorian Grenade Launcher", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": [{"id": "blast", "x": 2}]},
+    "praetorian_rifle_array": {"name": "Praetorian Rifle Array", "attacks": 3, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
+    "praetorian_missile_array": {"name": "Praetorian Missile Array", "attacks": 4, "short": 12, "medium": 24, "ap": 2, "rules": ["heavy"]},
+    "praetorian_missiles": {
+      "name": "Praetorian Missiles",
       "rules": ["assault"],
       "profiles": [
         {"name": "Flak", "attacks": 2, "short": 12, "medium": 24, "ap": 4, "rules": ["anti_air"]},
         {"name": "AT", "attacks": 1, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "deadly", "x": 1}]}
       ]
     },
-    "guardian_lance": {"name": "Guardian Lance", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["lance"]},
-    "guardian_dagger": {"name": "Guardian Dagger", "attacks": 1, "short": "Melee", "ap": 1},
-    "guardian_axe_blade": {"name": "Guardian Axe (Blade)", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["cumbersome"]},
-    "guardian_axe_rifle": {"name": "Guardian Axe (Rifle)", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
-    "guardian_lance_blade": {"name": "Guardian Lance (Blade)", "attacks": 1, "short": "Melee", "ap": 4},
-    "guardian_lance_rifle": {"name": "Guardian Lance (Rifle)", "attacks": 1, "short": 6, "medium": 12, "ap": 3, "rules": ["assault"]},
-    "guardian_spear_blade": {"name": "Guardian Spear (Blade)", "attacks": 1, "short": "Melee", "ap": 2},
-    "guardian_spear_rifle": {"name": "Guardian Spear (Rifle)", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
-    "guardian_spear_carbine": {"name": "Guardian Spear (Carbine)", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
-    "guardian_spear_fusion": {"name": "Guardian Spear (Fusion)", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
-    "guardian_rifle": {
-      "name": "Guardian Rifle",
+    "praetorian_lance": {"name": "Praetorian Lance", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["lance"]},
+    "praetorian_dagger": {"name": "Praetorian Dagger", "attacks": 1, "short": "Melee", "ap": 1},
+    "praetorian_axe_blade": {"name": "Praetorian Axe (Blade)", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["cumbersome"]},
+    "praetorian_axe_rifle": {"name": "Praetorian Axe (Rifle)", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
+    "praetorian_lance_blade": {"name": "Praetorian Lance (Blade)", "attacks": 1, "short": "Melee", "ap": 4},
+    "praetorian_lance_rifle": {"name": "Praetorian Lance (Rifle)", "attacks": 1, "short": 6, "medium": 12, "ap": 3, "rules": ["assault"]},
+    "praetorian_spear_blade": {"name": "Praetorian Spear (Blade)", "attacks": 1, "short": "Melee", "ap": 2},
+    "praetorian_spear_rifle": {"name": "Praetorian Spear (Rifle)", "attacks": 1, "short": 12, "medium": 24, "ap": 1, "rules": ["rapid_fire"]},
+    "praetorian_spear_carbine": {"name": "Praetorian Spear (Carbine)", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault"]},
+    "praetorian_spear_fusion": {"name": "Praetorian Spear (Fusion)", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
+    "praetorian_rifle": {
+      "name": "Praetorian Rifle",
       "profiles": [{"name": "HE", "attacks": 1, "short": 18, "medium": 36, "ap": 2, "rules": ["rapid_fire"]}, {"name": "AP", "attacks": 1, "short": 12, "medium": 24, "ap": 5, "rules": ["rapid_fire"]}]
     },
     "twin_guardian_rifle": {"name": "Twin Guardian Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": ["rapid_fire"]},
     "twin_guardian_destructor": {"name": "Twin Guardian Destructor", "attacks": 2, "short": 9, "medium": 18, "ap": 4, "rules": ["assault"]},
-    "guardian_pistol": {"name": "Guardian Pistol", "attacks": 1, "short": 9, "ap": 4, "rules": ["pistol"]},
-    "guardian_sword_pistol": {"name": "Guardian Sword (Pistol)", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["pistol"]},
-    "guardian_sword_blade": {"name": "Guardian Sword (Blade)", "attacks": 1, "short": "Melee", "ap": 2},
+    "praetorian_pistol": {"name": "Praetorian Pistol", "attacks": 1, "short": 9, "ap": 4, "rules": ["pistol"]},
+    "praetorian_sword_pistol": {"name": "Praetorian Sword (Pistol)", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["pistol"]},
+    "praetorian_sword_blade": {"name": "Praetorian Sword (Blade)", "attacks": 1, "short": "Melee", "ap": 2},
     "walker_sword_shoot": {"name": "Juggernaut Sword (Shoot)", "attacks": 2, "short": 6, "medium": 12, "ap": 3, "rules": [{"id": "blast", "x": 3}]},
     "walker_sword_blade": {"name": "Juggernaut Sword (Blade)", "attacks": 1, "short": "Melee", "ap": 5},
     "walker_spear_blade": {"name": "Juggernaut Spear (Blade)", "attacks": 1, "short": "Melee", "ap": 8},
@@ -574,7 +574,7 @@
       "name": "Scorching Spear",
       "profiles": [{"name": "Blade", "attacks": 1, "short": "Melee", "ap": 3}, {"name": "Flame", "attacks": 1, "short": 6, "medium": 12, "ap": 4, "rules": ["assault"]}]
     },
-    "guardian_champion_blade": {"name": "Guardian Champion Sword", "profiles": [{"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 3}, {"name": "elite", "attacks": 4, "short": "Melee", "ap": 6}]}
+    "praetorian_champion_blade": {"name": "Praetorian Champion Sword", "profiles": [{"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 3}, {"name": "elite", "attacks": 4, "short": "Melee", "ap": 6}]}
   },
   "powers": {
     "interrogate": {"name": "Interrogation", "description": "Target enemy unit within 12\" must re-roll one die of your choice on its next Skill test.", "charge": 7},

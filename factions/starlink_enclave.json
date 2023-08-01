@@ -24,11 +24,11 @@
           "options": [
             {
               "replaceWeapon": [{"id": "suit_fists", "count": 2}],
-              "withWeapon": ["energy_greatsword", "energy_fist", "flamethrower", "plasma_rifle", "fusion_blaster", "assault_mortar", "ion_gatling", "pulse_gatling", "rocket_pod"]
+              "withWeapon": ["energy_greatsword", "energy_powerweapon", "flamethrower", "plasma_rifle", "fusion_blaster", "assault_mortar", "ion_gatling", "pulse_gatling", "rocket_pod"]
             },
             {
               "replaceWeapon": [{"id": "suit_fists", "count": 2}],
-              "withWeapon": ["energy_greatsword", "energy_fist", "assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"]
+              "withWeapon": ["energy_greatsword", "energy_powerweapon", "assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"]
             },
             {"addWeapon": ["assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"], "limit": 2},
             {
@@ -63,7 +63,7 @@
           "defense": 5,
           "reflexes": 5,
           "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 2}],
-          "weapons": [{"id": "energy_sword", "count": 3}],
+          "weapons": [{"id": "energy_handweapon", "count": 3}],
           "options": [{"addRule": "hover_drone"}],
           "min": 1,
           "max": 1
@@ -84,7 +84,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["pulse_rifle", {"id": "ccw", "count": 2}],
+          "weapons": ["pulse_rifle", {"id": "light_handweapon", "count": 2}],
           "rules": ["leader", {"id": "marksman", "x": 1}, {"id": "wounds", "x": 3}],
           "options": [{"addWeapon": "pulse_pistol"}, {"addRule": "spotting_laser"}],
           "min": 1,
@@ -110,12 +110,12 @@
           "fight": 4,
           "defense": 6,
           "reflexes": 6,
-          "weapons": ["pulse_rifle", "ccw"],
+          "weapons": ["pulse_rifle", "light_handweapon"],
           "options": [{"addWeapon": "pulse_pistol"}, {"addRule": "spotting_laser"}],
           "min": 1,
           "max": 1
         },
-        {"name": "Warrior", "movement": 6, "courage": 5, "shoot": 5, "fight": 4, "defense": 6, "reflexes": 6, "weapons": ["pulse_rifle", "ccw"], "min": 4, "max": 14}
+        {"name": "Warrior", "movement": 6, "courage": 5, "shoot": 5, "fight": 4, "defense": 6, "reflexes": 6, "weapons": ["pulse_rifle", "light_handweapon"], "min": 4, "max": 14}
       ]
     },
     "pathfinder_squad": {
@@ -138,7 +138,7 @@
           "fight": 4,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["pulse_carbine", "ccw"],
+          "weapons": ["pulse_carbine", "light_handweapon"],
           "options": [{"addWeapon": "pulse_pistol"}, {"addRule": "spotting_laser"}],
           "min": 1,
           "max": 1
@@ -151,7 +151,7 @@
           "fight": 4,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["pulse_carbine", "ccw"],
+          "weapons": ["pulse_carbine", "light_handweapon"],
           "options": [{"addWeapon": "stun_grenade_launcher_attachment", "modelLimit": 1}, {"addRule": "spotting_laser"}],
           "min": 4,
           "max": 9
@@ -172,8 +172,8 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["auto_rifle", "ccw", "frags"],
-          "options": [{"replaceWeapon": ["auto_rifle", "ccw"], "withWeapon": [["pulse_pistol", {"id": "ccw", "count": 2}]]}],
+          "weapons": ["auto_rifle", "light_handweapon", "frags"],
+          "options": [{"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pulse_pistol", {"id": "light_handweapon", "count": 2}]]}],
           "min": 1,
           "max": 1
         },
@@ -185,7 +185,7 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["auto_rifle", "ccw", "frags"],
+          "weapons": ["auto_rifle", "light_handweapon", "frags"],
           "options": [{"replaceWeapon": ["auto_rifle"], "withWeapon": ["flamethrower", "plasma_rifle", "fusion_blaster", "stun_grenade_launcher"], "modelLimit": 1}],
           "min": 9,
           "max": 9
@@ -197,7 +197,7 @@
       "description": "A squad of flying insect aliens with powerful rifles.",
       "category": "elite",
       "models": [
-        {"name": "Insect Warrior", "movement": 8, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "rules": ["fly"], "weapons": ["neutron_carbine", "ccw"], "min": 5, "max": 15}
+        {"name": "Insect Warrior", "movement": 8, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "rules": ["fly"], "weapons": ["neutron_carbine", "light_handweapon"], "min": 5, "max": 15}
       ]
     },
     "stealth_suits": {
@@ -242,9 +242,9 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["pulse_carbine", {"id": "energy_sword", "count": 2}],
+          "weapons": ["pulse_carbine", {"id": "energy_handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": {"id": "energy_sword", "count": 2}, "withWeapon": [{"id": "energy_fist", "count": 2}], "modelLimit": "all"},
+            {"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [{"id": "energy_powerweapon", "count": 2}], "modelLimit": "all"},
             {"addRule": "pulse_shield", "modelLimit": "all"},
             {"addRule": ["homing_beacon"], "modelLimit": 1}
           ],
@@ -274,11 +274,11 @@
           "options": [
             {
               "replaceWeapon": [{"id": "suit_fists", "count": 2}],
-              "withWeapon": ["energy_greatsword", "energy_fist", "assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"]
+              "withWeapon": ["energy_greatsword", "energy_powerweapon", "assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"]
             },
             {
               "replaceWeapon": [{"id": "suit_fists", "count": 2}],
-              "withWeapon": ["energy_greatsword", "energy_fist", "assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"]
+              "withWeapon": ["energy_greatsword", "energy_powerweapon", "assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"]
             },
             {"addWeapon": ["assault_mortar", "ion_gatling", "flamethrower", "pulse_gatling", "plasma_rifle", "fusion_blaster", "rocket_pod"], "limit": 1},
             {"addRule": {"name": "Orbital Insertion", "id": "ambush"}, "modelLimit": "all"},
@@ -593,7 +593,7 @@
           "defense": 6,
           "reflexes": 7,
           "courage": 5,
-          "weapons": ["tribal_rifle", {"id": "heavy_ccw", "count": 3}],
+          "weapons": ["tribal_rifle", {"id": "handweapon", "count": 3}],
           "options": [{"replaceWeapon": "tribal_rifle", "withWeapon": "tribal_carbine"}, {"replaceRule": {"id": "warrior", "x": 1}, "withRule": {"id": "warrior", "x": 2}}],
           "min": 1,
           "max": 1
@@ -607,7 +607,7 @@
       "keywords": ["Infantry"],
       "rules": [],
       "models": [
-        {"name": "Tribal Warrior", "movement": 6, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 6, "courage": 5, "weapons": ["tribal_rifle", {"id": "heavy_ccw", "count": 1}], "min": 5, "max": 20}
+        {"name": "Tribal Warrior", "movement": 6, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 6, "courage": 5, "weapons": ["tribal_rifle", {"id": "handweapon", "count": 1}], "min": 5, "max": 20}
       ]
     },
     "tribe_scouts": {
@@ -617,7 +617,7 @@
       "keywords": ["Infantry"],
       "rules": ["scout"],
       "models": [
-        {"name": "Tribal Scout", "movement": 6, "shoot": 5, "fight": 6, "reflexes": 6, "courage": 5, "defense": 5, "weapons": ["tribal_carbine", {"id": "heavy_ccw", "count": 1}], "min": 5, "max": 20}
+        {"name": "Tribal Scout", "movement": 6, "shoot": 5, "fight": 6, "reflexes": 6, "courage": 5, "defense": 5, "weapons": ["tribal_carbine", {"id": "handweapon", "count": 1}], "min": 5, "max": 20}
       ]
     },
     "wild_dogs": {
@@ -626,7 +626,7 @@
       "category": "elite",
       "keywords": ["Beasts"],
       "rules": ["agile"],
-      "models": [{"name": "Wild Dogs", "movement": 8, "shoot": 4, "fight": 6, "reflexes": 6, "courage": 5, "defense": 5, "weapons": [{"id": "heavy_ccw", "count": 2}], "min": 4, "max": 12}]
+      "models": [{"name": "Wild Dogs", "movement": 8, "shoot": 4, "fight": 6, "reflexes": 6, "courage": 5, "defense": 5, "weapons": [{"id": "handweapon", "count": 2}], "min": 4, "max": 12}]
     },
     "mantaurs": {
       "name": "Quad-Warriors",
@@ -643,13 +643,13 @@
           "reflexes": 6,
           "courage": 5,
           "defense": 7,
-          "weapons": ["tribal_rifle", {"id": "heavy_ccw", "count": 2}],
+          "weapons": ["tribal_rifle", {"id": "handweapon", "count": 2}],
           "min": 3,
           "max": 9,
           "options": [
             {
-              "replaceWeapon": ["tribal_rifle", {"id": "heavy_ccw", "count": 2}],
-              "withWeapon": [["tribal_flamethrower", {"id": "heavy_ccw", "count": 2}], ["tribal_tankbuster", {"id": "heavy_ccw", "count": 2}]],
+              "replaceWeapon": ["tribal_rifle", {"id": "handweapon", "count": 2}],
+              "withWeapon": [["tribal_flamethrower", {"id": "handweapon", "count": 2}], ["tribal_tankbuster", {"id": "handweapon", "count": 2}]],
               "modelLimit": "1/3"
             }
           ]
@@ -679,10 +679,10 @@
           "reflexes": 6,
           "courage": 5,
           "defense": 5,
-          "weapons": ["tribal_flamethrower", {"id": "heavy_ccw", "count": 3}],
+          "weapons": ["tribal_flamethrower", {"id": "handweapon", "count": 3}],
           "min": 3,
           "max": 9,
-          "options": [{"replaceweapon": ["tribal_flamethrower", {"id": "heavy_ccw", "count": 3}], "withWeapon": ["tribal_tankbuster", {"id": "heavy_ccw", "count": 2}]}]
+          "options": [{"replaceweapon": ["tribal_flamethrower", {"id": "handweapon", "count": 3}], "withWeapon": ["tribal_tankbuster", {"id": "handweapon", "count": 2}]}]
         }
       ]
     },
@@ -829,7 +829,7 @@
     "tribal_carbine": {"name": "Tribal Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": []},
     "tribal_tankbuster": {"name": "Tribal Tankbuster", "attacks": 2, "short": 9, "medium": 18, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
     "tribal_flamethrower": {"name": "Tribal Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
-    "heavy_ccw": {"name": "Tribal Carbine Blade", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
+    "handweapon": {"name": "Tribal Carbine Blade", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
     "ogre_fists": {"name": "Ogre Fists", "attacks": 1, "short": "Melee", "ap": 3, "rules": []},
     "dinosaur_claws": {"name": "Dinosaur Claws and Teeth", "attacks": 1, "short": "Melee", "ap": 5, "rules": [{"id": "reach", "x": 1}]}
   },
