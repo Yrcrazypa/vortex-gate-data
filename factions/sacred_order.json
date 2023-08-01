@@ -80,8 +80,6 @@
               "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4}
               ]
@@ -115,8 +113,6 @@
             {
               "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
                 {"id": "energy_handweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4}

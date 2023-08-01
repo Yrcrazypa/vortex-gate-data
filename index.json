@@ -1221,7 +1221,7 @@
       ]
     },
     "twin_shard_carbine": {"name": "Twin Shard Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": ["rending", "assault"]},
-    "fusion_cannon": {"name": "Fusion Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48, "rules": [{"id": "deadly", "x": 1}, "heavy"]},
+    "fusion_cannon": {"name": "Fusion Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48, "rules": [{"id": "deadly", "x": 2}, "heavy"]},
     "twin_fusion_cannon": {"name": "Twin Fusion Cannon", "ap": 7, "attacks": 2, "short": 24, "medium": 48, "rules": [{"id": "deadly", "x": 1}, "heavy"]},
     "shard_sniper": {"name": "Shard Sniper", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": ["rending", "sniper"]},
     "elven_missile_launcher": {

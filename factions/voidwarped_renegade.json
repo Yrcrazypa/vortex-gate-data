@@ -96,11 +96,8 @@
               "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
                 {"id": "chainfist", "count": 4},
                 {"id": "chainaxe", "count": 4},
-                {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_claws", "count": 5},
                 {"id": "chainsaw_glaive", "count": 4}
@@ -138,9 +135,6 @@
               "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_claws", "count": 5},
                 {"id": "chainsaw_glaive", "count": 4}
@@ -304,9 +298,6 @@
               "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_claws", "count": 5}
               ]
@@ -344,9 +335,6 @@
               "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_claws", "count": 5}
               ]
@@ -388,8 +376,6 @@
                 {"id": "energy_handweapon", "count": 4},
                 {"id": "chainfist", "count": 4},
                 {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_claws", "count": 5},
                 {"id": "energy_staff", "count": 4}
@@ -429,8 +415,6 @@
                 {"id": "energy_handweapon", "count": 4},
                 {"id": "chainfist", "count": 4},
                 {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_claws", "count": 5},
                 {"id": "energy_staff", "count": 4}
