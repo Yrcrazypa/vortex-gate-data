@@ -45,7 +45,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 7,
-          "rules": [{"id": "heavy_impact", "x": 3}, "hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "raider_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "heavy_impact", "x": 3}, "hover", {"id": "leader", "x": "Infantry, Biker"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["barb_pistol", {"id": "barb_sword", "count": 5}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
@@ -63,7 +63,7 @@
             {"replaceWeapon": [{"id": "twin_barb_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "fusion_rifle", "mount": ["Front"]}, {"id": "thermal_lance", "mount": ["Front"]}]},
             {"addRule": [{"name": "Grisly Trophy", "id": "fear"}, {"name": "Dark Prism", "id": "magic", "x": 1}]},
             {"addRule": ["swift", "evasive"], "limit": 1},
-            {"replaceRule": {"id": "raider_tactics", "x": 1}, "withRule": {"id": "raider_tactics", "x": 2}}
+            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -83,14 +83,14 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 6,
-          "rules": [{"id": "abomination_tactics", "x": 1}, "hover", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "defender", "x": 1}, "hover", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "wounds", "x": 3}],
           "weapons": ["barb_pistol", {"id": "barb_sword", "count": 5}],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["poison_sprayer", "heavy_sniper_rifle", "poison_dart_rifle"]},
             {"replaceWeapon": {"id": "barb_sword", "count": 5}, "withWeapon": [{"id": "poison_whip", "count": 5}]},
             {"addWeapon": "poison_injector"},
             {"addRule": [{"name": "Dark Prism", "id": "magic", "x": 1}]},
-            {"replaceRule": {"id": "abomination_tactics", "x": 1}, "withRule": {"id": "abomination_tactics", "x": 2}}
+            {"replaceRule": {"id": "defender", "x": 1}, "withRule": {"id": "defender", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -110,7 +110,7 @@
           "fight": 7,
           "defense": 7,
           "reflexes": 7,
-          "rules": ["leader", {"id": "raider_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["barb_pistol", {"id": "barb_sword", "count": 5}],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
@@ -127,7 +127,7 @@
             },
             {"addRule": [{"name": "Grisly Trophy", "id": "fear"}, {"name": "Dark Prism", "id": "magic", "x": 1}, "jetpack_character"]},
             {"addRule": ["swift", "evasive"], "limit": 1},
-            {"replaceRule": {"id": "raider_tactics", "x": 1}, "withRule": {"id": "raider_tactics", "x": 2}}
+            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -147,9 +147,9 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 7,
-          "rules": ["fear", "furious", "leader", {"id": "mercenary_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["fear", "furious", "leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "energy_greatweapon", "count": 3}],
-          "options": [{"replaceRule": {"id": "mercenary_tactics", "x": 1}, "withRule": {"id": "mercenary_tactics", "x": 2}}],
+          "options": [{"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}],
           "min": 1,
           "max": 1
         }
@@ -183,7 +183,11 @@
         {"replaceWeapon": ["barb_rifle", "light_handweapon"], "withWeapon": [["barb_pistol", {"id": "light_handweapon", "count": 2}]], "modelLimit": "all"},
         {"replaceWeapon": "barb_rifle", "withWeapon": ["fusion_rifle", "shred_rifle", "emp_rifle", "flamethrower", "grenade_launcher"], "modelLimit": "2/10"},
         {"replaceWeapon": "barb_rifle", "withWeapon": ["heavy_flamethrower", "thermal_lance", "barb_cannon", "fusion_cannon", "missile_launcher", "laser_machinegun"], "modelLimit": "1/10"},
-        {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "razor_whips", "count": 4}, {"id": "net_and_spear", "count": 2}, {"id": "energy_claws", "count": 3}], "modelLimit": "3/10"},
+        {
+          "replaceWeapon": {"id": "light_handweapon", "count": 2},
+          "withWeapon": [{"id": "razor_whips", "count": 4}, {"id": "net_and_spear", "count": 2}, {"id": "energy_claws", "count": 3}],
+          "modelLimit": "3/10"
+        },
         {"addRule": ["swift", "evasive"], "modelLimit": "all", "limit": 1}
       ]
     },
@@ -209,13 +213,28 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Veteran Ravager", "movement": 7, "courage": 6, "shoot": 6, "fight": 6, "defense": 6, "reflexes": 6, "weapons": ["barb_rifle", {"id": "light_handweapon", "count": 2}], "min": 9, "max": 19}
+        {
+          "name": "Veteran Ravager",
+          "movement": 7,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "weapons": ["barb_rifle", {"id": "light_handweapon", "count": 2}],
+          "min": 9,
+          "max": 19
+        }
       ],
       "options": [
         {"replaceWeapon": ["barb_rifle", {"id": "light_handweapon", "count": 2}], "withWeapon": [["barb_pistol", {"id": "light_handweapon", "count": 3}]], "modelLimit": "all"},
         {"replaceWeapon": "barb_rifle", "withWeapon": ["fusion_rifle", "shred_rifle", "emp_rifle", "flamethrower"], "modelLimit": "2/10"},
         {"replaceWeapon": "barb_rifle", "withWeapon": ["thermal_lance", "barb_cannon", "fusion_cannon", "heavy_flamethrower", "missile_launcher", "laser_machinegun"], "modelLimit": "1/10"},
-        {"replaceWeapon": {"id": "light_handweapon", "count": 3}, "withWeapon": [{"id": "razor_whips", "count": 5}, {"id": "net_and_spear", "count": 4}, {"id": "energy_claws", "count": 4}], "modelLimit": "3/10"},
+        {
+          "replaceWeapon": {"id": "light_handweapon", "count": 3},
+          "withWeapon": [{"id": "razor_whips", "count": 5}, {"id": "net_and_spear", "count": 4}, {"id": "energy_claws", "count": 4}],
+          "modelLimit": "3/10"
+        },
         {"addRule": ["swift", "evasive"], "modelLimit": "all", "limit": 1}
       ]
     },
@@ -814,24 +833,6 @@
     "distortion_cannon": {"name": "Distortion Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 8, "rules": [{"id": "blast", "x": 3}, {"id": "deadly", "x": 1}]}
   },
   "rules": {
-    "mercenary_tactics": {
-      "name": "Mercenary Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly Infantry units within 6\" to receive +1 AP with Melee weapons until the end of the round.",
-      "points": ["rule.x", {"multiply": 10}]
-    },
-    "abomination_tactics": {
-      "name": "Abomination Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ or _Heavy Infantry_ units within 6\" to receive +1 Save until the end of the round.",
-      "points": ["rule.x", {"multiply": 10}]
-    },
-    "raider_tactics": {
-      "name": "Raider Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ or _Biker_ units within 6\" to receive one of the following bonuses until the end of the round: \n* Re-roll failed Accuracy tests of 9+*\n* Re-roll failed Strength tests of 9+ \n* +3\" Movement",
-      "points": ["rule.x", {"multiply": 10}]
-    },
     "weapon_racks": {"name": "Weapon Racks", "description": "Models shooting while embarked on this unit may re-roll failed Accuracy tests of 9+.", "points": 10},
     "trophy_racks": {"name": "Trophy Racks", "description": "Enemy units within 6\" of this model suffer -1 Courage.", "points": 5},
     "reinforced_ram": {"name": "Reinforced Ram", "hidden": true, "description_short": "Impact(+3)", "description": "This model gains Impact(+3).", "points": 6},

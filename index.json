@@ -104,14 +104,14 @@
       "alliance": "doom",
       "description": "Demonic entities from another dimension, causing havoc in the name of their infernal masters."
     },
-    "corrupted_vanguard": {
+    "voidwarped_renegade": {
       "version": "1.0",
-      "name": "Corrupted Vanguard",
-      "id": "corrupted_vanguard",
-      "url": "corrupted_vanguard.json",
+      "name": "Voidwarped Renegade",
+      "id": "voidwarped_renegade",
+      "url": "voidwarped_renegade.json",
       "color": "#343a40",
       "alliance": "doom",
-      "description": "The corrupted vanguard are a band of marines that betrayed the mankind and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry."
+      "description": "The Voidwarped Renegade are a band of marines that betrayed the mankind and now cooperate with demons and other heretics to pursue their own desires. They have a mix of deadly beasts, dangerous war machines and tough marine infantry."
     },
     "undying_machines": {
       "version": "1.0",
@@ -2071,6 +2071,7 @@
     "inspiring": {"name": "Inspiring", "description": "This model's unit gains +1 Courage when taking Courage Tests.", "points": 10},
     "epic_tactician": {"name": "Epic Tactician", "description": "This model's unit may re-roll all failed Accuracy and Strength tests.", "points": 20},
     "tactician": {"name": "Tactician", "description": "This model's unit may re-roll failed Accuracy and Strength tests of 9+.", "points": 10},
+    "defender": {"name": "Defender", "description": "This model's unit gains +1 Save.", "points": 10},
     "charger": {"name": "Charger", "description": "This model's unit gains +3\" of movement when _Charging_.", "points": 5},
     "warrior": {"name": "Warrior", "description": "This model's unit may re-roll failed Strength tests of 9+.", "points": 5},
     "zealot": {"name": "Zealot", "description": "Strength rolls of 1 or 2 for this model's unit cause 2 hits instead of 1.", "points": 5},

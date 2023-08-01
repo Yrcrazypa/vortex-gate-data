@@ -1,18 +1,18 @@
 {
-  "id": "corrupted_vanguard",
-  "name": "Corrupted Vanguard",
+  "id": "voidwarped_renegade",
+  "name": "Voidwarped Renegade",
   "author": "guitarninja",
-  "lore": "In the center of the galaxy lies a cosmic anomaly known as the Vortex Gate, a swirling maelstrom of energy and power that defies comprehension. The Stellar Vanguard, humanity's elite interplanetary marines, once stood as protectors of peace and justice, defending the far reaches of the cosmos from threats both internal and external.\n\nUnaware of the malevolent forces lurking within the Vortex Gate, the Vanguard embarked on a daring mission to investigate its mysteries. They believed that understanding and harnessing its energy could grant them an unprecedented advantage in defending the universe. Led by their most skilled and revered commander, Captain Talvar Thorne, they approached the Vortex Gate with caution and determination.\n\nAs the Stellar Vanguard drew near the enigmatic gateway, they were engulfed by its powerful currents. The energies within the gate were not of this reality, and its dark tendrils reached into their souls, seeking vulnerabilities to exploit. Unprepared for the sheer malevolence they encountered, the Vanguard's minds and spirits were overwhelmed by the chaotic forces within the Vortex Gate.\n\nThe once-honorable and valiant marines were twisted and corrupted by the malevolent energies. Their eyes glowed with an eerie, ominous light, and their once-dignified armor became tainted with dark, swirling patterns. The Stellar Vanguard had been transformed into something entirely different – the Corrupted Vanguard.\n\nTheir loyalty to mankind was replaced with an insatiable desire for power and control. Their purpose shifted from protecting the innocent to seeking dominion over all they encountered. The corrupted energies amplified their physical abilities and granted them sinister new powers, which they used to subjugate other civilizations, planets, and even their former comrades.\n\nCaptain Alexia Hartwell, once the pinnacle of leadership and valor, became the malevolent Sovereign of the Corrupted Vanguard. Under her command, the Corrupted Vanguard sought to spread darkness and chaos throughout the cosmos. They attacked the very worlds they once vowed to protect, causing devastation and fear wherever they went.\n\nThe corruption within the Vortex Gate had transformed the Stellar Vanguard into relentless and merciless beings, fueled by an insatiable hunger for power. Their dark and ominous presence became a harbinger of doom, and their conquests left a trail of suffering and destruction in their wake.\n\nTheir sinister legacy spread like a plague, and the galaxy recoiled in horror at the once-heroic Stellar Vanguard's transformation. The Corrupted Vanguard became the embodiment of fear and malevolence, shrouded in legend and whispered warnings to those who dared to venture near the Vortex Gate.\n\nWhile the Stellar Vanguard's fall was a devastating tragedy, there were those who believed that redemption was still possible. A secret resistance group, comprised of individuals from various species, emerged to challenge the Corrupted Vanguard and free their former comrades from the dark grip of the Vortex Gate.\n\nThe conflict between the Corrupted Vanguard and the resistance waged on, spanning worlds and dimensions. It was a battle of epic proportions, where the forces of darkness sought to engulf the universe in eternal night, while the resistance fought to restore the once-heroic legacy of the Stellar Vanguard.\n\nIn the heart of the galaxy, the Vortex Gate stood as a constant reminder of the corruption that had befallen the Stellar Vanguard. The fate of the cosmos hung in the balance as the battle between light and shadow raged on, a testament to the enduring power of darkness and the indomitable spirit of those who fought to reclaim their fallen comrades from the abyss.",
+  "lore": "In the center of the galaxy lies a cosmic anomaly known as the Vortex Gate, a swirling maelstrom of energy and power that defies comprehension. The Stellar Vanguard, humanity's elite interplanetary marines, once stood as protectors of peace and justice, defending the far reaches of the cosmos from threats both internal and external.\n\nUnaware of the malevolent forces lurking within the Vortex Gate, the Vanguard embarked on a daring mission to investigate its mysteries. They believed that understanding and harnessing its energy could grant them an unprecedented advantage in defending the universe. Led by their most skilled and revered commander, Captain Talvar Thorne, they approached the Vortex Gate with caution and determination.\n\nAs the Stellar Vanguard drew near the enigmatic gateway, they were engulfed by its powerful currents. The energies within the gate were not of this reality, and its dark tendrils reached into their souls, seeking vulnerabilities to exploit. Unprepared for the sheer malevolence they encountered, the Vanguard's minds and spirits were overwhelmed by the chaotic forces within the Vortex Gate.\n\nThe once-honorable and valiant marines were twisted and corrupted by the malevolent energies. Their eyes glowed with an eerie, ominous light, and their once-dignified armor became tainted with dark, swirling patterns. The Stellar Vanguard had been transformed into something entirely different – the Voidwarped Renegade.\n\nTheir loyalty to mankind was replaced with an insatiable desire for power and control. Their purpose shifted from protecting the innocent to seeking dominion over all they encountered. The corrupted energies amplified their physical abilities and granted them sinister new powers, which they used to subjugate other civilizations, planets, and even their former comrades.\n\nCaptain Alexia Hartwell, once the pinnacle of leadership and valor, became the malevolent Sovereign of the Voidwarped Renegade. Under her command, the Voidwarped Renegade sought to spread darkness and chaos throughout the cosmos. They attacked the very worlds they once vowed to protect, causing devastation and fear wherever they went.\n\nThe corruption within the Vortex Gate had transformed the Stellar Vanguard into relentless and merciless beings, fueled by an insatiable hunger for power. Their dark and ominous presence became a harbinger of doom, and their conquests left a trail of suffering and destruction in their wake.\n\nTheir sinister legacy spread like a plague, and the galaxy recoiled in horror at the once-heroic Stellar Vanguard's transformation. The Voidwarped Renegade became the embodiment of fear and malevolence, shrouded in legend and whispered warnings to those who dared to venture near the Vortex Gate.\n\nWhile the Stellar Vanguard's fall was a devastating tragedy, there were those who believed that redemption was still possible. A secret resistance group, comprised of individuals from various species, emerged to challenge the Voidwarped Renegade and free their former comrades from the dark grip of the Vortex Gate.\n\nThe conflict between the Voidwarped Renegade and the resistance waged on, spanning worlds and dimensions. It was a battle of epic proportions, where the forces of darkness sought to engulf the universe in eternal night, while the resistance fought to restore the once-heroic legacy of the Stellar Vanguard.\n\nIn the heart of the galaxy, the Vortex Gate stood as a constant reminder of the corruption that had befallen the Stellar Vanguard. The fate of the cosmos hung in the balance as the battle between light and shadow raged on, a testament to the enduring power of darkness and the indomitable spirit of those who fought to reclaim their fallen comrades from the abyss.",
   "units": {
-    "corrupted_warmaster": {
-      "name": "Corrupted Arch-Marine of War",
+    "voidwarped_warmaster": {
+      "name": "Voidwarped Arch-Marine of War",
       "description": "Once one of Humanity's favoured, this powerful Marine now seeks only to watch the galaxy burn.",
       "category": "hero",
       "keywords": ["Heavy Infantry"],
       "rules": ["ambush", {"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "limited", "x": 1}, {"id": "wounds", "x": 4}, {"id": "warmaster_tactics", "x": 3}],
       "models": [
         {
-          "name": "Corrupted Arch-Marine of War",
+          "name": "Voidwarped Arch-Marine of War",
           "movement": 6,
           "courage": 8,
           "shoot": 7,
@@ -44,7 +44,7 @@
       "models": [{"name": "Berserk Arch-Corrupted", "movement": 12, "courage": 7, "shoot": 7, "fight": 8, "defense": 12, "reflexes": 6, "weapons": ["arch_blades"], "min": 1, "max": 1}]
     },
     "arch_mage": {
-      "name": "Corrupted Psychic Arch-Marine",
+      "name": "Voidwarped Psychic Arch-Marine",
       "description": "Built as a psycho-biological weapon, this Arch-Marine defied his destiny and joined the dark gods.",
       "category": "rare",
       "rules": [{"id": "magic", "x": 3}, {"id": "archmage_tactics", "x": 3}, {"id": "wounds", "x": 3}, "fly", "archmage", {"id": "psychic_prowess", "x": 2}, {"id": "limited", "x": 1}],
@@ -52,7 +52,7 @@
       "models": [{"name": "Psychic Arch-Corrupted", "movement": 12, "courage": 7, "shoot": 7, "fight": 7, "defense": 13, "reflexes": 6, "weapons": ["arch_staff"], "min": 1, "max": 1}]
     },
     "lord_on_infernal_stalker": {
-      "name": "Corrupted Lord on Infernal Stalker",
+      "name": "Voidwarped Lord on Infernal Stalker",
       "description": "An infernal creation that crawls on the ground, stalking its prey.",
       "category": "hero",
       "keywords": ["Vehicle"],
@@ -73,13 +73,13 @@
         }
       ]
     },
-    "corrupted_champion": {
-      "name": "Corrupted Champion",
+    "voidwarped_champion": {
+      "name": "Voidwarped Champion",
       "description": "A champion of the dark gods.",
       "category": "hero",
       "models": [
         {
-          "name": "Corrupted Champion",
+          "name": "Voidwarped Champion",
           "movement": 6,
           "courage": 7,
           "shoot": 7,
@@ -114,14 +114,14 @@
         }
       ]
     },
-    "corrupted_champion_on_bike": {
-      "name": "Corrupted Champion on Bike",
+    "voidwarped_champion_on_bike": {
+      "name": "Voidwarped Champion on Bike",
       "description": "A champion of the dark gods riding a combat bike.",
       "category": "hero",
       "keywords": ["Biker"],
       "models": [
         {
-          "name": "Corrupted Lord on Bike",
+          "name": "Voidwarped Lord on Bike",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
@@ -157,13 +157,13 @@
         }
       ]
     },
-    "corrupted_lord": {
-      "name": "Corrupted Lord",
+    "voidwarped_lord": {
+      "name": "Voidwarped Lord",
       "description": "A lord of the dark gods.",
       "category": "hero",
       "models": [
         {
-          "name": "Corrupted Lord",
+          "name": "Voidwarped Lord",
           "movement": 6,
           "courage": 7,
           "shoot": 7,
@@ -198,14 +198,14 @@
         }
       ]
     },
-    "corrupted_lord_on_bike": {
-      "name": "Corrupted Lord on Bike",
+    "voidwarped_lord_on_bike": {
+      "name": "Voidwarped Lord on Bike",
       "description": "A lord of the dark gods riding a combat bike.",
       "category": "hero",
       "keywords": ["Biker"],
       "models": [
         {
-          "name": "Corrupted Lord on Bike",
+          "name": "Voidwarped Lord on Bike",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
@@ -241,14 +241,14 @@
         }
       ]
     },
-    "corrupted_lord_on_warbeast": {
-      "name": "Corrupted Lord on Warbeast",
+    "voidwarped_lord_on_warbeast": {
+      "name": "Voidwarped Lord on Warbeast",
       "description": "A lord of the dark gods riding a biomechanical monster.",
       "category": "hero",
       "keywords": ["Cavalry"],
       "models": [
         {
-          "name": "Corrupted Lord on Warbeast",
+          "name": "Voidwarped Lord on Warbeast",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
@@ -281,13 +281,13 @@
       ],
       "subfactions": ["assault_focus"]
     },
-    "corrupted_engineer": {
-      "name": "Corrupted Engineer",
+    "voidwarped_engineer": {
+      "name": "Voidwarped Engineer",
       "description": "Twisted by the dark gods, this marine is dedicated to repairing corrupted machines.",
       "category": "hero",
       "models": [
         {
-          "name": "Corrupted Engineer",
+          "name": "Voidwarped Engineer",
           "movement": 6,
           "courage": 7,
           "shoot": 7,
@@ -320,14 +320,14 @@
         }
       ]
     },
-    "corrupted_engineer_on_bike": {
-      "name": "Corrupted Engineer on Bike",
+    "voidwarped_engineer_on_bike": {
+      "name": "Voidwarped Engineer on Bike",
       "description": "Riding a combat bike, this marine is dedicated to repairing corrupted machines.",
       "category": "hero",
       "keywords": ["Biker"],
       "models": [
         {
-          "name": "Corrupted Engineer on Biker",
+          "name": "Voidwarped Engineer on Biker",
           "movement": 8,
           "courage": 7,
           "shoot": 7,
@@ -363,13 +363,13 @@
         }
       ]
     },
-    "corrupted_psychic": {
-      "name": "Corrupted Psychic",
+    "voidwarped_psychic": {
+      "name": "Voidwarped Psychic",
       "description": "A potent psychic who has turned to the dark gods.",
       "category": "hero",
       "models": [
         {
-          "name": "Corrupted Psychic",
+          "name": "Voidwarped Psychic",
           "movement": 6,
           "courage": 7,
           "shoot": 6,
@@ -403,8 +403,8 @@
         }
       ]
     },
-    "corrupted_psychic_on_bike": {
-      "name": "Corrupted Psychic on Bike",
+    "voidwarped_psychic_on_bike": {
+      "name": "Voidwarped Psychic on Bike",
       "description": "A potent psychic riding a combat bike.",
       "category": "hero",
       "keywords": ["Biker"],
@@ -520,13 +520,13 @@
         }
       ]
     },
-    "corrupted_priest": {
-      "name": "Corrupted Priest",
+    "voidwarped_priest": {
+      "name": "Voidwarped Priest",
       "description": "A devotee of the dark gods who seeks to spread their faith to non-believers on the battlefield.",
       "category": "hero",
       "models": [
         {
-          "name": "Corrupted Priest",
+          "name": "Voidwarped Priest",
           "movement": 6,
           "courage": 7,
           "shoot": 7,
@@ -557,13 +557,13 @@
         }
       ]
     },
-    "corrupted_priest_on_bike": {
-      "name": "Corrupted Priest on Bike",
+    "voidwarped_priest_on_bike": {
+      "name": "Voidwarped Priest on Bike",
       "description": "A devotee of the dark gods on a combat bike who seeks to spread their faith to non-believers on the battlefield.",
       "category": "hero",
       "models": [
         {
-          "name": "Corrupted Priest on Bike",
+          "name": "Voidwarped Priest on Bike",
           "movement": 6,
           "courage": 7,
           "shoot": 7,
@@ -597,13 +597,13 @@
         }
       ]
     },
-    "corrupted_priest_on_warbeast": {
-      "name": "Corrupted Priest on Warbeast",
+    "voidwarped_priest_on_warbeast": {
+      "name": "Voidwarped Priest on Warbeast",
       "description": "A devotee of the dark gods on a biomechanical monster who seeks to spread their faith to non-believers on the battlefield.",
       "category": "hero",
       "models": [
         {
-          "name": "Corrupted Priest on Warbeast",
+          "name": "Voidwarped Priest on Warbeast",
           "movement": 6,
           "courage": 7,
           "shoot": 7,
@@ -815,13 +815,13 @@
         }
       ]
     },
-    "corrupted_marines": {
-      "name": "Corrupted Marines",
+    "voidwarped_marines": {
+      "name": "Voidwarped Marines",
       "description": "Marines corrupted by the dark gods.",
       "category": "core",
       "models": [
         {
-          "name": "Corrupted Sergeant",
+          "name": "Voidwarped Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -849,7 +849,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Corrupted Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "handweapon"], "min": 4, "max": 19}
+        {"name": "Voidwarped Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "handweapon"], "min": 4, "max": 19}
       ],
       "options": [
         {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
@@ -863,13 +863,13 @@
         {"addRule": ["shield"]}
       ]
     },
-    "corrupted_veterans": {
-      "name": "Corrupted Veterans",
+    "voidwarped_veterans": {
+      "name": "Voidwarped Veterans",
       "description": "Marines that have spent long service to the dark gods.",
       "category": "elite",
       "models": [
         {
-          "name": "Corrupted Veteran",
+          "name": "Voidwarped Veteran",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -934,7 +934,10 @@
           "weapons": ["marine_rifle", "pestilence_ccw", "pestilence_grenade"],
           "options": [
             {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
-            {"replaceWeapon": {"id": "pestilence_ccw", "count": 2}, "withWeapon": [{"id": "pestilence_sword", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "pestilence_axe", "count": 2}]}
+            {
+              "replaceWeapon": {"id": "pestilence_ccw", "count": 2},
+              "withWeapon": [{"id": "pestilence_sword", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "pestilence_axe", "count": 2}]
+            }
           ],
           "min": 1,
           "max": 1
@@ -1100,8 +1103,8 @@
         }
       ]
     },
-    "corrupted_berzerkers": {
-      "name": "Corrupted Berzerkers",
+    "voidwarped_berzerkers": {
+      "name": "Voidwarped Berzerkers",
       "description": "Marines corrupted by the dark gods with rage.",
       "category": "core",
       "subfactions": ["assault_focus"],
@@ -1333,14 +1336,14 @@
         }
       ]
     },
-    "corrupted_devastators": {
-      "name": "Corrupted Devastators",
-      "description": "A squad of highly trained corrupted vanguard armed to the teeth with advanced weaponry.",
+    "voidwarped_devastators": {
+      "name": "Voidwarped Devastators",
+      "description": "A squad of highly trained Voidwarped Renegade armed to the teeth with advanced weaponry.",
       "category": "elite",
       "options": [{"replaceWeapon": "plasma_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "thermal_rifle"]}, {"addRule": "shield"}],
       "models": [
         {
-          "name": "Corrupted Devastator Sergeant",
+          "name": "Voidwarped Devastator Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -1367,12 +1370,12 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Corrupted Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["plasma_rifle", "handweapon"], "min": 4, "max": 14}
+        {"name": "Voidwarped Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["plasma_rifle", "handweapon"], "min": 4, "max": 14}
       ]
     },
-    "corrupted_heavy_devastators": {
-      "name": "Corrupted Heavy Devastators",
-      "description": "A squad of highly trained corrupted vanguard armed to the teeth with advanced weaponry.",
+    "voidwarped_heavy_devastators": {
+      "name": "Voidwarped Heavy Devastators",
+      "description": "A squad of highly trained Voidwarped Renegade armed to the teeth with advanced weaponry.",
       "category": "rare",
       "options": [
         {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["heavy_machinegun", "autocannon", "missile_launcher", "gatling_gun", "plasma_cannon", "fusion_cannon", "laser_cannon", "thermal_lance"]},
@@ -1380,7 +1383,7 @@
       ],
       "models": [
         {
-          "name": "Corrupted Heavy Devastator Sergeant",
+          "name": "Voidwarped Heavy Devastator Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -1407,12 +1410,12 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Corrupted Heavy Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_flamethrower", "handweapon"], "min": 4, "max": 14}
+        {"name": "Voidwarped Heavy Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_flamethrower", "handweapon"], "min": 4, "max": 14}
       ]
     },
     "possessed_marines": {
       "name": "Possessed Marines",
-      "description": "A squad of corrupted vanguard that have been gifted with demonic mutations to aid them in battle.",
+      "description": "A squad of Voidwarped Renegade that have been gifted with demonic mutations to aid them in battle.",
       "category": "elite",
       "models": [
         {
@@ -1433,7 +1436,7 @@
     },
     "greater_possessed_marines": {
       "name": "Greater Possessed Marines",
-      "description": "A squad of corrupted vanguard that have been gifted with greater demonic mutations to aid them in battle.",
+      "description": "A squad of Voidwarped Renegade that have been gifted with greater demonic mutations to aid them in battle.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "models": [
@@ -1474,7 +1477,7 @@
     },
     "talon_raptors": {
       "name": "Talon Raptors",
-      "description": "A squad of elite corrupted vanguard jumping into the fray with a jetpack.",
+      "description": "A squad of elite Voidwarped Renegade jumping into the fray with a jetpack.",
       "category": "elite",
       "rules": ["ambush", "fly", "fear"],
       "options": [
@@ -1518,14 +1521,14 @@
         {"name": "Talon Raptor", "movement": 8, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_pistol", {"id": "handweapon", "count": 2}], "min": 4, "max": 14}
       ]
     },
-    "corrupted_destoyers": {
-      "name": "Corrupted Destroyers",
+    "voidwarped_destoyers": {
+      "name": "Voidwarped Destroyers",
       "description": "Destroyers that have been corrupted by the dark gods.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "models": [
         {
-          "name": "Corrupted Destroyer",
+          "name": "Voidwarped Destroyer",
           "movement": 5,
           "courage": 6,
           "shoot": 6,
@@ -1594,8 +1597,8 @@
         }
       ]
     },
-    "corrupted_bikers": {
-      "name": "Corrupted Bikers",
+    "voidwarped_bikers": {
+      "name": "Voidwarped Bikers",
       "description": "Corrupted marines on combat bikes.",
       "category": "elite",
       "keywords": ["Biker"],
@@ -1610,7 +1613,7 @@
       ],
       "models": [
         {
-          "name": "Corrupted Biker Sergeant",
+          "name": "Voidwarped Biker Sergeant",
           "movement": 8,
           "courage": 6,
           "shoot": 6,
@@ -1631,7 +1634,7 @@
           "max": 1
         },
         {
-          "name": "Corrupted Biker",
+          "name": "Voidwarped Biker",
           "movement": 8,
           "courage": 6,
           "shoot": 6,
@@ -1644,14 +1647,14 @@
         }
       ]
     },
-    "corrupted_apc": {
-      "name": "Corrupted APC",
-      "description": "A durable transport built by corrupted vanguard.",
+    "voidwarped_apc": {
+      "name": "Voidwarped APC",
+      "description": "A durable transport built by Voidwarped Renegade.",
       "category": "transport",
       "keywords": ["Vehicle"],
       "models": [
         {
-          "name": "Corrupted APC",
+          "name": "Voidwarped APC",
           "movement": 10,
           "courage": 6,
           "shoot": 6,
@@ -1683,13 +1686,13 @@
       ]
     },
     "corrrupted_battle_tank": {
-      "name": "Corrupted Battle Tank",
-      "description": "An armored tank helmed by corrupted vanguard.",
+      "name": "Voidwarped Battle Tank",
+      "description": "An armored tank helmed by Voidwarped Renegade.",
       "category": "rare",
       "keywords": ["Vehicle", "Tank"],
       "models": [
         {
-          "name": "Corrupted Battle Tank",
+          "name": "Voidwarped Battle Tank",
           "movement": 10,
           "courage": 6,
           "shoot": 6,
@@ -1722,8 +1725,8 @@
         }
       ]
     },
-    "corrupted_heavy_battle_tank": {
-      "name": "Corrupted Heavy Battle Tank",
+    "voidwarped_heavy_battle_tank": {
+      "name": "Voidwarped Heavy Battle Tank",
       "description": "An heavy armored tank helmed by imperial marines.",
       "category": "rare",
       "keywords": ["Vehicle", "Tank"],
@@ -1763,14 +1766,14 @@
         }
       ]
     },
-    "corrupted_juggernaut": {
-      "name": "Corrupted Juggernaut",
+    "voidwarped_juggernaut": {
+      "name": "Voidwarped Juggernaut",
       "description": "A corrupted attack walker upgraded with infernal weapons.",
       "category": "rare",
       "keywords": ["Vehicle", "Juggernaut"],
       "models": [
         {
-          "name": "Corrupted Juggernaut",
+          "name": "Voidwarped Juggernaut",
           "movement": 8,
           "courage": 6,
           "shoot": 6,
@@ -1816,14 +1819,14 @@
         }
       ]
     },
-    "corrupted_fiend": {
-      "name": "Corrupted Fiend",
+    "voidwarped_fiend": {
+      "name": "Voidwarped Fiend",
       "description": "A vicious beast of twisted metal and flesh made to dominate the battlefeild.",
       "category": "rare",
       "keywords": ["Vehicle", "Monster"],
       "models": [
         {
-          "name": "Corrupted Fiend",
+          "name": "Voidwarped Fiend",
           "movement": 8,
           "courage": 6,
           "shoot": 5,
@@ -1911,13 +1914,13 @@
       ]
     },
     "havoc_dragon": {
-      "name": "Corrupted Dragon",
+      "name": "Voidwarped Dragon",
       "description": "A living metal airplane designed to drag other aircraft out of the air.",
       "category": "elite",
       "keywords": ["Vehicle"],
       "models": [
         {
-          "name": "Corrupted Dragon",
+          "name": "Voidwarped Dragon",
           "movement": 12,
           "courage": 6,
           "shoot": 5,
@@ -2058,7 +2061,7 @@
     "hate": {
       "name": "Hate",
       "phase": "activation",
-      "flavor": "Full with fury, corrupted vanguard can launch devastating close combat assaults.",
+      "flavor": "Full with fury, Voidwarped Renegade can launch devastating close combat assaults.",
       "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
       "cost": 1
     },
