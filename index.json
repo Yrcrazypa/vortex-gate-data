@@ -197,16 +197,6 @@
       "alliance": "order",
       "description": "The Celestial Praetorians are a highly elite force of human soldiers chosen from the most highly skilled members of nearby worlds. They excel at hand to hand combat and bring a retinue of specialists to help support their small numbers."
     },
-    "imperial_inquisition": {
-      "version": "1.0",
-      "name": "Imperial Agencies",
-      "id": "imperial_inquisition",
-      "url": "imperial_inquisition.json",
-      "color": "#7d0a15",
-      "secondary_color": "#010203",
-      "alliance": "order",
-      "description": "The Imperial Agencies is the order dedicated to hunting dangerous demons and other Psychic entities which cannot be trusted in the mankind. Their tactics rely on using skilled demon hunting individuals along with advanced assassins to hunt and destroy those who most dangerous."
-    },
     "voidforge_navigators": {
       "version": "1.0",
       "name": "Voidforge Navigators",
