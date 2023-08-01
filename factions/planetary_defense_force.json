@@ -187,8 +187,6 @@
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_powerweapon", "count": 2},
                 {"id": "handweapon", "count": 2}
               ]
@@ -232,8 +230,6 @@
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_powerweapon", "count": 2},
                 {"id": "handweapon", "count": 2}
@@ -279,8 +275,6 @@
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_powerweapon", "count": 2},
                 {"id": "handweapon", "count": 2}
@@ -336,8 +330,6 @@
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_powerweapon", "count": 2},
                 {"id": "handweapon", "count": 2}
@@ -493,8 +485,6 @@
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_powerweapon", "count": 2},
                 {"id": "handweapon", "count": 2}
               ]
@@ -587,7 +577,7 @@
           "weapons": ["pistol", "frags", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol"]},
-            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["handweapon", "energy_handweapon", "energy_handweapon", "energy_handweapon", "energy_powerweapon"]}
+            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["handweapon", "energy_handweapon", "energy_powerweapon"]}
           ],
           "min": 1,
           "max": 1

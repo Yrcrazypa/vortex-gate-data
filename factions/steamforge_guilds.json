@@ -53,8 +53,6 @@
               "withWeapon": [
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3},
-                {"id": "energy_handweapon", "count": 3},
-                {"id": "energy_handweapon", "count": 3},
                 {"id": "taser_sword", "count": 3},
                 {"id": "energy_staff", "count": 3}
               ]
@@ -90,8 +88,6 @@
               "withWeapon": [
                 {"id": "energy_powerweapon", "count": 2},
                 {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
                 {"id": "taser_sword", "count": 2}
               ]
             },
@@ -121,7 +117,7 @@
           "rules": ["engineer", "protocols", {"id": "support_x", "x": "Vehicles"}],
           "options": [
             {"replaceWeapon": "radiation_pistol", "withWeapon": ["thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol"]},
-            {"replaceWeapon": {"id": "handweapon"}, "withWeapon": ["energy_powerweapon", "taser_sword", "energy_handweapon", "energy_handweapon"]}
+            {"replaceWeapon": {"id": "handweapon"}, "withWeapon": ["energy_powerweapon", "taser_sword", "energy_handweapon"]}
           ],
           "min": 1,
           "max": 1

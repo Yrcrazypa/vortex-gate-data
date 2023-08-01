@@ -21,7 +21,7 @@
           "rules": ["leader", {"id": "wounds", "x": 3}, {"id": "tactician", "x": 1}],
           "weapons": ["heavy_carbine", {"id": "handweapon", "count": 2}, "frags"],
           "options": [
-            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle", "combi_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle"]},
             {"replaceWeapon": ["heavy_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["combat_shotgun", "plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
@@ -29,7 +29,6 @@
               "withWeapon": [
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
-                {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3}
               ]
@@ -57,7 +56,7 @@
           "rules": [{"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}, {"id": "tactician", "x": 1}],
           "weapons": ["heavy_carbine", {"id": "handweapon", "count": 2}, "frags", {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle", "combi_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle"]},
             {"replaceWeapon": ["heavy_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["combat_shotgun", "plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
@@ -65,7 +64,6 @@
               "withWeapon": [
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
-                {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3}
               ]
@@ -135,7 +133,7 @@
           "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["heavy_carbine", {"id": "handweapon", "count": 2}, "frags"],
           "options": [
-            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle", "combi_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle"]},
             {"replaceWeapon": ["heavy_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["combat_shotgun", "plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
@@ -172,7 +170,7 @@
           "rules": [{"id": "leader", "x": "Infantry, Biker"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["heavy_carbine", {"id": "handweapon", "count": 2}, "frags", {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle", "combi_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle"]},
             {"replaceWeapon": ["heavy_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["combat_shotgun", "plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
@@ -251,7 +249,7 @@
           "rules": ["engineer", "leader", {"id": "wounds", "x": 3}],
           "weapons": ["heavy_carbine", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle", "combi_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle"]},
             {"replaceWeapon": ["heavy_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["combat_shotgun", "plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
@@ -287,7 +285,7 @@
           "rules": ["engineer", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
           "weapons": ["heavy_carbine", {"id": "handweapon", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle", "combi_rifle", "combi_rifle"]},
+            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["laser_rifle", "storm_rifle", "combi_rifle", "combi_rifle"]},
             {"replaceWeapon": ["heavy_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["combat_shotgun", "plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
@@ -295,7 +293,6 @@
               "withWeapon": [
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
-                {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3}
               ]
@@ -340,7 +337,6 @@
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "assault_drill", "count": 3},
                 {"id": "energy_handweapon", "count": 3},
-                {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3}
               ]
             },
@@ -367,15 +363,13 @@
           "reflexes": 5,
           "weapons": ["auto_carbine", "handweapon", "frags"],
           "options": [
-            {"replaceWeapon": ["auto_carbine"], "withWeapon": ["combi_rifle", "combi_rifle", "combi_rifle", "combi_rifle", "storm_rifle"]},
+            {"replaceWeapon": ["auto_carbine"], "withWeapon": ["combi_rifle", "storm_rifle"]},
             {"replaceWeapon": ["auto_carbine", "handweapon"], "withWeapon": [["pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": ["pistol"], "withWeapon": ["shotgun", "plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 2}],
               "withWeapon": [
                 {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_handweapon", "count": 2}
               ]
@@ -424,14 +418,12 @@
           "reflexes": 5,
           "weapons": ["heavy_carbine", "handweapon", "frags"],
           "options": [
-            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["combi_rifle", "combi_rifle", "combi_rifle", "combi_rifle", "storm_rifle"]},
+            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["combi_rifle", "storm_rifle"]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["combat_shotgun", "plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 2}],
               "withWeapon": [
                 {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_handweapon", "count": 2}
               ]
@@ -576,8 +568,6 @@
               "replaceWeapon": [{"id": "handweapon", "count": 2}],
               "withWeapon": [
                 {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_handweapon", "count": 2}
               ]
@@ -637,7 +627,7 @@
           "weapons": ["heavy_carbine", "handweapon"],
           "rules": ["engineer"],
           "options": [
-            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["combi_rifle", "combi_rifle", "combi_rifle", "combi_rifle", "storm_rifle"]},
+            {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["combi_rifle", "storm_rifle"]},
             {"replaceWeapon": ["heavy_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]}
           ],
           "min": 1,
