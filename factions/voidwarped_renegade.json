@@ -544,7 +544,6 @@
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
-                {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_claws", "count": 4}
               ]
             },
@@ -578,7 +577,6 @@
               "replaceWeapon": [{"id": "handweapon", "count": 3}],
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 3},
-                {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_claws", "count": 4}
               ]
@@ -616,7 +614,6 @@
               "replaceWeapon": [{"id": "handweapon", "count": 3}],
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 3},
-                {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_claws", "count": 4}
               ]
@@ -880,7 +877,6 @@
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
-                {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_claws", "count": 4},
                 {"id": "chainsaw_glaive", "count": 3}
               ]
@@ -1117,7 +1113,6 @@
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
-                {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_claws", "count": 4}
               ]
             }
@@ -1250,7 +1245,6 @@
               "replaceWeapon": {"id": "energy_handweapon", "count": 3},
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 3},
-                {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_claws", "count": 4},
                 {"id": "energy_staff", "count": 3}
