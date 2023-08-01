@@ -1,626 +1,619 @@
 {
-    "name": "Corrupted Legions",
-    "id": "corrupted_legions",
-    "author": "Xekon#8266",
-    "color": "#343a40",
-    "units": {
-        "corrupted_lord": {
-            "name": "Corrupted Lord",
-            "description": "A favored champion of the dark gods, leading their warband into war.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Corrupted Lord",
-                    "movement": 6,
-                    "courage": 7,
-                    "shoot": 5,
-                    "fight": 7,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "rules": [{"id": "corrupted_tactics", "x": 1}, "leader", {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "great_weapon", "count": 3}],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
-                            "withWeapon": [{"id": "heavy_polearm", "count": 3}, {"id": "heavy_flail", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}]
-                        },
-                        {"addRule": ["shield", {"id": "icon", "x": "Infantry"}]},
-                        {"addWeapon": ["barbed_whip"], "subfactions": ["shock_focus"]},
-                        {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
-                        {"replaceRule": [{"id": "corrupted_tactics", "x": 1}], "withRule": [{"id": "corrupted_tactics", "x": 2}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "corrupted_lord_mount": {
-            "name": "Corrupted Lord on Cursed Steed",
-            "description": "A favored champion of the dark gods, leading their warband into war ontop of a demonic beast.",
-            "category": "hero",
-            "keywords": ["Cavalry"],
-            "models": [
-                {
-                    "name": "Corrupted Lord on Cursed Steed",
-                    "movement": 8,
-                    "courage": 7,
-                    "shoot": 5,
-                    "fight": 7,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "rules": [{"id": "corrupted_tactics", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "heavy_hooves_and_teeth", "count": 2}, {"id": "great_weapon", "count": 3}],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
-                            "withWeapon": [{"id": "heavy_flail", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}, {"id": "heavy_lance", "count": 3}]
-                        },
-                        {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "corrupted_tactics", "x": 1}], "withRule": [{"id": "corrupted_tactics", "x": 2}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "corrupted_lord_on_lizard": {
-            "name": "Corrupted Lord on Lizard Beast",
-            "description": "A favored champion of the dark gods, leading their warband into war ontop of a massive lizard beast.",
-            "category": "hero",
-            "keywords": ["Beast", "Cavalry", "Monster"],
-            "models": [
-                {
-                    "name": "Corrupted Lord on Lizard Beast",
-                    "movement": 8,
-                    "courage": 7,
-                    "shoot": 5,
-                    "fight": 7,
-                    "defense": 8,
-                    "reflexes": 6,
-                    "rules": [{"id": "corrupted_tactics", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 4}],
-                    "weapons": [{"id": "horn_and_claws", "count": 3}, {"id": "bashing_tail", "count": 2}, {"id": "great_weapon", "count": 3}],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "great_weapon", "count": 3}],
-                            "withWeapon": [{"id": "heavy_flail", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}, {"id": "heavy_lance", "count": 3}]
-                        },
-                        {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "corrupted_tactics", "x": 1}], "withRule": [{"id": "corrupted_tactics", "x": 2}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "corrupted_lord_manticore": {
-            "name": "Corrupted Lord on Manticore",
-            "description": "A favored champion of the dark gods, leading their warband into war ontop of a deadly manticore.",
-            "category": "hero",
-            "keywords": ["Beast", "Cavalry", "Monster"],
-            "models": [
-                {
-                    "name": "Corrupted Lord on Manticore",
-                    "movement": 10,
-                    "courage": 7,
-                    "shoot": 5,
-                    "fight": 7,
-                    "defense": 9,
-                    "reflexes": 6,
-                    "rules": [{"id": "corrupted_tactics", "x": 2}, {"id": "wounds", "x": 3}, "fear", "fly", {"id": "leader", "x": "Infantry, Cavalry"}],
-                    "weapons": [{"id": "fangs_and_claws", "count": 6}, {"id": "bashing_tail", "count": 4}, {"id": "great_weapon", "count": 4}],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "great_weapon", "count": 4}],
-                            "withWeapon": [{"id": "heavy_flail", "count": 4}, {"id": "great_weapon", "count": 5}, {"id": "grand_weapon", "count": 4}, {"id": "heavy_lance", "count": 4}]
-                        },
-                        {"addRule": ["relic_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
-                        {"replaceRule": [{"id": "corrupted_tactics", "x": 2}], "withRule": [{"id": "corrupted_tactics", "x": 3}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "sorcerer": {
-            "name": "Sorcerer",
-            "description": "A corrupted spellcaster, bending reality to the twisted visions of their dark gods.",
-            "category": "hero",
-            "models": [
-                {
-                    "name": "Sorcerer",
-                    "movement": 6,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "rules": [{"id": "leader", "x": "Infantry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": ["heavy_handweapon", "staff"],
-                    "options": [
-                        {"replaceWeapon": ["heavy_handweapon", "staff"], "withWeapon": ["great_staff"]},
-                        {"addRule": ["companion", "shield"]},
-                        {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
-                        {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "sorcerer_horse": {
-            "name": "Sorcerer on Cursed Steed",
-            "description": "A corrupted spellcaster on a demonic beast, bending reality to the twisted visions of their dark gods.",
-            "category": "hero",
-            "keywords": ["Cavalry"],
-            "models": [
-                {
-                    "name": "Sorcerer on Cursed Steed",
-                    "movement": 8,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
-                    "weapons": ["heavy_handweapon", "staff", {"id": "heavy_hooves_and_teeth", "count": 2}],
-                    "options": [
-                        {"replaceWeapon": ["heavy_handweapon", "staff"], "withWeapon": ["great_staff"]},
-                        {"addRule": ["companion", "shield"]},
-                        {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "sorcerer_manticore": {
-            "name": "Sorcerer on Manticore",
-            "description": "A corrupted spellcaster on a deadly manticore, bending reality to the twisted visions of their dark gods.",
-            "category": "hero",
-            "keywords": ["Beast", "Cavalry", "Monster"],
-            "models": [
-                {
-                    "name": "Sorcerer on Manticore",
-                    "movement": 10,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 9,
-                    "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, "fear", "fly", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 2}],
-                    "weapons": [{"id": "fangs_and_claws", "count": 6}, {"id": "bashing_tail", "count": 4}, {"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}],
-                    "options": [
-                        {"replaceWeapon": [{"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]},
-                        {"addRule": ["companion", "relic_shield"]},
-                        {"replaceRule": {"id": "magic", "x": 2}, "withRule": {"id": "magic", "x": 3}}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "exalted_sorcerer_disk": {
-            "name": "Exalted Sorcerer on Arcane Disk",
-            "description": "A spellcaster on top of a floating disk, who has mastered the reality-shifting magic of the old gods.",
-            "category": "hero",
-            "keywords": ["Cavalry"],
-            "models": [
-                {
-                    "name": "Exalted Sorcerer on Arcane Disk",
-                    "movement": 8,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "rules": ["hover", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 2}, {"id": "wounds", "x": 3}],
-                    "weapons": ["heavy_handweapon", "great_staff"],
-                    "options": [{"addRule": ["companion", "shield"]}, {"replaceRule": {"id": "magic", "x": 2}, "withRule": {"id": "magic", "x": 3}}],
-                    "min": 1,
-                    "max": 1
-                }
-            ],
-            "subfactions": ["power_focus"]
-        },
-        "pestilence_master_abomination": {
-            "name": "Pestilent Master on Abomination",
-            "description": "A revulsive overlord of a cult of pestilence, riding a personally-fleshcrafted abomination.",
-            "category": "hero",
-            "keywords": ["Beast", "Cavalry", "Monster"],
-            "models": [
-                {
-                    "name": "Pestilent Master on Abomination",
-                    "movement": 6,
-                    "courage": 7,
-                    "shoot": 5,
-                    "fight": 7,
-                    "defense": 10,
-                    "reflexes": 6,
-                    "rules": [{"id": "corrupted_tactics", "x": 2}, {"id": "wounds", "x": 3}, "fear", {"id": "leader", "x": "Infantry, Cavalry"}],
-                    "weapons": [{"id": "crushing_fists", "count": 3}, {"id": "pestilence_tongue", "count": 2}, {"id": "great_weapon", "count": 4}],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "great_weapon", "count": 4}],
-                            "withWeapon": [{"id": "heavy_flail", "count": 4}, {"id": "great_weapon", "count": 5}, {"id": "grand_weapon", "count": 4}, {"id": "heavy_lance", "count": 4}]
-                        },
-                        {"replaceWeapon": [{"id": "pestilence_tongue", "count": 2}], "withWeapon": [[{"id": "pestilence_tentacles", "count": 4}, "pestilence_bile"]]},
-                        {"addRule": [{"id": "magic", "x": 1}]},
-                        {"replaceRule": [{"id": "corrupted_tactics", "x": 2}], "withRule": [{"id": "corrupted_tactics", "x": 3}]}
-                    ],
-                    "min": 1,
-                    "max": 1
-                }
-            ],
-            "subfactions": ["toughness_focus"]
-        },
-        "corrupted_warriors": {
-            "name": "Corrupted Warriors",
-            "description": "A regiment of corrupted warriors who march into battle to gain the favours of their dark gods.",
-            "category": "core",
-            "models": [
-                {
-                    "name": "Corrupted Warrior",
-                    "movement": 6,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "weapons": [{"id": "heavy_handweapon", "count": 2}, "shield"],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "heavy_handweapon", "count": 2}, "shield"],
-                            "withWeapon": [{"id": "heavy_handweapon", "count": 3}, {"id": "grand_weapon", "count": 2}, [{"id": "polearm", "count": 2}, "shield"], {"id": "heavy_flail", "count": 2}],
-                            "modelLimit": "all"
-                        },
-                        {"addWeapon": ["magic_bolt"], "modelLimit": "all", "subfactions": ["power_focus"]},
-                        {"addWeapon": ["barbed_whip"], "subfactions": ["shock_focus"]},
-                        {"addRule": [{"id": "defiant", "x": 3}], "modelLimit": "all", "subfactions": ["toughness_focus"]}
-                    ],
-                    "min": 5,
-                    "max": 20
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "corrupted_mutants": {
-            "name": "Corrupted Mutants",
-            "description": "A pack of corrupted warriors who have gone insane in their twisted bodies.",
-            "category": "core",
-            "models": [
-                {
-                    "name": "Corrupted Mutant",
-                    "movement": 6,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 6,
-                    "reflexes": 6,
-                    "rules": ["mutations"],
-                    "weapons": [{"id": "fangs_and_teeth", "count": 3}],
-                    "options": [{"addWeapon": ["magic_bolt"], "modelLimit": "all", "subfactions": ["magic"]}],
-                    "min": 5,
-                    "max": 20
-                }
-            ]
-        },
-        "corrupted_barbarians": {
-            "name": "Corrupted Barbarians",
-            "description": "Frenzied Warriors who rush into battle to appease their dark gods.",
-            "category": "core",
-            "models": [
-                {
-                    "name": "Corrupted Barbarian",
-                    "movement": 7,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 4,
-                    "reflexes": 5,
-                    "weapons": ["handweapon", "shield"],
-                    "options": [
-                        {
-                            "replaceWeapon": ["handweapon", "shield"],
-                            "withWeapon": [
-                                "polearm",
-                                "great_weapon",
-                                "heavy_flail",
-                                {"id": "handweapon", "count": 2},
-                                ["short_bow", "light_handweapon"],
-                                ["light_flail", "shield"],
-                                ["spear", "shield"],
-                                ["javelin", "shield"]
-                            ],
-                            "modelLimit": "all"
-                        },
-                        {"addWeapon": ["magic_bolt"], "modelLimit": "all", "subfactions": ["power_focus"]},
-                        {"addRule": ["artifact"], "modelLimit": "1/10", "subfactions": ["power_focus"]},
-                        {"addRule": ["companion"], "modelLimit": "1/10", "subfactions": ["power_focus"]}
-                    ],
-                    "min": 10,
-                    "max": 20
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "barbarian_outriders": {
-            "name": "Barbarian Outriders",
-            "description": "Barbarians who ride atop crazed beasts into battle, trampling their foes under their hooves and steel.",
-            "category": "elite",
-            "keywords": ["Cavalry"],
-            "models": [
-                {
-                    "name": "Barbarian Outrider",
-                    "movement": 8,
-                    "courage": 5,
-                    "shoot": 5,
-                    "fight": 5,
-                    "defense": 5,
-                    "reflexes": 5,
-                    "weapons": ["handweapon", "shield", {"id": "heavy_hooves_and_teeth", "count": 2}],
-                    "options": [
-                        {
-                            "replaceWeapon": ["handweapon", "shield"],
-                            "withWeapon": ["heavy_flail", ["spear", "javelin"], ["short_bow", "light_handweapon"], ["light_flail", "shield"]],
-                            "modelLimit": "all"
-                        }
-                    ],
-                    "min": 5,
-                    "max": 20
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "corrupted_knights": {
-            "name": "Corrupted Knights",
-            "description": "A regiment of corrupted knights who ride into battle atop demonic steeds to gain the favours of their dark gods.",
-            "category": "elite",
-            "keywords": ["Cavalry"],
-            "models": [
-                {
-                    "name": "Corrupted Knight",
-                    "movement": 8,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 5,
-                    "rules": ["fear", {"id": "wounds", "x": 2}],
-                    "weapons": [{"id": "lance", "count": 2}, {"id": "heavy_hooves_and_teeth", "count": 2}, "shield"],
-                    "options": [{"replaceWeapon": [{"id": "lance", "count": 2}], "withWeapon": [{"id": "grand_weapon", "count": 2}, {"id": "heavy_flail", "count": 2}]}],
-                    "min": 3,
-                    "max": 15
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "chosen": {
-            "name": "Corrupted Chosen",
-            "description": "Blessed by their dark gods, these warriors set out to slay the mightiest of heroes.",
-            "category": "elite",
-            "models": [
-                {
-                    "name": "Corrupted Chosen",
-                    "movement": 6,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "rules": ["assassin"],
-                    "weapons": [{"id": "grand_weapon", "count": 4}],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "grand_weapon", "count": 4}],
-                            "withWeapon": [{"id": "lethal_grand_weapon", "count": 4}, {"id": "grand_weapon", "count": 5}, {"id": "great_polearm", "count": 4}, {"id": "heavy_flail", "count": 4}]
-                        },
-                        {"addRule": ["shield"]}
-                    ],
-                    "min": 3,
-                    "max": 15
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "chosen_knights": {
-            "name": "Chosen Knights",
-            "description": "Personal Bodyguards of the great Corrupted Lords, ready to bring carnage to the battlefield.",
-            "category": "rare",
-            "keywords": ["Cavalry"],
-            "models": [
-                {
-                    "name": "Chosen Knight",
-                    "movement": 8,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "rules": ["assassin", "fear", {"id": "wounds", "x": 3}],
-                    "weapons": [{"id": "grand_weapon", "count": 4}, {"id": "heavy_hooves_and_teeth", "count": 2}],
-                    "options": [
-                        {
-                            "replaceWeapon": [{"id": "grand_weapon", "count": 4}],
-                            "withWeapon": [{"id": "grand_weapon", "count": 5}, {"id": "heavy_flail", "count": 4}, {"id": "great_lance", "count": 4}]
-                        },
-                        {"addRule": ["shield"]}
-                    ],
-                    "min": 3,
-                    "max": 12
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "manticore": {
-            "name": "Manticore",
-            "description": "A terrifying winged beast, raging across the battlefield in a flurry of claws and teeth.",
-            "category": "rare",
-            "keywords": ["Beast", "Monster"],
-            "models": [
-                {
-                    "name": "Manticore",
-                    "movement": 10,
-                    "courage": 6,
-                    "shoot": 6,
-                    "fight": 7,
-                    "defense": 9,
-                    "reflexes": 6,
-                    "rules": [{"id": "wounds", "x": 3}, "fear", "fly"],
-                    "weapons": [{"id": "bashing_tail", "count": 4}, {"id": "fangs_and_claws", "count": 6}],
-                    "min": 1,
-                    "max": 1
-                }
-            ]
-        },
-        "demonic_spawn": {
-            "name": "Demonic Spawn",
-            "description": "Horribly mutated beings that run rampant on the battlefield.",
-            "category": "elite",
-            "keywords": ["Beast", "Monster"],
-            "models": [
-                {
-                    "name": "Demonic Spawn",
-                    "movement": 7,
-                    "courage": 7,
-                    "shoot": 0,
-                    "fight": 5,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "rules": ["agile", "fear", "mutations", {"id": "wounds", "x": 2}],
-                    "weapons": [{"id": "fangs_and_claws", "count": 3}],
-                    "min": 1,
-                    "max": 5
-                }
-            ]
-        },
-        "corrupted_berzerkers": {
-            "name": "Corrupted Berzerkers",
-            "description": "A regiment of mindless brutes blessed with eternal bloodlust, killing for their dark gods.",
-            "category": "core",
-            "subfactions": ["assault_focus"],
-            "models": [
-                {
-                    "name": "Corrupted Berzerker",
-                    "movement": 6,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 7,
-                    "defense": 7,
-                    "reflexes": 6,
-                    "rules": ["furious"],
-                    "weapons": [{"id": "heavy_handweapon", "count": 4}],
-                    "options": [
-                        {"replaceWeapon": [{"id": "heavy_handweapon", "count": 4}], "withWeapon": [{"id": "great_weapon", "count": 4}], "modelLimit": "all"},
-                        {"addWeapon": ["bladed_gauntlet"], "modelLimit": "all"}
-                    ],
-                    "min": 3,
-                    "max": 15
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
-        },
-        "enchanted_knights": {
-            "name": "Enchanted Knights",
-            "description": "Knights who have acquired forbidden knowledge and transmutated their steeds into arcane disks.",
-            "category": "elite",
-            "subfactions": ["power_focus"],
-            "keywords": ["Cavalry"],
-            "models": [
-                {
-                    "name": "Enchanted Knight",
-                    "movement": 8,
-                    "courage": 6,
-                    "shoot": 5,
-                    "fight": 6,
-                    "defense": 7,
-                    "reflexes": 5,
-                    "rules": ["fear", "hover", {"id": "wounds", "x": 2}],
-                    "weapons": [{"id": "lance", "count": 2}, "shield", "magic_bolt"],
-                    "options": [{"replaceWeapon": [{"id": "lance", "count": 2}], "withWeapon": [{"id": "grand_weapon", "count": 2}, {"id": "heavy_flail", "count": 2}]}],
-                    "min": 3,
-                    "max": 15
-                }
-            ],
-            "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+  "name": "Corrupted Legions",
+  "id": "corrupted_legions",
+  "author": "Xekon#8266",
+  "color": "#343a40",
+  "units": {
+    "corrupted_lord": {
+      "name": "Corrupted Lord",
+      "description": "A favored champion of the dark gods, leading their warband into war.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Corrupted Lord",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 7,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": [{"id": "corrupted_tactics", "x": 1}, "leader", {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "great_weapon", "count": 3}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+              "withWeapon": [{"id": "heavy_polearm", "count": 3}, {"id": "heavy_flail", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}]
+            },
+            {"addRule": ["shield", {"id": "icon", "x": "Infantry"}]},
+            {"addWeapon": ["barbed_whip"], "subfactions": ["shock_focus"]},
+            {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
+            {"replaceRule": [{"id": "corrupted_tactics", "x": 1}], "withRule": [{"id": "corrupted_tactics", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
         }
+      ]
     },
-    "weapons": {
-        "pestilence_great_weapon": {"name": "Pestilent Great Weapon", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["poison"]},
-        "pestilence_tentacles": {"name": "Pestilent Tentacles", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["poison", "rending"]},
-        "pestilence_tongue": {"name": "Pestilent Tongue", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison"]},
-        "pestilence_bile": {"name": "Pestilent Bile", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison", "flame", {"id": "blast", "x": 3}]},
-        "pestilence_heavy_handweapon": {"name": "Pestilent Heavy Weapon", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison"]},
-        "pestilence_great_flail": {"name": "Pestilent Great Flail", "attacks": 1, "ap": 5, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "cumbersome", "poison"]},
-        "pestilence_polearm": {"name": "Pestilent Polearm", "attacks": 1, "ap": 2, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "poison"]},
-        "bladed_gauntlet": {"name": "Bladed Gauntlet", "attacks": 1, "short": "Melee", "rules": ["parry"]},
-        "light_flail": {"name": "Light Flail", "attacks": 1, "ap": 2, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "cumbersome"]},
-        "legend_cursed_blade": {"name": "Blade of Ruin", "attacks": 1, "ap": 3, "short": "Melee", "rules": [{"id": "deadly", "x": 1}, {"id": "deadly", "x": 1}]}
-    },
-    "rules": {
-        "corrupted_tactics": {
-            "name": "Corrupted Tactics",
-            "inputs": ["x"],
-            "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",
-            "points": ["rule.x", {"multiply": 10}]
-        },
-        "artifact": {"name": "Cursed Artifact", "description": "Once per turn, for every model with this rule, add +1 to a cast roll of a friendly Power model within 6“ of this unit.", "points": 5},
-        "companion": {"name": "Arcane Companion", "description": "Once per turn when a power within 24“ of this model gets dispelled, deal 1 hit with AP(2) to the caster.", "points": 5},
-        "mutations": {
-            "name": "Mutations",
-            "description": "At the beginning of the game choose one of the following effects to be applied to this unit:\n* Strength rolls of 1 or 2 gain +1 AP\n* Strength rolls of 1 or 2 cause an additional hit.\n* +1 Save",
-            "points": 2
-        },
-        "legend_war_veteran": {"name": "War Veteran", "description": "This unit can be affected an additional time by the Eye of the Gods strategy.", "points": 5}
-    },
-    "strategies": [
+    "corrupted_lord_mount": {
+      "name": "Corrupted Lord on Cursed Steed",
+      "description": "A favored champion of the dark gods, leading their warband into war ontop of a demonic beast.",
+      "category": "hero",
+      "keywords": ["Cavalry"],
+      "models": [
         {
-            "name": "Eye of the Gods",
-            "phase": "activation",
-            "description": "Use when a friendly unit destroys an enemy unit. That unit gains +1 Strength until the end of the battle. A unit may only be affected by this strategy once.",
-            "flavor": "The forces of chaos commit countless bloodbaths to appease their dark gods, in hope of gaining boons and turning into a demon lord.",
-            "cost": 2
-        },
-        {
-            "name": "Fearless",
-            "phase": "activation",
-            "description": "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
-            "flavor": "Unflinged by the horrors of war, the forces of chaos march ever forward.",
-            "cost": 1
-        },
-        {
-            "name": "Blazing Runes",
-            "phase": "activation",
-            "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
-            "flavor": "Corrupted Warriors wield enchanted weapons, covered in unholy runes and burning with dark magic.",
-            "cost": 1
+          "name": "Corrupted Lord on Cursed Steed",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 7,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": [{"id": "corrupted_tactics", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "heavy_hooves_and_teeth", "count": 2}, {"id": "great_weapon", "count": 3}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+              "withWeapon": [{"id": "heavy_flail", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}, {"id": "heavy_lance", "count": 3}]
+            },
+            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"replaceRule": [{"id": "corrupted_tactics", "x": 1}], "withRule": [{"id": "corrupted_tactics", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
         }
-    ],
-    "relics": [
+      ]
+    },
+    "corrupted_lord_on_lizard": {
+      "name": "Corrupted Lord on Lizard Beast",
+      "description": "A favored champion of the dark gods, leading their warband into war ontop of a massive lizard beast.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry", "Monster"],
+      "models": [
         {
-            "name": "Runic Armor",
-            "rule": {"id": "defiant", "x": 3},
-            "description": "Upgrade one _Leader_ model with Defiant(3).",
-            "flavor": "This enchanted piece of armor grants its wearer unholy vitality.",
-            "points": 5
-        },
-        {
-            "name": "Blade of Ruin",
-            "weapon": "legend_cursed_blade",
-            "description": "Replace one _Leader_ model's Great Weapon(X) with Blade of Ruin(X).",
-            "flavor": "This ancient relic emits an aura of malice, dripping with black blood.",
-            "points": 5
-        },
-        {
-            "name": "War Veteran",
-            "rule": "legend_war_veteran",
-            "description": "Upgrade one _Leader_ model with War Veteran.",
-            "flavor": "This hero has lived through so many battles that they are being gazed upon by the dark gods.",
-            "points": 10
+          "name": "Corrupted Lord on Lizard Beast",
+          "movement": 8,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 7,
+          "defense": 8,
+          "reflexes": 6,
+          "rules": [{"id": "corrupted_tactics", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "wounds", "x": 4}],
+          "weapons": [{"id": "horn_and_claws", "count": 3}, {"id": "bashing_tail", "count": 2}, {"id": "great_weapon", "count": 3}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "great_weapon", "count": 3}],
+              "withWeapon": [{"id": "heavy_flail", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "grand_weapon", "count": 3}, {"id": "heavy_lance", "count": 3}]
+            },
+            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"replaceRule": [{"id": "corrupted_tactics", "x": 1}], "withRule": [{"id": "corrupted_tactics", "x": 2}]}
+          ],
+          "min": 1,
+          "max": 1
         }
-    ],
-    "powers": {
-        "balefire": {"name": "Balefire", "description": "Target enemy unit within 24\" take 3 hits with AP(1).", "charge": 7},
-        "sap_strength": {"name": "Sap Strength", "description": "Target enemy unit within 24\" has -1 Strength until the end of the turn.", "charge": 6},
-        "hex": {"name": "Hex", "description": "Target enemy unit within 12\" must re-roll successful Save rolls of 1 until the end of the turn.", "charge": 5}
+      ]
+    },
+    "corrupted_lord_manticore": {
+      "name": "Corrupted Lord on Manticore",
+      "description": "A favored champion of the dark gods, leading their warband into war ontop of a deadly manticore.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry", "Monster"],
+      "models": [
+        {
+          "name": "Corrupted Lord on Manticore",
+          "movement": 10,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "corrupted_tactics", "x": 2}, {"id": "wounds", "x": 3}, "fear", "fly", {"id": "leader", "x": "Infantry, Cavalry"}],
+          "weapons": [{"id": "fangs_and_claws", "count": 6}, {"id": "bashing_tail", "count": 4}, {"id": "great_weapon", "count": 4}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "great_weapon", "count": 4}],
+              "withWeapon": [{"id": "heavy_flail", "count": 4}, {"id": "great_weapon", "count": 5}, {"id": "grand_weapon", "count": 4}, {"id": "heavy_lance", "count": 4}]
+            },
+            {"addRule": ["relic_shield", {"id": "icon", "x": "Infantry, Cavalry"}]},
+            {"replaceRule": [{"id": "corrupted_tactics", "x": 2}], "withRule": [{"id": "corrupted_tactics", "x": 3}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "sorcerer": {
+      "name": "Sorcerer",
+      "description": "A corrupted spellcaster, bending reality to the twisted visions of their dark gods.",
+      "category": "hero",
+      "models": [
+        {
+          "name": "Sorcerer",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": [{"id": "leader", "x": "Infantry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["heavy_handweapon", "staff"],
+          "options": [
+            {"replaceWeapon": ["heavy_handweapon", "staff"], "withWeapon": ["great_staff"]},
+            {"addRule": ["companion", "shield"]},
+            {"addRule": ["disk_of_change"], "subfactions": ["power_focus"]},
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "sorcerer_horse": {
+      "name": "Sorcerer on Cursed Steed",
+      "description": "A corrupted spellcaster on a demonic beast, bending reality to the twisted visions of their dark gods.",
+      "category": "hero",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Sorcerer on Cursed Steed",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+          "weapons": ["heavy_handweapon", "staff", {"id": "heavy_hooves_and_teeth", "count": 2}],
+          "options": [
+            {"replaceWeapon": ["heavy_handweapon", "staff"], "withWeapon": ["great_staff"]},
+            {"addRule": ["companion", "shield"]},
+            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "sorcerer_manticore": {
+      "name": "Sorcerer on Manticore",
+      "description": "A corrupted spellcaster on a deadly manticore, bending reality to the twisted visions of their dark gods.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry", "Monster"],
+      "models": [
+        {
+          "name": "Sorcerer on Manticore",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fear", "fly", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 2}],
+          "weapons": [{"id": "fangs_and_claws", "count": 6}, {"id": "bashing_tail", "count": 4}, {"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "heavy_handweapon", "count": 2}, {"id": "staff", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]},
+            {"addRule": ["companion", "relic_shield"]},
+            {"replaceRule": {"id": "magic", "x": 2}, "withRule": {"id": "magic", "x": 3}}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "exalted_sorcerer_disk": {
+      "name": "Exalted Sorcerer on Arcane Disk",
+      "description": "A spellcaster on top of a floating disk, who has mastered the reality-shifting magic of the old gods.",
+      "category": "hero",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Exalted Sorcerer on Arcane Disk",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": ["hover", {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 2}, {"id": "wounds", "x": 3}],
+          "weapons": ["heavy_handweapon", "great_staff"],
+          "options": [{"addRule": ["companion", "shield"]}, {"replaceRule": {"id": "magic", "x": 2}, "withRule": {"id": "magic", "x": 3}}],
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "subfactions": ["power_focus"]
+    },
+    "pestilence_master_abomination": {
+      "name": "Pestilent Master on Abomination",
+      "description": "A revulsive overlord of a cult of pestilence, riding a personally-fleshcrafted abomination.",
+      "category": "hero",
+      "keywords": ["Beast", "Cavalry", "Monster"],
+      "models": [
+        {
+          "name": "Pestilent Master on Abomination",
+          "movement": 6,
+          "courage": 7,
+          "shoot": 5,
+          "fight": 7,
+          "defense": 10,
+          "reflexes": 6,
+          "rules": [{"id": "corrupted_tactics", "x": 2}, {"id": "wounds", "x": 3}, "fear", {"id": "leader", "x": "Infantry, Cavalry"}],
+          "weapons": [{"id": "crushing_fists", "count": 3}, {"id": "pestilence_tongue", "count": 2}, {"id": "great_weapon", "count": 4}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "great_weapon", "count": 4}],
+              "withWeapon": [{"id": "heavy_flail", "count": 4}, {"id": "great_weapon", "count": 5}, {"id": "grand_weapon", "count": 4}, {"id": "heavy_lance", "count": 4}]
+            },
+            {"replaceWeapon": [{"id": "pestilence_tongue", "count": 2}], "withWeapon": [[{"id": "pestilence_tentacles", "count": 4}, "pestilence_bile"]]},
+            {"addRule": [{"id": "magic", "x": 1}]},
+            {"replaceRule": [{"id": "corrupted_tactics", "x": 2}], "withRule": [{"id": "corrupted_tactics", "x": 3}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "subfactions": ["toughness_focus"]
+    },
+    "corrupted_warriors": {
+      "name": "Corrupted Warriors",
+      "description": "A regiment of corrupted warriors who march into battle to gain the favours of their dark gods.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Corrupted Warrior",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "weapons": [{"id": "heavy_handweapon", "count": 2}, "shield"],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "heavy_handweapon", "count": 2}, "shield"],
+              "withWeapon": [{"id": "heavy_handweapon", "count": 3}, {"id": "grand_weapon", "count": 2}, [{"id": "polearm", "count": 2}, "shield"], {"id": "heavy_flail", "count": 2}],
+              "modelLimit": "all"
+            },
+            {"addWeapon": ["magic_bolt"], "modelLimit": "all", "subfactions": ["power_focus"]},
+            {"addWeapon": ["barbed_whip"], "subfactions": ["shock_focus"]},
+            {"addRule": [{"id": "defiant", "x": 3}], "modelLimit": "all", "subfactions": ["toughness_focus"]}
+          ],
+          "min": 5,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "corrupted_mutants": {
+      "name": "Corrupted Mutants",
+      "description": "A pack of corrupted warriors who have gone insane in their twisted bodies.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Corrupted Mutant",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 6,
+          "reflexes": 6,
+          "rules": ["mutations"],
+          "weapons": [{"id": "fangs_and_teeth", "count": 3}],
+          "options": [{"addWeapon": ["magic_bolt"], "modelLimit": "all", "subfactions": ["magic"]}],
+          "min": 5,
+          "max": 20
+        }
+      ]
+    },
+    "corrupted_barbarians": {
+      "name": "Corrupted Barbarians",
+      "description": "Frenzied Warriors who rush into battle to appease their dark gods.",
+      "category": "core",
+      "models": [
+        {
+          "name": "Corrupted Barbarian",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 4,
+          "reflexes": 5,
+          "weapons": ["handweapon", "shield"],
+          "options": [
+            {
+              "replaceWeapon": ["handweapon", "shield"],
+              "withWeapon": [
+                "polearm",
+                "great_weapon",
+                "heavy_flail",
+                {"id": "handweapon", "count": 2},
+                ["short_bow", "light_handweapon"],
+                ["light_flail", "shield"],
+                ["spear", "shield"],
+                ["javelin", "shield"]
+              ],
+              "modelLimit": "all"
+            },
+            {"addWeapon": ["magic_bolt"], "modelLimit": "all", "subfactions": ["power_focus"]},
+            {"addRule": ["artifact"], "modelLimit": "1/10", "subfactions": ["power_focus"]},
+            {"addRule": ["companion"], "modelLimit": "1/10", "subfactions": ["power_focus"]}
+          ],
+          "min": 10,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "barbarian_outriders": {
+      "name": "Barbarian Outriders",
+      "description": "Barbarians who ride atop crazed beasts into battle, trampling their foes under their hooves and steel.",
+      "category": "elite",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Barbarian Outrider",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 5,
+          "reflexes": 5,
+          "weapons": ["handweapon", "shield", {"id": "heavy_hooves_and_teeth", "count": 2}],
+          "options": [
+            {"replaceWeapon": ["handweapon", "shield"], "withWeapon": ["heavy_flail", ["spear", "javelin"], ["short_bow", "light_handweapon"], ["light_flail", "shield"]], "modelLimit": "all"}
+          ],
+          "min": 5,
+          "max": 20
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "corrupted_knights": {
+      "name": "Corrupted Knights",
+      "description": "A regiment of corrupted knights who ride into battle atop demonic steeds to gain the favours of their dark gods.",
+      "category": "elite",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Corrupted Knight",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "rules": ["fear", {"id": "wounds", "x": 2}],
+          "weapons": [{"id": "lance", "count": 2}, {"id": "heavy_hooves_and_teeth", "count": 2}, "shield"],
+          "options": [{"replaceWeapon": [{"id": "lance", "count": 2}], "withWeapon": [{"id": "grand_weapon", "count": 2}, {"id": "heavy_flail", "count": 2}]}],
+          "min": 3,
+          "max": 15
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "chosen": {
+      "name": "Corrupted Chosen",
+      "description": "Blessed by their dark gods, these warriors set out to slay the mightiest of heroes.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Corrupted Chosen",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": ["assassin"],
+          "weapons": [{"id": "grand_weapon", "count": 4}],
+          "options": [
+            {
+              "replaceWeapon": [{"id": "grand_weapon", "count": 4}],
+              "withWeapon": [{"id": "lethal_grand_weapon", "count": 4}, {"id": "grand_weapon", "count": 5}, {"id": "great_polearm", "count": 4}, {"id": "heavy_flail", "count": 4}]
+            },
+            {"addRule": ["shield"]}
+          ],
+          "min": 3,
+          "max": 15
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "chosen_knights": {
+      "name": "Chosen Knights",
+      "description": "Personal Bodyguards of the great Corrupted Lords, ready to bring carnage to the battlefield.",
+      "category": "rare",
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Chosen Knight",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": ["assassin", "fear", {"id": "wounds", "x": 3}],
+          "weapons": [{"id": "grand_weapon", "count": 4}, {"id": "heavy_hooves_and_teeth", "count": 2}],
+          "options": [
+            {"replaceWeapon": [{"id": "grand_weapon", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 5}, {"id": "heavy_flail", "count": 4}, {"id": "great_lance", "count": 4}]},
+            {"addRule": ["shield"]}
+          ],
+          "min": 3,
+          "max": 12
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "manticore": {
+      "name": "Manticore",
+      "description": "A terrifying winged beast, raging across the battlefield in a flurry of claws and teeth.",
+      "category": "rare",
+      "keywords": ["Beast", "Monster"],
+      "models": [
+        {
+          "name": "Manticore",
+          "movement": 10,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 7,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 3}, "fear", "fly"],
+          "weapons": [{"id": "bashing_tail", "count": 4}, {"id": "fangs_and_claws", "count": 6}],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "demonic_spawn": {
+      "name": "Demonic Spawn",
+      "description": "Horribly mutated beings that run rampant on the battlefield.",
+      "category": "elite",
+      "keywords": ["Beast", "Monster"],
+      "models": [
+        {
+          "name": "Demonic Spawn",
+          "movement": 7,
+          "courage": 7,
+          "shoot": 0,
+          "fight": 5,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": ["agile", "fear", "mutations", {"id": "wounds", "x": 2}],
+          "weapons": [{"id": "fangs_and_claws", "count": 3}],
+          "min": 1,
+          "max": 5
+        }
+      ]
+    },
+    "corrupted_berzerkers": {
+      "name": "Corrupted Berzerkers",
+      "description": "A regiment of mindless brutes blessed with eternal bloodlust, killing for their dark gods.",
+      "category": "core",
+      "subfactions": ["assault_focus"],
+      "models": [
+        {
+          "name": "Corrupted Berzerker",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 7,
+          "defense": 7,
+          "reflexes": 6,
+          "rules": ["furious"],
+          "weapons": [{"id": "heavy_handweapon", "count": 4}],
+          "options": [
+            {"replaceWeapon": [{"id": "heavy_handweapon", "count": 4}], "withWeapon": [{"id": "great_weapon", "count": 4}], "modelLimit": "all"},
+            {"addWeapon": ["bladed_gauntlet"], "modelLimit": "all"}
+          ],
+          "min": 3,
+          "max": 15
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
+    },
+    "enchanted_knights": {
+      "name": "Enchanted Knights",
+      "description": "Knights who have acquired forbidden knowledge and transmutated their steeds into arcane disks.",
+      "category": "elite",
+      "subfactions": ["power_focus"],
+      "keywords": ["Cavalry"],
+      "models": [
+        {
+          "name": "Enchanted Knight",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "rules": ["fear", "hover", {"id": "wounds", "x": 2}],
+          "weapons": [{"id": "lance", "count": 2}, "shield", "magic_bolt"],
+          "options": [{"replaceWeapon": [{"id": "lance", "count": 2}], "withWeapon": [{"id": "grand_weapon", "count": 2}, {"id": "heavy_flail", "count": 2}]}],
+          "min": 3,
+          "max": 15
+        }
+      ],
+      "options": [{"addRule": ["champion"], "modelLimit": 1}, {"addRule": ["banner"], "modelLimit": 1}, {"addRule": ["musician"], "modelLimit": 1}]
     }
+  },
+  "weapons": {
+    "pestilence_great_weapon": {"name": "Pestilent Great Weapon", "attacks": 1, "ap": 3, "short": "Melee", "rules": ["poison"]},
+    "pestilence_tentacles": {"name": "Pestilent Tentacles", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["poison", "rending"]},
+    "pestilence_tongue": {"name": "Pestilent Tongue", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison"]},
+    "pestilence_bile": {"name": "Pestilent Bile", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison", "flame", {"id": "blast", "x": 3}]},
+    "pestilence_heavy_handweapon": {"name": "Pestilent Heavy Weapon", "attacks": 1, "ap": 2, "short": "Melee", "rules": ["poison"]},
+    "pestilence_great_flail": {"name": "Pestilent Great Flail", "attacks": 1, "ap": 5, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "cumbersome", "poison"]},
+    "pestilence_polearm": {"name": "Pestilent Polearm", "attacks": 1, "ap": 2, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "poison"]},
+    "bladed_gauntlet": {"name": "Bladed Gauntlet", "attacks": 1, "short": "Melee", "rules": ["parry"]},
+    "light_flail": {"name": "Light Flail", "attacks": 1, "ap": 2, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "cumbersome"]},
+    "legend_cursed_blade": {"name": "Blade of Ruin", "attacks": 1, "ap": 3, "short": "Melee", "rules": [{"id": "deadly", "x": 1}, {"id": "deadly", "x": 1}]}
+  },
+  "rules": {
+    "corrupted_tactics": {
+      "name": "Corrupted Tactics",
+      "inputs": ["x"],
+      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",
+      "points": ["rule.x", {"multiply": 10}]
+    },
+    "artifact": {"name": "Cursed Artifact", "description": "Once per turn, for every model with this rule, add +1 to a cast roll of a friendly Power model within 6“ of this unit.", "points": 5},
+    "companion": {"name": "Arcane Companion", "description": "Once per turn when a power within 24“ of this model gets dispelled, deal 1 hit with AP(2) to the caster.", "points": 5},
+    "mutations": {
+      "name": "Mutations",
+      "description": "At the beginning of the game choose one of the following effects to be applied to this unit:\n* Strength rolls of 1 or 2 gain +1 AP\n* Strength rolls of 1 or 2 cause an additional hit.\n* +1 Save",
+      "points": 2
+    },
+    "legend_war_veteran": {"name": "War Veteran", "description": "This unit can be affected an additional time by the Eye of the Gods strategy.", "points": 5}
+  },
+  "strategies": [
+    {
+      "name": "Eye of the Gods",
+      "phase": "activation",
+      "description": "Use when a friendly unit destroys an enemy unit. That unit gains +1 Strength until the end of the battle. A unit may only be affected by this strategy once.",
+      "flavor": "The forces of chaos commit countless bloodbaths to appease their dark gods, in hope of gaining boons and turning into a demon lord.",
+      "cost": 2
+    },
+    {
+      "name": "Fearless",
+      "phase": "activation",
+      "description": "Use before activating a unit. That unit may immediately remove up to 2 Shock.",
+      "flavor": "Unflinged by the horrors of war, the forces of chaos march ever forward.",
+      "cost": 1
+    },
+    {
+      "name": "Blazing Runes",
+      "phase": "activation",
+      "description": "Use before an Infantry unit fights. Hit rolls of 1 or 2 gain +1 AP.",
+      "flavor": "Corrupted Warriors wield enchanted weapons, covered in unholy runes and burning with dark magic.",
+      "cost": 1
+    }
+  ],
+  "relics": [
+    {
+      "name": "Runic Armor",
+      "rule": {"id": "defiant", "x": 3},
+      "description": "Upgrade one _Leader_ model with Defiant(3).",
+      "flavor": "This enchanted piece of armor grants its wearer unholy vitality.",
+      "points": 5
+    },
+    {
+      "name": "Blade of Ruin",
+      "weapon": "legend_cursed_blade",
+      "description": "Replace one _Leader_ model's Great Weapon(X) with Blade of Ruin(X).",
+      "flavor": "This ancient relic emits an aura of malice, dripping with black blood.",
+      "points": 5
+    },
+    {
+      "name": "War Veteran",
+      "rule": "legend_war_veteran",
+      "description": "Upgrade one _Leader_ model with War Veteran.",
+      "flavor": "This hero has lived through so many battles that they are being gazed upon by the dark gods.",
+      "points": 10
+    }
+  ],
+  "powers": {
+    "balefire": {"name": "Balefire", "description": "Target enemy unit within 24\" take 3 hits with AP(1).", "charge": 7},
+    "sap_strength": {"name": "Sap Strength", "description": "Target enemy unit within 24\" has -1 Strength until the end of the turn.", "charge": 6},
+    "hex": {"name": "Hex", "description": "Target enemy unit within 12\" must re-roll successful Save rolls of 1 until the end of the turn.", "charge": 5}
+  }
 }
