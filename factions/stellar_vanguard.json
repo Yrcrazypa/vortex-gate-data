@@ -572,6 +572,7 @@
           "modelLimit": "1/5"
         },
         {"addWeapon": "grenade_launcher_attachment", "modelLimit": "1/5"},
+        {"addRule": {"id": "defiant", "x": 2}, "subfactions": ["assault_focus"], "modelLimit": "all"},
         {"addRule": "multi_scanner", "modelLimit": 1}
       ]
     },
@@ -582,11 +583,11 @@
       "models": [
         {
           "name": "Gravite Tactician Sergeant",
-          "movement": 6,
+          "movement": 5,
           "courage": 6,
           "shoot": 6,
           "fight": 6,
-          "defense": 8,
+          "defense": 9,
           "reflexes": 6,
           "weapons": ["heavy_marine_rifle", "handweapon"],
           "options": [
@@ -601,10 +602,9 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Gravite Tactician Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "handweapon"], "min": 4, "max": 19}
+        {"name": "Gravite Tactician Marine", "movement": 5, "courage": 6, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 6, "weapons": ["heavy_marine_rifle", "handweapon"], "min": 4, "max": 9}
       ],
       "options": [
-        {"replaceWeapon": ["heavy_marine_rifle", "handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
         {
           "replaceWeapon": "heavy_marine_rifle",
           "withWeapon": ["heavy_machinegun", "missile_launcher", "laser_cannon", "fusion_cannon", "plasma_cannon", "gravity_cannon", "heavy_flamethrower", "thermal_lance", "autocannon"],
@@ -671,7 +671,11 @@
         },
         {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
         {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"], "modelLimit": "1/5"},
-        {"addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"id": "evasive", "name": "Camouflage Cloak"}, "grappling_hook", "fear", "light_armor"], "modelLimit": "all", "limit": 1}
+        {
+          "addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"id": "evasive", "name": "Camouflage Cloak"}, "grappling_hook", {"id": "fear", "name": "Death Masks"}],
+          "modelLimit": "all",
+          "limit": 1
+        }
       ]
     },
     "assault_squad": {
@@ -896,36 +900,6 @@
           ],
           "min": 1,
           "max": 3
-        }
-      ]
-    },
-    "furious_assault_squad": {
-      "name": "Furious Squad",
-      "description": "A squad of especially angry assault marines.",
-      "category": "elite",
-      "subfactions": ["assault_focus"],
-      "models": [
-        {
-          "name": "Furious Marine",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "rules": [{"id": "defiant", "x": 2}, "furious"],
-          "weapons": ["marine_rifle", "handweapon"],
-          "options": [
-            {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
-            {"replaceWeapon": "marine_pistol", "withWeapon": ["flamethrower_pistol", "fusion_pistol", "plasma_pistol", "gravity_pistol", "thermal_pistol"]},
-            {
-              "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "energy_claws", "count": 3}, {"id": "energy_greatweapon", "count": 2}]
-            },
-            {"addRule": "jetpack", "modelLimit": "all"}
-          ],
-          "min": 5,
-          "max": 10
         }
       ]
     },
