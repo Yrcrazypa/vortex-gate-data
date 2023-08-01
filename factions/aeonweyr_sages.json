@@ -645,12 +645,12 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["spectre_rifle", "frags"],
+          "weapons": ["spectre_rifle"],
           "options": [{"replaceWeapon": "spectre_rifle", "withWeapon": ["elven_blaster", "emp_cannon"]}],
           "min": 1,
           "max": 1
         },
-        {"name": "Phantom", "courage": 6, "movement": 8, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["spectre_rifle", "frags"], "min": 2, "max": 8}
+        {"name": "Phantom", "courage": 6, "movement": 8, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["spectre_rifle"], "min": 2, "max": 8}
       ]
     },
     "hawk_squad": {

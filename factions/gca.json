@@ -245,7 +245,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_pistol", "frags", "shield", "energy_handweapon"],
+          "weapons": ["heavy_pistol",  "shield", "energy_handweapon"],
           "min": 1,
           "max": 1,
           "options": [{"addRule": {"id": "fear", "name": "Loudhailer Drone"}}]
@@ -258,7 +258,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_pistol", "frags", "shield", "energy_handweapon"],
+          "weapons": ["heavy_pistol",  "shield", "energy_handweapon"],
           "options": [{"addRule": {"id": "field_radio"}, "modelLimit": 1}],
           "min": 4,
           "max": 9
@@ -481,7 +481,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["heavy_auto_rifle",  {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
@@ -577,7 +577,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["heavy_auto_rifle",  "light_handweapon"],
           "options": [
             {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
@@ -603,7 +603,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["heavy_auto_rifle",  "light_handweapon"],
           "options": [{"addRule": {"id": "field_radio"}, "modelLimit": 1}],
           "min": 4,
           "max": 9
@@ -616,7 +616,7 @@
       "category": "elite",
       "keywords": ["Storm Trooper", "Infantry", "Beast"],
       "models": [
-        {"name": "K9 Sergeant", "courage": 5, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "movement": 6, "weapons": ["combat_shotgun", "frags", "light_handweapon"], "min": 1, "max": 1},
+        {"name": "K9 Sergeant", "courage": 5, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "movement": 6, "weapons": ["combat_shotgun",  "light_handweapon"], "min": 1, "max": 1},
         {"name": "Attack Dog", "courage": 5, "shoot": 0, "fight": 6, "defense": 5, "reflexes": 6, "movement": 6, "weapons": [{"id": "handweapon", "count": 2}], "min": 1, "max": 4}
       ],
       "rules": ["scout"]
@@ -640,7 +640,7 @@
           "defense": 5,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_carbine", "frags", "light_handweapon"],
+          "weapons": ["heavy_carbine",  "light_handweapon"],
           "min": 5,
           "max": 10,
           "rules": ["evasive"]
@@ -882,7 +882,7 @@
           "defense": 6,
           "movement": 8,
           "reflexes": 5,
-          "weapons": ["pistol", "frags", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["pistol",  {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "combat_shotgun"]},
             {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["handweapon", "energy_handweapon", "energy_powerweapon"]}
@@ -898,7 +898,7 @@
           "movement": 8,
           "defense": 6,
           "reflexes": 5,
-          "weapons": ["heavy_pistol", "frags", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["heavy_pistol",  {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "heavy_pistol", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "web_carbine", "combat_shotgun"], "modelLimit": 4},
             {"addRule": "field_radio", "modelLimit": 1}

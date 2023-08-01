@@ -20,7 +20,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 7,
-          "weapons": ["laser_pistol", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["laser_pistol", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}},
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
@@ -48,7 +48,7 @@
           "defense": 8,
           "reflexes": 6,
           "movement": 7,
-          "weapons": ["laser_pistol", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["laser_pistol", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}},
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
@@ -97,7 +97,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 7,
-          "weapons": ["laser_pistol", "frags", {"id": "handweapon", "count": 3}, "strafing_run_fighter_plane"],
+          "weapons": ["laser_pistol", {"id": "handweapon", "count": 3}, "strafing_run_fighter_plane"],
           "options": [
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
             {"replaceWeapon": "strafing_run_fighter_plane", "withWeapon": ["strafing_run_heavy_plane"]}
@@ -123,7 +123,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 7,
-          "weapons": ["laser_pistol", "frags", {"id": "handweapon", "count": 3}, "orbital_bombardment_light"],
+          "weapons": ["laser_pistol", {"id": "handweapon", "count": 3}, "orbital_bombardment_light"],
           "options": [
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
             {"replaceWeapon": "orbital_bombardment_light", "withWeapon": ["orbital_bombardment_heavy"]}
@@ -149,7 +149,7 @@
           "defense": 6,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["pistol", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["pistol", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}},
             {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol"]},
@@ -176,7 +176,7 @@
           "defense": 7,
           "reflexes": 6,
           "movement": 7,
-          "weapons": ["laser_pistol", "frags", {"id": "servo_arm", "count": 3}],
+          "weapons": ["laser_pistol", {"id": "servo_arm", "count": 3}],
           "options": [
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
             {"replaceRule": {"id": "repair", "x": 3}, "withRule": {"id": "repair", "x": 5}}
@@ -200,7 +200,7 @@
           "defense": 6,
           "reflexes": 5,
           "movement": 7,
-          "weapons": ["laser_carbine", "frags", "handweapon"],
+          "weapons": ["laser_carbine", "handweapon"],
           "options": [
             {
               "replaceWeapon": "laser_carbine",
@@ -221,7 +221,7 @@
           "defense": 6,
           "reflexes": 5,
           "movement": 7,
-          "weapons": [{"id": "heavy_machinegun", "count": 1, "mount": ["Front"]}, "frags", {"id": "handweapon", "count": 2}],
+          "weapons": [{"id": "heavy_machinegun", "count": 1, "mount": ["Front"]}, {"id": "handweapon", "count": 2}],
           "rules": [{"id": "wounds", "x": 2}],
           "options": [
             {
@@ -254,7 +254,7 @@
           "defense": 6,
           "movement": 7,
           "reflexes": 5,
-          "weapons": ["laser_carbine", "frags", "handweapon"],
+          "weapons": ["laser_carbine", "handweapon"],
           "options": [
             {"addRule": ["banner"], "modelLimit": 1},
             {"addRule": ["medic"], "modelLimit": 1},
@@ -311,7 +311,7 @@
           "defense": 6,
           "reflexes": 5,
           "movement": 7,
-          "weapons": ["laser_carbine", "frags", "handweapon"],
+          "weapons": ["laser_carbine", "handweapon"],
           "options": [
             {
               "replaceWeapon": "laser_carbine",
@@ -338,7 +338,7 @@
           "defense": 6,
           "movement": 7,
           "reflexes": 5,
-          "weapons": ["laser_sniper", "frags", "handweapon"],
+          "weapons": ["laser_sniper", "handweapon"],
           "options": [{"replaceWeapon": "laser_sniper", "withWeapon": "rail_rifle"}],
           "min": 3,
           "max": 3
@@ -360,7 +360,7 @@
           "defense": 8,
           "reflexes": 6,
           "movement": 7,
-          "weapons": ["heavy_laser_carbine", "frags", "handweapon"],
+          "weapons": ["heavy_laser_carbine", "handweapon"],
           "options": [
             {"replaceWeapon": ["heavy_laser_carbine", "handweapon"], "withWeapon": [["laser_pistol", {"id": "handweapon", "count": 2}]]},
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
@@ -377,7 +377,7 @@
           "defense": 8,
           "reflexes": 6,
           "movement": 7,
-          "weapons": ["heavy_laser_carbine", "frags", "handweapon"],
+          "weapons": ["heavy_laser_carbine", "handweapon"],
           "options": [
             {
               "replaceWeapon": "heavy_laser_carbine",
@@ -411,7 +411,7 @@
           "movement": 7,
           "defense": 6,
           "reflexes": 5,
-          "weapons": ["laser_pistol", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["laser_pistol", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"], "modelLimit": "2/5"},
             {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}]}
@@ -435,7 +435,7 @@
           "defense": 6,
           "movement": 8,
           "reflexes": 6,
-          "weapons": ["laser_pistol", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["laser_pistol", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
             {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}]}
@@ -485,7 +485,7 @@
           "movement": 6,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["heavy_shotgun", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["heavy_shotgun", {"id": "handweapon", "count": 2}],
           "options": [{"addRule": ["shield"]}, {"replaceWeapon": "heavy_shotgun", "withWeapon": ["wrist_grenades"]}, {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": ["ogre_maul"]}],
           "rules": [{"id": "wounds", "x": 2}],
           "min": 3,

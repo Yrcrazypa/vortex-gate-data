@@ -18,11 +18,14 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["auto_rifle", "frags", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["auto_rifle", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": ["auto_rifle", {"id": "light_handweapon", "count": 2}], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 3}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol"]},
-            {"replaceWeapon": {"id": "light_handweapon", "count": 3}, "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "handweapon", "count": 3}]}
+            {
+              "replaceWeapon": {"id": "light_handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "handweapon", "count": 3}]
+            }
           ],
           "min": 1,
           "max": 1
@@ -44,7 +47,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": ["heavy_auto_rifle", {"id": "handweapon", "count": 2}], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]},
@@ -71,11 +74,14 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["auto_rifle", "frags", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["auto_rifle", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": ["auto_rifle", {"id": "light_handweapon", "count": 2}], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 3}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol"]},
-            {"replaceWeapon": {"id": "light_handweapon", "count": 3}, "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "handweapon", "count": 3}]}
+            {
+              "replaceWeapon": {"id": "light_handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "handweapon", "count": 3}]
+            }
           ],
           "min": 1,
           "max": 1
@@ -96,10 +102,13 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["pistol", "frags", {"id": "light_handweapon", "count": 3}],
+          "weapons": ["pistol", {"id": "light_handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol"]},
-            {"replaceWeapon": {"id": "light_handweapon", "count": 3}, "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "handweapon", "count": 3}]}
+            {
+              "replaceWeapon": {"id": "light_handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "handweapon", "count": 3}]
+            }
           ],
           "min": 1,
           "max": 1
@@ -120,10 +129,13 @@
           "defense": 6,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["pistol", "frags", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol"]},
-            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_staff", "count": 2}, {"id": "energy_powerweapon", "count": 2}]},
+            {
+              "replaceWeapon": {"id": "light_handweapon", "count": 2},
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_staff", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
+            },
             {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
           ],
           "min": 1,
@@ -144,7 +156,7 @@
           "defense": 5,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["auto_rifle", "light_handweapon"],
           "options": [{"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]}],
           "min": 1,
           "max": 1
@@ -157,7 +169,7 @@
           "defense": 5,
           "movement": 6,
           "reflexes": 5,
-          "weapons": ["auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["auto_rifle", "light_handweapon"],
           "options": [{"addRule": "field_radio", "modelLimit": 1}, {"replaceModel": "conscript_weapon_team", "modelLimit": 1}],
           "min": 9,
           "max": 29
@@ -178,18 +190,14 @@
           "defense": 5,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["auto_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": "auto_rifle", "withWeapon": ["marine_rifle", "auto_carbine"]},
             {"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol"]},
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "handweapon", "count": 2}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "handweapon", "count": 2}]
             }
           ],
           "min": 1,
@@ -203,7 +211,7 @@
           "defense": 5,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["auto_rifle", "light_handweapon"],
           "options": [{"addRule": "field_radio", "modelLimit": 1}, {"replaceModel": "weapon_team", "modelLimit": 1}],
           "min": 9,
           "max": 29
@@ -223,17 +231,13 @@
           "defense": 6,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["adv_defense_rifle", "frags", "light_handweapon"],
+          "weapons": ["adv_defense_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": ["adv_defense_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol"]},
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "handweapon", "count": 2}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "handweapon", "count": 2}]
             }
           ],
           "min": 1,
@@ -247,7 +251,7 @@
           "defense": 6,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["adv_defense_rifle", "frags", "light_handweapon"],
+          "weapons": ["adv_defense_rifle", "light_handweapon"],
           "options": [{"addRule": "field_radio", "modelLimit": 1}],
           "min": 9,
           "max": 19
@@ -268,17 +272,13 @@
           "defense": 6,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["thermal_rifle", "frags", "light_handweapon"],
+          "weapons": ["thermal_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": ["thermal_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol"]},
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "handweapon", "count": 2}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "handweapon", "count": 2}]
             }
           ],
           "min": 1,
@@ -292,7 +292,7 @@
           "defense": 6,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["thermal_rifle", "frags", "light_handweapon"],
+          "weapons": ["thermal_rifle", "light_handweapon"],
           "options": [{"addRule": "field_radio", "modelLimit": 1}],
           "min": 4,
           "max": 9
@@ -322,18 +322,14 @@
           "defense": 5,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["auto_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": "auto_rifle", "withWeapon": ["marine_rifle", "auto_carbine"]},
             {"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol"]},
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "handweapon", "count": 2}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "handweapon", "count": 2}]
             }
           ],
           "min": 1,
@@ -347,7 +343,7 @@
           "defense": 5,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["auto_rifle", "light_handweapon"],
           "options": [{"addRule": "field_radio", "modelLimit": 1}, {"replaceModel": "veteran_weapon_team", "modelLimit": 1}],
           "min": 9,
           "max": 19
@@ -367,7 +363,7 @@
           "defense": 5,
           "movement": 6,
           "reflexes": 5,
-          "weapons": ["auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["auto_rifle", "light_handweapon"],
           "options": [
             {"addRule": ["field_radio"], "modelLimit": 1},
             {"addRule": ["banner"], "modelLimit": 1},
@@ -396,7 +392,7 @@
           "defense": 5,
           "movement": 6,
           "reflexes": 5,
-          "weapons": [{"id": "laser_cannon", "mount": ["Front"]}, "frags", {"id": "light_handweapon", "count": 2}],
+          "weapons": [{"id": "laser_cannon", "mount": ["Front"]}, {"id": "light_handweapon", "count": 2}],
           "options": [
             {
               "replaceWeapon": {"id": "laser_cannon", "mount": ["Front"]},
@@ -427,7 +423,7 @@
           "defense": 5,
           "movement": 7,
           "reflexes": 5,
-          "weapons": [{"id": "battle_cannon", "mount": ["Front"]}, "frags", {"id": "light_handweapon", "count": 3}],
+          "weapons": [{"id": "battle_cannon", "mount": ["Front"]}, {"id": "light_handweapon", "count": 3}],
           "options": [
             {
               "replaceWeapon": {"id": "battle_cannon", "mount": ["Front"]},
@@ -452,7 +448,7 @@
           "defense": 5,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["auto_rifle", "light_handweapon"],
           "options": [
             {"addRule": "field_radio", "modelLimit": 1},
             {"replaceWeapon": "auto_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "sniper_rifle"], "modelLimit": 3}
@@ -476,18 +472,14 @@
           "reflexes": 5,
           "movement": 6,
           "rules": ["engineer"],
-          "weapons": ["shotgun", "frags", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["shotgun", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": ["shotgun"], "withWeapon": ["auto_rifle", "marine_rifle"]},
             {"replaceWeapon": ["shotgun", "light_handweapon"], "withWeapon": [["pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol", "marine_pistol"]},
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "handweapon", "count": 2}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "handweapon", "count": 2}]
             }
           ],
           "min": 1,
@@ -501,7 +493,7 @@
           "defense": 6,
           "reflexes": 5,
           "movement": 6,
-          "weapons": ["shotgun", "frags", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["shotgun", {"id": "light_handweapon", "count": 2}],
           "options": [{"replaceWeapon": "auto_rifle", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle", "heavy_flamethrower"], "modelLimit": 1}],
           "min": 4,
           "max": 9
@@ -514,7 +506,7 @@
       "category": "elite",
       "rules": ["evasive", "scout"],
       "options": [{"replaceWeapon": "sniper_rifle", "withWeapon": ["heavy_sniper_rifle"], "modelLimit": 1}],
-      "models": [{"name": "Sniper", "courage": 5, "shoot": 5, "fight": 4, "defense": 5, "movement": 6, "reflexes": 5, "weapons": ["sniper_rifle", "frags", "light_handweapon"], "min": 3, "max": 6}]
+      "models": [{"name": "Sniper", "courage": 5, "shoot": 5, "fight": 4, "defense": 5, "movement": 6, "reflexes": 5, "weapons": ["sniper_rifle", "light_handweapon"], "min": 3, "max": 6}]
     },
     "stormtroopers": {
       "name": "Stormtroopers",
@@ -534,11 +526,14 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["heavy_auto_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": ["heavy_auto_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]},
-            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "handweapon", "count": 2}]}
+            {
+              "replaceWeapon": {"id": "light_handweapon", "count": 2},
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "handweapon", "count": 2}]
+            }
           ],
           "min": 1,
           "max": 1
@@ -551,7 +546,7 @@
           "defense": 6,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["heavy_auto_rifle", "frags", "light_handweapon"],
+          "weapons": ["heavy_auto_rifle", "light_handweapon"],
           "options": [{"addRule": {"id": "field_radio"}, "modelLimit": 1}],
           "min": 4,
           "max": 9
@@ -574,7 +569,7 @@
           "defense": 5,
           "movement": 8,
           "reflexes": 5,
-          "weapons": ["pistol", "frags", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol"]},
             {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": ["handweapon", "energy_handweapon", "energy_powerweapon"]}
@@ -590,7 +585,7 @@
           "movement": 8,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["pistol", "frags", {"id": "light_handweapon", "count": 2}],
+          "weapons": ["pistol", {"id": "light_handweapon", "count": 2}],
           "options": [{"replaceWeapon": "pistol", "withWeapon": ["flamethrower", "grenade_launcher", "fusion_rifle", "plasma_rifle"], "modelLimit": 4}, {"addRule": "field_radio", "modelLimit": 1}],
           "min": 4,
           "max": 9
@@ -610,7 +605,7 @@
           "movement": 6,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["heavy_shotgun", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["heavy_shotgun", {"id": "handweapon", "count": 2}],
           "options": [{"addRule": ["shield"]}, {"replaceWeapon": "heavy_shotgun", "withWeapon": ["wrist_grenades"]}, {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": ["ogre_maul"]}],
           "rules": [{"id": "wounds", "x": 2}],
           "min": 3,
@@ -650,7 +645,7 @@
           "courage": 5,
           "shoot": 5,
           "fight": 5,
-          "defense": 8,
+          "defense": 10,
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 3}, "scout", "vulnerable_rear"],
           "weapons": ["heavy_flamethrower", {"id": "stomp", "count": 2}],
@@ -1225,7 +1220,7 @@
       "defense": 5,
       "movement": 6,
       "reflexes": 5,
-      "weapons": [{"id": "laser_cannon", "mount": ["Front"]}, "frags", {"id": "light_handweapon", "count": 2}],
+      "weapons": [{"id": "laser_cannon", "mount": ["Front"]}, {"id": "light_handweapon", "count": 2}],
       "rules": [{"id": "wounds", "x": 2}],
       "options": [
         {
@@ -1249,7 +1244,7 @@
       "defense": 5,
       "reflexes": 5,
       "movement": 6,
-      "weapons": [{"id": "laser_cannon", "mount": ["Front"]}, "frags", {"id": "light_handweapon", "count": 2}],
+      "weapons": [{"id": "laser_cannon", "mount": ["Front"]}, {"id": "light_handweapon", "count": 2}],
       "rules": [{"id": "wounds", "x": 2}],
       "options": [
         {
@@ -1273,7 +1268,7 @@
       "defense": 5,
       "reflexes": 5,
       "movement": 6,
-      "weapons": [{"id": "laser_cannon", "mount": ["Front"]}, "frags", {"id": "light_handweapon", "count": 2}],
+      "weapons": [{"id": "laser_cannon", "mount": ["Front"]}, {"id": "light_handweapon", "count": 2}],
       "rules": [{"id": "wounds", "x": 2}],
       "options": [
         {

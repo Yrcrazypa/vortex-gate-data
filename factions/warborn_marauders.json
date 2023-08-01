@@ -39,7 +39,7 @@
           "defense": 8,
           "reflexes": 6,
           "rules": ["leader", {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["carbine", "frags", {"id": "handweapon", "count": 4}],
+          "weapons": ["carbine", {"id": "handweapon", "count": 4}],
           "options": [
             {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 4}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 5}]]},
@@ -69,7 +69,7 @@
           "defense": 9,
           "reflexes": 7,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["carbine", "frags", {"id": "handweapon", "count": 4}, {"id": "twin_double_shotgun", "mount": ["Front"]}],
+          "weapons": ["carbine", {"id": "handweapon", "count": 4}, {"id": "twin_double_shotgun", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "double_shotgun"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 4}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 5}]]},
@@ -107,7 +107,7 @@
           "defense": 7,
           "reflexes": 5,
           "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["carbine", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["carbine", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
@@ -138,7 +138,7 @@
           "defense": 7,
           "reflexes": 5,
           "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": ["carbine", "frags", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
+          "weapons": ["carbine", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
@@ -178,7 +178,7 @@
           "defense": 7,
           "reflexes": 5,
           "rules": ["engineer", "leader", {"id": "wounds", "x": 3}, "marksman"],
-          "weapons": ["carbine", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["carbine", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "plasma_rifle", "shock_gun", "rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
@@ -207,7 +207,7 @@
           "defense": 7,
           "reflexes": 5,
           "rules": ["engineer", {"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 3}],
-          "weapons": ["carbine", "frags", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
+          "weapons": ["carbine", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher", "plasma_rifle", "shock_gun", "rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
@@ -280,7 +280,7 @@
           "defense": 7,
           "reflexes": 5,
           "rules": ["medic", "support", {"id": "wounds", "x": 2}],
-          "weapons": ["carbine", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["carbine", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
@@ -308,7 +308,7 @@
           "defense": 7,
           "reflexes": 5,
           "rules": [{"id": "impact", "x": 1}, "medic", {"id": "support_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
-          "weapons": ["carbine", "frags", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
+          "weapons": ["carbine", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
@@ -345,7 +345,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["heavy_pistol", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 2}],
           "options": [{"addWeapon": ["attack_beast"]}],
           "min": 1,
           "max": 1
@@ -385,7 +385,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["carbine", "handweapon", "frags"],
+          "weapons": ["carbine", "handweapon"],
           "options": [
             {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_saw", "count": 2}, {"id": "heavy_energy_claw", "count": 2}]},
@@ -394,7 +394,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Orc", "movement": 6, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon", "frags"], "min": 9, "max": 29}
+        {"name": "Orc", "movement": 6, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon"], "min": 9, "max": 29}
       ]
     },
     "boss_mob": {
@@ -410,7 +410,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "weapons": ["carbine", {"id": "handweapon", "count": 2}, "frags"],
+          "weapons": ["carbine", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "energy_saw", "count": 4}]},
@@ -439,7 +439,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["carbine", "handweapon", "frags"],
+          "weapons": ["carbine", "handweapon"],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": ["carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
@@ -449,7 +449,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Looter Orc", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon", "frags"], "min": 4, "max": 9}
+        {"name": "Looter Orc", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon"], "min": 4, "max": 9}
       ]
     },
     "heavy_looter_mob": {
@@ -470,7 +470,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["carbine", "handweapon", "frags"],
+          "weapons": ["carbine", "handweapon"],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["rocket_launcher", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": ["carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
@@ -481,7 +481,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Heavy Looter Orc", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["rocket_launcher", "handweapon", "frags"], "min": 4, "max": 9}
+        {"name": "Heavy Looter Orc", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["rocket_launcher", "handweapon"], "min": 4, "max": 9}
       ]
     },
     "looter_boss_mob": {
@@ -498,7 +498,7 @@
           "defense": 7,
           "reflexes": 5,
           "rules": ["relentless"],
-          "weapons": ["carbine", {"id": "handweapon", "count": 2}, "frags"],
+          "weapons": ["carbine", {"id": "handweapon", "count": 2}],
           "options": [
             {
               "replaceWeapon": "carbine",
@@ -538,7 +538,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["carbine", "handweapon", "frags"],
+          "weapons": ["carbine", "handweapon"],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_saw", "count": 2}, {"id": "heavy_energy_claw", "count": 2}]},
@@ -547,7 +547,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Commando Orc", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 6, "weapons": ["carbine", "handweapon", "frags"], "min": 4, "max": 14}
+        {"name": "Commando Orc", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 6, "weapons": ["carbine", "handweapon"], "min": 4, "max": 14}
       ]
     },
     "commando_boss_mob": {
@@ -564,7 +564,7 @@
           "defense": 7,
           "reflexes": 6,
           "rules": ["ambush", "evasive"],
-          "weapons": ["carbine", "handweapon", "frags"],
+          "weapons": ["carbine", "handweapon"],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}], {"id": "energy_saw", "count": 4}]},
@@ -600,7 +600,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["carbine", "handweapon", "frags"],
+          "weapons": ["carbine", "handweapon"],
           "options": [
             {"replaceWeapon": ["carbine"], "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_saw", "count": 2}, {"id": "heavy_energy_claw", "count": 2}]},
@@ -609,7 +609,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Jetpack Orc", "movement": 8, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon", "frags"], "min": 4, "max": 19}
+        {"name": "Jetpack Orc", "movement": 8, "courage": 5, "shoot": 4, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon"], "min": 4, "max": 19}
       ]
     },
     "ultra_boss_mob": {
@@ -627,7 +627,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 5,
-          "weapons": ["frags", {"id": "twin_carbine", "count": 2}],
+          "weapons": [{"id": "twin_carbine", "count": 2}],
           "options": [
             {
               "replaceWeapon": "twin_carbine",
@@ -665,7 +665,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 5,
-          "weapons": ["heavy_pistol", "frags", {"id": "handweapon", "count": 2}],
+          "weapons": ["heavy_pistol", {"id": "handweapon", "count": 2}],
           "min": 0,
           "max": 1
         },
@@ -751,7 +751,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["carbine", {"id": "handweapon", "count": 2}, "frags", {"id": "twin_carbine", "mount": ["Front"]}],
+          "weapons": ["carbine", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
             {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
@@ -1053,7 +1053,7 @@
           "defense": 9,
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
-          "weapons": ["heavy_machinegun", "frags"],
+          "weapons": ["heavy_machinegun"],
           "options": [
             {"replaceWeapon": "heavy_machinegun", "withWeapon": ["twin_missile_launcher", "twin_minigun", "twin_heavy_machinegun", "mortar", "plasma_cannon", "fusion_cannon", "flamethrower_cannon"]},
             {
@@ -1377,7 +1377,19 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Goblin Assistant", "movement": 6, "courage": 4, "shoot": 5, "fight": 4, "defense": 4, "reflexes": 5, "weapons": ["light_handweapon"], "rules": ["goblin_assistant"], "min": 2, "max": 2}
+        {
+          "name": "Goblin Assistant",
+          "movement": 6,
+          "courage": 4,
+          "shoot": 5,
+          "fight": 4,
+          "defense": 4,
+          "reflexes": 5,
+          "weapons": ["light_handweapon"],
+          "rules": ["goblin_assistant"],
+          "min": 2,
+          "max": 2
+        }
       ]
     },
     "goblin_tank_commander": {

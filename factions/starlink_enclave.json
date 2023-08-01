@@ -172,7 +172,7 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["auto_rifle", "light_handweapon", "frags"],
+          "weapons": ["auto_rifle", "light_handweapon"],
           "options": [{"replaceWeapon": ["auto_rifle", "light_handweapon"], "withWeapon": [["pulse_pistol", {"id": "light_handweapon", "count": 2}]]}],
           "min": 1,
           "max": 1
@@ -185,7 +185,7 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "weapons": ["auto_rifle", "light_handweapon", "frags"],
+          "weapons": ["auto_rifle", "light_handweapon"],
           "options": [{"replaceWeapon": ["auto_rifle"], "withWeapon": ["flamethrower", "plasma_rifle", "fusion_blaster", "stun_grenade_launcher"], "modelLimit": 1}],
           "min": 9,
           "max": 9
@@ -197,7 +197,19 @@
       "description": "A squad of flying insect aliens with powerful rifles.",
       "category": "elite",
       "models": [
-        {"name": "Insect Warrior", "movement": 8, "courage": 5, "shoot": 5, "fight": 5, "defense": 7, "reflexes": 5, "rules": ["fly"], "weapons": ["neutron_carbine", "light_handweapon"], "min": 5, "max": 15}
+        {
+          "name": "Insect Warrior",
+          "movement": 8,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 7,
+          "reflexes": 5,
+          "rules": ["fly"],
+          "weapons": ["neutron_carbine", "light_handweapon"],
+          "min": 5,
+          "max": 15
+        }
       ]
     },
     "stealth_suits": {
