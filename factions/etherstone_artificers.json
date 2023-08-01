@@ -1022,7 +1022,7 @@
   },
   "weapons": {
     "devouring_maw": {"name": "Devouring Maw", "ap": 6, "attacks": 1, "short": "Melee", "rules": [{"id": "deadly", "x": 3}]},
-    "napalm_breath": {"name": "Napalm Breath", "rules": ["flame", "lethal"], "attacks": 3, "ap": 4, "medium": 12, "short": 6},
+    "napalm_breath": {"name": "Napalm Breath", "rules": ["flame", {"id": "deadly", "x": 1}], "attacks": 3, "ap": 4, "medium": 12, "short": 6},
     "alchemical_grenade": {
       "name": "Chemical Bomb",
       "profiles": [
@@ -1032,7 +1032,7 @@
       ]
     },
     "welding_beam": {"name": "Welding Beam", "attacks": 1, "ap": 5, "short": 6},
-    "rivet_pistol": {"name": "Rivet Pistol", "attacks": 3, "short": 6, "ap": 2, "rules": ["lethal", "pistol"]}
+    "rivet_pistol": {"name": "Rivet Pistol", "attacks": 3, "short": 6, "ap": 2, "rules": [{"id": "deadly", "x": 1}, "pistol"]}
   },
   "strategies": [
     {

@@ -803,7 +803,7 @@
     "power_bolt": {"medium": 18, "attacks": 1, "ap": 7},
     "power_storm": {"medium": 9, "ap": 1, "attacks": 8},
     "laser_carbine": {"name": "Charge Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 2, "rules": ["overcharge", "assault"]},
-    "shrapnel_shotgun": {"name": "Shrapnel Shotgun", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", "lethal"]},
+    "shrapnel_shotgun": {"name": "Shrapnel Shotgun", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["assault", {"id": "deadly", "x": 1}]},
     "heavy_laser_carbine": {"name": "Heavy Charge Carbine", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": ["overcharge", "assault"]},
     "rail_rifle": {"name": "Rail Rifle", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": ["sniper"]},
     "laser_sniper": {"name": "Charge Sniper", "attacks": 1, "short": 18, "medium": 36, "ap": 4, "rules": ["overcharge", "sniper"]},

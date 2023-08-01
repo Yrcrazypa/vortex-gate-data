@@ -554,7 +554,7 @@
         "pestilence_polearm": {"name": "Pestilent Polearm", "attacks": 1, "ap": 2, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "poison"]},
         "bladed_gauntlet": {"name": "Bladed Gauntlet", "attacks": 1, "short": "Melee", "rules": ["parry"]},
         "light_flail": {"name": "Light Flail", "attacks": 1, "ap": 2, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "cumbersome"]},
-        "legend_cursed_blade": {"name": "Blade of Ruin", "attacks": 1, "ap": 3, "short": "Melee", "rules": [{"id": "deadly", "x": 1}, "lethal"]}
+        "legend_cursed_blade": {"name": "Blade of Ruin", "attacks": 1, "ap": 3, "short": "Melee", "rules": [{"id": "deadly", "x": 1}, {"id": "deadly", "x": 1}]}
     },
     "rules": {
         "corrupted_tactics": {

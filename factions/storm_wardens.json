@@ -740,11 +740,11 @@
   ],
   "weapons": {
     "bird": {"name": "Celestial Eagle", "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": ["rending"]},
-    "spirit_flask": {"ap": 3, "attacks": 1, "name": "Spirit Flask", "rules": [{"id": "ammo", "x": 1}, {"id": "blast", "x": 2}, "lethal"], "short": 6},
-    "storm_bow": {"ap": 3, "attacks": 1, "medium": 30, "name": "Thunderbolt-Longbow", "rules": ["lethal"], "short": 15},
-    "storm_crossbow": {"ap": 3, "attacks": 1, "medium": 24, "name": "Thunderbolt-Crossbow", "rules": ["lethal"], "short": 12},
-    "storm_greatweapon": {"ap": 3, "attacks": 1, "name": "Thunderbolt-Greatweapon", "rules": ["lethal"], "short": "Melee"},
-    "storm_trident": {"ap": 3, "attacks": 1, "medium": 12, "name": "Stormstrike Trident", "rules": ["assault", "lethal"], "short": 6},
+    "spirit_flask": {"ap": 3, "attacks": 1, "name": "Spirit Flask", "rules": [{"id": "ammo", "x": 1}, {"id": "blast", "x": 2}, {"id": "deadly", "x": 1}], "short": 6},
+    "storm_bow": {"ap": 3, "attacks": 1, "medium": 30, "name": "Thunderbolt-Longbow", "rules": [{"id": "deadly", "x": 1}], "short": 15},
+    "storm_crossbow": {"ap": 3, "attacks": 1, "medium": 24, "name": "Thunderbolt-Crossbow", "rules": [{"id": "deadly", "x": 1}], "short": 12},
+    "storm_greatweapon": {"ap": 3, "attacks": 1, "name": "Thunderbolt-Greatweapon", "rules": [{"id": "deadly", "x": 1}], "short": "Melee"},
+    "storm_trident": {"ap": 3, "attacks": 1, "medium": 12, "name": "Stormstrike Trident", "rules": ["assault", {"id": "deadly", "x": 1}], "short": 6},
     "throwing_hammer": {"ap": 2, "attacks": 1, "name": "Throwing Hammer", "rules": ["assault"], "short": 6},
     "legend_hammer": {"name": "Meteorite Hammer", "attacks": 2, "short": "Melee", "ap": 3, "rules": [{"id": "blast", "x": 3}]},
     "legend_shield": {"name": "Dragonscale Shield", "attacks": 0, "short": "Melee", "rules": [{"id": "defiant", "x": 3}, "shield"]}

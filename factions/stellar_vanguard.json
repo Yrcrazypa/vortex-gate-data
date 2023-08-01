@@ -2051,7 +2051,7 @@
       ]
     },
     "arch_machinegun": {"name": "Arch-Marine Machinegun", "attacks": 3, "short": 12, "medium": 24, "ap": 3, "rules": ["rapid_fire"]},
-    "arch_pistol": {"name": "Arch-Marine Pistol", "attacks": 2, "short": 6, "medium": 12, "ap": 6, "rules": ["lethal"]},
+    "arch_pistol": {"name": "Arch-Marine Pistol", "attacks": 2, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
     "arch_fist": {"name": "Arch-Marine Fist", "short": "Melee", "attacks": 1, "ap": 7, "rules": ["rending"]},
     "arch_hammer": {"name": "Arch-Marine Hammer", "short": "Melee", "attacks": 1, "ap": 9, "rules": ["cumbersome"]},
     "arch_claw": {"name": "Arch-Marine Claw", "short": "Melee", "attacks": 1, "ap": 5, "rules": ["rending"]},
@@ -2060,7 +2060,7 @@
     "plasma_repeater": {"name": "Plasma Repeater", "ap": 5, "attacks": 2, "short": 9, "medium": 18, "rules": ["assault", "overcharge"]},
     "hazard_flamethrower": {"name": "Hazard Flamethrower", "ap": 2, "attacks": 3, "short": 6, "medium": 12, "rules": ["flame", "poison"]},
     "hazard_launcher": {"name": "Hazard Launcher", "ap": 3, "attacks": 1, "short": 12, "medium": 24, "rules": ["poison", {"id": "blast", "x": 2}]},
-    "hazard_blaster": {"name": "Hazard Blaster", "ap": 4, "attacks": 1, "short": 12, "medium": 24, "rules": ["lethal"]},
+    "hazard_blaster": {"name": "Hazard Blaster", "ap": 4, "attacks": 1, "short": 12, "medium": 24, "rules": [{"id": "deadly", "x": 1}]},
     "combi_machinegun": {
       "name": "Combi-Heavy Machinegun",
       "rules": ["heavy"],

@@ -528,9 +528,9 @@
     "sunfury_bombs": {"name": "Sunfury Bombs", "attacks": 1, "short": 6, "ap": 2, "rules": [{"id": "blast", "x": 3}, "bomb"]},
     "bolas": {"name": "Bolas", "attacks": 1, "short": 6, "ap": 2, "rules": [{"id": "blast", "x": 3}, {"id": "slowing", "x": 1}]},
     "spike_launcher": {"name": "Spike Launcher", "short": 12, "medium": 24, "ap": 1, "attacks": 2, "rules": ["assault", {"id": "blast", "x": 3}, "rending"]},
-    "napalm_breath": {"name": "Napalm Breath", "rules": ["flame", "lethal"], "attacks": 3, "ap": 4, "medium": 12, "short": 6},
+    "napalm_breath": {"name": "Napalm Breath", "rules": ["flame", {"id": "deadly", "x": 1}], "attacks": 3, "ap": 4, "medium": 12, "short": 6},
     "snake_launcher": {"name": "Snake Launcher", "attacks": 9, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "poison"]},
-    "solar_beam": {"name": "Solar Beam", "attacks": 6, "short": 12, "medium": 24, "ap": 3, "rules": ["lethal"]},
+    "solar_beam": {"name": "Solar Beam", "attacks": 6, "short": 12, "medium": 24, "ap": 3, "rules": [{"id": "deadly", "x": 1}]},
     "legend_blades": {"name": "Obsidian Blades", "attacks": 6, "short": "Melee", "ap": 2, "rules": ["rending"]}
   },
   "rules": {},

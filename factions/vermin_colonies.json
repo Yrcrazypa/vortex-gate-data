@@ -592,8 +592,8 @@
     "spiky_fist": {"name": "Spiky Fist", "attacks": 1, "short": "Melee", "ap": 6},
     "doom_lightning_cannon": {"name": "Doom-Lightning Cannon", "short": 24, "medium": 48, "ap": 7, "attacks": 1, "rules": [{"id": "blast", "x": 3}, "heavy", "overcharge"]},
     "doom_arc_generator": {"name": "Doom-arc Generator", "short": 6, "medium": 12, "ap": 3, "attacks": 3, "rules": ["overcharge", {"id": "blast", "x": 3}]},
-    "dripping_shuriken": {"name": "Dripping Shuriken", "short": 9, "ap": 1, "attacks": 1, "rules": ["lethal", "poison", "assault"]},
-    "dripping_blade": {"name": "Dripping Blade", "short": "Melee", "ap": 2, "attacks": 1, "rules": ["lethal", "poison"]},
+    "dripping_shuriken": {"name": "Dripping Shuriken", "short": 9, "ap": 1, "attacks": 1, "rules": [{"id": "deadly", "x": 1}, "poison", "assault"]},
+    "dripping_blade": {"name": "Dripping Blade", "short": "Melee", "ap": 2, "attacks": 1, "rules": [{"id": "deadly", "x": 1}, "poison"]},
     "gas_bomb": {"name": "Gas Bombs", "attacks": 1, "short": 9, "rules": ["assault", {"id": "blast", "x": 3}, "poison"]},
     "legend_lance": {"name": "Lance of Rust", "attacks": 3, "short": "Melee", "ap": 3, "rules": ["poison", {"id": "reach", "x": 1}, "rending"]}
   },

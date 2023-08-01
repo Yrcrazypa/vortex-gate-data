@@ -2024,7 +2024,7 @@
     "flaming_bloodsoaker": {"name": "Flaming Bloodsoaker", "attacks": 3, "short": 9, "medium": 18, "ap": 5, "rules": [{"id": "blast", "x": 2}, "flame"]},
     "hatespewer": {"name": "Hatespewer", "attacks": 3, "short": 30, "medium": 60, "ap": 5, "rules": [{"id": "blast", "x": 2}]},
     "hellcrusher_claws": {"name": "Hellcrusher Claws", "profiles": [{"name": "Crush", "attacks": 6, "short": "Melee", "ap": 10}, {"name": "Sweep", "attacks": 12, "short": "Melee", "ap": 5}]},
-    "thermal_shotgun": {"name": "Thermal Shotgun", "attacks": 2, "short": 9, "medium": 18, "ap": 3, "rules": ["brutal", "flame", "lethal"]},
+    "thermal_shotgun": {"name": "Thermal Shotgun", "attacks": 2, "short": 9, "medium": 18, "ap": 3, "rules": ["brutal", "flame", {"id": "deadly", "x": 1}]},
     "scorpion_cannon": {"name": "Scorpion Cannon", "attacks": 8, "short": 18, "medium": 36, "ap": 3},
     "legend_flamethrower_pistol": {"name": "Psychic Inferno Pistol", "attacks": 3, "short": 6, "medium": 12, "ap": 2, "rules": ["rending", "flame"]},
     "legend_staff": {"name": "Psychic Staff", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["shielding", "warding_staff"]},

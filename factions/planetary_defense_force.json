@@ -1317,7 +1317,7 @@
     "gatling_rifle": {"name": "Gatling Rifle", "attacks": 4, "ap": 1, "short": 12, "medium": 24},
     "earthbreaker_cannon": {"name": "Earthbreaker Cannon", "attacks": 2, "ap": 10, "short": 70, "medium": 140, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "heavy_gatling_cannon": {"name": "Heavy Gatling Cannon", "attacks": 24, "ap": 2, "short": 18, "medium": 36, "rules": ["heavy"]},
-    "savage_claw": {"name": "The Savage Claw", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["cumbersome", "lethal"]}
+    "savage_claw": {"name": "The Savage Claw", "attacks": 1, "ap": 5, "short": "Melee", "rules": ["cumbersome", {"id": "deadly", "x": 1}]}
   },
   "rules": {
     "high_command": {"name": "High Command", "description": "This model may use Defense Force Tactics one additional time.", "points": 2},

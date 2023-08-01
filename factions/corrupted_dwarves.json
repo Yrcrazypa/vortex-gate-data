@@ -252,12 +252,12 @@
     }
   },
   "weapons": {
-    "blazing_staff": {"name": "Blazing Staff", "attacks": 1, "ap": 5, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "lethal"]},
+    "blazing_staff": {"name": "Blazing Staff", "attacks": 1, "ap": 5, "short": "Melee", "rules": [{"id": "reach", "x": 1}, {"id": "deadly", "x": 1}]},
     "glaive_carbine": {
       "name": "Glaive-Carbine",
       "profiles": [
-        {"name": "Carbine", "ap": 2, "attacks": 1, "short": 9, "medium": 18, "rules": ["lethal"]},
-        {"name": "Glaive", "ap": 1, "attacks": 1, "short": "Melee", "rules": [{"id": "reach", "x": 1}, "lethal"]}
+        {"name": "Carbine", "ap": 2, "attacks": 1, "short": 9, "medium": 18, "rules": [{"id": "deadly", "x": 1}]},
+        {"name": "Glaive", "ap": 1, "attacks": 1, "short": "Melee", "rules": [{"id": "reach", "x": 1}, {"id": "deadly", "x": 1}]}
       ]
     },
     "claws": {"name": "Blazing Claws", "attacks": 1, "ap": 3, "short": "Melee"}

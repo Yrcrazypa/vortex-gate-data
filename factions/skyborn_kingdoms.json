@@ -756,7 +756,7 @@
   },
   "weapons": {
     "legend_blade": {"name": "Blade of Conquest", "attacks": 3, "ap": 3, "short": "Melee", "rules": ["enchanted", "rending"]},
-    "bolt_thrower": {"name": "Bolt Thrower", "attacks": 1, "ap": 6, "short": 18, "medium": 36, "rules": ["lethal"]},
+    "bolt_thrower": {"name": "Bolt Thrower", "attacks": 1, "ap": 6, "short": 18, "medium": 36, "rules": [{"id": "deadly", "x": 1}]},
     "cannon_spear": {
       "name": "Cannon Spear",
       "profiles": [{"name": "Melee", "short": "Melee", "attacks": 1, "ap": 1, "rules": ["phalanx", {"id": "reach", "x": 1}]}, {"name": "Ranged", "short": 9, "medium": 18, "attacks": 1, "ap": 3}]

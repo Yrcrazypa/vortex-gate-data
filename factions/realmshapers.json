@@ -186,10 +186,10 @@
         "roots": {"name": "Piercing Roots", "ap": 4, "attacks": 1, "short": "Melee", "rules": [{"id": "reach", "x": 2}]},
         "impaling_claws": {
             "name": "Impaling Claws",
-            "profiles": [{"name": "Cleave", "ap": 6, "attacks": 1, "short": "Melee", "rules": ["lethal"]}, {"name": "Sweep", "ap": 5, "attacks": 3, "short": "Melee"}]
+            "profiles": [{"name": "Cleave", "ap": 6, "attacks": 1, "short": "Melee", "rules": [{"id": "deadly", "x": 1}]}, {"name": "Sweep", "ap": 5, "attacks": 3, "short": "Melee"}]
         },
         "wild_staff": {"name": "Wildwood Staff", "attacks": 1, "ap": 6, "short": "Melee", "rules": [{"id": "reach", "x": 1}]},
-        "wild_blade": {"name": "Wildwood Blade", "attacks": 1, "ap": 7, "short": "Melee", "rules": ["lethal"]}
+        "wild_blade": {"name": "Wildwood Blade", "attacks": 1, "ap": 7, "short": "Melee", "rules": [{"id": "deadly", "x": 1}]}
     },
     "models": {
         "animated_construct": {
