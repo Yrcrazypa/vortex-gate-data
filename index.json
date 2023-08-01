@@ -940,7 +940,6 @@
     "energy_staff": {"name": "Energy Staff", "attacks": 1, "short": "Melee", "ap": 3, "rules": [{"id": "reach", "x": 1}]},
     "energy_lance": {"name": "Energy Lance", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["lance"]},
     "energy_claws": {"name": "Energy Claws", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["rending"]},
-    "energy_glaive": {"name": "Energy Glaive", "attacks": 1, "short": "Melee", "ap": 3, "rules": [{"id": "reach", "x": 1}, "rending"]},
     "energy_spear": {"name": "Energy Spear", "attacks": 1, "short": "Melee", "ap": 3, "rules": [{"id": "reach", "x": 1}]},
     "energy_halberd": {"name": "Energy Halberd", "attacks": 1, "short": "Melee", "ap": 3, "rules": ["rending", {"id": "reach", "x": 1}]},
     "energy_greathammer": {"name": "Energy Greathammer", "short": "Melee", "attacks": 1, "ap": 8, "rules": ["cumbersome"]},

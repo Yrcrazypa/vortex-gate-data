@@ -132,7 +132,7 @@
                 {"id": "deathly_kiss", "count": 3},
                 {"id": "deathly_caress", "count": 3},
                 {"id": "deathly_embrace", "count": 3},
-                {"id": "energy_glaive", "count": 4}
+                {"id": "energy_greatweapon", "count": 4}
               ]
             }
           ],
@@ -167,7 +167,7 @@
                 {"id": "deathly_kiss", "count": 3},
                 {"id": "deathly_caress", "count": 3},
                 {"id": "deathly_embrace", "count": 3},
-                {"id": "energy_glaive", "count": 4}
+                {"id": "energy_greatweapon", "count": 4}
               ]
             }
           ],
@@ -191,8 +191,8 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": ["shard_cannon", {"id": "energy_glaive", "count": 2}],
-          "options": [{"replaceWeapon": "shard_cannon", "withWeapon": ["emp_cannon"]}, {"replaceWeapon": "energy_glaive", "withWeapon": ["exploding_bola"]}],
+          "weapons": ["shard_cannon", {"id": "energy_greatweapon", "count": 2}],
+          "options": [{"replaceWeapon": "shard_cannon", "withWeapon": ["emp_cannon"]}, {"replaceWeapon": "energy_greatweapon", "withWeapon": ["exploding_bola"]}],
           "min": 2,
           "max": 6
         }
@@ -528,7 +528,7 @@
           "weapons": ["shard_rifle", "light_handweapon"],
           "options": [
             {"replaceWeapon": ["shard_rifle", "light_handweapon"], "withWeapon": [["shard_pistol", {"id": "light_handweapon", "count": 2}]]},
-            {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_glaive", "count": 2}]}
+            {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_greatweapon", "count": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -623,7 +623,7 @@
           "options": [
             {"replaceWeapon": ["shard_pistol", {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "mirror_blades", "count": 3}]},
             {"replaceWeapon": "shard_pistol", "withWeapon": ["shard_blaster"]},
-            {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_glaive", "count": 2}, ["energy_handweapon", "shuriken"]]}
+            {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_greatweapon", "count": 2}, ["energy_handweapon", "shuriken"]]}
           ],
           "min": 1,
           "max": 1

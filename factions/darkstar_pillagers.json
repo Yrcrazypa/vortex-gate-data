@@ -54,7 +54,7 @@
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 5},
                 {"id": "poison_whip", "count": 5},
-                {"id": "energy_glaive", "count": 5},
+                {"id": "energy_greatweapon", "count": 5},
                 {"id": "razor_whips", "count": 7},
                 {"id": "net_and_spear", "count": 5},
                 {"id": "energy_claws", "count": 6}
@@ -119,7 +119,7 @@
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 5},
                 {"id": "poison_whip", "count": 5},
-                {"id": "energy_glaive", "count": 5},
+                {"id": "energy_greatweapon", "count": 5},
                 {"id": "razor_whips", "count": 7},
                 {"id": "net_and_spear", "count": 5},
                 {"id": "energy_claws", "count": 6}
@@ -148,7 +148,7 @@
           "defense": 8,
           "reflexes": 7,
           "rules": ["fear", "furious", "leader", {"id": "mercenary_tactics", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": [{"id": "energy_glaive", "count": 3}],
+          "weapons": [{"id": "energy_greatweapon", "count": 3}],
           "options": [{"replaceRule": {"id": "mercenary_tactics", "x": 1}, "withRule": {"id": "mercenary_tactics", "x": 2}}],
           "min": 1,
           "max": 1
@@ -258,7 +258,7 @@
           "defense": 7,
           "reflexes": 6,
           "rules": ["fear", "furious"],
-          "weapons": [{"id": "energy_glaive", "count": 2}],
+          "weapons": [{"id": "energy_greatweapon", "count": 2}],
           "min": 5,
           "max": 10
         }
