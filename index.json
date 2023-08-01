@@ -280,11 +280,11 @@
       "alliance": "destruction",
       "description": "A sprawling empire of jungle-dwellers who believe they are the rightful rulers of the world."
     },
-    "vermin_colonies": {
+    "verminhost_colonies": {
       "version": "1.0",
-      "name": "Vermin Colonies",
-      "id": "vermin_colonies",
-      "url": "vermin_colonies.json",
+      "name": "Verminhost Colonies",
+      "id": "verminhost_colonies",
+      "url": "verminhost_colonies.json",
       "color": "#3D3636",
       "alliance": "doom",
       "description": "These cunning and treacherous Vermin assemble into warhosts containing vast swarms, pestilent magic, mutated beasts and doom-tech."
