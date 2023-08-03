@@ -86,6 +86,15 @@
       "alliance": "order",
       "description": "The Luminastra Mooncouncil are a race of moon elves organized into several councils of high elders. They have fierce warriors trained in the art of celestial magic."
     },
+    "draylith_fireborn": {
+      "version": "1.0",
+      "name": "Draylith Fireborn",
+      "id": "draylith_fireborn",
+      "url": "draylith_fireborn.json",
+      "color": "#4e2894",
+      "alliance": "doom",
+      "description": "Born from fire, these dark elves have a sacred bond with dragons, both in combat and in society, some of which are even half-dragon."
+    },
     "darkstar_pillagers": {
       "version": "1.0",
       "name": "Darkstar Pillagers",
