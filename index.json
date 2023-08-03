@@ -989,7 +989,7 @@
     "heavy_energy_sword": {"name": "Heavy Energy Sword", "attacks": 1, "short": "Melee", "ap": 3},
     "heavy_energy_axe": {"name": "Heavy Energy Axe", "attacks": 1, "short": "Melee", "ap": 5, "rules": ["rending"]},
     "heavy_energy_claws": {"name": "Heavy Energy Claws", "attacks": 1, "short": "Melee", "ap": 4, "rules": ["rending"]},
-    "energy_gauntlets": {"name": "Energy Gauntlets", "attacks": 1, "rules": [{"id": "knockback", "x": 1}], "short": "Melee"},
+    "energy_gauntlets": {"name": "Energy Gauntlets", "attacks": 1, "short": "Melee"},
     "shock_baton": {"name": "Shock Baton", "attacks": 1, "ap": 1, "short": "Melee", "rules": ["parry", {"id": "shocking", "x": 1}]},
     "shock_staff": {"name": "Shock Staff", "attacks": 1, "ap": 1, "short": "Melee", "rules": [{"id": "reach", "x": 1}, {"id": "shocking", "x": 1}]},
     "riot_shield": {"name": "Riot Shield", "attacks": 1, "short": "Melee", "rules": ["shield"]},
@@ -1266,15 +1266,8 @@
       "rules": ["heavy"],
       "profiles": [{"name": "Frag", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 6}]}, {"name": "AT", "attacks": 1, "short": 24, "medium": 48, "ap": 6}]
     },
-    "seismic_cannon": {"name": "Seismic Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": ["heavy", {"id": "knockback", "x": 1}, {"id": "shocking", "x": 1}, "unreliable"]},
-    "heavy_seismic_cannon": {
-      "name": "Heavy Seismic Cannon",
-      "attacks": 1,
-      "short": 24,
-      "medium": 48,
-      "ap": 3,
-      "rules": ["heavy", {"id": "knockback", "x": 1}, {"id": "shocking", "x": 1}, "unreliable"]
-    },
+    "seismic_cannon": {"name": "Seismic Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": ["heavy", {"id": "shocking", "x": 1}, "unreliable"]},
+    "heavy_seismic_cannon": {"name": "Heavy Seismic Cannon", "attacks": 1, "short": 24, "medium": 48, "ap": 3, "rules": ["heavy", {"id": "shocking", "x": 1}, "unreliable"]},
     "fusion_beamer": {"name": "Fission Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 3, "rules": [{"id": "intensity", "x": 2}]},
     "thermal_lance": {"name": "Thermal Lance", "attacks": 1, "short": 24, "medium": 48, "ap": 6, "rules": ["flame", "heavy", {"id": "deadly", "x": 1}]},
     "twin_thermal_lance": {"name": "Twin Thermal Lance", "attacks": 2, "short": 24, "medium": 48, "ap": 6, "rules": ["heavy", "flame", {"id": "deadly", "x": 1}]},
@@ -2062,12 +2055,6 @@
       "points": [15]
     },
     "ethereal": {"name": "Ethereal", "description": "This model may ignore other models and any terrain when moving.", "points": 2},
-    "knockback": {
-      "name": "Knockback",
-      "inputs": ["x"],
-      "description": "When an enemy model takes any unsaved hit by this weapon, you can push that model X“ directly away from this model.",
-      "points": [2, {"multiply": "rule.x"}]
-    },
     "parry": {"name": "Parry", "description": "This model has +1 Save against melee attacks.", "points": 1},
     "heavy_impact": {
       "name": "Heavy Impact",

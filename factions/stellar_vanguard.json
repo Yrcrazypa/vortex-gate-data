@@ -534,13 +534,13 @@
         }
       ]
     },
-    "tactician_squad": {
-      "name": "Tactician Squad",
+    "vanguard_squad": {
+      "name": "Vanguard Squad",
       "description": "Elite trained marines sworn to protect the Empire.",
       "category": "core",
       "models": [
         {
-          "name": "Tactician Sergeant",
+          "name": "Vanguard Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -560,7 +560,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Tactician Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "handweapon"], "min": 4, "max": 19}
+        {"name": "Vanguard Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "handweapon"], "min": 4, "max": 19}
       ],
       "options": [
         {"replaceWeapon": "marine_rifle", "withWeapon": ["marine_dmr", "marine_smg"]},
@@ -576,13 +576,13 @@
         {"addRule": "multi_scanner", "modelLimit": 1}
       ]
     },
-    "gravite_tactician_squad": {
-      "name": "Gravite Tactician Squad",
+    "gravite_vanguard_squad": {
+      "name": "Gravite Vanguard Squad",
       "description": "Elite trained marines in heavy gravite armor.",
       "category": "core",
       "models": [
         {
-          "name": "Gravite Tactician Sergeant",
+          "name": "Gravite Vanguard Sergeant",
           "movement": 5,
           "courage": 6,
           "shoot": 6,
@@ -602,7 +602,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Gravite Tactician Marine", "movement": 5, "courage": 6, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 6, "weapons": ["heavy_marine_rifle", "handweapon"], "min": 4, "max": 9}
+        {"name": "Gravite Vanguard Marine", "movement": 5, "courage": 6, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 6, "weapons": ["heavy_marine_rifle", "handweapon"], "min": 4, "max": 9}
       ],
       "options": [
         {
@@ -615,13 +615,13 @@
       ]
     },
     "infiltration_squad": {
-      "name": "Infiltration Squad",
+      "name": "Scout Squad",
       "description": "Elite trained marines specialized in infiltration and stealth tactics.",
       "category": "core",
       "rules": ["scout"],
       "models": [
         {
-          "name": "Infiltration Sergeant",
+          "name": "Scout Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -648,7 +648,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Infiltration Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "handweapon"], "min": 4, "max": 9}
+        {"name": "Scout Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "handweapon"], "min": 4, "max": 9}
       ],
       "options": [
         {"replaceWeapon": "marine_rifle", "withWeapon": ["marine_shotgun", "sniper_rifle", "marine_dmr", "marine_smg", "heavy_carbine"]},
@@ -763,14 +763,14 @@
       ]
     },
     "marine_bikers": {
-      "name": "Marine Biker Squad",
+      "name": "Vanguard Biker Squad",
       "description": "Upgraded and highly trained bikers armed to the teeth.",
       "category": "elite",
       "keywords": ["Biker"],
       "rules": [{"id": "impact", "x": 1}],
       "models": [
         {
-          "name": "Marine Biker Sergeant",
+          "name": "Vanguard Biker Sergeant",
           "movement": 8,
           "courage": 6,
           "shoot": 6,
@@ -791,7 +791,7 @@
           "max": 1
         },
         {
-          "name": "Marine Biker",
+          "name": "Vanguard Biker",
           "movement": 8,
           "courage": 6,
           "shoot": 6,
