@@ -77,6 +77,15 @@
       "alliance": "order",
       "description": "The Glimmerwood Travelers are a race of forested elves hailing from the planet Lumithorn. They have a unique ability to communicate with nature and the natural forces. They use primitive weapons and natural beasts."
     },
+    "luminastra_mooncouncil": {
+      "version": "1.0",
+      "name": "Luminastra Mooncouncil",
+      "id": "luminastra_mooncouncil",
+      "url": "luminastra_mooncouncil.json",
+      "color": "#0d407f",
+      "alliance": "order",
+      "description": "The Luminastra Mooncouncil are a race of moon elves organized into several councils of high elders. They have fierce warriors trained in the art of celestial magic."
+    },
     "darkstar_pillagers": {
       "version": "1.0",
       "name": "Darkstar Pillagers",
