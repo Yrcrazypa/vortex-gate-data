@@ -261,7 +261,7 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["leader", {"id": "ranger_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "handweapon", "count": 3}, "long_bow"],
           "options": [
             {
@@ -269,7 +269,7 @@
               "withWeapon": [{"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}, {"id": "polearm", "count": 3}, {"id": "long_spear", "count": 3}]
             },
             {"addRule": [{"name": "Wings", "id": "fly"}, "shield", {"id": "icon", "x": "Infantry"}, {"id": "magic", "x": 1}]},
-            {"replaceRule": [{"id": "ranger_tactics", "x": 1}], "withRule": [{"id": "tactician", "x": 1}]}
+            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "tactician", "x": 1}]}
           ],
           "min": 1,
           "max": 1

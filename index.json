@@ -1754,7 +1754,7 @@
       "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Strength tests of 9+ until the end of the round.",
       "points": ["rule.x", {"multiply": 10}]
     },
-    "ranger_tactics": {
+    "warrior": {
       "name": "Ranger Tactics",
       "inputs": ["x"],
       "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\". This unit and those units may re-roll failed Accuracy tests of 9+ until the end of the round.",

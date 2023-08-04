@@ -281,9 +281,9 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "rules": ["ambush", "leader", {"id": "ranger_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["ambush", "leader", {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "handweapon", "count": 4}, "heavy_crossbow"],
-          "options": [{"addRule": ["shield"]}, {"replaceRule": [{"id": "ranger_tactics", "x": 1}], "withRule": [{"id": "ranger_tactics", "x": 2}]}],
+          "options": [{"addRule": ["shield"]}, {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}],
           "min": 1,
           "max": 1
         }
@@ -768,13 +768,13 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", {"id": "ranger_tactics", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "great_weapon", "count": 3}, {"id": "repeater_pistol", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "repeater_pistol", "count": 2}], "withWeapon": [{"id": "shotgun", "count": 2}, "mortar_rifle", "long_rifle", "harpoon_rifle", "handcannon", "volley_gun"]},
             {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "grand_hammer", "count": 3}, {"id": "grand_weapon", "count": 3}]},
             {"addRule": ["suit"]},
-            {"replaceRule": [{"id": "ranger_tactics", "x": 1}], "withRule": [{"id": "ranger_tactics", "x": 2}]}
+            {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
           "min": 1,
           "max": 1
