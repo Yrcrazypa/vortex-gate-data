@@ -17,7 +17,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 7,
-          "rules": ["leader", {"id": "wounds", "x": 3}, "fly", "holy_saint", {"id": "magic", "x": 1}, {"id": "saint_tactics", "x": 2}],
+          "rules": ["leader", {"id": "wounds", "x": 3}, "fly", "holy_saint", {"id": "magic", "x": 1}, {"id": "epic_tactician", "x": 2}],
           "weapons": ["saints_blade_shoot", {"id": "saints_blade_melee", "count": 6}],
           "min": 1,
           "max": 1
@@ -50,7 +50,7 @@
           "fight": 7,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["hover", "leader", {"id": "wounds", "x": 3}, {"id": "saint_tactics", "x": 1}],
+          "rules": ["hover", "leader", {"id": "wounds", "x": 3}, {"id": "tactician", "x": 1}],
           "weapons": [{"id": "heavy_flamethrower", "count": 2}, {"id": "energy_powerweapon", "count": 4}],
           "min": 1,
           "max": 1
@@ -61,7 +61,7 @@
       "name": "Greater High Warden",
       "description": "A higher-ranking High warden, watching over the order in battle.",
       "category": "hero",
-      "rules": ["leader", {"id": "wounds", "x": 3}, {"id": "wardens_tactics", "x": 2}],
+      "rules": ["leader", {"id": "wounds", "x": 3}, {"id": "tactician", "x": 2}],
       "models": [
         {
           "name": "Greater High Warden",
@@ -91,7 +91,7 @@
       "name": "High Warden",
       "description": "A High warden, watching over the order in battle.",
       "category": "hero",
-      "rules": ["leader", {"id": "wounds", "x": 2}, {"id": "wardens_tactics", "x": 1}],
+      "rules": ["leader", {"id": "wounds", "x": 2}, {"id": "tactician", "x": 1}],
       "models": [
         {
           "name": "High Warden",
@@ -612,19 +612,6 @@
     "legend_vengeance_pistol": {"name": "The Vengeance Pistol", "attacks": 1, "short": 6, "ap": 7, "rules": ["pistol", {"id": "deadly", "x": 2}]}
   },
   "rules": {
-    "saint_tactics": {
-      "name": "Saint Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll all failed Accuracy tests \n * Re-roll all failed Strength tests",
-      "points": ["rule.x", {"multiply": 15}]
-    },
-    "holy_saint": {"name": "Holy Saint", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 Save when targeted by a Shooting or Fighting attack.", "points": 10},
-    "wardens_tactics": {
-      "name": "Wardens Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+",
-      "points": ["rule.x", {"multiply": 10}]
-    },
     "lucky_angel": {
       "name": "Lucky Angel",
       "description": "Once per round, this unit may re-roll one Strength or Accuracy test. This may be used one additional time per round for each model with this rule.",
@@ -662,7 +649,7 @@
     },
     "legend_living_saint": {
       "name": "Living Saint",
-      "rule": {"id": "saint_tactics"},
+      "rule": {"id": "tactician"},
       "description": "This model replaces their Warden Tactics special rule with the Saint Tactics rule at the same level",
       "flavor": "This warrior is imbued with unusual faith, even among the Wardens",
       "points": 10
