@@ -50,12 +50,7 @@
             {"replaceWeapon": ["radiation_pistol"], "withWeapon": ["smg", "thermal_carbine", "thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol", "eradication_blaster"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 3}],
-              "withWeapon": [
-                {"id": "energy_powerweapon", "count": 3},
-                {"id": "energy_handweapon", "count": 3},
-                {"id": "taser_sword", "count": 3},
-                {"id": "energy_staff", "count": 3}
-              ]
+              "withWeapon": [{"id": "energy_powerweapon", "count": 3}, {"id": "energy_handweapon", "count": 3}, {"id": "taser_sword", "count": 3}, {"id": "energy_staff", "count": 3}]
             },
             {"addWeapon": ["thermal_rifle", "eradication_ray", "plasma_rifle", "emp_rifle", "fusion_rifle", "flamethrower"], "limit": 1},
             {"addWeapon": ["servo_arm"], "limit": 2},
@@ -83,14 +78,7 @@
           "weapons": ["radiation_pistol", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": ["radiation_pistol"], "withWeapon": ["smg", "thermal_carbine", "thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol", "eradication_blaster"]},
-            {
-              "replaceWeapon": [{"id": "handweapon", "count": 2}],
-              "withWeapon": [
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "taser_sword", "count": 2}
-              ]
-            },
+            {"replaceWeapon": [{"id": "handweapon", "count": 2}], "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "energy_handweapon", "count": 2}, {"id": "taser_sword", "count": 2}]},
             {"addWeapon": ["thermal_rifle", "eradication_ray", "plasma_rifle", "emp_rifle", "fusion_rifle", "flamethrower"], "limit": 1},
             {"addWeapon": ["servo_arm"], "limit": 2},
             {"addRule": [{"id": "magic", "x": 1}, "protocols"], "limit": 1}
@@ -335,7 +323,10 @@
           "options": [
             {"replaceWeapon": ["twin_carbine", "handweapon"], "withWeapon": [["radiation_pistol", {"id": "energy_handweapon", "count": 2}]]},
             {"replaceWeapon": ["radiation_pistol"], "withWeapon": ["thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol", "smg"]},
-            {"replaceWeapon": [{"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "taser_sword", "count": 2}, {"id": "energy_handweapon", "count": 2}]}
+            {
+              "replaceWeapon": [{"id": "energy_handweapon", "count": 2}],
+              "withWeapon": [{"id": "energy_powerweapon", "count": 2}, {"id": "taser_sword", "count": 2}, {"id": "energy_handweapon", "count": 2}]
+            }
           ],
           "min": 1,
           "max": 1
@@ -493,7 +484,7 @@
           "fight": 4,
           "defense": 11,
           "reflexes": 6,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}, "hover_mode", {"id": "transport", "x": 12}],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}, "hover_mode", {"id": "transport", "x": 12}],
           "weapons": [{"id": "twin_light_machinegun", "mount": ["Front"]}],
           "options": [
             {
@@ -527,7 +518,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear", "walker"],
+          "rules": [{"id": "wounds", "x": 5}, "vulnerable_rear", "walker"],
           "weapons": ["radiation_sniper"],
           "options": [{"replaceWeapon": ["radiation_sniper"], "withWeapon": [{"id": "taser_lance", "count": 3}]}, {"addWeapon": ["radiation_carbine"]}],
           "min": 1,
@@ -549,7 +540,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, "vulnerable_rear", "walker"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 3}, "vulnerable_rear", "walker"],
           "weapons": ["twin_laser_cannon"],
           "options": [{"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["twin_autocannon", "twin_heavy_flamethrower", "twin_plasma_cannon", "twin_fusion_cannon", "twin_thermal_lance"]}],
           "min": 1,
@@ -571,7 +562,7 @@
           "fight": 4,
           "defense": 11,
           "reflexes": 6,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}, "hover_mode"],
+          "rules": ["aircraft", {"id": "wounds", "x": 6}, "hover_mode"],
           "weapons": [{"id": "twin_light_machinegun", "mount": ["Front"]}],
           "options": [
             {
@@ -617,7 +608,7 @@
           "fight": 3,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": [{"id": "light_machinegun", "mount": ["Front", "Left"]}, {"id": "light_machinegun", "mount": ["Front", "Right"]}],
           "options": [{"addWeapon": ["twin_aa_light_machinegun"]}, {"addRule": "data_link"}],
           "min": 1,
@@ -639,7 +630,7 @@
           "fight": 5,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 6}, "hover", {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "weapons": [{"id": "light_machinegun", "mount": ["Front", "Left"]}, {"id": "light_machinegun", "mount": ["Front", "Right"]}, "light_machinegun", "tank_hunter_cannon"],
           "options": [
             {"replaceWeapon": "tank_hunter_cannon", "withWeapon": ["mortar_cannon", "eradication_beam"]},
@@ -676,7 +667,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "weapons": [{"id": "tesla_hunter_cannon", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": {"id": "tesla_hunter_cannon", "mount": ["Front"]}, "withWeapon": [{"id": "laser_volley_cannon", "mount": ["Front"]}]},
@@ -711,7 +702,7 @@
           "fight": 5,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "vulnerable_side_rear", {"id": "impact", "x": 6}],
+          "rules": [{"id": "wounds", "x": 6}, "vulnerable_side_rear", {"id": "impact", "x": 6}],
           "weapons": [
             {"id": "radiation_rocket_array", "mount": ["Front"]},
             {"id": "tesla_cannon", "mount": ["Front", "Left"]},
@@ -737,7 +728,7 @@
           "fight": 5,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "transport", "x": 20}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "transport", "x": 20}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "weapons": [
             {"id": "twin_heavy_machinegun", "mount": ["Front"]},
             {"id": "thermal_rifle", "mount": ["Front", "Left"]},
@@ -763,7 +754,7 @@
           "fight": 5,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear", "walker"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear", "walker"],
           "weapons": ["thermal_lance", "light_machinegun"],
           "options": [
             {"replaceWeapon": "thermal_lance", "withWeapon": ["eradication_beam", "death_laser", "aa_autocannon"]},
