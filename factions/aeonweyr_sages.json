@@ -844,6 +844,53 @@
         }
       ]
     },
+    "hover_tank": {
+      "name": "Hover Tank",
+      "description": "A hover tank that can be outfitted with heavy weaponry to eliminate various threats.",
+      "category": "rare",
+      "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 6}],
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Hover Tank",
+          "courage": 5,
+          "movement": 10,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 12,
+          "reflexes": 6,
+          "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}, "twin_fusion_cannon"],
+          "options": [
+            {
+              "replaceWeapon": {"id": "twin_shard_rifle", "mount": ["Front"]},
+              "withWeapon": [
+                {"id": "shard_cannon", "mount": ["Front"]},
+                {"id": "sky_cannon", "mount": ["Front"]},
+                {"id": "elven_missile_launcher", "mount": ["Front"]},
+                {"id": "fusion_cannon", "mount": ["Front"]},
+                {"id": "laser_machinegun", "mount": ["Front"]}
+              ]
+            },
+            {
+              "replaceWeapon": "twin_fusion_cannon",
+              "withWeapon": [
+                "twin_shard_cannon",
+                "twin_elven_missile_launcher",
+                "twin_sky_cannon",
+                "twin_laser_machinegun",
+                "heavy_fusion_cannon",
+                "distortion_cannon",
+                "distortion_blaster",
+                "shattersky_launcher"
+              ]
+            },
+            {"addRule": ["sky_engine", "gravity_thrusters"]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
     "revenant_titan": {
       "name": "Revenant Titan",
       "description": "A gigantic revenant with a variety of loadouts to punish enemies of the high elves on the bloodiest of battlefields.",
