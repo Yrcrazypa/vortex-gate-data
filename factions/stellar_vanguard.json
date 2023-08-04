@@ -184,7 +184,7 @@
           "fight": 7,
           "defense": 11,
           "reflexes": 6,
-          "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, {"id": "tactician", "x": "Juggernaut"}],
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}, {"id": "tactician", "x": "Juggernaut"}],
           "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
           "options": [
             {
@@ -1059,10 +1059,10 @@
           "fight": 0,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": ["twin_marine_rifle"],
           "options": [
-            {"replaceWeapon_0": ["twin_marine_rifle"], "withWeapon": ["light_machinegun", "plasma_rifle", "fusion_rifle", "flamethrower", "missile_launcher"]},
+            {"replaceWeapon": ["twin_marine_rifle"], "withWeapon": ["light_machinegun", "plasma_rifle", "fusion_rifle", "flamethrower", "missile_launcher"]},
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": ["assault_ramp", {"id": "dozer", "name": "Dozer Blade"}, {"id": "hover", "name": "Anti-Gravity Engine"}, "spiked_ram", "reinforced_armor"]}
           ],
@@ -1085,7 +1085,7 @@
           "fight": 0,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 8}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Left"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Right"]}],
           "options": [
             {
@@ -1136,7 +1136,7 @@
           "fight": 0,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["ambush", {"id": "wounds", "x": 3}, {"id": "transport", "x": 12}],
+          "rules": ["ambush", {"id": "wounds", "x": 5}, {"id": "transport", "x": 12}],
           "weapons": ["twin_marine_rifle"],
           "options": [{"replaceWeapon": "twin_marine_rifle", "withWeapon": "missile_launcher"}],
           "min": 1,
@@ -1158,7 +1158,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}, "hover_mode", {"id": "transport", "x": 12}, {"id": "walker_transport", "x": 1}],
+          "rules": ["aircraft", {"id": "wounds", "x": 6}, "hover_mode", {"id": "transport", "x": 12}, {"id": "walker_transport", "x": 1}],
           "weapons": [{"id": "twin_fusion_cannon", "mount": ["Front"]}, {"id": "storm_missiles", "mount": ["Front"]}, {"id": "twin_laser_cannon", "mount": ["Front", "Left", "Right"]}],
           "options": [
             {
@@ -1190,7 +1190,7 @@
           "fight": 0,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
           "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "twin_heavy_laser_cannon"],
           "options": [
             {
@@ -1239,7 +1239,7 @@
           "fight": 0,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "weapons": ["twin_laser_cannon", {"id": "twin_marine_rifle", "mount": ["Front", "Left"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Right"]}],
           "options": [
             {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "demolition_cannon", "twin_gatling_gun"]},
@@ -1279,7 +1279,7 @@
           "fight": 0,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "weapons": [{"id": "heavy_thermal_lance", "mount": ["Front"]}],
           "options": [
             {
@@ -1306,7 +1306,7 @@
       "name": "Heavy Battle Tank",
       "description": "An heavy armored tank helmed by imperial marines.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_rear"],
+      "rules": [{"id": "wounds", "x": 8}, {"id": "impact", "x": 6}, "vulnerable_rear"],
       "keywords": ["Vehicle", "Tank"],
       "models": [
         {
@@ -1370,7 +1370,7 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "scout", "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "scout", "vulnerable_rear"],
           "weapons": ["twin_light_machinegun", {"id": "walker_fist", "count": 3}],
           "options": [
             {"replaceWeapon": "twin_light_machinegun", "withWeapon": ["twin_heavy_flamethrower", "twin_plasma_rifle", "twin_fusion_rifle", "gravity_cannon", "twin_thermal_rifle"]},
@@ -1396,7 +1396,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "vulnerable_rear"],
           "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
           "options": [
             {
@@ -1456,7 +1456,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "furious", "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "furious", "vulnerable_rear"],
           "weapons": [{"id": "walker_fist", "count": 8}],
           "options": [
             {
@@ -1487,7 +1487,7 @@
           "fight": 7,
           "defense": 11,
           "reflexes": 6,
-          "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
           "options": [
             {
@@ -1547,7 +1547,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, "vulnerable_rear"],
           "weapons": [{"id": "heavy_autocannon", "count": 2}],
           "options": [
             {
@@ -1601,7 +1601,7 @@
           "shoot": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}, "hover_mode"],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}, "hover_mode"],
           "weapons": ["twin_minigun", {"id": "twin_laser_cannon", "mount": ["Front"]}],
           "options": [
             {
@@ -1691,7 +1691,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "magic", "x": 1}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "magic", "x": 1}, "vulnerable_rear"],
           "weapons": [{"id": "heavy_walker_fist", "count": 8}],
           "options": [
             {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": [{"id": "energy_greathammer", "count": 4}, {"id": "energy_greatsword", "count": 4}]},
@@ -1718,7 +1718,7 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "magic", "x": 1}, "tactician", "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "leader", {"id": "magic", "x": 1}, "tactician", "vulnerable_rear"],
           "weapons": [{"id": "heavy_walker_fist", "count": 8}],
           "options": [
             {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": [{"id": "energy_greathammer", "count": 4}, {"id": "energy_greatsword", "count": 4}]},
