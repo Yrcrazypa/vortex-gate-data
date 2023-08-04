@@ -78,11 +78,7 @@
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 4},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_powerweapon", "count": 4},
-                {"id": "energy_powerweapon", "count": 4}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}]
             },
             {"addRule": [{"id": "magic", "x": 1}, {"id": "ward", "x": 1}]}
           ],
@@ -112,11 +108,7 @@
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 4},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 4},
-                {"id": "energy_powerweapon", "count": 4},
-                {"id": "energy_powerweapon", "count": 4}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}]
             },
             {"addRule": [{"id": "magic", "x": 1}, {"id": "ward", "x": 1}]}
           ],
@@ -152,7 +144,18 @@
       "category": "elite",
       "rules": ["support", "medic", {"id": "wounds", "x": 2}],
       "models": [
-        {"name": "Nurse Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "light_handweapon", "count": 3}], "min": 1, "max": 1}
+        {
+          "name": "Nurse Warden",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "weapons": ["marine_pistol", {"id": "light_handweapon", "count": 3}],
+          "min": 1,
+          "max": 1
+        }
       ]
     },
     "warden_preacher": {
@@ -188,7 +191,10 @@
           "defense": 7,
           "reflexes": 5,
           "weapons": ["marine_rifle", "light_handweapon"],
-          "options": [{"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]}, {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}]}],
+          "options": [
+            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol"]},
+            {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}]}
+          ],
           "min": 1,
           "max": 1
         },
@@ -220,11 +226,7 @@
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
             }
           ],
           "min": 1,
@@ -258,11 +260,7 @@
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
             }
           ],
           "min": 1,
@@ -333,11 +331,7 @@
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
             }
           ],
           "min": 1,
@@ -406,11 +400,22 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Winged Warden", "movement": 8, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "light_handweapon", "count": 2}], "min": 4, "max": 9}
+        {
+          "name": "Winged Warden",
+          "movement": 8,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 7,
+          "reflexes": 5,
+          "weapons": ["marine_pistol", {"id": "light_handweapon", "count": 2}],
+          "min": 4,
+          "max": 9
+        }
       ]
     },
     "devastator_wardens": {
-      "name": "Devastator Wardens",
+      "name": "Devastation Wardens",
       "description": "A group of wardens packed with heavy weapons to deal high damage.",
       "category": "elite",
       "options": [
@@ -420,7 +425,7 @@
       ],
       "models": [
         {
-          "name": "Devastator Warden Superior",
+          "name": "Devastation Warden Superior",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -434,24 +439,20 @@
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_powerweapon", "count": 2}
-              ]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
             }
           ],
           "min": 1,
           "max": 1
         },
-        {"name": "Devastator Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["heavy_fusion_rifle", "light_handweapon"], "min": 4, "max": 9}
+        {"name": "Devastation Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["heavy_fusion_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "redemption_walker": {
       "name": "Redemption Walker",
       "description": "A walker atoning for its sins with righteous fury.",
       "category": "rare",
-      "rules": ["walker", "vulnerable_rear", {"id": "wounds", "x": 3}],
+      "rules": ["walker", "vulnerable_rear", {"id": "wounds", "x": 5}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -477,7 +478,7 @@
       "name": "APC",
       "description": "A durable transport with optional heavy weapons.",
       "category": "transport",
-      "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+      "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -499,7 +500,7 @@
       "name": "Inferno APC",
       "description": "A durable transport with attached heavy weapons.",
       "category": "transport",
-      "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+      "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -525,7 +526,7 @@
       "name": "Repression APC",
       "description": "A heavy transport with firing slits",
       "category": "transport",
-      "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", {"id": "wounds", "x": 3}, {"id": "open_topped", "x": 6}],
+      "rules": [{"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear", {"id": "wounds", "x": 5}, {"id": "open_topped", "x": 6}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -547,7 +548,7 @@
       "name": "Organ Tank",
       "description": "A light tank with a unique organ-shaped missile array.",
       "category": "rare",
-      "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+      "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -570,7 +571,7 @@
       "description": "A main line battle tank.",
       "category": "rare",
       "keywords": ["Vehicle", "Battle Tank"],
-      "rules": ["vulnerable_side_rear", {"id": "wounds", "x": 3}],
+      "rules": ["vulnerable_side_rear", {"id": "wounds", "x": 5}],
       "models": [
         {
           "name": "Battle Tank",

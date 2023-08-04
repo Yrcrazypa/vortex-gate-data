@@ -56,7 +56,7 @@
       "description": "An infernal creation that crawls on the ground, stalking its prey.",
       "category": "hero",
       "keywords": ["Vehicle"],
-      "rules": [{"id": "wounds", "x": 3}, "fear", "vulnerable_rear", "walker"],
+      "rules": [{"id": "wounds", "x": 4}, "fear", "vulnerable_rear", "walker"],
       "models": [
         {
           "name": "Infernal Stalker",
@@ -879,14 +879,14 @@
       ]
     },
     "pestilence_destroyers": {
-      "name": "Pestilence Destroyers",
+      "name": "Pestilence Gravite Assault Squad",
       "description": "Destroyers that are infected with pestilence.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "subfactions": ["toughness_focus"],
       "models": [
         {
-          "name": "Pestilence Destroyer",
+          "name": "Pestilence Gravite Assault Marine",
           "movement": 5,
           "courage": 6,
           "shoot": 6,
@@ -907,7 +907,7 @@
       ]
     },
     "pestilence_elite_destroyers": {
-      "name": "Pestilence Elite Destroyers",
+      "name": "Pestilence Elite Gravite Squad",
       "description": "Destroyers that are infected with pestilence.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
@@ -915,7 +915,7 @@
       "subfactions": ["toughness_focus"],
       "models": [
         {
-          "name": "Pestilence Elite Destroyer Sergeant",
+          "name": "Pestilence Elite Gravite Sergeant",
           "movement": 5,
           "courage": 6,
           "shoot": 6,
@@ -928,7 +928,7 @@
           "max": 1
         },
         {
-          "name": "Pestilence Elite Destroyer",
+          "name": "Pestilence Elite Gravite Destroyer",
           "movement": 5,
           "courage": 6,
           "shoot": 6,
@@ -1007,7 +1007,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "weapons": [{"id": "pestilence_mortar", "mount": ["Front"]}, {"id": "light_machinegun", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": [{"id": "light_machinegun", "mount": ["Front"]}], "withWeapon": [{"id": "heavy_machinegun", "mount": ["Front"]}]},
@@ -1216,13 +1216,13 @@
       ]
     },
     "voidwarped_devastators": {
-      "name": "Voidwarped Devastators",
+      "name": "Voidwarped Devastation Squad",
       "description": "A squad of highly trained Voidwarped Renegade armed to the teeth with advanced weaponry.",
       "category": "elite",
       "options": [{"replaceWeapon": "plasma_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "thermal_rifle"]}, {"addRule": "shield"}],
       "models": [
         {
-          "name": "Voidwarped Devastator Sergeant",
+          "name": "Voidwarped Devastation Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -1239,11 +1239,11 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Voidwarped Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["plasma_rifle", "handweapon"], "min": 4, "max": 14}
+        {"name": "Voidwarped Devastation Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["plasma_rifle", "handweapon"], "min": 4, "max": 14}
       ]
     },
     "voidwarped_heavy_devastators": {
-      "name": "Voidwarped Heavy Devastators",
+      "name": "Voidwarped Heavy Devastation Squad",
       "description": "A squad of highly trained Voidwarped Renegade armed to the teeth with advanced weaponry.",
       "category": "rare",
       "options": [
@@ -1252,7 +1252,7 @@
       ],
       "models": [
         {
-          "name": "Voidwarped Heavy Devastator Sergeant",
+          "name": "Voidwarped Heavy Devastation Sergeant",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -1269,7 +1269,18 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Voidwarped Heavy Devastator", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["heavy_flamethrower", "handweapon"], "min": 4, "max": 14}
+        {
+          "name": "Voidwarped Heavy Devastation Marine",
+          "movement": 6,
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "weapons": ["heavy_flamethrower", "handweapon"],
+          "min": 4,
+          "max": 14
+        }
       ]
     },
     "possessed_marines": {
@@ -1496,7 +1507,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": [{"id": "twin_marine_rifle", "mount": ["Front", "Left"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Right"]}],
           "options": [
             {
@@ -1534,7 +1545,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "weapons": ["twin_laser_cannon", {"id": "twin_marine_rifle", "mount": ["Front", "Left"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Right"]}],
           "options": [
             {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "demolition_cannon", "twin_gatling_gun"]},
@@ -1574,7 +1585,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 8}, {"id": "impact", "x": 6}, "vulnerable_rear"],
           "weapons": ["twin_laser_cannon", {"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
           "options": [
             {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "twin_gatling_gun", "heavy_plasma_cannon", "heavy_fusion_cannon", "twin_flamethrower_cannon"]},
@@ -1615,7 +1626,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "vulnerable_rear"],
           "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
           "options": [
             {
@@ -1668,7 +1679,7 @@
           "fight": 5,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fear", "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, "fear", "vulnerable_rear"],
           "weapons": [{"id": "fiend_claws", "count": 3}, {"id": "fiend_jaws", "count": 4}],
           "options": [
             {"replaceWeapon": {"id": "fiend_claws", "count": 3}, "withWeapon": [{"id": "heavy_plasma_cannon", "count": 2}, {"id": "heavy_autocannon", "count": 2}]},
@@ -1694,7 +1705,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 6,
-          "rules": ["walker", "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+          "rules": ["walker", "vulnerable_side_rear", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "excruciating_cannons", "count": 2}, {"id": "claws_and_tendrils", "count": 6}],
           "min": 1,
           "max": 1
@@ -1715,7 +1726,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "magic", "x": 1}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "magic", "x": 1}, "vulnerable_rear"],
           "weapons": [{"id": "enormous_claws", "count": 2}, {"id": "tentacle_maw", "count": 2}],
           "min": 1,
           "max": 1
@@ -1736,7 +1747,7 @@
           "fight": 5,
           "defense": 12,
           "reflexes": 6,
-          "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
+          "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}],
           "weapons": ["crab_cannon", {"id": "crab_claw"}, "havoc_missiles", "twin_laser_cannon"],
           "options": [
             {"addRule": ["doom_siren"]},
@@ -1762,7 +1773,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "fly", "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "fly", "vulnerable_rear"],
           "weapons": ["forge_flamethrower", {"id": "dragon_claws", "count": 4}],
           "options": [{"replaceWeapon": "forge_flamethrower", "withWeapon": ["forge_cannon"]}],
           "min": 1,
@@ -1785,7 +1796,7 @@
           "defense": 13,
           "reflexes": 6,
           "weapons": ["greatest_cleaver", "giant_gatling", "train_mounted_blastgun"],
-          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, "vulnerable_rear"],
           "options": [{"replaceWeapon": ["train_mounted_blastgun"], "withWeapon": ["flaming_bloodsoaker"]}, {"replaceWeapon": ["giant_gatling"], "withWeapon": ["hatespewer"]}]
         }
       ]
@@ -1793,7 +1804,7 @@
     "giant_metal_scorpion": {
       "name": "Giant Metal Scorpion",
       "description": "A giant metal scorpion. It hates you. It hates everything.",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}, {"id": "ward", "x": 2}],
+      "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}, {"id": "ward", "x": 2}],
       "category": "rare",
       "min": 1,
       "max": 1,

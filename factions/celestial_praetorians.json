@@ -375,7 +375,7 @@
       "description": "A heavily armored transport sporting an arsenal of weapons built by the imperial marines.",
       "keywords": ["Vehicle"],
       "category": "rare",
-      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", {"id": "wounds", "x": 3}],
+      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", {"id": "wounds", "x": 8}],
       "models": [
         {
           "name": "Relic Heavy Assault APC",
@@ -398,7 +398,7 @@
       "description": "A light attack vehicle with medium tank killing capability.",
       "keywords": ["Vehicle"],
       "category": "elite",
-      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 3}, "hover"],
+      "rules": [{"id": "impact", "x": 3}, "vulnerable_side_rear", {"id": "wounds", "x": 4}, "hover"],
       "models": [{"name": "Light Hover Tank", "movement": 10, "courage": 7, "shoot": 7, "fight": 7, "defense": 11, "reflexes": 7, "weapons": ["twin_light_laser_cannon"], "min": 1, "max": 1}]
     },
     "hover_tank": {
@@ -406,7 +406,7 @@
       "description": "A hover tank with good tank killing capability.",
       "keywords": ["Vehicle"],
       "category": "rare",
-      "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 3}, "hover"],
+      "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 6}, "hover"],
       "models": [
         {
           "name": "Hover Tank",
@@ -428,7 +428,7 @@
       "description": "A hover transport with decent supporting weaponry.",
       "keywords": ["Vehicle"],
       "category": "transport",
-      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 3}, "hover"],
+      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}, "hover"],
       "models": [
         {
           "name": "Hover Tank",
@@ -447,7 +447,7 @@
     "combat_walker": {
       "name": "Praetorian Combat Juggernaut",
       "description": "An agile walker with melee weapons.",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
+      "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
       "category": "rare",
       "keywords": ["Vehicle, Juggernaut"],
       "models": [
@@ -475,7 +475,7 @@
     "contemptor_assault_walker": {
       "name": "Relic Contemptor Juggernaut",
       "description": "A heavily armed ancient walker.",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
+      "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
       "category": "rare",
       "keywords": ["Vehicle, Juggernaut"],
       "models": [
@@ -497,7 +497,7 @@
     "heavy_assault_walker": {
       "name": "Heavy Assault Juggernaut",
       "description": "A heavily armed prime walker.",
-      "rules": ["vulnerable_rear", {"id": "wounds", "x": 3}],
+      "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}],
       "category": "rare",
       "keywords": ["Vehicle, Juggernaut"],
       "models": [

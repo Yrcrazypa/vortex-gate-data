@@ -781,7 +781,7 @@
     },
     "light_combat_walker": {
       "name": "Cult Light Combat Mechs",
-      "description": "Lightly equipped recon mechs stolen from the imperial defense force.",
+      "description": "Lightly equipped recon mechs.",
       "category": "elite",
       "keywords": ["Vehicle", "Mech"],
       "models": [

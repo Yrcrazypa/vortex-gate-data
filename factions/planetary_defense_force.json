@@ -652,7 +652,7 @@
           "options": [
             {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["missile_launcher", "laser_cannon", "autocannon", "plasma_cannon", "fusion_cannon", "heavy_machinegun", "laser_machinegun"]},
             {"addWeapon": ["walker_chainsaw", "hunter_missiles"]},
-            {"modelLimit": "all", "replaceRule": ["scout"], "withRule": ["heavy_armor"]}
+            {"modelLimit": "all", "replaceRule": ["scout"], "withRule": ["light_armor"]}
           ],
           "min": 1,
           "max": 3
@@ -673,7 +673,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}, "hover_mode", {"id": "transport", "x": 12}],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}, "hover_mode", {"id": "transport", "x": 12}],
           "weapons": [{"id": "light_machinegun", "mount": ["Front"]}],
           "options": [
             {
@@ -726,7 +726,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}, "hover_mode"],
+          "rules": ["aircraft", {"id": "wounds", "x": 6}, "hover_mode"],
           "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "strike_missiles", "mount": ["Front"]}],
           "options": [
             {
@@ -778,7 +778,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 5}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": ["heavy_flamethrower", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["laser_cannon", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "acid_cannon", "flamestorm_cannon", "laser_machinegun"]},
@@ -815,7 +815,7 @@
           "fight": 5,
           "defense": 12,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": [{"id": "twin_laser_cannon", "mount": ["Front"]}],
           "options": [
             {
@@ -892,7 +892,7 @@
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor", "field_radio"]},
             {"replaceRule": [{"id": "battle_tank_tactics", "x": 1}], "withRule": [{"id": "battle_tank_tactics", "x": 2}]}
           ],
-          "rules": [{"id": "battle_tank_tactics", "x": 1}, {"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "leader", "x": "Vehicle"}, "vulnerable_side_rear"],
+          "rules": [{"id": "battle_tank_tactics", "x": 1}, {"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, {"id": "leader", "x": "Vehicle"}, "vulnerable_side_rear"],
           "min": 1,
           "max": 1
         }
@@ -912,7 +912,7 @@
           "defense": 12,
           "movement": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "weapons": ["battle_cannon"],
           "options": [
             {
@@ -1010,7 +1010,7 @@
             {"addWeapon": ["hunter_missiles"]},
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio", "extra_armor"]}
           ],
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 9}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 9}, "vulnerable_rear"],
           "min": 1,
           "max": 1
         }
@@ -1030,7 +1030,7 @@
           "fight": 5,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
           "weapons": [{"id": "twin_aa_autocannon", "count": 2}, {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": {"id": "twin_aa_autocannon", "count": 2}, "withWeapon": ["artillery_cannon", {"id": "heavy_mortar", "count": 4}, "eagle_rockets", "death_missile"]},
@@ -1065,7 +1065,7 @@
           "fight": 5,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 6}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "heavy_impact", "x": 6}, "vulnerable_rear"],
           "weapons": [{"id": "twin_heavy_flamethrower", "mount": ["Front"], "count": 2}, "titan_hell_cannon", "autocannon"],
           "options": [
             {"replaceWeapon": ["titan_hell_cannon"], "withWeapon": ["giant_plasma_cannon", "titan_battle_cannon", "earthbreaker_cannon", "godslayer_cannon", "giant_fusion_cannon"]},
@@ -1114,7 +1114,7 @@
           "fight": 5,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "open_topped", "x": 10}, {"id": "transport", "x": 25}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "heavy_impact", "x": 6}, {"id": "open_topped", "x": 10}, {"id": "transport", "x": 25}, "vulnerable_rear"],
           "weapons": ["heavy_gatling_cannon", {"id": "twin_heavy_machinegun", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "heavy_gatling_cannon", "withWeapon": ["earthbreaker_cannon", "doom_cannon"]},
@@ -1153,7 +1153,7 @@
           "fight": 5,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "options": [
             {
               "addWeapon": [
@@ -1187,7 +1187,7 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": ["light_battle_cannon"],
           "options": [
             {"replaceWeapon": "light_battle_cannon", "withWeapon": ["gatling_cannon", "missile_rack"]},

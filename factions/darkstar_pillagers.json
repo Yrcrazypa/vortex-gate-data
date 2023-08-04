@@ -582,7 +582,7 @@
           "fight": 5,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "twin_fusion_cannon", "mount": ["Front"]}, "void_bombs"],
           "options": [
             {"replaceWeapon": {"id": "twin_fusion_cannon", "mount": ["Front"]}, "withWeapon": {"id": "twin_fusion_cannon", "count": 2, "mount": ["Front"]}},
@@ -608,7 +608,7 @@
           "fight": 5,
           "defense": 9,
           "reflexes": 6,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}],
           "weapons": ["strike_missiles", {"id": "twin_fusion_cannon", "mount": ["Front"]}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {
@@ -647,7 +647,7 @@
           "fight": 5,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 3}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 4}, "hover", {"id": "impact", "x": 3}, "vulnerable_side_rear"],
           "weapons": [{"id": "barb_cannon", "mount": ["Front"]}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {
@@ -682,7 +682,7 @@
           "fight": 5,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 3}, {"id": "open_topped", "x": 12}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 3}, {"id": "open_topped", "x": 12}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": [{"id": "barb_cannon", "mount": ["Front"]}],
           "options": [
             {
@@ -717,7 +717,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "heavy_impact", "x": 3}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "heavy_impact", "x": 3}, "vulnerable_side_rear"],
           "weapons": [{"id": "barb_cannon", "mount": ["Front"]}, {"id": "barb_cannon", "mount": ["Front", "Left"]}, {"id": "barb_cannon", "mount": ["Front", "Right"]}],
           "options": [
             {
@@ -772,7 +772,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 6}, "hover", "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "heavy_impact", "x": 6}, "hover", "vulnerable_side_rear"],
           "weapons": [{"id": "twin_fusion_cannon", "mount": ["Front"]}, {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {

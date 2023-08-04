@@ -245,7 +245,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "engineer", {"id": "leader", "x": "Vehicle"}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "engineer", {"id": "leader", "x": "Vehicle"}, "vulnerable_rear"],
           "weapons": [{"id": "battle_cannon", "count": 2}, {"id": "heavy_flamethrower", "count": 2, "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": {"id": "battle_cannon"}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}, "heavy_fusion_cannon", "shock_gun"], "limit": 2},
@@ -831,7 +831,7 @@
           "fight": 0,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}, "vulnerable_side_rear"],
           "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}],
           "options": [
             {
@@ -865,7 +865,7 @@
           "fight": 0,
           "defense": 11,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}, "vulnerable_side_rear"],
           "weapons": ["heavy_machinegun"],
           "options": [
             {"replaceWeapon": {"id": "heavy_machinegun"}, "withWeapon": ["rocket_launcher", "plasma_cannon", "fusion_cannon", "railgun"]},
@@ -894,7 +894,7 @@
           "fight": 0,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, "fly", "hover_mode", {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}],
+          "rules": [{"id": "wounds", "x": 5}, "fly", "hover_mode", {"id": "transport", "x": 12}, {"id": "open_topped", "x": 12}],
           "weapons": [{"id": "heavy_machinegun", "mount": ["Front", "Left", "Right"]}],
           "options": [
             {
@@ -927,7 +927,7 @@
           "fight": 0,
           "defense": 12,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "weapons": ["battle_cannon"],
           "options": [
             {"replaceWeapon": "battle_cannon", "withWeapon": ["siege_cannon", "heavy_plasma_cannon", "gatling_cannon", "heavy_fusion_cannon", "lightning_cannon"]},
@@ -973,7 +973,7 @@
           "fight": 0,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 9}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 9}, "vulnerable_rear"],
           "weapons": ["battle_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "battle_cannon", "withWeapon": ["heavy_fusion_cannon", "heavy_plasma_cannon", "siege_cannon", "gatling_cannon", "lightning_cannon"]},
@@ -1052,7 +1052,7 @@
           "fight": 0,
           "defense": 9,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 4}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
           "weapons": ["heavy_machinegun"],
           "options": [
             {"replaceWeapon": "heavy_machinegun", "withWeapon": ["twin_missile_launcher", "twin_minigun", "twin_heavy_machinegun", "mortar", "plasma_cannon", "fusion_cannon", "flamethrower_cannon"]},
@@ -1090,7 +1090,7 @@
           "fight": 0,
           "defense": 10,
           "reflexes": 5,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}],
           "weapons": ["heavy_bombs", {"id": "twin_heavy_machinegun", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["heavy_bombs"], "withWeapon": ["flame_bombs"]},
@@ -1116,7 +1116,7 @@
           "fight": 0,
           "defense": 10,
           "reflexes": 5,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "twin_heavy_machinegun", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": [{"id": "twin_heavy_machinegun", "mount": ["Front"]}], "withWeapon": [{"id": "heavy_fusion_cannon", "mount": ["Front"]}]},
@@ -1152,7 +1152,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "vulnerable_rear"],
           "weapons": [{"id": "heavy_flamethrower", "count": 4}],
           "options": [
             {
@@ -1180,7 +1180,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, "vulnerable_rear"],
           "weapons": [{"id": "battle_cannon", "count": 2}, {"id": "heavy_flamethrower", "count": 2, "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": {"id": "battle_cannon"}, "withWeapon": [{"id": "walker_claw", "count": 4}, {"id": "walker_saw", "count": 4}], "limit": 2},
@@ -1213,7 +1213,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "strider", {"id": "transport", "x": 10}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, "strider", {"id": "transport", "x": 10}, "vulnerable_rear"],
           "weapons": [
             {"id": "heavy_flamethrower", "mount": ["Front"]},
             {"id": "twin_heavy_machinegun", "count": 2, "mount": ["Front"]},
@@ -1257,7 +1257,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "strider", {"id": "transport", "x": 10}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, "strider", {"id": "transport", "x": 10}, "vulnerable_rear"],
           "weapons": [
             {"id": "heavy_flamethrower", "mount": ["Front"]},
             {"id": "heavy_stomp", "count": 3},
@@ -1302,7 +1302,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "open_topped", "x": 20}, {"id": "transport", "x": 20}, "vulnerable_rear", "walker"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, {"id": "open_topped", "x": 20}, {"id": "transport", "x": 20}, "vulnerable_rear", "walker"],
           "weapons": ["light_battle_cannon", {"id": "goring_tusks", "count": 5}, {"id": "heavy_stomp", "count": 4}],
           "options": [{"addWeapon": ["twin_heavy_machinegun"], "limit": 2}, {"addWeapon": ["light_battle_cannon", "siege_cannon"], "limit": 1}],
           "min": 1,
@@ -1533,7 +1533,7 @@
       "category": "rare",
       "keywords": ["Goblin", "Vehicle"],
       "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 3}],
+      "rules": [{"id": "impact", "x": 6}, "vulnerable_side_rear", {"id": "wounds", "x": 5}],
       "models": [
         {
           "name": "Goblin Mega Tank",

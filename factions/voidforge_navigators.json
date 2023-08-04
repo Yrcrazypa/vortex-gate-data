@@ -608,7 +608,7 @@
       "name": "Forgeborn Battle Tank",
       "description": "A heavy assault vehicle with devastating weapons.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+      "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
       "keywords": ["Vehicle", "Tank"],
       "models": [
         {
@@ -636,7 +636,7 @@
       "name": "Forgeborn Assault Tank",
       "description": "A heavy assault vehicle with devastating weapons.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+      "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
       "keywords": ["Vehicle", "Tank"],
       "models": [
         {
@@ -682,7 +682,7 @@
       "name": "Forgeborn APC",
       "description": "A heavy armored transport vehicle.",
       "category": "transport",
-      "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_side_rear"],
+      "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_side_rear"],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -704,7 +704,7 @@
       "name": "Forgeborn Halftrack",
       "description": "A light assault vehicle with devastating weapons.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, "strider", "vulnerable_side_rear"],
+      "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "strider", "vulnerable_side_rear"],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -726,7 +726,7 @@
       "name": "Forgeborn Buggy",
       "description": "A powerful infantry fighting vehicle that can operate in pairs.",
       "category": "transport",
-      "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 6}, {"id": "transport", "x": 5}, "strider", "vulnerable_side_rear"],
+      "rules": [{"id": "wounds", "x": 4}, {"id": "impact", "x": 6}, {"id": "transport", "x": 5}, "strider", "vulnerable_side_rear"],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -758,7 +758,7 @@
           "fight": 6,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "vulnerable_rear"],
           "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
           "options": [
             {
@@ -832,7 +832,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, "vulnerable_rear"],
           "weapons": [{"id": "heavy_autocannon", "count": 2}],
           "options": [
             {

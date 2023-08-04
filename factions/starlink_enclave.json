@@ -395,7 +395,7 @@
           "defense": 11,
           "reflexes": 6,
           "weapons": [{"id": "pulse_gatling", "mount": ["Front"]}],
-          "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 11}, "vulnerable_side_rear"],
           "options": [
             {"addWeapon": [{"id": "pulse_carbine", "count": 2}, {"id": "smart_missiles", "count": 2}], "limit": 1},
             {"addWeapon": ["homing_missile"], "limit": 3},
@@ -422,7 +422,7 @@
           "defense": 12,
           "reflexes": 6,
           "weapons": ["heavy_rail_cannon"],
-          "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 6}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 6}, "vulnerable_side_rear"],
           "options": [
             {"replaceWeapon": "heavy_rail_cannon", "withWeapon": ["ion_cannon", "fusion_cannon"]},
             {"addWeapon": [{"id": "smart_missiles", "count": 2}, {"id": "pulse_gatling", "count": 2}], "limit": 1},
@@ -502,7 +502,7 @@
           "fight": 4,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, "fly"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "defiant", "x": 3}, "fly"],
           "weapons": [{"id": "suit_fists", "count": 4}, "ion_cannon", {"id": "plasma_rifle", "count": 2}],
           "options": [
             {"replaceWeapon": "ion_cannon", "withWeapon": "heavy_pulse_gatling"},
@@ -530,7 +530,7 @@
           "fight": 4,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "evasive", "fly"],
+          "rules": [{"id": "wounds", "x": 6}, "evasive", "fly"],
           "weapons": ["ion_gatling", "suit_fists"],
           "options": [
             {"replaceWeapon": ["ion_gatling"], "withWeapon": ["heavy_fusion_blaster"]},
@@ -556,7 +556,7 @@
           "fight": 0,
           "defense": 9,
           "reflexes": 5,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}],
           "weapons": [{"id": "pulse_gatling", "mount": ["Front"]}, "quad_ion_rifle", {"id": "homing_missile", "count": 2}],
           "options": [
             {"replaceWeapon": {"id": "pulse_gatling", "mount": ["Front"]}, "withWeapon": {"id": "missile_pod", "mount": ["Front"]}},
@@ -582,7 +582,7 @@
           "fight": 0,
           "defense": 9,
           "reflexes": 5,
-          "rules": ["aircraft", {"id": "wounds", "x": 3}, "spotting_laser"],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}, "spotting_laser"],
           "weapons": ["missile_pod", {"id": "homing_missile", "count": 2}, "ion_bombs"],
           "options": [{"addWeapon": {"id": "ion_sniper_rifle", "count": 2}, "limit": 2}],
           "min": 1,
@@ -620,16 +620,6 @@
       "rules": [],
       "models": [
         {"name": "Tribal Warrior", "movement": 6, "shoot": 5, "fight": 6, "defense": 6, "reflexes": 6, "courage": 5, "weapons": ["tribal_rifle", {"id": "handweapon", "count": 1}], "min": 5, "max": 20}
-      ]
-    },
-    "tribe_scouts": {
-      "name": "Tribal Scouts",
-      "description": "Advanced scouting parties used by the mutated tribes to find their prey",
-      "category": "core",
-      "keywords": ["Infantry"],
-      "rules": ["scout"],
-      "models": [
-        {"name": "Tribal Scout", "movement": 6, "shoot": 5, "fight": 6, "reflexes": 6, "courage": 5, "defense": 5, "weapons": ["tribal_carbine", {"id": "handweapon", "count": 1}], "min": 5, "max": 20}
       ]
     },
     "wild_dogs": {
