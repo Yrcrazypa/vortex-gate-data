@@ -822,7 +822,7 @@
       "name": "Hover APC",
       "description": "A hover tank which can swiftly transport troops across the battlefield.",
       "category": "transport",
-      "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 11}],
+      "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 3}, {"id": "transport", "x": 11}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -836,7 +836,7 @@
           "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}, "twin_fusion_cannon"],
           "options": [
             {"replaceWeapon": {"id": "twin_shard_rifle", "mount": ["Front"]}, "withWeapon": [{"id": "shard_cannon", "mount": ["Front"]}]},
-            {"replaceWeapon": "twin_fusion_cannon", "withWeapon": ["twin_shard_cannon", "twin_elven_missile_launcher", "twin_sky_cannon", "twin_laser_machinegun"]},
+            {"replaceWeapon": "twin_fusion_cannon", "withWeapon": ["twin_shard_cannon", "twin_missile_launcher", "twin_sky_cannon", "twin_laser_machinegun"]},
             {"addRule": ["sky_engine", "gravity_thrusters"]}
           ],
           "min": 1,
@@ -848,7 +848,7 @@
       "name": "Hover Tank",
       "description": "A hover tank that can be outfitted with heavy weaponry to eliminate various threats.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "impact", "x": 6}],
+      "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 6}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -857,7 +857,7 @@
           "movement": 10,
           "shoot": 6,
           "fight": 6,
-          "defense": 12,
+          "defense": 11,
           "reflexes": 6,
           "weapons": [{"id": "twin_shard_rifle", "mount": ["Front"]}, "twin_fusion_cannon"],
           "options": [
@@ -866,7 +866,7 @@
               "withWeapon": [
                 {"id": "shard_cannon", "mount": ["Front"]},
                 {"id": "sky_cannon", "mount": ["Front"]},
-                {"id": "elven_missile_launcher", "mount": ["Front"]},
+                {"id": "missile_launcher", "mount": ["Front"]},
                 {"id": "fusion_cannon", "mount": ["Front"]},
                 {"id": "laser_machinegun", "mount": ["Front"]}
               ]
@@ -875,7 +875,7 @@
               "replaceWeapon": "twin_fusion_cannon",
               "withWeapon": [
                 "twin_shard_cannon",
-                "twin_elven_missile_launcher",
+                "twin_missile_launcher",
                 "twin_sky_cannon",
                 "twin_laser_machinegun",
                 "heavy_fusion_cannon",
@@ -895,7 +895,7 @@
       "name": "Revenant Titan",
       "description": "A gigantic revenant with a variety of loadouts to punish enemies of the high elves on the bloodiest of battlefields.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 3}],
+      "rules": [{"id": "wounds", "x": 6}],
       "keywords": ["Vehicle"],
       "models": [
         {
@@ -938,10 +938,10 @@
   "weapons": {
     "fusion_carbine": {"name": "Fusion Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 6, "rules": ["assault", {"id": "deadly", "x": 1}]},
     "distortion_rifle": {"name": "Distortion Rifle", "attacks": 1, "short": 6, "medium": 12, "ap": 6, "rules": ["assault", {"id": "blast", "x": 3}]},
-    "distortion_cannon": {"name": "Distortion Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 8, "rules": [{"id": "blast", "x": 3}, {"id": "deadly", "x": 1}]},
-    "distortion_blaster": {"name": "Distortion Blaster", "attacks": 1, "short": 18, "medium": 36, "ap": 8, "rules": ["indirect", {"id": "blast", "x": 3}]},
-    "sky_cannon": {"name": "Sky Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 4, "rules": ["anti_air"]},
-    "twin_sky_cannon": {"name": "Twin Sky Cannon", "attacks": 4, "short": 18, "medium": 36, "ap": 4, "rules": ["anti_air"]},
+    "distortion_cannon": {"name": "Distortion Cannon", "attacks": 1, "short": 24, "medium": 48, "ap": 8, "rules": ["heavy", {"id": "blast", "x": 3}]},
+    "distortion_blaster": {"name": "Distortion Blaster", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["indirect", {"id": "blast", "x": 3}]},
+    "sky_cannon": {"name": "Sky Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 4, "rules": ["anti_air", "heavy"]},
+    "twin_sky_cannon": {"name": "Twin Sky Cannon", "attacks": 4, "short": 18, "medium": 36, "ap": 4, "rules": ["anti_air", "heavy"]},
     "star_spear": {"name": "Star Spear", "attacks": 1, "short": "Melee", "ap": 4, "rules": ["cumbersome", {"id": "reach", "x": 1}]},
     "laser_lance_melee": {"name": "Laser Lance (Melee)", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["lance", {"id": "reach", "x": 1}]},
     "laser_lance_shoot": {"name": "Laser Lance (Shooting)", "attacks": 1, "short": 6, "medium": 12, "ap": 1, "rules": ["rending"]},
