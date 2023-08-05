@@ -1662,7 +1662,7 @@
             {"replaceWeapon": "storm_rifle", "withWeapon": "marine_smg"},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 4},
-              "withWeapon": [{"id": "energy_polearm", "count": 4}, {"id": "energy_polearm", "count": 4}, {"id": "energy_handweapon", "count": 5}, {"id": "energy_powerweapon", "count": 4}]
+              "withWeapon": [{"id": "energy_polearm", "count": 4}, {"id": "energy_handweapon", "count": 5}, {"id": "energy_powerweapon", "count": 4}]
             },
             {"replaceRule": {"id": "magic", "x": 1}, "withRule": [{"id": "magic", "x": 2}]},
             {"addRule": [{"id": "defiant", "x": 3}, {"name": "Army Standard", "id": "inspiring"}, "destroyer_armor"]}
