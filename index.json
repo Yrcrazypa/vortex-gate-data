@@ -1863,7 +1863,7 @@
     "wounds": {
       "name": "Wounds",
       "inputs": ["x"],
-      "description": "This model has X lives that it may lose before it is killed. Damage must be assigned to an already damaged model before being assigned to any other model. Once this model reaches less than half wounds, it suffers -1 Acc/Str.",
+      "description": "This model has X lives that it may lose before it is killed. Damage must be assigned to an already damaged model before being assigned to any other model. _Vehicle_ and _Monster_ models at less than half wounds suffer -1 Accuracy and Strength.",
       "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
     },
     "medic": {"name": "Medic(Infantry)", "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented.", "points": 15},
