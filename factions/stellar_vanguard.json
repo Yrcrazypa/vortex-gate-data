@@ -645,10 +645,14 @@
       ],
       "options": [
         {"replaceWeapon": "marine_rifle", "withWeapon": ["marine_shotgun", "sniper_rifle", "marine_dmr", "marine_smg", "heavy_carbine"]},
-        {"replaceWeapon": "marine_rifle", "withWeapon": ["plasma_rifle", "flamethrower", "fusion_rifle", "gravity_rifle", "thermal_rifle"], "modelLimit": "1/5"},
         {
           "replaceWeapon": "marine_rifle",
           "withWeapon": [
+            "plasma_rifle",
+            "flamethrower",
+            "fusion_rifle",
+            "gravity_rifle",
+            "thermal_rifle",
             "laser_sniper",
             "heavy_machinegun",
             "missile_launcher",
@@ -663,7 +667,6 @@
           "modelLimit": "1/5"
         },
         {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
-        {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"], "modelLimit": "1/5"},
         {
           "addRule": [{"name": "Orbital Insertion", "id": "ambush"}, {"id": "evasive", "name": "Camouflage Cloak"}, "grappling_hook", {"id": "fear", "name": "Death Masks"}],
           "modelLimit": "all",
@@ -1766,7 +1769,7 @@
         {"replaceWeapon": "storm_rifle", "withWeapon": "marine_smg"},
         {
           "replaceWeapon": {"id": "energy_handweapon", "count": 2},
-          "withWeapon": [{"id": "energy_polearm", "count": 2}, {"id": "energy_polearm", "count": 2}, {"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 2}]
+          "withWeapon": [{"id": "energy_polearm", "count": 2}, {"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 2}]
         },
         {"addRule": ["ambush"], "modelLimit": "all"},
         {"addRule": [{"id": "defiant", "x": 3}], "limit": "1/5"}
