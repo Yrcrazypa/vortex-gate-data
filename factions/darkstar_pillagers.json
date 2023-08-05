@@ -487,7 +487,7 @@
           "options": [
             {"replaceWeapon": ["barb_carbine", "light_handweapon"], "withWeapon": [["barb_pistol", {"id": "light_handweapon", "count": 2}]]},
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
-            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "poison_whip", "count": 2}, {"id": "energy_spear", "count": 2}]}
+            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "poison_whip", "count": 2}, {"id": "energy_polearm", "count": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -517,7 +517,7 @@
           "weapons": ["barb_rifle", "light_handweapon", {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
-            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "poison_whip", "count": 2}, {"id": "energy_spear", "count": 2}]}
+            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "poison_whip", "count": 2}, {"id": "energy_polearm", "count": 2}]}
           ],
           "min": 1,
           "max": 1

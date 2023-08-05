@@ -50,7 +50,7 @@
             {"replaceWeapon": ["radiation_pistol"], "withWeapon": ["smg", "thermal_carbine", "thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol", "eradication_blaster"]},
             {
               "replaceWeapon": [{"id": "handweapon", "count": 3}],
-              "withWeapon": [{"id": "energy_powerweapon", "count": 3}, {"id": "energy_handweapon", "count": 3}, {"id": "taser_sword", "count": 3}, {"id": "energy_staff", "count": 3}]
+              "withWeapon": [{"id": "energy_powerweapon", "count": 3}, {"id": "energy_handweapon", "count": 3}, {"id": "taser_sword", "count": 3}, {"id": "energy_polearm", "count": 3}]
             },
             {"addWeapon": ["thermal_rifle", "eradication_ray", "plasma_rifle", "emp_rifle", "fusion_rifle", "flamethrower"], "limit": 1},
             {"addWeapon": ["servo_arm"], "limit": 2},

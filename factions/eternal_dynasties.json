@@ -22,7 +22,7 @@
           "options": [
             {
               "replaceWeapon": {"id": "force_blade", "count": 3},
-              "withWeapon": [{"id": "phase_sword", "count": 3}, {"id": "oblivion_scythe", "count": 3}, {"id": "reaper_glaive", "count": 3}, [{"id": "energy_staff", "count": 3}, "force_beam"]]
+              "withWeapon": [{"id": "phase_sword", "count": 3}, {"id": "oblivion_scythe", "count": 3}, {"id": "reaper_glaive", "count": 3}, [{"id": "energy_polearm", "count": 3}, "force_beam"]]
             },
             {"addWeapon": ["fusion_gauntlet", "fusion_pistol", "antimatter_pistol", "plasma_pistol"], "limit": 1},
             {"addRule": "regeneration_orb"}
@@ -54,7 +54,7 @@
                 {"id": "phase_sword", "count": 4},
                 {"id": "oblivion_scythe", "count": 4},
                 {"id": "reaper_glaive", "count": 4},
-                [{"id": "energy_staff", "count": 4}, {"id": "force_beam", "count": 2}]
+                [{"id": "energy_polearm", "count": 4}, {"id": "force_beam", "count": 2}]
               ]
             },
             {"limit": 1, "addWeapon": ["fusion_gauntlet", "fusion_pistol", "antimatter_pistol", "plasma_pistol"]},
@@ -79,9 +79,9 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 6,
-          "weapons": [{"id": "energy_staff", "count": 2}, "force_beam"],
+          "weapons": [{"id": "energy_polearm", "count": 2}, "force_beam"],
           "options": [
-            {"replaceWeapon": [{"id": "energy_staff", "count": 2}, "force_beam"], "withWeapon": [[{"id": "energy_staff", "count": 2}, "decimating_beam"]]},
+            {"replaceWeapon": [{"id": "energy_polearm", "count": 2}, "force_beam"], "withWeapon": [[{"id": "energy_polearm", "count": 2}, "decimating_beam"]]},
             {"addWeapon": "tesla_field"},
             {"addRule": ["flight_cloak"]},
             {"addRule": [{"id": "engineer", "name": "Repair Orb"}, "control_orb", "phase_field", "time_orb"], "limit": 1}
@@ -114,7 +114,7 @@
                 {"id": "phase_sword", "count": 4},
                 {"id": "oblivion_scythe", "count": 4},
                 {"id": "reaper_glaive", "count": 4},
-                [{"id": "energy_staff", "count": 4}, {"id": "force_beam", "count": 2}]
+                [{"id": "energy_polearm", "count": 4}, {"id": "force_beam", "count": 2}]
               ]
             },
             {"addRule": "regeneration_orb"}
@@ -163,7 +163,7 @@
           "options": [
             {
               "replaceWeapon": {"id": "force_blade", "count": 3},
-              "withWeapon": [{"id": "phase_sword", "count": 3}, {"id": "oblivion_scythe", "count": 3}, {"id": "reaper_glaive", "count": 3}, [{"id": "energy_staff", "count": 3}, "force_beam"]]
+              "withWeapon": [{"id": "phase_sword", "count": 3}, {"id": "oblivion_scythe", "count": 3}, {"id": "reaper_glaive", "count": 3}, [{"id": "energy_polearm", "count": 3}, "force_beam"]]
             },
             {"replaceWeapon": {"id": "gauss_beamer", "mount": ["Front"]}, "withWeapon": {"id": "tesla_cannon", "mount": ["Front"]}},
             {"addRule": "regeneration_orb"},

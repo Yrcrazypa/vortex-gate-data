@@ -134,7 +134,7 @@
             {"replaceWeapon": "pistol", "withWeapon": ["plasma_pistol"]},
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_staff", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_polearm", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
             },
             {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
           ],

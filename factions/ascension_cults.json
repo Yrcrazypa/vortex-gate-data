@@ -80,7 +80,7 @@
           "weapons": ["pistol", "blasting_charges", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "pistol", "withWeapon": ["marine_pistol", "plasma_pistol", "flamethrower_pistol", "web_pistol"]},
-            {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_staff", "count": 2}, {"id": "bone_sword", "count": 2}]},
+            {"replaceWeapon": [{"id": "light_handweapon", "count": 2}], "withWeapon": [{"id": "energy_polearm", "count": 2}, {"id": "bone_sword", "count": 2}]},
             {"addRule": ["companion"]},
             {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
           ],

@@ -164,7 +164,7 @@
       "category": "elite",
       "rules": ["support", {"id": "wounds", "x": 2}, "warrior"],
       "models": [
-        {"name": "Preacher Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "energy_staff", "x": 3}], "min": 1, "max": 1}
+        {"name": "Preacher Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "energy_polearm", "x": 3}], "min": 1, "max": 1}
       ]
     },
     "initiates": {
@@ -273,7 +273,7 @@
       "name": "Protector Wardens",
       "description": "A group of zealots armed with shields and deadly melee weapons.",
       "category": "core",
-      "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [{"id": "energy_halberd", "count": 2}]}],
+      "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [{"id": "energy_polearm", "count": 2}]}],
       "models": [
         {
           "name": "Protector Superior",
@@ -286,7 +286,7 @@
           "weapons": [{"id": "energy_handweapon", "count": 2}, "marine_pistol", "shield"],
           "options": [
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
-            {"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [{"id": "energy_spear", "count": 2}]}
+            {"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [{"id": "energy_polearm", "count": 2}]}
           ],
           "min": 1,
           "max": 1

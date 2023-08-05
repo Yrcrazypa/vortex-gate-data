@@ -359,7 +359,7 @@
                 {"id": "energy_handweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_claws", "count": 5},
-                {"id": "energy_staff", "count": 4}
+                {"id": "energy_polearm", "count": 4}
               ]
             },
             {"addRule": ["jetpack", "destroyer_armor", "disk_of_change"], "limit": 1},
@@ -398,7 +398,7 @@
                 {"id": "energy_handweapon", "count": 4},
                 {"id": "energy_powerweapon", "count": 4},
                 {"id": "energy_claws", "count": 5},
-                {"id": "energy_staff", "count": 4}
+                {"id": "energy_polearm", "count": 4}
               ]
             },
             {
@@ -701,7 +701,7 @@
           "defense": 6,
           "reflexes": 4,
           "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 2}],
-          "weapons": [{"id": "energy_staff", "count": 3}],
+          "weapons": [{"id": "energy_polearm", "count": 3}],
           "options": [{"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}, {"addRule": "disk_of_change"}],
           "min": 1,
           "max": 1
@@ -1119,7 +1119,7 @@
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "energy_claws", "count": 3}, {"id": "energy_staff", "count": 2}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "energy_claws", "count": 3}, {"id": "energy_polearm", "count": 2}]
             }
           ],
           "min": 1,
@@ -1158,7 +1158,7 @@
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "energy_claws", "count": 4}, {"id": "energy_staff", "count": 3}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "energy_claws", "count": 4}, {"id": "energy_polearm", "count": 3}]
             }
           ],
           "min": 5,
@@ -1205,7 +1205,7 @@
                 {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_powerweapon", "count": 2},
                 {"id": "energy_claws", "count": 3},
-                {"id": "energy_staff", "count": 2}
+                {"id": "energy_polearm", "count": 2}
               ]
             },
             {"addWeapon": ["missile_rack"], "modelLimit": "1/5"}

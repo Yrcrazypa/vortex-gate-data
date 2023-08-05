@@ -130,7 +130,7 @@
               "withWeapon": [
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
-                {"id": "energy_staff", "count": 3},
+                {"id": "energy_polearm", "count": 3},
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3}
@@ -167,7 +167,7 @@
               "withWeapon": [
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3},
-                {"id": "energy_staff", "count": 3},
+                {"id": "energy_polearm", "count": 3},
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3}
               ]
@@ -208,7 +208,7 @@
                 {"id": "energy_powerweapon", "count": 3},
                 {"id": "assault_drill", "count": 3},
                 {"id": "energy_handweapon", "count": 3},
-                {"id": "energy_staff", "count": 3},
+                {"id": "energy_polearm", "count": 3},
                 {"id": "energy_handweapon", "count": 3},
                 {"id": "energy_handweapon", "count": 3}
               ]

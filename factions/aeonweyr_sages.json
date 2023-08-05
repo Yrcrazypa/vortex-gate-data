@@ -278,7 +278,7 @@
               "replaceWeapon": ["shard_rifle", {"id": "elven_blade", "count": 2}],
               "withWeapon": [["shard_pistol", {"id": "elven_blade", "count": 3}], ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}]]
             },
-            {"replaceWeapon": {"id": "elven_blade", "count": 3}, "withWeapon": [{"id": "energy_staff", "count": 3}]},
+            {"replaceWeapon": {"id": "elven_blade", "count": 3}, "withWeapon": [{"id": "energy_polearm", "count": 3}]},
             {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
           ],
           "min": 1,
@@ -307,7 +307,7 @@
               "replaceWeapon": ["shard_rifle", {"id": "elven_blade", "count": 2}],
               "withWeapon": [["shard_pistol", {"id": "elven_blade", "count": 3}], ["laser_lance_shoot", {"id": "laser_lance_melee", "count": 3}]]
             },
-            {"replaceWeapon": {"id": "elven_blade", "count": 3}, "withWeapon": [{"id": "energy_staff", "count": 3}]},
+            {"replaceWeapon": {"id": "elven_blade", "count": 3}, "withWeapon": [{"id": "energy_polearm", "count": 3}]},
             {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
           ],
           "min": 1,
