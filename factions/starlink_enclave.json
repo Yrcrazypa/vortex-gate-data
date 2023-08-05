@@ -760,7 +760,6 @@
     "tribal_carbine": {"name": "Tribal Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": []},
     "tribal_tankbuster": {"name": "Tribal Tankbuster", "attacks": 2, "short": 9, "medium": 18, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
     "tribal_flamethrower": {"name": "Tribal Flamethrower", "attacks": 3, "short": 6, "medium": 12, "ap": 1, "rules": ["flame"]},
-    "handweapon": {"name": "Tribal Carbine Blade", "attacks": 1, "short": "Melee", "ap": 1, "rules": ["rending"]},
     "ogre_fists": {"name": "Ogre Fists", "attacks": 1, "short": "Melee", "ap": 3, "rules": []},
     "dinosaur_claws": {"name": "Dinosaur Claws and Teeth", "attacks": 1, "short": "Melee", "ap": 5, "rules": [{"id": "reach", "x": 1}]}
   },
