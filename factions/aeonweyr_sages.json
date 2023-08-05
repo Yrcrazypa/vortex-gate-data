@@ -848,7 +848,7 @@
       "name": "Hover Tank",
       "description": "A hover tank that can be outfitted with heavy weaponry to eliminate various threats.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 6}],
+      "rules": [{"id": "wounds", "x": 5}, "hover", {"id": "impact", "x": 6}, "vulnerable_rear"],
       "keywords": ["Vehicle"],
       "models": [
         {
