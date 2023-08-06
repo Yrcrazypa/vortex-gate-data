@@ -448,7 +448,7 @@
       "name": "Manticore",
       "description": "A terrifying winged beast, raging across the battlefield in a flurry of claws and teeth.",
       "category": "rare",
-      "keywords": ["Beast", "Monster"],
+      "keywords": ["Monster"],
       "models": [
         {
           "name": "Manticore",
@@ -469,7 +469,7 @@
       "name": "Demonic Spawn",
       "description": "Horribly mutated beings that run rampant on the battlefield.",
       "category": "elite",
-      "keywords": ["Beast", "Monster"],
+      "keywords": ["Monster"],
       "models": [
         {
           "name": "Demonic Spawn",

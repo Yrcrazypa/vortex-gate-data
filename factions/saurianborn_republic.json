@@ -455,7 +455,7 @@
       "name": "Giant Dreadscale",
       "description": "A hulking monstrosity from the depths of the jungle, this terrifying predator is a weapon of mass destruction.",
       "category": "rare",
-      "keywords": ["Beast", "Monster"],
+      "keywords": ["Monster"],
       "models": [
         {
           "name": "Giant Dreadscale",

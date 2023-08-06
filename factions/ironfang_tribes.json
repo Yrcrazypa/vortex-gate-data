@@ -949,7 +949,7 @@
       "name": "Gargantuan Spider",
       "description": "A terrifying spider that skitters around the battlefield.",
       "category": "rare",
-      "keywords": ["Beast", "Monster"],
+      "keywords": ["Monster"],
       "models": [
         {
           "name": "Gargantuan Spider",

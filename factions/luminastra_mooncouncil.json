@@ -517,7 +517,7 @@
       "name": "Great Eagle",
       "description": "A magnificent beast and ally to the High Elves.",
       "category": "rare",
-      "keywords": ["Beast", "Monster"],
+      "keywords": ["Monster"],
       "models": [
         {
           "name": "Great Eagle",

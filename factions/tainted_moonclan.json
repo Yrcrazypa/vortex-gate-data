@@ -375,7 +375,7 @@
       "name": "Cockatrice",
       "description": "A ferocious beast which gaze turns men to stone.",
       "category": "rare",
-      "keywords": ["Beast", "Monster"],
+      "keywords": ["Monster"],
       "models": [
         {
           "name": "Cockatrice",
@@ -396,7 +396,7 @@
       "name": "Chimera",
       "description": "A monstrous creature ",
       "category": "rare",
-      "keywords": ["Beast", "Monster"],
+      "keywords": ["Monster"],
       "models": [
         {
           "name": "Chimera",
