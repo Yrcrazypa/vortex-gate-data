@@ -968,12 +968,12 @@
           "defense": 8,
           "reflexes": 6,
           "movement": 6,
-          "weapons": ["prime_sniper_rifle", {"id": "handweapon", "count": 2}],
+          "weapons": ["heavy_sniper_rifle", {"id": "handweapon", "count": 2}],
           "min": 3,
           "max": 6
         }
       ],
-      "options": [{"replaceWeapon": "prime_sniper_rifle", "withWeapon": ["laser_sniper"]}, {"addWeapon": "prime_sniper_carbine", "modelLimit": 1}]
+      "options": [{"replaceWeapon": "heavy_sniper_rifle", "withWeapon": ["laser_sniper"]}]
     },
     "devastation_squad": {
       "name": "Devastation Squad",
