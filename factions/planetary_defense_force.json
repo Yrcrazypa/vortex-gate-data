@@ -8,7 +8,7 @@
       "name": "Company Commander",
       "description": "Foot infantry commander of the imperial defense force.",
       "category": "hero",
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "defense_force_tactics", "x": 2}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 2}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Company Commander",
@@ -64,7 +64,7 @@
       "name": "Platoon Commander",
       "description": "Foot infantry platoon leader of the imperial defense force.",
       "category": "hero",
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "defense_force_tactics", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Platoon Commander",
@@ -427,7 +427,12 @@
           "options": [
             {
               "replaceWeapon": {"id": "battle_cannon", "mount": ["Front"]},
-              "withWeapon": [{"id": "rocket_battery", "mount": ["Front"]}, {"id": "light_artillery_cannon", "mount": ["Front"]}, {"id": "gatling_cannon", "mount": ["Front"]}, {"id": "tank_hunter_cannon", "mount": ["Front"]}]
+              "withWeapon": [
+                {"id": "rocket_battery", "mount": ["Front"]},
+                {"id": "light_artillery_cannon", "mount": ["Front"]},
+                {"id": "gatling_cannon", "mount": ["Front"]},
+                {"id": "tank_hunter_cannon", "mount": ["Front"]}
+              ]
             }
           ],
           "min": 2,
@@ -889,10 +894,10 @@
             },
             {"addWeapon": ["light_machinegun", "twin_marine_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
-            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor", "field_radio"]},
-            {"replaceRule": [{"id": "battle_tank_tactics", "x": 1}], "withRule": [{"id": "battle_tank_tactics", "x": 2}]}
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]},
+            {"replaceRule": [{"id": "tactician", "x": 1}], "withRule": [{"id": "tactician", "x": 2}]}
           ],
-          "rules": [{"id": "battle_tank_tactics", "x": 1}, {"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, {"id": "leader", "x": "Vehicle"}, "vulnerable_side_rear"],
+          "rules": [{"id": "tactician", "x": 1}, {"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, {"id": "leader", "x": "Vehicle"}, "vulnerable_side_rear"],
           "min": 1,
           "max": 1
         }
@@ -951,7 +956,7 @@
             },
             {"addWeapon": ["light_machinegun", "twin_marine_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
-            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor", "field_radio"]}
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
           "min": 1,
           "max": 1
@@ -1305,21 +1310,9 @@
   },
   "rules": {
     "high_command": {"name": "High Command", "description": "This model may use Defense Force Tactics one additional time.", "points": 2},
-    "defense_force_tactics": {
-      "name": "Defense Force Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * Re-roll failed Strength tests of 9+ \n * +3\" of Movement",
-      "points": ["rule.x", {"multiply": 10}]
-    },
     "ogre_shield": {"name": "Ogre Shield", "description_short": "+1 Save", "description": "This model gets +1 Save.", "points": 2},
     "extra_armor": {"name": "Reinforced Hull", "description": "Subtract 1 from all Damage Chart rolls for this model.", "points": 10},
     "heavy_armor": {"name": "Heavy Armor", "hidden": true, "description": "This model gets +1 Save.", "description_short": "Save +1", "points": 2},
-    "battle_tank_tactics": {
-      "name": "Battle Tank Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Battle Tank_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+ \n * +3\" Movement \n * Impact(+3).",
-      "points": ["rule.x", {"multiply": 15}]
-    },
     "banner": {"name": "Inspiring Banner", "description": "Friendly _Infantry_ units within 6\" get +1 Courage.", "points": 10}
   },
   "powers": {

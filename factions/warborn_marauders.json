@@ -952,7 +952,7 @@
               "limit": 1
             },
             {"addWeapon": ["light_machinegun", "twin_carbine"], "limit": 1},
-            {"addRule": [{"id": "dozer", "name": "Battle Ram"}, "extra_armor", "wrecking_ball", "boarding_plank", {"id": "transport", "x": 10, "name": "Extra Space"}]}
+            {"addRule": [{"id": "dozer", "name": "Battle Ram"}, "wrecking_ball", "boarding_plank", {"id": "transport", "x": 10, "name": "Extra Space"}]}
           ],
           "min": 1,
           "max": 1
@@ -1009,7 +1009,7 @@
               "limit": 1
             },
             {"addWeapon": ["light_machinegun", "twin_carbine"], "limit": 1},
-            {"addRule": [{"id": "dozer", "name": "Battle Ram"}, "extra_armor", "wrecking_ball", "boarding_plank", {"id": "transport", "x": 10, "name": "Extra Space"}]}
+            {"addRule": [{"id": "dozer", "name": "Battle Ram"}, "wrecking_ball", "boarding_plank", {"id": "transport", "x": 10, "name": "Extra Space"}]}
           ],
           "min": 1,
           "max": 1
