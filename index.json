@@ -1797,7 +1797,7 @@
       "inputs": ["x"],
       "description": "Multiply hits from this weapon by X.",
       "notes": "Small RNG discount to account for single shot randomness",
-      "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.9}]
+      "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.8}]
     },
     "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with a Damage Chart.", "points": ["weapon.attacks", {"multiply": 1}]},
     "flame": {"name": "Spray", "description": "Hits from this weapon ignore any cover bonuses.", "points": ["weapon.attacks", {"multiply": 0.5}]},
@@ -1860,7 +1860,7 @@
       "name": "Wounds",
       "inputs": ["x"],
       "description": "This model has X lives that it may lose before it is killed. Damage must be assigned to an already damaged model before being assigned to any other model. _Vehicle_ and _Monster_ models at less than half wounds suffer -1 Accuracy and Strength.",
-      "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
+      "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}, { "pow": 1.2 }]}]
     },
     "medic": {"name": "Medic(Infantry)", "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented.", "points": 15},
     "medic_x": {
@@ -2000,6 +2000,7 @@
     },
     "hero": {"name": "Hero", "description": "When this model is activated, friendly _Infantry_ units within 6\" may choose to activate and perform the same actions as this unit."},
     "lightweight": {"name": "Lightweight", "description": "Attacks with this weapon are made at +1 Strength.", "points": ["weapon.attacks", {"multiply": 1}]},
+    "pow_test": {"name": "Test", "description": "Test pow", "points": [2, { "pow": 2 }]},
     "cumbersome": {"name": "Cumbersome", "description": "Attacks with this weapon are made at -1 Strength.", "points": ["weapon.attacks", {"multiply": -1}]},
     "heavy": {"name": "Heavy", "description": "This weapon shoots at -1 Accuracy if its firer moved this activation.", "points": ["weapon.attacks", {"multiply": -1}]},
     "accurate": {"name": "Accurate", "description": "Attacks with this weapon are made at +1 Accuracy.", "points": ["weapon.attacks", {"multiply": 1}]},
