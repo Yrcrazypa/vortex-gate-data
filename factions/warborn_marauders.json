@@ -366,7 +366,7 @@
       ]
     },
     "orc_mob": {
-      "name": "Orc Mob",
+      "name": "Orc Orcs",
       "description": "A group of angry orcs.",
       "category": "core",
       "options": [
@@ -378,7 +378,7 @@
       ],
       "models": [
         {
-          "name": "Orc Boss",
+          "name": "Orc Champion",
           "movement": 6,
           "courage": 5,
           "shoot": 4,
@@ -398,7 +398,7 @@
       ]
     },
     "boss_mob": {
-      "name": "Brute Mob",
+      "name": "Brute Orcs",
       "description": "A group of big orcs ready to cause maximum havoc.",
       "category": "core",
       "models": [
@@ -426,18 +426,18 @@
       ]
     },
     "looter_mob": {
-      "name": "Looter Mob",
+      "name": "Looter Orcs",
       "description": "A group of Orcs obsessed with looting and upgrading shooting weapons. Can be equipped for various specialist roles.",
       "category": "elite",
       "options": [{"replaceWeapon": "carbine", "withWeapon": ["flamethrower", "plasma_rifle", "fusion_rifle", "grenade_launcher", "light_machinegun"]}, {"addRule": ["banner"], "modelLimit": 1}],
       "models": [
         {
-          "name": "Looter Orc Boss",
+          "name": "Looter Orc Champion",
           "movement": 6,
           "courage": 5,
           "shoot": 5,
           "fight": 6,
-          "defense": 5,
+          "defense": 6,
           "reflexes": 5,
           "weapons": ["carbine", "handweapon"],
           "options": [
@@ -452,72 +452,8 @@
         {"name": "Looter Orc", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["carbine", "handweapon"], "min": 4, "max": 9}
       ]
     },
-    "heavy_looter_mob": {
-      "name": "Heavy Looter Mob",
-      "description": "A group of Orcs obsessed with looting and upgrading heavy shooting weapons. Can be equipped for various specialist roles.",
-      "category": "rare",
-      "options": [
-        {"replaceWeapon": "rocket_launcher", "withWeapon": ["railgun", "heavy_machinegun", "plasma_cannon", "fusion_cannon"]},
-        {"replaceWeapon": "rocket_launcher", "withWeapon": ["bomb_hammer", "rocket_pistol"], "modelLimit": "2/5"},
-        {"addRule": ["banner"], "modelLimit": 1}
-      ],
-      "models": [
-        {
-          "name": "Heavy Looter Orc Boss",
-          "movement": 6,
-          "courage": 5,
-          "shoot": 5,
-          "fight": 6,
-          "defense": 5,
-          "reflexes": 5,
-          "weapons": ["carbine", "handweapon"],
-          "options": [
-            {"replaceWeapon": "carbine", "withWeapon": ["rocket_launcher", "twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},
-            {"replaceWeapon": ["carbine", "handweapon"], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 2}]]},
-            {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_saw", "count": 2}, {"id": "heavy_energy_claw", "count": 2}]},
-            {"addWeapon": ["bomb_beast"]},
-            {"addRule": ["champion"]}
-          ],
-          "min": 1,
-          "max": 1
-        },
-        {"name": "Heavy Looter Orc", "movement": 6, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 5, "weapons": ["rocket_launcher", "handweapon"], "min": 4, "max": 9}
-      ]
-    },
-    "looter_boss_mob": {
-      "name": "Brute Looter Mob",
-      "description": "A group of Brute Orcs obsessed with looting and upgrading weapons.",
-      "category": "elite",
-      "models": [
-        {
-          "name": "Brute Looter",
-          "movement": 6,
-          "courage": 5,
-          "shoot": 5,
-          "fight": 6,
-          "defense": 7,
-          "reflexes": 5,
-          "rules": ["relentless"],
-          "weapons": ["carbine", {"id": "handweapon", "count": 2}],
-          "options": [
-            {
-              "replaceWeapon": "carbine",
-              "withWeapon": ["twin_carbine", "combi_rocket_launcher", "combi_heavy_flamer", "rocket_launcher", "railgun", "heavy_machinegun", "plasma_cannon", "fusion_cannon"]
-            },
-            {"replaceWeapon": ["carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["heavy_pistol", {"id": "handweapon", "count": 3}]]},
-            {
-              "replaceWeapon": {"id": "handweapon", "count": 3},
-              "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_saw", "count": 3}, {"id": "heavy_energy_claw", "count": 3}, {"id": "cutlass", "count": 3}]
-            },
-            {"addRule": {"id": "defiant", "x": 3, "name": "Cyborg Body"}}
-          ],
-          "min": 5,
-          "max": 10
-        }
-      ]
-    },
     "commando_orcs": {
-      "name": "Commando Mob",
+      "name": "Commando Orcs",
       "description": "A group of sneaky orcs.",
       "category": "elite",
       "rules": ["ambush", "evasive"],
@@ -531,7 +467,7 @@
       ],
       "models": [
         {
-          "name": "Commando Orc Boss",
+          "name": "Commando Orc Champion",
           "movement": 6,
           "courage": 5,
           "shoot": 5,
@@ -564,7 +500,7 @@
       ],
       "models": [
         {
-          "name": "Jetpack Orc Boss",
+          "name": "Jetpack Orc Champion",
           "movement": 8,
           "courage": 5,
           "shoot": 4,
@@ -584,7 +520,7 @@
       ]
     },
     "ultra_boss_mob": {
-      "name": "Ultra Brute Mob",
+      "name": "Ultra Brute Orcs",
       "description": "A group of orcs bosses that are heavily armored and dangerous.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
@@ -656,7 +592,7 @@
       ]
     },
     "biker_mob": {
-      "name": "Biker Mob",
+      "name": "Biker Orcs",
       "description": "A group of angry orcs on bikes.",
       "category": "elite",
       "keywords": ["Biker"],
@@ -677,7 +613,7 @@
       ],
       "models": [
         {
-          "name": "Biker Boss",
+          "name": "Biker Champion",
           "movement": 8,
           "courage": 5,
           "shoot": 4,
@@ -708,7 +644,7 @@
       ]
     },
     "boss_bikers": {
-      "name": "Biker Brute Mob",
+      "name": "Biker Brute Orcs",
       "description": "A group of bigger orcs mounted on bikes.",
       "category": "elite",
       "keywords": ["Biker"],
