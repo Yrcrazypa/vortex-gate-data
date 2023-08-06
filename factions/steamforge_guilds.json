@@ -262,7 +262,7 @@
           "weapons": ["burst_carbine", {"id": "energy_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": ["burst_carbine"], "withWeapon": ["sonic_blade", "smg"]},
-            {"replaceWeapon": [{"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "taser_sword", "count": 2}, {"id": "sonic_blade", "count": 2}, {"id": "energy_claws", "count": 3}]},
+            {"replaceWeapon": [{"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "taser_sword", "count": 2}, {"id": "sonic_blade", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]},
             {"addRule": {"id": "ambush", "name": "Infiltration Protocol"}, "modelLimit": "all"}
           ],
           "min": 5,
@@ -343,7 +343,7 @@
         {"replaceWeapon": "tesla_cannon", "withWeapon": ["radiation_emitter", "laser_machinegun", "fusion_cannon", "twin_plasma_rifle", "laser_cannon"], "modelLimit": "1/3"},
         {
           "replaceWeapon": [{"id": "iron_claws", "count": 2}, "tesla_cannon"],
-          "withWeapon": [["thermal_rifle", {"id": "energy_powerweapon", "count": 3}], ["thermal_rifle", {"id": "energy_claws", "count": 4}]],
+          "withWeapon": [["thermal_rifle", {"id": "energy_powerweapon", "count": 3}], ["thermal_rifle", {"id": "twin_energy_handweapon", "count": 4}]],
           "modeLlimit": "all"
         }
       ],

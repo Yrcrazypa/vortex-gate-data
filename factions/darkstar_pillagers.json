@@ -57,7 +57,7 @@
                 {"id": "energy_greatweapon", "count": 5},
                 {"id": "razor_whips", "count": 7},
                 {"id": "net_and_spear", "count": 5},
-                {"id": "energy_claws", "count": 6}
+                {"id": "twin_energy_handweapon", "count": 6}
               ]
             },
             {"replaceWeapon": [{"id": "twin_barb_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "fusion_rifle", "mount": ["Front"]}, {"id": "thermal_lance", "mount": ["Front"]}]},
@@ -122,7 +122,7 @@
                 {"id": "energy_greatweapon", "count": 5},
                 {"id": "razor_whips", "count": 7},
                 {"id": "net_and_spear", "count": 5},
-                {"id": "energy_claws", "count": 6}
+                {"id": "twin_energy_handweapon", "count": 6}
               ]
             },
             {"addRule": [{"name": "Grisly Trophy", "id": "fear"}, {"name": "Dark Prism", "id": "magic", "x": 1}, "jetpack_character"]},
@@ -185,7 +185,7 @@
         {"replaceWeapon": "barb_rifle", "withWeapon": ["heavy_flamethrower", "thermal_lance", "barb_cannon", "fusion_cannon", "missile_launcher", "laser_machinegun"], "modelLimit": "1/10"},
         {
           "replaceWeapon": {"id": "light_handweapon", "count": 2},
-          "withWeapon": [{"id": "razor_whips", "count": 4}, {"id": "net_and_spear", "count": 2}, {"id": "energy_claws", "count": 3}],
+          "withWeapon": [{"id": "razor_whips", "count": 4}, {"id": "net_and_spear", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}],
           "modelLimit": "3/10"
         },
         {"addRule": ["swift", "evasive"], "modelLimit": "all", "limit": 1}
@@ -232,7 +232,7 @@
         {"replaceWeapon": "barb_rifle", "withWeapon": ["thermal_lance", "barb_cannon", "fusion_cannon", "heavy_flamethrower", "missile_launcher", "laser_machinegun"], "modelLimit": "1/10"},
         {
           "replaceWeapon": {"id": "light_handweapon", "count": 3},
-          "withWeapon": [{"id": "razor_whips", "count": 5}, {"id": "net_and_spear", "count": 4}, {"id": "energy_claws", "count": 4}],
+          "withWeapon": [{"id": "razor_whips", "count": 5}, {"id": "net_and_spear", "count": 4}, {"id": "twin_energy_handweapon", "count": 4}],
           "modelLimit": "3/10"
         },
         {"addRule": ["swift", "evasive"], "modelLimit": "all", "limit": 1}
@@ -405,7 +405,7 @@
           "options": [
             {
               "replaceWeapon": {"id": "claw_blade", "count": 2},
-              "withWeapon": ["twin_poison_sprayer", {"id": "poison_injector", "count": 2}, {"id": "razor_whips", "count": 4}, {"id": "pain_gauntlet", "count": 2}, {"id": "energy_claws", "count": 3}],
+              "withWeapon": ["twin_poison_sprayer", {"id": "poison_injector", "count": 2}, {"id": "razor_whips", "count": 4}, {"id": "pain_gauntlet", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}],
               "limit": 2
             },
             {

@@ -631,7 +631,7 @@
           "movement": 6,
           "defense": 8,
           "reflexes": 5,
-          "weapons": [{"id": "energy_claws", "count": 3}],
+          "weapons": [{"id": "twin_energy_handweapon", "count": 3}],
           "rules": ["furious", {"id": "wounds", "x": 2}],
           "min": 3,
           "max": 9
