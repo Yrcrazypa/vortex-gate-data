@@ -936,17 +936,12 @@
             {
               "replaceWeapon": {"id": "energy_handweapon", "count": 2},
               "withWeapon": [
-                {"id": "energy_handweapon", "count": 2},
-                {"id": "chainfist", "count": 2},
-                {"id": "energy_powerweapon", "count": 2},
-                {"id": "energy_handweapon", "count": 2},
                 {"id": "energy_powerweapon", "count": 2},
                 {"id": "energy_claws", "count": 3},
-                {"id": "energy_greatweapon", "count": 2},
-                {"id": "assault_drill", "count": 3}
+                {"id": "energy_greatweapon", "count": 2}
               ]
             },
-            {"addWeapon": ["rocket_pod"]},
+            {"addWeapon": ["rocket_pod"], "modelLimit": "1/5"},
             {"addRule": ["shield"]}
           ],
           "min": 5,
@@ -1010,6 +1005,26 @@
         }
       ]
     },
+    "gravite_blade_squad": {
+      "name": "Gravite Blade Squad",
+      "description": "Marines wearing experimental Gravite armor with heavy swords and shields.",
+      "category": "elite",
+      "models": [
+        {
+          "name": "Gravite Blade Marine",
+          "courage": 6,
+          "movement": 5,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "rules": [{"id": "wounds", "x": 2}],
+          "weapons": ["marine_pistol", {"id": "energy_powerweapon", "count": 2}],
+          "min": 3,
+          "max": 6
+        }
+      ]
+    },
     "gravite_devastation_squad": {
       "name": "Gravite Devastation Squad",
       "description": "Marines wearing experimental Gravite armor with devastating weapons.",
@@ -1038,6 +1053,55 @@
           ],
           "min": 3,
           "max": 6
+        }
+      ]
+    },
+    "honor_guard": {
+      "name": "Honor Guard",
+      "description": "Marines clad in golden armor and wings with dangerous melee weapons.",
+      "category": "elite",
+      "subfactions": ["assault_focus"],
+      "models": [
+        {
+          "name": "Honor Guard",
+          "courage": 6,
+          "shoot": 6,
+          "fight": 6,
+          "defense": 9,
+          "reflexes": 6,
+          "movement": 8,
+          "rules": ["distracting", "fly"],
+          "weapons": ["storm_rifle", {"id": "energy_handweapon", "count": 3}],
+          "options": [
+            {"replaceWeapon": "storm_rifle", "withWeapon": ["flamethrower_pistol", "plasma_pistol", "fusion_pistol", "thermal_pistol"]},
+            {
+              "replaceWeapon": {"id": "energy_handweapon", "count": 3},
+              "withWeapon": [{"id": "energy_powerweapon", "count": 3}, {"id": "energy_claws", "count": 4}, {"id": "energy_greatweapon", "count": 3}]
+            }
+          ],
+          "min": 5,
+          "max": 20
+        }
+      ]
+    },
+    "werewolves": {
+      "name": "Werewolves",
+      "description": "Marines that are half marine and half werewolf.",
+      "category": "core",
+      "subfactions": ["assault_focus"],
+      "models": [
+        {
+          "name": "Werewolf",
+          "courage": 6,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 8,
+          "reflexes": 6,
+          "movement": 8,
+          "weapons": [{"id": "energy_claws", "count": 3}],
+          "options": [{"replaceWeapon": {"id": "energy_claws", "count": 3}, "withWeapon": [[{"id": "energy_powerweapon", "count": 2}, "shield"]]}, {"addWeapon": "grenade_launcher"}],
+          "min": 5,
+          "max": 10
         }
       ]
     },
