@@ -208,7 +208,7 @@
           "defense": 7,
           "reflexes": 5,
           "rules": ["leader", {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite"],
+          "weapons": [{"id": "great_weapon", "count": 3}],
           "options": [
             {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "heavy_spear", "count": 3}]},
             {"addRule": [{"id": "icon", "x": "Infantry"}, {"id": "magic", "x": 1}], "limit": 1},
@@ -234,7 +234,7 @@
           "defense": 7,
           "reflexes": 5,
           "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}],
-          "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite", {"id": "fangs_and_teeth", "count": 2}],
+          "weapons": [{"id": "great_weapon", "count": 3}, {"id": "fangs_and_teeth", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "lance", "count": 3}]},
             {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
@@ -260,7 +260,7 @@
           "defense": 9,
           "reflexes": 6,
           "rules": [{"id": "warrior", "x": 1}, {"id": "wounds", "x": 3}, "fear", {"id": "heavy_impact", "x": 3}, {"id": "leader", "x": "Cavalry, Monster"}],
-          "weapons": [{"id": "great_weapon", "count": 3}, "lizard_bite", {"id": "raking_claws", "count": 2}],
+          "weapons": [{"id": "great_weapon", "count": 3}, {"id": "raking_claws", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "great_weapon", "count": 3}], "withWeapon": [{"id": "great_hammer", "count": 3}, {"id": "great_weapon", "count": 4}, {"id": "lance", "count": 3}]},
             {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}]},
@@ -305,7 +305,7 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 5,
-          "weapons": ["great_weapon", "lizard_bite"],
+          "weapons": ["great_weapon"],
           "options": [{"replaceWeapon": ["great_weapon"], "withWeapon": ["heavy_spear"], "modelLimit": "all"}],
           "min": 10,
           "max": 20
@@ -371,7 +371,7 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 5,
-          "weapons": ["great_weapon", "lizard_bite", {"id": "fangs_and_teeth", "count": 2}],
+          "weapons": ["great_weapon", {"id": "fangs_and_teeth", "count": 2}],
           "options": [{"replaceWeapon": ["great_weapon"], "withWeapon": ["lance"], "modelLimit": "all"}],
           "min": 5,
           "max": 15
@@ -521,7 +521,6 @@
     }
   },
   "weapons": {
-    "lizard_bite": {"name": "Lizard Bite", "attacks": 1, "short": "Melee", "ap": 1},
     "azure_lightning": {"name": "Lightning Claws", "attacks": 1, "short": "Melee", "ap": 3, "rules": [{"id": "reach", "x": 1}]},
     "armored_tail": {"name": "Armored Tail", "attacks": 1, "short": "Melee", "ap": 6, "rules": [{"id": "reach", "x": 1}]},
     "gargantuan_jaws": {"name": "Gargantuan Jaws", "attacks": 1, "short": "Melee", "ap": 9, "rules": [{"id": "reach", "x": 1}]},
