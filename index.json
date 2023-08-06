@@ -206,6 +206,15 @@
       "alliance": "order",
       "description": "The Stellar Vanguard are the pride of human engineering and its elite order-keeping force should they need to be deployed. The Stellar Vanguard rely on tough infantry and somewhat advanced vehicle technology to outsmart and eliminate their enemies."
     },
+    "ironfang_tribes": {
+      "version": "1.0",
+      "name": "Ironfang Tribes",
+      "id": "ironfang_tribes",
+      "url": "ironfang_tribes.json",
+      "color": "#50974A",
+      "alliance": "destruction",
+      "description": "Creatures from faraway lands, the Orcs and Goblins are usually content to feud among themselves - but when they turn their attention elsewhere, they prove themselves a truly powerful foe."
+    },
     "warborn_marauders": {
       "version": "1.0",
       "name": "Warborn Marauders",
