@@ -1333,65 +1333,6 @@
         }
       ]
     },
-    "goblin_doctor": {
-      "name": "Goblin Doctor",
-      "description": "A Goblin with a knack for fixing up the wounded.",
-      "subfactions": ["none", "revolution_focus"],
-      "category": "elite",
-      "keywords": ["Goblin", "Infantry"],
-      "rules": [{"id": "support_x", "x": "Infantry"}, "mad_doctor", {"id": "wounds", "x": 3}],
-      "models": [
-        {
-          "name": "Goblin Doctor",
-          "courage": 6,
-          "shoot": 5,
-          "fight": 5,
-          "defense": 6,
-          "reflexes": 5,
-          "movement": 6,
-          "weapons": ["heavy_pistol", {"id": "light_handweapon", "count": 2}],
-          "options": [{"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "plasma_pistol"]}],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "goblin_mechanic": {
-      "name": "Goblin Mechanic",
-      "description": "A Goblin with a knack for scrapping and fixing things.",
-      "subfactions": ["none", "mechanized_focus"],
-      "category": "hero",
-      "keywords": ["Goblin", "Infantry"],
-      "models": [
-        {
-          "name": "Goblin Mechanic",
-          "courage": 6,
-          "shoot": 5,
-          "fight": 5,
-          "defense": 6,
-          "reflexes": 5,
-          "rules": [{"id": "leader", "x": "Infantry"}, {"id": "repair", "x": 5}, {"id": "wounds", "x": 3}],
-          "movement": 6,
-          "weapons": ["heavy_pistol", {"id": "light_handweapon", "count": 2}],
-          "options": [{"replaceWeapon": "heavy_pistol", "withWeapon": ["carbine", "plasma_pistol", "teleport_pistol"]}, {"addRule": ["heavy_armor"]}, {"addRule": ["energy_field"]}],
-          "min": 1,
-          "max": 1
-        },
-        {
-          "name": "Goblin Assistant",
-          "movement": 6,
-          "courage": 4,
-          "shoot": 5,
-          "fight": 4,
-          "defense": 4,
-          "reflexes": 5,
-          "weapons": ["light_handweapon"],
-          "rules": ["goblin_assistant"],
-          "min": 2,
-          "max": 2
-        }
-      ]
-    },
     "goblin_tank_commander": {
       "name": "Goblin Tank Commander",
       "description": "A custom goblin tank upgraded by a particularly crafty goblin.",
@@ -1414,49 +1355,6 @@
           "max": 1
         }
       ]
-    },
-    "goblin_repair_team": {
-      "name": "Goblin Repair Team",
-      "description": "A team of goblins who are good at fixing things.",
-      "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "category": "elite",
-      "keywords": ["Goblin", "Infantry"],
-      "models": [
-        {
-          "name": "Goblin Mechanic",
-          "courage": 5,
-          "shoot": 5,
-          "fight": 4,
-          "defense": 5,
-          "reflexes": 5,
-          "movement": 6,
-          "rules": [{"id": "repair", "x": 2}],
-          "weapons": ["heavy_pistol", {"id": "light_handweapon", "count": 2}],
-          "min": 1,
-          "max": 1
-        },
-        {
-          "name": "Goblin Assistant",
-          "movement": 6,
-          "courage": 4,
-          "shoot": 5,
-          "fight": 4,
-          "defense": 5,
-          "reflexes": 5,
-          "weapons": ["heavy_pistol", {"id": "light_handweapon", "count": 2}],
-          "rules": ["goblin_assistant"],
-          "min": 4,
-          "max": 4
-        }
-      ]
-    },
-    "goblins": {
-      "name": "Goblins",
-      "description": "A group of independent goblins.",
-      "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "category": "core",
-      "keywords": ["Goblin", "Infantry"],
-      "models": [{"name": "Goblin", "courage": 4, "shoot": 5, "fight": 5, "defense": 4, "reflexes": 5, "movement": 6, "weapons": ["carbine", "light_handweapon"], "min": 10, "max": 20}]
     },
     "goblin_veterans": {
       "name": "Goblin Veterans",
@@ -1578,29 +1476,6 @@
           "movement": 6,
           "weapons": [{"id": "plasma_rifle"}, {"id": "mini_claw", "count": 2}],
           "options": [{"replaceWeapon": {"id": "plasma_rifle"}, "withWeapon": ["heavy_flamethrower", "rocket_launcher", "heavy_machinegun", "goblin_bazooka"]}],
-          "min": 1,
-          "max": 3
-        }
-      ]
-    },
-    "goblin_artillery": {
-      "name": "Goblin Artillery",
-      "description": "A battery of small artillery guns built by goblins.",
-      "keywords": ["Vehicle"],
-      "category": "elite",
-      "subfactions": ["none", "mechanized_focus", "revolution_focus"],
-      "models": [
-        {
-          "name": "Goblin Artillery",
-          "courage": 4,
-          "shoot": 5,
-          "fight": 4,
-          "defense": 8,
-          "reflexes": 5,
-          "movement": 3,
-          "rules": [{"id": "wounds", "x": 3}],
-          "weapons": ["smasher_cannon", {"id": "light_handweapon", "count": 3}],
-          "options": [{"replaceWeapon": "smasher_cannon", "withWeapon": ["tractor_beam", "plasma_cannon", "bubble_cannon"]}],
           "min": 1,
           "max": 3
         }
