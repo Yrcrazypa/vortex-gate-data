@@ -2073,8 +2073,8 @@
       "points": 5
     },
     "spiked_ram": {"name": "Spiked Ram", "hidden": true, "description": "This model gains Impact(+3).", "description_short": "Impact +3", "points": 6},
-    "jetpack_character": {"name": "Jetpack", "hidden": true, "description_short": "Ambush, Fly, Movement +2\"", "points": 15},
-    "jetpack": {"name": "Jetpacks", "description_short": "Fly, Ambush, Movement +2\"", "hidden": true, "points": 4},
+    "jetpack_character": {"name": "Jetpack", "hidden": true, "description_short": "Fly, Movement +2\"", "points": 15},
+    "jetpack": {"name": "Jetpacks", "description_short": "Fly, Movement +2\"", "hidden": true, "points": 4},
     "destroyer_armor": {"name": "Destroyer Armor", "hidden": true, "description_short": "Ambush, Save +1, Movement -1\"", "points": 15},
     "mutations": {
       "name": "Mutations",
