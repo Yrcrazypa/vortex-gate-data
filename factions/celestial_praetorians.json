@@ -381,7 +381,7 @@
       "description": "A heavily armored transport sporting an arsenal of weapons built by the imperial marines.",
       "keywords": ["Vehicle"],
       "category": "rare",
-      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", {"id": "wounds", "x": 8}],
+      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", {"id": "wounds", "x": 6}],
       "models": [
         {
           "name": "Relic Heavy Assault APC",

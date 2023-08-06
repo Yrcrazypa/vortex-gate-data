@@ -1585,7 +1585,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 8}, {"id": "impact", "x": 6}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, "vulnerable_rear"],
           "weapons": ["twin_laser_cannon", {"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
           "options": [
             {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "twin_gatling_gun", "heavy_plasma_cannon", "heavy_fusion_cannon", "twin_flamethrower_cannon"]},

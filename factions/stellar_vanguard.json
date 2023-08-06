@@ -1081,7 +1081,7 @@
           "fight": 0,
           "defense": 12,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 8}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
+          "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 3}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Left"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Right"]}],
           "options": [
             {
@@ -1302,7 +1302,7 @@
       "name": "Heavy Battle Tank",
       "description": "An heavy armored tank helmed by imperial marines.",
       "category": "rare",
-      "rules": [{"id": "wounds", "x": 8}, {"id": "impact", "x": 6}, "vulnerable_rear"],
+      "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 6}, "vulnerable_rear"],
       "keywords": ["Vehicle", "Tank"],
       "models": [
         {

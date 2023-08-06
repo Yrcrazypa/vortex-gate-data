@@ -700,7 +700,7 @@
       "name": "Heavy Assault APC",
       "description": "A heavily armored transport sporting an arsenal of weapons built by the imperial marines.",
       "category": "rare",
-      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, {"id": "wounds", "x": 8}, "vulnerable_rear", "assault_ramp"],
+      "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, {"id": "wounds", "x": 6}, "vulnerable_rear", "assault_ramp"],
       "keywords": ["Vehicle"],
       "models": [
         {
