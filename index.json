@@ -308,11 +308,11 @@
       "alliance": "order",
       "description": "The myriad of Feudal Kingdoms are mercurial and quick-blooded, wanting only peace one generation while seeking to conquer the world the next - and well-equipped for either."
     },
-    "lizardmen": {
+    "saurianborn_republic": {
       "version": "1.0",
-      "name": "Lizardfolk Empire",
-      "id": "lizardmen",
-      "url": "lizardmen.json",
+      "name": "Saurianborn Republic",
+      "id": "saurianborn_republic",
+      "url": "saurianborn_republic.json",
       "color": "#087194",
       "alliance": "destruction",
       "description": "A sprawling empire of jungle-dwellers who believe they are the rightful rulers of the world."
