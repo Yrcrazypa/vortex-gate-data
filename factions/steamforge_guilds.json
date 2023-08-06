@@ -815,7 +815,7 @@
     "eradication_ray": {"name": "Eradication Ray", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "rules": [{"id": "blast", "x": 3}]},
     "eradication_blaster": {"name": "Eradication Blaster", "attacks": 1, "short": 6, "ap": 3, "rules": [{"id": "blast", "x": 3}, "pistol"]},
     "death_laser": {"name": "Death Laser", "attacks": 1, "short": 24, "medium": 48, "ap": 10, "rules": [{"id": "blast", "x": 2}]},
-    "plasma_mortar": {"name": "Plasma Mortar", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 2}, "overcharge", "indirect", "heavy", "scatter"]},
+    "plasma_mortar": {"name": "Plasma Mortar", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 2}, "overcharge", "indirect", "heavy"]},
     "bomb_rack": {"name": "Bomb Rack", "attacks": 2, "short": 6, "ap": 3, "rules": [{"id": "blast", "x": 3}, "bomb"]},
     "aa_missiles": {"name": "AA Missile System", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": ["anti_air"]},
     "twin_carbine": {"name": "Twin Carbine", "attacks": 2, "short": 9, "medium": 18, "rules": ["assault"]}

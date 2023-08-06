@@ -1641,7 +1641,7 @@
     "teleport_rifle": {"name": "Teleport Rifle", "attacks": 1, "ap": 6, "short": 9, "medium": 18, "rules": [{"id": "blast", "x": 3}]},
     "twin_teleport_rifle": {"name": "Twin Teleport Rifle", "attacks": 2, "short": 9, "ap": 6, "medium": 18, "rules": [{"id": "blast", "x": 3}]},
     "shock_rifle": {"name": "Shock Rifle", "attacks": 2, "short": 9, "medium": 18, "ap": 6},
-    "shock_gun": {"name": "Shock Gun", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": [{"id": "blast", "x": 3}, "scatter"]},
+    "shock_gun": {"name": "Shock Gun", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": [{"id": "blast", "x": 3}]},
     "beast_cannon": {"name": "Beast Cannon", "attacks": 2, "short": 18, "ap": 3, "medium": 36, "rules": [{"id": "blast", "x": 3}, "indirect"]},
     "beast_launcher": {"name": "Beast Launcher", "attacks": 1, "short": 9, "ap": 3, "medium": 18, "rules": [{"id": "blast", "x": 3}, "indirect"]},
     "carbine": {"name": "Burst Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 1, "rules": ["assault", "rapid_fire"]},

@@ -412,7 +412,7 @@
     "field_gun": {
       "name": "Field Gun Battery",
       "description": "A powerful wheeled artillery piece.",
-      "category": "rare",
+      "category": "elite",
       "rules": [{"id": "wounds", "x": 3}],
       "models": [
         {
@@ -420,8 +420,8 @@
           "courage": 5,
           "shoot": 5,
           "fight": 4,
-          "defense": 5,
-          "movement": 7,
+          "defense": 7,
+          "movement": 6,
           "reflexes": 5,
           "weapons": [{"id": "battle_cannon", "mount": ["Front"]}, {"id": "light_handweapon", "count": 3}],
           "options": [
@@ -430,7 +430,7 @@
               "withWeapon": [{"id": "rocket_battery", "mount": ["Front"]}, {"id": "gatling_cannon", "mount": ["Front"]}, {"id": "tank_hunter_cannon", "mount": ["Front"]}]
             }
           ],
-          "min": 1,
+          "min": 2,
           "max": 2
         }
       ]
@@ -1289,7 +1289,7 @@
     "hammer_cannon": {"name": "The Hammer", "attacks": 1, "ap": 7, "short": 24, "medium": 48, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "titan_hell_cannon": {"name": "Titan Hell Cannon", "attacks": 2, "short": 18, "medium": 36, "ap": 10, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "titan_battle_cannon": {"name": "Titan Battle Cannon", "attacks": 2, "ap": 8, "short": 36, "medium": 72, "rules": ["heavy", {"id": "blast", "x": 3}]},
-    "rocket_battery": {"name": "Rocket Battery", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy", "indirect", "scatter", {"id": "blast", "x": 3}]},
+    "rocket_battery": {"name": "Rocket Battery", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy", "indirect", {"id": "blast", "x": 3}]},
     "adv_defense_rifle": {
       "name": "Advanced Defense Rifle",
       "profiles": [{"name": "Volley", "attacks": 2, "ap": 0, "medium": 30, "short": 15}, {"name": "Charged", "attacks": 1, "ap": 2, "medium": 18, "short": 9, "rules": ["overcharge"]}]

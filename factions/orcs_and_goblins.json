@@ -1026,7 +1026,7 @@
     "boar_tusks": {"name": "Boar Tusks", "ap": 1, "attacks": 1, "short": "Melee", "rules": ["lance"]},
     "legend_bonecrusher": {"name": "Bonecrusher", "attacks": 3, "short": "Melee", "ap": 6, "rules": ["cumbersome", {"id": "deadly", "x": 1}]},
     "arcing_spit": {"name": "Arcing Spit", "attacks": 3, "short": 15, "medium": 30, "ap": 2, "rules": [{"id": "blast", "x": 2}, "indirect"]},
-    "goblin_flinger": {"name": "Goblin Flinger", "attacks": 1, "short": 15, "medium": 30, "ap": 3, "rules": [{"id": "blast", "x": 3}, "indirect", "salvo", "scatter"]}
+    "goblin_flinger": {"name": "Goblin Flinger", "attacks": 1, "short": 15, "medium": 30, "ap": 3, "rules": [{"id": "blast", "x": 3}, "indirect", "salvo"]}
   },
   "rules": {
     "legend_banner": {

@@ -723,7 +723,7 @@
     "accelerator_drone": {"name": "Accelerator Drone", "movement": "-", "courage": "-", "shoot": 0, "fight": 0, "defense": "-", "reflexes": "-", "rules": ["accelerator", "fly"], "min": 1, "max": 1}
   },
   "weapons": {
-    "ion_bombs": {"name": "Ion Bombs", "attacks": 2, "short": 3, "ap": 4, "rules": ["bomb", "scatter", {"id": "blast", "x": 3}]},
+    "ion_bombs": {"name": "Ion Bombs", "attacks": 2, "short": 3, "ap": 4, "rules": ["bomb", {"id": "blast", "x": 3}]},
     "homing_missile": {"name": "Homing Missile", "attacks": 1, "short": 36, "medium": 72, "ap": 6, "rules": [{"id": "ammo", "x": 1}, "homing", "indirect"]},
     "assault_mortar": {"name": "Assault Mortar", "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": ["assault", {"id": "blast", "x": 3}, "indirect"]},
     "fusion_blaster": {"name": "Fusion Blaster", "attacks": 1, "short": 12, "medium": 24, "ap": 6, "rules": ["assault", {"id": "deadly", "x": 1}]},
