@@ -906,10 +906,7 @@
     "handcannon": {"name": "Handcannon", "short": 9, "medium": 18, "ap": 5, "attacks": 1, "rules": [{"id": "blast", "x": 3}]},
     "cannon": {
       "name": "Great-Cannon",
-      "profiles": [
-        {"name": "Shrapnel", "ap": 7, "attacks": 1, "medium": 48, "short": 24, "rules": [{"id": "blast", "x": 3}]},
-        {"name": "Grapeshot", "attacks": 3, "ap": 3, "short": 6, "medium": 12}
-      ]
+      "profiles": [{"name": "Shrapnel", "ap": 7, "attacks": 1, "medium": 48, "short": 24, "rules": [{"id": "blast", "x": 3}]}, {"name": "Grapeshot", "attacks": 3, "ap": 3, "short": 6, "medium": 12}]
     },
     "ogre_cannon": {
       "name": "Ogre-Sized Cannon",
@@ -925,7 +922,7 @@
     "volley_gun": {"name": "Volley Gun", "attacks": 2, "short": 12, "ap": 2, "medium": 24},
     "heavy_volley_gun": {"name": "Heavy Volley Gun", "attacks": 4, "short": 12, "medium": 24, "ap": 2},
     "rocket_launcher": {"name": "Rocket Launcher", "ap": 5, "attacks": 1, "short": 9, "medium": 18, "rules": [{"id": "blast", "x": 3}]},
-    "rocket_battery": {"rules": [{"id": "blast", "x": 3}, "indirect"], "short": 18, "medium": 36, "attacks": 3, "ap": 5, "name": "Rocket Battery"},
+    "rocket_battery": {"rules": [{"id": "blast", "x": 3}, "indirect"], "short": 18, "medium": 36, "attacks": 3, "ap": 3, "name": "Rocket Battery"},
     "crushing_hull": {"name": "Crushing Hull", "attacks": 3, "short": "Melee", "ap": 3},
     "grenade_launcher": {
       "name": "Grenade Launcher",
@@ -1252,6 +1249,7 @@
     "acid_cannon": {"name": "Acid Cannon", "attacks": 3, "ap": 1, "short": 24, "medium": 48, "rules": [{"id": "poison", "x": 3}]},
     "flamestorm_cannon": {"name": "Flamestorm Cannon", "attacks": 6, "short": 9, "medium": 18, "ap": 3, "rules": ["heavy", "flame"]},
     "artillery_cannon": {"name": "Artillery Cannon", "attacks": 1, "ap": 7, "short": 42, "medium": 84, "rules": ["heavy", {"id": "blast", "x": 6}]},
+    "light_artillery_cannon": {"name": "Light Artillery Cannon", "attacks": 1, "ap": 6, "short": 42, "medium": 84, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "artillery_barrage": {"name": "Artillery Barrage", "attacks": 1, "ap": 6, "short": 18, "medium": 36, "rules": ["indirect", {"id": "blast", "x": 3}, {"id": "ammo", "x": 3}]},
     "eagle_rockets": {"name": "Eagle Rockets", "attacks": 2, "ap": 8, "short": 36, "medium": 72, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "death_missile": {"name": "Death Missile", "attacks": 1, "ap": 3, "short": 36, "medium": 72, "rules": ["heavy", {"id": "blast", "x": 10}]},
@@ -1799,7 +1797,7 @@
       "inputs": ["x"],
       "description": "Multiply hits from this weapon by X.",
       "notes": "Small RNG discount to account for single shot randomness",
-      "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.5}]
+      "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.9}]
     },
     "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with a Damage Chart.", "points": ["weapon.attacks", {"multiply": 1}]},
     "flame": {"name": "Spray", "description": "Hits from this weapon ignore any cover bonuses.", "points": ["weapon.attacks", {"multiply": 0.5}]},
@@ -1983,7 +1981,7 @@
     "pistol": {"name": "Pistol", "description": "This weapon may be used instead of a model's other weapons even while engaged in close combat.", "points": ["weapon.attacks", {"multiply": 1}]},
     "strider": {"name": "Strider", "description": "This model can cross difficult and dangerous terrain without penalty.", "points": 1},
     "rending": {"name": "Rending", "description": "Hit rolls of 1 or 2 gain +1 AP.", "points": ["weapon.attacks", {"multiply": 0.2}]},
-    "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks", {"multiply": 2}]},
+    "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks", {"multiply": 3}]},
     "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Aircraft special rule.", "points": ["weapon.attacks", {"multiply": 1}]},
     "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
     "poison": {"name": "Poison", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 1}]},
