@@ -604,7 +604,7 @@
     },
     "support_vehicle": {
       "name": "Cult Support Vehicle",
-      "description": "A support vehicle with multiple roles from artillery to anti-air stolen from the imperial defense force.",
+      "description": "A support vehicle with multiple roles from artillery to anti-air.",
       "category": "rare",
       "keywords": ["Vehicle"],
       "models": [
@@ -617,9 +617,9 @@
           "defense": 10,
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
-          "weapons": [{"id": "twin_aa_autocannon", "count": 2}, {"id": "heavy_flamethrower", "mount": ["Front"]}],
+          "weapons": [{"id": {"id": "heavy_mortar", "count": 4}, "count": 2}, {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": {"id": "twin_aa_autocannon", "count": 2}, "withWeapon": ["artillery_cannon", {"id": "heavy_mortar", "count": 4}, "eagle_rockets", "death_missile"]},
+            {"replaceWeapon": {"id": "heavy_mortar", "count": 4}, "withWeapon": [{"id": "twin_aa_autocannon", "count": 2}, "artillery_cannon", "eagle_rockets", "death_missile"]},
             {
               "replaceWeapon": [{"id": "heavy_flamethrower", "mount": ["Front"]}],
               "withWeapon": [
