@@ -419,7 +419,7 @@
           "name": "Artillery Team",
           "courage": 5,
           "shoot": 5,
-          "fight": 4,
+          "fight": 5,
           "defense": 7,
           "movement": 6,
           "reflexes": 5,
@@ -918,7 +918,7 @@
           "movement": 10,
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
-          "weapons": ["battle_cannon"],
+          "weapons": ["battle_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
             {
               "replaceWeapon": "battle_cannon",
@@ -935,14 +935,15 @@
               ]
             },
             {
-              "addWeapon": [
-                {"id": "heavy_flamethrower", "mount": ["Front"]},
+              "replaceWeapon": {"id": "heavy_flamethrower", "mount": ["Front"]},
+              "withWeapon": [
                 {"id": "heavy_machinegun", "mount": ["Front"]},
                 {"id": "laser_cannon", "mount": ["Front"]},
-                {"id": "fusion_cannon", "mount": ["Front"]},
-                {"id": "plasma_cannon", "mount": ["Front"]}
-              ],
-              "limit": 1
+                {"id": "gatling_gun", "mount": ["Front"]},
+                {"id": "siege_cannon", "mount": ["Front"]},
+                {"id": "plasma_cannon", "mount": ["Front"]},
+                {"id": "fusion_cannon", "mount": ["Front"]}
+              ]
             },
             {
               "addWeapon": [
@@ -1036,9 +1037,9 @@
           "defense": 10,
           "reflexes": 5,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
-          "weapons": [{"id": "heavy_mortar", "count": 4}, {"id": "heavy_flamethrower", "mount": ["Front"]}],
+          "weapons": [{"id": "twin_aa_autocannon", "count": 2}, {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": {"id": "heavy_mortar", "count": 4}, "withWeapon": [{"id": "twin_aa_autocannon", "count": 2}, "artillery_cannon", "eagle_rockets", "death_missile"]},
+            {"replaceWeapon": {"id": "twin_aa_autocannon", "count": 2}, "withWeapon": [{"id": "heavy_mortar", "count": 4}, "artillery_cannon", "eagle_rockets", "death_missile"]},
             {
               "replaceWeapon": [{"id": "heavy_flamethrower", "mount": ["Front"]}],
               "withWeapon": [
