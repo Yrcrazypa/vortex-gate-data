@@ -485,7 +485,7 @@
           "movement": 6,
           "reflexes": 6,
           "rules": ["support", "medic", {"id": "wounds", "x": 2}],
-          "weapons": ["marine_pistol", "pestilence_grenade", {"id": "pestilence_sword", "count": 4}],
+          "weapons": ["marine_pistol", {"id": "pestilence_sword", "count": 4}],
           "min": 1,
           "max": 1
         }
@@ -862,7 +862,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "weapons": ["marine_rifle", "pestilence_ccw", "pestilence_grenade"],
+          "weapons": ["marine_rifle", "pestilence_ccw"],
           "options": [
             {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {
@@ -873,18 +873,7 @@
           "min": 1,
           "max": 1
         },
-        {
-          "name": "Pestilence Marine",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 8,
-          "reflexes": 6,
-          "weapons": ["marine_rifle", "pestilence_ccw", "pestilence_grenade"],
-          "min": 4,
-          "max": 9
-        }
+        {"name": "Pestilence Marine", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 8, "reflexes": 6, "weapons": ["marine_rifle", "pestilence_ccw"], "min": 4, "max": 9}
       ]
     },
     "pestilence_destroyers": {
@@ -1849,10 +1838,6 @@
     }
   },
   "weapons": {
-    "pestilence_grenade": {
-      "name": "Pestilence Grenades",
-      "profiles": [{"name": "Pestilence", "attacks": 1, "short": 6, "rules": ["poison", "grenade", {"id": "blast", "x": 3}]}, {"name": "AT", "attacks": 1, "short": 6, "ap": 4, "rules": ["grenade"]}]
-    },
     "pestilence_scythe": {
       "name": "Pestilence Scythe",
       "profiles": [{"name": "Cleave", "attacks": 1, "ap": 4, "short": "Melee", "rules": ["poison", "cumbersome"]}, {"name": "Sweep", "attacks": 2, "ap": 1, "short": "Melee", "rules": ["poison"]}]
