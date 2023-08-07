@@ -392,7 +392,7 @@
           "defense": 5,
           "movement": 6,
           "reflexes": 5,
-          "weapons": [{"id": "laser_cannon", "mount": ["Front"]}, {"id": "light_handweapon", "count": 2}],
+          "weapons": [{"id": "laser_cannon", "mount": ["Front"]}, {"id": "auto_rifle", "count": 2}, {"id": "light_handweapon", "count": 2}],
           "options": [
             {
               "replaceWeapon": {"id": "laser_cannon", "mount": ["Front"]},
