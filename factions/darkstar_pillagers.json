@@ -164,11 +164,42 @@
           "name": "Ravager Sergeant",
           "movement": 7,
           "courage": 5,
-          "shoot": 5,
+          "shoot": 6,
           "fight": 5,
-          "defense": 5,
+          "defense": 6,
           "reflexes": 6,
           "weapons": ["barb_rifle", "light_handweapon"],
+          "options": [
+            {"replaceWeapon": ["barb_rifle", "light_handweapon"], "withWeapon": ["barb_pistol", {"id": "light_handweapon", "count": 2}]},
+            {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
+            {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "poison_whip", "count": 2}]},
+            {"addWeapon": "fear_grenade_launcher"}
+          ],
+          "min": 1,
+          "max": 1
+        },
+        {"name": "Ravager", "movement": 7, "courage": 5, "shoot": 6, "fight": 5, "defense": 6, "reflexes": 6, "weapons": ["barb_rifle", "light_handweapon"], "min": 9, "max": 19}
+      ],
+      "options": [
+        {"replaceWeapon": "barb_rifle", "withWeapon": ["fusion_rifle", "shred_rifle", "emp_rifle", "flamethrower", "grenade_launcher"], "modelLimit": "2/10"},
+        {"replaceWeapon": "barb_rifle", "withWeapon": ["heavy_flamethrower", "thermal_lance", "barb_cannon", "fusion_cannon", "missile_launcher", "laser_machinegun"], "modelLimit": "1/10"}
+      ]
+    },
+    "witches": {
+      "name": "Witches",
+      "description": "A squad of Dark Elven warriors with deadly weaponry.",
+      "category": "core",
+      "rules": ["evasive"],
+      "models": [
+        {
+          "name": "Witch Sergeant",
+          "movement": 7,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 6,
+          "defense": 5,
+          "reflexes": 6,
+          "weapons": ["barb_pistol", {"id": "light_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
             {"replaceWeapon": {"id": "light_handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "poison_whip", "count": 2}]},
@@ -177,65 +208,14 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Ravager", "movement": 7, "courage": 5, "shoot": 5, "fight": 5, "defense": 5, "reflexes": 6, "weapons": ["barb_rifle", "light_handweapon"], "min": 9, "max": 19}
+        {"name": "Witch", "movement": 7, "courage": 5, "shoot": 5, "fight": 6, "defense": 5, "reflexes": 6, "weapons": ["barb_pistol", {"id": "light_handweapon", "count": 2}], "min": 9, "max": 19}
       ],
       "options": [
-        {"replaceWeapon": ["barb_rifle", "light_handweapon"], "withWeapon": [["barb_pistol", {"id": "light_handweapon", "count": 2}]], "modelLimit": "all"},
-        {"replaceWeapon": "barb_rifle", "withWeapon": ["fusion_rifle", "shred_rifle", "emp_rifle", "flamethrower", "grenade_launcher"], "modelLimit": "2/10"},
-        {"replaceWeapon": "barb_rifle", "withWeapon": ["heavy_flamethrower", "thermal_lance", "barb_cannon", "fusion_cannon", "missile_launcher", "laser_machinegun"], "modelLimit": "1/10"},
         {
           "replaceWeapon": {"id": "light_handweapon", "count": 2},
           "withWeapon": [{"id": "razor_whips", "count": 4}, {"id": "net_and_spear", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}],
           "modelLimit": "3/10"
-        },
-        {"addRule": ["swift", "evasive"], "modelLimit": "all", "limit": 1}
-      ]
-    },
-    "veteran_ravagers": {
-      "name": "Veteran Ravagers",
-      "description": "A group of elite Dark Elven warriors with deadly weaponry.",
-      "category": "core",
-      "models": [
-        {
-          "name": "Veteran Ravager Sergeant",
-          "movement": 7,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 6,
-          "weapons": ["barb_rifle", {"id": "light_handweapon", "count": 2}],
-          "options": [
-            {"replaceWeapon": "barb_pistol", "withWeapon": ["fusion_pistol", "flamethrower_pistol"]},
-            {"replaceWeapon": {"id": "light_handweapon", "count": 3}, "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "poison_whip", "count": 3}]},
-            {"addWeapon": "fear_grenade_launcher"}
-          ],
-          "min": 1,
-          "max": 1
-        },
-        {
-          "name": "Veteran Ravager",
-          "movement": 7,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 6,
-          "reflexes": 6,
-          "weapons": ["barb_rifle", {"id": "light_handweapon", "count": 2}],
-          "min": 9,
-          "max": 19
         }
-      ],
-      "options": [
-        {"replaceWeapon": ["barb_rifle", {"id": "light_handweapon", "count": 2}], "withWeapon": [["barb_pistol", {"id": "light_handweapon", "count": 3}]], "modelLimit": "all"},
-        {"replaceWeapon": "barb_rifle", "withWeapon": ["fusion_rifle", "shred_rifle", "emp_rifle", "flamethrower"], "modelLimit": "2/10"},
-        {"replaceWeapon": "barb_rifle", "withWeapon": ["thermal_lance", "barb_cannon", "fusion_cannon", "heavy_flamethrower", "missile_launcher", "laser_machinegun"], "modelLimit": "1/10"},
-        {
-          "replaceWeapon": {"id": "light_handweapon", "count": 3},
-          "withWeapon": [{"id": "razor_whips", "count": 5}, {"id": "net_and_spear", "count": 4}, {"id": "twin_energy_handweapon", "count": 4}],
-          "modelLimit": "3/10"
-        },
-        {"addRule": ["swift", "evasive"], "modelLimit": "all", "limit": 1}
       ]
     },
     "abomination_warriors": {
@@ -405,7 +385,13 @@
           "options": [
             {
               "replaceWeapon": {"id": "claw_blade", "count": 2},
-              "withWeapon": ["twin_poison_sprayer", {"id": "poison_injector", "count": 2}, {"id": "razor_whips", "count": 4}, {"id": "pain_gauntlet", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}],
+              "withWeapon": [
+                "twin_poison_sprayer",
+                {"id": "poison_injector", "count": 2},
+                {"id": "razor_whips", "count": 4},
+                {"id": "pain_gauntlet", "count": 2},
+                {"id": "twin_energy_handweapon", "count": 3}
+              ],
               "limit": 2
             },
             {
@@ -500,19 +486,19 @@
       ]
     },
     "jetbike_ravagers": {
-      "name": "Jetbike Ravagers",
+      "name": "Jetbike Witches",
       "description": "A squad of Dark Elven warriors on swift jetbikes.",
       "category": "elite",
       "keywords": ["Biker"],
-      "rules": [{"id": "heavy_impact", "x": 1}, "hover"],
+      "rules": [{"id": "heavy_impact", "x": 1}, "hover", "evasive"],
       "models": [
         {
-          "name": "Jetbike Ravager Sergeant",
+          "name": "Jetbike Witch Sergeant",
           "movement": 8,
           "courage": 5,
           "shoot": 5,
           "fight": 6,
-          "defense": 8,
+          "defense": 7,
           "reflexes": 6,
           "weapons": ["barb_rifle", "light_handweapon", {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "options": [
@@ -523,12 +509,12 @@
           "max": 1
         },
         {
-          "name": "Jetbike Ravager",
+          "name": "Jetbike Witch",
           "movement": 8,
           "courage": 5,
           "shoot": 5,
           "fight": 6,
-          "defense": 8,
+          "defense": 7,
           "reflexes": 6,
           "weapons": ["barb_rifle", "light_handweapon", {"id": "twin_barb_rifle", "mount": ["Front"]}],
           "min": 2,

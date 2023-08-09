@@ -1891,8 +1891,8 @@
       "description": "This weapon requires X models to operate effectively. When the amount of crew is reduced to half or less, this weapon suffers -1 to hit.",
       "points": ["rule.x", {"subtract": 1}, {"multiply": -1}]
     },
-    "evasive": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this model while it is in cover or at a range of more than 12\".", "points": 2},
-    "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy when shooting at this model while it is in cover or at a range of more than 12\".", "points": 2},
+    "evasive": {"name": "Evasive", "description": "Models suffer -1 Accuracy and Strength when attacking this model.", "points": 2},
+    "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy and Strength when attacking this model.", "points": 2},
     "dodge": {"name": "Swift", "description": "Models suffer -1 Strength when fighting this model.", "points": 2},
     "swift": {"name": "Swift", "description": "Models suffer -1 Strength when fighting this model.", "points": 2},
     "deadly_poison": {
