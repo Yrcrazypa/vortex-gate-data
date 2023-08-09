@@ -155,7 +155,7 @@
           "weapons": [{"id": "flame_breath", "count": 4}, {"id": "beak_and_claws", "count": 4}, {"id": "handweapon", "count": 6}, "shield"]
         }
       ],
-      "keywords": ["Monster", "Cavalry"]
+      "keywords": ["Monster"]
     },
     "sorcerer_dragon": {
       "name": "Sorcerer on Balefire Drake",
@@ -180,7 +180,7 @@
           "weapons": [{"id": "flame_breath", "count": 4}, {"id": "beak_and_claws", "count": 4}, {"id": "great_staff", "count": 2}]
         }
       ],
-      "keywords": ["Monster", "Cavalry"]
+      "keywords": ["Monster"]
     },
     "elf_soldiers": {
       "name": "Dark Legionaries",
@@ -357,7 +357,7 @@
           "weapons": [{"id": "flame_breath", "count": 6}, {"id": "beak_and_claws", "count": 6}]
         }
       ],
-      "keywords": ["Monster", "Cavalry"]
+      "keywords": ["Monster"]
     },
     "pirate_lord": {
       "name": "Pirate Lord",

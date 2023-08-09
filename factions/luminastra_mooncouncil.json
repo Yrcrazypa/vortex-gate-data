@@ -165,7 +165,7 @@
       "name": "Archmage on Lunar Drake",
       "description": "A powerful spellcaster of the ancient high elves atop a mighty dragon.",
       "category": "hero",
-      "keywords": ["Monster", "Cavalry"],
+      "keywords": ["Monster"],
       "models": [
         {
           "name": "Archmage on Starborn Drake",

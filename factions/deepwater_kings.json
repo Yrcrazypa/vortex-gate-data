@@ -139,7 +139,7 @@
           "defense": 7,
           "reflexes": 5,
           "weapons": [{"id": "bite", "count": 2}, {"id": "heavy_spear", "count": 2}],
-          "rules": ["hover"],
+          "rules": ["hover", {"id": "wounds", "x": 2}],
           "min": 3,
           "max": 12
         }
@@ -167,12 +167,12 @@
           "reflexes": 5,
           "weapons": [{"id": "crushing_jaw", "count": 3}, {"id": "handweapon", "count": 6}, "net_launcher"],
           "options": [{"replaceWeapon": ["net_launcher"], "withWeapon": [{"id": "harpoon_rifle", "count": 2}]}],
-          "rules": ["hover", {"id": "wounds", "x": 3}],
+          "rules": ["hover", {"id": "wounds", "x": 4}],
           "min": 1,
           "max": 3
         }
       ],
-      "keywords": ["Monster", "Cavalry"]
+      "keywords": ["Monster"]
     },
     "leviathan": {
       "name": "Guardians on Worldeater Leviathan",
@@ -187,25 +187,24 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 5,
-          "weapons": [{"id": "crush_bite", "count": 2}, {"id": "harpoon_rifle", "count": 2}, {"id": "heavy_spear", "count": 6}, {"id": "fins", "count": 4}],
-          "rules": ["hover", {"id": "wounds", "x": 3}, {"id": "impact", "x": 3}],
+          "weapons": [{"id": "crush_bite", "count": 2}, {"id": "harpoon_rifle", "count": 2}, {"id": "heavy_spear", "count": 4}],
+          "rules": ["hover", {"id": "wounds", "x": 5}, {"id": "impact", "x": 3}],
           "min": 1,
           "max": 1
         }
       ],
-      "keywords": ["Monster", "Beast"]
+      "keywords": ["Monster"]
     }
   },
   "weapons": {
     "claws": {"name": "Rending Claws", "ap": 2, "attacks": 1, "short": "Melee", "rules": [{"id": "rending"}]},
     "bite": {"name": "Bite", "attacks": 1, "ap": 3, "short": "Melee"},
     "swarm": {"name": "Bladefish Swarm", "attacks": 8, "medium": 18, "short": 9},
-    "harpoon_rifle": {"name": "harpoon_rifle", "short": 12, "medium": 24, "attacks": 1, "ap": 6, "rules": [{"id": "deadly", "x": 2}]},
+    "harpoon_rifle": {"name": "Harpoon Rifle", "short": 12, "medium": 24, "attacks": 2, "ap": 6, "rules": [{"id": "deadly", "x": 2}]},
     "net_launcher": {"name": "Net Launcher", "attacks": 1, "ap": 2, "rules": ["barbed_net", {"id": "blast", "x": 3}], "short": 9, "medium": 18},
     "crushing_jaw": {"name": "Crushing Jaw", "attacks": 1, "ap": 6, "short": "Melee"},
     "tentacle": {"name": "Lashing Tentacle", "attacks": 1, "ap": 1, "short": "Melee", "rules": [{"id": "reach", "x": 2}]},
-    "crush_bite": {"name": "Crushing Maw", "attacks": 1, "ap": 8, "short": "Melee", "rules": ["rending"]},
-    "fins": {"name": "Scythed Fins", "attacks": 1, "ap": 5, "short": "Melee"}
+    "crush_bite": {"name": "Crushing Maw", "attacks": 1, "ap": 8, "short": "Melee", "rules": ["rending"]}
   },
   "rules": {
     "discipline": {"name": "Discipline", "description": "This unit and all friendly units within 6\" ignore Shock when making any Overwatch or Defensive Stance reaction rolls.", "points": 15},

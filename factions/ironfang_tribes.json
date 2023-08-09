@@ -180,7 +180,7 @@
       "name": "Orc Warboss on Dragon",
       "description": "Stronger and more savage than the normal orc.",
       "category": "hero",
-      "keywords": ["Orc", "Monster", "Cavalry"],
+      "keywords": ["Orc", "Monster"],
       "models": [
         {
           "name": "Orc Warboss on Dragon",
@@ -328,7 +328,7 @@
       "name": "Orc Shaman on Dragon",
       "description": "Tough in stature and a fearsome wizard.",
       "category": "hero",
-      "keywords": ["Orc", "Monster", "Cavalry"],
+      "keywords": ["Orc", "Monster"],
       "models": [
         {
           "name": "Orc Shaman on Dragon",
