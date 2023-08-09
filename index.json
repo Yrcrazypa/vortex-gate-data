@@ -1894,7 +1894,7 @@
     "evasive": {"name": "Evasive", "description": "Models suffer -1 Accuracy and Strength when attacking this model.", "points": 2},
     "stealth": {"name": "Evasive", "description": "Models suffer -1 Accuracy and Strength when attacking this model.", "points": 2},
     "dodge": {"name": "Swift", "description": "Models suffer -1 Strength when fighting this model.", "points": 2},
-    "swift": {"name": "Swift", "description": "Models suffer -1 Strength when fighting this model.", "points": 2},
+    "swift": {"name": "Swift", "description": "Models suffer -1 Strength when fighting this model.", "points": 1},
     "deadly_poison": {
       "name": "Deadly Poison",
       "description": "Enemies without the _Vehicle_ keyword hit by this weapon reduce their Save value by 2 (after AP). This may not bring a unit below Save 5.",
@@ -1998,7 +1998,7 @@
     "indirect": {"name": "Indirect", "description": "This weapon may target units out of line of sight at -1 Accuracy.", "points": ["weapon.attacks"]},
     "anti_air": {"name": "Anti-air", "description": "This weapon gets +1 to hit units with the Aircraft special rule.", "points": ["weapon.attacks", {"multiply": 1}]},
     "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
-    "poison": {"name": "Poison", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 1}]},
+    "poison": {"name": "Poison", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 0.5}]},
     "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 0.5}]},
     "leader": {"name": "Leader", "description": "This unit may lead another unit with the same unit type keyword.", "points": 10},
     "support": {
