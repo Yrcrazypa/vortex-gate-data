@@ -262,7 +262,10 @@
           "weapons": ["burst_carbine", {"id": "energy_handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": ["burst_carbine"], "withWeapon": ["sonic_blade", "smg"]},
-            {"replaceWeapon": [{"id": "energy_handweapon", "count": 2}], "withWeapon": [{"id": "taser_sword", "count": 2}, {"id": "sonic_blade", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]},
+            {
+              "replaceWeapon": [{"id": "energy_handweapon", "count": 2}],
+              "withWeapon": [{"id": "taser_sword", "count": 2}, {"id": "sonic_blade", "count": 2}, {"id": "twin_energy_handweapon", "count": 3}]
+            },
             {"addRule": {"id": "ambush", "name": "Infiltration Protocol"}, "modelLimit": "all"}
           ],
           "min": 5,
@@ -755,9 +758,9 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear", "walker"],
-          "weapons": ["thermal_lance", "light_machinegun"],
+          "weapons": ["eradication_beam", "light_machinegun", {"id": ["servo_arm"], "count": 2}],
           "options": [
-            {"replaceWeapon": "thermal_lance", "withWeapon": ["eradication_beam", "death_laser", "aa_autocannon"]},
+            {"replaceWeapon": "eradication_beam", "withWeapon": ["death_laser", "twin_aa_autocannon"]},
             {"replaceWeapon": "light_machinegun", "withWeapon": ["aa_autocannon", "plasma_cannon", "fusion_cannon", "heavy_flamethrower", "thermal_lance"]},
             {
               "addWeapon": [
@@ -770,7 +773,6 @@
               "limit": 1
             },
             {"addWeapon": ["aa_missiles"]},
-            {"addWeapon": ["servo_arm"], "count": 2},
             {"addRule": ["data_link"]}
           ],
           "min": 1,
@@ -814,19 +816,13 @@
     "eradication_beam": {"name": "Eradication Beam", "attacks": 1, "short": 18, "medium": 36, "ap": 4, "rules": [{"id": "blast", "x": 6}]},
     "eradication_ray": {"name": "Eradication Ray", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "rules": [{"id": "blast", "x": 3}]},
     "eradication_blaster": {"name": "Eradication Blaster", "attacks": 1, "short": 6, "ap": 3, "rules": [{"id": "blast", "x": 3}, "pistol"]},
-    "death_laser": {"name": "Death Laser", "attacks": 1, "short": 24, "medium": 48, "ap": 10, "rules": [{"id": "blast", "x": 2}]},
+    "death_laser": {"name": "Death Laser", "attacks": 2, "short": 24, "medium": 48, "ap": 10, "rules": [{"id": "deadly", "x": 2}]},
     "plasma_mortar": {"name": "Plasma Mortar", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 2}, "overcharge", "indirect", "heavy"]},
     "bomb_rack": {"name": "Bomb Rack", "attacks": 2, "short": 6, "ap": 3, "rules": [{"id": "blast", "x": 3}, "bomb"]},
     "aa_missiles": {"name": "AA Missile System", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": ["anti_air"]},
     "twin_carbine": {"name": "Twin Carbine", "attacks": 2, "short": 9, "medium": 18, "rules": ["assault"]}
   },
   "rules": {
-    "tactician": {
-      "name": "Guild Tactics",
-      "inputs": ["x"],
-      "description": "When this unit is activated, choose up to X friendly _Infantry_ units within 6\" to receive one of the following bonuses until the end of the round: \n * Re-roll failed Accuracy tests of 9+\n * Re-roll failed Strength tests of 9+",
-      "points": ["rule.x", {"multiply": 10}]
-    },
     "data_link": {"name": "Data Link", "description": "This model's unit gains +1 Courage.", "points": 5},
     "heat_scanner": {"name": "Heat Scanner", "description": "This model's unit gains +6\" to long range when shooting.", "points": 5},
     "protocols": {
