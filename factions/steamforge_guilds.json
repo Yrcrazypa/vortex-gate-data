@@ -758,21 +758,13 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear", "walker"],
-          "weapons": ["eradication_beam", "light_machinegun", {"id": ["servo_arm"], "count": 2}],
+          "weapons": ["twin_heavy_thermal_lance", {"id": ["servo_arm"], "count": 2}],
           "options": [
-            {"replaceWeapon": "eradication_beam", "withWeapon": ["death_laser", "twin_aa_autocannon"]},
-            {"replaceWeapon": "light_machinegun", "withWeapon": ["aa_autocannon", "plasma_cannon", "fusion_cannon", "heavy_flamethrower", "thermal_lance"]},
             {
-              "addWeapon": [
-                {"id": "light_machinegun", "mount": ["Front"]},
-                {"id": "plasma_rifle", "mount": ["Front"]},
-                {"id": "fusion_rifle", "mount": ["Front"]},
-                {"id": "flamethrower", "mount": ["Front"]},
-                {"id": "laser_cannon", "mount": ["Front"]}
-              ],
-              "limit": 1
+              "replaceWeapon": ["eradication_beam", "light_machinegun"],
+              "withWeapon": [["death_laser", "light_machinegun"], ["aa_autocannon", "aa_missiles"], ["eradication_beam", "light_machinegun"]]
             },
-            {"addWeapon": ["aa_missiles"]},
+            {"addWeapon": "light_machinegun"},
             {"addRule": ["data_link"]}
           ],
           "min": 1,
@@ -813,13 +805,13 @@
     "iron_claws": {"name": "Iron Claws", "attacks": 1, "short": "Melee", "ap": 2},
     "robot_fist": {"name": "Robot Fist", "attacks": 1, "short": "Melee", "ap": 8},
     "burst_carbine": {"name": "Burst Carbine", "attacks": 1, "ap": 1, "short": 9, "medium": 18, "rules": ["rapid_fire"]},
-    "eradication_beam": {"name": "Eradication Beam", "attacks": 1, "short": 18, "medium": 36, "ap": 4, "rules": [{"id": "blast", "x": 6}]},
+    "eradication_beam": {"name": "Eradication Beam", "attacks": 1, "short": 18, "medium": 36, "ap": 4, "rules": ["heavy", {"id": "blast", "x": 6}]},
     "eradication_ray": {"name": "Eradication Ray", "attacks": 1, "short": 9, "medium": 18, "ap": 3, "rules": [{"id": "blast", "x": 3}]},
     "eradication_blaster": {"name": "Eradication Blaster", "attacks": 1, "short": 6, "ap": 3, "rules": [{"id": "blast", "x": 3}, "pistol"]},
-    "death_laser": {"name": "Death Laser", "attacks": 2, "short": 24, "medium": 48, "ap": 10, "rules": [{"id": "deadly", "x": 2}]},
+    "death_laser": {"name": "Death Laser", "attacks": 2, "short": 24, "medium": 48, "ap": 10, "rules": ["heavy", {"id": "deadly", "x": 2}]},
     "plasma_mortar": {"name": "Plasma Mortar", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 2}, "overcharge", "indirect", "heavy"]},
     "bomb_rack": {"name": "Bomb Rack", "attacks": 2, "short": 6, "ap": 3, "rules": [{"id": "blast", "x": 3}, "bomb"]},
-    "aa_missiles": {"name": "AA Missile System", "attacks": 1, "short": 24, "medium": 48, "ap": 5, "rules": ["anti_air"]},
+    "aa_missiles": {"name": "AA Missile System", "attacks": 2, "short": 24, "medium": 48, "ap": 5, "rules": ["anti_air"]},
     "twin_carbine": {"name": "Twin Carbine", "attacks": 2, "short": 9, "medium": 18, "rules": ["assault"]}
   },
   "rules": {
