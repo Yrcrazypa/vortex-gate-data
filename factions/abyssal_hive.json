@@ -20,7 +20,7 @@
                     "defense": 12,
                     "reflexes": 6,
                     "courage": 7,
-                    "rules": ["leader", {"id": "leader", "x": "Monster"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 5}],
+                    "rules": ["leader", {"id": "leader", "x": "Monster"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 5}],
                     "weapons": [{"id": "large_razor_talons", "count": 6}, "grabbing_tail"],
                     "options": [
                         {
@@ -29,7 +29,7 @@
                             "limit": 2
                         },
                         {"addRule": [{"name": "Wings", "id": "fly"}]},
-                        {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
+                        {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
                     ],
                     "min": 1,
                     "max": 1
@@ -50,7 +50,7 @@
                     "fight": 5,
                     "defense": 12,
                     "movement": 8,
-                    "rules": ["leader", {"id": "magic", "x": 1}, "regeneration_pods", "tactician", {"id": "wounds", "x": 8}],
+                    "rules": ["leader", {"id": "power", "x": 1}, "regeneration_pods", "tactician", {"id": "wounds", "x": 8}],
                     "weapons": [{"id": "large_razor_talons", "count": 3}, "spine_salvo"],
                     "options": [{"replaceWeapon": {"id": "large_razor_talons", "count": 3}, "withWeapon": [{"id": "crushing_claws", "count": 3}]}, {"addRule": [{"id": "transport", "x": 12}]}],
                     "min": 1,
@@ -71,7 +71,7 @@
                     "defense": 8,
                     "reflexes": 7,
                     "movement": 8,
-                    "rules": ["agile", "leader", "tactician", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+                    "rules": ["agile", "leader", "tactician", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
                     "weapons": [{"id": "large_razor_talons", "count": 6}],
                     "min": 1,
                     "max": 1
@@ -92,7 +92,7 @@
                     "shoot": 5,
                     "defense": 11,
                     "movement": 7,
-                    "rules": ["fly", {"id": "magic", "x": 2}, "support", {"id": "wounds", "x": 5}],
+                    "rules": ["fly", {"id": "power", "x": 2}, "support", {"id": "wounds", "x": 5}],
                     "weapons": [{"id": "razor_talons", "count": 3}],
                     "min": 1,
                     "max": 1
@@ -503,7 +503,7 @@
                     "shoot": 5,
                     "defense": 11,
                     "movement": 7,
-                    "rules": [{"id": "magic", "x": "2"}, {"id": "wounds", "x": 7}],
+                    "rules": [{"id": "power", "x": "2"}, {"id": "wounds", "x": 7}],
                     "weapons": [{"id": "large_razor_talons", "count": 3}],
                     "min": 1,
                     "max": 1

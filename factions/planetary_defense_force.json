@@ -119,7 +119,7 @@
       "name": "Psychic",
       "description": "A trained psychic adept at casting powers and supporting troops.",
       "category": "hero",
-      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "leader", "x": "Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Psychic",
@@ -136,7 +136,7 @@
               "replaceWeapon": {"id": "light_handweapon", "count": 2},
               "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_polearm", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
             },
-            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
           ],
           "min": 1,
           "max": 1

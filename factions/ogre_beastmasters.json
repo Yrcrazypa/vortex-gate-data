@@ -180,9 +180,9 @@
           "defense": 6,
           "courage": 7,
           "reflexes": 6,
-          "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 4}],
+          "rules": [{"id": "leader", "x": "Infantry, Heavy Infantry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 4}],
           "weapons": [{"id": "grand_weapon", "count": 6}],
-          "options": [{"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}],
+          "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
           "min": 1,
           "max": 1
         }
@@ -202,9 +202,9 @@
           "defense": 12,
           "reflexes": 6,
           "courage": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader", "x": "Cavalry"}, {"id": "magic", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 3}, {"id": "heavy_impact", "x": 6}, {"id": "leader", "x": "Cavalry"}, {"id": "power", "x": 2}],
           "weapons": [{"id": "mount_feet", "count": 2}, "frost_breath", {"id": "grand_weapon", "count": 7}, {"id": "mount_horns", "count": 4}],
-          "options": [{"replaceRule": [{"id": "magic", "x": 2}], "withRule": [{"id": "magic", "x": 3}]}],
+          "options": [{"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}]}],
           "min": 1,
           "max": 1
         }
@@ -224,9 +224,9 @@
           "defense": 9,
           "reflexes": 6,
           "courage": 6,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 4}, {"id": "leader", "x": "Vehicle"}, {"id": "magic", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 4}, {"id": "leader", "x": "Vehicle"}, {"id": "power", "x": 1}],
           "weapons": [{"id": "grand_weapon", "count": 6}, {"id": "brutal_tusks", "count": 8}],
-          "options": [{"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}],
+          "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
           "min": 1,
           "max": 1
         }

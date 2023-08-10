@@ -103,13 +103,13 @@
           "defense": 6,
           "reflexes": 6,
           "weapons": ["heavy_carbine", {"id": "handweapon", "count": 2}],
-          "rules": [{"id": "wounds", "x": 2}, {"id": "magic", "x": 1}],
+          "rules": [{"id": "wounds", "x": 2}, {"id": "power", "x": 1}],
           "options": [
             {"replaceWeapon": ["heavy_carbine"], "withWeapon": ["combat_shotgun"]},
             {"replaceWeapon": ["heavy_carbine", {"id": "handweapon", "count": 2}], "withWeapon": [["pistol", {"id": "handweapon", "count": 3}]]},
             {"replaceWeapon": ["pistol"], "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "thermal_pistol"]},
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}]},
-            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
+            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
           ],
           "min": 1,
           "max": 1

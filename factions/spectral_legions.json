@@ -25,7 +25,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 3}],
               "withWeapon": [{"id": "great_weapon", "count": 4}, {"id": "great_axe", "count": 3}, {"id": "heavy_polearm", "count": 3}, {"id": "heavy_flail", "count": 3}]
             },
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry"}, {"id": "magic", "x": 1}]}
+            {"addRule": ["shield", {"id": "icon", "x": "Infantry"}, {"id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -53,7 +53,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 3}],
               "withWeapon": [{"id": "great_weapon", "count": 4}, {"id": "great_axe", "count": 3}, {"id": "heavy_lance", "count": 3}, {"id": "heavy_flail", "count": 3}]
             },
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}, {"name": "Wings", "id": "fly"}]}
+            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"name": "Wings", "id": "fly"}]}
           ],
           "min": 1,
           "max": 1
@@ -81,7 +81,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 3}],
               "withWeapon": [{"id": "great_weapon", "count": 4}, {"id": "great_axe", "count": 3}, {"id": "heavy_lance", "count": 3}, {"id": "heavy_flail", "count": 3}]
             },
-            {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}]}
+            {"addRule": [{"id": "icon", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -108,7 +108,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 4}],
               "withWeapon": [{"id": "great_weapon", "count": 5}, {"id": "great_axe", "count": 4}, {"id": "heavy_polearm", "count": 4}, {"id": "heavy_flail", "count": 4}]
             },
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry"}, {"id": "magic", "x": 1}]},
+            {"addRule": ["shield", {"id": "icon", "x": "Infantry"}, {"id": "power", "x": 1}]},
             {"replaceRule": [{"id": "tactician", "x": 1}], "withRule": [{"id": "tactician", "x": 2}]}
           ],
           "min": 1,
@@ -137,7 +137,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 4}],
               "withWeapon": [{"id": "great_weapon", "count": 5}, {"id": "great_axe", "count": 4}, {"id": "heavy_lance", "count": 4}, {"id": "heavy_flail", "count": 4}]
             },
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}, {"name": "Wings", "id": "fly"}]},
+            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"name": "Wings", "id": "fly"}]},
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
           "min": 1,
@@ -166,7 +166,7 @@
               "replaceWeapon": [{"id": "great_weapon", "count": 4}],
               "withWeapon": [{"id": "great_weapon", "count": 5}, {"id": "great_axe", "count": 4}, {"id": "heavy_lance", "count": 4}, {"id": "heavy_flail", "count": 4}]
             },
-            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}]},
+            {"addRule": ["shield", {"id": "icon", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}]},
             {"replaceRule": [{"id": "warrior", "x": 1}], "withRule": [{"id": "warrior", "x": 2}]}
           ],
           "min": 1,
@@ -187,11 +187,11 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["leader", {"id": "magic", "x": 1}, "soul_lantern", {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "power", "x": 1}, "soul_lantern", {"id": "wounds", "x": 3}],
           "weapons": ["heavy_handweapon", "staff"],
           "options": [
             {"replaceWeapon": ["heavy_handweapon", "staff"], "withWeapon": [{"id": "great_staff", "count": 2}]},
-            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
+            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
           ],
           "min": 1,
           "max": 1

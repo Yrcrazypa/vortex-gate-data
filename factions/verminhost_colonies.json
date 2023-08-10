@@ -20,7 +20,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 8,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "leader", "x": "Infantry, Monster"}, "fear", {"id": "magic", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "leader", "x": "Infantry, Monster"}, "fear", {"id": "power", "x": 2}],
           "weapons": [{"id": "giant_vermin_claws", "count": 4}],
           "options": [
             {
@@ -32,7 +32,7 @@
                 [{"id": "massive_spear", "count": 6}, {"id": "magic_bolt", "count": 2}]
               ]
             },
-            {"replaceRule": [{"id": "magic", "x": 2}], "withRule": [{"id": "magic", "x": 3}, "curse"]}
+            {"replaceRule": [{"id": "power", "x": 2}], "withRule": [{"id": "power", "x": 3}, "curse"]}
           ],
           "min": 1,
           "max": 1
@@ -108,9 +108,9 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["staff", "handweapon"],
-          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}],
+          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
           "min": 1,
           "max": 1
         }
@@ -130,9 +130,9 @@
           "fight": 5,
           "defense": 10,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 3}, "leader", {"id": "magic", "x": 1}, "fanatical_sermon", "verminous_cacophony"],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 3}, "leader", {"id": "power", "x": 1}, "fanatical_sermon", "verminous_cacophony"],
           "weapons": ["handweapon", "staff"],
-          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}],
+          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
           "min": 1,
           "max": 1
         }
@@ -152,7 +152,7 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "magic", "x": 2}, "monstrous_regeneration"],
+          "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "power", "x": 2}, "monstrous_regeneration"],
           "weapons": ["great_staff", {"id": "crushing_fists", "count": 8}],
           "options": [{"replaceWeapon": [{"id": "crushing_fists", "count": 2}], "withWeapon": [{"id": "flamethrower_warmachine", "count": 2}], "limit": 2}],
           "min": 1,
@@ -173,7 +173,7 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 6,
-          "rules": ["engineer", "leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["engineer", "leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["heavy_pistol", "polearm"],
           "options": [{"replaceWeapon": ["heavy_pistol"], "withWeapon": ["rocket_launcher", "handgun", "repeater_handgun"]}],
           "min": 1,
@@ -194,7 +194,7 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 7,
-          "rules": ["engineer", {"id": "heavy_impact", "x": 6}, "leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["engineer", {"id": "heavy_impact", "x": 6}, "leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["heavy_pistol", "polearm"],
           "options": [{"replaceWeapon": ["heavy_pistol"], "withWeapon": ["rocket_launcher", "handgun", "repeater_handgun"]}],
           "min": 1,
@@ -216,7 +216,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 7,
-          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 9}, {"id": "leader", "x": "Warmachine"}, {"id": "magic", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "heavy_impact", "x": 9}, {"id": "leader", "x": "Warmachine"}, {"id": "power", "x": 1}],
           "weapons": ["doom_arc_generator", "heavy_pistol", "polearm"],
           "options": [{"replaceWeapon": ["heavy_pistol"], "withWeapon": ["rocket_launcher", "handgun", "repeater_handgun"]}],
           "min": 1,

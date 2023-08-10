@@ -109,9 +109,9 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["staff", "handweapon"],
-          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}],
+          "options": [{"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]}, {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}],
           "min": 1,
           "max": 1
         }
@@ -131,12 +131,12 @@
           "fight": 5,
           "defense": 5,
           "reflexes": 6,
-          "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["staff", "handweapon", {"id": "hooves_and_teeth", "count": 2}],
           "options": [
             {"replaceWeapon": ["staff", "handweapon"], "withWeapon": ["great_staff"]},
             {"addRule": [{"name": "Wings", "id": "fly"}]},
-            {"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}
+            {"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -157,7 +157,7 @@
           "fight": 5,
           "defense": 6,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "magic", "x": 2}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Cavalry"}, {"id": "power", "x": 2}, {"id": "wounds", "x": 3}],
           "weapons": [{"id": "heavy_hooves_and_teeth", "count": 2}, {"id": "handweapon", "count": 2}, {"id": "staff", "count": 2}],
           "options": [{"replaceWeapon": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 2}]}],
           "min": 1,

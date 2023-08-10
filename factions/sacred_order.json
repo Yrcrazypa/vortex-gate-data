@@ -17,7 +17,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 7,
-          "rules": ["leader", {"id": "wounds", "x": 3}, "fly", "holy_saint", {"id": "magic", "x": 1}, {"id": "epic_tactician", "x": 2}],
+          "rules": ["leader", {"id": "wounds", "x": 3}, "fly", "holy_saint", {"id": "power", "x": 1}, {"id": "epic_tactician", "x": 2}],
           "weapons": ["saints_blade_shoot", {"id": "saints_blade_melee", "count": 6}],
           "min": 1,
           "max": 1
@@ -80,7 +80,7 @@
               "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}]
             },
-            {"addRule": [{"id": "magic", "x": 1}, {"id": "ward", "x": 1}]}
+            {"addRule": [{"id": "power", "x": 1}, {"id": "ward", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -110,7 +110,7 @@
               "replaceWeapon": {"id": "handweapon", "count": 4},
               "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}]
             },
-            {"addRule": [{"id": "magic", "x": 1}, {"id": "ward", "x": 1}]}
+            {"addRule": [{"id": "power", "x": 1}, {"id": "ward", "x": 1}]}
           ],
           "min": 1,
           "max": 1

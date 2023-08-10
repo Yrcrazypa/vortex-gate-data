@@ -17,9 +17,9 @@
           "defense": 7,
           "reflexes": 5,
           "weapons": [{"id": "handweapon", "count": 2}],
-          "rules": [{"id": "magic", "x": 1}, {"id": "wounds", "x": 2}, "support"],
-          "replaceRule": [{"id": "magic", "x": 1}],
-          "withRule": [{"id": "magic", "x": 2}]
+          "rules": [{"id": "power", "x": 1}, {"id": "wounds", "x": 2}, "support"],
+          "replaceRule": [{"id": "power", "x": 1}],
+          "withRule": [{"id": "power", "x": 2}]
         }
       ]
     },

@@ -60,7 +60,7 @@
               ]
             },
             {"replaceWeapon": [{"id": "twin_barb_rifle", "mount": ["Front"]}], "withWeapon": [{"id": "fusion_rifle", "mount": ["Front"]}, {"id": "thermal_lance", "mount": ["Front"]}]},
-            {"addRule": [{"name": "Grisly Trophy", "id": "fear"}, {"name": "Dark Prism", "id": "magic", "x": 1}]}
+            {"addRule": [{"name": "Grisly Trophy", "id": "fear"}, {"name": "Dark Prism", "id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -86,7 +86,7 @@
             {"replaceWeapon": "barb_pistol", "withWeapon": ["poison_sprayer", "heavy_sniper_rifle", "poison_dart_rifle"]},
             {"replaceWeapon": {"id": "barb_sword", "count": 5}, "withWeapon": [{"id": "poison_whip", "count": 5}]},
             {"addWeapon": "poison_injector"},
-            {"addRule": [{"name": "Dark Prism", "id": "magic", "x": 1}]}
+            {"addRule": [{"name": "Dark Prism", "id": "power", "x": 1}]}
           ],
           "min": 1,
           "max": 1
@@ -121,7 +121,7 @@
                 {"id": "twin_energy_handweapon", "count": 6}
               ]
             },
-            {"addRule": [{"name": "Grisly Trophy", "id": "fear"}, {"name": "Dark Prism", "id": "magic", "x": 1}, "jetpack_character"]}
+            {"addRule": [{"name": "Grisly Trophy", "id": "fear"}, {"name": "Dark Prism", "id": "power", "x": 1}, "jetpack_character"]}
           ],
           "min": 1,
           "max": 1
@@ -333,7 +333,7 @@
           "fight": 6,
           "defense": 5,
           "reflexes": 6,
-          "rules": [{"id": "magic", "x": 1}, "support", {"id": "wounds", "x": 2}],
+          "rules": [{"id": "power", "x": 1}, "support", {"id": "wounds", "x": 2}],
           "weapons": ["dreadful_gaze"],
           "min": 1,
           "max": 1

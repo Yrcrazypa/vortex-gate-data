@@ -29,7 +29,7 @@
       "name": "Pestilent Arch-Marine",
       "description": "This Arch-Marine is the end result of the Pestilent Marines' vile necrobiotics and bioweapons research.",
       "category": "rare",
-      "rules": [{"id": "magic", "x": 2}, {"id": "pest_tactics", "x": 3}, {"id": "wounds", "x": 3}, "fly", {"id": "psychic_prowess", "x": 1}, {"id": "limited", "x": 1}],
+      "rules": [{"id": "power", "x": 2}, {"id": "pest_tactics", "x": 3}, {"id": "wounds", "x": 3}, "fly", {"id": "psychic_prowess", "x": 1}, {"id": "limited", "x": 1}],
       "subfactions": ["toughness_focus"],
       "models": [
         {"name": "Pestilent Arch-Corrupted", "movement": 10, "courage": 7, "shoot": 7, "fight": 7, "defense": 14, "reflexes": 6, "weapons": ["arch_scythe", "arch_pest_pistol"], "min": 1, "max": 1}
@@ -47,7 +47,7 @@
       "name": "Voidwarped Psychic Arch-Marine",
       "description": "Built as a psycho-biological weapon, this Arch-Marine defied his destiny and joined the dark gods.",
       "category": "rare",
-      "rules": [{"id": "magic", "x": 3}, {"id": "archmage_tactics", "x": 3}, {"id": "wounds", "x": 3}, "fly", "archmage", {"id": "psychic_prowess", "x": 2}, {"id": "limited", "x": 1}],
+      "rules": [{"id": "power", "x": 3}, {"id": "archmage_tactics", "x": 3}, {"id": "wounds", "x": 3}, "fly", "archmage", {"id": "psychic_prowess", "x": 2}, {"id": "limited", "x": 1}],
       "subfactions": ["power_focus"],
       "models": [{"name": "Psychic Arch-Corrupted", "movement": 12, "courage": 7, "shoot": 7, "fight": 7, "defense": 13, "reflexes": 6, "weapons": ["arch_staff"], "min": 1, "max": 1}]
     },
@@ -351,7 +351,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", {"id": "handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["twin_marine_rifle", "combi_rifle", "combi_rifle"]},
@@ -369,7 +369,7 @@
               ]
             },
             {"addRule": ["jetpack", "destroyer_armor", "disk_of_change"], "limit": 1},
-            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -390,7 +390,7 @@
           "fight": 6,
           "defense": 9,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "magic", "x": 1}, {"id": "wounds", "x": 3}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "power", "x": 1}, {"id": "wounds", "x": 3}],
           "weapons": ["marine_rifle", {"id": "handweapon", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["twin_marine_rifle", "combi_rifle", "combi_rifle"]},
@@ -411,7 +411,7 @@
               "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
               "withWeapon": [{"id": "twin_plasma_rifle", "mount": ["Front"]}, {"id": "twin_flamethrower", "mount": ["Front"]}, {"id": "twin_fusion_rifle", "mount": ["Front"]}]
             },
-            {"replaceRule": {"id": "magic", "x": 1}, "withRule": {"id": "magic", "x": 2}}
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": {"id": "power", "x": 2}}
           ],
           "min": 1,
           "max": 1
@@ -423,7 +423,7 @@
       "description": "A massive demon gifted by the dark gods.",
       "category": "hero",
       "keywords": ["Monster"],
-      "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "tactician", "x": 2}, {"id": "magic", "x": 1}],
+      "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "tactician", "x": 2}, {"id": "power", "x": 1}],
       "models": [
         {
           "name": "Demonic Champion",
@@ -438,7 +438,7 @@
             {"replaceWeapon": {"id": "daemon_sword", "count": 3}, "withWeapon": [{"id": "daemon_axe", "count": 3}, {"id": "daemon_claws", "count": 4}]},
             {"addRule": "wings"},
             {"addWeapon": ["heavy_machinegun"]},
-            {"replaceRule": {"id": "magic", "x": 1}, "withRule": [{"id": "magic", "x": 2}]}
+            {"replaceRule": {"id": "power", "x": 1}, "withRule": [{"id": "power", "x": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -709,9 +709,9 @@
           "fight": 6,
           "defense": 6,
           "reflexes": 4,
-          "rules": ["leader", {"id": "magic", "x": 1}, {"id": "wounds", "x": 2}],
+          "rules": ["leader", {"id": "power", "x": 1}, {"id": "wounds", "x": 2}],
           "weapons": [{"id": "energy_polearm", "count": 3}],
-          "options": [{"replaceRule": [{"id": "magic", "x": 1}], "withRule": [{"id": "magic", "x": 2}]}, {"addRule": "disk_of_change"}],
+          "options": [{"replaceRule": [{"id": "power", "x": 1}], "withRule": [{"id": "power", "x": 2}]}, {"addRule": "disk_of_change"}],
           "min": 1,
           "max": 1
         }
@@ -1671,7 +1671,7 @@
               ],
               "limit": 2
             },
-            {"addRule": [{"id": "magic", "x": 1}], "subfactions": ["power_focus"]}
+            {"addRule": [{"id": "power", "x": 1}], "subfactions": ["power_focus"]}
           ],
           "min": 1,
           "max": 1
@@ -1739,7 +1739,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": [{"id": "wounds", "x": 5}, {"id": "magic", "x": 1}, "vulnerable_rear"],
+          "rules": [{"id": "wounds", "x": 5}, {"id": "power", "x": 1}, "vulnerable_rear"],
           "weapons": [{"id": "enormous_claws", "count": 2}, {"id": "tentacle_maw", "count": 2}],
           "min": 1,
           "max": 1
