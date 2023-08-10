@@ -806,8 +806,8 @@
     }
   },
   "weapons": {
-    "reaper_beamer": {"name": "Reaper Beamer", "attacks": 1, "ap": 3, "short": 6, "medium": 12, "rules": ["assault"]},
-    "heavy_reaper_beamer": {"name": "Heavy Reaper Beamer", "attacks": 1, "ap": 3, "short": 9, "medium": 18, "rules": ["assault", {"id": "blast", "x": 3}]},
+    "reaper_beamer": {"name": "Reaper Beamer", "attacks": 1, "ap": 2, "short": 6, "medium": 12, "rules": ["assault"]},
+    "heavy_reaper_beamer": {"name": "Heavy Reaper Beamer", "attacks": 1, "ap": 2, "short": 9, "medium": 18, "rules": ["assault", {"id": "blast", "x": 3}]},
     "heavy_reaper_rifle": {"name": "Heavy Reaper Rifle", "attacks": 2, "ap": 3, "short": 12, "medium": 24, "rules": ["assault"]},
     "heavy_reaper_cannon": {"name": "Heavy Reaper Cannon", "attacks": 1, "ap": 4, "short": 18, "medium": 36, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "twin_heavy_reaper_cannon": {"name": "Twin Heavy Reaper Cannon", "attacks": 2, "ap": 4, "short": 18, "medium": 36, "rules": ["heavy", {"id": "blast", "x": 3}]},
