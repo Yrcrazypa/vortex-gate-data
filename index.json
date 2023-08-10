@@ -1916,7 +1916,7 @@
     "crack_shot": {"name": "Crack Shot", "description": "Hits rolls of 1 or 2 from shooting attacks made by this model ignore the benefit of cover.", "points": [1]},
     "stubborn": {"name": "Stubborn", "description": "This model adds 1 to Courage tests when removing Shock.", "points": [1]},
     "reluctant": {"name": "Reluctant", "description": "This model subtracts 1 from Courage tests when removing Shock.", "points": [-1]},
-    "magic": {"name": "Magic", "inputs": ["x"], "description": "This unit may use X _Powers_ and attempt to stop X _Powers_ per round.", "points": [10, {"multiply": "rule.x"}]},
+    "power": {"name": "Magic", "inputs": ["x"], "description": "This unit may use X _Powers_ and attempt to stop X _Powers_ per round.", "points": [10, {"multiply": "rule.x"}]},
     "conclave": {
       "name": "Conclave",
       "description": "This unit may use _Powers_ and attempt to stop _Powers_ each round based on the total number of model with this ability: \n * 1-5 Models: 1 Power \n * 6+ Models: 2 Powers \n * 11+ Models: 3 Powers",
