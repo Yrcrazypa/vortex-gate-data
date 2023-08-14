@@ -74,7 +74,7 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 6,
-          "rules": ["damage_chart", "fly", {"id": "knight_tactics", "x": 1}, {"id": "leader_x", "x": "Cavalry, Monster"}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "knight_tactics", "x": 1}, {"id": "leader_x", "x": "Cavalry, Monster"}],
           "weapons": [{"id": "handweapon", "count": 3}, {"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "lance", "count": 3}, {"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}]},
@@ -101,7 +101,7 @@
           "fight": 7,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["damage_chart", {"id": "elven_tactics", "x": 2}, {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "elven_tactics", "x": 2}, {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}],
           "weapons": [{"id": "hooves_and_teeth", "count": 4}, {"id": "handweapon", "count": 3}],
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 3}], "withWeapon": [{"id": "lance", "count": 3}, {"id": "great_weapon", "count": 3}, {"id": "handweapon", "count": 4}]},
@@ -175,7 +175,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": ["damage_chart", "fly", {"id": "power", "x": 2}, {"id": "leader_x", "x": "Cavalry, Monster"}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "power", "x": 2}, {"id": "leader_x", "x": "Cavalry, Monster"}],
           "weapons": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}, {"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
           "options": [
             {"replaceWeapon": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]},
@@ -200,7 +200,7 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["damage_chart", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "power", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "power", "x": 2}],
           "weapons": [{"id": "hooves_and_teeth", "count": 4}, {"id": "handweapon", "count": 2}, {"id": "staff", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "staff", "count": 2}, {"id": "handweapon", "count": 2}], "withWeapon": [{"id": "great_staff", "count": 3}]},
@@ -251,7 +251,7 @@
           "fight": 7,
           "defense": 12,
           "reflexes": 7,
-          "rules": ["damage_chart", {"id": "defiant", "x": 2}, "fear", "fearless", "fly", {"id": "knight_tactics", "x": 2}, {"id": "leader_x", "x": "Cavalry, Monster"}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "fear", "fearless", "fly", {"id": "knight_tactics", "x": 2}, {"id": "leader_x", "x": "Cavalry, Monster"}],
           "weapons": [{"id": "heavy_polearm", "count": 4}, {"id": "beak_and_claws", "count": 6}, {"id": "flame_breath", "count": 2}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
@@ -277,7 +277,7 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["damage_chart", {"id": "defiant", "x": 2}, "fear", "fearless", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "knight_tactics", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "defiant", "x": 2}, "fear", "fearless", {"id": "impact", "x": 3}, {"id": "leader_x", "x": "Vehicle"}, {"id": "knight_tactics", "x": 2}],
           "weapons": [{"id": "hooves_and_teeth", "count": 4}, {"id": "heavy_polearm", "count": 4}],
           "options": [
             {"replaceWeapon": [{"id": "heavy_polearm", "count": 4}], "withWeapon": [{"id": "grand_weapon", "count": 4}]},
@@ -504,7 +504,7 @@
           "fight": 7,
           "defense": 11,
           "reflexes": 6,
-          "rules": ["damage_chart", "fearless", "fly"],
+          "rules": [{"id": "wounds", "x": 3}, "fearless", "fly"],
           "weapons": [{"id": "lance", "count": 3}, {"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
           "options": [{"addRule": ["relic_shield"], "modelLimit": "all"}],
           "min": 1,
@@ -527,7 +527,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["damage_chart", "fly", {"id": "impact", "x": 2}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "impact", "x": 2}],
           "weapons": [{"id": "beak", "count": 2}, {"id": "claws", "count": 2}],
           "min": 1,
           "max": 1
@@ -548,7 +548,7 @@
           "fight": 6,
           "defense": 12,
           "reflexes": 6,
-          "rules": ["damage_chart", "fly"],
+          "rules": [{"id": "wounds", "x": 3}, "fly"],
           "weapons": [{"id": "beak_and_claws", "count": 6}, {"id": "flame_breath", "count": 2}],
           "min": 1,
           "max": 1
@@ -569,7 +569,7 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 6,
-          "rules": ["damage_chart", "fly"],
+          "rules": [{"id": "wounds", "x": 3}, "fly"],
           "weapons": [{"id": "flame_breath", "count": 4}, {"id": "fangs_and_claws", "count": 3}, "bashing_tail"],
           "min": 1,
           "max": 1
@@ -590,7 +590,7 @@
           "fight": 6,
           "defense": 10,
           "reflexes": 6,
-          "rules": ["damage_chart", {"id": "impact", "x": 3}],
+          "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 3}],
           "weapons": [{"id": "hooves_and_teeth", "count": 4}, "long_bow", "spear"],
           "options": [
             {"replaceWeapon": ["long_bow", "spear"], "withWeapon": [[{"id": "great_axe", "count": 2}]]},
@@ -616,7 +616,7 @@
           "defense": 10,
           "reflexes": 6,
           "courage": 5,
-          "rules": ["damage_chart", "fly"],
+          "rules": [{"id": "wounds", "x": 3}, "fly"],
           "weapons": ["ballista", {"id": "beak", "count": 2}, {"id": "claws", "count": 2}, {"id": "spear", "count": 2}],
           "options": [{"addRule": ["banner"]}],
           "min": 1,
@@ -638,7 +638,7 @@
           "defense": 8,
           "courage": 5,
           "reflexes": 5,
-          "rules": ["damage_chart"],
+          "rules": [{"id": "wounds", "x": 3}],
           "weapons": [{"id": "ballista", "count": 2}],
           "min": 1,
           "max": 1

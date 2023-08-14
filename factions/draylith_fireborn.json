@@ -145,7 +145,7 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 6,
-          "rules": ["damage_chart", "fly", {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "warrior", "x": 1}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "leader_x", "x": "Infantry, Cavalry"}, {"id": "warrior", "x": 1}],
           "options": [
             {"replaceWeapon": [{"id": "handweapon", "count": 6}, "shield"], "withWeapon": [{"id": "great_weapon", "count": 5}, [{"id": "lance", "count": 4}, "shield"]]},
             {"addWeapon": [{"id": "repeater_crossbow", "count": 2}]},
@@ -172,7 +172,7 @@
           "fight": 6,
           "defense": 13,
           "reflexes": 6,
-          "rules": ["damage_chart", "fly", {"id": "power", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}],
+          "rules": [{"id": "wounds", "x": 3}, "fly", {"id": "power", "x": 3}, {"id": "leader_x", "x": "Infantry, Cavalry"}],
           "options": [
             {"replaceWeapon": [{"id": "great_staff", "count": 2}], "withWeapon": [{"id": "handweapon", "count": 4}]},
             {"replaceRule": [{"id": "power", "x": 3}], "withRule": [{"id": "power", "x": 4}]}
@@ -353,7 +353,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 5,
-          "rules": ["damage_chart", "crazed", "devour", "fear"],
+          "rules": [{"id": "wounds", "x": 3}, "crazed", "devour", "fear"],
           "weapons": [{"id": "flame_breath", "count": 6}, {"id": "beak_and_claws", "count": 6}]
         }
       ],
