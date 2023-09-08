@@ -864,7 +864,7 @@
         {
             "name": "Shock and Awe",
             "phase": "activation",
-            "description": "Use when fighting with an Infantry unit. Each model may use one of its ranged weapons instead of melee weapons when resolving.",
+            "description": "Use when fighting with an Infantry unit. Each model may use one of its ranged weapons instead of melee weapons when resolving that Fight action. This strategy may only be used once per round.",
             "flavor": "A point blank volley of fire can utterly shatter the foe.",
             "cost": 1
         },
