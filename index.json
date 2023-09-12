@@ -334,6 +334,15 @@
       "color": "#954535",
       "alliance": "destruction",
       "description": "Large-bodied mercenaries with huge appetites for gold and destruction."
+    },
+    "saurian_republic": {
+      "version": "1.0",
+      "name": "Saurian Republic",
+      "id": "saurian_republic",
+      "url": "saurian_republic.json",
+      "color": "#954535",
+      "alliance": "doom",
+      "description": "A highly advanced species of reptilian beings with distinct features reminiscent of both dinosaurs and lizards with regimented order."
     }
   },
   "relics": {
