@@ -39,7 +39,7 @@
       "name": "Lore Keeper Dancer",
       "description": "A solo wandering player who has perfected the dance of war and occasionally joins the main troupe to deadly effect.",
       "category": "elite",
-      "rules": [{"id": "support_x", "x": "Infantry"}, {"id": "wounds", "x": 3}],
+      "rules": [{"id": "support", "x": "Infantry"}, {"id": "wounds", "x": 3}],
       "keywords": ["Infantry"],
       "models": [
         {

@@ -307,7 +307,7 @@
           "fight": 6,
           "defense": 7,
           "reflexes": 5,
-          "rules": [{"id": "impact", "x": 1}, "medic", {"id": "support_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
+          "rules": [{"id": "impact", "x": 1}, "medic", {"id": "support", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
           "weapons": ["carbine", {"id": "handweapon", "count": 2}, {"id": "twin_carbine", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": "carbine", "withWeapon": ["twin_carbine", "combi_heavy_flamer", "combi_rocket_launcher"]},

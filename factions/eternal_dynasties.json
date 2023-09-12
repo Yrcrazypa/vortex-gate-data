@@ -289,7 +289,7 @@
       "name": "Overseer",
       "description": "A sworn guardian of the lords, empowering their subjects.",
       "category": "elite",
-      "rules": [{"id": "support_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, "warden_tactics"],
+      "rules": [{"id": "support", "x": "Infantry"}, {"id": "wounds", "x": 2}, "warden_tactics"],
       "models": [
         {"name": "Overseer", "courage": 7, "movement": 5, "shoot": 6, "fight": 6, "defense": 9, "reflexes": 6, "weapons": ["heavy_gauss_rifle", {"id": "force_blade", "count": 3}], "min": 1, "max": 1}
       ]

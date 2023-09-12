@@ -102,7 +102,7 @@
           "defense": 9,
           "reflexes": 6,
           "weapons": ["handweapon", "radiation_pistol"],
-          "rules": ["engineer", "protocols", {"id": "support_x", "x": "Vehicles"}],
+          "rules": ["engineer", "protocols", {"id": "support", "x": "Vehicles"}],
           "options": [
             {"replaceWeapon": "radiation_pistol", "withWeapon": ["thermal_pistol", "emp_pistol", "plasma_pistol", "fusion_pistol"]},
             {"replaceWeapon": {"id": "handweapon"}, "withWeapon": ["energy_powerweapon", "taser_sword", "energy_handweapon"]}

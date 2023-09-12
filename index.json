@@ -2012,17 +2012,7 @@
     "poison": {"name": "Poison", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 0.5}]},
     "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 0.5}]},
     "leader": {"name": "Leader", "description": "This unit may lead another unit with the same unit type keyword.", "points": 10},
-    "support": {
-      "name": "Support",
-      "description": "When another friendly _Infantry_ unit within 6\" activates, this unit may perform a group activation with that unit. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly _Infantry_ unit.",
-      "points": 5
-    },
-    "support_x": {
-      "name": "Support",
-      "inputs": ["x"],
-      "description": "When another friendly unit of _X_ type within 6\" activates, this unit may perform a group activation with that unit. This unit may not be targeted by enemy attacks while it is within 3\" of another friendly unit of _X_ type.",
-      "points": 5
-    },
+    "support": {"name": "Support", "description": "This unit may be attached to another unit with the same unit type keyword.", "points": 5},
     "hero": {"name": "Hero", "description": "When this model is activated, friendly _Infantry_ units within 6\" may choose to activate and perform the same actions as this unit."},
     "lightweight": {"name": "Lightweight", "description": "Attacks with this weapon are made at +1 Strength.", "points": ["weapon.attacks", {"multiply": 1}]},
     "cumbersome": {"name": "Cumbersome", "description": "Attacks with this weapon are made at -1 Strength.", "points": ["weapon.attacks", {"multiply": -1}]},

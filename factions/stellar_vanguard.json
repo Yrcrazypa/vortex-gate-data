@@ -508,7 +508,7 @@
           "fight": 6,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "medic_x", "x": "Infantry, Biker"}, {"id": "support_x", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
+          "rules": [{"id": "impact", "x": 1}, {"id": "medic_x", "x": "Infantry, Biker"}, {"id": "support", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
           "weapons": ["marine_pistol", {"id": "handweapon", "count": 3}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_pistol"], "withWeapon": ["plasma_pistol", "flamethrower_pistol", "fusion_pistol", "gravity_pistol", "thermal_pistol"]},

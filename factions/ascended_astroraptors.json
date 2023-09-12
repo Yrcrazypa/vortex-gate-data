@@ -87,7 +87,7 @@
       "description": "A high ranking official with the authority to call in airstrikes.",
       "category": "elite",
       "keywords": ["Infantry"],
-      "rules": [{"id": "support_x", "x": "Infantry"}, {"id": "wounds", "x": 2}],
+      "rules": [{"id": "support", "x": "Infantry"}, {"id": "wounds", "x": 2}],
       "models": [
         {
           "name": "Admiral",
@@ -166,7 +166,7 @@
       "description": "A highly trained mechanic able to fix most issues at a moment's notice.",
       "category": "elite",
       "keywords": ["Infantry"],
-      "rules": [{"id": "support_x", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "repair", "x": 3}],
+      "rules": [{"id": "support", "x": "Infantry"}, {"id": "wounds", "x": 2}, {"id": "repair", "x": 3}],
       "models": [
         {
           "name": "Engineer",
