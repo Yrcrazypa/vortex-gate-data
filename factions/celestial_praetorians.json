@@ -614,25 +614,25 @@
   },
   "strategies": [
     {
-      "name": "Vigilance",
       "phase": "activation",
-      "description": "Use when taking an Initiative test for a reaction. That unit is treated as having +2 Initiative for that test.",
-      "flavor": "With countless battles experienced, these soldiers are trained to react to any situation.",
+      "name": "Combat Awareness",
+      "description": "Use when shooting with an _Infantry_ unit. That unit may target enemies it is engaged with at -1 Accuracy.",
+      "flavor": "Throne Guardians are trained to be expertly aware of their surroundings including where their allies are.",
       "cost": 1
     },
     {
-      "name": "Reality Stabilizers",
       "phase": "activation",
-      "description": "Use when a Power(x) test is taken within 24\" of an Infantry unit. Roll a D10. If the value is less than or equal to the test to cast the power, it is prevented.",
-      "flavor": "Advanced technology prevents the use of reality-warping psychic powers, leaving the Agencies' foes helpless.",
-      "cost": 1
+      "name": "Relic Deflectors",
+      "description": "Use when a _Vehicle_ unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
+      "flavor": "With ancient defense fields, Throne Guardian vehicles can deflect even the heaviest attacks.",
+      "cost": 2
     },
     {
-      "name": "Teleporter",
-      "phase": "pre_game",
-      "description": "Up to half of any force's units, one point for each may be placed in _Ambush Reserves_ instead of deployed on the field.",
-      "cost": "1/per",
-      "flavor": "The Inquisition often arrives via a teleporter to surprise their enemies."
+      "phase": "activation",
+      "name": "Psychic Shield",
+      "description": "Use when a Power(x) test is taken within 24\" of any _Infantry_ unit. Roll a D10. If the value is less than or equal to the test to cast the power, it is prevented.",
+      "flavor": "Shielded by holy energy, Throne Guardians can protect themselves from psychic powers.",
+      "cost": 1
     }
   ],
   "relics": {
