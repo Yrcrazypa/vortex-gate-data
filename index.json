@@ -1819,7 +1819,7 @@
       "notes": "Small RNG discount to account for single shot randomness",
       "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.5}]
     },
-    "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with a Damage Chart.", "points": ["weapon.attacks", {"multiply": 1}]},
+    "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with the _Monster_ or _Vehicle_ keyword.", "points": ["weapon.attacks", {"multiply": 1}]},
     "flame": {"name": "Spray", "description": "Hits from this weapon ignore any cover bonuses.", "points": ["weapon.attacks", {"multiply": 0.5}]},
     "breaching": {"name": "Breaching", "description": "Hits from this weapon ignore any cover bonuses.", "points": ["weapon.attacks", {"multiply": 0.5}]},
     "ammo": {
