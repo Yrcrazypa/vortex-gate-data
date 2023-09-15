@@ -51,7 +51,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": ["leader", {"id": "wounds", "x": 2}],
+          "rules": ["leader", "striker", {"id": "wounds", "x": 2}],
           "weapons": ["marine_rifle", {"id": "handweapon", "count": 2}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_rifle", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
@@ -83,7 +83,7 @@
           "fight": 7,
           "defense": 8,
           "reflexes": 6,
-          "rules": [{"id": "impact", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
+          "rules": [{"id": "impact", "x": 1}, "striker", {"id": "leader", "x": "Infantry, Biker"}, {"id": "wounds", "x": 2}],
           "weapons": ["marine_rifle", {"id": "handweapon", "count": 2}, {"id": "twin_marine_rifle", "mount": ["Front"]}],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_rifle", "twin_marine_rifle", "marine_dmr", "marine_smg"]},
