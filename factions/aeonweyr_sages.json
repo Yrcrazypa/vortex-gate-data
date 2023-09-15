@@ -445,8 +445,8 @@
       "name": "War God Avatar",
       "description": "A recently risen avatar of an ancient elven god of war.",
       "category": "hero",
-      "keywords": [],
-      "rules": [{"id": "limited", "x": 1}, {"id": "resilient", "x": 3}, {"id": "wounds", "x": 4}, {"id": "leader", "x": "Infantry"}],
+      "keywords": ["Monster"],
+      "rules": [{"id": "limited", "x": 1}, {"id": "resilient", "x": 3}, {"id": "wounds", "x": 4}],
       "models": [
         {
           "name": "War God Avatar",
