@@ -215,7 +215,7 @@
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
+              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
             }
           ],
           "min": 1,
@@ -224,42 +224,8 @@
         {"name": "Order Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
-    "veteran_wardens": {
-      "name": "Veteran Wardens",
-      "description": "An elite group of zealots armed with marine rifles to pack an extra punch.",
-      "category": "core",
-      "options": [
-        {"replaceWeapon": "marine_rifle", "withWeapon": ["flamethrower", "fusion_rifle", "twin_marine_rifle", "heavy_fusion_rifle", "heavy_flamethrower", "heavy_machinegun"], "modelLimit": "2/5"},
-        {"replaceWeapon": ["marine_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
-        {"modelLimit": 1, "addRule": ["lucky_angel"]},
-        {"modelLimit": 1, "addRule": ["banner"]}
-      ],
-      "models": [
-        {
-          "name": "Veteran Superior",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 5,
-          "defense": 7,
-          "reflexes": 6,
-          "weapons": ["marine_rifle", "light_handweapon"],
-          "options": [
-            {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_rifle", "twin_marine_rifle"]},
-            {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
-            {
-              "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
-            }
-          ],
-          "min": 1,
-          "max": 1
-        },
-        {"name": "Veteran Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "light_handweapon"], "min": 4, "max": 9}
-      ]
-    },
     "protector_wardens": {
-      "name": "Wardens Protectors",
+      "name": "Warden Protectors",
       "description": "A group of zealots armed with shields and deadly melee weapons.",
       "category": "core",
       "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [{"id": "energy_polearm", "count": 2}]}],
