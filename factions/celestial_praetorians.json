@@ -167,64 +167,6 @@
         {"name": "Witch Hunter", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 6, "weapons": ["marine_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
-    "throne_ancient": {
-      "name": "Praetorian Ancient",
-      "description": "A banner carrier for the Throne Guardians.",
-      "category": "elite",
-      "rules": [{"id": "wounds", "x": 3}, "banner_of_blindness"],
-      "models": [
-        {
-          "name": "Praetorian Ancient",
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "movement": 6,
-          "defense": 9,
-          "reflexes": 7,
-          "weapons": [{"id": "praetorian_sword_blade", "count": 3}, "praetorian_sword_pistol"],
-          "options": [
-            {
-              "replaceWeapon": [{"id": "praetorian_sword_blade", "count": 3}, "praetorian_sword_pistol"],
-              "withWeapon": [
-                [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"],
-                [{"id": "praetorian_axe_blade", "count": 3}, "praetorian_axe_rifle"],
-                ["praetorian_rifle", {"id": "handweapon", "count": 2}]
-              ]
-            },
-            {"addWeapon": {"id": "praetorian_dagger"}},
-            {"addWeapon": "shield"},
-            {"replaceRule": "banner_of_blindness", "withRule": ["banner_of_justice", "banner_of_focus", "banner_of_wrath"]}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "throne_ancient_destroyer": {
-      "name": "Praetorian Ancient in Destroyer Armor",
-      "description": "A banner carrier for the Throne Guardians in heavy armor.",
-      "category": "elite",
-      "rules": [{"id": "wounds", "x": 3}, "banner_of_blindness"],
-      "models": [
-        {
-          "name": "Praetorian Ancient in Destroyer Armor",
-          "courage": 7,
-          "shoot": 7,
-          "fight": 7,
-          "defense": 10,
-          "movement": 5,
-          "reflexes": 7,
-          "weapons": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle", "praetorian_grenade_launcher"],
-          "options": [
-            {"replaceWeapon": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"], "withWeapon": [[{"id": "praetorian_axe_blade", "count": 3}, "praetorian_axe_rifle"]]},
-            {"addWeapon": "praetorian_dagger"},
-            {"replaceRule": "banner_of_blindness", "withRule": ["banner_of_justice", "banner_of_focus", "banner_of_wrath"]}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
     "throne_guardians": {
       "name": "Praetorians",
       "description": "Highly trained and elite fighters.",
@@ -241,7 +183,8 @@
           ]
         },
         {"addWeapon": "praetorian_dagger"},
-        {"addWeapon": "shield"}
+        {"addWeapon": "shield"},
+        {"addRule": "banner", "modelLimit": 1}
       ],
       "models": [
         {
@@ -290,7 +233,8 @@
           "replaceWeapon": [{"id": "praetorian_spear_blade", "count": 3}, "praetorian_spear_rifle"],
           "withWeapon": [[{"id": "praetorian_axe_blade", "count": 3}, "praetorian_axe_rifle"], ["praetorian_rifle", {"id": "handweapon", "count": 2}]]
         },
-        {"addWeapon": "praetorian_dagger"}
+        {"addWeapon": "praetorian_dagger"},
+        {"addRule": "banner", "modelLimit": 1}
       ],
       "models": [
         {

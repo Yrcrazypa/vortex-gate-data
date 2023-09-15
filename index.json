@@ -2075,12 +2075,10 @@
     "zealot": {"name": "Zealot", "description": "Strength rolls of 1 or 2 for this model's unit cause 2 hits instead of 1.", "points": 5},
     "marksman": {"name": "Marksman", "description": "This model's unit may re-roll failed Accuracy tests of 9+.", "points": 5},
     "striker": {"name": "Striker", "description": "This model's unit gains +1 AP on all weapons.", "points": 5},
+    "vigilant": {"name": "Vigilant", "description": "This model's unit gains +1 Initiative.", "points": 5},
     "wings": {"name": "Wings", "description": "This model may ignore models and terrain when moving.", "points": 5},
     "scrambler": {"name": "Scrambler", "description": "Enemy units arriving from reserves within 18\" of this model suffer -2 Initiative on reserve tests.", "points": 5},
     "assault_ramp": {"name": "Assault Ramp", "description": "Units may disembark from this model even after it has taken two _Move_ actions.", "points": 5},
-    "banner_of_justice": {"name": "Banner of Justice", "description": "Enemy units within 6\" get -1 courage.", "points": 10},
-    "banner_of_wrath": {"name": "Banner of Wrath", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 AP on all Melee weapons.", "points": 10},
-    "banner_of_focus": {"name": "Banner of Focus", "description": "Once per round, a friendly _Infantry_ unit within 6\" may gain +1 AP on all Shooting weapons.", "points": 10},
     "dozer": {"name": "Dozer", "description": "This model may cross low obstacles without penalty.", "points": 5},
     "psych_out": {"name": "Dangerous(Psychic)", "description": "This weapon has +1 AP against units with the Psychic special rule."},
     "dark_prism": {

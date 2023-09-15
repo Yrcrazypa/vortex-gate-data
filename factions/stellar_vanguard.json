@@ -572,7 +572,8 @@
         },
         {"addWeapon": "grenade_launcher_attachment", "modelLimit": "1/5"},
         {"addRule": {"id": "defiant", "x": 2}, "subfactions": ["assault_focus"], "modelLimit": "all"},
-        {"addRule": "multi_scanner", "modelLimit": 1}
+        {"addRule": "multi_scanner", "modelLimit": 1},
+        {"addRule": "banner", "modelLimit": 1}
       ]
     },
     "gravite_vanguard_squad": {
@@ -981,6 +982,7 @@
       "name": "Gravite Blade Squad",
       "description": "Marines wearing experimental Gravite armor with heavy swords and shields.",
       "category": "elite",
+      "options": [{"addRule": "banner", "modelLimit": 1}],
       "models": [
         {
           "name": "Gravite Blade Marine",
