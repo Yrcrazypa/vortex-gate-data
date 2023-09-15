@@ -1193,7 +1193,14 @@
     "aa_autocannon": {"name": "AA Autocannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["anti_air", "heavy"]},
     "twin_aa_autocannon": {"name": "Twin AA Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4, "rules": ["anti_air", "heavy"]},
     "heavy_autocannon": {"name": "Heavy Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy"]},
-    "battle_cannon": {"name": "Battle Cannon", "attacks": 1, "ap": 6, "short": 24, "medium": 48, "rules": ["heavy", {"id": "blast", "x": 3}]},
+    "battle_cannon": {
+      "name": "Battle Cannon",
+      "rules": ["heavy"],
+      "profiles": [
+        {"name": "HE", "attacks": 1, "short": 24, "medium": 48, "ap": 2, "rules": [{"id": "blast", "x": 3}]},
+        {"name": "AP", "attacks": 1, "short": 24, "medium": 48, "ap": 7, "rules": [{"id": "deadly", "x": 1}]}
+      ]
+    },
     "crab_cannon": {"name": "Crab Cannon", "attacks": 1, "ap": 5, "short": 18, "medium": 36, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "defense_rifle_array": {"name": "Defense Rifle Array", "attacks": 3, "short": 12, "medium": 24, "rules": ["rapid_fire"]},
     "reaper_cannon": {"name": "Reaper Autocannon", "attacks": 4, "short": 18, "medium": 36, "ap": 4},

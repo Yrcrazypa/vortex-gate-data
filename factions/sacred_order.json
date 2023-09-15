@@ -213,10 +213,7 @@
           "options": [
             {"replaceWeapon": "marine_rifle", "withWeapon": ["combi_rifle", "twin_marine_rifle"]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol"]},
-            {
-              "replaceWeapon": {"id": "handweapon", "count": 2},
-              "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
-            }
+            {"replaceWeapon": {"id": "handweapon", "count": 2}, "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_powerweapon", "count": 2}]}
           ],
           "min": 1,
           "max": 1
