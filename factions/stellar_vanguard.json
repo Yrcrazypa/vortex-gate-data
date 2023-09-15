@@ -777,7 +777,7 @@
         }
       ],
       "options": [
-        {"replaceWeapon": ["marine_rifle", "light_handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
+        {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [["marine_pistol", {"id": "handweapon", "count": 2}]]},
         {"replaceWeapon": ["marine_rifle"], "withWeapon": ["fusion_rifle", "flamethrower", "plasma_rifle", "thermal_rifle", "gravity_rifle"], "modelLimit": "1/3"},
         {
           "replaceWeapon": {"id": "twin_marine_rifle", "mount": ["Front"]},
