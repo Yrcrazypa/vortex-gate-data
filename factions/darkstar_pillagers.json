@@ -824,7 +824,7 @@
     },
     "legend_pop": {
       "name": "Purveyor of Poison",
-      "description": "Weapons with the _Poison_ rule while their wielder is within 6\" of this model may reduce enemies' save to a minimum of 4, rather than 5.",
+      "description": "Weapons in this model's unit with _Poison_ cause successful re-rolls of 2 or less instead of 1.",
       "points": 10
     },
     "gravity_thrusters": {"name": "Gravity Thrusters", "description": "If this model performs two _Move_ actions on its turn, enemy units suffer -1 Accuracy when targeting this model.", "points": 10},
