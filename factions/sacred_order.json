@@ -118,13 +118,13 @@
       ]
     },
     "herald_warden": {
-      "name": "Herald Warden",
+      "name": "Herald",
       "description": "A herald of the order, inspiring those around them with a blessed banner.",
       "category": "elite",
       "rules": ["support", "banner_of_focus", {"id": "wounds", "x": 2}],
       "models": [
         {
-          "name": "Herald Warden",
+          "name": "Herald",
           "movement": 6,
           "courage": 6,
           "shoot": 6,
@@ -139,32 +139,21 @@
       ]
     },
     "warden_nurse": {
-      "name": "Nurse Warden",
+      "name": "Nurse",
       "description": "A righteous battlefield medic trained in saving lives.",
       "category": "elite",
       "rules": ["support", "medic", {"id": "wounds", "x": 2}],
       "models": [
-        {
-          "name": "Nurse Warden",
-          "movement": 6,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 7,
-          "reflexes": 5,
-          "weapons": ["marine_pistol", {"id": "light_handweapon", "count": 3}],
-          "min": 1,
-          "max": 1
-        }
+        {"name": "Nurse", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "light_handweapon", "count": 3}], "min": 1, "max": 1}
       ]
     },
     "warden_preacher": {
-      "name": "Preacher Warden",
+      "name": "Preacher",
       "description": "A battlefield cleric chanting powerful blessings.",
       "category": "elite",
       "rules": ["support", {"id": "wounds", "x": 2}, "warrior"],
       "models": [
-        {"name": "Preacher Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "energy_polearm", "x": 3}], "min": 1, "max": 1}
+        {"name": "Order Preacher", "movement": 6, "courage": 6, "shoot": 6, "fight": 6, "defense": 7, "reflexes": 5, "weapons": ["marine_pistol", {"id": "energy_polearm", "x": 3}], "min": 1, "max": 1}
       ]
     },
     "initiates": {
@@ -202,7 +191,7 @@
       ]
     },
     "faith_wardens": {
-      "name": "Faith Wardens",
+      "name": "Wardens",
       "description": "A group of zealots armed with marine rifles to pack an extra punch.",
       "category": "core",
       "options": [
@@ -232,7 +221,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Faith Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "light_handweapon"], "min": 4, "max": 9}
+        {"name": "Order Warden", "movement": 6, "courage": 6, "shoot": 6, "fight": 5, "defense": 7, "reflexes": 5, "weapons": ["marine_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "veteran_wardens": {
@@ -270,7 +259,7 @@
       ]
     },
     "protector_wardens": {
-      "name": "Protector Wardens",
+      "name": "Wardens Protectors",
       "description": "A group of zealots armed with shields and deadly melee weapons.",
       "category": "core",
       "options": [{"replaceWeapon": {"id": "energy_handweapon", "count": 2}, "withWeapon": [{"id": "energy_polearm", "count": 2}]}],
@@ -306,7 +295,7 @@
       ]
     },
     "seeker_wardens": {
-      "name": "Seeker Wardens",
+      "name": "Warden Seekers",
       "description": "A group of zealots armed with heavy weapons, able to quickly move up the battlefield.",
       "category": "elite",
       "options": [
@@ -674,7 +663,7 @@
       "phase": "activation",
       "name": "Holy Protection",
       "description": "Use when a Power(x) test is taken within 24\" of any Infantry unit. Roll a D10. If the value is less than or equal to the test to cast the power, it is prevented.",
-      "flavor": "Shielded by holy energy, Faith Wardens can protect themselves from psychic powers.",
+      "flavor": "Shielded by holy energy, Sacred Order can protect themselves from psychic powers.",
       "cost": 1
     }
   ],
