@@ -1465,7 +1465,7 @@
       "subfactions": ["assault_focus"],
       "name": "Fury",
       "phase": "activation",
-      "flavor": "These marines are furious in resolve and can rip through their enemies.",
+      "flavor": "These soldiers are furious in resolve and can rip through their enemies.",
       "description": "Use when an _Infantry_ unit makes a _Fight_ action. Hit rolls of 1 or 2 gain +1 AP.",
       "cost": 1
     },
@@ -1473,7 +1473,7 @@
       "subfactions": ["assault_focus"],
       "name": "Assault",
       "phase": "activation",
-      "flavor": "With a furious charge, these marines move into combat quickly.",
+      "flavor": "With a furious charge, these soldiers move into combat quickly.",
       "description": "Use this strategy when an _Infantry_ unit charges. That unit gains +3\" of Movement for the _Charge_ action.",
       "cost": 1
     },
@@ -1490,7 +1490,7 @@
       "name": "Encircle",
       "phase": "pre_game",
       "description": "Up to half of any force's units, one point for each may be placed in Encirclement reserves before the game begins. At the beginning of any round after the first, that unit may be set up within 6\" of any table edge and more than 12\" from any enemy units. If both players have reserves arriving on the same turn, roll off to see who places theirs first.",
-      "flavor": "With speed and ferocity, these marines can outflank their enemies.",
+      "flavor": "With speed and ferocity, these soldiers can outflank their enemies.",
       "cost": "1/per"
     },
     "re_organize": {
