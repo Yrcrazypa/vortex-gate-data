@@ -45,7 +45,7 @@
     },
     "rare": {
       "name": "Rare",
-      "cost": 1,
+      "cost": 2,
       "description": "A specialist force with heavy and support options.",
       "categories": {"hero": {"min": 1, "max": 2}, "core": {"max": 3}, "elite": {"max": 3}, "rare": {"min": 2, "max": 5}, "transport": {"max": 3}, "fortification": {"max": 2}}
     },
