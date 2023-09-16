@@ -1883,7 +1883,7 @@
       "name": "Wounds",
       "inputs": ["x"],
       "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model. If this unit is a _Vehicle_ or _Monster_ it suffers -1 Acc and -1 Str while below half Wounds.",
-      "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}, {"pow": 1.4}]}]
+      "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}, {"pow": 1.3}]}]
     },
     "medic": {"name": "Medic(Infantry)", "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented.", "points": 15},
     "medic_x": {
@@ -1913,7 +1913,7 @@
       "name": "Deadly",
       "inputs": ["x"],
       "description": "Each unsaved hit with this weapon inflicts _X_ additional _Wounds_ to the target.",
-      "points": ["rule.x", {"subtract": 1}, {"multiply": ["weapon.points", {"multiply": 0.8}]}]
+      "points": ["rule.x", {"multiply": ["weapon.points", {"multiply": 0.5}]}]
     },
     "lethal": {
       "name": "Lethal",

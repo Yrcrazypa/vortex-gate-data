@@ -368,7 +368,7 @@
           "weapons": ["twin_light_laser_cannon", {"id": "twin_heavy_machinegun", "mount": ["Front"]}],
           "min": 1,
           "max": 1,
-          "options": [{"replaceWeapon": "twin_light_laser_cannon", "withWeapon": "twin_laser_cannon"}]
+          "options": [{"replaceWeapon": "twin_light_laser_cannon", "withWeapon": ["twin_laser_cannon", "twin_plasma_cannon"]}]
         }
       ]
     },
@@ -458,10 +458,10 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 7,
-          "weapons": [{"id": "heavy_walker_fist", "count": 4}, "praetorian_missile_array"],
+          "weapons": [{"id": "heavy_walker_fist", "count": 6}, "praetorian_missile_array"],
           "options": [
-            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 2}, "withWeapon": ["heavy_plasma_cannon", "twin_light_laser_cannon", "twin_laser_cannon"]},
-            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 2}, "withWeapon": ["heavy_plasma_cannon", "twin_light_laser_cannon", "twin_laser_cannon"]}
+            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 3}, "withWeapon": ["twin_plasma_cannon", "twin_light_laser_cannon", "twin_laser_cannon"]},
+            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 3}, "withWeapon": ["twin_plasma_cannon", "twin_light_laser_cannon", "twin_laser_cannon"]}
           ],
           "min": 1,
           "max": 1

@@ -657,7 +657,7 @@
     },
     "assault_squad": {
       "name": "Assault Squad",
-      "description": "A squad of elite marines equipped with jetpacks trained to fight in close combat.",
+      "description": "A squad of elite assault marines equipped to fight in close combat.",
       "category": "elite",
       "models": [
         {
@@ -1210,12 +1210,11 @@
           "defense": 10,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
-          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "twin_heavy_laser_cannon"],
+          "weapons": [{"id": "twin_marine_rifle", "mount": ["Front"]}, "twin_aa_autocannon"],
           "options": [
             {
-              "replaceWeapon": ["twin_heavy_laser_cannon"],
+              "replaceWeapon": ["twin_aa_autocannon"],
               "withWeapon": [
-                "twin_aa_autocannon",
                 "twin_missile_launcher",
                 "mortar_cannon",
                 "artillery_missiles",
@@ -1259,9 +1258,9 @@
           "defense": 12,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 6}, "vulnerable_side_rear"],
-          "weapons": ["twin_laser_cannon"],
+          "weapons": ["heavy_autocannon"],
           "options": [
-            {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "demolition_cannon", "twin_gatling_gun"]},
+            {"replaceWeapon": ["heavy_autocannon"], "withWeapon": ["battle_cannon", "twin_laser_cannon", "demolition_cannon", "twin_gatling_gun"]},
             {
               "addWeapon": [
                 [{"id": "twin_marine_rifle", "mount": ["Front", "Left"]}, {"id": "twin_marine_rifle", "mount": ["Front", "Right"]}],
