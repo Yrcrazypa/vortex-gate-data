@@ -200,7 +200,7 @@
                 "twin_missile_launcher",
                 "twin_thermal_lance",
                 "twin_gravity_cannon",
-                "fusion_beamer"
+                "twin_fusion_beamer"
               ],
               "count": 2
             },
@@ -1418,7 +1418,7 @@
                 "missile_launcher",
                 "twin_thermal_lance",
                 "twin_gravity_cannon",
-                "fusion_beamer"
+                "twin_fusion_beamer"
               ],
               "count": 2
             },
@@ -1501,7 +1501,7 @@
                 "missile_launcher",
                 "twin_thermal_lance",
                 "twin_gravity_cannon",
-                "fusion_beamer"
+                "twin_fusion_beamer"
               ],
               "count": 2
             },
