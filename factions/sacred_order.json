@@ -533,10 +533,10 @@
           "defense": 12,
           "movement": 10,
           "reflexes": 5,
-          "weapons": ["battle_cannon", {"id": "heavy_machinegun", "mount": ["Front"]}],
+          "weapons": ["twin_autocannon", {"id": "heavy_machinegun", "mount": ["Front"]}],
           "options": [
             {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]},
-            {"replaceWeapon": "battle_cannon", "withWeapon": ["twin_autocannon"]},
+            {"replaceWeapon": "twin_autocannon", "withWeapon": ["battle_cannon"]},
             {"addWeapon": [[{"id": "heavy_machinegun", "mount": ["Left", "Front"]}, {"id": "heavy_machinegun", "mount": ["Right", "Front"]}]], "limit": 1},
             {"addWeapon": [{"id": "twin_marine_rifle", "count": 1}], "limit": 1},
             {"addWeapon": ["hunter_missiles"]}
