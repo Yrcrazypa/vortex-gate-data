@@ -1371,7 +1371,7 @@
     "marine_scout_juggernaut": {
       "name": "Marine Scout Juggernaut",
       "description": "A lightly equipped recon walker.",
-      "category": "elite",
+      "category": "rare",
       "keywords": ["Vehicle", "Walker"],
       "models": [
         {
