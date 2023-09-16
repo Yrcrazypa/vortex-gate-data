@@ -1377,7 +1377,7 @@
           "defense": 10,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, "scout", "vulnerable_rear"],
-          "weapons": ["twin_light_machinegun", {"id": "walker_fist", "count": 3}],
+          "weapons": ["twin_light_machinegun", {"id": "walker_fist", "count": 2}],
           "options": [
             {"replaceWeapon": "twin_light_machinegun", "withWeapon": ["twin_heavy_flamethrower", "twin_plasma_rifle", "twin_fusion_rifle", "gravity_cannon", "twin_thermal_rifle"]},
             {"addWeapon": ["rocket_pod", "heavy_machinegun"]},
