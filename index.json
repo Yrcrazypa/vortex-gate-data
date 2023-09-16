@@ -1273,8 +1273,8 @@
     "gatling_cannon": {"name": "Gatling Cannon", "attacks": 8, "short": 12, "medium": 24, "ap": 2, "rules": ["heavy"]},
     "heavy_shotgun": {"name": "Heavy Shotgun", "attacks": 2, "short": 6, "medium": 12, "ap": 2},
     "light_battle_cannon": {"name": "Light Battle Cannon", "attacks": 1, "ap": 5, "short": 24, "medium": 48, "rules": ["heavy", {"id": "blast", "x": 3}]},
-    "acid_cannon": {"name": "Acid Cannon", "attacks": 3, "ap": 1, "short": 24, "medium": 48, "rules": [{"id": "poison", "x": 3}]},
-    "flamestorm_cannon": {"name": "Flamestorm Cannon", "attacks": 6, "short": 9, "medium": 18, "ap": 3, "rules": ["heavy", "flame"]},
+    "acid_cannon": {"name": "Acid Cannon", "attacks": 4, "ap": 1, "short": 18, "medium": 36, "rules": [{"id": "poison", "x": 3}]},
+    "flamestorm_cannon": {"name": "Flamestorm Cannon", "attacks": 4, "short": 12, "medium": 24, "ap": 3, "rules": ["flame"]},
     "artillery_cannon": {"name": "Artillery Cannon", "attacks": 1, "ap": 7, "short": 42, "medium": 84, "rules": ["heavy", {"id": "blast", "x": 6}]},
     "artillery_barrage": {"name": "Artillery Barrage", "attacks": 1, "ap": 6, "short": 18, "medium": 36, "rules": ["indirect", {"id": "blast", "x": 3}, {"id": "ammo", "x": 3}]},
     "eagle_rockets": {"name": "Eagle Rockets", "attacks": 2, "ap": 8, "short": 36, "medium": 72, "rules": ["heavy", {"id": "blast", "x": 3}]},
@@ -1883,7 +1883,7 @@
       "name": "Wounds",
       "inputs": ["x"],
       "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model. If this unit is a _Vehicle_ or _Monster_ it suffers -1 Acc and -1 Str while below half Wounds.",
-      "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}, {"pow": 1.2}]}]
+      "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}, {"pow": 1.4}]}]
     },
     "medic": {"name": "Medic(Infantry)", "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented.", "points": 15},
     "medic_x": {

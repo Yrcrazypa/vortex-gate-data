@@ -730,7 +730,7 @@
           "fight": 5,
           "defense": 11,
           "reflexes": 5,
-          "rules": ["aircraft", {"id": "wounds", "x": 6}, "hover_mode"],
+          "rules": ["aircraft", {"id": "wounds", "x": 5}, "hover_mode"],
           "weapons": [{"id": "heavy_machinegun", "mount": ["Front"]}, {"id": "strike_missiles", "mount": ["Front"]}],
           "options": [
             {
