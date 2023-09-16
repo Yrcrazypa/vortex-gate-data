@@ -458,10 +458,10 @@
           "fight": 7,
           "defense": 13,
           "reflexes": 7,
-          "weapons": [{"id": "heavy_walker_fist", "count": 8}, "praetorian_missile_array"],
+          "weapons": [{"id": "heavy_walker_fist", "count": 4}, "praetorian_missile_array"],
           "options": [
-            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": ["twin_light_laser_cannon", "twin_laser_cannon"]},
-            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 4}, "withWeapon": ["twin_light_laser_cannon", "twin_laser_cannon"]}
+            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 2}, "withWeapon": ["heavy_plasma_cannon", "twin_light_laser_cannon", "twin_laser_cannon"]},
+            {"replaceWeapon": {"id": "heavy_walker_fist", "count": 2}, "withWeapon": ["heavy_plasma_cannon", "twin_light_laser_cannon", "twin_laser_cannon"]}
           ],
           "min": 1,
           "max": 1
