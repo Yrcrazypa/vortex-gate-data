@@ -875,7 +875,7 @@
     }
   },
   "weapons": {
-    "short_autocannon": {"name": "Snubnose Autocannon", "attacks": 2, "short": 12, "medium": 24, "ap": 4, "rules": ["heavy"]},
+    "short_autocannon": {"name": "Snubnose Autocannon", "attacks": 2, "short": 12, "medium": 24, "ap": 3, "rules": ["heavy"]},
     "heavy_fission_cannon": {"name": "Heavy Fission Cannon", "attacks": 1, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy", {"id": "intensity", "x": 3}]},
     "plasma_gatling": {"name": "Plasma Gatling Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 5, "rules": ["overcharge", {"id": "blast", "x": 2}]},
     "energy_saw": {"name": "Energy Sawblade", "attacks": 1, "ap": 4, "short": "Melee"}
