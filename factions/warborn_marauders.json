@@ -1544,13 +1544,13 @@
       "phase": "activation",
       "name": "Ramshackle",
       "flavor": "Many parts of Orc vehicles end up being less important than they seem, falling off without causing damage.",
-      "description": "Use when a _Vehicle_ unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
+      "description": "Use when a unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
       "cost": 2
     },
     "goblin_shield": {
       "name": "Goblin Shield",
       "phase": "activation",
-      "description": "Use after an _Infantry_ unit has been targeted by a Shooting attack. For this attack, roll a D10 each time an attack made with a ranged weapon hits that unit if there is a friendly _Goblin_ unit within 6\" of it. On an 8 or less a hit is transferred to the _Goblin_ unit instead of the original target.",
+      "description": "Use after a unit has been targeted by a Shooting attack. For this attack, roll a D10 each time an attack made with a ranged weapon hits that unit if there is a friendly _Goblin_ unit within 6\" of it. On an 8 or less a hit is transferred to the _Goblin_ unit instead of the original target.",
       "cost": 2
     }
   },

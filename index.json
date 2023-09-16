@@ -1344,7 +1344,7 @@
       "name": "Firing Ports",
       "subfactions": ["mechanized_focus"],
       "phase": "activation",
-      "description": "Use when activating an _Infantry_ unit embarked in a Transport. That unit may make a single _Shoot_ action.",
+      "description": "Use when activating a unit embarked in a Transport. That unit may make a single _Shoot_ action.",
       "flavor": "Mechanized forces usually have modified firing ports to allow infantry to fire their weapons while embarked.",
       "cost": 1
     },
@@ -1361,14 +1361,14 @@
       "phase": "activation",
       "name": "Well-Built",
       "flavor": "Expertly built and well-maintained, this vehicle is prepared for battle.",
-      "description": "Use when a _Vehicle_ unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
+      "description": "Use when a unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
       "cost": 2
     },
     "toughness": {
       "subfactions": ["toughness_focus"],
       "name": "Toughness",
       "phase": "activation",
-      "description": "Use when an _Infantry_ unit takes Save rolls. Roll a die for each hit this unit takes. On a 3 or less that hit is prevented.",
+      "description": "Use when a unit takes Save rolls. Roll a die for each hit this unit takes. On a 3 or less that hit is prevented.",
       "flavor": "These fighters are particularly tough and can take a hit.",
       "cost": 2
     },
@@ -1384,7 +1384,7 @@
       "subfactions": ["toughness_focus"],
       "name": "Machine Might",
       "phase": "activation",
-      "description": "Use when a _Vehicle_ unit attacks in melee. Hit rolls of 1 or 2 gain +1 AP.",
+      "description": "Use when a unit attacks in melee. Hit rolls of 1 or 2 gain +1 AP.",
       "flavor": "With a wave of fire, enemy units cannot hope to stand a chance.",
       "cost": 1
     },
@@ -1392,7 +1392,7 @@
       "subfactions": ["siege_focus"],
       "name": "Bolster",
       "phase": "activation",
-      "description": "Use when an _Infantry_ unit is targeted by an enemy. If it did not move this round, that unit may increase its cover level by 1 (none to soft, soft to hard).",
+      "description": "Use when a unit is targeted by an enemy. If it did not move this round, that unit may increase its cover level by 1 (none to soft, soft to hard).",
       "flavor": "A strong defensive position ensures greater survival, even against the toughest of weapons.",
       "cost": 1
     },
@@ -1408,7 +1408,7 @@
       "subfactions": ["siege_focus"],
       "name": "Rapid Fire",
       "phase": "activation",
-      "description": "Use before an _Infantry_ unit performs a _Shoot_ action. Hit rolls of 1 or 2 cause an additional hit.",
+      "description": "Use before a unit performs a _Shoot_ action. Hit rolls of 1 or 2 cause an additional hit.",
       "flavor": "With a wave of fire, enemy units cannot hope to stand a chance.",
       "cost": 1
     },
@@ -1457,7 +1457,7 @@
       "name": "Stealth Move",
       "phase": "activation",
       "flavor": "Moving quietly is sometimes key in advancing on the enemy.",
-      "description": "Use this strategy when an _Infantry_ unit performs a _Move_ action. Enemy units may not perform reactions to that _Move_ action.",
+      "description": "Use this strategy when a unit performs a _Move_ action. Enemy units may not perform reactions to that _Move_ action.",
       "cost": 1
     },
     "moving_fire": {
@@ -1465,7 +1465,7 @@
       "name": "Moving Fire",
       "phase": "activation",
       "flavor": "These fighters are trained to shoot while moving to maintain pressure on their enemies.",
-      "description": "Use after an _Infantry_ unit makes a _Move_ action. That unit may make a free _Shoot_ action with -1 Accuracy. Any weapons with _Assault_ may ignore the -1 Accuracy penalty.",
+      "description": "Use after a unit makes a _Move_ action. That unit may make a free _Shoot_ action with -1 Accuracy. Any weapons with _Assault_ may ignore the -1 Accuracy penalty.",
       "cost": 1
     },
     "fury": {
@@ -1473,7 +1473,7 @@
       "name": "Fury",
       "phase": "activation",
       "flavor": "These soldiers are furious in resolve and can rip through their enemies.",
-      "description": "Use when an _Infantry_ unit makes a _Fight_ action. Hit rolls of 1 or 2 gain +1 AP.",
+      "description": "Use when a unit makes a _Fight_ action. Hit rolls of 1 or 2 gain +1 AP.",
       "cost": 1
     },
     "assault": {
@@ -1481,14 +1481,14 @@
       "name": "Assault",
       "phase": "activation",
       "flavor": "With a furious charge, these soldiers move into combat quickly.",
-      "description": "Use this strategy when an _Infantry_ unit charges. That unit gains +3\" of Movement for the _Charge_ action.",
+      "description": "Use this strategy when a unit charges. That unit gains +3\" of Movement for the _Charge_ action.",
       "cost": 1
     },
     "tactical_retreat": {
       "subfactions": ["tactical_focus"],
       "name": "Tactical Retreat",
       "phase": "activation",
-      "description": "Use when an _Infantry_ unit attempts to fall back from melee. That unit automatically passes the Initiative check required to fall back.",
+      "description": "Use when a unit attempts to fall back from melee. That unit automatically passes the Initiative check required to fall back.",
       "flavor": "A quick tactical retreat and a burst of fire can cause an enemy a lot of problems.",
       "cost": 1
     },
@@ -1504,7 +1504,7 @@
       "subfactions": ["tactical_focus"],
       "name": "Re-organize",
       "phase": "activation",
-      "description": "Use at any point during an _Infantry_ unit's activation. That unit may split into two separate units or merge with another unit of the same data-sheet. This may not exceed the maximum unit size or go below the unit's minimum size.",
+      "description": "Use at any point during a unit's activation. That unit may split into two separate units or merge with another unit of the same data-sheet. This may not exceed the maximum unit size or go below the unit's minimum size.",
       "flavor": "With a wave of fire, enemy units cannot hope to stand a chance.",
       "cost": 1
     },
@@ -1520,7 +1520,7 @@
       "subfactions": ["vigilance_focus"],
       "name": "Cautious",
       "phase": "activation",
-      "description": "Use after an _Infantry_ unit performs a _Move_ action. That unit may perform a free Hold action.",
+      "description": "Use after a unit performs a _Move_ action. That unit may perform a free Hold action.",
       "flavor": "Cautious movement can be key to staying alive.",
       "cost": 1
     },
@@ -1529,14 +1529,14 @@
       "subfactions": ["vigilance_focus"],
       "name": "Overcharge",
       "flavor": "By overcharging their weapons, some hits can pierce even heavily armored targets.",
-      "description": "Use when an _Infantry_ unit makes a _Shoot_ action. Hit rolls of 1 or 2 gain +1 AP.",
+      "description": "Use when a unit makes a _Shoot_ action. Hit rolls of 1 or 2 gain +1 AP.",
       "cost": 1
     },
     "quick_aim": {
       "subfactions": ["mobility_focus"],
       "phase": "activation",
       "name": "Quick Aim",
-      "description": "Use when an _Infantry_ unit with any _Assault_ weapons is firing. That unit does not suffer -1 to hit when using the _Assault_ rule.",
+      "description": "Use when a unit with any _Assault_ weapons is firing. That unit does not suffer -1 to hit when using the _Assault_ rule.",
       "flavor": "These fighters are so used to firing from the hip while speeding their way upfield that their accuracy doesn't suffer.",
       "cost": 1
     },
@@ -1544,7 +1544,7 @@
       "subfactions": ["mobility_focus"],
       "phase": "activation",
       "name": "Run Them Down",
-      "description": "Use when a _Vehicle_ or _Monster_ makes a _Charge_ action. The Impact Rule gains +1 AP for the charge.",
+      "description": "Use when a unit makes a _Charge_ action. The Impact Rule gains +1 AP for the charge.",
       "flavor": "Those clans with a focus on speed enjoy putting a little extra oomph on their vehicles, making them hit just a little harder when they ram into something.",
       "cost": 1
     },
@@ -1569,14 +1569,14 @@
       "name": "Frozen in Fear",
       "phase": "activation",
       "flavor": "Letting out a terrible cry can sometimes leave enemies unable to react to what is happening.",
-      "description": "Use this strategy when an _Infantry_ unit performs a _Move_ action. Enemy units may not perform reactions to that _Move_ action.",
+      "description": "Use this strategy when a unit performs a _Move_ action. Enemy units may not perform reactions to that _Move_ action.",
       "cost": 1
     },
     "shock_tactics": {
       "subfactions": ["shock_focus"],
       "phase": "activation",
       "name": "Shock Tactics",
-      "description": "Use when fighting with an _Infantry_ unit. If the attack hits, assign 2 additional Shock.",
+      "description": "Use when fighting with a unit. If the attack hits, assign 2 additional Shock.",
       "flavor": "With a sudden strike these fighters bring fear to their targets keeping them from retaliating.",
       "cost": 1
     },
@@ -1592,7 +1592,7 @@
       "subfactions": ["firepower_focus"],
       "name": "Overwhelming Firepower",
       "phase": "activation",
-      "description": "Use before an _Infantry_ unit performs a _Shoot_ action. Hit rolls of 1 or 2 cause an additional hit.",
+      "description": "Use before a unit performs a _Shoot_ action. Hit rolls of 1 or 2 cause an additional hit.",
       "flavor": "Burst fire can be relatively effective in taking down most targets.",
       "cost": 1
     },
@@ -1744,12 +1744,12 @@
     "repair": {
       "name": "Repair",
       "inputs": ["x"],
-      "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ unit, roll one die. On an X or less the vehicle may remove one critical damage.",
+      "description": "At any point during this model's activation, if within 3\" of a unit, roll one die. On an X or less the vehicle may remove one critical damage.",
       "points": ["rule.x", {"multiply": 2}]
     },
     "engineer": {
       "name": "Engineer",
-      "description": "At any point during this model's activation, if within 3\" of a _Vehicle_ unit, roll one die. On a 5 or less the vehicle may remove one critical damage.",
+      "description": "At any point during this model's activation, if within 3\" of a unit, roll one die. On a 5 or less the vehicle may remove one critical damage.",
       "points": [10]
     },
     "disk_of_change": {

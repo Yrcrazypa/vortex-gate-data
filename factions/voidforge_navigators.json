@@ -900,14 +900,14 @@
     {
       "name": "Runic Might",
       "phase": "activation",
-      "description": "Use when an _Infantry_ unit attacks. Hit rolls of 1 or 2 gain +1 AP.",
+      "description": "Use when a unit attacks. Hit rolls of 1 or 2 gain +1 AP.",
       "flavor": "Forge masters can call upon the strength of their ancestors, dealing devastating blows.",
       "cost": 1
     },
     {
       "name": "Ferocity",
       "phase": "activation",
-      "description": "Use when an _Infantry_ unit charges. That unit gains +3\" of Movement for the _Charge_ action.",
+      "description": "Use when a unit charges. That unit gains +3\" of Movement for the _Charge_ action.",
       "flavor": "With a furious charge, these dwarves move into combat quickly.",
       "cost": 1
     }

@@ -699,7 +699,7 @@
         "spore_cloud": {"name": "Spore Cloud", "description": "Models suffer -1 Accuracy when shooting at a friendly unit within 3\" of this model.", "points": 10},
         "regeneration_pods": {
             "name": "Regeneration Pods",
-            "description": "Once per round after taking Saves for an _Infantry_ unit within 12“, roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
+            "description": "Once per round after taking Saves for a unit within 12“, roll a D10 for each model or Wound(x) lost. On a 3 or less, that model or Wound(x) is restored. Models must be restored to full Wounds(x) before restoring a new model.",
             "points": 15
         },
         "legend_adrenaline_pheromones": {"name": "Adrenaline Pheromones", "description": "This model's unit adds +1\" to their Movement characteristic.", "points": 5},

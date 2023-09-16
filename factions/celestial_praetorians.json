@@ -560,14 +560,14 @@
     {
       "phase": "activation",
       "name": "Combat Awareness",
-      "description": "Use when shooting with an _Infantry_ unit. That unit may target enemies it is engaged with at -1 Accuracy.",
+      "description": "Use when shooting with a unit. That unit may target enemies it is engaged with at -1 Accuracy.",
       "flavor": "Throne Guardians are trained to be expertly aware of their surroundings including where their allies are.",
       "cost": 1
     },
     {
       "phase": "activation",
       "name": "Relic Deflectors",
-      "description": "Use when a _Vehicle_ unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
+      "description": "Use when a unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
       "flavor": "With ancient defense fields, Throne Guardian vehicles can deflect even the heaviest attacks.",
       "cost": 2
     },

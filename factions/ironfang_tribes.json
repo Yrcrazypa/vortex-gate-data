@@ -1063,14 +1063,14 @@
       "name": "Smash Them",
       "phase": "activation",
       "flavor": "It's about time we got to fighting.",
-      "description": "Use when an _Infantry_ unit performs a Fight action. Hit rolls of 1 or 2 cause an additional hit.",
+      "description": "Use when a unit performs a Fight action. Hit rolls of 1 or 2 cause an additional hit.",
       "cost": 1
     },
     {
       "name": "Tough Ones",
       "phase": "activation",
       "flavor": "These Orcs are some of the toughest you've ever seen.",
-      "description": "Use before taking Save rolls for an _Infantry_ unit. It gets +1 Save.",
+      "description": "Use before taking Save rolls for a unit. It gets +1 Save.",
       "cost": 2
     }
   ],

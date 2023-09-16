@@ -444,7 +444,7 @@
     {
       "name": "Manbane Bolts",
       "phase": "activation",
-      "description": "Use before an _Infantry_ unit shoots with Repeater Crossbows. Attacks from those crossbows are treated as having +1 to their AP against units without a _Damage Chart_.",
+      "description": "Use before a unit shoots with Repeater Crossbows. Attacks from those crossbows are treated as having +1 to their AP against units without a _Damage Chart_.",
       "flavor": "Noxious toxins form the brunt of a repeater crossbow's lethality.",
       "cost": 1
     }

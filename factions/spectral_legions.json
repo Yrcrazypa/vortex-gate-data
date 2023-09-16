@@ -349,7 +349,7 @@
     "accursed_blades": {
       "name": "Accursed Blades",
       "phase": "activation",
-      "description": "Use before an _Infantry_ unit makes a melee attack. Succesful hits have +1 AP.",
+      "description": "Use before a unit makes a melee attack. Succesful hits have +1 AP.",
       "flavor": "The rusted blades of the haunted ghosts are covered in ancient curses that inflict immense pain on any target they strike.",
       "cost": 1
     },

@@ -847,7 +847,7 @@
       "name": "Eager to Fight",
       "phase": "activation",
       "flavor": "Dark Elves long for the next raid to fight again.",
-      "description": "Use when an _Infantry_ unit declares a _Charge_ action. That unit gets +3\" of Movement for that action.",
+      "description": "Use when a unit declares a _Charge_ action. That unit gets +3\" of Movement for that action.",
       "cost": 1
     },
     "combat_drugs": {

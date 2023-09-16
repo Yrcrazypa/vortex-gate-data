@@ -967,7 +967,7 @@
     {
       "name": "Repair Overdrive",
       "phase": "activation",
-      "description": "Use when activating a _Vehicle_ unit. It may immediately fix a critical damage it has sustained.",
+      "description": "Use when activating a unit. It may immediately fix a critical damage it has sustained.",
       "flavor": "With self-repairing nano-machines this vehicle can recover from nearly anything.",
       "cost": 2
     }
