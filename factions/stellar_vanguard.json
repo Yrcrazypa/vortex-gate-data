@@ -185,14 +185,12 @@
           "defense": 11,
           "reflexes": 6,
           "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}, {"id": "tactician", "x": "Juggernaut"}],
-          "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
+          "weapons": [{"id": "walker_fist", "count": 4}],
           "options": [
             {
-              "replaceWeapon": {"id": "heavy_fusion_cannon", "count": 1},
+              "replaceWeapon": {"id": "walker_fist", "count": 2},
               "withWeapon": [
-                {"id": "walker_fist", "count": 4},
-                {"id": "energy_greatsword", "count": 4},
-                {"id": "energy_greathammer", "count": 4},
+                "heavy_fusion_cannon",
                 "heavy_plasma_cannon",
                 "twin_autocannon",
                 "twin_heavy_machinegun",
@@ -207,10 +205,6 @@
               "count": 2
             },
             {
-              "addWeapon": ["plasma_rifle", "plasma_repeater", "fusion_rifle", "light_machinegun", "gatling_gun", "flamethrower", "laser_cannon", "rocket_pod", "thermal_rifle", "gravity_rifle"],
-              "limit": 2
-            },
-            {
               "addWeapon": [
                 {"id": "storm_rifle", "mount": ["Front"]},
                 {"id": "plasma_rifle", "mount": ["Front"]},
@@ -222,7 +216,7 @@
                 {"id": "light_machinegun", "mount": ["Front"]},
                 {"id": "gravity_rifle", "mount": ["Front"]}
               ],
-              "limit": 2
+              "limit": 4
             },
             {"addRule": ["relic_shield"]}
           ],
@@ -1421,7 +1415,7 @@
                 "twin_heavy_flamethrower",
                 "twin_laser_cannon",
                 "heavy_gatling_gun",
-                "twin_missile_launcher",
+                "missile_launcher",
                 "twin_thermal_lance",
                 "twin_gravity_cannon",
                 "fusion_beamer"
@@ -1504,7 +1498,7 @@
                 "twin_heavy_flamethrower",
                 "twin_laser_cannon",
                 "heavy_gatling_gun",
-                "twin_missile_launcher",
+                "missile_launcher",
                 "twin_thermal_lance",
                 "twin_gravity_cannon",
                 "fusion_beamer"
