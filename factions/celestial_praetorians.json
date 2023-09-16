@@ -20,7 +20,6 @@
           "weapons": ["marine_rifle", {"id": "light_handweapon", "count": 3}],
           "rules": [{"id": "ward", "x": 1}, {"id": "tactician", "x": 1}, {"id": "wounds", "x": 3}, {"id": "leader", "x": "Infantry"}],
           "options": [
-            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}},
             {
               "replaceWeapon": ["marine_rifle", {"id": "light_handweapon", "count": 3}],
               "withWeapon": [["flamethrower", {"id": "light_handweapon", "count": 3}], {"id": "energy_greatweapon", "count": 4}],

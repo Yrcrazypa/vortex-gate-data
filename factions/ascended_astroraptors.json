@@ -22,7 +22,6 @@
           "movement": 7,
           "weapons": ["laser_pistol", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}},
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
             {"addRule": "tactical_holomap"}
           ],
@@ -50,7 +49,6 @@
           "movement": 7,
           "weapons": ["laser_pistol", {"id": "handweapon", "count": 2}],
           "options": [
-            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}},
             {"replaceWeapon": "laser_pistol", "withWeapon": ["plasma_pistol", "machine_pistol", "heavy_laser_pistol", "flamethrower_pistol", "thump_pistol"]},
             {"addRule": "tactical_holomap"}
           ],

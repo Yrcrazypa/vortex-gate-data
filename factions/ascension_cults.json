@@ -26,8 +26,7 @@
             {
               "replaceWeapon": {"id": "light_handweapon", "count": 3},
               "withWeapon": [{"id": "energy_handweapon", "count": 3}, {"id": "energy_powerweapon", "count": 3}, {"id": "energy_handweapon", "count": 3}, {"id": "handweapon", "count": 3}]
-            },
-            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
+            }
           ],
           "min": 1,
           "max": 1
@@ -55,8 +54,7 @@
               "replaceWeapon": {"id": "bone_sword", "count": 4},
               "withWeapon": [{"id": "energy_handweapon", "count": 4}, {"id": "energy_handweapon", "count": 4}, {"id": "energy_powerweapon", "count": 4}]
             },
-            {"addRule": ["cult_icon"]},
-            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
+            {"addRule": ["cult_icon"]}
           ],
           "min": 1,
           "max": 1

@@ -22,7 +22,6 @@
           "reflexes": 6,
           "weapons": ["shard_pistol", {"id": "elven_blade", "count": 4}],
           "options": [
-            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}},
             {"replaceWeapon": "shard_pistol", "withWeapon": ["neuron_pistol", "fusion_pistol"]},
             {
               "replaceWeapon": {"id": "elven_blade", "count": 4},

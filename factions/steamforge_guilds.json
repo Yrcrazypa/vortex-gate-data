@@ -134,8 +134,7 @@
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
               "withWeapon": [{"id": "energy_handweapon", "count": 2}, {"id": "energy_handweapon", "count": 2}, {"id": "taser_sword", "count": 2}, {"id": "energy_powerweapon", "count": 2}]
-            },
-            {"replaceRule": {"id": "tactician", "x": 1}, "withRule": {"id": "tactician", "x": 2}}
+            }
           ],
           "min": 1,
           "max": 1
