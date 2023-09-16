@@ -206,15 +206,15 @@
             },
             {
               "addWeapon": [
-                {"id": "storm_rifle", "mount": ["Front"]},
-                {"id": "plasma_rifle", "mount": ["Front"]},
-                {"id": "plasma_repeater", "mount": ["Front"]},
-                {"id": "fusion_rifle", "mount": ["Front"]},
-                {"id": "flamethrower", "mount": ["Front"]},
-                {"id": "rocket_pod", "mount": ["Front"]},
-                {"id": "thermal_rifle", "mount": ["Front"]},
-                {"id": "light_machinegun", "mount": ["Front"]},
-                {"id": "gravity_rifle", "mount": ["Front"]}
+                {"id": "storm_rifle"},
+                {"id": "plasma_rifle"},
+                {"id": "plasma_repeater"},
+                {"id": "fusion_rifle"},
+                {"id": "flamethrower"},
+                {"id": "rocket_pod"},
+                {"id": "thermal_rifle"},
+                {"id": "light_machinegun"},
+                {"id": "gravity_rifle"}
               ],
               "limit": 4
             },
@@ -1381,7 +1381,7 @@
           "options": [
             {"replaceWeapon": "twin_light_machinegun", "withWeapon": ["twin_heavy_flamethrower", "twin_plasma_rifle", "twin_fusion_rifle", "gravity_cannon", "twin_thermal_rifle"]},
             {"addWeapon": ["rocket_pod", "heavy_machinegun"]},
-            {"addWeapon": [{"id": "light_machinegun", "count": 2, "mount": ["Front"]}]}
+            {"addWeapon": [{"id": "light_machinegun", "count": 2}]}
           ],
           "min": 1,
           "max": 1
@@ -1424,15 +1424,15 @@
             },
             {
               "addWeapon": [
-                {"id": "storm_rifle", "mount": ["Front"]},
-                {"id": "plasma_rifle", "mount": ["Front"]},
-                {"id": "plasma_repeater", "mount": ["Front"]},
-                {"id": "fusion_rifle", "mount": ["Front"]},
-                {"id": "flamethrower", "mount": ["Front"]},
-                {"id": "rocket_pod", "mount": ["Front"]},
-                {"id": "thermal_rifle", "mount": ["Front"]},
-                {"id": "light_machinegun", "mount": ["Front"]},
-                {"id": "gravity_rifle", "mount": ["Front"]}
+                {"id": "storm_rifle"},
+                {"id": "plasma_rifle"},
+                {"id": "plasma_repeater"},
+                {"id": "fusion_rifle"},
+                {"id": "flamethrower"},
+                {"id": "rocket_pod"},
+                {"id": "thermal_rifle"},
+                {"id": "light_machinegun"},
+                {"id": "gravity_rifle"}
               ],
               "limit": 4
             },
@@ -1507,15 +1507,15 @@
             },
             {
               "addWeapon": [
-                {"id": "storm_rifle", "mount": ["Front"]},
-                {"id": "plasma_rifle", "mount": ["Front"]},
-                {"id": "plasma_repeater", "mount": ["Front"]},
-                {"id": "fusion_rifle", "mount": ["Front"]},
-                {"id": "flamethrower", "mount": ["Front"]},
-                {"id": "rocket_pod", "mount": ["Front"]},
-                {"id": "thermal_rifle", "mount": ["Front"]},
-                {"id": "light_machinegun", "mount": ["Front"]},
-                {"id": "gravity_rifle", "mount": ["Front"]}
+                {"id": "storm_rifle"},
+                {"id": "plasma_rifle"},
+                {"id": "plasma_repeater"},
+                {"id": "fusion_rifle"},
+                {"id": "flamethrower"},
+                {"id": "rocket_pod"},
+                {"id": "thermal_rifle"},
+                {"id": "light_machinegun"},
+                {"id": "gravity_rifle"}
               ],
               "limit": 4
             },
