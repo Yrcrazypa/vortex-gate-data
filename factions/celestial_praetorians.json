@@ -100,7 +100,7 @@
     },
     "praetorian_captain_on_jetbike": {
       "name": "Praetorian Captain on Jetbike",
-      "description": "Throne guardians on high speed jet bikes.",
+      "description": "Praetorians on high speed jet bikes.",
       "category": "hero",
       "keywords": ["Biker"],
       "rules": [{"id": "wounds", "x": 3}, "hover", {"id": "tactician", "x": 1}, {"id": "leader", "x": "Infantry, Biker"}],
@@ -225,7 +225,7 @@
     },
     "throne_wardens": {
       "name": "Wardens",
-      "description": "Watch masters and veteran throne guardians.",
+      "description": "Watch masters and veteran praetorians.",
       "category": "core",
       "rules": [{"id": "resilient", "x": 3}, {"id": "wounds", "x": 2}],
       "options": [
@@ -253,7 +253,7 @@
     },
     "throne_jetbikes": {
       "name": "Jetbikes",
-      "description": "Throne guardians on high speed jet bikes.",
+      "description": "Praetorians on high speed jet bikes.",
       "category": "elite",
       "rules": [{"id": "wounds", "x": 2}, "hover"],
       "options": [{"replaceWeapon": ["praetorian_rifle_array"], "withWeapon": ["praetorian_missiles"]}],
@@ -273,13 +273,13 @@
       ]
     },
     "praetorian_destoyers": {
-      "name": "Praetorian Destroyers",
+      "name": "Praetorian Gravite Squad",
       "description": "Praetorians clad in very heavy armor.",
       "rules": ["ambush", {"id": "wounds", "x": 2}],
       "category": "elite",
       "models": [
         {
-          "name": "Praetorian Destroyer",
+          "name": "Praetorian Gravite Warrior",
           "movement": 5,
           "courage": 7,
           "shoot": 7,
@@ -297,13 +297,13 @@
       ]
     },
     "praetorian_assault_destroyers": {
-      "name": "Praetorian Assault Destroyers",
+      "name": "Praetorian Gravite Assault Squad",
       "description": "Praetorians in extra heavy armor.",
       "category": "elite",
       "rules": ["ambush", {"id": "wounds", "x": 2}],
       "models": [
         {
-          "name": "Praetorian Assault Destroyer",
+          "name": "Praetorian Gravite Warrior",
           "courage": 7,
           "shoot": 7,
           "fight": 7,
@@ -321,14 +321,14 @@
       ]
     },
     "praetorian_heavy_tank": {
-      "name": "Relic Heavy Assault APC",
+      "name": "Relic Heavy APC",
       "description": "A heavily armored transport sporting an arsenal of weapons built by the imperial marines.",
       "keywords": ["Vehicle"],
       "category": "rare",
       "rules": [{"id": "impact", "x": 6}, {"id": "transport", "x": 11}, "vulnerable_rear", {"id": "wounds", "x": 6}],
       "models": [
         {
-          "name": "Relic Heavy Assault APC",
+          "name": "Relic Heavy APC",
           "movement": 10,
           "courage": 7,
           "shoot": 7,

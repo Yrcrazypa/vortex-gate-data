@@ -1342,22 +1342,9 @@
           "fight": 0,
           "defense": 13,
           "reflexes": 6,
-          "weapons": ["twin_laser_cannon", {"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
+          "weapons": ["twin_laser_cannon", {"id": "laser_cannon", "mount": ["Front", "Left"]}],
           "options": [
             {"replaceWeapon": ["twin_laser_cannon"], "withWeapon": ["battle_cannon", "heavy_autocannon", "twin_gatling_gun", "heavy_plasma_cannon", "heavy_fusion_cannon", "twin_flamethrower_cannon"]},
-            {
-              "replaceWeapon": [{"id": "laser_cannon", "mount": ["Front", "Left"]}, {"id": "laser_cannon", "mount": ["Front", "Right"]}],
-              "withWeapon": [
-                [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "heavy_machinegun", "mount": ["Front", "Left"]}, {"id": "heavy_machinegun", "mount": ["Front", "Right"]}],
-                [{"id": "plasma_cannon", "mount": ["Front", "Left"]}, {"id": "plasma_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "fusion_cannon", "mount": ["Front", "Left"]}, {"id": "fusion_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "heavy_flamethrower", "mount": ["Front", "Left"]}, {"id": "heavy_flamethrower", "mount": ["Front", "Right"]}],
-                [{"id": "gravity_cannon", "mount": ["Front", "Left"]}, {"id": "gravity_cannon", "mount": ["Front", "Right"]}],
-                [{"id": "thermal_lance", "mount": ["Front", "Left"]}, {"id": "thermal_lance", "mount": ["Front", "Right"]}]
-              ],
-              "limit": 1
-            },
             {
               "addWeapon": [
                 [{"id": "twin_light_machinegun", "mount": ["Front", "Left"]}, {"id": "twin_light_machinegun", "mount": ["Front", "Right"]}],
@@ -1422,28 +1409,24 @@
           "defense": 11,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 5}, "vulnerable_rear"],
-          "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
+          "weapons": [{"id": "walker_fist", "count": 4}],
           "options": [
             {
-              "replaceWeapon": {"id": "heavy_fusion_cannon", "count": 1},
+              "replaceWeapon": {"id": "walker_fist", "count": 2},
               "withWeapon": [
+                "heavy_fusion_cannon",
                 "heavy_plasma_cannon",
                 "twin_autocannon",
                 "twin_heavy_machinegun",
                 "twin_heavy_flamethrower",
                 "twin_laser_cannon",
-                "gatling_cannon",
+                "heavy_gatling_gun",
                 "twin_missile_launcher",
                 "twin_thermal_lance",
                 "twin_gravity_cannon",
-                {"id": "walker_fist", "count": 4},
                 "fusion_beamer"
               ],
               "count": 2
-            },
-            {
-              "addWeapon": ["plasma_rifle", "plasma_repeater", "fusion_rifle", "light_machinegun", "gatling_gun", "flamethrower", "laser_cannon", "rocket_pod", "thermal_rifle", "gravity_rifle"],
-              "limit": 2
             },
             {
               "addWeapon": [
@@ -1484,11 +1467,7 @@
           "rules": [{"id": "wounds", "x": 5}, "furious", "vulnerable_rear"],
           "weapons": [{"id": "walker_fist", "count": 8}],
           "options": [
-            {
-              "replaceWeapon": [{"id": "walker_fist", "count": 4}],
-              "withWeapon": [{"id": "heavy_energy_claws", "count": 5}, {"id": "heavy_energy_axe", "count": 4}, {"id": "assault_drill", "count": 4}],
-              "count": 2
-            },
+            {"replaceWeapon": [{"id": "walker_fist", "count": 4}], "withWeapon": [{"id": "heavy_energy_claws", "count": 5}, {"id": "heavy_energy_axe", "count": 4}], "count": 2},
             {"addWeapon": ["flamethrower", "plasma_rifle", "fusion_rifle", "storm_rifle", "grenade_launcher", "gravity_rifle"], "limit": 2},
             {"addRule": ["magnetic_grapple", "relic_shield"]},
             {"addRule": [{"id": "power", "x": 1}], "subfactions": ["power_focus"]}
@@ -1513,12 +1492,12 @@
           "defense": 11,
           "reflexes": 6,
           "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
-          "weapons": [{"id": "heavy_fusion_cannon", "count": 2}],
+          "weapons": [{"id": "walker_fist", "count": 4}],
           "options": [
             {
-              "replaceWeapon": {"id": "heavy_fusion_cannon", "count": 1},
+              "replaceWeapon": {"id": "walker_fist", "count": 2},
               "withWeapon": [
-                {"id": "walker_fist", "count": 4},
+                "heavy_fusion_cannon",
                 "heavy_plasma_cannon",
                 "twin_autocannon",
                 "twin_heavy_machinegun",
@@ -1531,10 +1510,6 @@
                 "fusion_beamer"
               ],
               "count": 2
-            },
-            {
-              "addWeapon": ["plasma_rifle", "plasma_repeater", "fusion_rifle", "light_machinegun", "gatling_gun", "flamethrower", "laser_cannon", "rocket_pod", "thermal_rifle", "gravity_rifle"],
-              "limit": 2
             },
             {
               "addWeapon": [
@@ -1558,7 +1533,7 @@
         }
       ]
     },
-    "superheavy_marine_juggernaut": {
+    "heavy_marine_juggernaut": {
       "name": "Marine Heavy Juggernaut",
       "description": "A heavily armed combat walker.",
       "category": "rare",
@@ -1573,18 +1548,17 @@
           "defense": 13,
           "reflexes": 6,
           "rules": [{"id": "wounds", "x": 6}, "vulnerable_rear"],
-          "weapons": [{"id": "heavy_autocannon", "count": 2}],
+          "weapons": [{"id": "walker_fist", "count": 6}],
           "options": [
             {
-              "replaceWeapon": [{"id": "heavy_autocannon", "count": 1}],
+              "replaceWeapon": [{"id": "walker_fist", "count": 3}],
               "withWeapon": [
                 "twin_heavy_plasma_cannon",
                 "heavy_fusion_cannon",
                 "twin_flamethrower_cannon",
                 "twin_heavy_thermal_lance",
+                "twin_heavy_autocannon",
                 "twin_heavy_gravity_cannon",
-                {"id": "assault_drill", "count": 6},
-                {"id": "walker_fist", "count": 6},
                 "gatling_cannon",
                 "twin_heavy_laser_cannon",
                 "twin_missile_launcher",
@@ -1592,16 +1566,17 @@
               ],
               "count": 2
             },
-            {"addWeapon": ["heavy_machinegun", "fusion_cannon", "heavy_flamethrower", "plasma_cannon", "thermal_lance", "gatling_gun", "missile_launcher", "laser_cannon"], "limit": 4},
             {
               "addWeapon": [
-                {"id": "heavy_machinegun", "mount": ["Front"]},
-                {"id": "laser_cannon", "mount": ["Front"]},
-                {"id": "plasma_cannon", "mount": ["Front"]},
-                {"id": "fusion_cannon", "mount": ["Front"]},
-                {"id": "heavy_flamethrower", "mount": ["Front"]},
-                {"id": "twin_thermal_rifle", "mount": ["Front"]},
-                {"id": "rocket_pod", "mount": ["Front"]}
+                {"id": "storm_rifle", "mount": ["Front"]},
+                {"id": "plasma_rifle", "mount": ["Front"]},
+                {"id": "plasma_repeater", "mount": ["Front"]},
+                {"id": "fusion_rifle", "mount": ["Front"]},
+                {"id": "flamethrower", "mount": ["Front"]},
+                {"id": "rocket_pod", "mount": ["Front"]},
+                {"id": "thermal_rifle", "mount": ["Front"]},
+                {"id": "light_machinegun", "mount": ["Front"]},
+                {"id": "gravity_rifle", "mount": ["Front"]}
               ],
               "limit": 2
             },

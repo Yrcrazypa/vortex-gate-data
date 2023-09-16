@@ -1192,7 +1192,7 @@
     "twin_autocannon": {"name": "Twin Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy"]},
     "aa_autocannon": {"name": "AA Autocannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["anti_air", "heavy"]},
     "twin_aa_autocannon": {"name": "Twin AA Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4, "rules": ["anti_air", "heavy"]},
-    "heavy_autocannon": {"name": "Heavy Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy"]},
+    "heavy_autocannon": {"name": "Heavy Autocannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy"]},
     "battle_cannon": {
       "name": "Battle Cannon",
       "rules": ["heavy"],
@@ -1296,7 +1296,7 @@
     "twin_heavy_thermal_lance": {"name": "Twin Heavy Thermal Lance", "attacks": 2, "short": 30, "medium": 60, "ap": 8, "rules": ["heavy", "breaching", {"id": "deadly", "x": 1}]},
     "tesla_cannon": {"name": "Tesla Cannon", "attacks": 1, "ap": 4, "short": 12, "medium": 24, "rules": ["assault", {"id": "blast", "x": 3}]},
     "twin_tesla_cannon": {"name": "Twin Tesla Cannon", "attacks": 2, "ap": 4, "short": 12, "medium": 24, "rules": ["assault", {"id": "blast", "x": 3}]},
-    "twin_heavy_autocannon": {"name": "Twin Heavy Autocannon", "attacks": 8, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy"]},
+    "twin_heavy_autocannon": {"name": "Twin Heavy Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy"]},
     "twin_flamethrower_cannon": {"name": "Twin Flamethrower Cannon", "attacks": 6, "ap": 4, "short": 6, "medium": 12, "rules": ["flame"]},
     "twin_heavy_fusion_cannon": {"name": "Twin Heavy Fusion Cannon", "ap": 7, "medium": 60, "short": 30, "attacks": 4, "rules": ["heavy", {"id": "deadly", "x": 1}]},
     "twin_gravity_cannon": {"name": "Twin Gravity Cannon", "attacks": 4, "short": 18, "medium": 36, "ap": 3, "rules": ["gravity", "heavy"]},
