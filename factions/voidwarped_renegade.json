@@ -45,7 +45,7 @@
     },
     "arch_mage": {
       "name": "Voidwarped Psychic Arch-Marine",
-      "description": "Built as a psycho-biological weapon, this Arch-Marine defied his destiny and joined the dark gods.",
+      "description": "Built as a psycho-biological weapon, this Arch-Marine defied his destiny and joined the vortex gate.",
       "category": "rare",
       "rules": [{"id": "power", "x": 3}, {"id": "archmage_tactics", "x": 3}, {"id": "wounds", "x": 3}, "fly", "archmage", {"id": "psychic_prowess", "x": 2}, {"id": "limited", "x": 1}],
       "subfactions": ["power_focus"],
@@ -75,7 +75,7 @@
     },
     "voidwarped_champion": {
       "name": "Voidwarped Champion",
-      "description": "A champion of the dark gods.",
+      "description": "A champion of the vortex gate.",
       "category": "hero",
       "models": [
         {
@@ -113,7 +113,7 @@
     },
     "voidwarped_champion_on_bike": {
       "name": "Voidwarped Champion on Bike",
-      "description": "A champion of the dark gods riding a combat bike.",
+      "description": "A champion of the vortex gate riding a combat bike.",
       "category": "hero",
       "keywords": ["Biker"],
       "models": [
@@ -148,7 +148,7 @@
     },
     "voidwarped_lord": {
       "name": "Voidwarped Lord",
-      "description": "A lord of the dark gods.",
+      "description": "A lord of the vortex gate.",
       "category": "hero",
       "models": [
         {
@@ -189,7 +189,7 @@
     },
     "voidwarped_lord_on_bike": {
       "name": "Voidwarped Lord on Bike",
-      "description": "A lord of the dark gods riding a combat bike.",
+      "description": "A lord of the vortex gate riding a combat bike.",
       "category": "hero",
       "keywords": ["Biker"],
       "models": [
@@ -232,7 +232,7 @@
     },
     "voidwarped_lord_on_warbeast": {
       "name": "Voidwarped Lord on Warbeast",
-      "description": "A lord of the dark gods riding a biomechanical monster.",
+      "description": "A lord of the vortex gate riding a biomechanical monster.",
       "category": "hero",
       "keywords": ["Cavalry"],
       "models": [
@@ -272,7 +272,7 @@
     },
     "voidwarped_engineer": {
       "name": "Voidwarped Engineer",
-      "description": "Twisted by the dark gods, this marine is dedicated to repairing corrupted machines.",
+      "description": "Twisted by the vortex gate, this marine is dedicated to repairing corrupted machines.",
       "category": "hero",
       "models": [
         {
@@ -340,7 +340,7 @@
     },
     "voidwarped_psychic": {
       "name": "Voidwarped Psychic",
-      "description": "A potent psychic who has turned to the dark gods.",
+      "description": "A potent psychic who has turned to the vortex gate.",
       "category": "hero",
       "models": [
         {
@@ -420,7 +420,7 @@
     },
     "demonic_champion": {
       "name": "Demonic Champion",
-      "description": "A massive demon gifted by the dark gods.",
+      "description": "A massive demon gifted by the vortex gate.",
       "category": "hero",
       "keywords": ["Monster"],
       "rules": [{"id": "wounds", "x": 3}, "leader", {"id": "tactician", "x": 2}, {"id": "power", "x": 1}],
@@ -493,7 +493,7 @@
     },
     "voidwarped_priest": {
       "name": "Voidwarped Priest",
-      "description": "A devotee of the dark gods who seeks to spread their faith to non-believers on the battlefield.",
+      "description": "A devotee of the vortex gate who seeks to spread their faith to non-believers on the battlefield.",
       "category": "hero",
       "models": [
         {
@@ -523,7 +523,7 @@
     },
     "voidwarped_priest_on_bike": {
       "name": "Voidwarped Priest on Bike",
-      "description": "A devotee of the dark gods on a combat bike who seeks to spread their faith to non-believers on the battlefield.",
+      "description": "A devotee of the vortex gate on a combat bike who seeks to spread their faith to non-believers on the battlefield.",
       "category": "hero",
       "models": [
         {
@@ -556,7 +556,7 @@
     },
     "voidwarped_priest_on_warbeast": {
       "name": "Voidwarped Priest on Warbeast",
-      "description": "A devotee of the dark gods on a biomechanical monster who seeks to spread their faith to non-believers on the battlefield.",
+      "description": "A devotee of the vortex gate on a biomechanical monster who seeks to spread their faith to non-believers on the battlefield.",
       "category": "hero",
       "models": [
         {
@@ -586,7 +586,7 @@
     },
     "cultists": {
       "name": "Cultists",
-      "description": "Lunatics who have sold their souls to the dark gods.",
+      "description": "Lunatics who have sold their souls to the vortex gate.",
       "category": "core",
       "models": [
         {
@@ -610,7 +610,7 @@
     },
     "cultist_berzerkers": {
       "name": "Cultist Berzerkers",
-      "description": "Rage-filled lunatics who have sold their souls to the dark gods.",
+      "description": "Rage-filled lunatics who have sold their souls to the vortex gate.",
       "category": "core",
       "models": [
         {
@@ -767,7 +767,7 @@
     },
     "voidwarped_marines": {
       "name": "Voidwarped Marines",
-      "description": "Marines corrupted by the dark gods.",
+      "description": "Marines corrupted by the vortex gate.",
       "category": "core",
       "models": [
         {
@@ -807,7 +807,7 @@
     },
     "voidwarped_veterans": {
       "name": "Voidwarped Veterans",
-      "description": "Marines that have spent long service to the dark gods.",
+      "description": "Marines that have spent long service to the vortex gate.",
       "category": "elite",
       "models": [
         {
@@ -836,7 +836,7 @@
     },
     "pestilence_marines": {
       "name": "Pestilence Marines",
-      "description": "Marines corrupted by the dark gods.",
+      "description": "Marines corrupted by the vortex gate.",
       "category": "core",
       "subfactions": ["toughness_focus"],
       "options": [
@@ -851,7 +851,7 @@
             ["pestilence_mace", "pestilence_axe"]
           ]
         },
-        {"modelLimit": "1/5", "replaceWeapon": "marine_rifle", "withWeapon": ["plasma_rifle", "pestilence_sprayer", "pestilence_launcher", "fusion_rifle"]}
+        {"modelLimit": "2/5", "replaceWeapon": "marine_rifle", "withWeapon": ["plasma_rifle", "pestilence_sprayer", "pestilence_launcher", "fusion_rifle"]}
       ],
       "models": [
         {
@@ -1025,7 +1025,7 @@
     },
     "voidwarped_berzerkers": {
       "name": "Voidwarped Berzerkers",
-      "description": "Marines corrupted by the dark gods with rage.",
+      "description": "Marines corrupted by the vortex gate with rage.",
       "category": "core",
       "subfactions": ["assault_focus"],
       "rules": ["furious"],
@@ -1103,7 +1103,7 @@
     },
     "psychic_marines": {
       "name": "Psychic Marines",
-      "description": "Marines corrupted by the dark gods with potent psychic powers.",
+      "description": "Marines corrupted by the vortex gate with potent psychic powers.",
       "category": "core",
       "subfactions": ["power_focus"],
       "rules": ["conclave"],
@@ -1142,7 +1142,7 @@
     },
     "psychic_veterans": {
       "name": "Psychic Veterans",
-      "description": "Elite marines corrupted by the dark gods with potent psychic powers.",
+      "description": "Elite marines corrupted by the vortex gate with potent psychic powers.",
       "category": "elite",
       "subfactions": ["power_focus"],
       "models": [
@@ -1172,7 +1172,7 @@
     },
     "psychic_destroyers": {
       "name": "Psychic Destroyers",
-      "description": "Deadly destroyers corrupted by the dark gods with potent psychic powers.",
+      "description": "Deadly destroyers corrupted by the vortex gate with potent psychic powers.",
       "category": "elite",
       "subfactions": ["power_focus"],
       "keywords": ["Heavy Infantry"],
@@ -1396,7 +1396,7 @@
     },
     "voidwarped_destoyers": {
       "name": "Voidwarped Destroyers",
-      "description": "Destroyers that have been corrupted by the dark gods.",
+      "description": "Destroyers that have been corrupted by the vortex gate.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "models": [
@@ -1437,7 +1437,7 @@
     },
     "mutated_destoyers": {
       "name": "Mutated Destroyers",
-      "description": "Destroyers that have been mutated by the dark gods.",
+      "description": "Destroyers that have been mutated by the vortex gate.",
       "category": "elite",
       "keywords": ["Heavy Infantry"],
       "rules": ["ambush", {"id": "wounds", "x": 2}],
@@ -1923,7 +1923,7 @@
     "daemonforge": {
       "phase": "activation",
       "name": "Daemonforge",
-      "flavor": "Imbued with demonic energy, traitor vehicles can call upon the powers of the dark gods.",
+      "flavor": "Imbued with demonic energy, traitor vehicles can call upon the powers of the vortex gate.",
       "description": "Use before a unit is targeted by an attack. Roll a D10 for each hit. On a 3 or less that hit is prevented.",
       "cost": 2
     },
@@ -1964,7 +1964,7 @@
       "name": "Unholy Strength",
       "rule": "legend_unholy_strength",
       "description": "Upgrade one Leader model with Unholy Strength.",
-      "flavor": "Those that pray to the dark gods reveive blessings beyond human comprehension.",
+      "flavor": "Those that pray to the vortex gate reveive blessings beyond human comprehension.",
       "points": 5,
       "subfactions": ["none"]
     },
