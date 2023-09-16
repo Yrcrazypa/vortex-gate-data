@@ -785,7 +785,7 @@
           "rules": [{"id": "wounds", "x": 3}, {"id": "impact", "x": 5}, {"id": "transport", "x": 12}, "vulnerable_side_rear"],
           "weapons": ["heavy_flamethrower", {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["laser_cannon", "heavy_machinegun", "plasma_cannon", "fusion_cannon", "acid_cannon", "flamestorm_cannon", "laser_machinegun"]},
+            {"replaceWeapon": "heavy_flamethrower", "withWeapon": ["laser_cannon", "heavy_machinegun", "laser_machinegun"]},
             {
               "replaceWeapon": [{"id": "heavy_flamethrower", "mount": ["Front"]}],
               "withWeapon": [
@@ -1013,7 +1013,7 @@
             },
             {"addWeapon": ["light_machinegun", "twin_marine_rifle"], "limit": 1},
             {"addWeapon": ["hunter_missiles"]},
-            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio", "extra_armor"]}
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "field_radio"]}
           ],
           "rules": [{"id": "wounds", "x": 6}, {"id": "impact", "x": 9}, "vulnerable_rear"],
           "min": 1,
@@ -1038,7 +1038,7 @@
           "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
           "weapons": [{"id": "twin_aa_autocannon", "count": 2}, {"id": "heavy_flamethrower", "mount": ["Front"]}],
           "options": [
-            {"replaceWeapon": {"id": "twin_aa_autocannon", "count": 2}, "withWeapon": [{"id": "heavy_mortar", "count": 4}, "artillery_cannon", "eagle_rockets", "death_missile"]},
+            {"replaceWeapon": {"id": "twin_aa_autocannon", "count": 2}, "withWeapon": ["plasma_cannon", "fusion_cannon", "acid_cannon", "flamestorm_cannon", {"id": "heavy_mortar", "count": 4}, "artillery_cannon", "eagle_rockets", "death_missile"]},
             {
               "replaceWeapon": [{"id": "heavy_flamethrower", "mount": ["Front"]}],
               "withWeapon": [
@@ -1049,7 +1049,42 @@
               ]
             },
             {"addWeapon": ["light_machinegun", "twin_marine_rifle"], "limit": 1},
-            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}, "extra_armor"]}
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]}
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ]
+    },
+    "light_assault_tank": {
+      "name": "Light Assault Tank",
+      "description": "A light tank vehicle with multiple assault roles.",
+      "category": "rare",
+      "keywords": ["Vehicle"],
+      "models": [
+        {
+          "name": "Light Assault Tank",
+          "movement": 10,
+          "courage": 5,
+          "shoot": 5,
+          "fight": 5,
+          "defense": 11,
+          "reflexes": 5,
+          "rules": [{"id": "wounds", "x": 5}, {"id": "impact", "x": 3}, "vulnerable_side_rear"],
+          "weapons": ["plasma_cannon", {"id": "heavy_flamethrower", "mount": ["Front"]}],
+          "options": [
+            {"replaceWeapon": "plasma_cannon", "withWeapon": ["fusion_cannon", "acid_cannon", "flamestorm_cannon"]},
+            {
+              "replaceWeapon": [{"id": "heavy_flamethrower", "mount": ["Front"]}],
+              "withWeapon": [
+                {"id": "laser_cannon", "mount": ["Front"]},
+                {"id": "heavy_machinegun", "mount": ["Front"]},
+                {"id": "plasma_cannon", "mount": ["Front"]},
+                {"id": "fusion_cannon", "mount": ["Front"]}
+              ]
+            },
+            {"addWeapon": ["light_machinegun", "twin_marine_rifle"], "limit": 1},
+            {"addRule": [{"id": "dozer", "name": "Dozer Blade"}]}
           ],
           "min": 1,
           "max": 1
@@ -1311,7 +1346,6 @@
   "rules": {
     "high_command": {"name": "High Command", "description": "This model may use Defense Force Tactics one additional time.", "points": 2},
     "ogre_shield": {"name": "Ogre Shield", "description_short": "+1 Save", "description": "This model gets +1 Save.", "points": 2},
-    "extra_armor": {"name": "Reinforced Hull", "description": "Subtract 1 from all Damage Chart rolls for this model.", "points": 10},
     "heavy_armor": {"name": "Heavy Armor", "hidden": true, "description": "This model gets +1 Save.", "description_short": "Save +1", "points": 2},
     "banner": {"name": "Inspiring Banner", "description": "Friendly _Infantry_ units within 6\" get +1 Courage.", "points": 10}
   },
@@ -1353,7 +1387,7 @@
       "flavor": "These soldiers are particularly brave in the face of many horrors.",
       "cost": 1
     },
-    "field_repairs": {"name": "Field Repairs", "phase": "activation", "description": "Use when activating a unit. That unit may remove one critical damage.", "cost": 2}
+    "field_repairs": {"name": "Field Repairs", "phase": "activation", "description": "Use when activating a unit. That unit may restore one Wound.", "cost": 2}
   },
   "relics": {
     "strategist": {

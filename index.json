@@ -1377,7 +1377,7 @@
       "subfactions": ["toughness_focus"],
       "name": "Durability",
       "phase": "activation",
-      "description": "Use before activating a unit with a Damage Chart. That unit is treated as having no critical damage tokens for this activation.",
+      "description": "Use before activating a unit with a Damage Chart. That unit is treated as having full wounds for this activation.",
       "flavor": "Some of the most well-maintained vehicles and machinery can operate under great stress.",
       "cost": 1
     },
@@ -1735,22 +1735,18 @@
     "mount_horse": {"name": "Horse", "hidden": true, "description_short": "+2\" Movement", "description": "Increase this model's Movement by 2\".", "points": 2},
     "barbed_net": {"name": "Barbed Net", "description": "Units hit by this weapon half their movement until the end of the turn.", "points": 3},
     "regeneration": {"name": "Regeneration", "description": "At the end of it's activation you can heal 1 wound that has been allocated to this model.", "points": 5},
-    "monstrous_regeneration": {
-      "name": "Monstrous Regeneration",
-      "description": "At the end of this unit's activation you may heal 1 critical damage that has been allocated to this model.",
-      "points": 20
-    },
+    "monstrous_regeneration": {"name": "Monstrous Regeneration", "description": "At the end of this unit's activation you may restore 1 Wound that has been allocated to this model.", "points": 20},
     "enchanted": {"name": "Enchanted", "description": "This weapon hits at Strength +1.", "points": ["weapon.attacks"]},
     "heavy_buckler": {"name": "Heavy Buckler", "description": "This model has +1 Save against melee attacks.", "points": 2},
     "repair": {
       "name": "Repair",
       "inputs": ["x"],
-      "description": "At any point during this model's activation, if within 3\" of a unit, roll one die. On an X or less the vehicle may remove one critical damage.",
+      "description": "At any point during this model's activation, if within 3\" of a unit, roll one die. On an X or less the vehicle may restore one Wound.",
       "points": ["rule.x", {"multiply": 2}]
     },
     "engineer": {
       "name": "Engineer",
-      "description": "At any point during this model's activation, if within 3\" of a unit, roll one die. On a 5 or less the vehicle may remove one critical damage.",
+      "description": "At any point during this model's activation, if within 3\" of a unit, roll one die. On a 5 or less the vehicle may restore one Wound.",
       "points": [10]
     },
     "disk_of_change": {
@@ -1886,7 +1882,7 @@
     "wounds": {
       "name": "Wounds",
       "inputs": ["x"],
-      "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model.",
+      "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model. If this unit is a _Vehicle_ or _Monster_ it suffers -1 Acc and -1 Str while below half Wounds.",
       "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}, {"pow": 1.2}]}]
     },
     "medic": {"name": "Medic(Infantry)", "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented.", "points": 15},
