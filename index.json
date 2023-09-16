@@ -1823,7 +1823,7 @@
       "inputs": ["x"],
       "description": "Multiply hits from this weapon by X.",
       "notes": "Small RNG discount to account for single shot randomness",
-      "points": ["rule.x", {"subtract": 1}, {"multiply": "weapon.points"}, {"multiply": 0.5}]
+      "points": ["rule.x", {"subtract": 1}, {"multiply": ["weapon.points", {"multiply": 0.8}]}]
     },
     "emp": {"name": "EMP", "description": "This weapon gains +2 AP against units with the _Monster_ or _Vehicle_ keyword.", "points": ["weapon.attacks", {"multiply": 1}]},
     "flame": {"name": "Spray", "description": "Hits from this weapon ignore any cover bonuses.", "points": ["weapon.attacks", {"multiply": 0.5}]},
@@ -1886,7 +1886,7 @@
       "name": "Wounds",
       "inputs": ["x"],
       "description": "This model has X lives that it may lose before it is killed. If a unit contains multiple models with Wounds, damage must be assigned to an already damaged model before being assigned to any other model.",
-      "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}]}]
+      "points": ["model.defense", {"subtract": "constants.baseStats.defense"}, {"max": 0}, {"multiply": 2}, {"add": 5}, {"multiply": ["rule.x", {"subtract": 1}, {"pow": 1.2}]}]
     },
     "medic": {"name": "Medic(Infantry)", "description": "Whenever a friendly _Infantry_ unit within 6\" loses a model or Wound(x), roll a D10. On a 3 or less, that loss is prevented.", "points": 15},
     "medic_x": {
@@ -1916,7 +1916,7 @@
       "name": "Deadly",
       "inputs": ["x"],
       "description": "Each unsaved hit with this weapon inflicts _X_ additional _Wounds_ to the target.",
-      "points": ["rule.x", {"subtract": 1}, {"multiply": ["weapon.points", {"multiply": 0.5}]}]
+      "points": ["rule.x", {"subtract": 1}, {"multiply": ["weapon.points", {"multiply": 0.8}]}]
     },
     "lethal": {
       "name": "Lethal",
@@ -2017,8 +2017,16 @@
     "grenade": {"name": "Grenade", "description": "One model in this unit may use this weapon instead of any other weapons. This weapon ignores cover bonuses."},
     "poison": {"name": "Poison", "description": "Enemy units hit by this weapon must re-roll successful Save rolls of 1.", "points": ["weapon.attacks", {"multiply": 0.5}]},
     "lance": {"name": "Lance", "description": "This weapon gets +1 AP when used during a Charge.", "points": ["weapon.attacks", {"multiply": 0.5}]},
-    "leader": {"name": "Leader", "description": "This unit may be attached to another unit with the same unit type keyword at the start of the battle. One leader may be attached per unit.", "points": 10},
-    "support": {"name": "Support", "description": "This unit may be attached to another unit with the same unit type keyword at the start of the battle. One support may be attached per unit.", "points": 5},
+    "leader": {
+      "name": "Leader",
+      "description": "This unit may be attached to another unit with the same unit type keyword at the start of the battle. One leader may be attached per unit.",
+      "points": 10
+    },
+    "support": {
+      "name": "Support",
+      "description": "This unit may be attached to another unit with the same unit type keyword at the start of the battle. One support may be attached per unit.",
+      "points": 5
+    },
     "hero": {"name": "Hero", "description": "When this model is activated, friendly _Infantry_ units within 6\" may choose to activate and perform the same actions as this unit."},
     "lightweight": {"name": "Lightweight", "description": "Attacks with this weapon are made at +1 Strength.", "points": ["weapon.attacks", {"multiply": 1}]},
     "cumbersome": {"name": "Cumbersome", "description": "Attacks with this weapon are made at -1 Strength.", "points": ["weapon.attacks", {"multiply": -1}]},
