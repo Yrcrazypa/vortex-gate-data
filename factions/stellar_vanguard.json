@@ -1440,7 +1440,7 @@
                 {"id": "light_machinegun", "mount": ["Front"]},
                 {"id": "gravity_rifle", "mount": ["Front"]}
               ],
-              "limit": 2
+              "limit": 4
             },
             {"addRule": ["relic_shield"]},
             {"addRule": [{"id": "power", "x": 1}], "subfactions": ["power_focus"]}
@@ -1523,64 +1523,10 @@
                 {"id": "light_machinegun", "mount": ["Front"]},
                 {"id": "gravity_rifle", "mount": ["Front"]}
               ],
-              "limit": 2
+              "limit": 4
             },
             {"addRule": ["relic_shield"]},
             {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "limit": 1, "subfactions": ["power_focus"]}
-          ],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "heavy_marine_juggernaut": {
-      "name": "Marine Heavy Juggernaut",
-      "description": "A heavily armed combat walker.",
-      "category": "rare",
-      "keywords": ["Vehicle", "Juggernaut"],
-      "models": [
-        {
-          "name": "Marine Heavy Juggernaut",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 13,
-          "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, "vulnerable_rear"],
-          "weapons": [{"id": "walker_fist", "count": 6}],
-          "options": [
-            {
-              "replaceWeapon": [{"id": "walker_fist", "count": 3}],
-              "withWeapon": [
-                "twin_heavy_plasma_cannon",
-                "heavy_fusion_cannon",
-                "twin_flamethrower_cannon",
-                "twin_heavy_thermal_lance",
-                "twin_heavy_autocannon",
-                "twin_heavy_gravity_cannon",
-                "gatling_cannon",
-                "twin_heavy_laser_cannon",
-                "twin_missile_launcher",
-                "twin_heavy_gravity_cannon"
-              ],
-              "count": 2
-            },
-            {
-              "addWeapon": [
-                {"id": "storm_rifle", "mount": ["Front"]},
-                {"id": "plasma_rifle", "mount": ["Front"]},
-                {"id": "plasma_repeater", "mount": ["Front"]},
-                {"id": "fusion_rifle", "mount": ["Front"]},
-                {"id": "flamethrower", "mount": ["Front"]},
-                {"id": "rocket_pod", "mount": ["Front"]},
-                {"id": "thermal_rifle", "mount": ["Front"]},
-                {"id": "light_machinegun", "mount": ["Front"]},
-                {"id": "gravity_rifle", "mount": ["Front"]}
-              ],
-              "limit": 2
-            },
-            {"addRule": [{"id": "power", "x": 1}, {"id": "power", "x": 2}], "subfactions": ["power_focus"], "limit": 1}
           ],
           "min": 1,
           "max": 1
