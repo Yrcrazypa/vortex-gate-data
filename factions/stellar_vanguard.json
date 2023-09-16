@@ -530,7 +530,7 @@
           "weapons": ["marine_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["marine_rifle"], "withWeapon": ["combi_rifle", "twin_marine_rifle"]},
-            {"replaceWeapon": ["marine_rifle", "handweapon"], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
+            {"replaceWeapon": ["heavy_marine_rifle", "handweapon"], "withWeapon": ["marine_pistol", {"id": "handweapon", "count": 2}]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
@@ -573,7 +573,7 @@
           "weapons": ["heavy_marine_rifle", "handweapon"],
           "options": [
             {"replaceWeapon": ["heavy_marine_rifle"], "withWeapon": ["combi_rifle", "twin_marine_rifle"]},
-            {"replaceWeapon": ["heavy_marine_rifle", "handweapon"], "withWeapon": [{"id": "twin_energy_handweapon", "count": 4}]},
+            {"replaceWeapon": ["heavy_marine_rifle", "handweapon"], "withWeapon": ["marine_pistol", {"id": "handweapon", "count": 2}]},
             {"replaceWeapon": "marine_pistol", "withWeapon": ["plasma_pistol", "fusion_pistol", "flamethrower_pistol", "gravity_pistol", "thermal_pistol"]},
             {
               "replaceWeapon": {"id": "handweapon", "count": 2},
