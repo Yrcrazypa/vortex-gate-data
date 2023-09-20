@@ -742,7 +742,7 @@
     "pulse_sniper": {"name": "Pulse Sniper", "attacks": 1, "short": 24, "medium": 48, "ap": 2, "rules": ["sniper"]},
     "pulse_pistol": {"name": "Pulse Pistol", "attacks": 1, "short": 6, "ap": 2, "rules": ["pistol"]},
     "pulse_gatling": {"name": "Pulse Gatling", "attacks": 3, "short": 9, "medium": 18, "ap": 2, "rules": ["assault"]},
-    "heavy_pulse_gatling": {"name": "Heavy Pulse Gatling", "attacks": 10, "short": 18, "medium": 36, "ap": 3},
+    "heavy_pulse_gatling": {"name": "Heavy Pulse Gatling", "attacks": 8, "short": 18, "medium": 36, "ap": 3},
     "suit_fists": {"name": "Suit Fists", "attacks": 1, "short": "Melee", "ap": 2},
     "suit_shield": {"name": "Shielded Suit Fist", "attacks": 1, "short": "Melee", "ap": 2, "rules": ["fist_shield"]},
     "neutron_carbine": {"name": "Neutron Carbine", "attacks": 1, "short": 9, "medium": 18, "ap": 3},
