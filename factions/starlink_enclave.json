@@ -115,7 +115,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Warrior", "movement": 6, "courage": 5, "shoot": 5, "fight": 4, "defense": 6, "reflexes": 6, "weapons": ["pulse_rifle", "light_handweapon"], "min": 4, "max": 14}
+        {"name": "Warrior", "movement": 6, "courage": 5, "shoot": 5, "fight": 4, "defense": 6, "reflexes": 6, "weapons": ["pulse_rifle", "light_handweapon"], "min": 4, "max": 9}
       ]
     },
     "pathfinder_squad": {
@@ -208,7 +208,7 @@
           "rules": ["fly"],
           "weapons": ["neutron_carbine", "light_handweapon"],
           "min": 5,
-          "max": 15
+          "max": 10
         }
       ]
     },
@@ -297,7 +297,7 @@
             {"addRule": [{"name": "Shield Generator", "id": "defiant", "x": 3, "ArrayItem": "lookout_system"}, "threat_detector_suit", "advanced_plating", "targeting_array"]}
           ],
           "min": 3,
-          "max": 9
+          "max": 6
         }
       ]
     },
@@ -321,7 +321,7 @@
           "min": 1,
           "max": 1
         },
-        {"name": "Escort Drone", "movement": 8, "courage": 5, "shoot": 5, "fight": 0, "defense": 6, "reflexes": 5, "weapons": ["pulse_pistol"], "rules": ["fly"], "min": 2, "max": 9}
+        {"name": "Escort Drone", "movement": 8, "courage": 5, "shoot": 5, "fight": 0, "defense": 6, "reflexes": 5, "weapons": ["pulse_pistol"], "rules": ["fly"], "min": 3, "max": 8}
       ]
     },
     "tactical_drones": {
@@ -345,7 +345,7 @@
           ],
           "rules": ["fly"],
           "min": 4,
-          "max": 10
+          "max": 8
         }
       ]
     },
