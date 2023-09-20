@@ -456,7 +456,7 @@
             {"addWeapon": ["homing_missile"], "limit": 3}
           ],
           "min": 1,
-          "max": 5
+          "max": 3
         }
       ]
     },
@@ -530,14 +530,14 @@
           "fight": 4,
           "defense": 11,
           "reflexes": 6,
-          "rules": [{"id": "wounds", "x": 6}, "evasive", "fly"],
+          "rules": [{"id": "wounds", "x": 5}, "evasive", "fly"],
           "weapons": ["ion_gatling", "suit_fists"],
           "options": [
             {"replaceWeapon": ["ion_gatling"], "withWeapon": ["heavy_fusion_blaster"]},
             {"limit": 1, "addWeapon": [{"id": "pulse_gatling", "count": 2}, {"id": "flamethrower", "count": 2}, {"id": "fusion_blaster", "count": 2}, {"id": "plasma_rifle", "count": 2}]}
           ],
           "min": 1,
-          "max": 3
+          "max": 1
         }
       ]
     },
