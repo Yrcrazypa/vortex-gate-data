@@ -1156,7 +1156,7 @@
       "rules": ["heavy"],
       "profiles": [
         {"name": "Frag", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": [{"id": "blast", "x": 3}]},
-        {"name": "AT", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "deadly", "x": 1}]}
+        {"name": "AT", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "deadly", "x": 1}]}
       ]
     },
     "twin_missile_launcher": {
@@ -1164,10 +1164,10 @@
       "rules": ["heavy"],
       "profiles": [
         {"name": "Frag", "attacks": 2, "short": 18, "medium": 36, "ap": 1, "rules": [{"id": "blast", "x": 3}]},
-        {"name": "AT", "attacks": 2, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "deadly", "x": 1}]}
+        {"name": "AT", "attacks": 2, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "deadly", "x": 1}]}
       ]
     },
-    "assault_missile_launcher": {"name": "Assault Missile Launcher", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": [{"id": "blast", "x": 2}]},
+    "assault_missile_launcher": {"name": "Assault Missile Launcher", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "blast", "x": 2}]},
     "laser_cannon": {"name": "Laser Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48, "rules": ["heavy", {"id": "deadly", "x": 1}]},
     "twin_laser_cannon": {"name": "Twin Laser Cannon", "ap": 7, "attacks": 2, "short": 24, "medium": 48, "rules": ["heavy", {"id": "deadly", "x": 1}]},
     "mining_laser": {"name": "Mining Laser", "attacks": 1, "short": 12, "medium": 24, "ap": 8, "rules": ["heavy", {"id": "deadly", "x": 1}]},
@@ -1258,14 +1258,6 @@
     "fusion_cannon": {"name": "Fusion Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48, "rules": [{"id": "deadly", "x": 1}, "heavy"]},
     "twin_fusion_cannon": {"name": "Twin Fusion Cannon", "ap": 7, "attacks": 2, "short": 24, "medium": 48, "rules": [{"id": "deadly", "x": 1}, "heavy"]},
     "shard_sniper": {"name": "Shard Sniper", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": ["rending", "sniper"]},
-    "elven_missile_launcher": {
-      "name": "Elven Missile Launcher",
-      "profiles": [{"name": "Frag", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 6}]}, {"name": "AT", "attacks": 2, "short": 24, "medium": 48, "ap": 6}]
-    },
-    "twin_elven_missile_launcher": {
-      "name": "Twin Elven Missile Launcher",
-      "profiles": [{"name": "Frag", "attacks": 2, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 6}]}, {"name": "AT", "attacks": 4, "short": 24, "medium": 48, "ap": 6}]
-    },
     "heavy_fusion_cannon": {"name": "Heavy Fusion Cannon", "ap": 7, "medium": 60, "short": 30, "attacks": 1, "rules": ["heavy", {"id": "deadly", "x": 2}]},
     "nova_cannon": {"name": "Nova Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["breaching", "heavy", {"id": "blast", "x": 3}]},
     "siege_cannon": {"name": "Siege Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 8, "rules": ["heavy", {"id": "blast", "x": 3}]},
