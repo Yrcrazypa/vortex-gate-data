@@ -1,340 +1,247 @@
 {
-  "id": "freeblade_mercenaries",
-  "name": "Freeblade Mercenaries",
-  "author": "guitarninja",
-  "lore": "In a distant and war-torn region of the galaxy, where the fires of conflict rage on countless planets, a formidable group of mercenaries known as the Freeblade Mercenaries emerged to claim their place in the annals of history.\n\nLong ago, a visionary engineer and battle-scarred warrior named Kellan Greythorne sought to change the tide of war. Witnessing the devastation caused by relentless conflicts and the plight of innocent civilians caught in the crossfire, Kellan was determined to create a force that could bring balance to the chaos.\n\nWith a brilliant mind for engineering and a deep understanding of combat tactics, Kellan conceived the idea of building colossal fighting robots, known as Battleframes, which could rival the destructive might of any army. These towering mechanical giants were not only marvels of technology but also powerful symbols of hope and protection for those they defended.\n\nKellan founded the Freeblade Mercenaries with a core group of skilled engineers, warriors, and strategists, all sharing his vision of offering their services to the highest bidder. The Freeblades saw themselves as guardians of the innocent, a neutral force that could be hired to defend planets, liberate oppressed civilizations, or push back invading forces.\n\nTheir headquarters, known as the Forge Bastion, became a mobile fortress and workshop, where skilled engineers and mechanics meticulously crafted and maintained the Battleframes. Each Freeblade was equipped with unique weaponry and defenses, tailored to their pilot's preferences and abilities.\n\nAs the reputation of the Freeblade Mercenaries spread throughout the galaxy, they became highly sought after by leaders of warring factions, governments, and wealthy corporations. The Freeblades' services were not cheap, but their effectiveness on the battlefield was unquestionable.\n\nDespite their mercenary nature, the Freeblades developed a strong code of honor. They refused to participate in genocidal campaigns or support tyrants, adhering to a set of principles that set them apart from common mercenaries. They were warriors with a purpose, aiming to bring stability and peace to the chaotic realms they traversed.\n\nThe Freeblades' ranks expanded over time as skilled pilots and engineers sought to join their cause, drawn by the chance to wield the immense power of the Battleframes and the promise of making a difference in the galaxy.\n\nHowever, the path of the Freeblade Mercenaries was not without challenges. They faced enemies who sought to discredit and dismantle them, as well as internal struggles to maintain their neutrality and honor in the face of lucrative offers and moral dilemmas.\n\nThrough it all, Kellan Greythorne and his fellow Freeblades stood firm, committed to their mission of bringing justice and protection to those in need. Their legend grew, and the name of the Freeblade Mercenaries became synonymous with both awe and trepidation.\n\nIn the swirling storm of war and politics, the Freeblade Mercenaries strode forward, a formidable force for hire, guided by their principles and the belief that their immense power should be used for the betterment of the galaxy. As long as there were battles to be fought and innocents to defend, the Freeblades would continue to stand as a beacon of hope in the darkest corners of the cosmos.",
-  "units": {
-    "helverin_knight": {
-      "name": "Helverin Titan",
-      "description": "The smallest of titans can still make an impact on the battlefield with its guns.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 5}],
-      "keywords": ["vehicle", "armiger"],
-      "models": [
-        {
-          "name": "Helverin Titan",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 12,
-          "reflexes": 5,
-          "weapons": [{"id": "heavy_autocannon", "count": 2}, "light_machinegun", {"id": "stomp", "count": 2}],
-          "options": [{"replaceWeapon": "light_machinegun", "withWeapon": "fusion_rifle"}],
-          "rules": [],
-          "min": 1,
-          "max": 1
+    "id": "freeblade_mercenaries",
+    "name": "Freeblade Mercenaries",
+    "author": "guitarninja",
+    "lore": "In a distant and war-torn region of the galaxy, where the fires of conflict rage on countless planets, a formidable group of mercenaries known as the Freeblade Mercenaries emerged to claim their place in the annals of history.\n\nLong ago, a visionary engineer and battle-scarred warrior named Kellan Greythorne sought to change the tide of war. Witnessing the devastation caused by relentless conflicts and the plight of innocent civilians caught in the crossfire, Kellan was determined to create a force that could bring balance to the chaos.\n\nWith a brilliant mind for engineering and a deep understanding of combat tactics, Kellan conceived the idea of building colossal fighting robots, known as Battleframes, which could rival the destructive might of any army. These towering mechanical giants were not only marvels of technology but also powerful symbols of hope and protection for those they defended.\n\nKellan founded the Freeblade Mercenaries with a core group of skilled engineers, warriors, and strategists, all sharing his vision of offering their services to the highest bidder. The Freeblades saw themselves as guardians of the innocent, a neutral force that could be hired to defend planets, liberate oppressed civilizations, or push back invading forces.\n\nTheir headquarters, known as the Forge Bastion, became a mobile fortress and workshop, where skilled engineers and mechanics meticulously crafted and maintained the Battleframes. Each Freeblade was equipped with unique weaponry and defenses, tailored to their pilot's preferences and abilities.\n\nAs the reputation of the Freeblade Mercenaries spread throughout the galaxy, they became highly sought after by leaders of warring factions, governments, and wealthy corporations. The Freeblades' services were not cheap, but their effectiveness on the battlefield was unquestionable.\n\nDespite their mercenary nature, the Freeblades developed a strong code of honor. They refused to participate in genocidal campaigns or support tyrants, adhering to a set of principles that set them apart from common mercenaries. They were warriors with a purpose, aiming to bring stability and peace to the chaotic realms they traversed.\n\nThe Freeblades' ranks expanded over time as skilled pilots and engineers sought to join their cause, drawn by the chance to wield the immense power of the Battleframes and the promise of making a difference in the galaxy.\n\nHowever, the path of the Freeblade Mercenaries was not without challenges. They faced enemies who sought to discredit and dismantle them, as well as internal struggles to maintain their neutrality and honor in the face of lucrative offers and moral dilemmas.\n\nThrough it all, Kellan Greythorne and his fellow Freeblades stood firm, committed to their mission of bringing justice and protection to those in need. Their legend grew, and the name of the Freeblade Mercenaries became synonymous with both awe and trepidation.\n\nIn the swirling storm of war and politics, the Freeblade Mercenaries strode forward, a formidable force for hire, guided by their principles and the belief that their immense power should be used for the betterment of the galaxy. As long as there were battles to be fought and innocents to defend, the Freeblades would continue to stand as a beacon of hope in the darkest corners of the cosmos.",
+    "units": {
+        "light_battleframe": {
+            "name": "Light Battleframe",
+            "description": "A light weight mech equipped with devastating weapons.",
+            "category": "rare",
+            "keywords": ["Vehicle"],
+            "models": [
+                {
+                    "name": "Light Battleframe",
+                    "movement": 10,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 12,
+                    "reflexes": 5,
+                    "rules": ["vulnerable_rear", {"id": "wounds", "x": 5}],
+                    "weapons": [{"id": "heavy_autocannon", "count": 2}, {"id": "stomp", "count": 2}, {"id": "light_machinegun", "mount": ["Front"]}],
+                    "options": [
+                        {
+                            "replaceWeapon": ["heavy_autocannon"],
+                            "withWeapon": [
+                                "twin_fusion_cannon",
+                                "twin_plasma_cannon",
+                                "titanic_power_weapon",
+                                "titanic_energy_weapon",
+                                "twin_flamethrower_cannon",
+                                "gatling_cannon",
+                                "twin_thermal_lance",
+                                "twin_gravity_cannon",
+                                "twin_tesla_cannon",
+                                "titanic_energy_spear"
+                            ],
+                            "limit": 2
+                        },
+                        {
+                            "replaceWeapon": [{"id": "light_machinegun", "mount": ["Front"]}],
+                            "withWeapon": [
+                                {"id": "plasma_rifle", "mount": ["Front"]},
+                                {"id": "fusion_rifle", "mount": ["Front"]},
+                                {"id": "thermal_rifle", "mount": ["Front"]},
+                                {"id": "rocket_pod", "mount": ["Front"]},
+                                {"id": "gravity_rifle", "mount": ["Front"]},
+                                {"id": "tesla_rifle", "mount": ["Front"]}
+                            ]
+                        },
+                        {"addRule": ["relic_shield"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "medium_battleframe": {
+            "name": "Medium Battleframe",
+            "description": "A medium weight mech equipped with devastating weapons.",
+            "category": "rare",
+            "keywords": ["Vehicle"],
+            "models": [
+                {
+                    "name": "Medium Battleframe",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 13,
+                    "reflexes": 5,
+                    "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}],
+                    "weapons": [{"id": "light_battle_cannon", "count": 2}, {"id": "heavy_stomp", "count": 3}, {"id": "light_machinegun", "mount": ["Front"]}],
+                    "options": [
+                        {
+                            "replaceWeapon": ["light_battle_cannon"],
+                            "withWeapon": [
+                                "titanic_power_weapon",
+                                "titanic_energy_weapon",
+                                "titanic_energy_spear",
+                                "gatling_cannon",
+                                "twin_heavy_plasma_cannon",
+                                "heavy_fusion_cannon",
+                                "twin_heavy_thermal_lance",
+                                "heavy_gravity_cannon"
+                            ],
+                            "limit": 2
+                        },
+                        {
+                            "replaceWeapon": [{"id": "light_machinegun", "mount": ["Front"]}],
+                            "withWeapon": [
+                                {"id": "plasma_rifle", "mount": ["Front"]},
+                                {"id": "fusion_rifle", "mount": ["Front"]},
+                                {"id": "thermal_rifle", "mount": ["Front"]},
+                                {"id": "rocket_pod", "mount": ["Front"]},
+                                {"id": "gravity_rifle", "mount": ["Front"]},
+                                {"id": "tesla_rifle", "mount": ["Front"]}
+                            ]
+                        },
+                        {"limit": 1, "addWeapon": ["twin_aa_autocannon", "titan_rocket_pod"]},
+                        {"addRule": ["relic_shield"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
+        },
+        "heavy_battleframe": {
+            "name": "Heavy Battleframe",
+            "description": "A heavy weight mech equipped with devastating weapons.",
+            "category": "rare",
+            "keywords": ["Vehicle"],
+            "models": [
+                {
+                    "name": "Heavy Battleframe",
+                    "movement": 8,
+                    "courage": 6,
+                    "shoot": 6,
+                    "fight": 6,
+                    "defense": 13,
+                    "reflexes": 5,
+                    "rules": ["vulnerable_rear", {"id": "wounds", "x": 6}],
+                    "weapons": [
+                        {"id": "battle_cannon", "count": 2},
+                        {"id": "twin_light_machinegun", "count": 2, "mount": ["Front"]},
+                        {"id": "twin_storm_missiles", "count": 3},
+                        {"id": "heavy_stomp", "count": 3}
+                    ],
+                    "options": [
+                        {
+                            "replaceWeapon": ["battle_cannon"],
+                            "withWeapon": [
+                                "harpoon_cannon",
+                                "triple_flamethrower_cannon",
+                                "twin_heavy_plasma_cannon",
+                                "heavy_fusion_cannon",
+                                "titanic_power_weapon",
+                                "titanic_energy_weapon",
+                                "titanic_energy_spear",
+                                "twin_heavy_thermal_lance",
+                                "twin_heavy_gravity_cannon",
+                                "gatling_cannon"
+                            ],
+                            "limit": 2
+                        },
+                        {
+                            "replaceWeapon": [{"id": "twin_light_machinegun", "mount": ["Front"]}],
+                            "withWeapon": [
+                                {"id": "twin_plasma_rifle", "mount": ["Front"]},
+                                {"id": "twin_fusion_rifle", "mount": ["Front"]},
+                                {"id": "twin_thermal_rifle", "mount": ["Front"]},
+                                {"id": "twin_rocket_pod", "mount": ["Front"]},
+                                {"id": "twin_gravity_rifle", "mount": ["Front"]},
+                                {"id": "twin_tesla_rifle", "mount": ["Front"]}
+                            ],
+                            "limit": 2
+                        },
+                        {"replaceWeapon": ["twin_storm_missiles"], "withWeapon": ["twin_siege_cannon"], "limit": 3},
+                        {"addRule": ["relic_shield"]}
+                    ],
+                    "min": 1,
+                    "max": 1
+                }
+            ]
         }
-      ]
     },
-    "warglaive_knight": {
-      "name": "Warglaive Titan",
-      "description": "The smallest of titans can still make an impact on the battlefield with its sword.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 5}],
-      "keywords": ["vehicle", "armiger"],
-      "models": [
-        {
-          "name": "Mini Knight",
-          "movement": 10,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 12,
-          "reflexes": 5,
-          "weapons": ["fusion_blaster", "mini_titan_sword", "light_machinegun", {"id": "stomp", "count": 2}],
-          "options": [{"replaceWeapon": "light_machinegun", "withWeapon": "fusion_rifle"}],
-          "rules": [],
-          "min": 1,
-          "max": 1
-        }
-      ]
+    "weapons": {
+        "titanic_energy_weapon": {
+            "name": "Titanic Energy Weapon",
+            "profiles": [{"name": "Strike", "attacks": 2, "short": "Melee", "ap": 7}, {"name": "Sweep", "attacks": 5, "short": "Melee", "ap": 3}]
+        },
+        "titanic_power_weapon": {
+            "name": "Titanic Power Weapon",
+            "profiles": [
+                {"name": "Smash", "attacks": 2, "short": "Melee", "ap": 9, "rules": ["cumbersome", {"id": "deadly", "x": 1}]},
+                {"name": "Sweep", "attacks": 5, "short": "Melee", "ap": 3, "rules": ["cumbersome"]}
+            ]
+        },
+        "titanic_energy_spear": {
+            "name": "Titanic Energy Spear",
+            "profiles": [{"name": "Thrust", "attacks": 2, "short": "Melee", "ap": 7, "rules": ["lance"]}, {"name": "Sweep", "attacks": 5, "short": "Melee", "ap": 3}],
+            "rules": [{"id": "reach", "x": 1}]
+        },
+        "titan_rocket_pod": {
+            "name": "Titanic Rocket Pod",
+            "profiles": [
+                {"name": "HE", "attacks": 3, "short": 36, "medium": 72, "ap": 2, "rules": [{"id": "blast", "x": 2}, "heavy"]},
+                {"name": "AP", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["heavy"]}
+            ]
+        },
+        "twin_siege_cannon": {"name": "Twin Siege Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy", {"id": "blast", "x": 2}]},
+        "triple_flamethrower_cannon": {"name": "Triple Flamethrower Cannon", "attacks": 9, "short": 9, "medium": 18, "ap": 5, "rules": ["flame"]},
+        "harpoon_cannon": {"name": "Harpoon Cannon", "attacks": 1, "short": 9, "medium": 18, "ap": 8, "rules": [{"id": "deadly", "x": 2}, {"id": "drag", "x": 3}, "heavy"]},
+        "twin_storm_missiles": {"name": "Twin Storm Missiles", "attacks": 2, "ap": 6, "short": 36, "medium": 72, "rules": ["heavy"]}
     },
-    "gallant_titan": {
-      "name": "Gallant Titan",
-      "description": "A knight lord fully outfitted for close combat.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 6}],
-      "keywords": ["vehicle"],
-      "models": [
-        {
-          "name": "Gallant Titan",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 13,
-          "reflexes": 5,
-          "weapons": ["titan_fist", "light_machinegun", "titan_sword", {"id": "heavy_stomp", "count": 3}],
-          "options": [{"replaceWeapon": "light_machinegun", "withWeapon": "fusion_rifle"}, {"limit": 1, "addWeapon": ["titan_rocket_pod", "twin_aa_autocannon", "titan_missile_pod"]}],
-          "min": 1,
-          "max": 1,
-          "rules": []
-        }
-      ]
+    "rules": {
+        "legend_battlebond": {"name": "Battlebond", "description": "This unit may be attached to another unit with the same unit type keyword at the start of the battle.", "points": 10},
+        "legend_enhanced_servos": {"name": "Enhanced Servos", "description": "This unit increases its Movement characteristic by 2\".", "points": 10},
+        "legend_chivalry": {"name": "Chivalry", "description": "This unit may re-roll failed Strength and Accuracy tests when attacking a model with Save 10 or higher.", "points": 10}
     },
-    "warden_titan": {
-      "name": "Warden Titan",
-      "description": "A knight lord adept at anti-horde fighting.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 6}],
-      "keywords": ["vehicle"],
-      "models": [
-        {
-          "name": "Warden Titan",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 13,
-          "reflexes": 5,
-          "weapons": ["gatling_cannon", "heavy_flamethrower", "light_machinegun", "titan_sword", {"id": "heavy_stomp", "count": 3}],
-          "options": [
-            {"replaceWeapon": "light_machinegun", "withWeapon": "fusion_rifle"},
-            {"replaceWeapon": "titan_sword", "withWeapon": ["titan_fist"]},
-            {"limit": 1, "addWeapon": ["titan_rocket_pod", "twin_aa_autocannon", "titan_missile_pod"]}
-          ],
-          "min": 1,
-          "max": 1,
-          "rules": []
+    "strategies": {
+        "ion_shields": {
+            "phase": "activation",
+            "name": "Ion Shields",
+            "description": "Use when a unit is targeted by an attack. For that attack, roll a D10 each time that unit is hit. On a 3 or less the hit is ignored.",
+            "flavor": "Freeblade Mercenaries are equipped with powerful ion shields which allow them to deflect the heaviest of firepower.",
+            "cost": 2
+        },
+        "veterancy": {
+            "phase": "activation",
+            "name": "Veterancy",
+            "description": "Use when a unit takes a _Shoot_ or _Fight_ action. That unit may re-roll failed _Accuracy_ and _Strength_ tests of 9+.",
+            "flavor": "Each Freeblade Mercenary is a hero with countless titles they earned in battle.",
+            "cost": 1
+        },
+        "final_stand": {
+            "phase": "activation",
+            "name": "Final Stand",
+            "description": "When this model would be killed and it didn't activate this turn yet, it may take a free _Fight_ or _Shoot_ action before it is removed from the game.",
+            "flavor": "With a last energy impulse the Freeblade Mercenary lashes out at his foe in revenge.",
+            "cost": 1
         }
-      ]
     },
-    "preceptor_titan": {
-      "name": "Preceptor Titan",
-      "description": "A knight lord outfitted for decimating enemy tanks.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 6}],
-      "keywords": ["vehicle"],
-      "models": [
-        {
-          "name": "Preceptor Titan",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 13,
-          "reflexes": 5,
-          "weapons": ["pulse_laser", "titan_sword", "light_machinegun", {"id": "heavy_stomp", "count": 3}],
-          "options": [
-            {"replaceWeapon": "light_machinegun", "withWeapon": "fusion_rifle"},
-            {"replaceWeapon": "titan_sword", "withWeapon": ["titan_fist"]},
-            {"limit": 1, "addWeapon": ["titan_rocket_pod", "twin_aa_autocannon", "titan_missile_pod"]}
-          ],
-          "min": 1,
-          "max": 1,
-          "rules": []
+    "relics": {
+        "battlebond": {
+            "name": "Battlebond",
+            "rule": "legend_battlebond",
+            "description": "Upgrade one model with Battlebond.",
+            "flavor": "These Freeblade Mercenaries have formed a brotherly bond, fighting as one on the battlefield.",
+            "points": 10
+        },
+        "enhanced_servos": {
+            "name": "Enhanced Servos",
+            "rule": "legend_enhanced_servos",
+            "description": "Upgrade one model with Enhanced Servos.",
+            "points": 10,
+            "flavor": "Using state of the art machinery this hulking mech can move swiftly across the battlefield."
+        },
+        "chivalry": {
+            "name": "Chivalry",
+            "weapon": "legend_chivalry",
+            "flavor": "This Freeblade Mercenary is well trained in destroying renegade warmachines in glorious combat.",
+            "description": "Upgrade one model with Chivalry.",
+            "points": 10
         }
-      ]
-    },
-    "errant_titan": {
-      "name": "Errant Titan",
-      "description": "A knight lord armed with a powerful thermal cannon for eliminating vehicles at close range.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 6}],
-      "keywords": ["vehicle"],
-      "models": [
-        {
-          "name": "Errant Titan",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 13,
-          "reflexes": 5,
-          "weapons": ["titan_fusion_cannon", "light_machinegun", "titan_sword", {"id": "heavy_stomp", "count": 3}],
-          "options": [{"replaceWeapon": "light_machinegun", "withWeapon": "fusion_rifle"}, {"limit": 1, "addWeapon": ["titan_rocket_pod", "twin_aa_autocannon", "titan_missile_pod"]}],
-          "min": 1,
-          "max": 1,
-          "rules": []
-        }
-      ]
-    },
-    "castellan_titan": {
-      "name": "Castellan Titan",
-      "description": " A massive knight lord made to dominate the battlefeild with its powerful guns.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 6}],
-      "keywords": ["vehicle"],
-      "models": [
-        {
-          "name": "Castellan Titan",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 13,
-          "reflexes": 5,
-          "weapons": [
-            "plasma_battle_cannon",
-            "light_machinegun",
-            "volcano_cannon",
-            {"id": "twin_siege_cannon", "count": 2},
-            "twin_shield_missiles",
-            {"id": "twin_fusion_rifle", "count": 2},
-            {"id": "heavy_stomp", "count": 3}
-          ],
-          "options": [{"replaceWeapon": {"id": "twin_siege_cannon", "count": 1}, "withWeapon": "twin_shield_missiles"}],
-          "min": 1,
-          "max": 1,
-          "rules": []
-        }
-      ]
-    },
-    "paladin_titan": {
-      "name": "Paladin Titan",
-      "description": "A knight lord outfited with a rapid fire cannon to mow down enemies.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 6}],
-      "keywords": ["vehicle"],
-      "models": [
-        {
-          "name": "Paladin Titan",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 13,
-          "reflexes": 5,
-          "weapons": ["rapidfire_battle_cannon", {"id": "light_machinegun", "count": 2}, "titan_sword", {"id": "heavy_stomp", "count": 3}],
-          "options": [{"replaceWeapon": "light_machinegun", "withWeapon": "fusion_rifle"}, {"limit": 1, "addWeapon": ["titan_rocket_pod", "twin_aa_autocannon", "titan_missile_pod"]}],
-          "min": 1,
-          "max": 1,
-          "rules": []
-        }
-      ]
-    },
-    "valiant_titan": {
-      "name": "Valiant Titan",
-      "description": "A massive knight lord outfitted for devestating short-range combat.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 6}],
-      "keywords": ["vehicle"],
-      "models": [
-        {
-          "name": "Valiant Titan",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 13,
-          "reflexes": 5,
-          "weapons": [
-            "harpoon_cannon",
-            "triple_flamethrower_cannon",
-            {"id": "twin_fusion_rifle", "count": 2},
-            {"id": "twin_siege_cannon", "count": 2},
-            "twin_shield_missiles",
-            {"id": "heavy_stomp", "count": 3}
-          ],
-          "options": [{"replaceWeapon": {"id": "twin_siege_cannon", "count": 1}, "withWeapon": "twin_shield_missiles"}],
-          "min": 1,
-          "max": 1
-        }
-      ]
-    },
-    "crusader_titan": {
-      "name": "Crusader Titan",
-      "description": "A knight lord outfitted with 2 powerful guns.",
-      "category": "rare",
-      "rules": [{"id": "wounds", "x": 6}],
-      "keywords": ["vehicle"],
-      "models": [
-        {
-          "name": "Crusader Titan",
-          "movement": 8,
-          "courage": 6,
-          "shoot": 6,
-          "fight": 6,
-          "defense": 13,
-          "reflexes": 5,
-          "weapons": ["gatling_cannon", "heavy_flamethrower", "titan_fusion_cannon", "light_machinegun", {"id": "heavy_stomp", "count": 3}],
-          "options": [
-            {"replaceWeapon": "light_machinegun", "withWeapon": "fusion_rifle"},
-            {"limit": 1, "addWeapon": ["titan_rocket_pod", "twin_aa_autocannon", "titan_missile_pod"]},
-            {"replaceWeapon": "titan_fusion_cannon", "withWeapon": [["rapidfire_battle_cannon", "light_machinegun"]]}
-          ],
-          "min": 1,
-          "max": 1,
-          "rules": []
-        }
-      ]
     }
-  },
-  "weapons": {
-    "fusion_blaster": {"name": "Fusion Blaster", "attacks": 2, "short": 12, "medium": 24, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
-    "mini_titan_sword": {"name": "Mini Titan Sword", "profiles": [{"name": "elite", "attacks": 3, "short": "Melee", "ap": 7}, {"name": "Sweep", "attacks": 6, "short": "Melee", "ap": 3}]},
-    "titan_fist": {
-      "name": "Titan Fist",
-      "profiles": [
-        {"name": "elite", "attacks": 3, "short": "Melee", "ap": 10, "rules": ["cumbersome", {"id": "deadly", "x": 1}]},
-        {"name": "Smash", "attacks": 6, "short": "Melee", "ap": 4, "rules": ["cumbersome"]}
-      ]
-    },
-    "titan_sword": {"name": "Titan Sword", "profiles": [{"name": "elite", "attacks": 4, "short": "Melee", "ap": 8}, {"name": "Sweep", "attacks": 8, "short": "Melee", "ap": 4}]},
-    "titan_rocket_pod": {"name": "Titan Rocket Pod", "attacks": 3, "short": 24, "medium": 48, "ap": 6, "rules": ["heavy"]},
-    "titan_missile_pod": {"name": "Titan Missile Pod", "attacks": 3, "short": 36, "medium": 72, "ap": 2, "rules": ["heavy", "indirect"]},
-    "gatling_cannon": {"name": "Gatling Cannon", "attacks": 12, "short": 18, "medium": 36, "ap": 4, "rules": ["heavy"]},
-    "pulse_laser": {
-      "name": "Pulse Laser",
-      "profiles": [{"name": "High Intensity", "attacks": 3, "short": 9, "medium": 18, "ap": 10}, {"name": "Low Intensity", "attacks": 6, "short": 18, "medium": 36, "ap": 4}]
-    },
-    "titan_fusion_cannon": {"name": "Fusion Cannon", "attacks": 3, "short": 18, "medium": 36, "ap": 8, "rules": ["heavy", {"id": "deadly", "x": 1}]},
-    "plasma_battle_cannon": {"name": "Plasma Battle Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 5, "rules": ["heavy", "overcharge", {"id": "blast", "x": 3}]},
-    "twin_siege_cannon": {"name": "Twin Siege Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy", {"id": "blast", "x": 2}]},
-    "twin_shield_missiles": {"name": "Twin Shield Missiles", "attacks": 2, "short": 24, "medium": 48, "ap": 8, "rules": ["indirect"]},
-    "volcano_cannon": {"name": "Volcano Cannon", "attacks": 2, "short": 24, "medium": 48, "ap": 10, "rules": ["heavy"]},
-    "twin_fusion_rifle": {"name": "Twin Fusion Rifle", "attacks": 2, "short": 6, "medium": 12, "ap": 6, "rules": [{"id": "deadly", "x": 1}]},
-    "rapidfire_battle_cannon": {"name": "Rapid-fire Battle Cannon", "attacks": 2, "ap": 6, "short": 24, "medium": 48, "rules": ["heavy", {"id": "blast", "x": 3}]},
-    "triple_flamethrower_cannon": {"name": "Triple Flamethrower Cannon", "attacks": 9, "short": 9, "medium": 18, "ap": 5, "rules": ["flame"]},
-    "harpoon_cannon": {
-      "notes": "This profile needs to be looked at. Seems really swingy- either it misses or it devestates.",
-      "name": "Harpoon Cannon",
-      "attacks": 1,
-      "short": 6,
-      "medium": 12,
-      "ap": 10
-    }
-  },
-  "rules": {
-    "legend_lotl": {
-      "name": "Leader of the Lesser",
-      "description": "When this unit is activated, choose up to 2 _Armiger_ units within 6\".  They may reroll skill checks of 9+ when making Fight or _Shoot_ actions",
-      "points": 10
-    },
-    "legend_enhanced_servos": {"name": "Enhanced Servos", "description": "This model gains +2 to its Movement", "points": 10}
-  },
-  "strategies": {
-    "ion_shields": {
-      "phase": "activation",
-      "name": "Ion Shields",
-      "description": "Use this strategy when one of your units is targeted by an attack. Roll a die for each hit, on a 3 or less that hit is prevented.",
-      "flavor": "Knight Lords are equipped with powerful ion shields which allow them to deflect the heaviest of firepower.",
-      "cost": 2
-    },
-    "heroic_moment": {
-      "phase": "activation",
-      "name": "Heroic Moment",
-      "description": "Use when a unit shoots or fights. That unit may re-roll failed skill tests of 9+.",
-      "flavor": "Each Knight Lord is a hero which can take on the mightiest of foes.",
-      "cost": 1
-    },
-    "final_stand": {
-      "phase": "activation",
-      "name": "Final Stand",
-      "description": "Use when a unit is destroyed. If that unit has not activated yet this round, it may perform one shoot or _Fight_ action before it is destroyed.",
-      "flavor": "A Knight Lord fights to the last breath.",
-      "cost": 1
-    }
-  },
-  "relics": {
-    "leader_of_the_lesser": {
-      "name": "Leader of the Lesser",
-      "rule": "legend_lotl",
-      "description": "Upgrade one non-_Armiger_ unit with Leader of the Lesser",
-      "flavor": "The Knight in charge of this war-machine is adept in giving orders to their squires",
-      "points": 10
-    },
-    "enhanced_servos": {"name": "Enhanced Servos", "rule": "legend_enhanced_servos", "description": "Choose one model to be upgraded with Enhanced Servos", "points": 10}
-  }
 }
