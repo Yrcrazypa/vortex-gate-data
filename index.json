@@ -1155,7 +1155,7 @@
       "name": "Missile Launcher",
       "rules": ["heavy"],
       "profiles": [
-        {"name": "Frag", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": [{"id": "blast", "x": 3}]},
+        {"name": "Frag", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": [{"id": "blast", "x": 2}]},
         {"name": "AT", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "deadly", "x": 1}]}
       ]
     },
@@ -1163,7 +1163,7 @@
       "name": "Twin Missile Launcher",
       "rules": ["heavy"],
       "profiles": [
-        {"name": "Frag", "attacks": 2, "short": 18, "medium": 36, "ap": 1, "rules": [{"id": "blast", "x": 3}]},
+        {"name": "Frag", "attacks": 2, "short": 18, "medium": 36, "ap": 1, "rules": [{"id": "blast", "x": 2}]},
         {"name": "AT", "attacks": 2, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "deadly", "x": 1}]}
       ]
     },
