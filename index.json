@@ -1257,6 +1257,8 @@
       "rules": ["heavy"],
       "profiles": [{"name": "Frag", "attacks": 1, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 6}]}, {"name": "AT", "attacks": 1, "short": 24, "medium": 48, "ap": 6}]
     },
+    "twin_gravity_rifle": {"name": "Twin Gravity Rifle", "attacks": 4, "short": 9, "medium": 18, "ap": 3, "rules": ["gravity"]},
+    "twin_rocket_pod": {"name": "Twin Rocket Pod", "attacks": 2, "short": 12, "medium": 24, "ap": 2, "rules": [{"id": "blast", "x": 3}]},
     "seismic_cannon": {"name": "Seismic Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 3, "rules": ["heavy", {"id": "shocking", "x": 1}, "unreliable"]},
     "heavy_seismic_cannon": {"name": "Heavy Seismic Cannon", "attacks": 1, "short": 24, "medium": 48, "ap": 3, "rules": ["heavy", {"id": "shocking", "x": 1}, "unreliable"]},
     "fusion_beamer": {"name": "Fission Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 5, "rules": [{"id": "intensity", "x": 2}, {"id": "deadly", "x": 1}]},
