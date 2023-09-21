@@ -1115,7 +1115,7 @@
     "twin_tesla_rifle": {"name": "Twin Tesla Rifle", "attacks": 2, "ap": 2, "short": 12, "medium": 24, "rules": ["assault", {"id": "lethal", "x": 1}]},
     "emp_rifle": {"name": "EMP Rifle", "attacks": 2, "short": 12, "medium": 24, "ap": 3, "rules": ["emp", "assault"]},
     "rail_rifle": {"name": "Rail Rifle", "attacks": 1, "short": 15, "medium": 30, "ap": 5, "rules": ["breaching", "sniper"]},
-    "heavy_sniper_rifle": {"name": "Heavy Sniper Rifle", "attacks": 1, "ap": 3, "short": 24, "medium": 48, "rules": ["heavy", "sniper", {"id": "deadly", "x": 3}]},
+    "heavy_sniper_rifle": {"name": "Heavy Sniper Rifle", "attacks": 1, "ap": 3, "short": 24, "medium": 48, "rules": ["heavy", "sniper", {"id": "deadly", "x": 1}]},
     "prime_sniper_rifle": {
       "name": "Prime Sniper Rifle",
       "profiles": [
