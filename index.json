@@ -1949,6 +1949,7 @@
     },
     "reload": {"name": "Reload", "description": "After firing, a unit must spend 1 action to reload this weapon before it can be fired again.", "points": ["weapon.attacks", {"multiply": -1}]},
     "sniper": {"name": "Sniper", "description": "This weapon may ignore the Long Range penalty and any Cover bonuses. You may choose which model is hit even if it has Leader.", "points": 2},
+    "precise": {"name": "Precise", "description": "You may choose which model is hit even if it has Leader.", "points": 1},
     "assassin": {"name": "Assassin", "description": "You may choose which model is hit even if it has Leader and these hits may not be reassigned to other friendly units.", "points": 5},
     "aircraft": {
       "name": "Aircraft",
