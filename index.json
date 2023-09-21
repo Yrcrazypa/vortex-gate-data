@@ -1076,7 +1076,7 @@
     "heavy_marine_rifle": {"name": "Heavy Marine Rifle", "attacks": 2, "short": 15, "medium": 30, "ap": 2, "rules": ["heavy"]},
     "veteran_marine_rifle": {"name": "Veteran Marine Rifle", "attacks": 1, "short": 12, "medium": 24, "ap": 2, "rules": ["rapid_fire"]},
     "marine_dmr": {"name": "Marine Marksman Rifle", "ap": 2, "attacks": 1, "short": 15, "medium": 30, "rules": ["heavy"]},
-    "marine_smg": {"name": "Marine Submachine Gun", "ap": 1, "attacks": 2, "short": 6, "medium": 12, "rules": ["assault"]},
+    "marine_smg": {"name": "Marine Submachine Gun", "ap": 1, "attacks": 2, "short": 6, "medium": 12},
     "storm_rifle": {"name": "Storm Rifle", "attacks": 1, "ap": 1, "short": 6, "medium": 12, "rules": ["rapid_fire"]},
     "twin_twin_marine_rifle": {"name": "Twin Storm Rifle", "attacks": 4, "short": 12, "ap": 1, "medium": 24, "rules": ["rapid_fire"]},
     "shred_rifle": {"name": "Shred Rifle", "attacks": 2, "short": 9, "medium": 18, "rules": ["rending"]},
