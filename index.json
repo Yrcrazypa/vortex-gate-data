@@ -1255,7 +1255,7 @@
       ]
     },
     "twin_shard_carbine": {"name": "Twin Shard Carbine", "attacks": 2, "short": 9, "medium": 18, "ap": 1, "rules": ["rending", "assault"]},
-    "fusion_cannon": {"name": "Fusion Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48, "rules": [{"id": "deadly", "x": 2}, "heavy"]},
+    "fusion_cannon": {"name": "Fusion Cannon", "ap": 7, "attacks": 1, "short": 24, "medium": 48, "rules": [{"id": "deadly", "x": 1}, "heavy"]},
     "twin_fusion_cannon": {"name": "Twin Fusion Cannon", "ap": 7, "attacks": 2, "short": 24, "medium": 48, "rules": [{"id": "deadly", "x": 1}, "heavy"]},
     "shard_sniper": {"name": "Shard Sniper", "attacks": 1, "short": 18, "medium": 36, "ap": 1, "rules": ["rending", "sniper"]},
     "elven_missile_launcher": {
@@ -1266,7 +1266,7 @@
       "name": "Twin Elven Missile Launcher",
       "profiles": [{"name": "Frag", "attacks": 2, "short": 24, "medium": 48, "ap": 1, "rules": [{"id": "blast", "x": 6}]}, {"name": "AT", "attacks": 4, "short": 24, "medium": 48, "ap": 6}]
     },
-    "heavy_fusion_cannon": {"name": "Heavy Fusion Cannon", "ap": 7, "medium": 60, "short": 30, "attacks": 2, "rules": ["heavy", {"id": "deadly", "x": 1}]},
+    "heavy_fusion_cannon": {"name": "Heavy Fusion Cannon", "ap": 7, "medium": 60, "short": 30, "attacks": 1, "rules": ["heavy", {"id": "deadly", "x": 2}]},
     "nova_cannon": {"name": "Nova Cannon", "attacks": 1, "short": 18, "medium": 36, "ap": 6, "rules": ["breaching", "heavy", {"id": "blast", "x": 3}]},
     "siege_cannon": {"name": "Siege Cannon", "attacks": 1, "short": 12, "medium": 24, "ap": 8, "rules": ["heavy", {"id": "blast", "x": 3}]},
     "tank_hunter_cannon": {"name": "Tank Hunter Cannon", "attacks": 2, "short": 36, "medium": 72, "ap": 7, "rules": [{"id": "deadly", "x": 1}, "heavy"]},
@@ -1299,7 +1299,7 @@
     "twin_tesla_cannon": {"name": "Twin Tesla Cannon", "attacks": 2, "ap": 4, "short": 12, "medium": 24, "rules": ["assault", {"id": "blast", "x": 3}]},
     "twin_heavy_autocannon": {"name": "Twin Heavy Autocannon", "attacks": 4, "short": 24, "medium": 48, "ap": 4, "rules": ["heavy"]},
     "twin_flamethrower_cannon": {"name": "Twin Flamethrower Cannon", "attacks": 6, "ap": 4, "short": 6, "medium": 12, "rules": ["flame"]},
-    "twin_heavy_fusion_cannon": {"name": "Twin Heavy Fusion Cannon", "ap": 7, "medium": 60, "short": 30, "attacks": 4, "rules": ["heavy", {"id": "deadly", "x": 1}]},
+    "twin_heavy_fusion_cannon": {"name": "Twin Heavy Fusion Cannon", "ap": 7, "medium": 60, "short": 30, "attacks": 2, "rules": ["heavy", {"id": "deadly", "x": 2}]},
     "twin_gravity_cannon": {"name": "Twin Gravity Cannon", "attacks": 4, "short": 18, "medium": 36, "ap": 3, "rules": ["gravity", "heavy"]},
     "twin_heavy_gravity_cannon": {"name": "Twin Heavy Gravity Cannon", "attacks": 6, "short": 24, "medium": 48, "ap": 3, "rules": ["gravity", "heavy"]},
     "mortar_cannon": {"name": "Mortar Cannon", "attacks": 1, "ap": 4, "short": 36, "medium": 72, "rules": ["heavy", "indirect", {"id": "blast", "x": 6}]},
